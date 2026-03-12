@@ -372,8 +372,12 @@
           <div class="api-status none" id="aiStatus">未配置 — AI 翻译不可用</div>
         </div>
       </div>
-      <!-- 联系作者 -->
+      <!-- 清空配置 -->
       <div class="api-config" style="margin-top:24px;padding-top:16px;border-top:1px solid #e1e4e8">
+        <button class="layer-action-btn danger" onclick="clearAllSettings()" id="btnClearSettings" style="width:100%">🗑 清空配置</button>
+      </div>
+      <!-- 联系作者 -->
+      <div class="api-config" style="margin-top:16px">
         <div class="label" style="font-size:13px;color:#536471;margin-bottom:6px" id="contactAuthorLabel">联系作者</div>
         <a href="https://x.com/maiyangai" target="_blank" rel="noopener noreferrer" style="color:#1d9bf0;font-size:14px;text-decoration:none">@maiyangai</a>
       </div>
@@ -476,6 +480,8 @@ const LANG = {
     "btn.settings": "⚙ 设置",
     "settings.title": "⚙ 设置",
     "settings.contactAuthor": "联系作者",
+    "settings.clearConfig": "🗑 清空配置",
+    "settings.clearConfirm": "确定要清空所有配置（API Key、AI 配置）吗？",
   },
   "en": {
     "app.title": "Tweet Quote",
@@ -554,6 +560,8 @@ const LANG = {
     "btn.settings": "⚙ Settings",
     "settings.title": "⚙ Settings",
     "settings.contactAuthor": "Contact Author",
+    "settings.clearConfig": "🗑 Clear Config",
+    "settings.clearConfirm": "Clear all settings (API Key, AI config)?",
   }
 };
 
@@ -594,6 +602,7 @@ function applyLang() {
   document.getElementById("aiModelInput").placeholder = t("ai.placeholder.model");
   updateAiStatus();
   document.getElementById("contactAuthorLabel").textContent = t("settings.contactAuthor");
+  document.getElementById("btnClearSettings").textContent = t("settings.clearConfig");
   document.getElementById("apiKeyModalTitle").textContent = t("modal.apiKey.title");
   document.getElementById("apiKeyModalDesc").textContent = t("modal.apiKey.desc");
   document.getElementById("apiKeyModalDismiss").textContent = t("modal.apiKey.dismiss");
@@ -719,6 +728,25 @@ function loadAiConfig() {
   document.getElementById("aiApiKeyInput").value = aiApiKey;
   document.getElementById("aiModelInput").value = aiModel;
   updateAiStatus();
+}
+function clearAllSettings() {
+  if (!confirm(t("settings.clearConfirm"))) return;
+  apiKey = "";
+  aiBaseUrl = "";
+  aiApiKey = "";
+  aiModel = "";
+  localStorage.removeItem("tnt_api_key");
+  localStorage.removeItem("tnt_ai_base_url");
+  localStorage.removeItem("tnt_ai_api_key");
+  localStorage.removeItem("tnt_ai_model");
+  document.getElementById("apiKeyInput").value = "";
+  document.getElementById("aiBaseUrlInput").value = "";
+  document.getElementById("aiApiKeyInput").value = "";
+  document.getElementById("aiModelInput").value = "";
+  updateApiStatus();
+  updateAiStatus();
+  updateSettingsBtn();
+  renderInputs();
 }
 function updateAiStatus() {
   const st = document.getElementById("aiStatus");
@@ -1270,7 +1298,7 @@ function loadExample() {
     { name:"Mai Yang", handle:"@MaiYangAI", avatar:"https://pbs.twimg.com/profile_images/2027602364073709576/5L4TUTHt_400x400.jpg",
       date:"Mar 9", views:"194", annotations:[],
       content:"非常认同刘飞老师的观点。\n\n刚好今天中午跟朋友吃饭，我也表达了类似的观点。\n\n玩龙虾🦞可以，但是你去研究是为了挖掘你的副业还是为了玩而玩？我自己也玩了几天，确实能有一些价值，帮助你检索，完成对应任务，但是对于普通人来说，你没有场景何来现在有了龙虾🦞就有了场景？\n\n刘飞老师提炼的观点非常齐全，推荐大家自省。" },
-    { name:"刘飞", handle:"@liufeilufy", avatar:"https://pbs.twimg.com/profile_images/1840390084119478272/rFJbGeIS_400x400.jpg",
+    { name:"刘飞", handle:"@liufeilufy", avatar:"https://pbs.twimg.com/profile_images/1497935790961139714/zrClIfkW_400x400.jpg",
       date:"9:15 AM · Mar 9, 2026", views:"54.5K", annotations:[],
       content:"调研了一阵子 OpenClaw 的使用案例（身边朋友，微信群，社交媒体等等），也体验了一下，感受跟之前的很类似：\n\n对于本来就有自己业务的，尤其是商业闭环的，才用得更好，也更愿意充值，因为真的能省事儿，带来生产力，很快就能正向循环。以开发者、自媒体、投资人和小企业老板为主。\n\n对于很多在创业或者作为牛马想搞副业的朋友，想从零开始用 OpenClaw 干拔一个有价值的生意，难度极大，概率极低。\n\n对于多数案例看起来，还是当玩具居多。充值都用免费渠道的 tokens，整天研究省钱，研究怎么让龙虾表演节目什么的，很快就觉得没劲了。\n\n新技术不等于产品价值。还是得有场景有工作流，才有价值。只会说「你自己去学习一下，帮我开发一个会火的 APP」是肯定一定没意义的。" },
   ];
