@@ -1,0 +1,4 @@
+output/*
+.env*
+__pycache__/*
+history/*
