@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tweet Quote — 引用链，一键成图 | Quote Chain to Image</title>
+<meta name="description" content="把 Twitter 推文引用链变成一张可分享的高清图片，支持 AI 翻译与智能注释。Turn Twitter quote chains into beautiful, shareable images with AI translation.">
+<meta property="og:title" content="Tweet Quote — Quote Chain to Image">
+<meta property="og:description" content="Turn Twitter quote chains into beautiful, shareable HD images with AI translation and smart annotations.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://tweetquote.app">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Tweet Quote — Quote Chain to Image">
+<meta name="twitter:description" content="Turn Twitter quote chains into beautiful, shareable images">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700;1,9..40,400&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --blue: #1d9bf0;
+    --blue-dark: #1a8cd8;
+    --purple: #794bc4;
+    --green: #17bf63;
+    --red: #e0245e;
+    --orange: #f45d22;
+    --bg-dark: #0a0e17;
+    --bg-card: #111827;
+    --text-primary: #f0f6fc;
+    --text-secondary: #8b949e;
+    --border: rgba(255,255,255,0.08);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'DM Sans', 'Noto Sans SC', system-ui, -apple-system, sans-serif;
+    background: var(--bg-dark);
+    color: var(--text-primary);
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  /* ─── Nav ─── */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    padding: 16px 32px;
+    background: rgba(10,14,23,0.8);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border);
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .nav-brand {
+    display: flex; align-items: center; gap: 10px;
+    font-size: 18px; font-weight: 700; color: var(--text-primary);
+    text-decoration: none;
+  }
+  .nav-brand svg { flex-shrink: 0; }
+  .nav-links { display: flex; align-items: center; gap: 24px; }
+  .nav-links a {
+    color: var(--text-secondary); text-decoration: none; font-size: 14px; font-weight: 500;
+    transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--text-primary); }
+  .lang-toggle {
+    padding: 5px 14px; border-radius: 9999px; font-size: 13px; font-weight: 700;
+    background: transparent; color: var(--blue); border: 2px solid var(--blue);
+    cursor: pointer; transition: all 0.2s; min-width: 48px; text-align: center;
+  }
+  .lang-toggle:hover { background: rgba(29,155,240,0.1); }
+  .nav-cta {
+    padding: 8px 20px; border-radius: 9999px; font-size: 14px; font-weight: 700;
+    background: var(--blue); color: #fff !important; text-decoration: none;
+    transition: background 0.2s, transform 0.15s;
+    display: inline-flex; align-items: center; gap: 6px;
+  }
+  .nav-cta:hover { background: var(--blue-dark); transform: translateY(-1px); }
+
+  /* ─── Hero ─── */
+  .hero {
+    min-height: 100vh; display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    text-align: center; padding: 120px 24px 80px;
+    position: relative; overflow: hidden;
+  }
+  .hero::before {
+    content: ''; position: absolute; inset: 0;
+    background:
+      radial-gradient(ellipse 80% 60% at 50% -10%, rgba(29,155,240,0.15) 0%, transparent 60%),
+      radial-gradient(ellipse 50% 40% at 80% 50%, rgba(121,75,196,0.08) 0%, transparent 50%),
+      radial-gradient(ellipse 50% 40% at 20% 60%, rgba(23,191,99,0.06) 0%, transparent 50%);
+    pointer-events: none;
+  }
+  .hero-badge {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 6px 16px; border-radius: 9999px;
+    background: rgba(29,155,240,0.1); border: 1px solid rgba(29,155,240,0.2);
+    color: var(--blue); font-size: 13px; font-weight: 600;
+    margin-bottom: 32px; position: relative;
+  }
+  .hero-badge .dot {
+    width: 6px; height: 6px; border-radius: 50%; background: var(--green);
+    animation: pulse 2s infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.4; }
+  }
+  .hero h1 {
+    font-size: clamp(40px, 7vw, 72px); font-weight: 700;
+    line-height: 1.1; margin-bottom: 16px;
+    position: relative;
+    background: linear-gradient(135deg, #fff 0%, #fff 50%, var(--blue) 100%);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .hero .slogan {
+    font-size: clamp(18px, 3vw, 24px); color: var(--blue);
+    font-weight: 600; margin-bottom: 24px; position: relative;
+    letter-spacing: 0.02em;
+  }
+  .hero .desc {
+    font-size: clamp(16px, 2vw, 19px); color: var(--text-secondary);
+    max-width: 620px; line-height: 1.7; margin-bottom: 48px; position: relative;
+  }
+  .hero-actions { display: flex; gap: 16px; position: relative; flex-wrap: wrap; justify-content: center; }
+  .btn-hero {
+    padding: 14px 32px; border-radius: 12px; font-size: 16px; font-weight: 700;
+    text-decoration: none; transition: all 0.2s; display: inline-flex; align-items: center; gap: 8px;
+    border: none; cursor: pointer;
+  }
+  .btn-hero-primary {
+    background: var(--blue); color: #fff;
+    box-shadow: 0 4px 24px rgba(29,155,240,0.3);
+  }
+  .btn-hero-primary:hover {
+    background: var(--blue-dark); transform: translateY(-2px);
+    box-shadow: 0 8px 32px rgba(29,155,240,0.4);
+  }
+  .btn-hero-secondary {
+    background: rgba(255,255,255,0.06); color: var(--text-primary);
+    border: 1px solid var(--border);
+  }
+  .btn-hero-secondary:hover {
+    background: rgba(255,255,255,0.1); transform: translateY(-2px);
+  }
+
+  /* ─── Screenshot Showcase ─── */
+  .showcase {
+    padding: 0 24px 100px; position: relative;
+    display: flex; justify-content: center;
+  }
+  .showcase-frame {
+    max-width: 960px; width: 100%; position: relative;
+    border-radius: 16px; overflow: hidden;
+    border: 1px solid var(--border);
+    box-shadow: 0 24px 80px rgba(0,0,0,0.5), 0 0 0 1px rgba(255,255,255,0.05);
+  }
+  .showcase-frame img {
+    width: 100%; height: auto; display: block;
+  }
+  .showcase-glow {
+    position: absolute; inset: -40%; z-index: -1;
+    background: radial-gradient(circle at center, rgba(29,155,240,0.08) 0%, transparent 60%);
+    pointer-events: none;
+  }
+
+  /* ─── Features ─── */
+  .features {
+    padding: 100px 24px; max-width: 1100px; margin: 0 auto;
+  }
+  .features-header {
+    text-align: center; margin-bottom: 64px;
+  }
+  .features-header h2 {
+    font-size: clamp(28px, 4vw, 40px); font-weight: 700; margin-bottom: 16px;
+  }
+  .features-header p {
+    font-size: 17px; color: var(--text-secondary); max-width: 500px; margin: 0 auto;
+  }
+  .features-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
+  }
+  .feature-card {
+    padding: 32px; border-radius: 16px;
+    background: var(--bg-card); border: 1px solid var(--border);
+    transition: transform 0.2s, border-color 0.2s;
+  }
+  .feature-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(255,255,255,0.15);
+  }
+  .feature-icon {
+    width: 48px; height: 48px; border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 24px; margin-bottom: 20px;
+  }
+  .feature-icon.blue { background: rgba(29,155,240,0.12); }
+  .feature-icon.purple { background: rgba(121,75,196,0.12); }
+  .feature-icon.green { background: rgba(23,191,99,0.12); }
+  .feature-icon.red { background: rgba(224,36,94,0.12); }
+  .feature-icon.orange { background: rgba(244,93,34,0.12); }
+  .feature-icon.yellow { background: rgba(255,173,31,0.12); }
+  .feature-card h3 {
+    font-size: 17px; font-weight: 700; margin-bottom: 8px;
+  }
+  .feature-card p {
+    font-size: 14px; color: var(--text-secondary); line-height: 1.6;
+  }
+
+  /* ─── How it works ─── */
+  .how {
+    padding: 100px 24px; position: relative;
+    border-top: 1px solid var(--border);
+  }
+  .how::before {
+    content: ''; position: absolute; inset: 0;
+    background: radial-gradient(ellipse 60% 50% at 50% 0%, rgba(121,75,196,0.06) 0%, transparent 60%);
+    pointer-events: none;
+  }
+  .how-inner {
+    max-width: 800px; margin: 0 auto; position: relative;
+  }
+  .how h2 {
+    font-size: clamp(28px, 4vw, 40px); font-weight: 700;
+    text-align: center; margin-bottom: 64px;
+  }
+  .steps {
+    display: flex; flex-direction: column; gap: 48px;
+  }
+  .step {
+    display: flex; align-items: flex-start; gap: 24px;
+  }
+  .step-num {
+    width: 48px; height: 48px; border-radius: 50%; flex-shrink: 0;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 20px; font-weight: 700;
+    background: rgba(29,155,240,0.12); color: var(--blue);
+    border: 2px solid rgba(29,155,240,0.3);
+  }
+  .step-content h3 { font-size: 18px; font-weight: 700; margin-bottom: 6px; }
+  .step-content p { font-size: 15px; color: var(--text-secondary); line-height: 1.6; }
+
+  /* ─── Export Preview ─── */
+  .export-preview {
+    padding: 80px 24px 100px;
+    display: flex; justify-content: center;
+  }
+  .export-frame {
+    max-width: 560px; width: 100%;
+    border-radius: 16px; overflow: hidden;
+    border: 1px solid var(--border);
+    box-shadow: 0 16px 64px rgba(0,0,0,0.4);
+  }
+  .export-frame img { width: 100%; height: auto; display: block; }
+
+  /* ─── CTA ─── */
+  .cta {
+    padding: 100px 24px;
+    text-align: center; position: relative;
+    border-top: 1px solid var(--border);
+  }
+  .cta::before {
+    content: ''; position: absolute; inset: 0;
+    background: radial-gradient(ellipse 80% 60% at 50% 100%, rgba(29,155,240,0.1) 0%, transparent 60%);
+    pointer-events: none;
+  }
+  .cta h2 {
+    font-size: clamp(28px, 4vw, 40px); font-weight: 700;
+    margin-bottom: 16px; position: relative;
+  }
+  .cta p {
+    font-size: 17px; color: var(--text-secondary); margin-bottom: 40px;
+    max-width: 480px; margin-left: auto; margin-right: auto; position: relative;
+  }
+  .cta .hero-actions { position: relative; }
+
+  /* ─── Footer ─── */
+  footer {
+    padding: 32px 24px;
+    border-top: 1px solid var(--border);
+    text-align: center;
+    color: var(--text-secondary); font-size: 13px;
+  }
+  footer a { color: var(--blue); text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+
+  /* ─── Responsive ─── */
+  @media (max-width: 768px) {
+    nav { padding: 12px 16px; }
+    .nav-links a:not(.nav-cta):not(.lang-toggle) { display: none; }
+    .features-grid { grid-template-columns: 1fr; }
+    .step { gap: 16px; }
+    .hero { padding: 100px 20px 60px; }
+  }
+  @media (max-width: 480px) {
+    .hero-actions { flex-direction: column; align-items: stretch; }
+    .btn-hero { justify-content: center; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Nav -->
+<nav>
+  <a href="/" class="nav-brand">
+    <svg viewBox="0 0 24 24" width="28" height="28" fill="none">
+      <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" fill="#1d9bf0"/>
+    </svg>
+    Tweet Quote
+  </a>
+  <div class="nav-links">
+    <a href="#features" data-i18n="nav.features"></a>
+    <a href="#how" data-i18n="nav.how"></a>
+    <a href="https://github.com/yangwenmai/tweetquote" target="_blank">GitHub</a>
+    <button class="lang-toggle" id="langToggle" onclick="switchLang()"></button>
+    <a href="#try" class="nav-cta" data-i18n="nav.cta"></a>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-badge">
+    <span class="dot"></span>
+    <span data-i18n="hero.badge"></span>
+  </div>
+  <h1>Tweet Quote</h1>
+  <div class="slogan" data-i18n="hero.slogan"></div>
+  <p class="desc" data-i18n-html="hero.desc"></p>
+  <div class="hero-actions">
+    <a href="#try" class="btn-hero btn-hero-primary" id="tryBtn">
+      <svg viewBox="0 0 20 20" width="18" height="18" fill="currentColor"><path d="M10 3a7 7 0 100 14 7 7 0 000-14zm-1 4a1 1 0 112 0v3.586l1.707 1.707a1 1 0 01-1.414 1.414l-2-2A1 1 0 019 11V7z"/></svg>
+      <span data-i18n="hero.tryBtn"></span>
+    </a>
+    <a href="https://github.com/yangwenmai/tweetquote" target="_blank" class="btn-hero btn-hero-secondary">
+      <svg viewBox="0 0 16 16" width="18" height="18" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+      GitHub
+    </a>
+  </div>
+</section>
+
+<!-- Showcase -->
+<section class="showcase">
+  <div class="showcase-glow"></div>
+  <div class="showcase-frame">
+    <img src="screenshots/main.png" data-i18n-alt="showcase.alt" loading="lazy">
+  </div>
+</section>
+
+<!-- Features -->
+<section class="features" id="features">
+  <div class="features-header">
+    <h2 data-i18n="features.title"></h2>
+    <p data-i18n="features.subtitle"></p>
+  </div>
+  <div class="features-grid">
+    <div class="feature-card">
+      <div class="feature-icon blue">🔗</div>
+      <h3 data-i18n="features.autoFetch.title"></h3>
+      <p data-i18n="features.autoFetch.desc"></p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon purple">🤖</div>
+      <h3 data-i18n="features.aiTranslate.title"></h3>
+      <p data-i18n="features.aiTranslate.desc"></p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon green">📤</div>
+      <h3 data-i18n="features.export.title"></h3>
+      <p data-i18n="features.export.desc"></p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon orange">✏️</div>
+      <h3 data-i18n="features.manual.title"></h3>
+      <p data-i18n="features.manual.desc"></p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon red">🌐</div>
+      <h3 data-i18n="features.googleTranslate.title"></h3>
+      <p data-i18n="features.googleTranslate.desc"></p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon yellow">🌍</div>
+      <h3 data-i18n="features.bilingual.title"></h3>
+      <p data-i18n="features.bilingual.desc"></p>
+    </div>
+  </div>
+</section>
+
+<!-- How it works -->
+<section class="how" id="how">
+  <div class="how-inner">
+    <h2 data-i18n="how.title"></h2>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-content">
+          <h3 data-i18n="how.step1.title"></h3>
+          <p data-i18n="how.step1.desc"></p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-content">
+          <h3 data-i18n="how.step2.title"></h3>
+          <p data-i18n="how.step2.desc"></p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-content">
+          <h3 data-i18n="how.step3.title"></h3>
+          <p data-i18n="how.step3.desc"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Export Preview -->
+<section class="export-preview">
+  <div class="export-frame">
+    <img src="screenshots/export.png" data-i18n-alt="export.alt" loading="lazy">
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta" id="try">
+  <h2 data-i18n="cta.title"></h2>
+  <p data-i18n="cta.desc"></p>
+  <div class="hero-actions">
+    <a href="#" class="btn-hero btn-hero-primary" id="ctaBtn" onclick="return handleTry()">
+      <span data-i18n="cta.tryBtn"></span>
+    </a>
+    <a href="https://github.com/yangwenmai/tweetquote" target="_blank" class="btn-hero btn-hero-secondary">
+      ⭐ Star on GitHub
+    </a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>
+    Made with ❤️ by <a href="https://x.com/maiyangai" target="_blank">@maiyangai</a>
+    &nbsp;·&nbsp;
+    <a href="https://github.com/yangwenmai/tweetquote" target="_blank">GitHub</a>
+    &nbsp;·&nbsp;
+    MIT License
+  </p>
+</footer>
+
+<script>
+const I18N = {
+  "zh-CN": {
+    "nav.features": "功能",
+    "nav.how": "使用方法",
+    "nav.cta": "开始使用 →",
+    "lang.toggle": "EN",
+    "hero.badge": "Open Source · 免费使用",
+    "hero.slogan": "引用链，一键成图",
+    "hero.desc": "把 Twitter / X 推文引用链变成一张精美可分享的高清图片。<br>支持自动抓取、AI 翻译与智能注释，让每条推文都有完整上下文。",
+    "hero.tryBtn": "立即体验",
+    "showcase.alt": "Tweet Quote 主界面",
+    "features.title": "为什么选择 Tweet Quote",
+    "features.subtitle": "一个简单但强大的工具，让推文引用不再断章取义",
+    "features.autoFetch.title": "链接自动抓取",
+    "features.autoFetch.desc": "粘贴任意推文链接，自动递归抓取完整引用链 — 包括引用和回复关系，最多 10 层。",
+    "features.aiTranslate.title": "AI 翻译 + 智能注释",
+    "features.aiTranslate.desc": "AI 不仅翻译推文，还能标注术语、俚语、文化背景等，悬停即可查看解释。",
+    "features.export.title": "高清 PNG 导出",
+    "features.export.desc": "支持 1x / 2x / 3x 倍率导出，生成可直接分享的精美图片。",
+    "features.manual.title": "手工录入",
+    "features.manual.desc": "不想配 API？手动添加多层推文内容，自由编辑每一层。",
+    "features.googleTranslate.title": "Google 翻译",
+    "features.googleTranslate.desc": "内置 Google 翻译，无需配置即可一键翻译推文内容。",
+    "features.bilingual.title": "中英双语界面",
+    "features.bilingual.desc": "界面支持中文和英文切换，适配不同用户习惯。",
+    "how.title": "三步搞定",
+    "how.step1.title": "粘贴推文链接",
+    "how.step1.desc": "复制任意一条 Twitter / X 推文链接，粘贴到输入框中。",
+    "how.step2.title": "自动抓取 & 翻译",
+    "how.step2.desc": "工具会自动递归获取完整引用链，还可一键 AI 翻译并标注关键术语。",
+    "how.step3.title": "导出分享",
+    "how.step3.desc": "选择导出倍率，点击「导出为 PNG」，一张有完整上下文的推文截图就做好了。",
+    "export.alt": "Tweet Quote 导出效果",
+    "cta.title": "准备好了吗？",
+    "cta.desc": "免费、开源、无需注册。粘贴链接，一键成图。",
+    "cta.tryBtn": "🚀 立即体验",
+    "try.alert": "工具服务即将上线！\n\n目前可以本地运行：\npython3 server.py\n然后访问 http://localhost:8088/",
+  },
+  "en": {
+    "nav.features": "Features",
+    "nav.how": "How It Works",
+    "nav.cta": "Get Started →",
+    "lang.toggle": "中文",
+    "hero.badge": "Open Source · Free to Use",
+    "hero.slogan": "Quote Chain to Image, One Click",
+    "hero.desc": "Turn Twitter / X quote chains into beautiful, shareable HD images.<br>Auto-fetch threads, AI translation with smart annotations — full context, every time.",
+    "hero.tryBtn": "Try It Now",
+    "showcase.alt": "Tweet Quote Main Interface",
+    "features.title": "Why Tweet Quote",
+    "features.subtitle": "A simple yet powerful tool — no more quoting out of context",
+    "features.autoFetch.title": "Auto Fetch by Link",
+    "features.autoFetch.desc": "Paste any tweet link and automatically fetch the full quote chain — including quotes and replies, up to 10 layers deep.",
+    "features.aiTranslate.title": "AI Translation + Annotations",
+    "features.aiTranslate.desc": "AI translates tweets and annotates jargon, slang, and cultural references — hover to see explanations.",
+    "features.export.title": "HD PNG Export",
+    "features.export.desc": "Export at 1x / 2x / 3x resolution to generate beautiful, ready-to-share images.",
+    "features.manual.title": "Manual Input",
+    "features.manual.desc": "Don't want to set up an API? Manually add and edit multi-layer tweet content freely.",
+    "features.googleTranslate.title": "Google Translate",
+    "features.googleTranslate.desc": "Built-in Google Translate — translate tweet content with one click, no setup required.",
+    "features.bilingual.title": "Bilingual Interface",
+    "features.bilingual.desc": "Full Chinese and English UI support, adapting to different user preferences.",
+    "how.title": "3 Simple Steps",
+    "how.step1.title": "Paste a Tweet Link",
+    "how.step1.desc": "Copy any Twitter / X tweet link and paste it into the input field.",
+    "how.step2.title": "Auto Fetch & Translate",
+    "how.step2.desc": "The tool recursively fetches the full quote chain. One-click AI translation annotates key terms.",
+    "how.step3.title": "Export & Share",
+    "how.step3.desc": "Pick your export resolution, hit \"Export as PNG\", and get a screenshot with full context.",
+    "export.alt": "Tweet Quote Export Result",
+    "cta.title": "Ready to Try?",
+    "cta.desc": "Free, open source, no sign-up needed. Paste a link, get an image.",
+    "cta.tryBtn": "🚀 Try It Now",
+    "try.alert": "The hosted service is coming soon!\n\nFor now, run locally:\npython3 server.py\nThen visit http://localhost:8088/",
+  }
+};
+
+const APP_URL = '';
+let lang = localStorage.getItem('tq_landing_lang') || (navigator.language.startsWith('zh') ? 'zh-CN' : 'en');
+
+function t(key) {
+  return (I18N[lang] || I18N['zh-CN'])[key] || key;
+}
+
+function applyLang() {
+  document.documentElement.lang = lang;
+  document.getElementById('langToggle').textContent = t('lang.toggle');
+
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    el.textContent = t(el.dataset.i18n);
+  });
+  document.querySelectorAll('[data-i18n-html]').forEach(el => {
+    el.innerHTML = t(el.dataset.i18nHtml);
+  });
+  document.querySelectorAll('[data-i18n-alt]').forEach(el => {
+    el.alt = t(el.dataset.i18nAlt);
+  });
+}
+
+function switchLang() {
+  lang = lang === 'zh-CN' ? 'en' : 'zh-CN';
+  localStorage.setItem('tq_landing_lang', lang);
+  applyLang();
+}
+
+function handleTry() {
+  if (APP_URL) {
+    window.open(APP_URL, '_blank');
+  } else {
+    alert(t('try.alert'));
+  }
+  return false;
+}
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    const href = this.getAttribute('href');
+    if (href === '#try') {
+      if (!APP_URL) return;
+    }
+    const target = document.querySelector(href);
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth' });
+    }
+  });
+});
+
+applyLang();
+</script>
+</body>
+</html>
