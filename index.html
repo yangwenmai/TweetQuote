@@ -1314,6 +1314,699 @@ function resetAll() {
 }
 
 /* ═══════════════════════════════════════════
+   Batch translation overrides
+   ═══════════════════════════════════════════ */
+Object.assign(LANG["zh-CN"], {
+  "translate.target": "翻译目标",
+  "translate.target.zh": "中文",
+  "translate.target.en": "英文",
+  "batch.google": "🌐 批量翻译",
+  "batch.google.running": "🌐 批量翻译中...",
+  "batch.ai": "🤖 批量 AI 翻译",
+  "batch.ai.running": "🤖 批量 AI 翻译中...",
+  "batch.retry": "重试失败项",
+  "batch.stop": "停止批量",
+  "batch.noneEligible": "没有需要批量翻译的内容",
+  "batch.noneFailed": "没有可重试的失败项",
+  "batch.summary.idle": "默认跳过已有且未过期的译文，避免重复消耗。",
+  "batch.summary.running": "{provider} 进行中：{done}/{total}，失败 {failed}，跳过 {skipped}",
+  "batch.summary.done": "{provider} 完成：成功 {success}，失败 {failed}，跳过 {skipped}",
+  "batch.summary.stopped": "已停止批量，本次处理 {done}/{total}",
+  "batch.summary.stopRequested": "将在当前批次结束后停止",
+  "tweet.status.google": "已用 Google 翻译",
+  "tweet.status.ai": "已用 AI 翻译",
+  "tweet.status.manual": "译文已手动修改",
+  "tweet.status.running.google": "Google 翻译中...",
+  "tweet.status.running.ai": "AI 翻译中...",
+  "tweet.status.error": "翻译失败：{error}",
+  "tweet.status.dirty": "原文已更新，当前译文已过期",
+  "translation.stale": "待刷新",
+  "translate.fail.inline": "Google 翻译失败：{error}",
+  "aiTranslate.fail.inline": "AI 翻译失败：{error}"
+});
+Object.assign(LANG["en"], {
+  "translate.target": "Translation target",
+  "translate.target.zh": "Chinese",
+  "translate.target.en": "English",
+  "batch.google": "🌐 Batch Translate",
+  "batch.google.running": "🌐 Batch Translating...",
+  "batch.ai": "🤖 Batch AI Translate",
+  "batch.ai.running": "🤖 Batch AI Translating...",
+  "batch.retry": "Retry Failed",
+  "batch.stop": "Stop Batch",
+  "batch.noneEligible": "Nothing needs batch translation",
+  "batch.noneFailed": "No failed items to retry",
+  "batch.summary.idle": "Already translated and still-valid items are skipped to avoid waste.",
+  "batch.summary.running": "{provider} running: {done}/{total}, failed {failed}, skipped {skipped}",
+  "batch.summary.done": "{provider} finished: success {success}, failed {failed}, skipped {skipped}",
+  "batch.summary.stopped": "Batch stopped after {done}/{total}",
+  "batch.summary.stopRequested": "Will stop after the current chunk finishes",
+  "tweet.status.google": "Translated with Google",
+  "tweet.status.ai": "Translated with AI",
+  "tweet.status.manual": "Translation edited manually",
+  "tweet.status.running.google": "Google translating...",
+  "tweet.status.running.ai": "AI translating...",
+  "tweet.status.error": "Translation failed: {error}",
+  "tweet.status.dirty": "Source changed, translation is stale",
+  "translation.stale": "Stale",
+  "translate.fail.inline": "Google translation failed: {error}",
+  "aiTranslate.fail.inline": "AI translation failed: {error}"
+});
+
+let translationTargetLang = localStorage.getItem("tnt_translation_target_lang") || (currentLang === "en" ? "en" : "zh-CN");
+const batchState = {
+  running: false,
+  stopRequested: false,
+  total: 0,
+  done: 0,
+  failed: 0,
+  skipped: 0,
+  provider: "",
+  lastProvider: "",
+  summary: ""
+};
+
+function injectBatchStyles() {
+  if (document.getElementById("batchTranslationStyles")) return;
+  const style = document.createElement("style");
+  style.id = "batchTranslationStyles";
+  style.textContent = `
+    .batch-panel { margin: 12px 0 14px; }
+    .batch-toolbar-row { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+    .batch-target-group { display: inline-flex; align-items: center; gap: 8px; }
+    .batch-target-group label { font-size: 12px; font-weight: 700; color: #536471; }
+    .batch-target-group select {
+      padding: 7px 10px; border-radius: 8px; border: 1px solid #cfd9de; background: #fff; color: #0f1419;
+      font-size: 13px;
+    }
+    .batch-actions { display: flex; gap: 8px; flex-wrap: wrap; }
+    .batch-btn {
+      padding: 6px 12px; border-radius: 8px; border: 1px solid #cfd9de; background: #fff; color: #536471;
+      font-size: 12px; font-weight: 700; cursor: pointer;
+    }
+    .batch-btn:hover { background: #f7f9f9; }
+    .batch-btn:disabled { opacity: 0.5; cursor: default; }
+    .batch-btn.primary { border-color: #1d9bf0; color: #1d9bf0; }
+    .batch-btn.ai { border-color: #794bc4; color: #794bc4; }
+    .batch-btn.stop { border-color: #e0245e; color: #e0245e; }
+    .batch-status {
+      margin-top: 10px; padding: 10px 12px; border-radius: 10px; background: #f7f9f9; color: #536471;
+      font-size: 12px; line-height: 1.5; border: 1px solid #e1e4e8;
+    }
+    .translate-meta {
+      margin-top: 8px; padding: 8px 10px; border-radius: 8px; font-size: 12px; line-height: 1.45;
+      border: 1px solid transparent;
+    }
+    .translate-meta.running { background: #f0f8ff; color: #1d9bf0; border-color: #b6e0fe; }
+    .translate-meta.success { background: #eefaf4; color: #14824b; border-color: #bfe8cf; }
+    .translate-meta.error { background: #fff1f3; color: #c81e4d; border-color: #f5c2cf; }
+    .translate-meta.dirty { background: #fff8e8; color: #b7791f; border-color: #f6d293; }
+    .translation-label-row { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+    .translation-stale {
+      display: inline-flex; align-items: center; padding: 2px 7px; border-radius: 9999px; background: #fff3cd;
+      color: #9a6700; font-size: 11px; font-weight: 700;
+    }
+  `;
+  document.head.appendChild(style);
+}
+
+function ensureBatchToolbar() {
+  injectBatchStyles();
+  if (document.getElementById("translationToolbar")) return;
+  const toolbar = document.createElement("div");
+  toolbar.id = "translationToolbar";
+  toolbar.className = "api-config batch-panel";
+  toolbar.innerHTML = `
+    <div class="batch-toolbar-row">
+      <div class="batch-target-group">
+        <label for="translationTargetLangSelect" id="targetLangLabel"></label>
+        <select id="translationTargetLangSelect">
+          <option value="zh-CN"></option>
+          <option value="en"></option>
+        </select>
+      </div>
+      <div class="batch-actions">
+        <button class="batch-btn primary" id="btnBatchGoogle" onclick="startBatchTranslate('google')"></button>
+        <button class="batch-btn ai" id="btnBatchAi" onclick="startBatchTranslate('ai')"></button>
+        <button class="batch-btn" id="btnRetryFailed" onclick="retryFailedTranslations()"></button>
+        <button class="batch-btn stop" id="btnStopBatch" onclick="requestStopBatch()"></button>
+      </div>
+    </div>
+    <div class="batch-status" id="batchStatusText"></div>
+  `;
+  document.getElementById("inputArea").before(toolbar);
+  document.getElementById("translationTargetLangSelect").addEventListener("change", function() {
+    setTranslationTargetLang(this.value);
+  });
+}
+
+function createTweet(overrides) {
+  return Object.assign({
+    name: "",
+    handle: "",
+    content: "",
+    date: "",
+    avatar: "",
+    views: "",
+    translatedContent: "",
+    annotations: [],
+    translateStatus: "idle",
+    translateError: "",
+    lastTranslatedAt: "",
+    lastTranslateProvider: "",
+    dirty: false
+  }, overrides || {});
+}
+
+function normalizeTweet(tw) {
+  return createTweet(tw || {});
+}
+
+function normalizeTweetsInPlace() {
+  tweets = (tweets || []).map(normalizeTweet);
+}
+
+function empty() {
+  return createTweet();
+}
+
+function parseTweetObj(tw) {
+  const a = tw.author || {};
+  return createTweet({
+    name: a.name || "",
+    handle: a.userName ? `@${a.userName}` : "",
+    avatar: avatarUrl(a.profilePicture || ""),
+    date: tw.createdAt ? formatTweetDate(tw.createdAt) : "",
+    views: formatViews(tw.viewCount),
+    content: tw.text || "",
+    annotations: []
+  });
+}
+
+function setTranslationTargetLang(lang) {
+  translationTargetLang = lang === "en" ? "en" : "zh-CN";
+  localStorage.setItem("tnt_translation_target_lang", translationTargetLang);
+  updateBatchControls();
+}
+
+function getTargetLang() {
+  return translationTargetLang === "en" ? "en" : "zh-CN";
+}
+
+function providerLabel(provider) {
+  return provider === "ai" ? "AI" : "Google";
+}
+
+function getTweetContextRole(idx) {
+  if (idx === 0) return "main";
+  return tweets[idx]?._rel === "reply" ? "replyParent" : "quote";
+}
+
+function hasFreshTranslation(tw) {
+  return !!(tw.translatedContent && tw.translatedContent.trim()) && !tw.dirty;
+}
+
+function getDisplayContent(tw) {
+  return hasFreshTranslation(tw) ? tw.translatedContent : (tw.content || "");
+}
+
+function getTweetStatusInfo(tw) {
+  if (tw.translateStatus === "running") {
+    return { cls: "running", text: t(tw.lastTranslateProvider === "ai" ? "tweet.status.running.ai" : "tweet.status.running.google") };
+  }
+  if (tw.translateStatus === "error" && tw.translateError) {
+    return { cls: "error", text: t("tweet.status.error", { error: tw.translateError }) };
+  }
+  if (tw.dirty && tw.translatedContent) {
+    return { cls: "dirty", text: t("tweet.status.dirty") };
+  }
+  if (tw.translatedContent && tw.lastTranslateProvider) {
+    const key = tw.lastTranslateProvider === "manual"
+      ? "tweet.status.manual"
+      : (tw.lastTranslateProvider === "ai" ? "tweet.status.ai" : "tweet.status.google");
+    return { cls: "success", text: t(key) };
+  }
+  return null;
+}
+
+function setTweetRunning(idx, provider) {
+  tweets[idx] = normalizeTweet(tweets[idx]);
+  tweets[idx].translateStatus = "running";
+  tweets[idx].translateError = "";
+  tweets[idx].lastTranslateProvider = provider;
+}
+
+function markTweetError(idx, message, provider) {
+  tweets[idx] = normalizeTweet(tweets[idx]);
+  tweets[idx].translateStatus = "error";
+  tweets[idx].translateError = message;
+  tweets[idx].lastTranslateProvider = provider || tweets[idx].lastTranslateProvider || "";
+}
+
+function applyTranslationToTweet(idx, translation, annotations, provider) {
+  tweets[idx] = normalizeTweet(tweets[idx]);
+  tweets[idx].translatedContent = translation || "";
+  tweets[idx].annotations = Array.isArray(annotations) ? annotations : [];
+  tweets[idx].translateStatus = translation ? "success" : "idle";
+  tweets[idx].translateError = "";
+  tweets[idx].lastTranslateProvider = provider;
+  tweets[idx].lastTranslatedAt = new Date().toISOString();
+  tweets[idx].dirty = false;
+}
+
+function clearQueuedStates() {
+  for (let i = 0; i < tweets.length; i++) {
+    tweets[i] = normalizeTweet(tweets[i]);
+    if (tweets[i].translateStatus === "queued" || tweets[i].translateStatus === "running") {
+      tweets[i].translateStatus = tweets[i].dirty ? "stale" : (tweets[i].translatedContent ? "success" : "idle");
+    }
+  }
+}
+
+function requestJson(url, payload) {
+  return fetch(url, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(payload)
+  }).then(async resp => {
+    const data = await resp.json().catch(() => ({}));
+    if (!resp.ok) throw new Error(data.error || `HTTP ${resp.status}`);
+    return data;
+  });
+}
+
+function buildAiPayload(extra) {
+  const payload = Object.assign({}, extra || {});
+  if (aiApiKey) payload.ai_api_key = aiApiKey;
+  if (aiBaseUrl) payload.ai_base_url = aiBaseUrl;
+  if (aiModel) payload.ai_model = aiModel;
+  return payload;
+}
+
+async function runSingleTranslation(idx, provider) {
+  normalizeTweetsInPlace();
+  const tw = tweets[idx];
+  const text = (tw.content || "").trim();
+  if (!text) return;
+  if (provider === "ai" && !isAiAvailable()) {
+    markTweetError(idx, t("ai.status.none"), provider);
+    renderInputs();
+    return;
+  }
+
+  setTweetRunning(idx, provider);
+  renderInputs();
+
+  try {
+    if (provider === "ai") {
+      const data = await requestJson("/api/ai-translate", buildAiPayload({ text, to: getTargetLang() }));
+      applyTranslationToTweet(idx, data.translation, filterAnnotations(data.annotations || [], data.translation), "ai");
+    } else {
+      const data = await requestJson("/api/translate", { text, from: "auto", to: getTargetLang() });
+      applyTranslationToTweet(idx, data.translated, [], "google");
+    }
+  } catch (e) {
+    const errorText = provider === "ai"
+      ? t("aiTranslate.fail.inline", { error: e.message })
+      : t("translate.fail.inline", { error: e.message });
+    markTweetError(idx, errorText, provider);
+  }
+
+  renderInputs();
+  renderPreview();
+  updateExportBtn();
+}
+
+async function translateContent(idx) {
+  return runSingleTranslation(idx, "google");
+}
+
+async function aiTranslateContent(idx) {
+  return runSingleTranslation(idx, "ai");
+}
+
+function collectBatchTargets(retryOnly) {
+  normalizeTweetsInPlace();
+  const withContent = [];
+  const targets = [];
+  for (let i = 0; i < tweets.length; i++) {
+    const tw = tweets[i];
+    if (!(tw.content || "").trim()) continue;
+    withContent.push(i);
+    const shouldRetry = tw.translateStatus === "error";
+    const shouldTranslate = tw.dirty || !tw.translatedContent || !tw.translatedContent.trim() || shouldRetry;
+    if (retryOnly ? shouldRetry : shouldTranslate) targets.push(i);
+  }
+  return { targets, skipped: Math.max(0, withContent.length - targets.length) };
+}
+
+function splitBatchIndexes(indexes) {
+  const groups = [];
+  let current = [];
+  let totalChars = 0;
+  for (const idx of indexes) {
+    const size = (tweets[idx].content || "").length;
+    if (current.length && (current.length >= 4 || totalChars + size > 5200)) {
+      groups.push(current);
+      current = [];
+      totalChars = 0;
+    }
+    current.push(idx);
+    totalChars += size;
+  }
+  if (current.length) groups.push(current);
+  return groups;
+}
+
+function buildBatchItems(indexes) {
+  return indexes.map(idx => ({
+    id: String(idx),
+    text: (tweets[idx].content || "").trim(),
+    contextRole: getTweetContextRole(idx)
+  }));
+}
+
+function updateBatchControls() {
+  ensureBatchToolbar();
+  const select = document.getElementById("translationTargetLangSelect");
+  const optZh = select.querySelector('option[value="zh-CN"]');
+  const optEn = select.querySelector('option[value="en"]');
+  document.getElementById("targetLangLabel").textContent = t("translate.target");
+  optZh.textContent = t("translate.target.zh");
+  optEn.textContent = t("translate.target.en");
+  select.value = getTargetLang();
+
+  const batchGoogle = document.getElementById("btnBatchGoogle");
+  const batchAi = document.getElementById("btnBatchAi");
+  const retryBtn = document.getElementById("btnRetryFailed");
+  const stopBtn = document.getElementById("btnStopBatch");
+  batchGoogle.textContent = batchState.running && batchState.provider === "google" ? t("batch.google.running") : t("batch.google");
+  batchAi.textContent = batchState.running && batchState.provider === "ai" ? t("batch.ai.running") : t("batch.ai");
+  retryBtn.textContent = t("batch.retry");
+  stopBtn.textContent = t("batch.stop");
+
+  batchGoogle.disabled = batchState.running;
+  batchAi.disabled = batchState.running || !isAiAvailable();
+  retryBtn.disabled = batchState.running || !tweets.some(tw => normalizeTweet(tw).translateStatus === "error");
+  stopBtn.disabled = !batchState.running;
+
+  document.getElementById("batchStatusText").textContent = batchState.summary || t("batch.summary.idle");
+}
+
+function resetBatchState(keepSummary) {
+  batchState.running = false;
+  batchState.stopRequested = false;
+  batchState.total = 0;
+  batchState.done = 0;
+  batchState.failed = 0;
+  batchState.skipped = 0;
+  batchState.provider = "";
+  if (!keepSummary) batchState.summary = "";
+}
+
+function refreshAfterTranslationUpdate() {
+  renderInputs();
+  renderPreview();
+  updateExportBtn();
+  updateBatchControls();
+}
+
+async function startBatchTranslate(provider, options) {
+  options = options || {};
+  if (batchState.running) return;
+  if (provider === "ai" && !isAiAvailable()) {
+    batchState.summary = t("ai.status.none");
+    updateBatchControls();
+    return;
+  }
+
+  const { targets, skipped } = collectBatchTargets(!!options.retryOnly);
+  if (targets.length === 0) {
+    batchState.summary = t(options.retryOnly ? "batch.noneFailed" : "batch.noneEligible");
+    updateBatchControls();
+    return;
+  }
+
+  batchState.running = true;
+  batchState.stopRequested = false;
+  batchState.total = targets.length;
+  batchState.done = 0;
+  batchState.failed = 0;
+  batchState.skipped = skipped;
+  batchState.provider = provider;
+  batchState.lastProvider = provider;
+  batchState.summary = t("batch.summary.running", {
+    provider: providerLabel(provider),
+    done: batchState.done,
+    total: batchState.total,
+    failed: batchState.failed,
+    skipped: batchState.skipped
+  });
+
+  for (const idx of targets) {
+    tweets[idx] = normalizeTweet(tweets[idx]);
+    tweets[idx].translateStatus = "queued";
+    tweets[idx].translateError = "";
+    tweets[idx].lastTranslateProvider = provider;
+  }
+  refreshAfterTranslationUpdate();
+
+  const groups = splitBatchIndexes(targets);
+  for (const group of groups) {
+    if (batchState.stopRequested) break;
+    group.forEach(idx => setTweetRunning(idx, provider));
+    refreshAfterTranslationUpdate();
+
+    let results = [];
+    try {
+      if (provider === "ai") {
+        const data = await requestJson("/api/ai-translate-batch", buildAiPayload({
+          to: getTargetLang(),
+          mode: options.retryOnly ? "retryFailed" : "untranslatedOnly",
+          items: buildBatchItems(group)
+        }));
+        results = Array.isArray(data.items) ? data.items : [];
+      } else {
+        const data = await requestJson("/api/translate-batch", {
+          from: "auto",
+          to: getTargetLang(),
+          mode: options.retryOnly ? "retryFailed" : "untranslatedOnly",
+          items: buildBatchItems(group)
+        });
+        results = Array.isArray(data.items) ? data.items : [];
+      }
+    } catch (e) {
+      results = group.map(idx => ({
+        id: String(idx),
+        status: "error",
+        error: { message: e.message }
+      }));
+    }
+
+    const resultMap = new Map(results.map(item => [String(item.id), item]));
+    for (const idx of group) {
+      const result = resultMap.get(String(idx));
+      if (result && result.status === "success" && result.translation) {
+        const annotations = provider === "ai" ? filterAnnotations(result.annotations || [], result.translation) : [];
+        applyTranslationToTweet(idx, result.translation, annotations, provider);
+      } else {
+        markTweetError(idx, result?.error?.message || "Unknown error", provider);
+        batchState.failed += 1;
+      }
+      batchState.done += 1;
+    }
+
+    batchState.summary = t("batch.summary.running", {
+      provider: providerLabel(provider),
+      done: batchState.done,
+      total: batchState.total,
+      failed: batchState.failed,
+      skipped: batchState.skipped
+    });
+    refreshAfterTranslationUpdate();
+  }
+
+  clearQueuedStates();
+  if (batchState.stopRequested) {
+    batchState.summary = t("batch.summary.stopped", {
+      done: batchState.done,
+      total: batchState.total
+    });
+  } else {
+    batchState.summary = t("batch.summary.done", {
+      provider: providerLabel(provider),
+      success: batchState.total - batchState.failed,
+      failed: batchState.failed,
+      skipped: batchState.skipped
+    });
+  }
+  batchState.running = false;
+  batchState.stopRequested = false;
+  refreshAfterTranslationUpdate();
+}
+
+function requestStopBatch() {
+  if (!batchState.running) return;
+  batchState.stopRequested = true;
+  batchState.summary = t("batch.summary.stopRequested");
+  updateBatchControls();
+}
+
+function retryFailedTranslations() {
+  const provider = batchState.lastProvider || (isAiAvailable() ? "ai" : "google");
+  return startBatchTranslate(provider, { retryOnly: true });
+}
+
+function applyLang() {
+  ensureBatchToolbar();
+  document.documentElement.lang = currentLang;
+  document.getElementById("appTitle").textContent = t("app.title");
+  document.getElementById("btnLoadExample").textContent = t("btn.loadExample");
+  document.getElementById("btnReset").textContent = t("btn.reset");
+  document.getElementById("langBtn").textContent = t("btn.langSwitch");
+  document.getElementById("settingsBtn").textContent = t("btn.settings");
+  document.getElementById("settingsTitle").textContent = t("settings.title");
+  document.getElementById("apiConfigLabel").textContent = t("api.config.label");
+  document.getElementById("apiToggleText").textContent = apiConfigOpen ? t("api.toggle.collapse") : t("api.toggle.expand");
+  document.getElementById("apiKeyInput").placeholder = t("api.placeholder.apiKey");
+  updateApiStatus();
+  document.getElementById("apiHelp").innerHTML = t("api.help");
+  document.getElementById("aiConfigLabel").textContent = t("ai.config.label");
+  document.getElementById("aiToggleText").textContent = aiConfigOpen ? t("api.toggle.collapse") : t("api.toggle.expand");
+  document.getElementById("aiBaseUrlInput").placeholder = t("ai.placeholder.baseUrl");
+  document.getElementById("aiApiKeyInput").placeholder = t("ai.placeholder.apiKey");
+  document.getElementById("aiModelInput").placeholder = t("ai.placeholder.model");
+  updateAiStatus();
+  document.getElementById("contactAuthorLabel").textContent = t("settings.contactAuthor");
+  document.getElementById("btnClearSettings").textContent = t("settings.clearConfig");
+  document.getElementById("apiKeyModalTitle").textContent = t("modal.apiKey.title");
+  document.getElementById("apiKeyModalDesc").textContent = t("modal.apiKey.desc");
+  document.getElementById("apiKeyModalDismiss").textContent = t("modal.apiKey.dismiss");
+  document.getElementById("apiKeyModalGoSettings").textContent = t("modal.apiKey.goSettings");
+  document.getElementById("modeAutoTab").textContent = t("mode.auto");
+  document.getElementById("modeManualTab").textContent = t("mode.manual");
+  document.getElementById("autoHint").textContent = t("auto.hint");
+  document.getElementById("autoFetchBtn").textContent = t("auto.fetch");
+  document.getElementById("btnAddLayer").textContent = t("manual.addLayer");
+  document.getElementById("btnRemoveLayer").textContent = t("manual.removeLayer");
+  document.getElementById("exportLabel").textContent = t("export.label");
+  document.getElementById("exportBtn").textContent = t("export.btn");
+  document.getElementById("previewLabel").textContent = t("preview.label");
+  updateBatchControls();
+  renderInputs();
+  renderPreview();
+}
+
+function renderInputs() {
+  ensureBatchToolbar();
+  normalizeTweetsInPlace();
+  const area = document.getElementById("inputArea");
+  area.innerHTML = "";
+  if (tweets.length === 0) {
+    updateBatchControls();
+    return;
+  }
+
+  for (let i = 0; i < tweets.length; i++) {
+    const tw = tweets[i];
+    const color = LAYER_COLORS[i % LAYER_COLORS.length];
+    const block = document.createElement("div");
+    block.className = "tweet-block";
+    block.style.borderLeftColor = color;
+    const labelKey = i === 0 ? "layer.main" : (tw._rel === "reply" ? "layer.reply" : "layer.quote");
+    const label = t(labelKey, { n: i + 1 });
+    const statusInfo = getTweetStatusInfo(tw);
+    const hasTranslation = tw.translatedContent != null && tw.translatedContent !== "";
+    const googleLabel = tw.translateStatus === "running" && tw.lastTranslateProvider === "google"
+      ? t("btn.translating")
+      : t("btn.translate");
+    const aiLabel = tw.translateStatus === "running" && tw.lastTranslateProvider === "ai"
+      ? t("btn.aiTranslating")
+      : t("btn.aiTranslate");
+
+    block.innerHTML = `
+      <div class="block-label" style="color:${color}">${escHtml(label)}</div>
+      <div class="row">
+        <input type="text" placeholder="${esc(t("ph.name"))}" value="${esc(tw.name)}" oninput="upd(${i},'name',this.value)">
+        <input type="text" placeholder="${esc(t("ph.handle"))}" value="${esc(tw.handle)}" oninput="upd(${i},'handle',this.value)">
+      </div>
+      <div class="row-full">
+        <input type="text" placeholder="${esc(t("ph.avatar"))}" value="${esc(tw.avatar)}" oninput="upd(${i},'avatar',this.value)">
+      </div>
+      <div class="row">
+        <input type="text" placeholder="${esc(t("ph.date"))}" value="${esc(tw.date)}" oninput="upd(${i},'date',this.value)">
+        <input type="text" placeholder="${esc(t("ph.views"))}" value="${esc(tw.views)}" oninput="upd(${i},'views',this.value)">
+      </div>
+      <textarea placeholder="${esc(t("ph.content"))}" rows="3" oninput="upd(${i},'content',this.value)">${esc(tw.content || "")}</textarea>
+      <div class="translate-row">
+        <button class="translate-btn" data-translate="${i}" onclick="translateContent(${i})" ${batchState.running || !(tw.content || "").trim() ? "disabled" : ""}>🌐 ${escHtml(googleLabel)}</button>
+        <button class="translate-btn ai-translate-btn" data-ai-translate="${i}" onclick="aiTranslateContent(${i})" ${batchState.running || !isAiAvailable() || !(tw.content || "").trim() ? 'disabled title="'+esc(t("ai.status.none"))+'"' : ""}>🤖 ${escHtml(aiLabel)}</button>
+      </div>
+      ${statusInfo ? `<div class="translate-meta ${statusInfo.cls}">${escHtml(statusInfo.text)}</div>` : ""}
+      ${hasTranslation ? `
+      <div class="translation-box">
+        <div class="translation-label-row">
+          <div class="translation-label">${escHtml(t("translation.result"))}</div>
+          ${tw.dirty ? `<span class="translation-stale">${escHtml(t("translation.stale"))}</span>` : ""}
+        </div>
+        <textarea rows="3" oninput="upd(${i},'translatedContent',this.value)">${esc(tw.translatedContent)}</textarea>
+      </div>
+      ` : ""}
+    `;
+    area.appendChild(block);
+  }
+  updateBatchControls();
+}
+
+function upd(i, field, val) {
+  tweets[i] = normalizeTweet(tweets[i]);
+  tweets[i][field] = val;
+  if (field === "content") {
+    tweets[i].annotations = [];
+    tweets[i].translateError = "";
+    tweets[i].dirty = !!(tweets[i].translatedContent && tweets[i].translatedContent.trim());
+    tweets[i].translateStatus = tweets[i].dirty ? "stale" : "idle";
+    renderInputs();
+  } else if (field === "translatedContent") {
+    tweets[i].annotations = [];
+    tweets[i].dirty = false;
+    tweets[i].translateError = "";
+    tweets[i].translateStatus = val.trim() ? "success" : "idle";
+    tweets[i].lastTranslateProvider = "manual";
+    renderInputs();
+  }
+  renderPreview();
+  updateExportBtn();
+}
+
+function loadExample() {
+  tweets = [
+    createTweet({ name:"Mai Yang", handle:"@MaiYangAI", avatar:"https://pbs.twimg.com/profile_images/2027602364073709576/5L4TUTHt_400x400.jpg",
+      date:"Mar 9", views:"194", annotations:[],
+      content:"非常认同刘飞老师的观点。\n\n刚好今天中午跟朋友吃饭，我也表达了类似的观点。\n\n玩龙虾🦞可以，但是你去研究是为了挖掘你的副业还是为了玩而玩？我自己也玩了几天，确实能有一些价值，帮助你检索，完成对应任务，但是对于普通人来说，你没有场景何来现在有了龙虾🦞就有了场景？\n\n刘飞老师提炼的观点非常齐全，推荐大家自省。" }),
+    createTweet({ name:"刘飞", handle:"@liufeilufy", avatar:"https://pbs.twimg.com/profile_images/1497935790961139714/zrClIfkW_400x400.jpg",
+      date:"9:15 AM · Mar 9, 2026", views:"54.5K", annotations:[],
+      content:"调研了一阵子 OpenClaw 的使用案例（身边朋友，微信群，社交媒体等等），也体验了一下，感受跟之前的很类似：\n\n对于本来就有自己业务的，尤其是商业闭环的，才用得更好，也更愿意充值，因为真的能省事儿，带来生产力，很快就能正向循环。以开发者、自媒体、投资人和小企业老板为主。\n\n对于很多在创业或者作为牛马想搞副业的朋友，想从零开始用 OpenClaw 干拔一个有价值的生意，难度极大，概率极低。\n\n对于多数案例看起来，还是当玩具居多。充值都用免费渠道的 tokens，整天研究省钱，研究怎么让龙虾表演节目什么的，很快就觉得没劲了。\n\n新技术不等于产品价值。还是得有场景有工作流，才有价值。只会说「你自己去学习一下，帮我开发一个会火的 APP」是肯定一定没意义的。" })
+  ];
+  resetBatchState(false);
+  setMode("manual");
+  renderInputs();
+  renderPreview();
+  updateExportBtn();
+}
+
+function resetAll() {
+  tweets = [];
+  resetBatchState(false);
+  document.getElementById("autoLog").innerHTML = "";
+  document.getElementById("autoUrlInput").value = "";
+  renderInputs();
+  renderPreview();
+  updateExportBtn();
+  updateBatchControls();
+}
+
+/* ═══════════════════════════════════════════
    Init
    ═══════════════════════════════════════════ */
 document.getElementById("apiKeyInput").value = apiKey;
