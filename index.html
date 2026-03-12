@@ -145,6 +145,23 @@
     display: flex; flex-direction: column; overflow: hidden;
   }
   .settings-overlay.open .settings-drawer { transform: translateX(0); }
+
+  /* ─── API Key Required Modal ─── */
+  .api-key-modal-overlay {
+    position: fixed; inset: 0; background: rgba(0,0,0,0.45); z-index: 9500;
+    display: flex; align-items: center; justify-content: center; padding: 20px;
+    opacity: 0; visibility: hidden; transition: opacity 0.2s, visibility 0.2s;
+  }
+  .api-key-modal-overlay.open { opacity: 1; visibility: visible; }
+  .api-key-modal {
+    background: #fff; border-radius: 16px; box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+    padding: 24px; max-width: 360px; text-align: center;
+  }
+  .api-key-modal-icon { font-size: 40px; margin-bottom: 12px; }
+  .api-key-modal-title { font-size: 18px; font-weight: 700; color: #0f1419; margin: 0 0 10px; }
+  .api-key-modal-desc { font-size: 14px; color: #536471; line-height: 1.5; margin: 0 0 20px; }
+  .api-key-modal-actions { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+
   .settings-drawer-header {
     display: flex; align-items: center; justify-content: space-between;
     padding: 16px 20px; border-bottom: 1px solid #e1e4e8; flex-shrink: 0;
@@ -364,6 +381,18 @@
   </div>
 </div>
 <div class="global-tooltip" id="globalTooltip"></div>
+<!-- API Key Required Modal -->
+<div class="api-key-modal-overlay" id="apiKeyModalOverlay" onclick="if(event.target===this)hideApiKeyRequiredModal()">
+  <div class="api-key-modal">
+    <div class="api-key-modal-icon">🔑</div>
+    <h3 class="api-key-modal-title" id="apiKeyModalTitle"></h3>
+    <p class="api-key-modal-desc" id="apiKeyModalDesc"></p>
+    <div class="api-key-modal-actions">
+      <button class="btn" onclick="hideApiKeyRequiredModal()" id="apiKeyModalDismiss"></button>
+      <button class="btn btn-primary" onclick="hideApiKeyRequiredModal();toggleSettings();" id="apiKeyModalGoSettings"></button>
+    </div>
+  </div>
+</div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 <script>
 /* ═══════════════════════════════════════════
@@ -405,6 +434,10 @@ const LANG = {
     "ph.views": "阅读量",
     "ph.content": "推文内容...",
     "err.noApiKey": "✗ 请先在顶部配置 API Key",
+    "modal.apiKey.title": "需要配置 API Key",
+    "modal.apiKey.desc": "链接自动抓取需要 TwitterAPI.io 的 API Key。请在设置中配置你的 Key（存储在本地）。",
+    "modal.apiKey.dismiss": "知道了",
+    "modal.apiKey.goSettings": "去设置",
     "err.invalidUrl": "✗ 无法识别推文链接",
     "err.notFound": "未找到推文",
     "fetch.start": "→ 正在抓取推文 {id}...",
@@ -479,6 +512,10 @@ const LANG = {
     "ph.views": "Views",
     "ph.content": "Tweet content...",
     "err.noApiKey": "✗ Please configure API Key at the top first",
+    "modal.apiKey.title": "API Key Required",
+    "modal.apiKey.desc": "Auto-fetch requires a TwitterAPI.io API Key. Please configure your Key in Settings (stored locally).",
+    "modal.apiKey.dismiss": "Got it",
+    "modal.apiKey.goSettings": "Go to Settings",
     "err.invalidUrl": "✗ Cannot recognize tweet link",
     "err.notFound": "Tweet not found",
     "fetch.start": "→ Fetching tweet {id}...",
@@ -557,6 +594,10 @@ function applyLang() {
   document.getElementById("aiModelInput").placeholder = t("ai.placeholder.model");
   updateAiStatus();
   document.getElementById("contactAuthorLabel").textContent = t("settings.contactAuthor");
+  document.getElementById("apiKeyModalTitle").textContent = t("modal.apiKey.title");
+  document.getElementById("apiKeyModalDesc").textContent = t("modal.apiKey.desc");
+  document.getElementById("apiKeyModalDismiss").textContent = t("modal.apiKey.dismiss");
+  document.getElementById("apiKeyModalGoSettings").textContent = t("modal.apiKey.goSettings");
   document.getElementById("modeAutoTab").textContent = t("mode.auto");
   document.getElementById("modeManualTab").textContent = t("mode.manual");
   document.getElementById("autoHint").textContent = t("auto.hint");
@@ -621,7 +662,20 @@ function toggleSettings() {
 }
 document.addEventListener('keydown', function(e) {
   if (e.key === 'Escape' && settingsOpen) toggleSettings();
+  if (e.key === 'Escape' && document.getElementById('apiKeyModalOverlay').classList.contains('open')) hideApiKeyRequiredModal();
 });
+function showApiKeyRequiredModal() {
+  document.getElementById("apiKeyModalTitle").textContent = t("modal.apiKey.title");
+  document.getElementById("apiKeyModalDesc").textContent = t("modal.apiKey.desc");
+  document.getElementById("apiKeyModalDismiss").textContent = t("modal.apiKey.dismiss");
+  document.getElementById("apiKeyModalGoSettings").textContent = t("modal.apiKey.goSettings");
+  document.getElementById("apiKeyModalOverlay").classList.add("open");
+  document.body.style.overflow = "hidden";
+}
+function hideApiKeyRequiredModal() {
+  document.getElementById("apiKeyModalOverlay").classList.remove("open");
+  if (!settingsOpen) document.body.style.overflow = "";
+}
 function updateSettingsBtn() {
   const btn = document.getElementById('settingsBtn');
   const hasConfig = isTwitterApiAvailable() || isAiAvailable();
@@ -782,8 +836,9 @@ async function autoFetch() {
   const btn = document.getElementById("autoFetchBtn");
   const logEl = document.getElementById("autoLog");
   logEl.innerHTML = "";
+  apiKey = (document.getElementById("apiKeyInput")?.value || "").trim() || localStorage.getItem("tnt_api_key") || "";
 
-  if (!isTwitterApiAvailable()) { autoLog("err", t("err.noApiKey")); return; }
+  if (!isTwitterApiAvailable()) { showApiKeyRequiredModal(); return; }
   const tweetId = extractTweetId(urlInput.value);
   if (!tweetId) { autoLog("err", t("err.invalidUrl")); return; }
 
