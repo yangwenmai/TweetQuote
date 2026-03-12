@@ -1,0 +1,1246 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tweet Quote</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: #f0f2f5; color: #0f1419;
+    height: 100vh; display: flex; flex-direction: column;
+  }
+  .header {
+    background: #fff; border-bottom: 1px solid #e1e4e8;
+    padding: 12px 24px; display: flex; align-items: center; justify-content: space-between; flex-shrink: 0;
+  }
+  .header-left { display: flex; align-items: center; gap: 10px; }
+  .header-left a { display: flex; transition: opacity 0.2s; }
+  .header-left a:hover { opacity: 0.8; }
+  .header-left span { font-weight: 700; font-size: 17px; }
+  .header-right { display: flex; gap: 8px; }
+  .btn {
+    padding: 7px 18px; border-radius: 9999px; font-size: 14px; font-weight: 600;
+    cursor: pointer; border: 1px solid #cfd9de; background: #fff; color: #0f1419; transition: background 0.15s;
+  }
+  .btn:hover { background: #f7f9f9; }
+  .btn-primary {
+    background: #1d9bf0; color: #fff; border: none; font-weight: 700; font-size: 15px; padding: 10px 20px;
+  }
+  .btn-primary:hover { background: #1a8cd8; }
+  .btn-primary:disabled { opacity: 0.5; cursor: default; }
+  .main { display: flex; flex: 1; overflow: hidden; }
+  .panel-left {
+    width: 440px; min-width: 360px; background: #fff; border-right: 1px solid #e1e4e8;
+    overflow-y: auto; padding: 20px; flex-shrink: 0;
+  }
+  .panel-right {
+    flex: 1; overflow-y: auto; padding: 32px;
+    display: flex; justify-content: center; align-items: flex-start;
+  }
+  .preview-wrap { width: 100%; max-width: 580px; }
+  .preview-label {
+    font-size: 13px; color: #536471; margin-bottom: 12px; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.05em;
+  }
+  .preview-card {
+    background: #fff; border-radius: 16px; border: 1px solid #cfd9de;
+    overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  }
+  .preview-empty { padding: 40px; text-align: center; color: #536471; font-size: 15px; }
+
+  /* ─── API Config ─── */
+  .api-config {
+    margin-bottom: 16px; padding: 12px 14px;
+    border: 1px solid #cfd9de; border-radius: 12px; background: #f7f9f9;
+  }
+  .api-config-header {
+    display: flex; align-items: center; justify-content: space-between; cursor: pointer; user-select: none;
+  }
+  .api-config-header .label { font-size: 13px; font-weight: 700; color: #536471; }
+  .api-config-header .toggle { font-size: 12px; color: #1d9bf0; font-weight: 600; }
+  .api-config-body { margin-top: 10px; }
+  .api-config-body input {
+    width: 100%; padding: 8px 12px; border: 1px solid #cfd9de; border-radius: 8px;
+    font-size: 13px; font-family: monospace; outline: none; color: #0f1419; background: #fff;
+  }
+  .api-config-body input:focus { border-color: #1d9bf0; }
+  .api-status { margin-top: 6px; font-size: 12px; }
+  .api-status.ok { color: #17bf63; }
+  .api-status.none { color: #536471; }
+
+  /* ─── Auto fetch section ─── */
+  .auto-section {
+    margin-bottom: 16px; padding: 14px;
+    border: 1px solid #1d9bf0; border-radius: 12px; background: #f0f8ff;
+  }
+  .auto-section .label { font-size: 13px; font-weight: 700; color: #1d9bf0; margin-bottom: 8px; }
+  .auto-row { display: flex; gap: 6px; align-items: center; }
+  .auto-row input {
+    flex: 1; font-size: 13px; padding: 8px 12px; background: #fff; border: 1px solid #1d9bf0; border-radius: 8px;
+  }
+  .auto-btn {
+    padding: 8px 18px; border-radius: 8px; border: none; background: #1d9bf0; color: #fff;
+    font-size: 14px; font-weight: 700; cursor: pointer; white-space: nowrap;
+  }
+  .auto-btn:hover { background: #1a8cd8; }
+  .auto-btn:disabled { opacity: 0.5; cursor: default; }
+  .auto-btn.loading { background: #536471; }
+  .auto-log {
+    margin-top: 8px; font-size: 12px; max-height: 120px; overflow-y: auto;
+    font-family: monospace; line-height: 1.6;
+  }
+  .auto-log .ok { color: #17bf63; }
+  .auto-log .err { color: #e0245e; }
+  .auto-log .info { color: #536471; }
+
+  /* ─── Mode tabs ─── */
+  .mode-tabs { display: flex; gap: 0; margin-bottom: 16px; border: 1px solid #cfd9de; border-radius: 10px; overflow: hidden; }
+  .mode-tab {
+    flex: 1; padding: 9px 0; text-align: center; font-size: 13px; font-weight: 700;
+    cursor: pointer; background: #fff; color: #536471; border: none; transition: all 0.15s;
+  }
+  .mode-tab.active { background: #1d9bf0; color: #fff; }
+  .mode-tab + .mode-tab { border-left: 1px solid #cfd9de; }
+
+  /* ─── Tweet input blocks ─── */
+  .section-label { font-size: 13px; color: #536471; margin-bottom: 8px; font-weight: 600; }
+  .tweet-block { margin-bottom: 14px; padding-left: 14px; border-left: 3px solid #cfd9de; }
+  .block-label { font-size: 12px; font-weight: 700; margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.05em; color: #536471; }
+  .row { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 8px; }
+  .row-full { margin-bottom: 8px; }
+  input, textarea {
+    width: 100%; padding: 8px 12px; border: 1px solid #cfd9de; border-radius: 8px;
+    font-size: 14px; font-family: inherit; outline: none; color: #0f1419; background: #f7f9f9;
+  }
+  input:focus, textarea:focus { border-color: #1d9bf0; }
+  textarea { resize: vertical; min-height: 70px; }
+
+  /* ─── Manual add/remove ─── */
+  .layer-actions { display: flex; gap: 8px; margin-bottom: 14px; }
+  .layer-action-btn {
+    padding: 6px 14px; border-radius: 8px; font-size: 13px; font-weight: 600;
+    cursor: pointer; border: 1px solid #cfd9de; background: #fff; color: #536471;
+  }
+  .layer-action-btn:hover { background: #f7f9f9; }
+  .layer-action-btn.danger { color: #e0245e; border-color: #e0245e; }
+
+  /* ─── Settings Panel ─── */
+  .settings-btn {
+    display: inline-flex; align-items: center; gap: 5px;
+    font-weight: 700 !important; border: 2px solid #536471 !important; color: #536471 !important;
+  }
+  .settings-btn:hover { background: #f7f9f9 !important; color: #0f1419 !important; border-color: #0f1419 !important; }
+  .settings-btn.has-config { border-color: #17bf63 !important; color: #17bf63 !important; }
+  .settings-overlay {
+    position: fixed; inset: 0; background: rgba(0,0,0,0.4); z-index: 9000;
+    opacity: 0; visibility: hidden; transition: opacity 0.2s, visibility 0.2s;
+  }
+  .settings-overlay.open { opacity: 1; visibility: visible; }
+  .settings-drawer {
+    position: fixed; top: 0; right: 0; bottom: 0; width: 420px; max-width: 92vw;
+    background: #fff; z-index: 9001; box-shadow: -4px 0 24px rgba(0,0,0,0.15);
+    transform: translateX(100%); transition: transform 0.28s cubic-bezier(0.4,0,0.2,1);
+    display: flex; flex-direction: column; overflow: hidden;
+  }
+  .settings-overlay.open .settings-drawer { transform: translateX(0); }
+  .settings-drawer-header {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 16px 20px; border-bottom: 1px solid #e1e4e8; flex-shrink: 0;
+  }
+  .settings-drawer-header h2 { font-size: 17px; font-weight: 700; margin: 0; color: #0f1419; }
+  .settings-close-btn {
+    width: 32px; height: 32px; border-radius: 50%; border: none; background: #f7f9f9;
+    cursor: pointer; font-size: 18px; color: #536471; display: flex; align-items: center; justify-content: center;
+    transition: background 0.15s;
+  }
+  .settings-close-btn:hover { background: #e1e4e8; color: #0f1419; }
+  .settings-drawer-body { flex: 1; overflow-y: auto; padding: 20px; }
+  .settings-drawer-body .api-config { margin-bottom: 16px; }
+
+  /* ─── Export ─── */
+  .export-section { margin-top: 8px; padding-top: 12px; border-top: 1px solid #e1e4e8; }
+  .scale-btns { display: flex; gap: 8px; margin-bottom: 16px; }
+  .scale-btn {
+    flex: 1; padding: 6px 0; border-radius: 8px; font-weight: 600; font-size: 13px;
+    cursor: pointer; border: 1px solid #cfd9de; background: #fff; color: #536471;
+  }
+  .scale-btn.active { border: 2px solid #1d9bf0; background: #e8f5fd; color: #1d9bf0; }
+
+  /* ─── Tweet Preview ─── */
+  .tw { padding: 16px 16px 12px; background: #fff; }
+  .tw-quoted { border: 1px solid #cfd9de; border-radius: 16px; padding: 12px 16px; margin-top: 12px; background: #fff; }
+  .tw-header { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
+  .tw-avatar { border-radius: 50%; object-fit: cover; flex-shrink: 0; }
+  .tw-avatar-placeholder {
+    border-radius: 50%; display: flex; align-items: center; justify-content: center;
+    color: #fff; font-weight: 700; flex-shrink: 0;
+  }
+  .tw-meta { display: flex; flex-direction: column; }
+  .tw-meta-inline { display: flex; flex-direction: row; align-items: center; gap: 4px; flex-wrap: wrap; }
+  .tw-name { font-weight: 700; color: #0f1419; display: flex; align-items: center; }
+  .tw-handle { color: #536471; }
+  .tw-content { line-height: 1.5; color: #0f1419; white-space: pre-wrap; word-break: break-word; }
+  .tw-footer { display: flex; align-items: center; gap: 6px; color: #536471; flex-wrap: wrap; }
+  .tw-views { display: inline-flex; align-items: center; gap: 4px; }
+  .verified-badge { margin-left: 2px; flex-shrink: 0; }
+
+  /* ─── Language Switcher ─── */
+  .lang-btn {
+    font-weight: 700 !important; min-width: 50px; text-align: center;
+    border: 2px solid #1d9bf0 !important; color: #1d9bf0 !important;
+  }
+  .lang-btn:hover { background: #e8f5fd !important; }
+
+  /* ─── Translate Button ─── */
+  .translate-row { display: flex; justify-content: flex-end; margin-top: 4px; gap: 6px; }
+  .translate-btn {
+    padding: 3px 10px; border-radius: 6px; font-size: 12px; font-weight: 600;
+    cursor: pointer; border: 1px solid #1d9bf0; background: #fff; color: #1d9bf0;
+    transition: all 0.15s; display: inline-flex; align-items: center; gap: 4px;
+  }
+  .translate-btn:hover { background: #e8f5fd; }
+  .translate-btn:disabled { opacity: 0.5; cursor: default; }
+  .ai-translate-btn {
+    border-color: #794bc4 !important; color: #794bc4 !important;
+  }
+  .ai-translate-btn:hover { background: #f3ecfa !important; }
+
+  /* ─── Translation result box ─── */
+  .translation-box { margin-top: 10px; padding: 10px 12px; background: #f0f8ff; border: 1px solid #1d9bf0; border-radius: 8px; }
+  .translation-box .translation-label { font-size: 11px; font-weight: 700; color: #1d9bf0; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 6px; }
+  .translation-box textarea { background: #fff; min-height: 60px; }
+
+  /* ─── Annotations ─── */
+  .annotation {
+    position: relative;
+    border-bottom: 2px dashed var(--ann-color, #794bc4);
+    background: linear-gradient(to bottom, transparent 60%, var(--ann-bg, rgba(121,75,196,0.08)) 60%);
+    padding: 0 2px; border-radius: 2px; cursor: help;
+    transition: background 0.2s;
+  }
+  .annotation:hover { background: var(--ann-bg-hover, rgba(121,75,196,0.15)); }
+  .ann-badge {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 14px; height: 14px; border-radius: 50%;
+    background: var(--ann-color, #794bc4); color: #fff;
+    font-size: 9px; font-weight: 700; margin-left: 1px;
+    vertical-align: text-top; line-height: 1;
+  }
+  .global-tooltip {
+    position: fixed; z-index: 10000;
+    background: #1a1a2e; color: #e8e8f0;
+    padding: 14px 18px; border-radius: 14px;
+    font-size: 13px; line-height: 1.6;
+    max-width: 340px; min-width: 180px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+    pointer-events: none; opacity: 0;
+    transition: opacity 0.15s;
+    white-space: normal; word-break: break-word;
+  }
+  .global-tooltip.visible { opacity: 1; }
+  .global-tooltip .tt-type {
+    display: inline-block; padding: 2px 8px; border-radius: 6px;
+    background: rgba(121,75,196,0.3); color: #c8a8f8;
+    font-size: 11px; font-weight: 600; margin-bottom: 8px;
+  }
+  .global-tooltip .tt-original {
+    color: #a8a8c0; font-size: 12px; margin-bottom: 6px;
+    font-style: italic;
+  }
+  .global-tooltip .tt-explain { color: #e8e8f0; }
+  .global-tooltip .tt-divider {
+    height: 1px; background: rgba(255,255,255,0.1);
+    margin: 8px 0;
+  }
+
+  /* Hide annotations in export */
+  .export-mode .annotation {
+    border-bottom: none !important; background: none !important;
+    padding: 0 !important; cursor: default !important;
+  }
+  .export-mode .ann-badge { display: none !important; }
+</style>
+</head>
+<body>
+<div class="header">
+  <div class="header-left"><a href="https://x.com/maiyangai" target="_blank" rel="noopener noreferrer" title="@maiyangai"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiHIZuDb--IJ-q5d97gWm1W2eyLj7BePcWnQ&amp;s" height="40" width="40"/></a><span id="appTitle">Tweet Quote</span></div>
+  <div class="header-right">
+    <button class="btn lang-btn" onclick="switchLang()" id="langBtn">EN</button>
+    <button class="btn" onclick="loadExample()" id="btnLoadExample">载入示例</button>
+    <button class="btn" onclick="resetAll()" id="btnReset">清空</button>
+    <button class="btn settings-btn" onclick="toggleSettings()" id="settingsBtn">⚙ 设置</button>
+  </div>
+</div>
+<div class="main">
+  <div class="panel-left">
+    <!-- Mode tabs -->
+    <div class="mode-tabs">
+      <button class="mode-tab active" id="modeAutoTab" onclick="setMode('auto')">🔗 链接自动抓取</button>
+      <button class="mode-tab" id="modeManualTab" onclick="setMode('manual')">✏️ 手工录入</button>
+    </div>
+
+    <!-- Auto mode -->
+    <div id="autoPanel">
+      <div class="auto-section">
+        <div class="label" id="autoHint">粘贴任意一条推文链接，自动抓取完整引用链</div>
+        <div class="auto-row">
+          <input type="text" id="autoUrlInput" placeholder="https://x.com/user/status/..." onkeydown="if(event.key==='Enter'){event.preventDefault();autoFetch()}">
+          <button class="auto-btn" id="autoFetchBtn" onclick="autoFetch()">一键抓取</button>
+        </div>
+        <div class="auto-log" id="autoLog"></div>
+      </div>
+    </div>
+
+    <!-- Manual mode (hidden by default) -->
+    <div id="manualPanel" style="display:none">
+      <div class="layer-actions">
+        <button class="layer-action-btn" onclick="addLayer()" id="btnAddLayer">+ 添加层级</button>
+        <button class="layer-action-btn danger" onclick="removeLayer()" id="btnRemoveLayer">- 移除最后一层</button>
+      </div>
+    </div>
+
+    <!-- Shared: tweet edit cards -->
+    <div id="inputArea"></div>
+
+    <!-- Export -->
+    <div class="export-section">
+      <div class="section-label" id="exportLabel">导出倍率</div>
+      <div class="scale-btns" id="scaleBtns"></div>
+      <button class="btn btn-primary" style="width:100%" onclick="exportPNG()" id="exportBtn" disabled>导出为 PNG</button>
+    </div>
+  </div>
+  <div class="panel-right">
+    <div class="preview-wrap">
+      <div class="preview-label" id="previewLabel">预览</div>
+      <div class="preview-card" id="previewCard">
+        <div class="preview-empty">在左侧填入推文内容或粘贴链接自动抓取</div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Settings Drawer -->
+<div class="settings-overlay" id="settingsOverlay" onclick="if(event.target===this)toggleSettings()">
+  <div class="settings-drawer">
+    <div class="settings-drawer-header">
+      <h2 id="settingsTitle">⚙ 设置</h2>
+      <button class="settings-close-btn" onclick="toggleSettings()">✕</button>
+    </div>
+    <div class="settings-drawer-body">
+      <!-- Twitter API Config -->
+      <div class="api-config">
+        <div class="api-config-header" onclick="toggleApiConfig()">
+          <span class="label" id="apiConfigLabel">🔑 TwitterAPI.io 配置（可选）</span>
+          <span class="toggle" id="apiToggleText">收起</span>
+        </div>
+        <div class="api-config-body" id="apiBody">
+          <input type="password" id="apiKeyInput" placeholder="输入你的 API Key..." oninput="saveApiKey()">
+          <div class="api-status none" id="apiStatus">未配置 — 仅可使用手工录入</div>
+          <div id="apiHelp" style="margin-top:6px;font-size:11px;color:#536471">
+            需通过 <code style="background:#e8f5fd;padding:1px 4px;border-radius:3px">python3 server.py</code> 启动本地服务。<a href="https://twitterapi.io" target="_blank" style="color:#1d9bf0">获取 API Key →</a>
+          </div>
+        </div>
+      </div>
+      <!-- AI Config -->
+      <div class="api-config" id="aiConfig">
+        <div class="api-config-header" onclick="toggleAiConfig()">
+          <span class="label" id="aiConfigLabel">🤖 AI 翻译配置（可选）</span>
+          <span class="toggle" id="aiToggleText">收起</span>
+        </div>
+        <div class="api-config-body" id="aiBody">
+          <input type="text" id="aiBaseUrlInput" placeholder="API Base URL (如: https://api.openai.com/v1)" oninput="saveAiConfig()">
+          <input type="password" id="aiApiKeyInput" placeholder="AI API Key" oninput="saveAiConfig()" style="margin-top:6px">
+          <input type="text" id="aiModelInput" placeholder="模型 (如: gpt-4o-mini)" oninput="saveAiConfig()" style="margin-top:6px">
+          <div class="api-status none" id="aiStatus">未配置 — AI 翻译不可用</div>
+        </div>
+      </div>
+      <!-- 联系作者 -->
+      <div class="api-config" style="margin-top:24px;padding-top:16px;border-top:1px solid #e1e4e8">
+        <div class="label" style="font-size:13px;color:#536471;margin-bottom:6px" id="contactAuthorLabel">联系作者</div>
+        <a href="https://x.com/maiyangai" target="_blank" rel="noopener noreferrer" style="color:#1d9bf0;font-size:14px;text-decoration:none">@maiyangai</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="global-tooltip" id="globalTooltip"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script>
+/* ═══════════════════════════════════════════
+   i18n Language Pack
+   ═══════════════════════════════════════════ */
+const LANG = {
+  "zh-CN": {
+    "app.title": "Tweet Quote",
+    "btn.loadExample": "载入示例",
+    "btn.reset": "清空",
+    "btn.langSwitch": "EN",
+    "api.config.label": "🔑 TwitterAPI.io 配置（可选）",
+    "api.toggle.expand": "展开",
+    "api.toggle.collapse": "收起",
+    "api.placeholder.apiKey": "输入你的 API Key...",
+    "api.status.configured": "✓ 已配置",
+    "api.status.server": "✓ 使用服务端配置",
+    "api.status.none": "未配置 — 仅可使用手工录入",
+    "api.help": '需通过 <code style="background:#e8f5fd;padding:1px 4px;border-radius:3px">python3 server.py</code> 启动本地服务，访问 <a href="/" style="color:#1d9bf0">http://localhost:8088/</a>。<a href="https://twitterapi.io" target="_blank" style="color:#1d9bf0">获取 API Key →</a>',
+    "mode.auto": "🔗 链接自动抓取",
+    "mode.manual": "✏️ 手工录入",
+    "auto.hint": "粘贴任意一条推文链接，自动抓取完整引用链",
+    "auto.fetch": "一键抓取",
+    "auto.fetching": "抓取中...",
+    "manual.addLayer": "+ 添加层级",
+    "manual.removeLayer": "- 移除最后一层",
+    "export.label": "导出倍率",
+    "export.btn": "导出为 PNG",
+    "export.exporting": "导出中...",
+    "export.fail": "导出失败: {error}",
+    "preview.label": "预览",
+    "preview.empty": "在左侧填入推文内容或粘贴链接自动抓取",
+    "layer.main": "第 {n} 层 · 主推文",
+    "layer.quote": "第 {n} 层 · 引用",
+    "ph.name": "显示名称",
+    "ph.handle": "@用户名",
+    "ph.avatar": "头像 URL",
+    "ph.date": "日期",
+    "ph.views": "阅读量",
+    "ph.content": "推文内容...",
+    "err.noApiKey": "✗ 请先在顶部配置 API Key",
+    "err.invalidUrl": "✗ 无法识别推文链接",
+    "err.notFound": "未找到推文",
+    "fetch.start": "→ 正在抓取推文 {id}...",
+    "fetch.layer": "✓ 第 {n} 层: {name} — {text}...",
+    "fetch.layerEmbed": "✓ 第 {n} 层 (内嵌): {name} — {text}...",
+    "fetch.incomplete": "→ 第 {n} 层数据不完整，正在通过 API 补全 {id}...",
+    "fetch.layerFail": "✗ 第 {n} 层抓取失败: {error}",
+    "fetch.replyStart": "→ 第 {n} 层发现回复关系，正在抓取原推 {id}...",
+    "fetch.replyLayer": "✓ 第 {n} 层 (回复原推): {name} — {text}...",
+    "fetch.done": "── 完成！共 {n} 层 ──",
+    "fetch.fail": "✗ 抓取失败: {error}",
+    "layer.reply": "第 {n} 层 · 回复原推",
+    "html2canvas.missing": "html2canvas 未加载",
+    "btn.translate": "翻译",
+    "btn.translating": "翻译中...",
+    "translate.fail": "翻译失败: {error}",
+    "ai.config.label": "🤖 AI 翻译配置（可选）",
+    "ai.placeholder.baseUrl": "API Base URL (如: https://api.openai.com/v1)",
+    "ai.placeholder.apiKey": "AI API Key",
+    "ai.placeholder.model": "模型 (如: gpt-4o-mini)",
+    "ai.status.configured": "✓ AI 已配置",
+    "ai.status.none": "未配置 — AI 翻译不可用",
+    "ai.status.server": "✓ 服务端已配置: {model} via {host}",
+    "ai.status.server.short": "✓ 服务端已配置",
+    "btn.aiTranslate": "AI 翻译",
+    "btn.aiTranslating": "AI 分析中...",
+    "aiTranslate.fail": "AI 翻译失败: {error}",
+    "ann.academic": "学术术语",
+    "ann.technical": "技术术语",
+    "ann.slang": "俚语 / 网络用语",
+    "ann.idiom": "习语 / 惯用表达",
+    "ann.cultural": "文化背景",
+    "ann.reference": "引用 / 典故",
+    "ann.original": "原文",
+    "translation.result": "翻译结果",
+    "btn.settings": "⚙ 设置",
+    "settings.title": "⚙ 设置",
+    "settings.contactAuthor": "联系作者",
+  },
+  "en": {
+    "app.title": "Tweet Quote",
+    "btn.loadExample": "Example",
+    "btn.reset": "Clear",
+    "btn.langSwitch": "中文",
+    "api.config.label": "🔑 TwitterAPI.io Config (Optional)",
+    "api.toggle.expand": "Expand",
+    "api.toggle.collapse": "Collapse",
+    "api.placeholder.apiKey": "Enter your API Key...",
+    "api.status.configured": "✓ Configured",
+    "api.status.server": "✓ Using server config",
+    "api.status.none": "Not configured — manual input only",
+    "api.help": 'Run <code style="background:#e8f5fd;padding:1px 4px;border-radius:3px">python3 server.py</code> to start local server, then visit <a href="/" style="color:#1d9bf0">http://localhost:8088/</a>. <a href="https://twitterapi.io" target="_blank" style="color:#1d9bf0">Get API Key →</a>',
+    "mode.auto": "🔗 Auto Fetch",
+    "mode.manual": "✏️ Manual Input",
+    "auto.hint": "Paste a tweet link to auto-fetch the full quote chain",
+    "auto.fetch": "Fetch",
+    "auto.fetching": "Fetching...",
+    "manual.addLayer": "+ Add Layer",
+    "manual.removeLayer": "- Remove Last",
+    "export.label": "Export Scale",
+    "export.btn": "Export as PNG",
+    "export.exporting": "Exporting...",
+    "export.fail": "Export failed: {error}",
+    "preview.label": "Preview",
+    "preview.empty": "Enter tweet content or paste a link to auto-fetch",
+    "layer.main": "Layer {n} · Main Tweet",
+    "layer.quote": "Layer {n} · Quote",
+    "ph.name": "Display Name",
+    "ph.handle": "@username",
+    "ph.avatar": "Avatar URL",
+    "ph.date": "Date",
+    "ph.views": "Views",
+    "ph.content": "Tweet content...",
+    "err.noApiKey": "✗ Please configure API Key at the top first",
+    "err.invalidUrl": "✗ Cannot recognize tweet link",
+    "err.notFound": "Tweet not found",
+    "fetch.start": "→ Fetching tweet {id}...",
+    "fetch.layer": "✓ Layer {n}: {name} — {text}...",
+    "fetch.layerEmbed": "✓ Layer {n} (embedded): {name} — {text}...",
+    "fetch.incomplete": "→ Layer {n} incomplete, fetching via API {id}...",
+    "fetch.layerFail": "✗ Layer {n} fetch failed: {error}",
+    "fetch.replyStart": "→ Layer {n} is a reply, fetching original {id}...",
+    "fetch.replyLayer": "✓ Layer {n} (reply parent): {name} — {text}...",
+    "fetch.done": "── Done! {n} layers total ──",
+    "fetch.fail": "✗ Fetch failed: {error}",
+    "layer.reply": "Layer {n} · Reply Parent",
+    "html2canvas.missing": "html2canvas not loaded",
+    "btn.translate": "Translate",
+    "btn.translating": "Translating...",
+    "translate.fail": "Translation failed: {error}",
+    "ai.config.label": "🤖 AI Translation Config (Optional)",
+    "ai.placeholder.baseUrl": "API Base URL (e.g. https://api.openai.com/v1)",
+    "ai.placeholder.apiKey": "AI API Key",
+    "ai.placeholder.model": "Model (e.g. gpt-4o-mini)",
+    "ai.status.configured": "✓ AI Configured",
+    "ai.status.none": "Not configured — AI translation unavailable",
+    "ai.status.server": "✓ Server configured: {model} via {host}",
+    "ai.status.server.short": "✓ Server configured",
+    "btn.aiTranslate": "AI Translate",
+    "btn.aiTranslating": "AI Analyzing...",
+    "aiTranslate.fail": "AI translation failed: {error}",
+    "ann.academic": "Academic Term",
+    "ann.technical": "Technical Term",
+    "ann.slang": "Slang / Internet Jargon",
+    "ann.idiom": "Idiom / Expression",
+    "ann.cultural": "Cultural Context",
+    "ann.reference": "Reference / Allusion",
+    "ann.original": "Original",
+    "translation.result": "Translation",
+    "btn.settings": "⚙ Settings",
+    "settings.title": "⚙ Settings",
+    "settings.contactAuthor": "Contact Author",
+  }
+};
+
+/* ═══════════════════════════════════════════
+   i18n Core
+   ═══════════════════════════════════════════ */
+let currentLang = localStorage.getItem("tnt_lang") || "zh-CN";
+
+function t(key, params) {
+  const str = (LANG[currentLang] || LANG["zh-CN"])[key] || key;
+  if (!params) return str;
+  return str.replace(/\{(\w+)\}/g, (_, k) => params[k] !== undefined ? params[k] : `{${k}}`);
+}
+
+function switchLang() {
+  currentLang = currentLang === "zh-CN" ? "en" : "zh-CN";
+  localStorage.setItem("tnt_lang", currentLang);
+  applyLang();
+}
+
+function applyLang() {
+  document.documentElement.lang = currentLang;
+  document.getElementById("appTitle").textContent = t("app.title");
+  document.getElementById("btnLoadExample").textContent = t("btn.loadExample");
+  document.getElementById("btnReset").textContent = t("btn.reset");
+  document.getElementById("langBtn").textContent = t("btn.langSwitch");
+  document.getElementById("settingsBtn").textContent = t("btn.settings");
+  document.getElementById("settingsTitle").textContent = t("settings.title");
+  document.getElementById("apiConfigLabel").textContent = t("api.config.label");
+  document.getElementById("apiToggleText").textContent = apiConfigOpen ? t("api.toggle.collapse") : t("api.toggle.expand");
+  document.getElementById("apiKeyInput").placeholder = t("api.placeholder.apiKey");
+  updateApiStatus();
+  document.getElementById("apiHelp").innerHTML = t("api.help");
+  document.getElementById("aiConfigLabel").textContent = t("ai.config.label");
+  document.getElementById("aiToggleText").textContent = aiConfigOpen ? t("api.toggle.collapse") : t("api.toggle.expand");
+  document.getElementById("aiBaseUrlInput").placeholder = t("ai.placeholder.baseUrl");
+  document.getElementById("aiApiKeyInput").placeholder = t("ai.placeholder.apiKey");
+  document.getElementById("aiModelInput").placeholder = t("ai.placeholder.model");
+  updateAiStatus();
+  document.getElementById("contactAuthorLabel").textContent = t("settings.contactAuthor");
+  document.getElementById("modeAutoTab").textContent = t("mode.auto");
+  document.getElementById("modeManualTab").textContent = t("mode.manual");
+  document.getElementById("autoHint").textContent = t("auto.hint");
+  document.getElementById("autoFetchBtn").textContent = t("auto.fetch");
+  document.getElementById("btnAddLayer").textContent = t("manual.addLayer");
+  document.getElementById("btnRemoveLayer").textContent = t("manual.removeLayer");
+  document.getElementById("exportLabel").textContent = t("export.label");
+  document.getElementById("exportBtn").textContent = t("export.btn");
+  document.getElementById("previewLabel").textContent = t("preview.label");
+  renderInputs();
+  renderPreview();
+}
+
+/* ═══════════════════════════════════════════ */
+const LAYER_COLORS = ["#1d9bf0","#794bc4","#17bf63","#e0245e","#f45d22","#ffad1f","#1d9bf0","#794bc4"];
+const AVATAR_COLORS = ["#1d9bf0","#794bc4","#17bf63","#e0245e","#f45d22","#ffad1f"];
+const VERIFIED_SVG = `<svg class="verified-badge" viewBox="0 0 22 22" width="18" height="18"><path d="M20.396 11c-.018-.646-.215-1.275-.57-1.816-.354-.54-.852-.972-1.438-1.246.223-.607.27-1.264.14-1.897-.131-.634-.437-1.218-.882-1.687-.47-.445-1.053-.75-1.687-.882-.633-.13-1.29-.083-1.897.14-.273-.587-.704-1.086-1.245-1.44S11.647 1.62 11 1.604c-.646.017-1.273.213-1.813.568s-.969.855-1.24 1.44c-.608-.223-1.267-.272-1.902-.14-.635.13-1.22.436-1.69.882-.445.47-.749 1.055-.878 1.69-.13.633-.08 1.29.144 1.896-.587.274-1.087.705-1.443 1.245-.356.54-.555 1.17-.574 1.817.02.647.218 1.276.574 1.817.356.54.856.972 1.443 1.245-.224.606-.274 1.263-.144 1.896.13.636.433 1.221.878 1.69.47.446 1.055.752 1.69.883.635.13 1.294.083 1.902-.143.271.586.702 1.084 1.24 1.438.54.354 1.167.551 1.813.568.647-.016 1.276-.213 1.817-.567s.972-.854 1.245-1.44c.604.225 1.261.272 1.893.143.636-.131 1.222-.434 1.69-.88.445-.47.749-1.055.88-1.69.13-.634.085-1.29-.138-1.893.587-.274 1.087-.705 1.438-1.246.354-.54.551-1.17.569-1.816zM9.662 14.85l-3.429-3.428 1.293-1.302 2.072 2.072 4.4-4.794 1.347 1.246z" fill="#1d9bf0"/></svg>`;
+const VERIFIED_SVG_SM = VERIFIED_SVG.replace('width="18"','width="16"').replace('height="18"','height="16"');
+const VIEWS_SVG = `<svg viewBox="0 0 16 16" width="16" height="16" style="flex-shrink:0"><path d="M8.75 1v14h-1.5V1h1.5zM3.5 8v7H2V8h1.5zM14 4v11h-1.5V4H14z" fill="#536471"/></svg>`;
+
+let mode = "auto";
+let scale = 2;
+let apiKey = localStorage.getItem("tnt_api_key") || "";
+let apiConfigOpen = true;
+let settingsOpen = false;
+let aiBaseUrl = localStorage.getItem("tnt_ai_base_url") || "";
+let aiApiKey = localStorage.getItem("tnt_ai_api_key") || "";
+let aiModel = localStorage.getItem("tnt_ai_model") || "";
+let aiConfigOpen = true;
+let serverAiConfig = null;
+let serverTwitterConfig = null;
+let tweets = [];
+
+function isTwitterApiAvailable() { return !!(apiKey || (serverTwitterConfig && serverTwitterConfig.configured)); }
+function isAiAvailable() { return !!(aiApiKey || (serverAiConfig && serverAiConfig.configured)); }
+function empty() { return { name:"", handle:"", content:"", date:"", avatar:"", views:"", annotations:[] }; }
+function getAvatarColor(n) { return n ? AVATAR_COLORS[n.charCodeAt(0) % AVATAR_COLORS.length] : "#536471"; }
+function esc(s) { return (s||"").replace(/&/g,"&amp;").replace(/"/g,"&quot;").replace(/</g,"&lt;").replace(/>/g,"&gt;"); }
+function escHtml(s) { return (s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;"); }
+
+/* ═══════════════════════════════════════════
+   Mode switching
+   ═══════════════════════════════════════════ */
+function setMode(m) {
+  mode = m;
+  document.getElementById("modeAutoTab").className = "mode-tab" + (m === "auto" ? " active" : "");
+  document.getElementById("modeManualTab").className = "mode-tab" + (m === "manual" ? " active" : "");
+  document.getElementById("autoPanel").style.display = m === "auto" ? "block" : "none";
+  document.getElementById("manualPanel").style.display = m === "manual" ? "block" : "none";
+  if (m === "manual" && tweets.length === 0) { tweets = [empty()]; }
+  renderInputs();
+}
+
+/* ═══════════════════════════════════════════
+   API Config
+   ═══════════════════════════════════════════ */
+function toggleSettings() {
+  settingsOpen = !settingsOpen;
+  document.getElementById('settingsOverlay').classList.toggle('open', settingsOpen);
+  document.body.style.overflow = settingsOpen ? 'hidden' : '';
+  updateSettingsBtn();
+}
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape' && settingsOpen) toggleSettings();
+});
+function updateSettingsBtn() {
+  const btn = document.getElementById('settingsBtn');
+  const hasConfig = isTwitterApiAvailable() || isAiAvailable();
+  btn.classList.toggle('has-config', hasConfig);
+}
+function toggleApiConfig() {
+  apiConfigOpen = !apiConfigOpen;
+  document.getElementById("apiBody").style.display = apiConfigOpen ? "block" : "none";
+  document.getElementById("apiToggleText").textContent = apiConfigOpen ? t("api.toggle.collapse") : t("api.toggle.expand");
+}
+function saveApiKey() {
+  apiKey = document.getElementById("apiKeyInput").value.trim();
+  localStorage.setItem("tnt_api_key", apiKey);
+  updateApiStatus();
+  updateSettingsBtn();
+}
+function updateApiStatus() {
+  const st = document.getElementById("apiStatus");
+  if (apiKey) { st.className = "api-status ok"; st.textContent = t("api.status.configured"); }
+  else if (serverTwitterConfig && serverTwitterConfig.configured) { st.className = "api-status ok"; st.textContent = t("api.status.server"); }
+  else { st.className = "api-status none"; st.textContent = t("api.status.none"); }
+}
+function toggleAiConfig() {
+  aiConfigOpen = !aiConfigOpen;
+  document.getElementById("aiBody").style.display = aiConfigOpen ? "block" : "none";
+  document.getElementById("aiToggleText").textContent = aiConfigOpen ? t("api.toggle.collapse") : t("api.toggle.expand");
+}
+function saveAiConfig() {
+  aiBaseUrl = document.getElementById("aiBaseUrlInput").value.trim();
+  aiApiKey = document.getElementById("aiApiKeyInput").value.trim();
+  aiModel = document.getElementById("aiModelInput").value.trim();
+  localStorage.setItem("tnt_ai_base_url", aiBaseUrl);
+  localStorage.setItem("tnt_ai_api_key", aiApiKey);
+  localStorage.setItem("tnt_ai_model", aiModel);
+  updateAiStatus();
+  updateSettingsBtn();
+  renderInputs();
+}
+function loadAiConfig() {
+  document.getElementById("aiBaseUrlInput").value = aiBaseUrl;
+  document.getElementById("aiApiKeyInput").value = aiApiKey;
+  document.getElementById("aiModelInput").value = aiModel;
+  updateAiStatus();
+}
+function updateAiStatus() {
+  const st = document.getElementById("aiStatus");
+  if (aiApiKey) {
+    st.className = "api-status ok";
+    st.textContent = t("ai.status.configured");
+  } else if (serverAiConfig && serverAiConfig.configured) {
+    st.className = "api-status ok";
+    const host = serverAiConfig.base_url_host;
+    const model = serverAiConfig.model;
+    const isAiber = host && /aiber/i.test(host);
+    const hostDisplay = isAiber
+      ? `<a href="https://aiberm.com/register?aff=Xhlm" target="_blank" rel="noopener noreferrer">${host}</a>`
+      : host;
+    const msg = t("ai.status.server", { model, host: hostDisplay });
+    if (isAiber) {
+      st.innerHTML = msg;
+    } else {
+      st.textContent = msg;
+    }
+  } else {
+    st.className = "api-status none";
+    st.textContent = t("ai.status.none");
+  }
+}
+async function fetchServerAiConfig() {
+  try {
+    const resp = await fetch("/api/ai-config");
+    if (resp.ok) {
+      serverAiConfig = await resp.json();
+      updateAiStatus();
+      renderInputs();
+    }
+  } catch(e) { /* server not running or no endpoint */ }
+}
+async function fetchServerTwitterConfig() {
+  try {
+    const resp = await fetch("/api/twitter-config");
+    if (resp.ok) {
+      serverTwitterConfig = await resp.json();
+      updateApiStatus();
+      renderInputs();
+    }
+  } catch(e) { /* server not running or no endpoint */ }
+}
+
+/* ═══════════════════════════════════════════
+   Helpers
+   ═══════════════════════════════════════════ */
+function extractTweetId(url) {
+  const m = (url||"").match(/(?:twitter\.com|x\.com)\/\w+\/status\/(\d+)/);
+  return m ? m[1] : null;
+}
+function formatTweetDate(dateStr) {
+  try {
+    const d = new Date(dateStr);
+    if (isNaN(d.getTime())) return dateStr;
+    const h = d.getHours(), min = d.getMinutes().toString().padStart(2,"0");
+    const ampm = h >= 12 ? "PM" : "AM", h12 = h % 12 || 12;
+    const mo = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+    return `${h12}:${min} ${ampm} · ${mo[d.getMonth()]} ${d.getDate()}, ${d.getFullYear()}`;
+  } catch(e) { return dateStr; }
+}
+function formatViews(c) {
+  if (c == null) return "";
+  const n = Number(c);
+  if (isNaN(n)) return String(c);
+  if (n >= 1e6) return (n/1e6).toFixed(1).replace(/\.0$/,"") + "M";
+  if (n >= 1e3) return (n/1e3).toFixed(1).replace(/\.0$/,"") + "K";
+  return String(n);
+}
+function avatarUrl(pic) {
+  if (!pic) return "";
+  return pic.replace(/_normal\./, "_400x400.");
+}
+function parseTweetObj(tw) {
+  const a = tw.author || {};
+  return {
+    name: a.name || "",
+    handle: a.userName ? `@${a.userName}` : "",
+    avatar: avatarUrl(a.profilePicture || ""),
+    date: tw.createdAt ? formatTweetDate(tw.createdAt) : "",
+    views: formatViews(tw.viewCount),
+    content: tw.text || "",
+    annotations: [],
+  };
+}
+
+/* ═══════════════════════════════════════════
+   API call helper
+   ═══════════════════════════════════════════ */
+async function apiGetTweet(tweetId) {
+  const resp = await fetch(`/api/tweets?tweet_ids=${tweetId}&api_key=${encodeURIComponent(apiKey)}`);
+  if (!resp.ok) {
+    const err = await resp.json().catch(() => ({}));
+    throw new Error(err.error || `HTTP ${resp.status}`);
+  }
+  const data = await resp.json();
+  const tw = data.tweets?.[0];
+  if (!tw) throw new Error(t("err.notFound"));
+  return tw;
+}
+
+/* ═══════════════════════════════════════════
+   Auto Fetch — recursive quote + reply chain
+   ═══════════════════════════════════════════ */
+function autoLog(cls, text) {
+  const el = document.getElementById("autoLog");
+  el.innerHTML += `<div class="${cls}">${escHtml(text)}</div>`;
+  el.scrollTop = el.scrollHeight;
+}
+
+async function autoFetch() {
+  const urlInput = document.getElementById("autoUrlInput");
+  const btn = document.getElementById("autoFetchBtn");
+  const logEl = document.getElementById("autoLog");
+  logEl.innerHTML = "";
+
+  if (!isTwitterApiAvailable()) { autoLog("err", t("err.noApiKey")); return; }
+  const tweetId = extractTweetId(urlInput.value);
+  if (!tweetId) { autoLog("err", t("err.invalidUrl")); return; }
+
+  btn.disabled = true;
+  btn.classList.add("loading");
+  btn.textContent = t("auto.fetching");
+  tweets = [];
+
+  try {
+    autoLog("info", t("fetch.start", { id: tweetId }));
+    const tw = await apiGetTweet(tweetId);
+    tweets.push(parseTweetObj(tw));
+    autoLog("ok", t("fetch.layer", { n: 1, name: tw.author?.name || "?", text: (tw.text||"").slice(0,40) }));
+
+    const visited = new Set([tweetId]);
+    let current = tw;
+    let depth = 1;
+    const MAX_DEPTH = 10;
+
+    while (depth < MAX_DEPTH) {
+      let nextId = null;
+      let isReply = false;
+
+      const qt = current.quoted_tweet;
+      if (qt && qt.id && !visited.has(qt.id)) {
+        nextId = qt.id;
+      }
+
+      if (!nextId && current.inReplyToId && !visited.has(current.inReplyToId)) {
+        nextId = current.inReplyToId;
+        isReply = true;
+      }
+
+      if (!nextId) break;
+      visited.add(nextId);
+
+      if (!isReply && qt && qt.id === nextId && qt.text && qt.author) {
+        const parsed = parseTweetObj(qt);
+        parsed._rel = 'quote';
+        tweets.push(parsed);
+        autoLog("ok", t("fetch.layerEmbed", { n: depth+1, name: qt.author?.name || "?", text: qt.text.slice(0,40) }));
+        current = qt;
+        depth++;
+        continue;
+      }
+
+      autoLog("info", t(isReply ? "fetch.replyStart" : "fetch.incomplete", { n: depth+1, id: nextId }));
+      try {
+        const fullTweet = await apiGetTweet(nextId);
+        const parsed = parseTweetObj(fullTweet);
+        parsed._rel = isReply ? 'reply' : 'quote';
+        tweets.push(parsed);
+        autoLog("ok", t(isReply ? "fetch.replyLayer" : "fetch.layer", { n: depth+1, name: fullTweet.author?.name || "?", text: (fullTweet.text||"").slice(0,40) }));
+        current = fullTweet;
+        depth++;
+      } catch(e) {
+        autoLog("err", t("fetch.layerFail", { n: depth+1, error: e.message }));
+        break;
+      }
+    }
+
+    autoLog("ok", t("fetch.done", { n: tweets.length }));
+  } catch(e) {
+    console.error(e);
+    autoLog("err", t("fetch.fail", { error: e.message }));
+  }
+
+  renderInputs();
+  renderPreview();
+  updateExportBtn();
+  btn.disabled = false;
+  btn.classList.remove("loading");
+  btn.textContent = t("auto.fetch");
+}
+
+/* ═══════════════════════════════════════════
+   Manual layer management
+   ═══════════════════════════════════════════ */
+function addLayer() {
+  tweets.push(empty());
+  renderInputs();
+}
+function removeLayer() {
+  if (tweets.length > 1) { tweets.pop(); renderInputs(); renderPreview(); updateExportBtn(); }
+}
+
+/* ═══════════════════════════════════════════
+   Render inputs (dynamic N layers)
+   ═══════════════════════════════════════════ */
+function renderInputs() {
+  const area = document.getElementById("inputArea");
+  area.innerHTML = "";
+  if (tweets.length === 0) return;
+
+  for (let i = 0; i < tweets.length; i++) {
+    const tw = tweets[i];
+    const color = LAYER_COLORS[i % LAYER_COLORS.length];
+    const block = document.createElement("div");
+    block.className = "tweet-block";
+    block.style.borderLeftColor = color;
+    const labelKey = i === 0 ? "layer.main" : (tw._rel === "reply" ? "layer.reply" : "layer.quote");
+    const label = t(labelKey, { n: i+1 });
+    block.innerHTML = `
+      <div class="block-label" style="color:${color}">${escHtml(label)}</div>
+      <div class="row">
+        <input type="text" placeholder="${esc(t("ph.name"))}" value="${esc(tw.name)}" oninput="upd(${i},'name',this.value)">
+        <input type="text" placeholder="${esc(t("ph.handle"))}" value="${esc(tw.handle)}" oninput="upd(${i},'handle',this.value)">
+      </div>
+      <div class="row-full">
+        <input type="text" placeholder="${esc(t("ph.avatar"))}" value="${esc(tw.avatar)}" oninput="upd(${i},'avatar',this.value)">
+      </div>
+      <div class="row">
+        <input type="text" placeholder="${esc(t("ph.date"))}" value="${esc(tw.date)}" oninput="upd(${i},'date',this.value)">
+        <input type="text" placeholder="${esc(t("ph.views"))}" value="${esc(tw.views)}" oninput="upd(${i},'views',this.value)">
+      </div>
+      <textarea placeholder="${esc(t("ph.content"))}" rows="3" oninput="upd(${i},'content',this.value)">${esc(tw.content || '')}</textarea>
+      <div class="translate-row">
+        <button class="translate-btn" data-translate="${i}" onclick="translateContent(${i})">🌐 ${escHtml(t("btn.translate"))}</button>
+        <button class="translate-btn ai-translate-btn" data-ai-translate="${i}" onclick="aiTranslateContent(${i})" ${!isAiAvailable() ? 'disabled title="'+esc(t("ai.status.none"))+'"' : ''}>🤖 ${escHtml(t("btn.aiTranslate"))}</button>
+      </div>
+      ${tw.translatedContent != null && tw.translatedContent !== '' ? `
+      <div class="translation-box">
+        <div class="translation-label">${escHtml(t("translation.result"))}</div>
+        <textarea rows="3" oninput="upd(${i},'translatedContent',this.value)">${esc(tw.translatedContent)}</textarea>
+      </div>
+      ` : ''}
+    `;
+    area.appendChild(block);
+  }
+}
+
+function upd(i, field, val) {
+  tweets[i][field] = val;
+  if (field === 'content') {
+    tweets[i].annotations = [];
+    tweets[i].translatedContent = ''; // 原文变更时清空翻译
+    renderInputs(); // 刷新以隐藏翻译框
+  }
+  if (field === 'translatedContent') tweets[i].annotations = []; // 修改译文时清空 AI 注释
+  renderPreview();
+  updateExportBtn();
+}
+
+/* ═══════════════════════════════════════════
+   Translate tweet content
+   ═══════════════════════════════════════════ */
+async function translateContent(idx) {
+  const text = tweets[idx].content;
+  if (!text.trim()) return;
+
+  const btn = document.querySelector(`[data-translate="${idx}"]`);
+  if (btn) { btn.disabled = true; btn.textContent = t("btn.translating"); }
+
+  try {
+    const targetLang = currentLang === "zh-CN" ? "zh-CN" : "en";
+    const resp = await fetch("/api/translate", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ text, from: "auto", to: targetLang })
+    });
+    if (!resp.ok) {
+      const err = await resp.json().catch(() => ({}));
+      throw new Error(err.error || `HTTP ${resp.status}`);
+    }
+    const data = await resp.json();
+    if (data.translated) {
+      tweets[idx].translatedContent = data.translated;
+      renderInputs();
+      renderPreview();
+      updateExportBtn();
+    }
+  } catch(e) {
+    console.error(e);
+    alert(t("translate.fail", { error: e.message }));
+    if (btn) { btn.disabled = false; btn.textContent = "🌐 " + t("btn.translate"); }
+  }
+}
+
+/* ═══════════════════════════════════════════
+   AI Translate + Annotations
+   ═══════════════════════════════════════════ */
+const ANN_COLORS = {
+  academic:  { color: '#794bc4', bg: 'rgba(121,75,196,0.08)',  hover: 'rgba(121,75,196,0.18)' },
+  technical: { color: '#1d9bf0', bg: 'rgba(29,155,240,0.08)',  hover: 'rgba(29,155,240,0.18)' },
+  slang:     { color: '#17bf63', bg: 'rgba(23,191,99,0.08)',   hover: 'rgba(23,191,99,0.18)'  },
+  idiom:     { color: '#f45d22', bg: 'rgba(244,93,34,0.08)',   hover: 'rgba(244,93,34,0.18)'  },
+  cultural:  { color: '#e0245e', bg: 'rgba(224,36,94,0.08)',   hover: 'rgba(224,36,94,0.18)'  },
+  reference: { color: '#ffad1f', bg: 'rgba(255,173,31,0.10)',  hover: 'rgba(255,173,31,0.20)' },
+};
+
+function getAnnStyle(type) {
+  return ANN_COLORS[type] || ANN_COLORS.academic;
+}
+
+const MAX_ANNOTATIONS = 5;
+const MIN_TERM_LENGTH = 2;
+
+function filterAnnotations(rawAnnotations, translatedText) {
+  if (!rawAnnotations || !translatedText) return [];
+  const seen = new Set();
+  return rawAnnotations
+    .filter(a => {
+      if (!a.term || a.term.length < MIN_TERM_LENGTH) return false;
+      if (!translatedText.includes(a.term)) return false;
+      const key = a.term.toLowerCase();
+      if (seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    })
+    .slice(0, MAX_ANNOTATIONS);
+}
+
+async function aiTranslateContent(idx) {
+  const text = tweets[idx].content;
+  if (!text.trim()) return;
+  if (!isAiAvailable()) { alert(t("ai.status.none")); return; }
+
+  const btn = document.querySelector(`[data-ai-translate="${idx}"]`);
+  if (btn) { btn.disabled = true; btn.textContent = '🤖 ' + t("btn.aiTranslating"); }
+
+  try {
+    const targetLang = currentLang === "zh-CN" ? "zh-CN" : "en";
+    const payload = { text, to: targetLang };
+    if (aiApiKey)  payload.ai_api_key  = aiApiKey;
+    if (aiBaseUrl) payload.ai_base_url = aiBaseUrl;
+    if (aiModel)   payload.ai_model    = aiModel;
+    const resp = await fetch("/api/ai-translate", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload)
+    });
+    if (!resp.ok) {
+      const err = await resp.json().catch(() => ({}));
+      throw new Error(err.error || `HTTP ${resp.status}`);
+    }
+    const data = await resp.json();
+    if (data.translation) {
+      tweets[idx].translatedContent = data.translation;
+      tweets[idx].annotations = filterAnnotations(data.annotations || [], data.translation);
+      renderInputs();
+      renderPreview();
+      updateExportBtn();
+    }
+  } catch(e) {
+    console.error(e);
+    alert(t("aiTranslate.fail", { error: e.message }));
+  }
+  if (btn) { btn.disabled = !isAiAvailable(); btn.textContent = '🤖 ' + t("btn.aiTranslate"); }
+}
+
+function renderAnnotatedContent(text, annotations) {
+  if (!annotations || annotations.length === 0) return escHtml(text);
+
+  const sorted = annotations
+    .map(a => ({ ...a, idx: text.indexOf(a.term) }))
+    .filter(a => a.idx >= 0)
+    .sort((a, b) => a.idx - b.idx);
+
+  if (sorted.length === 0) return escHtml(text);
+
+  let result = '';
+  let last = 0;
+
+  for (const ann of sorted) {
+    if (ann.idx < last) continue;
+    result += escHtml(text.slice(last, ann.idx));
+
+    const st = getAnnStyle(ann.type);
+    const typeLabel = t('ann.' + ann.type) || ann.type;
+    result += `<span class="annotation" style="--ann-color:${st.color};--ann-bg:${st.bg};--ann-bg-hover:${st.hover}" `
+      + `data-ann-type="${esc(typeLabel)}" `
+      + `data-ann-original="${esc(ann.original || '')}" `
+      + `data-ann-explain="${esc(ann.explanation || '')}">`
+      + escHtml(ann.term)
+      + `<span class="ann-badge" style="background:${st.color}">?</span>`
+      + `</span>`;
+
+    last = ann.idx + ann.term.length;
+  }
+  result += escHtml(text.slice(last));
+  return result;
+}
+
+/* Tooltip interactions */
+(function initTooltip() {
+  const tip = document.getElementById('globalTooltip');
+  let pinned = false;
+
+  document.addEventListener('mouseover', function(e) {
+    if (pinned) return;
+    const ann = e.target.closest('.annotation');
+    if (ann) showTip(ann, e);
+  });
+  document.addEventListener('mousemove', function(e) {
+    if (pinned) return;
+    const ann = e.target.closest('.annotation');
+    if (ann) positionTip(e);
+  });
+  document.addEventListener('mouseout', function(e) {
+    if (pinned) return;
+    const ann = e.target.closest('.annotation');
+    if (ann && !ann.contains(e.relatedTarget)) hideTip();
+  });
+  document.addEventListener('click', function(e) {
+    const ann = e.target.closest('.annotation');
+    if (ann) {
+      if (pinned && tip.classList.contains('visible')) {
+        pinned = false; hideTip();
+      } else {
+        pinned = true; showTip(ann, e);
+      }
+    } else if (!e.target.closest('.global-tooltip')) {
+      pinned = false; hideTip();
+    }
+  });
+
+  function showTip(ann, e) {
+    const type = ann.dataset.annType || '';
+    const original = ann.dataset.annOriginal || '';
+    const explain = ann.dataset.annExplain || '';
+    let html = `<div class="tt-type">${escHtml(type)}</div>`;
+    if (original) html += `<div class="tt-original">${escHtml(t('ann.original'))}: ${escHtml(original)}</div>`;
+    if (original || type) html += `<div class="tt-divider"></div>`;
+    html += `<div class="tt-explain">${escHtml(explain)}</div>`;
+    tip.innerHTML = html;
+    tip.classList.add('visible');
+    positionTip(e);
+  }
+
+  function positionTip(e) {
+    const tw = 340;
+    let x = e.clientX + 12;
+    let y = e.clientY - tip.offsetHeight - 12;
+    if (x + tw > window.innerWidth) x = window.innerWidth - tw - 12;
+    if (y < 8) y = e.clientY + 20;
+    tip.style.left = x + 'px';
+    tip.style.top = y + 'px';
+  }
+
+  function hideTip() {
+    tip.classList.remove('visible');
+  }
+})();
+
+/* ═══════════════════════════════════════════
+   Render preview (dynamic N layers)
+   ═══════════════════════════════════════════ */
+function getDisplayContent(tw) {
+  return (tw.translatedContent && tw.translatedContent.trim()) ? tw.translatedContent : (tw.content || '');
+}
+
+function renderPreview() {
+  const card = document.getElementById("previewCard");
+  const active = tweets.filter(t => getDisplayContent(t).trim());
+  if (active.length === 0) {
+    card.innerHTML = `<div class="preview-empty">${escHtml(t("preview.empty"))}</div>`;
+    return;
+  }
+  let inner = "";
+  for (let i = active.length - 1; i >= 0; i--) {
+    const tw = active[i];
+    const isQ = i > 0;
+    const sz = isQ ? 24 : 40;
+    const fs = isQ ? 14 : 15;
+    const avatarHtml = tw.avatar
+      ? `<img src="${esc(tw.avatar)}" class="tw-avatar" width="${sz}" height="${sz}" style="width:${sz}px;height:${sz}px;" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="tw-avatar-placeholder" style="width:${sz}px;height:${sz}px;min-width:${sz}px;font-size:${sz*0.45}px;background:${getAvatarColor(tw.name)};display:none">${tw.name?escHtml(tw.name[0].toUpperCase()):"?"}</div>`
+      : `<div class="tw-avatar-placeholder" style="width:${sz}px;height:${sz}px;min-width:${sz}px;font-size:${sz*0.45}px;background:${getAvatarColor(tw.name)}">${tw.name?escHtml(tw.name[0].toUpperCase()):"?"}</div>`;
+    const badge = isQ ? VERIFIED_SVG_SM : VERIFIED_SVG;
+    const mc = isQ ? "tw-meta-inline" : "tw-meta";
+    let footer = "";
+    if (tw.date || tw.views) {
+      const ffs = isQ ? 13 : 15, fmt = isQ ? 8 : 12;
+      footer = `<div class="tw-footer" style="font-size:${ffs}px;margin-top:${fmt}px">`;
+      if (tw.date) footer += `<span>${escHtml(tw.date)}</span>`;
+      if (tw.date && tw.views) footer += `<span>·</span>`;
+      if (tw.views) footer += `<span class="tw-views">${VIEWS_SVG} ${escHtml(tw.views)} Views</span>`;
+      footer += `</div>`;
+    }
+    const cls = isQ ? "tw-quoted" : "tw";
+    inner = `<div class="${cls}">
+      <div class="tw-header">${avatarHtml}<div class="${mc}">
+        <span class="tw-name" style="font-size:${fs}px">${escHtml(tw.name)}${badge}</span>
+        <span class="tw-handle" style="font-size:${fs}px">${escHtml(tw.handle)}</span>
+      </div></div>
+      <div class="tw-content" style="font-size:${fs}px">${renderAnnotatedContent(getDisplayContent(tw), tw.annotations)}</div>
+      ${inner}${footer}</div>`;
+  }
+  card.innerHTML = inner;
+}
+
+/* ═══════════════════════════════════════════ */
+function renderScaleBtns() {
+  const c = document.getElementById("scaleBtns"); c.innerHTML = "";
+  [1,2,3].forEach(s => {
+    const b = document.createElement("button");
+    b.className = "scale-btn" + (scale===s?" active":"");
+    b.textContent = s+"x";
+    b.onclick = () => { scale=s; renderScaleBtns(); };
+    c.appendChild(b);
+  });
+}
+function updateExportBtn() {
+  document.getElementById("exportBtn").disabled = !tweets.some(t => getDisplayContent(t).trim());
+}
+
+async function exportPNG() {
+  const el = document.getElementById("previewCard");
+  const btn = document.getElementById("exportBtn");
+  btn.textContent = t("export.exporting"); btn.disabled = true;
+  el.classList.add('export-mode');
+  try {
+    if (typeof html2canvas !== "undefined") {
+      const canvas = await html2canvas(el, { scale, useCORS:true, allowTaint:true, backgroundColor:"#fff" });
+      const link = document.createElement("a");
+      link.download = `tweet-${Date.now()}.png`;
+      link.href = canvas.toDataURL("image/png");
+      link.click();
+    } else { alert(t("html2canvas.missing")); }
+  } catch(e) { console.error(e); alert(t("export.fail", { error: e.message })); }
+  el.classList.remove('export-mode');
+  btn.textContent = t("export.btn"); updateExportBtn();
+}
+
+/* ═══════════════════════════════════════════
+   Example & Reset
+   ═══════════════════════════════════════════ */
+function loadExample() {
+  tweets = [
+    { name:"Mai Yang", handle:"@MaiYangAI", avatar:"https://pbs.twimg.com/profile_images/2027602364073709576/5L4TUTHt_400x400.jpg",
+      date:"Mar 9", views:"194", annotations:[],
+      content:"非常认同刘飞老师的观点。\n\n刚好今天中午跟朋友吃饭，我也表达了类似的观点。\n\n玩龙虾🦞可以，但是你去研究是为了挖掘你的副业还是为了玩而玩？我自己也玩了几天，确实能有一些价值，帮助你检索，完成对应任务，但是对于普通人来说，你没有场景何来现在有了龙虾🦞就有了场景？\n\n刘飞老师提炼的观点非常齐全，推荐大家自省。" },
+    { name:"刘飞", handle:"@liufeilufy", avatar:"https://pbs.twimg.com/profile_images/1840390084119478272/rFJbGeIS_400x400.jpg",
+      date:"9:15 AM · Mar 9, 2026", views:"54.5K", annotations:[],
+      content:"调研了一阵子 OpenClaw 的使用案例（身边朋友，微信群，社交媒体等等），也体验了一下，感受跟之前的很类似：\n\n对于本来就有自己业务的，尤其是商业闭环的，才用得更好，也更愿意充值，因为真的能省事儿，带来生产力，很快就能正向循环。以开发者、自媒体、投资人和小企业老板为主。\n\n对于很多在创业或者作为牛马想搞副业的朋友，想从零开始用 OpenClaw 干拔一个有价值的生意，难度极大，概率极低。\n\n对于多数案例看起来，还是当玩具居多。充值都用免费渠道的 tokens，整天研究省钱，研究怎么让龙虾表演节目什么的，很快就觉得没劲了。\n\n新技术不等于产品价值。还是得有场景有工作流，才有价值。只会说「你自己去学习一下，帮我开发一个会火的 APP」是肯定一定没意义的。" },
+  ];
+  setMode("manual");
+  renderInputs(); renderPreview(); updateExportBtn();
+}
+
+function resetAll() {
+  tweets = [];
+  document.getElementById("autoLog").innerHTML = "";
+  document.getElementById("autoUrlInput").value = "";
+  renderInputs(); renderPreview(); updateExportBtn();
+}
+
+/* ═══════════════════════════════════════════
+   Init
+   ═══════════════════════════════════════════ */
+document.getElementById("apiKeyInput").value = apiKey;
+loadAiConfig();
+applyLang();
+renderScaleBtns();
+updateExportBtn();
+updateSettingsBtn();
+fetchServerAiConfig().then(updateSettingsBtn);
+fetchServerTwitterConfig().then(updateSettingsBtn);
+</script>
+</body>
+</html>
