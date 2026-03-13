@@ -1056,20 +1056,14 @@ function getHostedResetText() {
   if (!hostedSession || hostedSession.error) return "";
   const dailyTime = formatQuotaResetTime(hostedSession.next_daily_reset_at);
   const weeklyTime = formatQuotaResetTime(hostedSession.next_weekly_reset_at);
-  if (hostedSession.requires_upgrade) {
-    if (hostedSession.exhausted_reason === "weekly" && weeklyTime) {
-      return t("hosted.reset.weeklyExhausted", { time: weeklyTime });
-    }
-    if (dailyTime) {
-      return t("hosted.reset.dailyExhausted", { time: dailyTime });
-    }
-    return t("hosted.reset.generic");
+  if (!hostedSession.requires_upgrade) return "";
+  if (hostedSession.exhausted_reason === "weekly" && weeklyTime) {
+    return t("hosted.reset.weeklyExhausted", { time: weeklyTime });
   }
-  if (!dailyTime && !weeklyTime) return "";
-  return t("hosted.reset.summary", {
-    dailyTime: dailyTime || "--",
-    weeklyTime: weeklyTime || "--",
-  });
+  if (dailyTime) {
+    return t("hosted.reset.dailyExhausted", { time: dailyTime });
+  }
+  return t("hosted.reset.generic");
 }
 function openSupportContact() {
   const url = hostedSession?.support_contact_url || "https://x.com/maiyangai";
