@@ -122,7 +122,10 @@ tweetquote/
 
 ## 详细文档
 
-更多功能说明、API 接口、技术栈等，请参阅 [docs/FEATURES.md](docs/FEATURES.md)。
+更多功能说明、API 接口、技术栈等，请参阅：
+
+- [docs/FEATURES.md](docs/FEATURES.md)
+- [docs/DESIGN_BASELINE.md](docs/DESIGN_BASELINE.md) - 产品设计与交互基准
 
 ## License
 
