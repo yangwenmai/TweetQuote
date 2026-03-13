@@ -10,6 +10,7 @@ import json
 import os
 import sys
 import time
+import uuid
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -26,6 +27,13 @@ MAX_BATCH_TOTAL_CHARS = 6000
 AI_TIMEOUT_SECONDS = 60
 GOOGLE_TIMEOUT_SECONDS = 15
 MAX_RETRIES = 2
+MAX_CHAIN_DEPTH = 10
+DAILY_TRIAL_RENDER_LIMIT = 3
+WEEKLY_TRIAL_RENDER_LIMIT = 20
+DAILY_TRIAL_WINDOW_SECONDS = 24 * 60 * 60
+WEEKLY_TRIAL_WINDOW_SECONDS = 7 * 24 * 60 * 60
+TRIAL_STORE_PATH = os.path.join(DIR, "data", "trial_sessions.json")
+SUPPORT_CONTACT_URL = "https://x.com/maiyangai"
 
 
 def load_env_file(filepath):
@@ -434,12 +442,275 @@ def translate_batch_with_google(items, src, tgt):
     return results
 
 
+def ensure_parent_dir(filepath):
+    parent = os.path.dirname(filepath)
+    if parent:
+        os.makedirs(parent, exist_ok=True)
+
+
+def load_trial_store():
+    if not os.path.exists(TRIAL_STORE_PATH):
+        return {}
+    try:
+        with open(TRIAL_STORE_PATH, encoding="utf-8") as f:
+            data = json.load(f)
+            return data if isinstance(data, dict) else {}
+    except Exception:
+        return {}
+
+
+def save_trial_store(store):
+    ensure_parent_dir(TRIAL_STORE_PATH)
+    with open(TRIAL_STORE_PATH, "w", encoding="utf-8") as f:
+        json.dump(store, f, ensure_ascii=False, indent=2)
+
+
+def normalize_usage_events(session, now=None):
+    now = int(now or time.time())
+    min_ts = now - WEEKLY_TRIAL_WINDOW_SECONDS
+    raw_events = session.get("usage_events")
+    if not isinstance(raw_events, list):
+        raw_events = []
+    events = []
+    for item in raw_events:
+        try:
+            ts = int(item)
+        except (TypeError, ValueError):
+            continue
+        if ts >= min_ts:
+            events.append(ts)
+    events.sort()
+    session["usage_events"] = events
+    return events
+
+
+def get_trial_usage_stats(session, now=None):
+    now = int(now or time.time())
+    events = normalize_usage_events(session, now)
+    daily_cutoff = now - DAILY_TRIAL_WINDOW_SECONDS
+    daily_events = [ts for ts in events if ts >= daily_cutoff]
+    daily_used = len(daily_events)
+    weekly_used = len(events)
+    daily_remaining = max(0, DAILY_TRIAL_RENDER_LIMIT - daily_used)
+    weekly_remaining = max(0, WEEKLY_TRIAL_RENDER_LIMIT - weekly_used)
+    exhausted_reason = ""
+    if daily_remaining <= 0:
+        exhausted_reason = "daily"
+    elif weekly_remaining <= 0:
+        exhausted_reason = "weekly"
+    return {
+        "daily_used": daily_used,
+        "daily_remaining": daily_remaining,
+        "weekly_used": weekly_used,
+        "weekly_remaining": weekly_remaining,
+        "requires_upgrade": daily_remaining <= 0 or weekly_remaining <= 0,
+        "exhausted_reason": exhausted_reason,
+        "next_daily_reset_at": (daily_events[0] + DAILY_TRIAL_WINDOW_SECONDS) if daily_events else 0,
+        "next_weekly_reset_at": (events[0] + WEEKLY_TRIAL_WINDOW_SECONDS) if events else 0,
+    }
+
+
+def get_or_create_trial_session(device_id=""):
+    store = load_trial_store()
+    now = int(time.time())
+    device_id = clean_text(device_id) or f"tq_{uuid.uuid4().hex}"
+    session = store.get(device_id)
+    if not isinstance(session, dict):
+        session = {
+            "device_id": device_id,
+            "usage_events": [],
+            "created_at": now,
+        }
+    normalize_usage_events(session, now)
+    session["last_seen_at"] = now
+    session["trial_limit"] = WEEKLY_TRIAL_RENDER_LIMIT
+    session["trial_used"] = len(session.get("usage_events") or [])
+    store[device_id] = session
+    save_trial_store(store)
+    return device_id, session
+
+
+def increment_trial_usage(device_id):
+    store = load_trial_store()
+    now = int(time.time())
+    session = store.get(device_id) or {
+        "device_id": device_id,
+        "usage_events": [],
+        "created_at": now,
+    }
+    events = normalize_usage_events(session, now)
+    events.append(now)
+    session["usage_events"] = events
+    session["trial_limit"] = WEEKLY_TRIAL_RENDER_LIMIT
+    session["trial_used"] = len(events)
+    session["last_seen_at"] = now
+    store[device_id] = session
+    save_trial_store(store)
+    return session
+
+
+def session_payload(device_id, session):
+    stats = get_trial_usage_stats(session)
+    trial_remaining = min(stats["daily_remaining"], stats["weekly_remaining"])
+    return {
+        "device_id": device_id,
+        "trial_total": WEEKLY_TRIAL_RENDER_LIMIT,
+        "trial_used": stats["weekly_used"],
+        "trial_remaining": trial_remaining,
+        "daily_total": DAILY_TRIAL_RENDER_LIMIT,
+        "daily_used": stats["daily_used"],
+        "daily_remaining": stats["daily_remaining"],
+        "weekly_total": WEEKLY_TRIAL_RENDER_LIMIT,
+        "weekly_used": stats["weekly_used"],
+        "weekly_remaining": stats["weekly_remaining"],
+        "requires_upgrade": stats["requires_upgrade"],
+        "exhausted_reason": stats["exhausted_reason"],
+        "next_daily_reset_at": stats["next_daily_reset_at"],
+        "next_weekly_reset_at": stats["next_weekly_reset_at"],
+        "hosted_twitter_available": bool(TWITTERAPI_KEY),
+        "hosted_ai_available": bool(AI_API_KEY),
+        "extension_install_url": "/extension/",
+        "web_editor_url": "/",
+        "support_contact_url": SUPPORT_CONTACT_URL,
+    }
+
+
+def extract_tweet_id(value):
+    value = clean_text(value)
+    if not value:
+        return ""
+    parsed = urllib.parse.urlparse(value)
+    if parsed.scheme and parsed.netloc:
+        parts = [part for part in parsed.path.split("/") if part]
+        for idx, part in enumerate(parts):
+            if part == "status" and idx + 1 < len(parts):
+                candidate = parts[idx + 1]
+                if candidate.isdigit():
+                    return candidate
+    return value if value.isdigit() else ""
+
+
+def fetch_tweet_by_id(tweet_id, api_key):
+    if not tweet_id:
+        raise ValueError("Missing tweet_id")
+    if not api_key:
+        raise ValueError("Missing api_key — configure .env.local TWITTERAPI_KEY or pass api_key")
+
+    target_url = f"https://api.twitterapi.io/twitter/tweets?tweet_ids={urllib.parse.quote(tweet_id)}"
+    req = urllib.request.Request(target_url, headers={
+        "X-API-Key": api_key,
+        "User-Agent": "TweetQuote/1.0",
+    })
+
+    try:
+        with urllib.request.urlopen(req, timeout=15) as resp:
+            raw = resp.read().decode("utf-8")
+            data = json.loads(raw)
+            tweet = (data.get("tweets") or [None])[0]
+            if not tweet:
+                raise UpstreamAPIError(404, "Tweet not found", retryable=False)
+            return tweet
+    except urllib.error.HTTPError as e:
+        body = e.read().decode("utf-8", errors="replace")
+        raise UpstreamAPIError(e.code, f"TwitterAPI.io returned {e.code}", body[:300], is_retryable_status(e.code))
+    except urllib.error.URLError as e:
+        raise UpstreamAPIError(502, f"Twitter fetch failed: {str(e)}", retryable=True)
+    except json.JSONDecodeError as e:
+        raise UpstreamAPIError(502, f"Invalid JSON from Twitter API: {str(e)}", retryable=False)
+
+
+def resolve_quote_chain(tweet_id, api_key, max_depth=MAX_CHAIN_DEPTH):
+    root = fetch_tweet_by_id(tweet_id, api_key)
+    chain = [dict(root, _rel="main")]
+    visited = {str(tweet_id)}
+    current = root
+    depth = 1
+
+    while depth < max_depth:
+        next_id = ""
+        is_reply = False
+        quoted = current.get("quoted_tweet") if isinstance(current, dict) else None
+        quoted_id = str((quoted or {}).get("id") or "")
+
+        if quoted_id and quoted_id not in visited:
+            next_id = quoted_id
+        elif current.get("inReplyToId") and str(current.get("inReplyToId")) not in visited:
+            next_id = str(current.get("inReplyToId"))
+            is_reply = True
+
+        if not next_id:
+            break
+
+        visited.add(next_id)
+
+        if (not is_reply and quoted_id == next_id and quoted and quoted.get("text") and quoted.get("author")):
+            next_tweet = dict(quoted, _rel="quote")
+        else:
+            fetched = fetch_tweet_by_id(next_id, api_key)
+            next_tweet = dict(fetched, _rel=("reply" if is_reply else "quote"))
+
+        chain.append(next_tweet)
+        current = next_tweet
+        depth += 1
+
+    return chain
+
+
+def translate_chain_items(raw_items, target_lang, provider, ai_base_url="", ai_api_key="", ai_model="", include_annotations=True):
+    provider = clean_text(provider or "none").lower()
+    target_lang = clean_text(target_lang or "zh-CN") or "zh-CN"
+    prepared = [
+        {"id": str(idx), "text": clean_text(item.get("text", "")), "contextRole": item.get("_rel", "quote")}
+        for idx, item in enumerate(raw_items)
+        if clean_text(item.get("text", ""))
+    ]
+    translated = {}
+
+    if provider == "none" or not prepared:
+        return translated
+    if provider == "google":
+        results = translate_batch_with_google(prepared, "auto", target_lang)
+    elif provider == "ai":
+        results = translate_batch_with_ai(prepared, target_lang, ai_base_url, ai_api_key, ai_model)
+    else:
+        raise ValueError("Unsupported translation_provider")
+
+    for result in results:
+        item_id = str(result.get("id", ""))
+        if result.get("status") != "success":
+            continue
+        translated[item_id] = {
+            "translation": result.get("translation") or result.get("translated") or "",
+            "annotations": result.get("annotations", []) if include_annotations else [],
+        }
+    return translated
+
+
+def build_render_items(raw_items, translated_map):
+    items = []
+    for idx, item in enumerate(raw_items):
+        translated = translated_map.get(str(idx), {})
+        items.append({
+            "id": str(item.get("id", idx)),
+            "_rel": item.get("_rel", "quote"),
+            "author": item.get("author") or {},
+            "createdAt": item.get("createdAt") or "",
+            "viewCount": item.get("viewCount"),
+            "text": item.get("text") or "",
+            "translatedContent": translated.get("translation", ""),
+            "annotations": translated.get("annotations", []),
+        })
+    return items
+
+
 class Handler(http.server.SimpleHTTPRequestHandler):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, directory=DIR, **kwargs)
 
     def do_GET(self):
-        if self.path.startswith("/api/ai-config"):
+        if self.path.startswith("/api/session"):
+            self.get_session()
+        elif self.path.startswith("/api/ai-config"):
             self.get_ai_config()
         elif self.path.startswith("/api/twitter-config"):
             self.get_twitter_config()
@@ -448,8 +719,23 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         else:
             super().do_GET()
 
+    def get_session(self):
+        parsed = urllib.parse.urlparse(self.path)
+        params = urllib.parse.parse_qs(parsed.query)
+        device_id = params.get("device_id", [""])[0]
+        device_id, session = get_or_create_trial_session(device_id)
+        payload = session_payload(device_id, session)
+        payload["default_render_provider"] = "ai" if AI_API_KEY else ("google" if TWITTERAPI_KEY else "none")
+        self.send_json(200, payload)
+
     def get_twitter_config(self):
-        self.send_json(200, {"configured": bool(TWITTERAPI_KEY)})
+        self.send_json(200, {
+            "configured": bool(TWITTERAPI_KEY),
+            "hosted_mode_available": bool(TWITTERAPI_KEY),
+            "trial_limit": WEEKLY_TRIAL_RENDER_LIMIT,
+            "daily_limit": DAILY_TRIAL_RENDER_LIMIT,
+            "weekly_limit": WEEKLY_TRIAL_RENDER_LIMIT,
+        })
 
     def get_ai_config(self):
         configured = bool(AI_API_KEY)
@@ -464,10 +750,13 @@ class Handler(http.server.SimpleHTTPRequestHandler):
             "provider": AI_PROVIDER if configured else "",
             "model": AI_MODEL if configured else "",
             "base_url_host": host,
+            "hosted_mode_available": configured,
         })
 
     def do_POST(self):
-        if self.path.startswith("/api/ai-translate-batch"):
+        if self.path.startswith("/api/quote-chain/render"):
+            self.render_quote_chain()
+        elif self.path.startswith("/api/ai-translate-batch"):
             self.proxy_ai_translate_batch()
         elif self.path.startswith("/api/ai-translate"):
             self.proxy_ai_translate()
@@ -500,6 +789,78 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         if not ai_api_key:
             raise ValueError("Missing AI API key — configure .env.local or pass ai_api_key")
         return ai_base_url, ai_api_key, ai_model
+
+    def render_quote_chain(self):
+        try:
+            payload = self.read_json_body()
+            tweet_value = payload.get("tweet_url") or payload.get("tweet_id") or ""
+            tweet_id = extract_tweet_id(tweet_value)
+            if not tweet_id:
+                self.send_json(400, {"error": "Missing or invalid tweet_url / tweet_id"})
+                return
+
+            translation_provider = clean_text(payload.get("translation_provider", "none")).lower() or "none"
+            include_annotations = bool(payload.get("include_annotations", True))
+            target_lang = clean_text(payload.get("target_lang") or payload.get("to") or "zh-CN") or "zh-CN"
+            request_api_key = clean_text(payload.get("api_key", ""))
+            request_ai_key = clean_text(payload.get("ai_api_key", ""))
+            using_hosted_twitter = not request_api_key
+            using_hosted_ai = translation_provider == "ai" and not request_ai_key
+            hosted_render = using_hosted_twitter or using_hosted_ai
+
+            device_id, session = get_or_create_trial_session(payload.get("device_id", ""))
+            trial_info = session_payload(device_id, session)
+            if hosted_render and trial_info["requires_upgrade"]:
+                self.send_json(402, {
+                    "error": "Free trial exhausted",
+                    "session": trial_info,
+                })
+                return
+
+            twitter_api_key = request_api_key or TWITTERAPI_KEY
+            raw_items = resolve_quote_chain(tweet_id, twitter_api_key)
+
+            translated_map = {}
+            if translation_provider != "none":
+                if translation_provider == "ai":
+                    ai_base_url, ai_api_key, ai_model = self.ai_config_from_payload(payload)
+                    translated_map = translate_chain_items(
+                        raw_items,
+                        target_lang,
+                        translation_provider,
+                        ai_base_url,
+                        ai_api_key,
+                        ai_model,
+                        include_annotations,
+                    )
+                else:
+                    translated_map = translate_chain_items(
+                        raw_items,
+                        target_lang,
+                        translation_provider,
+                        include_annotations=include_annotations,
+                    )
+
+            if hosted_render:
+                session = increment_trial_usage(device_id)
+                trial_info = session_payload(device_id, session)
+
+            self.send_json(200, {
+                "tweet_id": tweet_id,
+                "items": build_render_items(raw_items, translated_map),
+                "meta": {
+                    "translation_provider": translation_provider,
+                    "target_lang": target_lang,
+                    "chain_length": len(raw_items),
+                    "source": clean_text(payload.get("source", "web")) or "web",
+                    "hosted_render": hosted_render,
+                },
+                "session": trial_info,
+            })
+        except ValueError as e:
+            self.send_json(400, {"error": str(e)})
+        except UpstreamAPIError as e:
+            self.send_json(e.status_code, {"error": e.message, "detail": e.detail})
 
     def proxy_ai_translate(self):
         try:
@@ -567,29 +928,13 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         if not tweet_ids:
             self.send_json(400, {"error": "Missing tweet_ids parameter"})
             return
-        if not api_key:
-            self.send_json(400, {"error": "Missing api_key — configure .env.local TWITTERAPI_KEY or pass api_key"})
-            return
-
-        target_url = f"https://api.twitterapi.io/twitter/tweets?tweet_ids={urllib.parse.quote(tweet_ids)}"
-        req = urllib.request.Request(target_url, headers={
-            "X-API-Key": api_key,
-            "User-Agent": "TweetNestingTool/1.0",
-        })
-
         try:
-            with urllib.request.urlopen(req, timeout=15) as resp:
-                data = resp.read()
-                self.send_response(200)
-                self.send_header("Content-Type", "application/json; charset=utf-8")
-                self.send_header("Access-Control-Allow-Origin", "*")
-                self.end_headers()
-                self.wfile.write(data)
-        except urllib.error.HTTPError as e:
-            body = e.read().decode("utf-8", errors="replace")
-            self.send_json(e.code, {"error": f"TwitterAPI.io returned {e.code}", "detail": body[:300]})
-        except Exception as e:
-            self.send_json(502, {"error": str(e)})
+            tweet = fetch_tweet_by_id(tweet_ids, api_key)
+            self.send_json(200, {"tweets": [tweet]})
+        except ValueError as e:
+            self.send_json(400, {"error": str(e)})
+        except UpstreamAPIError as e:
+            self.send_json(e.status_code, {"error": e.message, "detail": e.detail})
 
     def send_json(self, code, obj):
         body = json.dumps(obj, ensure_ascii=False).encode("utf-8")

@@ -94,6 +94,50 @@
   .auto-log .ok { color: #17bf63; }
   .auto-log .err { color: #e0245e; }
   .auto-log .info { color: #536471; }
+  .quota-hint-row {
+    margin-top: 10px;
+    padding: 10px 12px;
+    border-radius: 10px;
+    background: #fff;
+    border: 1px solid #dbe6ea;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  .quota-hint-row.hidden { display: none; }
+  .quota-hint-text {
+    font-size: 12px;
+    line-height: 1.5;
+    color: #536471;
+  }
+  .quota-hint-row.exhausted {
+    background: #fff7f8;
+    border-color: #f0c7d1;
+  }
+  .quota-hint-contact {
+    flex-shrink: 0;
+    white-space: nowrap;
+  }
+
+  .hosted-card {
+    margin-bottom: 16px; padding: 14px;
+    border: 1px solid #cfd9de; border-radius: 12px; background: #fffdf6;
+  }
+  .hosted-card.hidden { display: none; }
+  .hosted-card-header {
+    display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; margin-bottom: 8px;
+  }
+  .hosted-card-title { font-size: 14px; font-weight: 800; color: #0f1419; }
+  .hosted-card-badge {
+    display: inline-flex; align-items: center; justify-content: center;
+    min-width: 80px; padding: 4px 10px; border-radius: 999px; background: #e8f5fd; color: #1d9bf0;
+    font-size: 12px; font-weight: 800;
+  }
+  .hosted-card-badge.exhausted { background: #fff1f3; color: #c81e4d; }
+  .hosted-card-desc { font-size: 13px; line-height: 1.6; color: #536471; }
+  .hosted-card-actions { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 12px; }
+  .hosted-card-actions .btn { font-size: 13px; padding: 7px 14px; }
 
   /* ─── Mode tabs ─── */
   .mode-tabs { display: flex; gap: 0; margin-bottom: 16px; border: 1px solid #cfd9de; border-radius: 10px; overflow: hidden; }
@@ -210,6 +254,260 @@
   }
   .lang-btn:hover { background: #e8f5fd !important; }
 
+  body.embedded-mode {
+    height: auto;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  body.embedded-mode .header {
+    padding: 10px 12px;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+  }
+  body.embedded-mode .header-right {
+    gap: 6px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  body.embedded-mode .btn {
+    padding: 6px 12px;
+    font-size: 13px;
+  }
+  body.embedded-mode .main {
+    display: block;
+    overflow: visible;
+  }
+  .embedded-shell-bar {
+    display: none;
+  }
+  body.embedded-mode .panel-left,
+  body.embedded-mode .panel-right {
+    width: 100%;
+    min-width: 0;
+    border-right: none;
+    padding: 12px;
+  }
+  body.embedded-mode .panel-left,
+  body.embedded-mode .panel-right {
+    display: none;
+  }
+  body.embedded-mode.embedded-view-editor .panel-left,
+  body.embedded-mode.embedded-view-preview .panel-right {
+    display: block;
+  }
+  body.embedded-mode .panel-right {
+    padding-top: 0;
+  }
+  body.embedded-mode .preview-wrap {
+    max-width: none;
+  }
+  body.embedded-mode .embedded-shell-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px 12px 0;
+  }
+  .embedded-view-tabs {
+    display: inline-flex;
+    gap: 6px;
+    padding: 4px;
+    border-radius: 999px;
+    background: #e8edf2;
+  }
+  .embedded-view-tab {
+    border: none;
+    border-radius: 999px;
+    padding: 8px 12px;
+    background: transparent;
+    color: #536471;
+    font-size: 12px;
+    font-weight: 800;
+    cursor: pointer;
+  }
+  .embedded-view-tab.active {
+    background: #fff;
+    color: #0f1419;
+    box-shadow: 0 1px 2px rgba(15, 20, 25, 0.08);
+  }
+  .embedded-quick-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .embedded-pill-btn {
+    border: 1px solid #cfd9de;
+    background: #fff;
+    color: #0f1419;
+    border-radius: 999px;
+    padding: 8px 12px;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  .embedded-pill-btn.primary {
+    border-color: #1d9bf0;
+    color: #1d9bf0;
+  }
+  .embedded-hint {
+    display: none;
+  }
+  body.embedded-mode .embedded-hint {
+    display: block;
+    padding: 8px 12px 0;
+    color: #536471;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+  body.embedded-mode .hosted-card-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  body.embedded-mode #btnLoadExample,
+  body.embedded-mode #btnReset,
+  body.embedded-mode #exportBtn {
+    display: none;
+  }
+  body.embedded-mode #settingsBtn,
+  body.embedded-mode #hostedCard,
+  body.embedded-mode .api-key-modal-overlay {
+    display: none !important;
+  }
+  .embedded-quota-badge {
+    display: none;
+    align-items: center;
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 700;
+    white-space: nowrap;
+    background: #e8f5fd;
+    color: #1d9bf0;
+  }
+  body.embedded-mode .embedded-quota-badge {
+    display: inline-flex;
+  }
+  body.embedded-mode .embedded-quota-badge.exhausted {
+    background: #fff1f3;
+    color: #c81e4d;
+  }
+  .auto-section-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 8px;
+  }
+  .inline-quota-badge {
+    display: none;
+    align-items: center;
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 700;
+    white-space: nowrap;
+    background: #e8f5fd;
+    color: #1d9bf0;
+  }
+  .inline-quota-badge.exhausted {
+    background: #fff1f3;
+    color: #c81e4d;
+  }
+  body.extension-core-mode .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 14px 12px;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background: #fff;
+    border-bottom: 1px solid #e1e4e8;
+  }
+  body.extension-core-mode .header-left {
+    gap: 12px;
+    align-items: center;
+  }
+  body.extension-core-mode .header-left a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.15s ease;
+  }
+  body.extension-core-mode .header-left a:hover {
+    opacity: 0.82;
+  }
+  body.extension-core-mode .header-left img {
+    width: 38px;
+    height: 38px;
+    border-radius: 999px;
+    display: block;
+  }
+  body.extension-core-mode .header-left span {
+    font-size: 17px;
+    font-weight: 800;
+    letter-spacing: -0.01em;
+    line-height: 1;
+  }
+  body.extension-core-mode .header-right {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  body.extension-core-mode .main {
+    display: block;
+    overflow: visible;
+  }
+  body.extension-core-mode .panel-left,
+  body.extension-core-mode .panel-right {
+    display: block;
+    width: 100%;
+    min-width: 0;
+    border-right: none;
+    padding: 12px;
+  }
+  body.extension-core-mode .panel-right {
+    padding-top: 0;
+  }
+  body.extension-core-mode .preview-wrap {
+    max-width: none;
+  }
+  body.extension-core-mode #settingsBtn,
+  body.extension-core-mode #btnLoadExample,
+  body.extension-core-mode #btnReset,
+  body.extension-core-mode #langBtn,
+  body.extension-core-mode #hostedCard,
+  body.extension-core-mode .embedded-shell-bar,
+  body.extension-core-mode .embedded-hint,
+  body.extension-core-mode .mode-tabs,
+  body.extension-core-mode #manualPanel,
+  body.extension-core-mode #translationToolbar,
+  body.extension-core-mode .translate-row,
+  body.extension-core-mode .translate-meta,
+  body.extension-core-mode #exportLabel,
+  body.extension-core-mode #scaleBtns,
+  body.extension-core-mode .api-key-modal-overlay {
+    display: none !important;
+  }
+  body.extension-core-mode #embeddedQuotaBadge {
+    display: none !important;
+  }
+  body.extension-core-mode .panel-left {
+    padding-bottom: 0;
+  }
+  body.extension-core-mode .export-section {
+    margin-top: 16px;
+    padding-top: 0;
+    border-top: none;
+  }
+  body.extension-core-mode #exportBtn {
+    display: block;
+  }
+  body.extension-core-mode .inline-quota-badge {
+    display: inline-flex;
+  }
+
   /* ─── Translate Button ─── */
   .translate-row { display: flex; justify-content: flex-end; margin-top: 4px; gap: 6px; }
   .translate-btn {
@@ -284,12 +582,25 @@
 <div class="header">
   <div class="header-left"><a href="https://x.com/maiyangai" target="_blank" rel="noopener noreferrer" title="@maiyangai"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiHIZuDb--IJ-q5d97gWm1W2eyLj7BePcWnQ&amp;s" height="40" width="40"/></a><span id="appTitle">Tweet Quote</span></div>
   <div class="header-right">
+    <span class="embedded-quota-badge" id="embeddedQuotaBadge"></span>
     <button class="btn lang-btn" onclick="switchLang()" id="langBtn">EN</button>
     <button class="btn" onclick="loadExample()" id="btnLoadExample">载入示例</button>
     <button class="btn" onclick="resetAll()" id="btnReset">清空</button>
     <button class="btn settings-btn" onclick="toggleSettings()" id="settingsBtn">⚙ 设置</button>
   </div>
 </div>
+<div class="embedded-shell-bar" id="embeddedShellBar">
+  <div class="embedded-view-tabs">
+    <button class="embedded-view-tab active" id="embeddedViewEditorBtn" onclick="setEmbeddedView('editor')"></button>
+    <button class="embedded-view-tab" id="embeddedViewPreviewBtn" onclick="setEmbeddedView('preview')"></button>
+  </div>
+  <div class="embedded-quick-actions">
+    <button class="embedded-pill-btn" id="embeddedLoadExampleBtn" onclick="loadExample()"></button>
+    <button class="embedded-pill-btn" id="embeddedResetBtn" onclick="resetAll()"></button>
+    <button class="embedded-pill-btn primary" id="embeddedExportBtn" onclick="exportPNG()"></button>
+  </div>
+</div>
+<div class="embedded-hint" id="embeddedHint"></div>
 <div class="main">
   <div class="panel-left">
     <!-- Mode tabs -->
@@ -298,14 +609,35 @@
       <button class="mode-tab" id="modeManualTab" onclick="setMode('manual')">✏️ 手工录入</button>
     </div>
 
+    <div class="hosted-card" id="hostedCard">
+      <div class="hosted-card-header">
+        <div>
+          <div class="hosted-card-title" id="hostedCardTitle"></div>
+          <div class="hosted-card-desc" id="hostedCardDesc"></div>
+        </div>
+        <span class="hosted-card-badge" id="hostedCardBadge"></span>
+      </div>
+      <div class="hosted-card-actions">
+        <button class="btn" id="hostedCardPrimaryBtn" onclick="openExtensionGuide()"></button>
+        <button class="btn" id="hostedCardSecondaryBtn" onclick="toggleSettings()"></button>
+      </div>
+    </div>
+
     <!-- Auto mode -->
     <div id="autoPanel">
       <div class="auto-section">
-        <div class="label" id="autoHint">粘贴任意一条推文链接，自动抓取完整引用链</div>
+        <div class="auto-section-head">
+          <div class="label" id="autoHint">粘贴任意一条推文链接，自动抓取完整引用链</div>
+          <span class="inline-quota-badge" id="inlineQuotaBadge"></span>
+        </div>
         <div class="auto-row">
           <input type="text" id="autoUrlInput" placeholder="https://x.com/user/status/..." onkeydown="if(event.key==='Enter'){event.preventDefault();autoFetch()}">
           <button class="auto-btn" id="autoFetchBtn" onclick="autoFetch()">一键抓取</button>
         </div>
+      <div class="quota-hint-row hidden" id="quotaHintRow">
+        <div class="quota-hint-text" id="quotaHintText"></div>
+        <button class="btn quota-hint-contact" id="quotaHintContactBtn" onclick="openSupportContact()"></button>
+      </div>
         <div class="auto-log" id="autoLog"></div>
       </div>
     </div>
@@ -569,6 +901,11 @@ const LANG = {
    i18n Core
    ═══════════════════════════════════════════ */
 let currentLang = localStorage.getItem("tnt_lang") || "zh-CN";
+const pageParams = new URLSearchParams(window.location.search);
+const startupTweetUrl = pageParams.get("tweet_url") || "";
+const startupSource = pageParams.get("source") || "web";
+const embeddedMode = pageParams.get("embedded") === "1";
+const extensionMode = embeddedMode || startupSource === "extension";
 
 function t(key, params) {
   const str = (LANG[currentLang] || LANG["zh-CN"])[key] || key;
@@ -630,15 +967,17 @@ const VIEWS_SVG = `<svg viewBox="0 0 16 16" width="16" height="16" style="flex-s
 let mode = "auto";
 let scale = 2;
 let apiKey = localStorage.getItem("tnt_api_key") || "";
-let apiConfigOpen = true;
+let apiConfigOpen = false;
 let settingsOpen = false;
 let aiBaseUrl = localStorage.getItem("tnt_ai_base_url") || "";
 let aiApiKey = localStorage.getItem("tnt_ai_api_key") || "";
 let aiModel = localStorage.getItem("tnt_ai_model") || "";
-let aiConfigOpen = true;
+let aiConfigOpen = false;
 let serverAiConfig = null;
 let serverTwitterConfig = null;
+let hostedSession = null;
 let tweets = [];
+let embeddedView = localStorage.getItem("tq_embedded_view") || "editor";
 
 function isTwitterApiAvailable() { return !!(apiKey || (serverTwitterConfig && serverTwitterConfig.configured)); }
 function isAiAvailable() { return !!(aiApiKey || (serverAiConfig && serverAiConfig.configured)); }
@@ -646,6 +985,253 @@ function empty() { return { name:"", handle:"", content:"", date:"", avatar:"", 
 function getAvatarColor(n) { return n ? AVATAR_COLORS[n.charCodeAt(0) % AVATAR_COLORS.length] : "#536471"; }
 function esc(s) { return (s||"").replace(/&/g,"&amp;").replace(/"/g,"&quot;").replace(/</g,"&lt;").replace(/>/g,"&gt;"); }
 function escHtml(s) { return (s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;"); }
+function cleanText(value) { return (value || "").trim(); }
+function getOrCreateDeviceId() {
+  let deviceId = localStorage.getItem("tq_device_id") || "";
+  if (!deviceId) {
+    deviceId = `tq_${Math.random().toString(36).slice(2)}${Date.now().toString(36)}`;
+    localStorage.setItem("tq_device_id", deviceId);
+  }
+  return deviceId;
+}
+function openExtensionGuide() {
+  window.open("/extension/", "_blank");
+}
+function setEmbeddedView(view) {
+  embeddedView = view === "preview" ? "preview" : "editor";
+  localStorage.setItem("tq_embedded_view", embeddedView);
+  syncEmbeddedView();
+}
+function syncEmbeddedView() {
+  if (!extensionMode) return;
+  document.body.classList.toggle("embedded-view-editor", embeddedView === "editor");
+  document.body.classList.toggle("embedded-view-preview", embeddedView === "preview");
+  const editorBtn = document.getElementById("embeddedViewEditorBtn");
+  const previewBtn = document.getElementById("embeddedViewPreviewBtn");
+  if (editorBtn) editorBtn.classList.toggle("active", embeddedView === "editor");
+  if (previewBtn) previewBtn.classList.toggle("active", embeddedView === "preview");
+}
+function stripEmbeddedExtras() {
+  if (!extensionMode) return;
+  ["settingsBtn", "hostedCard", "embeddedHint", "btnLoadExample", "btnReset", "langBtn", "embeddedShellBar", "manualPanel", "translationToolbar"].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.remove();
+  });
+  document.querySelectorAll(".mode-tabs").forEach(el => el.remove());
+}
+function getHostedQuotaSnapshot() {
+  return {
+    dailyRemaining: hostedSession?.daily_remaining ?? hostedSession?.trial_remaining ?? 0,
+    dailyTotal: hostedSession?.daily_total ?? 3,
+    weeklyRemaining: hostedSession?.weekly_remaining ?? hostedSession?.trial_remaining ?? 0,
+    weeklyTotal: hostedSession?.weekly_total ?? 20,
+  };
+}
+function getHostedQuotaExceededMessage() {
+  const quota = getHostedQuotaSnapshot();
+  const base = t("hosted.quota.exceeded.message", {
+    dailyTotal: quota.dailyTotal,
+    weeklyTotal: quota.weeklyTotal,
+  });
+  const reset = getHostedResetText();
+  return reset ? `${base} ${reset}` : base;
+}
+function formatQuotaResetTime(ts) {
+  const seconds = Number(ts || 0);
+  if (!seconds) return "";
+  const date = new Date(seconds * 1000);
+  if (Number.isNaN(date.getTime())) return "";
+  try {
+    return new Intl.DateTimeFormat(currentLang === "zh-CN" ? "zh-CN" : "en-US", {
+      month: "numeric",
+      day: "numeric",
+      hour: "2-digit",
+      minute: "2-digit",
+    }).format(date);
+  } catch (e) {
+    return date.toLocaleString();
+  }
+}
+function getHostedResetText() {
+  if (!hostedSession || hostedSession.error) return "";
+  const dailyTime = formatQuotaResetTime(hostedSession.next_daily_reset_at);
+  const weeklyTime = formatQuotaResetTime(hostedSession.next_weekly_reset_at);
+  if (hostedSession.requires_upgrade) {
+    if (hostedSession.exhausted_reason === "weekly" && weeklyTime) {
+      return t("hosted.reset.weeklyExhausted", { time: weeklyTime });
+    }
+    if (dailyTime) {
+      return t("hosted.reset.dailyExhausted", { time: dailyTime });
+    }
+    return t("hosted.reset.generic");
+  }
+  if (!dailyTime && !weeklyTime) return "";
+  return t("hosted.reset.summary", {
+    dailyTime: dailyTime || "--",
+    weeklyTime: weeklyTime || "--",
+  });
+}
+function openSupportContact() {
+  const url = hostedSession?.support_contact_url || "https://x.com/maiyangai";
+  window.open(url, "_blank", "noopener");
+}
+function updateQuotaHint() {
+  const row = document.getElementById("quotaHintRow");
+  const text = document.getElementById("quotaHintText");
+  const contactBtn = document.getElementById("quotaHintContactBtn");
+  if (!row || !text || !contactBtn) return;
+  if (!hostedSession || hostedSession.error) {
+    row.classList.add("hidden");
+    row.classList.remove("exhausted");
+    text.textContent = "";
+    return;
+  }
+  const resetText = getHostedResetText();
+  const shouldShow = !!resetText || !!hostedSession.requires_upgrade;
+  row.classList.toggle("hidden", !shouldShow);
+  row.classList.toggle("exhausted", !!hostedSession.requires_upgrade);
+  text.textContent = resetText;
+  contactBtn.textContent = t("hosted.contactAuthor");
+  contactBtn.hidden = !hostedSession.requires_upgrade;
+}
+function getHostedCardDescription() {
+  if (!hostedSession) return t("session.loading");
+  if (hostedSession.error) return t("session.error");
+  const quota = getHostedQuotaSnapshot();
+  if (hostedSession.requires_upgrade) {
+    return t("hosted.card.desc.exhausted", {
+      dailyTotal: quota.dailyTotal,
+      weeklyTotal: quota.weeklyTotal,
+    });
+  }
+  if (embeddedMode || startupSource === "extension") return t("hosted.card.desc.extension");
+  return t("hosted.card.desc.ready", {
+    dailyRemaining: quota.dailyRemaining,
+    dailyTotal: quota.dailyTotal,
+    weeklyRemaining: quota.weeklyRemaining,
+    weeklyTotal: quota.weeklyTotal,
+  });
+}
+function updateHostedCard() {
+  const card = document.getElementById("hostedCard");
+  const title = document.getElementById("hostedCardTitle");
+  const desc = document.getElementById("hostedCardDesc");
+  const badge = document.getElementById("hostedCardBadge");
+  const primary = document.getElementById("hostedCardPrimaryBtn");
+  const secondary = document.getElementById("hostedCardSecondaryBtn");
+  if (extensionMode) {
+    if (card) card.classList.add("hidden");
+    updateEmbeddedQuotaBadge();
+    updateQuotaHint();
+    return;
+  }
+  if (!card) return;
+  card.classList.remove("hidden");
+  title.textContent = t("hosted.card.title");
+  desc.textContent = getHostedCardDescription();
+  secondary.textContent = t("hosted.card.secondary");
+  primary.textContent = hostedSession && hostedSession.requires_upgrade
+    ? t("hosted.contactAuthor")
+    : t((embeddedMode || startupSource === "extension") ? "hosted.card.primary.extension" : "hosted.card.primary");
+  primary.onclick = hostedSession && hostedSession.requires_upgrade ? openSupportContact : openExtensionGuide;
+  if (hostedSession && hostedSession.requires_upgrade) {
+    badge.classList.add("exhausted");
+    badge.textContent = t("hosted.card.badge.exhausted");
+  } else if (hostedSession && hostedSession.error) {
+    badge.classList.remove("exhausted");
+    badge.textContent = "Offline";
+  } else if (hostedSession) {
+    const quota = getHostedQuotaSnapshot();
+    badge.classList.remove("exhausted");
+    badge.textContent = t("hosted.card.badge.ready", {
+      dailyRemaining: quota.dailyRemaining,
+      weeklyRemaining: quota.weeklyRemaining,
+    });
+  } else {
+    badge.classList.remove("exhausted");
+    badge.textContent = t("session.loading");
+  }
+  updateEmbeddedQuotaBadge();
+  updateQuotaHint();
+}
+function updateEmbeddedQuotaBadge() {
+  const badges = [
+    document.getElementById("embeddedQuotaBadge"),
+    document.getElementById("inlineQuotaBadge")
+  ].filter(Boolean);
+  if (!badges.length) return;
+  if (!hostedSession || hostedSession.error) {
+    badges.forEach(el => {
+      el.textContent = "";
+      el.className = el.id === "inlineQuotaBadge" ? "inline-quota-badge" : "embedded-quota-badge";
+    });
+    return;
+  }
+  const exhausted = hostedSession.requires_upgrade;
+  const quota = getHostedQuotaSnapshot();
+  const text = exhausted
+    ? t("embedded.quota.exhausted")
+    : t("embedded.quota", {
+      dailyRemaining: quota.dailyRemaining,
+      weeklyRemaining: quota.weeklyRemaining,
+    });
+  badges.forEach(el => {
+    el.textContent = text;
+    el.className = el.id === "inlineQuotaBadge" ? "inline-quota-badge" : "embedded-quota-badge";
+    if (exhausted) el.classList.add("exhausted");
+  });
+}
+async function fetchHostedSession() {
+  try {
+    const deviceId = getOrCreateDeviceId();
+    const resp = await fetch(`/api/session?device_id=${encodeURIComponent(deviceId)}`);
+    if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+    const data = await resp.json();
+    hostedSession = data;
+    if (data.device_id && data.device_id !== deviceId) {
+      localStorage.setItem("tq_device_id", data.device_id);
+    }
+  } catch (e) {
+    console.error(e);
+    hostedSession = {
+      trial_total: 20,
+      trial_remaining: 0,
+      daily_total: 3,
+      daily_remaining: 0,
+      weekly_total: 20,
+      weekly_remaining: 0,
+      requires_upgrade: false,
+      hosted_twitter_available: false,
+      hosted_ai_available: false,
+      error: true
+    };
+  }
+  updateHostedCard();
+}
+function applyRenderResult(data) {
+  if (data && data.session) {
+    hostedSession = data.session;
+    updateHostedCard();
+  }
+  const items = Array.isArray(data && data.items) ? data.items : [];
+  tweets = items.map(item => {
+    const parsed = parseTweetObj(item);
+    parsed._rel = item._rel || "";
+    parsed.translatedContent = item.translatedContent || "";
+    parsed.annotations = filterAnnotations(item.annotations || [], parsed.translatedContent || "");
+    parsed.translateStatus = parsed.translatedContent ? "success" : "idle";
+    parsed.lastTranslateProvider = data?.meta?.translation_provider === "ai" ? "ai" : (data?.meta?.translation_provider === "google" ? "google" : "");
+    return normalizeTweet(parsed);
+  });
+  resetBatchState(false);
+  if (embeddedMode) {
+    setEmbeddedView("editor");
+  }
+  renderInputs();
+  renderPreview();
+  updateExportBtn();
+  updateBatchControls();
+}
 
 /* ═══════════════════════════════════════════
    Mode switching
@@ -674,6 +1260,10 @@ document.addEventListener('keydown', function(e) {
   if (e.key === 'Escape' && document.getElementById('apiKeyModalOverlay').classList.contains('open')) hideApiKeyRequiredModal();
 });
 function showApiKeyRequiredModal() {
+  if (extensionMode) {
+    autoLog("err", t("embedded.noService"));
+    return;
+  }
   document.getElementById("apiKeyModalTitle").textContent = t("modal.apiKey.title");
   document.getElementById("apiKeyModalDesc").textContent = t("modal.apiKey.desc");
   document.getElementById("apiKeyModalDismiss").textContent = t("modal.apiKey.dismiss");
@@ -687,6 +1277,7 @@ function hideApiKeyRequiredModal() {
 }
 function updateSettingsBtn() {
   const btn = document.getElementById('settingsBtn');
+  if (!btn) return;
   const hasConfig = isTwitterApiAvailable() || isAiAvailable();
   btn.classList.toggle('has-config', hasConfig);
 }
@@ -865,9 +1456,10 @@ async function autoFetch() {
   const logEl = document.getElementById("autoLog");
   logEl.innerHTML = "";
   apiKey = (document.getElementById("apiKeyInput")?.value || "").trim() || localStorage.getItem("tnt_api_key") || "";
-
-  if (!isTwitterApiAvailable()) { showApiKeyRequiredModal(); return; }
-  const tweetId = extractTweetId(urlInput.value);
+  const tweetUrl = cleanText(urlInput.value);
+  const hasHostedFetch = !!(hostedSession && hostedSession.hosted_twitter_available);
+  if (!extensionMode && !isTwitterApiAvailable() && !hasHostedFetch) { showApiKeyRequiredModal(); return; }
+  const tweetId = extractTweetId(tweetUrl);
   if (!tweetId) { autoLog("err", t("err.invalidUrl")); return; }
 
   btn.disabled = true;
@@ -877,66 +1469,40 @@ async function autoFetch() {
 
   try {
     autoLog("info", t("fetch.start", { id: tweetId }));
-    const tw = await apiGetTweet(tweetId);
-    tweets.push(parseTweetObj(tw));
-    autoLog("ok", t("fetch.layer", { n: 1, name: tw.author?.name || "?", text: (tw.text||"").slice(0,40) }));
+    const payload = {
+      tweet_url: tweetUrl,
+      source: startupSource,
+      device_id: getOrCreateDeviceId(),
+      translation_provider: "none",
+      target_lang: getTargetLang(),
+      include_annotations: false
+    };
+    if (apiKey) payload.api_key = apiKey;
 
-    const visited = new Set([tweetId]);
-    let current = tw;
-    let depth = 1;
-    const MAX_DEPTH = 10;
-
-    while (depth < MAX_DEPTH) {
-      let nextId = null;
-      let isReply = false;
-
-      const qt = current.quoted_tweet;
-      if (qt && qt.id && !visited.has(qt.id)) {
-        nextId = qt.id;
-      }
-
-      if (!nextId && current.inReplyToId && !visited.has(current.inReplyToId)) {
-        nextId = current.inReplyToId;
-        isReply = true;
-      }
-
-      if (!nextId) break;
-      visited.add(nextId);
-
-      if (!isReply && qt && qt.id === nextId && qt.text && qt.author) {
-        const parsed = parseTweetObj(qt);
-        parsed._rel = 'quote';
-        tweets.push(parsed);
-        autoLog("ok", t("fetch.layerEmbed", { n: depth+1, name: qt.author?.name || "?", text: qt.text.slice(0,40) }));
-        current = qt;
-        depth++;
-        continue;
-      }
-
-      autoLog("info", t(isReply ? "fetch.replyStart" : "fetch.incomplete", { n: depth+1, id: nextId }));
-      try {
-        const fullTweet = await apiGetTweet(nextId);
-        const parsed = parseTweetObj(fullTweet);
-        parsed._rel = isReply ? 'reply' : 'quote';
-        tweets.push(parsed);
-        autoLog("ok", t(isReply ? "fetch.replyLayer" : "fetch.layer", { n: depth+1, name: fullTweet.author?.name || "?", text: (fullTweet.text||"").slice(0,40) }));
-        current = fullTweet;
-        depth++;
-      } catch(e) {
-        autoLog("err", t("fetch.layerFail", { n: depth+1, error: e.message }));
-        break;
-      }
-    }
-
-    autoLog("ok", t("fetch.done", { n: tweets.length }));
+    const data = await requestJson("/api/quote-chain/render", payload);
+    applyRenderResult(data);
+    const items = Array.isArray(data.items) ? data.items : [];
+    items.forEach((item, idx) => {
+      const name = item?.author?.name || "?";
+      const text = cleanText(item?.text || "").replace(/\s+/g, " ").slice(0, 40);
+      const rel = item?._rel || "";
+      const key = rel === "reply" ? "fetch.replyLayer" : "fetch.layer";
+      autoLog("ok", t(key, { n: idx + 1, name, text }));
+    });
+    const count = items.length;
+    autoLog("ok", t("fetch.done", { n: count }));
   } catch(e) {
     console.error(e);
-    autoLog("err", t("fetch.fail", { error: e.message }));
+    if (e.data && e.data.session) {
+      hostedSession = e.data.session;
+      updateHostedCard();
+    }
+    const errText = e.data?.session?.requires_upgrade
+      ? getHostedQuotaExceededMessage()
+      : t("fetch.fail", { error: e.message });
+    autoLog("err", errText);
   }
 
-  renderInputs();
-  renderPreview();
-  updateExportBtn();
   btn.disabled = false;
   btn.classList.remove("loading");
   btn.textContent = t("auto.fetch");
@@ -1269,7 +1835,10 @@ function renderScaleBtns() {
   });
 }
 function updateExportBtn() {
-  document.getElementById("exportBtn").disabled = !tweets.some(t => getDisplayContent(t).trim());
+  const disabled = !tweets.some(t => getDisplayContent(t).trim());
+  document.getElementById("exportBtn").disabled = disabled;
+  const embeddedExportBtn = document.getElementById("embeddedExportBtn");
+  if (embeddedExportBtn) embeddedExportBtn.disabled = disabled;
 }
 
 async function exportPNG() {
@@ -1317,6 +1886,39 @@ function resetAll() {
    Batch translation overrides
    ═══════════════════════════════════════════ */
 Object.assign(LANG["zh-CN"], {
+  "api.config.label": "🧪 高级模式：自带 TwitterAPI Key",
+  "api.status.none": "未配置 — 默认使用托管试用或手工录入",
+  "api.help": '普通用户推荐直接安装插件或使用托管试用。只有在你想自带上游 Key 时，才需要填写这里。<a href="https://twitterapi.io" target="_blank" style="color:#1d9bf0">获取 API Key →</a>',
+  "modal.apiKey.title": "需要托管额度或自带 Key",
+  "modal.apiKey.desc": "当前自动抓取优先走 Tweet Quote 托管额度。若服务端未配置托管抓取，可在高级设置里填入你自己的 TwitterAPI.io Key。",
+  "ai.config.label": "🧪 高级模式：自带 AI Key",
+  "ai.status.none": "未配置 — 默认依赖服务端托管 AI 或仅抓取原文",
+  "settings.clearConfirm": "确定要清空所有高级配置（自带 Key、AI 配置）吗？",
+  "hosted.card.title": "普通用户直接用，不用先配 Key",
+  "hosted.card.desc.ready": "托管抓取额度为每天 {dailyTotal} 次、每周 {weeklyTotal} 次。当前今日剩余 {dailyRemaining} 次，本周剩余 {weeklyRemaining} 次；网页端仍可继续手工编辑，高级用户也可自带 Key。",
+  "hosted.card.desc.extension": "你是从插件侧栏进入的。当前推文链接会自动带入，但不会自动抓取；由你手动点击后再开始处理。",
+  "hosted.card.desc.exhausted": "托管抓取额度已达上限：每天最多 {dailyTotal} 次、每周最多 {weeklyTotal} 次。你仍可手工编辑，或在高级模式里自带上游 Key 继续使用；如需更多额度，可联系作者。",
+  "hosted.card.badge.ready": "今日 {dailyRemaining} / 本周 {weeklyRemaining}",
+  "hosted.card.badge.exhausted": "额度已达上限",
+  "hosted.card.primary": "安装 Chrome 插件",
+  "hosted.card.primary.extension": "查看插件说明",
+  "hosted.card.secondary": "打开高级设置",
+  "hosted.contactAuthor": "联系作者",
+  "hosted.quota.exceeded.message": "托管抓取额度已达上限：每天最多 {dailyTotal} 次、每周最多 {weeklyTotal} 次。如需更多额度，请联系作者。",
+  "hosted.reset.summary": "下次恢复时间：今日额度约在 {dailyTime} 恢复，本周额度约在 {weeklyTime} 恢复。",
+  "hosted.reset.dailyExhausted": "今日额度已用完，预计在 {time} 恢复。",
+  "hosted.reset.weeklyExhausted": "本周额度已用完，预计在 {time} 恢复。",
+  "hosted.reset.generic": "额度恢复时间同步中，请稍后刷新查看。",
+  "session.loading": "正在同步试用额度...",
+  "session.error": "无法读取试用额度，仍可继续手工编辑。",
+  "fetch.prefill": "已从插件带入当前推文链接，点击“一键抓取”后再开始处理。",
+  "embedded.quota": "今日 {dailyRemaining} / 本周 {weeklyRemaining}",
+  "embedded.quota.exhausted": "今日或本周额度已达上限",
+  "embedded.noService": "抓取服务暂不可用，请稍后重试",
+  "embedded.view.editor": "编辑",
+  "embedded.view.preview": "预览",
+  "embedded.hint": "侧栏模式下建议先抓取或编辑，再切到预览确认导出效果。",
+  "embedded.export": "导出",
   "translate.target": "翻译目标",
   "translate.target.zh": "中文",
   "translate.target.en": "英文",
@@ -1345,6 +1947,39 @@ Object.assign(LANG["zh-CN"], {
   "aiTranslate.fail.inline": "AI 翻译失败：{error}"
 });
 Object.assign(LANG["en"], {
+  "api.config.label": "🧪 Advanced: Bring your TwitterAPI key",
+  "api.status.none": "Not configured — hosted trial or manual input is the default path",
+  "api.help": 'Most users should start with the extension or hosted trial. Only fill this if you want to bring your own upstream key. <a href="https://twitterapi.io" target="_blank" style="color:#1d9bf0">Get API Key →</a>',
+  "modal.apiKey.title": "Hosted credits or your own key required",
+  "modal.apiKey.desc": "Auto-fetch now prefers Tweet Quote hosted credits. If the server is not configured for hosted fetch, you can still use your own TwitterAPI.io key in Advanced settings.",
+  "ai.config.label": "🧪 Advanced: Bring your AI key",
+  "ai.status.none": "Not configured — falls back to hosted AI when available, or source-only fetch",
+  "settings.clearConfirm": "Clear all advanced settings (your own keys and AI config)?",
+  "hosted.card.title": "Ordinary users should not need keys",
+  "hosted.card.desc.ready": "Hosted renders are limited to {dailyTotal} per day and {weeklyTotal} per week. You currently have {dailyRemaining} left today and {weeklyRemaining} left this week, while the web editor remains available for manual editing.",
+  "hosted.card.desc.extension": "You opened Tweet Quote inside the extension side panel. The current tweet URL is prefilled, but fetching stays manual until you click it.",
+  "hosted.card.desc.exhausted": "Hosted render quota reached: at most {dailyTotal} per day and {weeklyTotal} per week. You can still edit manually or continue in advanced mode with your own upstream keys. Contact the author if you need more quota.",
+  "hosted.card.badge.ready": "Today {dailyRemaining} / Week {weeklyRemaining}",
+  "hosted.card.badge.exhausted": "Quota reached",
+  "hosted.card.primary": "Install Chrome extension",
+  "hosted.card.primary.extension": "Extension guide",
+  "hosted.card.secondary": "Open advanced settings",
+  "hosted.contactAuthor": "Contact author",
+  "hosted.quota.exceeded.message": "Hosted render quota reached: at most {dailyTotal} per day and {weeklyTotal} per week. Contact the author if you need more quota.",
+  "hosted.reset.summary": "Next reset: daily quota around {dailyTime}, weekly quota around {weeklyTime}.",
+  "hosted.reset.dailyExhausted": "Daily quota exhausted. Expected to reset around {time}.",
+  "hosted.reset.weeklyExhausted": "Weekly quota exhausted. Expected to reset around {time}.",
+  "hosted.reset.generic": "Quota reset time is syncing. Please refresh in a moment.",
+  "session.loading": "Syncing hosted credits...",
+  "session.error": "Could not read hosted credits. Manual editing is still available.",
+  "fetch.prefill": "The current tweet URL was prefilled from the extension. Click Fetch when you want to start.",
+  "embedded.quota": "Today {dailyRemaining} / Week {weeklyRemaining}",
+  "embedded.quota.exhausted": "Daily or weekly quota reached",
+  "embedded.noService": "Fetch service unavailable, try again later",
+  "embedded.view.editor": "Edit",
+  "embedded.view.preview": "Preview",
+  "embedded.hint": "In side-panel mode, fetch or edit first, then switch to preview before exporting.",
+  "embedded.export": "Export",
   "translate.target": "Translation target",
   "translate.target.zh": "Chinese",
   "translate.target.en": "English",
@@ -1590,7 +2225,11 @@ function requestJson(url, payload) {
     body: JSON.stringify(payload)
   }).then(async resp => {
     const data = await resp.json().catch(() => ({}));
-    if (!resp.ok) throw new Error(data.error || `HTTP ${resp.status}`);
+    if (!resp.ok) {
+      const err = new Error(data.error || `HTTP ${resp.status}`);
+      err.data = data;
+      throw err;
+    }
     return data;
   });
 }
@@ -1859,42 +2498,64 @@ function retryFailedTranslations() {
 
 function applyLang() {
   ensureBatchToolbar();
+  const setText = (id, value) => {
+    const el = document.getElementById(id);
+    if (el) el.textContent = value;
+  };
+  const setHtml = (id, value) => {
+    const el = document.getElementById(id);
+    if (el) el.innerHTML = value;
+  };
+  const setPlaceholder = (id, value) => {
+    const el = document.getElementById(id);
+    if (el) el.placeholder = value;
+  };
   document.documentElement.lang = currentLang;
-  document.getElementById("appTitle").textContent = t("app.title");
-  document.getElementById("btnLoadExample").textContent = t("btn.loadExample");
-  document.getElementById("btnReset").textContent = t("btn.reset");
-  document.getElementById("langBtn").textContent = t("btn.langSwitch");
-  document.getElementById("settingsBtn").textContent = t("btn.settings");
-  document.getElementById("settingsTitle").textContent = t("settings.title");
-  document.getElementById("apiConfigLabel").textContent = t("api.config.label");
-  document.getElementById("apiToggleText").textContent = apiConfigOpen ? t("api.toggle.collapse") : t("api.toggle.expand");
-  document.getElementById("apiKeyInput").placeholder = t("api.placeholder.apiKey");
+  setText("appTitle", t("app.title"));
+  setText("btnLoadExample", t("btn.loadExample"));
+  setText("btnReset", t("btn.reset"));
+  setText("langBtn", t("btn.langSwitch"));
+  setText("settingsBtn", t("btn.settings"));
+  setText("embeddedViewEditorBtn", t("embedded.view.editor"));
+  setText("embeddedViewPreviewBtn", t("embedded.view.preview"));
+  setText("embeddedLoadExampleBtn", t("btn.loadExample"));
+  setText("embeddedResetBtn", t("btn.reset"));
+  setText("embeddedExportBtn", t("embedded.export"));
+  setText("embeddedHint", t("embedded.hint"));
+  setText("settingsTitle", t("settings.title"));
+  setText("apiConfigLabel", t("api.config.label"));
+  setText("apiToggleText", apiConfigOpen ? t("api.toggle.collapse") : t("api.toggle.expand"));
+  setPlaceholder("apiKeyInput", t("api.placeholder.apiKey"));
   updateApiStatus();
-  document.getElementById("apiHelp").innerHTML = t("api.help");
-  document.getElementById("aiConfigLabel").textContent = t("ai.config.label");
-  document.getElementById("aiToggleText").textContent = aiConfigOpen ? t("api.toggle.collapse") : t("api.toggle.expand");
-  document.getElementById("aiBaseUrlInput").placeholder = t("ai.placeholder.baseUrl");
-  document.getElementById("aiApiKeyInput").placeholder = t("ai.placeholder.apiKey");
-  document.getElementById("aiModelInput").placeholder = t("ai.placeholder.model");
+  setHtml("apiHelp", t("api.help"));
+  setText("aiConfigLabel", t("ai.config.label"));
+  setText("aiToggleText", aiConfigOpen ? t("api.toggle.collapse") : t("api.toggle.expand"));
+  setPlaceholder("aiBaseUrlInput", t("ai.placeholder.baseUrl"));
+  setPlaceholder("aiApiKeyInput", t("ai.placeholder.apiKey"));
+  setPlaceholder("aiModelInput", t("ai.placeholder.model"));
   updateAiStatus();
-  document.getElementById("contactAuthorLabel").textContent = t("settings.contactAuthor");
-  document.getElementById("btnClearSettings").textContent = t("settings.clearConfig");
-  document.getElementById("apiKeyModalTitle").textContent = t("modal.apiKey.title");
-  document.getElementById("apiKeyModalDesc").textContent = t("modal.apiKey.desc");
-  document.getElementById("apiKeyModalDismiss").textContent = t("modal.apiKey.dismiss");
-  document.getElementById("apiKeyModalGoSettings").textContent = t("modal.apiKey.goSettings");
-  document.getElementById("modeAutoTab").textContent = t("mode.auto");
-  document.getElementById("modeManualTab").textContent = t("mode.manual");
-  document.getElementById("autoHint").textContent = t("auto.hint");
-  document.getElementById("autoFetchBtn").textContent = t("auto.fetch");
-  document.getElementById("btnAddLayer").textContent = t("manual.addLayer");
-  document.getElementById("btnRemoveLayer").textContent = t("manual.removeLayer");
-  document.getElementById("exportLabel").textContent = t("export.label");
-  document.getElementById("exportBtn").textContent = t("export.btn");
-  document.getElementById("previewLabel").textContent = t("preview.label");
+  setText("contactAuthorLabel", t("settings.contactAuthor"));
+  setText("btnClearSettings", t("settings.clearConfig"));
+  setText("apiKeyModalTitle", t("modal.apiKey.title"));
+  setText("apiKeyModalDesc", t("modal.apiKey.desc"));
+  setText("apiKeyModalDismiss", t("modal.apiKey.dismiss"));
+  setText("apiKeyModalGoSettings", t("modal.apiKey.goSettings"));
+  setText("modeAutoTab", t("mode.auto"));
+  setText("modeManualTab", t("mode.manual"));
+  setText("autoHint", t("auto.hint"));
+  setText("autoFetchBtn", t("auto.fetch"));
+  setText("btnAddLayer", t("manual.addLayer"));
+  setText("btnRemoveLayer", t("manual.removeLayer"));
+  setText("exportLabel", t("export.label"));
+  setText("exportBtn", t("export.btn"));
+  setText("previewLabel", t("preview.label"));
+  syncEmbeddedView();
+  updateHostedCard();
+  updateEmbeddedQuotaBadge();
   updateBatchControls();
   renderInputs();
   renderPreview();
+  stripEmbeddedExtras();
 }
 
 function renderInputs() {
@@ -2011,12 +2672,29 @@ function resetAll() {
    ═══════════════════════════════════════════ */
 document.getElementById("apiKeyInput").value = apiKey;
 loadAiConfig();
+document.body.classList.toggle("embedded-mode", extensionMode);
+document.body.classList.toggle("extension-core-mode", extensionMode);
+if (extensionMode) {
+  syncEmbeddedView();
+  stripEmbeddedExtras();
+}
 applyLang();
 renderScaleBtns();
 updateExportBtn();
 updateSettingsBtn();
-fetchServerAiConfig().then(updateSettingsBtn);
-fetchServerTwitterConfig().then(updateSettingsBtn);
+if (startupTweetUrl) {
+  document.getElementById("autoUrlInput").value = startupTweetUrl;
+  autoLog("info", t("fetch.prefill"));
+}
+fetchHostedSession();
+fetchServerAiConfig().then(() => {
+  updateSettingsBtn();
+  updateHostedCard();
+});
+fetchServerTwitterConfig().then(() => {
+  updateSettingsBtn();
+  updateHostedCard();
+});
 </script>
 </body>
 </html>
