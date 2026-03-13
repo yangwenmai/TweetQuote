@@ -883,7 +883,7 @@
         <a href="#workflow" class="nav-link" data-i18n="nav.workflow"></a>
         <a href="https://github.com/yangwenmai/tweetquote" target="_blank" rel="noreferrer" class="nav-link">GitHub</a>
         <button class="lang-toggle" id="langToggle" onclick="switchLang()"></button>
-        <a href="#" class="nav-link nav-cta" onclick="return handleTry()" data-i18n="nav.cta"></a>
+        <a href="#" class="nav-link nav-cta" onclick="return handleInstall()" data-i18n="nav.cta"></a>
       </nav>
     </div>
   </header>
@@ -896,8 +896,8 @@
           <h1 class="hero-title display" data-i18n-html="hero.title"></h1>
           <p class="hero-desc" data-i18n-html="hero.desc"></p>
           <div class="hero-actions">
-            <a href="#" class="button button-primary" onclick="return handleTry()" data-i18n="hero.primary"></a>
-            <a href="#story" class="button button-secondary" data-i18n="hero.secondary"></a>
+            <a href="#" class="button button-primary" onclick="return handleInstall()" data-i18n="hero.primary"></a>
+            <a href="#" class="button button-secondary" onclick="return handleOpenApp()" data-i18n="hero.secondary"></a>
           </div>
           <div class="hero-proof">
             <div class="proof-item">
@@ -1057,8 +1057,8 @@
             <p data-i18n-html="cta.desc"></p>
           </div>
           <div class="cta-actions">
-            <a href="#" class="button button-primary" onclick="return handleTry()" data-i18n="cta.primary"></a>
-            <a href="https://github.com/yangwenmai/tweetquote" target="_blank" rel="noreferrer" class="button button-secondary" data-i18n="cta.secondary"></a>
+            <a href="#" class="button button-primary" onclick="return handleInstall()" data-i18n="cta.primary"></a>
+            <a href="#" class="button button-secondary" onclick="return handleOpenApp()" data-i18n="cta.secondary"></a>
           </div>
         </div>
       </div>
@@ -1084,19 +1084,19 @@ const I18N = {
     "nav.story": "品牌叙事",
     "nav.principles": "设计原则",
     "nav.workflow": "工作方式",
-    "nav.cta": "打开工具",
+    "nav.cta": "安装插件",
     "lang.toggle": "EN",
-    "hero.eyebrow": "开源 / 上下文优先 / 支持双语",
+    "hero.eyebrow": "插件优先 / 无需 API Key / 支持双语",
     "hero.title": "让每一次引用，<br>都带上它缺失的上下文。",
-    "hero.desc": "Tweet Quote 不是又一个“AI 工具落地页”。它更像一个为记者、研究者、内容作者准备的排版器，把 Twitter / X 上零散的引用链整理成一张清晰、克制、值得转发保存的图像。<br><br>翻译与注释仍然在，但它们退到幕后，服务阅读，而不是喧宾夺主。",
-    "hero.primary": "立即体验",
-    "hero.secondary": "看看这套品牌气质",
-    "hero.proof1.title": "上下文优先",
-    "hero.proof1.desc": "完整保留引用关系，减少被断章取义的风险。",
-    "hero.proof2.title": "双语阅读",
-    "hero.proof2.desc": "支持翻译与术语注释，但视觉表达保持冷静克制。",
+    "hero.desc": "Tweet Quote 不是一个要求普通用户先研究 API Key 的工具。现在更推荐以浏览器插件形态进入：当你在 Twitter / X 上看到一条值得整理的引用，只要一键，就能把整条上下文带进来，翻译、注释和导出都交给托管服务完成。<br><br>网页版仍然保留，但退到第二入口，承担手工编辑和高级模式。",
+    "hero.primary": "安装 Chrome 插件",
+    "hero.secondary": "打开网页版编辑器",
+    "hero.proof1.title": "插件优先",
+    "hero.proof1.desc": "真正的入口就在 X / Twitter 页面内，而不是要求用户先打开另一个工具。",
+    "hero.proof2.title": "免 Key 试用",
+    "hero.proof2.desc": "默认赠送少量免费额度，先体验价值，再决定是否购买。",
     "hero.proof3.title": "一键成品",
-    "hero.proof3.desc": "从链接到可分享图片，保持高完成度输出。",
+    "hero.proof3.desc": "从当前推文到完整上下文、翻译与导出，缩短到一条最短路径。",
     "hero.panelLabel": "产品预览",
     "hero.panelRight": "Tweet Quote",
     "hero.note1.title": "不是炫技",
@@ -1136,14 +1136,14 @@ const I18N = {
     "workflow.step3.desc": "输出高分辨率 PNG，把零散对话变成一张完整、可传播、可留存的图像。",
     "workflow.point1.title": "开源透明。",
     "workflow.point1.desc": "品牌可信度来自透明，而不是神秘感。",
-    "workflow.point2.title": "无需注册。",
-    "workflow.point2.desc": "减少营销摩擦，让工具属性先成立。",
+    "workflow.point2.title": "无需先配 Key。",
+    "workflow.point2.desc": "先用托管试用让普通用户感受到价值，再把高级模式留给有需要的人。",
     "workflow.point3.title": "为复杂语境而设计。",
     "workflow.point3.desc": "适合引用、研究、翻译和内容归档，而不只是截图分享。",
-    "cta.title": "如果你的产品在解决“语境缺失”，<br>它的品牌也应该看起来更有分寸。",
-    "cta.desc": "现在的页面已经从典型 AI 模板风格，调整为更安静、更像出版产品的表达。打开工具，看看这种品牌语言是否更接近你想服务的用户。",
-    "cta.primary": "打开 Tweet Quote",
-    "cta.secondary": "查看 GitHub",
+    "cta.title": "如果真正要服务普通用户，<br>入口就应该离内容发生地更近。",
+    "cta.desc": "所以 Tweet Quote 的下一步不只是更好看的网页，而是插件优先、托管 API、免 Key 试用。先安装插件，再决定要不要进入网页版精修。",
+    "cta.primary": "安装 Tweet Quote 插件",
+    "cta.secondary": "打开网页版编辑器",
     "footer.copy": "Tweet Quote，为在意上下文的人而做。",
     "try.alert": "托管服务即将上线。\n\n目前可以本地运行：\npython3 server.py\n然后访问 http://localhost:8088/"
   },
@@ -1152,19 +1152,19 @@ const I18N = {
     "nav.story": "Story",
     "nav.principles": "Principles",
     "nav.workflow": "Workflow",
-    "nav.cta": "Open app",
+    "nav.cta": "Install extension",
     "lang.toggle": "中文",
-    "hero.eyebrow": "Open source / Context-first / Bilingual",
+    "hero.eyebrow": "Extension-first / No API key / Bilingual",
     "hero.title": "Give every quote<br>the context it was missing.",
-    "hero.desc": "Tweet Quote is not another AI landing page. It feels closer to an editorial tool for journalists, researchers, and curators: a way to turn scattered Twitter / X quote chains into a composed image worth sharing and archiving.<br><br>Translation and annotations are still there, but they now stay in the background, supporting reading instead of trying to sell the product.",
-    "hero.primary": "Try the product",
-    "hero.secondary": "See the brand shift",
-    "hero.proof1.title": "Context first",
-    "hero.proof1.desc": "Preserve quote relationships so ideas are less likely to be stripped from their source.",
-    "hero.proof2.title": "Bilingual reading",
-    "hero.proof2.desc": "Translation and annotations remain useful, without turning the page into AI theater.",
+    "hero.desc": "Tweet Quote should not ask ordinary users to understand API keys before they can feel the value. The preferred path is now the browser extension: when you find an X / Twitter post worth framing, one click should carry the whole context into Tweet Quote, with hosted fetch, translation, notes, and export handled for you.<br><br>The web app still exists, but as the secondary editor for manual cleanup and advanced use cases.",
+    "hero.primary": "Install Chrome extension",
+    "hero.secondary": "Open web editor",
+    "hero.proof1.title": "Extension first",
+    "hero.proof1.desc": "The product starts where the conversation already is, inside X / Twitter.",
+    "hero.proof2.title": "No-key trial",
+    "hero.proof2.desc": "Hosted credits let people try the product before asking them to buy or configure anything.",
     "hero.proof3.title": "One finished artifact",
-    "hero.proof3.desc": "From link to shareable image, the output feels composed rather than generated.",
+    "hero.proof3.desc": "From the current tweet to a framed result with context, translation, and export.",
     "hero.panelLabel": "Product preview",
     "hero.panelRight": "Tweet Quote",
     "hero.note1.title": "Less AI theater",
@@ -1204,20 +1204,21 @@ const I18N = {
     "workflow.step3.desc": "Generate a high-resolution PNG that turns a fragmented conversation into a complete, portable artifact.",
     "workflow.point1.title": "Open source.",
     "workflow.point1.desc": "Trust grows from transparency, not mystique.",
-    "workflow.point2.title": "No sign-up wall.",
-    "workflow.point2.desc": "A product should prove its usefulness before it asks for anything.",
+    "workflow.point2.title": "No key wall first.",
+    "workflow.point2.desc": "Hosted trial should prove the value before advanced configuration ever appears.",
     "workflow.point3.title": "Built for nuance.",
     "workflow.point3.desc": "Good for quoting, researching, translating, and archiving, not only for social screenshots.",
-    "cta.title": "If your product solves missing context,<br>its brand should feel more considered too.",
-    "cta.desc": "The page now steps away from generic AI aesthetics and toward a calmer, more editorial expression. Open the tool and see whether this tone feels closer to the audience you want to serve.",
-    "cta.primary": "Open Tweet Quote",
-    "cta.secondary": "View on GitHub",
+    "cta.title": "If you want to serve ordinary users,<br>the entry point should stay close to the feed.",
+    "cta.desc": "That means the next step is not just a prettier website, but an extension-first product with hosted API access and a no-key trial. Install the extension first, then use the web editor when you need to refine.",
+    "cta.primary": "Install Tweet Quote extension",
+    "cta.secondary": "Open web editor",
     "footer.copy": "Tweet Quote for people who care about context.",
     "try.alert": "The hosted service is coming soon.\n\nFor now, run locally:\npython3 server.py\nThen visit http://localhost:8088/"
   }
 };
 
 const APP_URL = 'http://159.89.204.255:8088/';
+const EXTENSION_URL = '/extension/';
 let lang = localStorage.getItem('tq_landing_lang') || (navigator.language.startsWith('zh') ? 'zh-CN' : 'en');
 
 function t(key) {
@@ -1247,7 +1248,12 @@ function switchLang() {
   applyLang();
 }
 
-function handleTry() {
+function handleInstall() {
+  window.open(EXTENSION_URL, '_blank');
+  return false;
+}
+
+function handleOpenApp() {
   if (APP_URL) {
     window.open(APP_URL, '_blank');
   } else {

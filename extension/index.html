@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tweet Quote Chrome 插件</title>
+<style>
+  :root {
+    --bg: #f5f7fb;
+    --card: #ffffff;
+    --text: #111827;
+    --muted: #5b6472;
+    --line: #d8deea;
+    --accent: #1d9bf0;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+  }
+  .wrap {
+    width: min(680px, calc(100% - 32px));
+    margin: 48px auto;
+  }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    padding: 32px;
+    box-shadow: 0 16px 48px rgba(17, 24, 39, 0.06);
+  }
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+  .brand img {
+    border-radius: 14px;
+  }
+  .brand h1 {
+    margin: 0;
+    font-size: 28px;
+  }
+  .desc { margin: 0 0 20px; color: var(--muted); line-height: 1.7; font-size: 15px; }
+  .steps {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 24px;
+  }
+  .step {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  .step-num {
+    display: inline-flex;
+    width: 28px;
+    height: 28px;
+    min-width: 28px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+    background: #e8f5fd;
+    color: var(--accent);
+    font-weight: 800;
+    font-size: 14px;
+  }
+  .step p { margin: 0; line-height: 1.6; font-size: 14px; padding-top: 3px; }
+  code {
+    padding: 2px 6px;
+    border-radius: 6px;
+    background: #eef2ff;
+    font-size: 13px;
+  }
+  .actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 42px;
+    padding: 0 18px;
+    border-radius: 999px;
+    text-decoration: none;
+    border: 1px solid var(--line);
+    color: var(--text);
+    background: #fff;
+    font-weight: 700;
+    font-size: 14px;
+  }
+  .btn.primary {
+    border-color: var(--accent);
+    background: var(--accent);
+    color: #fff;
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <div class="brand">
+        <img src="icon-128.png" width="48" height="48" alt="Tweet Quote">
+        <h1>Tweet Quote</h1>
+      </div>
+      <p class="desc">在任意 X / Twitter 推文详情页，点击右下角浮动按钮即可打开侧栏。当前推文链接自动带入，点击「一键抓取」后开始处理。</p>
+
+      <div class="steps">
+        <div class="step">
+          <span class="step-num">1</span>
+          <p>打开 <code>chrome://extensions</code>，开启右上角「开发者模式」</p>
+        </div>
+        <div class="step">
+          <span class="step-num">2</span>
+          <p>点击「加载已解压的扩展程序」，选择项目的 <code>extension</code> 目录</p>
+        </div>
+        <div class="step">
+          <span class="step-num">3</span>
+          <p>前往任意推文页面，点击右下角 <code>TQ</code> 按钮开始使用</p>
+        </div>
+      </div>
+
+      <div class="actions">
+        <a class="btn primary" href="/" target="_blank" rel="noreferrer">打开网页版</a>
+        <a class="btn" href="https://github.com/yangwenmai/tweetquote" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
