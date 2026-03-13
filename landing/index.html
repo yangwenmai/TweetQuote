@@ -3,526 +3,1217 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tweet Quote — 引用链，一键成图 | Quote Chain to Image</title>
-<meta name="description" content="把 Twitter 推文引用链变成一张可分享的高清图片，支持 AI 翻译与智能注释。Turn Twitter quote chains into beautiful, shareable images with AI translation.">
-<meta property="og:title" content="Tweet Quote — Quote Chain to Image">
-<meta property="og:description" content="Turn Twitter quote chains into beautiful, shareable HD images with AI translation and smart annotations.">
+<title>Tweet Quote — 让引用重新拥有上下文</title>
+<meta name="description" content="Tweet Quote 把 Twitter / X 的引用链整理成一张清晰、可分享、可翻译的图像，强调上下文，而不是噱头。">
+<meta property="og:title" content="Tweet Quote — Context, Framed Beautifully">
+<meta property="og:description" content="Turn quote chains into a composed, shareable image. Built for context, clarity, and bilingual reading.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://tweetquote.app">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Tweet Quote — Quote Chain to Image">
-<meta name="twitter:description" content="Turn Twitter quote chains into beautiful, shareable images">
+<meta name="twitter:title" content="Tweet Quote — Context, Framed Beautifully">
+<meta name="twitter:description" content="A calmer, more editorial way to turn quote chains into shareable images.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700;1,9..40,400&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Noto+Serif+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
   :root {
-    --blue: #1d9bf0;
-    --blue-dark: #1a8cd8;
-    --purple: #794bc4;
-    --green: #17bf63;
-    --red: #e0245e;
-    --orange: #f45d22;
-    --bg-dark: #0a0e17;
-    --bg-card: #111827;
-    --text-primary: #f0f6fc;
-    --text-secondary: #8b949e;
-    --border: rgba(255,255,255,0.08);
+    --paper: #f4efe6;
+    --paper-deep: #ebe2d3;
+    --surface: rgba(255, 251, 245, 0.72);
+    --surface-strong: rgba(255, 251, 245, 0.9);
+    --ink: #171411;
+    --muted: #675e54;
+    --line: rgba(23, 20, 17, 0.14);
+    --line-strong: rgba(23, 20, 17, 0.24);
+    --accent: #284d73;
+    --accent-soft: #d9e3ee;
+    --clay: #b86e4f;
+    --shadow: 0 18px 60px rgba(45, 33, 20, 0.12);
+    --radius-lg: 28px;
+    --radius-md: 18px;
+    --content: 1180px;
   }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
 
+  html { scroll-behavior: smooth; }
+
   body {
-    font-family: 'DM Sans', 'Noto Sans SC', system-ui, -apple-system, sans-serif;
-    background: var(--bg-dark);
-    color: var(--text-primary);
+    font-family: 'Manrope', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    color: var(--ink);
+    background:
+      linear-gradient(to bottom, rgba(255,255,255,0.22), rgba(255,255,255,0) 280px),
+      linear-gradient(90deg, rgba(23,20,17,0.03) 1px, transparent 1px),
+      linear-gradient(rgba(23,20,17,0.03) 1px, transparent 1px),
+      var(--paper);
+    background-size: auto, 36px 36px, 36px 36px, auto;
     -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
     overflow-x: hidden;
   }
 
-  /* ─── Nav ─── */
-  nav {
-    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-    padding: 16px 32px;
-    background: rgba(10,14,23,0.8);
-    backdrop-filter: blur(20px);
-    border-bottom: 1px solid var(--border);
-    display: flex; align-items: center; justify-content: space-between;
+  a { color: inherit; }
+
+  .page-shell {
+    position: relative;
   }
-  .nav-brand {
-    display: flex; align-items: center; gap: 10px;
-    font-size: 18px; font-weight: 700; color: var(--text-primary);
+
+  .page-shell::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    background:
+      radial-gradient(circle at 15% 10%, rgba(40,77,115,0.08), transparent 28%),
+      radial-gradient(circle at 88% 22%, rgba(184,110,79,0.08), transparent 24%);
+    opacity: 0.9;
+  }
+
+  .container {
+    width: min(var(--content), calc(100% - 40px));
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+  }
+
+  .section {
+    padding: 42px 0;
+  }
+
+  .section + .section {
+    border-top: 1px solid var(--line);
+  }
+
+  .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 14px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    background: rgba(255, 251, 245, 0.68);
+  }
+
+  .eyebrow::before {
+    content: '';
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--clay);
+  }
+
+  .display {
+    font-family: 'Noto Serif SC', Georgia, serif;
+    letter-spacing: -0.03em;
+  }
+
+  .topbar {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    backdrop-filter: blur(18px);
+    background: rgba(244, 239, 230, 0.78);
+    border-bottom: 1px solid rgba(23, 20, 17, 0.08);
+  }
+
+  .topbar-inner {
+    min-height: 78px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+  }
+
+  .brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
     text-decoration: none;
   }
-  .nav-brand svg { flex-shrink: 0; }
-  .nav-links { display: flex; align-items: center; gap: 24px; }
-  .nav-links a {
-    color: var(--text-secondary); text-decoration: none; font-size: 14px; font-weight: 500;
-    transition: color 0.2s;
-  }
-  .nav-links a:hover { color: var(--text-primary); }
-  .lang-toggle {
-    padding: 5px 14px; border-radius: 9999px; font-size: 13px; font-weight: 700;
-    background: transparent; color: var(--blue); border: 2px solid var(--blue);
-    cursor: pointer; transition: all 0.2s; min-width: 48px; text-align: center;
-  }
-  .lang-toggle:hover { background: rgba(29,155,240,0.1); }
-  .nav-cta {
-    padding: 8px 20px; border-radius: 9999px; font-size: 14px; font-weight: 700;
-    background: var(--blue); color: #fff !important; text-decoration: none;
-    transition: background 0.2s, transform 0.15s;
-    display: inline-flex; align-items: center; gap: 6px;
-  }
-  .nav-cta:hover { background: var(--blue-dark); transform: translateY(-1px); }
 
-  /* ─── Hero ─── */
-  .hero {
-    min-height: 100vh; display: flex; flex-direction: column;
-    align-items: center; justify-content: center;
-    text-align: center; padding: 120px 24px 80px;
-    position: relative; overflow: hidden;
-  }
-  .hero::before {
-    content: ''; position: absolute; inset: 0;
+  .brand-mark {
+    width: 38px;
+    height: 38px;
+    border-radius: 12px;
+    border: 1px solid var(--line-strong);
     background:
-      radial-gradient(ellipse 80% 60% at 50% -10%, rgba(29,155,240,0.15) 0%, transparent 60%),
-      radial-gradient(ellipse 50% 40% at 80% 50%, rgba(121,75,196,0.08) 0%, transparent 50%),
-      radial-gradient(ellipse 50% 40% at 20% 60%, rgba(23,191,99,0.06) 0%, transparent 50%);
-    pointer-events: none;
-  }
-  .hero-badge {
-    display: inline-flex; align-items: center; gap: 8px;
-    padding: 6px 16px; border-radius: 9999px;
-    background: rgba(29,155,240,0.1); border: 1px solid rgba(29,155,240,0.2);
-    color: var(--blue); font-size: 13px; font-weight: 600;
-    margin-bottom: 32px; position: relative;
-  }
-  .hero-badge .dot {
-    width: 6px; height: 6px; border-radius: 50%; background: var(--green);
-    animation: pulse 2s infinite;
-  }
-  @keyframes pulse {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0.4; }
-  }
-  .hero h1 {
-    font-size: clamp(40px, 7vw, 72px); font-weight: 700;
-    line-height: 1.1; margin-bottom: 16px;
+      linear-gradient(135deg, rgba(255,255,255,0.9), rgba(235,226,211,0.9));
     position: relative;
-    background: linear-gradient(135deg, #fff 0%, #fff 50%, var(--blue) 100%);
-    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
-    background-clip: text;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.9);
   }
-  .hero .slogan {
-    font-size: clamp(18px, 3vw, 24px); color: var(--blue);
-    font-weight: 600; margin-bottom: 24px; position: relative;
+
+  .brand-mark::before,
+  .brand-mark::after {
+    content: '';
+    position: absolute;
+    background: var(--ink);
+    border-radius: 999px;
+  }
+
+  .brand-mark::before {
+    width: 11px;
+    height: 3px;
+    left: 10px;
+    top: 13px;
+    transform: rotate(-45deg);
+  }
+
+  .brand-mark::after {
+    width: 15px;
+    height: 3px;
+    left: 14px;
+    top: 21px;
+    transform: rotate(-45deg);
+  }
+
+  .brand-copy {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .brand-name {
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+  }
+
+  .brand-tagline {
+    font-size: 11px;
+    color: var(--muted);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .nav-link,
+  .lang-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 42px;
+    padding: 0 14px;
+    border-radius: 999px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 700;
     letter-spacing: 0.02em;
-  }
-  .hero .desc {
-    font-size: clamp(16px, 2vw, 19px); color: var(--text-secondary);
-    max-width: 620px; line-height: 1.7; margin-bottom: 48px; position: relative;
-  }
-  .hero-actions { display: flex; gap: 16px; position: relative; flex-wrap: wrap; justify-content: center; }
-  .btn-hero {
-    padding: 14px 32px; border-radius: 12px; font-size: 16px; font-weight: 700;
-    text-decoration: none; transition: all 0.2s; display: inline-flex; align-items: center; gap: 8px;
-    border: none; cursor: pointer;
-  }
-  .btn-hero-primary {
-    background: var(--blue); color: #fff;
-    box-shadow: 0 4px 24px rgba(29,155,240,0.3);
-  }
-  .btn-hero-primary:hover {
-    background: var(--blue-dark); transform: translateY(-2px);
-    box-shadow: 0 8px 32px rgba(29,155,240,0.4);
-  }
-  .btn-hero-secondary {
-    background: rgba(255,255,255,0.06); color: var(--text-primary);
-    border: 1px solid var(--border);
-  }
-  .btn-hero-secondary:hover {
-    background: rgba(255,255,255,0.1); transform: translateY(-2px);
+    color: var(--muted);
+    border: 1px solid transparent;
+    background: transparent;
+    cursor: pointer;
+    transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
   }
 
-  /* ─── Screenshot Showcase ─── */
-  .showcase {
-    padding: 0 24px 100px; position: relative;
-    display: flex; justify-content: center;
+  .nav-link:hover,
+  .lang-toggle:hover {
+    color: var(--ink);
+    background: rgba(255,255,255,0.5);
+    border-color: var(--line);
   }
-  .showcase-frame {
-    max-width: 960px; width: 100%; position: relative;
-    border-radius: 16px; overflow: hidden;
-    border: 1px solid var(--border);
-    box-shadow: 0 24px 80px rgba(0,0,0,0.5), 0 0 0 1px rgba(255,255,255,0.05);
+
+  .nav-cta {
+    color: #fff;
+    background: var(--ink);
+    border-color: var(--ink);
   }
-  .showcase-frame img {
-    width: 100%; height: auto; display: block;
+
+  .nav-cta:hover {
+    background: #2b2520;
+    border-color: #2b2520;
+    color: #fff;
   }
-  .showcase-glow {
-    position: absolute; inset: -40%; z-index: -1;
-    background: radial-gradient(circle at center, rgba(29,155,240,0.08) 0%, transparent 60%);
+
+  .hero {
+    padding: 48px 0 56px;
+  }
+
+  .hero-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.02fr) minmax(360px, 0.98fr);
+    gap: 44px;
+    align-items: start;
+  }
+
+  .hero-copy {
+    padding-top: 36px;
+  }
+
+  .hero-title {
+    margin-top: 22px;
+    max-width: 10.6em;
+    font-size: clamp(50px, 7vw, 94px);
+    line-height: 0.97;
+  }
+
+  .hero-desc {
+    max-width: 620px;
+    margin-top: 26px;
+    font-size: clamp(18px, 2.2vw, 22px);
+    line-height: 1.72;
+    color: var(--muted);
+  }
+
+  .hero-actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+
+  .button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 52px;
+    padding: 0 24px;
+    border-radius: 999px;
+    text-decoration: none;
+    border: 1px solid var(--line-strong);
+    background: rgba(255,255,255,0.46);
+    font-size: 15px;
+    font-weight: 800;
+    transition: transform 0.18s ease, background 0.18s ease, border-color 0.18s ease;
+  }
+
+  .button:hover {
+    transform: translateY(-1px);
+  }
+
+  .button-primary {
+    color: #fff;
+    background: var(--accent);
+    border-color: var(--accent);
+    box-shadow: 0 14px 28px rgba(40, 77, 115, 0.18);
+  }
+
+  .button-primary:hover {
+    background: #213f5f;
+    border-color: #213f5f;
+  }
+
+  .button-secondary:hover {
+    background: rgba(255,255,255,0.85);
+    border-color: var(--line);
+  }
+
+  .hero-proof {
+    margin-top: 34px;
+    padding-top: 22px;
+    border-top: 1px solid var(--line);
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+  }
+
+  .proof-item {
+    display: grid;
+    gap: 6px;
+  }
+
+  .proof-item strong {
+    font-size: 18px;
+    font-weight: 800;
+  }
+
+  .proof-item span {
+    font-size: 13px;
+    line-height: 1.55;
+    color: var(--muted);
+  }
+
+  .hero-visual {
+    position: relative;
+    min-height: 680px;
+  }
+
+  .visual-panel {
+    position: sticky;
+    top: 106px;
+    padding: 28px;
+    border: 1px solid var(--line);
+    border-radius: 34px;
+    background:
+      linear-gradient(180deg, rgba(255,255,255,0.9), rgba(246,240,231,0.78));
+    box-shadow: var(--shadow);
+    overflow: hidden;
+  }
+
+  .visual-panel::before {
+    content: '';
+    position: absolute;
+    inset: 0;
     pointer-events: none;
+    background:
+      linear-gradient(135deg, rgba(40,77,115,0.08), transparent 36%),
+      linear-gradient(315deg, rgba(184,110,79,0.08), transparent 34%);
   }
 
-  /* ─── Features ─── */
-  .features {
-    padding: 100px 24px; max-width: 1100px; margin: 0 auto;
-  }
-  .features-header {
-    text-align: center; margin-bottom: 64px;
-  }
-  .features-header h2 {
-    font-size: clamp(28px, 4vw, 40px); font-weight: 700; margin-bottom: 16px;
-  }
-  .features-header p {
-    font-size: 17px; color: var(--text-secondary); max-width: 500px; margin: 0 auto;
-  }
-  .features-grid {
-    display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
-  }
-  .feature-card {
-    padding: 32px; border-radius: 16px;
-    background: var(--bg-card); border: 1px solid var(--border);
-    transition: transform 0.2s, border-color 0.2s;
-  }
-  .feature-card:hover {
-    transform: translateY(-4px);
-    border-color: rgba(255,255,255,0.15);
-  }
-  .feature-icon {
-    width: 48px; height: 48px; border-radius: 12px;
-    display: flex; align-items: center; justify-content: center;
-    font-size: 24px; margin-bottom: 20px;
-  }
-  .feature-icon.blue { background: rgba(29,155,240,0.12); }
-  .feature-icon.purple { background: rgba(121,75,196,0.12); }
-  .feature-icon.green { background: rgba(23,191,99,0.12); }
-  .feature-icon.red { background: rgba(224,36,94,0.12); }
-  .feature-icon.orange { background: rgba(244,93,34,0.12); }
-  .feature-icon.yellow { background: rgba(255,173,31,0.12); }
-  .feature-card h3 {
-    font-size: 17px; font-weight: 700; margin-bottom: 8px;
-  }
-  .feature-card p {
-    font-size: 14px; color: var(--text-secondary); line-height: 1.6;
+  .panel-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 18px;
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    position: relative;
   }
 
-  /* ─── How it works ─── */
-  .how {
-    padding: 100px 24px; position: relative;
-    border-top: 1px solid var(--border);
+  .panel-label strong {
+    color: var(--ink);
+    font-weight: 800;
+    letter-spacing: 0.08em;
   }
-  .how::before {
-    content: ''; position: absolute; inset: 0;
-    background: radial-gradient(ellipse 60% 50% at 50% 0%, rgba(121,75,196,0.06) 0%, transparent 60%);
-    pointer-events: none;
-  }
-  .how-inner {
-    max-width: 800px; margin: 0 auto; position: relative;
-  }
-  .how h2 {
-    font-size: clamp(28px, 4vw, 40px); font-weight: 700;
-    text-align: center; margin-bottom: 64px;
-  }
-  .steps {
-    display: flex; flex-direction: column; gap: 48px;
-  }
-  .step {
-    display: flex; align-items: flex-start; gap: 24px;
-  }
-  .step-num {
-    width: 48px; height: 48px; border-radius: 50%; flex-shrink: 0;
-    display: flex; align-items: center; justify-content: center;
-    font-size: 20px; font-weight: 700;
-    background: rgba(29,155,240,0.12); color: var(--blue);
-    border: 2px solid rgba(29,155,240,0.3);
-  }
-  .step-content h3 { font-size: 18px; font-weight: 700; margin-bottom: 6px; }
-  .step-content p { font-size: 15px; color: var(--text-secondary); line-height: 1.6; }
 
-  /* ─── Export Preview ─── */
-  .export-preview {
-    padding: 80px 24px 100px;
-    display: flex; justify-content: center;
+  .panel-stack {
+    position: relative;
+    margin-top: 22px;
+    min-height: 520px;
   }
-  .export-frame {
-    max-width: 560px; width: 100%;
-    border-radius: 16px; overflow: hidden;
-    border: 1px solid var(--border);
-    box-shadow: 0 16px 64px rgba(0,0,0,0.4);
-  }
-  .export-frame img { width: 100%; height: auto; display: block; }
 
-  /* ─── CTA ─── */
+  .shot {
+    position: absolute;
+    overflow: hidden;
+    border-radius: 24px;
+    border: 1px solid rgba(23,20,17,0.12);
+    background: rgba(255,255,255,0.75);
+    box-shadow: 0 18px 40px rgba(32, 25, 20, 0.12);
+  }
+
+  .shot img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .shot-main {
+    inset: 18px 44px 112px 0;
+    transform: rotate(-3deg);
+  }
+
+  .shot-export {
+    width: 48%;
+    right: 0;
+    bottom: 0;
+    transform: rotate(6deg);
+  }
+
+  .floating-note {
+    position: absolute;
+    max-width: 220px;
+    padding: 14px 16px;
+    border-radius: 18px;
+    border: 1px solid var(--line);
+    background: rgba(255, 251, 245, 0.92);
+    box-shadow: 0 14px 30px rgba(39, 29, 20, 0.09);
+    backdrop-filter: blur(10px);
+    font-size: 13px;
+    line-height: 1.55;
+    color: var(--muted);
+  }
+
+  .floating-note strong {
+    display: block;
+    margin-bottom: 6px;
+    color: var(--ink);
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .note-top {
+    top: 82px;
+    right: 16px;
+  }
+
+  .note-bottom {
+    left: 26px;
+    bottom: 22px;
+  }
+
+  .manifesto {
+    padding: 24px 0 28px;
+  }
+
+  .manifesto-card {
+    display: grid;
+    grid-template-columns: 180px minmax(0, 1fr);
+    gap: 22px;
+    padding: 26px 0;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+  }
+
+  .manifesto-label {
+    font-size: 12px;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    padding-top: 10px;
+  }
+
+  .manifesto-quote {
+    font-family: 'Noto Serif SC', Georgia, serif;
+    font-size: clamp(28px, 4vw, 44px);
+    line-height: 1.42;
+    max-width: 18em;
+  }
+
+  .story-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 0.78fr) minmax(0, 1.22fr);
+    gap: 42px;
+    align-items: start;
+  }
+
+  .section-head {
+    display: grid;
+    gap: 18px;
+  }
+
+  .section-head h2 {
+    font-family: 'Noto Serif SC', Georgia, serif;
+    font-size: clamp(34px, 4vw, 52px);
+    line-height: 1.08;
+    letter-spacing: -0.03em;
+  }
+
+  .section-head p {
+    max-width: 540px;
+    color: var(--muted);
+    font-size: 17px;
+    line-height: 1.75;
+  }
+
+  .story-list {
+    display: grid;
+    gap: 0;
+    border-top: 1px solid var(--line);
+  }
+
+  .story-item {
+    display: grid;
+    grid-template-columns: 120px minmax(0, 1fr);
+    gap: 22px;
+    padding: 24px 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .story-index {
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    color: var(--muted);
+    text-transform: uppercase;
+  }
+
+  .story-content h3 {
+    font-size: 22px;
+    margin-bottom: 8px;
+    letter-spacing: -0.03em;
+  }
+
+  .story-content p {
+    color: var(--muted);
+    line-height: 1.72;
+    font-size: 15px;
+  }
+
+  .principles-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+    margin-top: 30px;
+  }
+
+  .principle-card {
+    min-height: 250px;
+    padding: 26px;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--line);
+    background: var(--surface);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.88);
+  }
+
+  .principle-no {
+    display: inline-flex;
+    min-width: 44px;
+    min-height: 32px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+    background: var(--accent-soft);
+    color: var(--accent);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .principle-card h3 {
+    margin-top: 22px;
+    font-size: 23px;
+    letter-spacing: -0.03em;
+  }
+
+  .principle-card p {
+    margin-top: 12px;
+    font-size: 15px;
+    line-height: 1.72;
+    color: var(--muted);
+  }
+
+  .workflow-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    gap: 32px;
+    align-items: start;
+  }
+
+  .timeline {
+    display: grid;
+    gap: 18px;
+  }
+
+  .timeline-step {
+    display: grid;
+    grid-template-columns: 74px minmax(0, 1fr);
+    gap: 18px;
+    padding: 22px;
+    border-radius: 24px;
+    border: 1px solid var(--line);
+    background: var(--surface-strong);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.88);
+  }
+
+  .timeline-no {
+    width: 52px;
+    height: 52px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--ink);
+    color: #fff;
+    font-size: 17px;
+    font-weight: 800;
+  }
+
+  .timeline-step h3 {
+    font-size: 21px;
+    margin-bottom: 8px;
+    letter-spacing: -0.03em;
+  }
+
+  .timeline-step p {
+    color: var(--muted);
+    font-size: 15px;
+    line-height: 1.72;
+  }
+
+  .workflow-card {
+    padding: 30px;
+    border-radius: 32px;
+    border: 1px solid var(--line);
+    background:
+      linear-gradient(180deg, rgba(255,255,255,0.92), rgba(246,240,231,0.82));
+    box-shadow: var(--shadow);
+  }
+
+  .workflow-card h3 {
+    font-family: 'Noto Serif SC', Georgia, serif;
+    font-size: clamp(28px, 3vw, 40px);
+    line-height: 1.18;
+    letter-spacing: -0.03em;
+  }
+
+  .workflow-card p {
+    margin-top: 14px;
+    color: var(--muted);
+    line-height: 1.75;
+    font-size: 16px;
+  }
+
+  .workflow-list {
+    list-style: none;
+    display: grid;
+    gap: 12px;
+    margin-top: 24px;
+  }
+
+  .workflow-list li {
+    padding: 14px 0;
+    border-top: 1px solid var(--line);
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--muted);
+  }
+
+  .workflow-list strong {
+    color: var(--ink);
+  }
+
   .cta {
-    padding: 100px 24px;
-    text-align: center; position: relative;
-    border-top: 1px solid var(--border);
+    padding: 46px 0 76px;
   }
-  .cta::before {
-    content: ''; position: absolute; inset: 0;
-    background: radial-gradient(ellipse 80% 60% at 50% 100%, rgba(29,155,240,0.1) 0%, transparent 60%);
-    pointer-events: none;
-  }
-  .cta h2 {
-    font-size: clamp(28px, 4vw, 40px); font-weight: 700;
-    margin-bottom: 16px; position: relative;
-  }
-  .cta p {
-    font-size: 17px; color: var(--text-secondary); margin-bottom: 40px;
-    max-width: 480px; margin-left: auto; margin-right: auto; position: relative;
-  }
-  .cta .hero-actions { position: relative; }
 
-  /* ─── Footer ─── */
+  .cta-box {
+    padding: 38px;
+    border-radius: 36px;
+    border: 1px solid var(--line-strong);
+    background: linear-gradient(135deg, rgba(255,255,255,0.9), rgba(235,226,211,0.94));
+    box-shadow: var(--shadow);
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 24px;
+    align-items: center;
+  }
+
+  .cta-copy h2 {
+    font-family: 'Noto Serif SC', Georgia, serif;
+    font-size: clamp(32px, 4vw, 52px);
+    line-height: 1.08;
+    letter-spacing: -0.03em;
+  }
+
+  .cta-copy p {
+    margin-top: 12px;
+    max-width: 620px;
+    color: var(--muted);
+    font-size: 17px;
+    line-height: 1.72;
+  }
+
+  .cta-actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
   footer {
-    padding: 32px 24px;
-    border-top: 1px solid var(--border);
-    text-align: center;
-    color: var(--text-secondary); font-size: 13px;
+    padding: 24px 0 42px;
+    border-top: 1px solid var(--line);
   }
-  footer a { color: var(--blue); text-decoration: none; }
-  footer a:hover { text-decoration: underline; }
 
-  /* ─── Responsive ─── */
-  @media (max-width: 768px) {
-    nav { padding: 12px 16px; }
-    .nav-links a:not(.nav-cta):not(.lang-toggle) { display: none; }
-    .features-grid { grid-template-columns: 1fr; }
-    .step { gap: 16px; }
-    .hero { padding: 100px 20px 60px; }
+  .footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    font-size: 13px;
+    color: var(--muted);
   }
-  @media (max-width: 480px) {
-    .hero-actions { flex-direction: column; align-items: stretch; }
-    .btn-hero { justify-content: center; }
+
+  .footer-links {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  .footer-links a {
+    text-decoration: none;
+  }
+
+  .footer-links a:hover {
+    color: var(--ink);
+  }
+
+  @media (max-width: 1080px) {
+    .hero-grid,
+    .story-grid,
+    .workflow-grid,
+    .cta-box {
+      grid-template-columns: 1fr;
+    }
+
+    .hero-visual {
+      min-height: auto;
+    }
+
+    .visual-panel {
+      position: relative;
+      top: 0;
+    }
+
+    .cta-actions {
+      justify-content: flex-start;
+    }
+  }
+
+  @media (max-width: 820px) {
+    .topbar-inner {
+      min-height: 70px;
+    }
+
+    .nav-links a[href^="#"] {
+      display: none;
+    }
+
+    .hero {
+      padding: 28px 0 42px;
+    }
+
+    .hero-copy {
+      padding-top: 8px;
+    }
+
+    .hero-proof,
+    .principles-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .manifesto-card,
+    .story-item {
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+
+    .panel-stack {
+      min-height: 420px;
+    }
+
+    .shot-main {
+      inset: 18px 12px 100px 0;
+    }
+
+    .floating-note {
+      max-width: 180px;
+      padding: 12px 14px;
+    }
+  }
+
+  @media (max-width: 620px) {
+    .container {
+      width: min(var(--content), calc(100% - 24px));
+    }
+
+    .brand-tagline {
+      display: none;
+    }
+
+    .nav-links {
+      gap: 6px;
+    }
+
+    .nav-link,
+    .lang-toggle {
+      min-height: 38px;
+      padding: 0 12px;
+    }
+
+    .hero-title {
+      font-size: clamp(42px, 15vw, 64px);
+      max-width: none;
+    }
+
+    .hero-actions,
+    .cta-actions {
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    .button {
+      width: 100%;
+    }
+
+    .visual-panel,
+    .workflow-card,
+    .cta-box {
+      padding: 22px;
+      border-radius: 28px;
+    }
+
+    .panel-stack {
+      min-height: 320px;
+    }
+
+    .shot-main {
+      inset: 10px 12px 86px 0;
+    }
+
+    .shot-export {
+      width: 54%;
+    }
+
+    .note-top {
+      top: auto;
+      bottom: 110px;
+      right: 8px;
+    }
+
+    .note-bottom {
+      left: 14px;
+      bottom: 10px;
+    }
+
+    .timeline-step {
+      grid-template-columns: 1fr;
+    }
   }
 </style>
 </head>
 <body>
+<div class="page-shell">
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a href="/" class="brand" aria-label="Tweet Quote">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-copy">
+          <span class="brand-name">Tweet Quote</span>
+          <span class="brand-tagline" data-i18n="brand.tagline"></span>
+        </span>
+      </a>
+      <nav class="nav-links">
+        <a href="#story" class="nav-link" data-i18n="nav.story"></a>
+        <a href="#principles" class="nav-link" data-i18n="nav.principles"></a>
+        <a href="#workflow" class="nav-link" data-i18n="nav.workflow"></a>
+        <a href="https://github.com/yangwenmai/tweetquote" target="_blank" rel="noreferrer" class="nav-link">GitHub</a>
+        <button class="lang-toggle" id="langToggle" onclick="switchLang()"></button>
+        <a href="#" class="nav-link nav-cta" onclick="return handleTry()" data-i18n="nav.cta"></a>
+      </nav>
+    </div>
+  </header>
 
-<!-- Nav -->
-<nav>
-  <a href="/" class="nav-brand">
-    <svg viewBox="0 0 24 24" width="28" height="28" fill="none">
-      <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" fill="#1d9bf0"/>
-    </svg>
-    Tweet Quote
-  </a>
-  <div class="nav-links">
-    <a href="#features" data-i18n="nav.features"></a>
-    <a href="#how" data-i18n="nav.how"></a>
-    <a href="https://github.com/yangwenmai/tweetquote" target="_blank">GitHub</a>
-    <button class="lang-toggle" id="langToggle" onclick="switchLang()"></button>
-    <a href="#try" class="nav-cta" data-i18n="nav.cta"></a>
-  </div>
-</nav>
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow" data-i18n="hero.eyebrow"></span>
+          <h1 class="hero-title display" data-i18n-html="hero.title"></h1>
+          <p class="hero-desc" data-i18n-html="hero.desc"></p>
+          <div class="hero-actions">
+            <a href="#" class="button button-primary" onclick="return handleTry()" data-i18n="hero.primary"></a>
+            <a href="#story" class="button button-secondary" data-i18n="hero.secondary"></a>
+          </div>
+          <div class="hero-proof">
+            <div class="proof-item">
+              <strong data-i18n="hero.proof1.title"></strong>
+              <span data-i18n="hero.proof1.desc"></span>
+            </div>
+            <div class="proof-item">
+              <strong data-i18n="hero.proof2.title"></strong>
+              <span data-i18n="hero.proof2.desc"></span>
+            </div>
+            <div class="proof-item">
+              <strong data-i18n="hero.proof3.title"></strong>
+              <span data-i18n="hero.proof3.desc"></span>
+            </div>
+          </div>
+        </div>
 
-<!-- Hero -->
-<section class="hero">
-  <div class="hero-badge">
-    <span class="dot"></span>
-    <span data-i18n="hero.badge"></span>
-  </div>
-  <h1>Tweet Quote</h1>
-  <div class="slogan" data-i18n="hero.slogan"></div>
-  <p class="desc" data-i18n-html="hero.desc"></p>
-  <div class="hero-actions">
-    <a href="#try" class="btn-hero btn-hero-primary" id="tryBtn">
-      <svg viewBox="0 0 20 20" width="18" height="18" fill="currentColor"><path d="M10 3a7 7 0 100 14 7 7 0 000-14zm-1 4a1 1 0 112 0v3.586l1.707 1.707a1 1 0 01-1.414 1.414l-2-2A1 1 0 019 11V7z"/></svg>
-      <span data-i18n="hero.tryBtn"></span>
-    </a>
-    <a href="https://github.com/yangwenmai/tweetquote" target="_blank" class="btn-hero btn-hero-secondary">
-      <svg viewBox="0 0 16 16" width="18" height="18" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
-      GitHub
-    </a>
-  </div>
-</section>
-
-<!-- Showcase -->
-<section class="showcase">
-  <div class="showcase-glow"></div>
-  <div class="showcase-frame">
-    <img src="screenshots/main.png" data-i18n-alt="showcase.alt" loading="lazy">
-  </div>
-</section>
-
-<!-- Features -->
-<section class="features" id="features">
-  <div class="features-header">
-    <h2 data-i18n="features.title"></h2>
-    <p data-i18n="features.subtitle"></p>
-  </div>
-  <div class="features-grid">
-    <div class="feature-card">
-      <div class="feature-icon blue">🔗</div>
-      <h3 data-i18n="features.autoFetch.title"></h3>
-      <p data-i18n="features.autoFetch.desc"></p>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon purple">🤖</div>
-      <h3 data-i18n="features.aiTranslate.title"></h3>
-      <p data-i18n="features.aiTranslate.desc"></p>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon green">📤</div>
-      <h3 data-i18n="features.export.title"></h3>
-      <p data-i18n="features.export.desc"></p>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon orange">✏️</div>
-      <h3 data-i18n="features.manual.title"></h3>
-      <p data-i18n="features.manual.desc"></p>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon red">🌐</div>
-      <h3 data-i18n="features.googleTranslate.title"></h3>
-      <p data-i18n="features.googleTranslate.desc"></p>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon yellow">🌍</div>
-      <h3 data-i18n="features.bilingual.title"></h3>
-      <p data-i18n="features.bilingual.desc"></p>
-    </div>
-  </div>
-</section>
-
-<!-- How it works -->
-<section class="how" id="how">
-  <div class="how-inner">
-    <h2 data-i18n="how.title"></h2>
-    <div class="steps">
-      <div class="step">
-        <div class="step-num">1</div>
-        <div class="step-content">
-          <h3 data-i18n="how.step1.title"></h3>
-          <p data-i18n="how.step1.desc"></p>
+        <div class="hero-visual">
+          <div class="visual-panel">
+            <div class="panel-label">
+              <span data-i18n="hero.panelLabel"></span>
+              <strong data-i18n="hero.panelRight"></strong>
+            </div>
+            <div class="panel-stack">
+              <div class="shot shot-main">
+                <img src="/screenshots/main.png" data-i18n-alt="showcase.mainAlt" loading="lazy">
+              </div>
+              <div class="shot shot-export">
+                <img src="/screenshots/export.png" data-i18n-alt="showcase.exportAlt" loading="lazy">
+              </div>
+              <div class="floating-note note-top">
+                <strong data-i18n="hero.note1.title"></strong>
+                <span data-i18n="hero.note1.desc"></span>
+              </div>
+              <div class="floating-note note-bottom">
+                <strong data-i18n="hero.note2.title"></strong>
+                <span data-i18n="hero.note2.desc"></span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="step">
-        <div class="step-num">2</div>
-        <div class="step-content">
-          <h3 data-i18n="how.step2.title"></h3>
-          <p data-i18n="how.step2.desc"></p>
+    </section>
+
+    <section class="manifesto section">
+      <div class="container">
+        <div class="manifesto-card">
+          <div class="manifesto-label" data-i18n="manifesto.label"></div>
+          <p class="manifesto-quote" data-i18n-html="manifesto.quote"></p>
         </div>
       </div>
-      <div class="step">
-        <div class="step-num">3</div>
-        <div class="step-content">
-          <h3 data-i18n="how.step3.title"></h3>
-          <p data-i18n="how.step3.desc"></p>
+    </section>
+
+    <section class="section" id="story">
+      <div class="container story-grid">
+        <div class="section-head">
+          <span class="eyebrow" data-i18n="story.eyebrow"></span>
+          <h2 data-i18n-html="story.title"></h2>
+          <p data-i18n-html="story.desc"></p>
         </div>
+        <div class="story-list">
+          <article class="story-item">
+            <div class="story-index">01</div>
+            <div class="story-content">
+              <h3 data-i18n="story.item1.title"></h3>
+              <p data-i18n="story.item1.desc"></p>
+            </div>
+          </article>
+          <article class="story-item">
+            <div class="story-index">02</div>
+            <div class="story-content">
+              <h3 data-i18n="story.item2.title"></h3>
+              <p data-i18n="story.item2.desc"></p>
+            </div>
+          </article>
+          <article class="story-item">
+            <div class="story-index">03</div>
+            <div class="story-content">
+              <h3 data-i18n="story.item3.title"></h3>
+              <p data-i18n="story.item3.desc"></p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="principles">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow" data-i18n="principles.eyebrow"></span>
+          <h2 data-i18n-html="principles.title"></h2>
+          <p data-i18n-html="principles.desc"></p>
+        </div>
+        <div class="principles-grid">
+          <article class="principle-card">
+            <span class="principle-no">01</span>
+            <h3 data-i18n="principles.card1.title"></h3>
+            <p data-i18n="principles.card1.desc"></p>
+          </article>
+          <article class="principle-card">
+            <span class="principle-no">02</span>
+            <h3 data-i18n="principles.card2.title"></h3>
+            <p data-i18n="principles.card2.desc"></p>
+          </article>
+          <article class="principle-card">
+            <span class="principle-no">03</span>
+            <h3 data-i18n="principles.card3.title"></h3>
+            <p data-i18n="principles.card3.desc"></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="workflow">
+      <div class="container workflow-grid">
+        <div class="timeline">
+          <article class="timeline-step">
+            <div class="timeline-no">1</div>
+            <div>
+              <h3 data-i18n="workflow.step1.title"></h3>
+              <p data-i18n="workflow.step1.desc"></p>
+            </div>
+          </article>
+          <article class="timeline-step">
+            <div class="timeline-no">2</div>
+            <div>
+              <h3 data-i18n="workflow.step2.title"></h3>
+              <p data-i18n="workflow.step2.desc"></p>
+            </div>
+          </article>
+          <article class="timeline-step">
+            <div class="timeline-no">3</div>
+            <div>
+              <h3 data-i18n="workflow.step3.title"></h3>
+              <p data-i18n="workflow.step3.desc"></p>
+            </div>
+          </article>
+        </div>
+        <div class="workflow-card">
+          <span class="eyebrow" data-i18n="workflow.eyebrow"></span>
+          <h3 data-i18n-html="workflow.title"></h3>
+          <p data-i18n-html="workflow.desc"></p>
+          <ul class="workflow-list">
+            <li><strong data-i18n="workflow.point1.title"></strong> <span data-i18n="workflow.point1.desc"></span></li>
+            <li><strong data-i18n="workflow.point2.title"></strong> <span data-i18n="workflow.point2.desc"></span></li>
+            <li><strong data-i18n="workflow.point3.title"></strong> <span data-i18n="workflow.point3.desc"></span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container">
+        <div class="cta-box" id="try">
+          <div class="cta-copy">
+            <h2 data-i18n-html="cta.title"></h2>
+            <p data-i18n-html="cta.desc"></p>
+          </div>
+          <div class="cta-actions">
+            <a href="#" class="button button-primary" onclick="return handleTry()" data-i18n="cta.primary"></a>
+            <a href="https://github.com/yangwenmai/tweetquote" target="_blank" rel="noreferrer" class="button button-secondary" data-i18n="cta.secondary"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <p data-i18n="footer.copy"></p>
+      <div class="footer-links">
+        <a href="https://x.com/maiyangai" target="_blank" rel="noreferrer">@maiyangai</a>
+        <a href="https://github.com/yangwenmai/tweetquote" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://github.com/yangwenmai/tweetquote/blob/main/LICENSE" target="_blank" rel="noreferrer">MIT License</a>
       </div>
     </div>
-  </div>
-</section>
-
-<!-- Export Preview -->
-<section class="export-preview">
-  <div class="export-frame">
-    <img src="screenshots/export.png" data-i18n-alt="export.alt" loading="lazy">
-  </div>
-</section>
-
-<!-- CTA -->
-<section class="cta" id="try">
-  <h2 data-i18n="cta.title"></h2>
-  <p data-i18n="cta.desc"></p>
-  <div class="hero-actions">
-    <a href="#" class="btn-hero btn-hero-primary" id="ctaBtn" onclick="return handleTry()">
-      <span data-i18n="cta.tryBtn"></span>
-    </a>
-    <a href="https://github.com/yangwenmai/tweetquote" target="_blank" class="btn-hero btn-hero-secondary">
-      ⭐ Star on GitHub
-    </a>
-  </div>
-</section>
-
-<!-- Footer -->
-<footer>
-  <p>
-    Made with ❤️ by <a href="https://x.com/maiyangai" target="_blank">@maiyangai</a>
-    &nbsp;·&nbsp;
-    <a href="https://github.com/yangwenmai/tweetquote" target="_blank">GitHub</a>
-    &nbsp;·&nbsp;
-    MIT License
-  </p>
-</footer>
+  </footer>
+</div>
 
 <script>
 const I18N = {
   "zh-CN": {
-    "nav.features": "功能",
-    "nav.how": "使用方法",
-    "nav.cta": "开始使用 →",
+    "brand.tagline": "让引用回到语境里",
+    "nav.story": "品牌叙事",
+    "nav.principles": "设计原则",
+    "nav.workflow": "工作方式",
+    "nav.cta": "打开工具",
     "lang.toggle": "EN",
-    "hero.badge": "Open Source · 免费使用",
-    "hero.slogan": "引用链，一键成图",
-    "hero.desc": "把 Twitter / X 推文引用链变成一张精美可分享的高清图片。<br>支持自动抓取、AI 翻译与智能注释，让每条推文都有完整上下文。",
-    "hero.tryBtn": "立即体验",
-    "showcase.alt": "Tweet Quote 主界面",
-    "features.title": "为什么选择 Tweet Quote",
-    "features.subtitle": "一个简单但强大的工具，让推文引用不再断章取义",
-    "features.autoFetch.title": "链接自动抓取",
-    "features.autoFetch.desc": "粘贴任意推文链接，自动递归抓取完整引用链 — 包括引用和回复关系，最多 10 层。",
-    "features.aiTranslate.title": "AI 翻译 + 智能注释",
-    "features.aiTranslate.desc": "AI 不仅翻译推文，还能标注术语、俚语、文化背景等，悬停即可查看解释。",
-    "features.export.title": "高清 PNG 导出",
-    "features.export.desc": "支持 1x / 2x / 3x 倍率导出，生成可直接分享的精美图片。",
-    "features.manual.title": "手工录入",
-    "features.manual.desc": "不想配 API？手动添加多层推文内容，自由编辑每一层。",
-    "features.googleTranslate.title": "Google 翻译",
-    "features.googleTranslate.desc": "内置 Google 翻译，无需配置即可一键翻译推文内容。",
-    "features.bilingual.title": "中英双语界面",
-    "features.bilingual.desc": "界面支持中文和英文切换，适配不同用户习惯。",
-    "how.title": "三步搞定",
-    "how.step1.title": "粘贴推文链接",
-    "how.step1.desc": "复制任意一条 Twitter / X 推文链接，粘贴到输入框中。",
-    "how.step2.title": "自动抓取 & 翻译",
-    "how.step2.desc": "工具会自动递归获取完整引用链，还可一键 AI 翻译并标注关键术语。",
-    "how.step3.title": "导出分享",
-    "how.step3.desc": "选择导出倍率，点击「导出为 PNG」，一张有完整上下文的推文截图就做好了。",
-    "export.alt": "Tweet Quote 导出效果",
-    "cta.title": "准备好了吗？",
-    "cta.desc": "免费、开源、无需注册。粘贴链接，一键成图。",
-    "cta.tryBtn": "🚀 立即体验",
-    "try.alert": "工具服务即将上线！\n\n目前可以本地运行：\npython3 server.py\n然后访问 http://localhost:8088/",
+    "hero.eyebrow": "开源 / 上下文优先 / 支持双语",
+    "hero.title": "让每一次引用，<br>都带上它缺失的上下文。",
+    "hero.desc": "Tweet Quote 不是又一个“AI 工具落地页”。它更像一个为记者、研究者、内容作者准备的排版器，把 Twitter / X 上零散的引用链整理成一张清晰、克制、值得转发保存的图像。<br><br>翻译与注释仍然在，但它们退到幕后，服务阅读，而不是喧宾夺主。",
+    "hero.primary": "立即体验",
+    "hero.secondary": "看看这套品牌气质",
+    "hero.proof1.title": "上下文优先",
+    "hero.proof1.desc": "完整保留引用关系，减少被断章取义的风险。",
+    "hero.proof2.title": "双语阅读",
+    "hero.proof2.desc": "支持翻译与术语注释，但视觉表达保持冷静克制。",
+    "hero.proof3.title": "一键成品",
+    "hero.proof3.desc": "从链接到可分享图片，保持高完成度输出。",
+    "hero.panelLabel": "产品预览",
+    "hero.panelRight": "Tweet Quote",
+    "hero.note1.title": "不是炫技",
+    "hero.note1.desc": "把“AI”从主角位置移开，回到辅助理解与翻译的角色。",
+    "hero.note2.title": "更像出版物",
+    "hero.note2.desc": "柔和纸感、编辑式排版、清晰层级，让品牌更可信也更耐看。",
+    "showcase.mainAlt": "Tweet Quote 主界面预览",
+    "showcase.exportAlt": "Tweet Quote 导出结果预览",
+    "manifesto.label": "品牌主张",
+    "manifesto.quote": "不是把推文做得更花哨，<br>而是把语境整理得更完整。",
+    "story.eyebrow": "为什么这次不一样",
+    "story.title": "从“AI SaaS 模板感”，<br>转向“编辑式工具品牌”。",
+    "story.desc": "这次重做的重点不是简单换配色，而是重新定义品牌语气。页面不再强调发光、速度感、功能堆叠，而是改成更像杂志封面、研究工具、出版产品的视觉语言。",
+    "story.item1.title": "把卖点变成判断标准",
+    "story.item1.desc": "我们不再突出“AI 很厉害”，而是突出“这能不能帮助你更准确地引用别人”。这会让产品听起来更成熟，也更有立场。",
+    "story.item2.title": "把截图当作品，而不是背景素材",
+    "story.item2.desc": "主视觉直接围绕真实界面与导出结果展开，用叠放、留白和注释说明产品价值，少一些装饰，多一些证据。",
+    "story.item3.title": "把品牌气质做得更有出版感",
+    "story.item3.desc": "暖纸色背景、衬线标题、低饱和强调色和细边框，会比典型深色霓虹风格更有可信度，也更符合“引用与上下文”的主题。",
+    "principles.eyebrow": "设计原则",
+    "principles.title": "三个决定新风格的核心原则",
+    "principles.desc": "页面现在更像一个经过编辑的产品故事，而不是一个堆叠流行视觉套路的模板。每个版块都围绕清晰、可信和长期耐看去设计。",
+    "principles.card1.title": "克制，而不是刺激",
+    "principles.card1.desc": "去掉渐变发光、emoji 图标和高频动态提示，保留真正需要的强调。让页面更安静，用户才会更相信内容本身。",
+    "principles.card2.title": "证据，而不是口号",
+    "principles.card2.desc": "截图、导出结果和具体说明成为页面主角。品牌不靠大词堆砌，而靠真实界面证明自己解决了什么问题。",
+    "principles.card3.title": "辅助智能，而不是 AI 腔",
+    "principles.card3.desc": "继续保留翻译与注释能力，但文案上回避夸张表达，让“智能”成为阅读体验的一部分，而不是营销标签。",
+    "workflow.eyebrow": "使用方式",
+    "workflow.title": "从一条链接，<br>到一张可直接传播的成品。",
+    "workflow.desc": "整个流程被整理成一个清楚的出版动作：收集上下文、整理阅读层次、导出完成版。用户感受到的是“作品完成”，不是“功能操作完成”。",
+    "workflow.step1.title": "粘贴链接或手动录入",
+    "workflow.step1.desc": "支持自动抓取完整引用链，也支持手动编辑层级，适合不同使用场景。",
+    "workflow.step2.title": "整理双语与注释",
+    "workflow.step2.desc": "翻译、术语解释和文化说明只在需要时出现，帮助读者读懂，不破坏视觉秩序。",
+    "workflow.step3.title": "导出并分享",
+    "workflow.step3.desc": "输出高分辨率 PNG，把零散对话变成一张完整、可传播、可留存的图像。",
+    "workflow.point1.title": "开源透明。",
+    "workflow.point1.desc": "品牌可信度来自透明，而不是神秘感。",
+    "workflow.point2.title": "无需注册。",
+    "workflow.point2.desc": "减少营销摩擦，让工具属性先成立。",
+    "workflow.point3.title": "为复杂语境而设计。",
+    "workflow.point3.desc": "适合引用、研究、翻译和内容归档，而不只是截图分享。",
+    "cta.title": "如果你的产品在解决“语境缺失”，<br>它的品牌也应该看起来更有分寸。",
+    "cta.desc": "现在的页面已经从典型 AI 模板风格，调整为更安静、更像出版产品的表达。打开工具，看看这种品牌语言是否更接近你想服务的用户。",
+    "cta.primary": "打开 Tweet Quote",
+    "cta.secondary": "查看 GitHub",
+    "footer.copy": "Tweet Quote，为在意上下文的人而做。",
+    "try.alert": "托管服务即将上线。\n\n目前可以本地运行：\npython3 server.py\n然后访问 http://localhost:8088/"
   },
   "en": {
-    "nav.features": "Features",
-    "nav.how": "How It Works",
-    "nav.cta": "Get Started →",
+    "brand.tagline": "Context, framed beautifully",
+    "nav.story": "Story",
+    "nav.principles": "Principles",
+    "nav.workflow": "Workflow",
+    "nav.cta": "Open app",
     "lang.toggle": "中文",
-    "hero.badge": "Open Source · Free to Use",
-    "hero.slogan": "Quote Chain to Image, One Click",
-    "hero.desc": "Turn Twitter / X quote chains into beautiful, shareable HD images.<br>Auto-fetch threads, AI translation with smart annotations — full context, every time.",
-    "hero.tryBtn": "Try It Now",
-    "showcase.alt": "Tweet Quote Main Interface",
-    "features.title": "Why Tweet Quote",
-    "features.subtitle": "A simple yet powerful tool — no more quoting out of context",
-    "features.autoFetch.title": "Auto Fetch by Link",
-    "features.autoFetch.desc": "Paste any tweet link and automatically fetch the full quote chain — including quotes and replies, up to 10 layers deep.",
-    "features.aiTranslate.title": "AI Translation + Annotations",
-    "features.aiTranslate.desc": "AI translates tweets and annotates jargon, slang, and cultural references — hover to see explanations.",
-    "features.export.title": "HD PNG Export",
-    "features.export.desc": "Export at 1x / 2x / 3x resolution to generate beautiful, ready-to-share images.",
-    "features.manual.title": "Manual Input",
-    "features.manual.desc": "Don't want to set up an API? Manually add and edit multi-layer tweet content freely.",
-    "features.googleTranslate.title": "Google Translate",
-    "features.googleTranslate.desc": "Built-in Google Translate — translate tweet content with one click, no setup required.",
-    "features.bilingual.title": "Bilingual Interface",
-    "features.bilingual.desc": "Full Chinese and English UI support, adapting to different user preferences.",
-    "how.title": "3 Simple Steps",
-    "how.step1.title": "Paste a Tweet Link",
-    "how.step1.desc": "Copy any Twitter / X tweet link and paste it into the input field.",
-    "how.step2.title": "Auto Fetch & Translate",
-    "how.step2.desc": "The tool recursively fetches the full quote chain. One-click AI translation annotates key terms.",
-    "how.step3.title": "Export & Share",
-    "how.step3.desc": "Pick your export resolution, hit \"Export as PNG\", and get a screenshot with full context.",
-    "export.alt": "Tweet Quote Export Result",
-    "cta.title": "Ready to Try?",
-    "cta.desc": "Free, open source, no sign-up needed. Paste a link, get an image.",
-    "cta.tryBtn": "🚀 Try It Now",
-    "try.alert": "The hosted service is coming soon!\n\nFor now, run locally:\npython3 server.py\nThen visit http://localhost:8088/",
+    "hero.eyebrow": "Open source / Context-first / Bilingual",
+    "hero.title": "Give every quote<br>the context it was missing.",
+    "hero.desc": "Tweet Quote is not another AI landing page. It feels closer to an editorial tool for journalists, researchers, and curators: a way to turn scattered Twitter / X quote chains into a composed image worth sharing and archiving.<br><br>Translation and annotations are still there, but they now stay in the background, supporting reading instead of trying to sell the product.",
+    "hero.primary": "Try the product",
+    "hero.secondary": "See the brand shift",
+    "hero.proof1.title": "Context first",
+    "hero.proof1.desc": "Preserve quote relationships so ideas are less likely to be stripped from their source.",
+    "hero.proof2.title": "Bilingual reading",
+    "hero.proof2.desc": "Translation and annotations remain useful, without turning the page into AI theater.",
+    "hero.proof3.title": "One finished artifact",
+    "hero.proof3.desc": "From link to shareable image, the output feels composed rather than generated.",
+    "hero.panelLabel": "Product preview",
+    "hero.panelRight": "Tweet Quote",
+    "hero.note1.title": "Less AI theater",
+    "hero.note1.desc": "AI moves out of the spotlight and back into its proper role: helping readers understand.",
+    "hero.note2.title": "More editorial",
+    "hero.note2.desc": "Paper tones, serif headlines, and restrained hierarchy make the brand feel more credible.",
+    "showcase.mainAlt": "Tweet Quote main interface preview",
+    "showcase.exportAlt": "Tweet Quote export result preview",
+    "manifesto.label": "Brand line",
+    "manifesto.quote": "Not to make tweets look louder,<br>but to make context feel whole again.",
+    "story.eyebrow": "Why this feels different",
+    "story.title": "From generic AI SaaS,<br>to a more editorial product brand.",
+    "story.desc": "This redesign is not just a palette swap. It repositions the tone of the product away from glow, hype, and feature overload, and toward something calmer, more deliberate, and more publication-like.",
+    "story.item1.title": "Benefits become standards",
+    "story.item1.desc": "Instead of saying “AI is powerful,” the page now asks a better question: does this help you quote people more accurately? That makes the product sound more mature and more opinionated.",
+    "story.item2.title": "Screenshots become proof",
+    "story.item2.desc": "The hero is built around the real product and export output. Layout, overlap, and notes explain value with evidence, not decoration.",
+    "story.item3.title": "The brand feels more publishable",
+    "story.item3.desc": "Warm paper tones, serif headlines, low-saturation accents, and precise borders create a tone that fits context, citation, and considered reading.",
+    "principles.eyebrow": "Design principles",
+    "principles.title": "Three principles that define the new look",
+    "principles.desc": "The page now behaves like an edited product story instead of a bundle of visual shortcuts. Every section is tuned for clarity, credibility, and longevity.",
+    "principles.card1.title": "Restraint over stimulation",
+    "principles.card1.desc": "Glows, emojis, and restless motion are gone. The page is quieter, which gives the content more authority.",
+    "principles.card2.title": "Proof over slogans",
+    "principles.card2.desc": "Real UI and export output do the heavy lifting. The branding is more believable because it shows, rather than inflates.",
+    "principles.card3.title": "Smart help, not AI voice",
+    "principles.card3.desc": "Translation and annotation stay as capabilities, but the copy avoids hype so intelligence feels embedded, not advertised.",
+    "workflow.eyebrow": "How it works",
+    "workflow.title": "From one link,<br>to a finished image ready to circulate.",
+    "workflow.desc": "The product flow now reads like an editorial action: gather context, shape the reading layer, export the finished artifact. It feels less like operating a tool and more like completing a piece.",
+    "workflow.step1.title": "Paste a link or build manually",
+    "workflow.step1.desc": "Auto-fetch the quote chain or assemble layers yourself, depending on how much control you need.",
+    "workflow.step2.title": "Shape translation and notes",
+    "workflow.step2.desc": "Translation, terminology, and cultural notes appear when useful, without disturbing the visual order.",
+    "workflow.step3.title": "Export and share",
+    "workflow.step3.desc": "Generate a high-resolution PNG that turns a fragmented conversation into a complete, portable artifact.",
+    "workflow.point1.title": "Open source.",
+    "workflow.point1.desc": "Trust grows from transparency, not mystique.",
+    "workflow.point2.title": "No sign-up wall.",
+    "workflow.point2.desc": "A product should prove its usefulness before it asks for anything.",
+    "workflow.point3.title": "Built for nuance.",
+    "workflow.point3.desc": "Good for quoting, researching, translating, and archiving, not only for social screenshots.",
+    "cta.title": "If your product solves missing context,<br>its brand should feel more considered too.",
+    "cta.desc": "The page now steps away from generic AI aesthetics and toward a calmer, more editorial expression. Open the tool and see whether this tone feels closer to the audience you want to serve.",
+    "cta.primary": "Open Tweet Quote",
+    "cta.secondary": "View on GitHub",
+    "footer.copy": "Tweet Quote for people who care about context.",
+    "try.alert": "The hosted service is coming soon.\n\nFor now, run locally:\npython3 server.py\nThen visit http://localhost:8088/"
   }
 };
 
@@ -537,13 +1228,15 @@ function applyLang() {
   document.documentElement.lang = lang;
   document.getElementById('langToggle').textContent = t('lang.toggle');
 
-  document.querySelectorAll('[data-i18n]').forEach(el => {
+  document.querySelectorAll('[data-i18n]').forEach((el) => {
     el.textContent = t(el.dataset.i18n);
   });
-  document.querySelectorAll('[data-i18n-html]').forEach(el => {
+
+  document.querySelectorAll('[data-i18n-html]').forEach((el) => {
     el.innerHTML = t(el.dataset.i18nHtml);
   });
-  document.querySelectorAll('[data-i18n-alt]').forEach(el => {
+
+  document.querySelectorAll('[data-i18n-alt]').forEach((el) => {
     el.alt = t(el.dataset.i18nAlt);
   });
 }
@@ -562,20 +1255,6 @@ function handleTry() {
   }
   return false;
 }
-
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function(e) {
-    const href = this.getAttribute('href');
-    if (href === '#try') {
-      if (!APP_URL) return;
-    }
-    const target = document.querySelector(href);
-    if (target) {
-      e.preventDefault();
-      target.scrollIntoView({ behavior: 'smooth' });
-    }
-  });
-});
 
 applyLang();
 </script>
