@@ -465,12 +465,49 @@ def save_trial_store(store):
         json.dump(store, f, ensure_ascii=False, indent=2)
 
 
+def parse_int(value, default=0):
+    try:
+        return int(value)
+    except (TypeError, ValueError):
+        return default
+
+
+def build_legacy_usage_events(session, now, min_ts):
+    legacy_used = max(0, parse_int(session.get("trial_used"), 0))
+    if legacy_used <= 0:
+        return []
+
+    created_at = min(now, parse_int(session.get("created_at"), 0))
+    last_seen_at = min(now, parse_int(session.get("last_seen_at"), 0))
+    if last_seen_at <= 0:
+        last_seen_at = created_at or now
+    if created_at <= 0 or created_at > last_seen_at:
+        created_at = last_seen_at
+    if last_seen_at < min_ts:
+        return []
+
+    start_ts = max(min_ts, created_at)
+    end_ts = max(start_ts, last_seen_at)
+    if legacy_used == 1:
+        return [end_ts]
+
+    span = max(0, end_ts - start_ts)
+    if span == 0:
+        first_ts = max(min_ts, end_ts - legacy_used + 1)
+        return list(range(first_ts, first_ts + legacy_used))
+
+    step = span / float(legacy_used - 1)
+    return [min(now, int(round(start_ts + (idx * step)))) for idx in range(legacy_used)]
+
+
 def normalize_usage_events(session, now=None):
     now = int(now or time.time())
     min_ts = now - WEEKLY_TRIAL_WINDOW_SECONDS
     raw_events = session.get("usage_events")
     if not isinstance(raw_events, list):
-        raw_events = []
+        raw_events = build_legacy_usage_events(session, now, min_ts)
+    elif not raw_events:
+        raw_events = build_legacy_usage_events(session, now, min_ts)
     events = []
     for item in raw_events:
         try:
