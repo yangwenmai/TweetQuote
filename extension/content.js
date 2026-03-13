@@ -16,6 +16,15 @@ function getAppUrl() {
   return url.toString();
 }
 
+function shouldOpenAppInNewTab() {
+  const url = new URL(APP_BASE_URL);
+  return window.location.protocol === "https:" && url.protocol === "http:";
+}
+
+function openAppInNewTab() {
+  window.open(getAppUrl(), "_blank", "noopener,noreferrer");
+}
+
 function getPanel() {
   return document.getElementById(PANEL_ID);
 }
@@ -37,6 +46,14 @@ function togglePanel() {
   const existing = getPanel();
   if (existing) {
     closePanel();
+    return;
+  }
+
+  if (shouldOpenAppInNewTab()) {
+    console.warn(
+      "[TweetQuote] APP_BASE_URL uses HTTP on an HTTPS page, so the app is opened in a new tab instead of an iframe."
+    );
+    openAppInNewTab();
     return;
   }
 
