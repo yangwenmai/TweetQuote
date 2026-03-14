@@ -1,0 +1,21 @@
+{
+  "name": "@tweetquote/api",
+  "version": "0.1.0",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "prisma:generate": "DATABASE_URL=\"file:./dev.db\" prisma generate --schema prisma/schema.prisma",
+    "db:push": "DATABASE_URL=\"file:./dev.db\" prisma db push --schema prisma/schema.prisma"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.19.2",
+    "@tweetquote/config": "file:../../packages/config",
+    "@tweetquote/domain": "file:../../packages/domain",
+    "@tweetquote/telemetry": "file:../../packages/telemetry",
+    "fastify": "^5.8.2",
+    "prisma": "^6.19.2"
+  }
+}
