@@ -77,12 +77,46 @@ OPENAI_MODEL=gpt-4o-mini
 tweetquote/
 ├── server.py          # 本地 HTTP 服务
 ├── index.html         # 主界面
+├── apps/              # V2 monorepo apps（web/api/extension）
+├── packages/          # V2 shared packages（domain/editor-core/render-core/sdk/ui/config/telemetry）
 ├── screenshots/       # 项目截图
 ├── .env.local         # 环境变量（不提交）
 ├── docs/
-│   └── FEATURES.md    # 详细功能文档
+│   ├── FEATURES.md    # 详细功能文档
+│   ├── ARCHITECTURE_V2.md
+│   └── CUTOVER_CHECKLIST.md
 ├── LICENSE            # MIT 开源协议
 └── README.md
+```
+
+## V2 工程
+
+仓库现在包含一套并行重建中的 V2 monorepo：
+
+- `apps/web`：Next.js 新版营销站与编辑器
+- `apps/api`：Fastify API（当前开发态使用 Prisma + SQLite）
+- `apps/extension`：MV3 插件
+- `packages/*`：共享领域模型、编辑核心、渲染核心、SDK、UI、配置和 telemetry
+
+常用命令：
+
+```bash
+# 安装新工程依赖
+npm install
+
+# 类型检查
+npm run typecheck
+
+# 构建全部 V2 应用
+npm run build
+
+# 初始化本地 SQLite 数据库
+npm run db:push -w @tweetquote/api
+
+# 本地开发
+npm run dev:api
+npm run dev:web
+npm run dev:extension
 ```
 
 ## 依赖
