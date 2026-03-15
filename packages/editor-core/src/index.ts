@@ -5,6 +5,7 @@ import {
   quoteDocumentSchema,
   type AppLanguage,
   type QuoteDocument,
+  type TranslationDisplay,
   type TranslationArtifact,
   type TranslationProvider,
 } from "@tweetquote/domain";
@@ -13,6 +14,11 @@ export const storageKeys = {
   webDraft: "tq_v2_editor_draft",
   webDeviceId: "tq_v2_device_id",
   extensionDeviceId: "tq_v2_extension_device_id",
+  twitterApiKey: "tnt_api_key",
+  aiBaseUrl: "tnt_ai_base_url",
+  aiApiKey: "tnt_ai_api_key",
+  aiModel: "tnt_ai_model",
+  translationTargetLanguage: "tnt_translation_target_lang",
 } as const;
 
 export function restoreDraftDocument(raw: string | null | undefined) {
@@ -80,10 +86,21 @@ export function updateDocumentProvider(document: QuoteDocument, provider: Transl
   });
 }
 
+export function updateDocumentTranslationDisplay(document: QuoteDocument, translationDisplay: TranslationDisplay): QuoteDocument {
+  return quoteDocumentSchema.parse({
+    ...document,
+    renderSpec: {
+      ...document.renderSpec,
+      translationDisplay,
+    },
+    updatedAt: nowIso(),
+  });
+}
+
 export function updateNodeField(
   document: QuoteDocument,
   index: number,
-  key: "content" | "name" | "handle",
+  key: "content" | "name" | "handle" | "avatarUrl" | "createdAt" | "viewCount",
   value: string,
 ): QuoteDocument {
   return quoteDocumentSchema.parse({
@@ -92,7 +109,20 @@ export function updateNodeField(
       nodeIndex === index
         ? key === "content"
           ? { ...node, content: value }
-          : { ...node, author: { ...node.author, [key === "name" ? "name" : "handle"]: value } }
+          : key === "name" || key === "handle" || key === "avatarUrl"
+            ? {
+                ...node,
+                author: {
+                  ...node.author,
+                  [key === "name" ? "name" : key === "handle" ? "handle" : "avatarUrl"]: value,
+                },
+              }
+            : key === "createdAt"
+              ? { ...node, createdAt: value }
+              : {
+                  ...node,
+                  viewCount: value.trim() ? Math.max(0, Number.parseInt(value, 10) || 0) : null,
+                }
         : node,
     ),
     updatedAt: nowIso(),
