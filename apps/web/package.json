@@ -16,6 +16,7 @@
     "@tweetquote/sdk": "file:../../packages/sdk",
     "@tweetquote/telemetry": "file:../../packages/telemetry",
     "@tweetquote/ui": "file:../../packages/ui",
+    "html-to-image": "^1.11.13",
     "next": "^16.1.6",
     "react": "^19.2.4",
     "react-dom": "^19.2.4"

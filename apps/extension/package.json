@@ -16,6 +16,7 @@
     "@tweetquote/sdk": "file:../../packages/sdk",
     "@tweetquote/ui": "file:../../packages/ui",
     "@vitejs/plugin-react": "^6.0.1",
+    "html-to-image": "^1.11.13",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
     "vite": "^8.0.0"
