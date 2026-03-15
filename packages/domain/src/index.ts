@@ -9,6 +9,9 @@ export type SourceKind = z.infer<typeof sourceKindSchema>;
 export const translationProviderSchema = z.enum(["none", "google", "ai"]);
 export type TranslationProvider = z.infer<typeof translationProviderSchema>;
 
+export const translationDisplaySchema = z.enum(["replace", "bilingual"]);
+export type TranslationDisplay = z.infer<typeof translationDisplaySchema>;
+
 export const quoteRelationSchema = z.enum(["root", "quote", "reply"]);
 export type QuoteRelation = z.infer<typeof quoteRelationSchema>;
 
@@ -88,6 +91,7 @@ export type QuoteNode = z.infer<typeof quoteNodeSchema>;
 export const renderSpecSchema = z.object({
   language: languageSchema.default("zh-CN"),
   translationProvider: translationProviderSchema.default("none"),
+  translationDisplay: translationDisplaySchema.default("replace"),
   includeAnnotations: z.boolean().default(true),
   exportScale: z.number().int().min(1).max(4).default(2),
   theme: z.enum(["paper", "night"]).default("paper"),
@@ -115,6 +119,7 @@ export const quoteDocumentSchema = z.object({
     (): RenderSpec => ({
       language: "zh-CN",
       translationProvider: "none",
+      translationDisplay: "replace",
       includeAnnotations: true,
       exportScale: 2,
       theme: "paper",
@@ -179,6 +184,15 @@ export const quoteFetchResponseSchema = z.object({
   quota: quotaSnapshotSchema,
   meta: z.object({
     chainLength: z.number().int().nonnegative(),
+    layers: z.array(
+      z.object({
+        index: z.number().int().nonnegative(),
+        relation: quoteRelationSchema,
+        authorName: z.string(),
+        authorHandle: z.string(),
+        tweetId: z.string(),
+      }),
+    ),
     source: sourceKindSchema,
     translationProvider: translationProviderSchema,
     targetLanguage: languageSchema,
