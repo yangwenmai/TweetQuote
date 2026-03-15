@@ -260,6 +260,13 @@ export async function translateBatch(
 export async function buildDocumentFromQuoteRequest(request: QuoteFetchRequest, quota = createDefaultQuota()): Promise<{
   document: QuoteDocument;
   quota: ReturnType<typeof createDefaultQuota>;
+  layers: Array<{
+    index: number;
+    relation: "root" | "quote" | "reply";
+    authorName: string;
+    authorHandle: string;
+    tweetId: string;
+  }>;
 }> {
   const tweetId = extractTweetId(request.tweetUrl || request.tweetId || "");
   if (!tweetId) {
@@ -299,5 +306,12 @@ export async function buildDocumentFromQuoteRequest(request: QuoteFetchRequest, 
       updatedAt: new Date().toISOString(),
     }),
     quota,
+    layers: translatedNodes.map((node, index) => ({
+      index,
+      relation: node.relation,
+      authorName: node.author.name,
+      authorHandle: node.author.handle,
+      tweetId: node.sourceTweetId,
+    })),
   };
 }

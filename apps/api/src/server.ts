@@ -56,6 +56,44 @@ app.get("/api/v1/runtime", async () => ({
   apiBaseUrl: `http://localhost:${apiEnv.port}`,
 }));
 
+app.get("/api/v1/assets/image", async (request, reply) => {
+  const query = request.query as { url?: string };
+  const rawUrl = typeof query.url === "string" ? query.url : "";
+  if (!rawUrl) {
+    reply.code(400);
+    return { error: "Missing image url" };
+  }
+
+  let targetUrl: URL;
+  try {
+    targetUrl = new URL(rawUrl);
+  } catch {
+    reply.code(400);
+    return { error: "Invalid image url" };
+  }
+
+  if (!["http:", "https:"].includes(targetUrl.protocol)) {
+    reply.code(400);
+    return { error: "Unsupported image protocol" };
+  }
+
+  const upstream = await fetch(targetUrl, {
+    headers: {
+      "User-Agent": "TweetQuote/2.0",
+    },
+  });
+  if (!upstream.ok) {
+    reply.code(upstream.status);
+    return { error: "Failed to fetch image" };
+  }
+
+  const contentType = upstream.headers.get("content-type") || "image/png";
+  const buffer = Buffer.from(await upstream.arrayBuffer());
+  reply.header("Content-Type", contentType);
+  reply.header("Cache-Control", "public, max-age=3600");
+  return reply.send(buffer);
+});
+
 app.get("/api/v1/openapi.json", async () => ({
   openapi: "3.1.0",
   info: {
@@ -107,6 +145,7 @@ app.post("/api/v1/quote/fetch", async (request, reply) => {
     quota: await sessionStore.getQuotaSnapshot(deviceId),
     meta: {
       chainLength: result.document.nodes.length,
+      layers: result.layers,
       source: payload.source,
       translationProvider: payload.translationProvider,
       targetLanguage: payload.targetLanguage,
