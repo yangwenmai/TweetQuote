@@ -1,0 +1,24 @@
+{
+  "name": "@tweetquote/web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "@tweetquote/config": "file:../../packages/config",
+    "@tweetquote/domain": "file:../../packages/domain",
+    "@tweetquote/editor-core": "file:../../packages/editor-core",
+    "@tweetquote/render-core": "file:../../packages/render-core",
+    "@tweetquote/sdk": "file:../../packages/sdk",
+    "@tweetquote/telemetry": "file:../../packages/telemetry",
+    "@tweetquote/ui": "file:../../packages/ui",
+    "html-to-image": "^1.11.13",
+    "next": "^16.1.6",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
+  }
+}

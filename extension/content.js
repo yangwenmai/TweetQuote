@@ -1,7 +1,13 @@
 const BUTTON_ID = "tweetquote-extension-entry";
 const PANEL_ID = "tweetquote-extension-panel";
 const OVERLAY_ID = "tweetquote-extension-overlay";
-const APP_BASE_URL = "http://159.89.204.255:8088/";
+
+// 本地开发用本地 API，正式使用线上 API（打包/发布前改为 false）
+const USE_LOCAL_DEV_API = false;
+const LOCAL_DEV_API_BASE = "http://localhost:8787/";
+const PRODUCTION_API_BASE = "http://159.89.204.255:8088/";
+const APP_BASE_URL = USE_LOCAL_DEV_API ? LOCAL_DEV_API_BASE : PRODUCTION_API_BASE;
+
 const PANEL_WIDTH = 520;
 
 function isTweetDetailPage() {
