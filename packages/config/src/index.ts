@@ -48,24 +48,24 @@ export function getEnv(target: RuntimeTarget): AppEnvironment {
 
 export const designTokens = {
   colors: {
-    background: "#f6f2ea",
-    panel: "#fffdf9",
-    border: "rgba(42, 33, 27, 0.12)",
-    foreground: "#221c18",
-    muted: "#786d65",
-    accent: "#355c7d",
-    accentSoft: "#ecf1f7",
-    danger: "#9f4d3e",
-    success: "#2f6f53",
+    background: "#f5f8fa",
+    panel: "#ffffff",
+    border: "#e1e8ed",
+    foreground: "#0f1419",
+    muted: "#536471",
+    accent: "#1d9bf0",
+    accentSoft: "#e8f5fd",
+    danger: "#e0245e",
+    success: "#17bf63",
   },
   radius: {
-    sm: "10px",
-    md: "16px",
-    lg: "24px",
+    sm: "8px",
+    md: "12px",
+    lg: "16px",
     pill: "999px",
   },
   shadow: {
-    soft: "0 16px 48px rgba(34, 28, 24, 0.08)",
-    card: "0 8px 24px rgba(34, 28, 24, 0.06)",
+    soft: "0 4px 16px rgba(15, 20, 25, 0.08)",
+    card: "0 1px 3px rgba(15, 20, 25, 0.08)",
   },
 };
