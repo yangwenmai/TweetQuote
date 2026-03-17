@@ -27,8 +27,15 @@ import { getDocumentSummary } from "@tweetquote/render-core";
 import { TweetQuoteApiClient } from "@tweetquote/sdk";
 import { Button, QuotePreview } from "@tweetquote/ui";
 
+const apiBaseUrl =
+  process.env.NEXT_PUBLIC_API_BASE_URL?.trim() || (process.env.NODE_ENV === "production" ? "https://tweetquote.app" : "http://localhost:8787");
+const runtimeEnv = globalThis as typeof globalThis & { __TQ_ENV__?: Record<string, string | undefined> };
+runtimeEnv.__TQ_ENV__ = {
+  ...(runtimeEnv.__TQ_ENV__ || {}),
+  NEXT_PUBLIC_API_BASE_URL: apiBaseUrl,
+};
 const api = new TweetQuoteApiClient({
-  baseUrl: process.env.NEXT_PUBLIC_API_BASE_URL || "http://localhost:8787",
+  baseUrl: apiBaseUrl,
 });
 
 const DEFAULT_TWEET_URL = "https://x.com/MaiYangAI/status/2032647419339608574?s=20";
