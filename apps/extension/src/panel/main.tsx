@@ -24,7 +24,37 @@ runtimeEnv.__TQ_ENV__ = {
   NEXT_PUBLIC_API_BASE_URL: apiBaseUrl,
 };
 
-const api = new TweetQuoteApiClient({ baseUrl: apiBaseUrl });
+function createBackgroundFetch(): typeof globalThis.fetch {
+  return ((input: RequestInfo | URL, init?: RequestInit): Promise<Response> => {
+    return new Promise((resolve, reject) => {
+      const url = typeof input === "string" ? input : input instanceof URL ? input.toString() : input.url;
+      const headers: Record<string, string> | undefined = init?.headers
+        ? Object.fromEntries(new Headers(init.headers as HeadersInit).entries())
+        : undefined;
+      chrome.runtime.sendMessage(
+        {
+          type: "tweetquote.api-proxy",
+          url,
+          init: { method: init?.method ?? "GET", headers, body: typeof init?.body === "string" ? init.body : undefined },
+        },
+        (response) => {
+          if (chrome.runtime.lastError) {
+            reject(new Error(chrome.runtime.lastError.message ?? "Extension message failed"));
+            return;
+          }
+          if (!response) {
+            reject(new Error("No response from background script"));
+            return;
+          }
+          resolve(new Response(response.body, { status: response.status || 0, headers: { "Content-Type": "application/json" } }));
+        },
+      );
+    });
+  }) as typeof globalThis.fetch;
+}
+
+const useBackgroundProxy = typeof chrome !== "undefined" && !!chrome.runtime?.sendMessage;
+const api = new TweetQuoteApiClient({ baseUrl: apiBaseUrl, fetchFn: useBackgroundProxy ? createBackgroundFetch() : undefined });
 
 type BusyState =
   | { kind: "idle" }
