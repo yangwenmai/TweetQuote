@@ -91,6 +91,50 @@ function formatLayerLog(
   return language === "en" ? `Layer ${layer.index + 1}: ${relationLabel} by ${author}` : `第 ${layer.index + 1} 层：${relationLabel} · ${author}`;
 }
 
+function formatQuotaResetTime(epochSeconds: number, lang: AppLanguage): string {
+  if (!epochSeconds) return "";
+  const date = new Date(epochSeconds * 1000);
+  if (Number.isNaN(date.getTime())) return "";
+  try {
+    return new Intl.DateTimeFormat(lang === "zh-CN" ? "zh-CN" : "en-US", {
+      month: "numeric",
+      day: "numeric",
+      hour: "2-digit",
+      minute: "2-digit",
+    }).format(date);
+  } catch {
+    return date.toLocaleString();
+  }
+}
+
+function getQuotaExhaustedMessage(q: QuotaSnapshot, lang: AppLanguage): string {
+  const base =
+    lang === "en"
+      ? `Hosted render quota reached: at most ${q.dailyTotal} per day and ${q.weeklyTotal} per week.`
+      : `托管抓取额度已达上限：每天最多 ${q.dailyTotal} 次、每周最多 ${q.weeklyTotal} 次。`;
+  let reset = "";
+  if (q.exhaustedReason === "weekly" && q.nextWeeklyResetAt) {
+    const time = formatQuotaResetTime(q.nextWeeklyResetAt, lang);
+    reset = time
+      ? lang === "en"
+        ? `Weekly quota exhausted. Expected to reset around ${time}.`
+        : `本周额度已用完，预计在 ${time} 恢复。`
+      : lang === "en"
+        ? "Quota reset time is syncing. Please refresh in a moment."
+        : "额度恢复时间同步中，请稍后刷新查看。";
+  } else if (q.nextDailyResetAt) {
+    const time = formatQuotaResetTime(q.nextDailyResetAt, lang);
+    reset = time
+      ? lang === "en"
+        ? `Daily quota exhausted. Expected to reset around ${time}.`
+        : `今日额度已用完，预计在 ${time} 恢复。`
+      : lang === "en"
+        ? "Quota reset time is syncing. Please refresh in a moment."
+        : "额度恢复时间同步中，请稍后刷新查看。";
+  }
+  return reset ? `${base} ${reset}` : base;
+}
+
 export function EditorApp() {
   const previewRef = useRef<HTMLDivElement | null>(null);
   const [deviceId, setDeviceId] = useState("");
@@ -421,7 +465,18 @@ export function EditorApp() {
         language === "en" ? `Fetch finished with ${response.document.nodes.length} layers` : `抓取完成，共 ${response.document.nodes.length} 层`,
       );
     } catch (error) {
-      setMessage(error instanceof Error ? error.message : ui.messageFetchFailed);
+      const errMsg = error instanceof Error ? error.message : ui.messageFetchFailed;
+      if (errMsg.includes("Free trial exhausted") || errMsg.includes("402")) {
+        const refreshedQuota = await api.getQuota(deviceId).catch(() => quota);
+        if (refreshedQuota) {
+          setQuota(refreshedQuota);
+          setMessage(getQuotaExhaustedMessage(refreshedQuota, language));
+        } else {
+          setMessage(language === "en" ? "Hosted render quota reached. Please try again later." : "托管抓取额度已达上限，请稍后再试。");
+        }
+      } else {
+        setMessage(errMsg);
+      }
       pushActivity(language === "en" ? "Fetch failed" : "抓取失败");
     } finally {
       setBusy({ kind: "idle" });
@@ -595,7 +650,6 @@ export function EditorApp() {
 
       const { toBlob } = await import("html-to-image");
       const blob = await toBlob(previewRef.current, {
-        cacheBust: true,
         pixelRatio: Math.max(1, document.renderSpec.exportScale),
         backgroundColor: "#ffffff",
         imagePlaceholder:

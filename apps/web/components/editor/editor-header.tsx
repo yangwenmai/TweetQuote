@@ -12,10 +12,10 @@ export function EditorHeader({ quotaLabel, busy, onSave, onExport, onReset }: Ed
   return (
     <div className="toolbar">
       <div>
-        <span className="eyebrow">Editorial Product</span>
-        <h1 style={{ margin: "14px 0 6px" }}>新版编辑器</h1>
+        <span className="eyebrow">Tweet Quote</span>
+        <h1 style={{ margin: "14px 0 6px" }}>编辑器</h1>
         <p className="muted" style={{ margin: 0 }}>
-          先保住核心路径，再围绕领域模型持续组件化。
+          抓取引用链、翻译注释、导出高清长图。
         </p>
       </div>
       <div className="row">

@@ -19,7 +19,7 @@ export function DocumentSettingsCard({
   onThemeChange,
 }: DocumentSettingsCardProps) {
   return (
-    <SurfaceCard title="文档设置" subtitle="把标题、导出倍率和主题这些渲染参数从正文编辑中独立出来。">
+    <SurfaceCard title="文档设置" subtitle="设置标题、导出倍率和主题。">
       <div className="stack">
         <label className="field">
           <span>文档标题</span>

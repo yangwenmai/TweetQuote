@@ -25,7 +25,7 @@ export function FetchCard({
   const canFetch = tweetUrl.trim().length > 0 && !busy;
 
   return (
-    <SurfaceCard title="抓取入口" subtitle="保留当前核心主路径：粘贴推文链接，抓取引用链，必要时顺手完成翻译。">
+    <SurfaceCard title="抓取入口" subtitle="粘贴推文链接，一键抓取完整引用链，按需翻译。">
       <div className="stack">
         <label className="field">
           <span>推文链接</span>

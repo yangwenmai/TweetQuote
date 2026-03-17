@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "TweetQuote",
-  description: "上下文优先的引用链编辑与成图工具。",
+  description: "把 Twitter / X 的引用链一键抓取、翻译注释、导出为高清长图。",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

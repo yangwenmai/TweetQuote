@@ -21,7 +21,7 @@ export function ManualEditorCard({
   onAddLayer,
 }: ManualEditorCardProps) {
   return (
-    <SurfaceCard title="手工编辑" subtitle="新版不再整块重绘，而是围绕节点编辑。">
+    <SurfaceCard title="手工编辑" subtitle="逐层编辑推文内容、翻译和作者信息。">
       <div className="stack">
         <div className="row">
           <Button tone="ghost" disabled={busy} onClick={() => onTranslateAll("google")}>
