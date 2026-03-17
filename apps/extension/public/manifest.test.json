@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "TweetQuote Next (Test)",
+  "version": "0.1.0",
+  "description": "Open the current X/Twitter conversation in the new TweetQuote editor.",
+  "permissions": ["storage"],
+  "host_permissions": ["https://x.com/*", "https://twitter.com/*", "http://*/*", "https://*/*"],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://x.com/*", "https://twitter.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["panel.html"],
+      "matches": ["https://x.com/*", "https://twitter.com/*"]
+    }
+  ],
+  "action": {
+    "default_title": "TweetQuote Next (Test)"
+  }
+}

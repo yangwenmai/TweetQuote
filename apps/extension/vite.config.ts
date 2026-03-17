@@ -10,7 +10,7 @@ export default defineConfig(({ mode }) => ({
     {
       name: "tweetquote-manifest",
       async closeBundle() {
-        const sourceManifest = mode === "development" ? "manifest.dev.json" : "manifest.json";
+        const sourceManifest = mode === "development" ? "manifest.dev.json" : mode === "test" ? "manifest.test.json" : "manifest.json";
         await fs.copyFile(path.resolve(__dirname, "public", sourceManifest), path.resolve(__dirname, "dist", "manifest.json"));
       },
     },

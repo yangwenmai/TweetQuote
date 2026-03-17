@@ -1,5 +1,10 @@
 output/*
+.DS_Store
 .env*
+# 扩展按环境打包用，可提交
+!apps/extension/.env.development
+!apps/extension/.env.test
+!apps/extension/.env.production
 __pycache__/*
 history/*
 data/*
