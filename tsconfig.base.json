@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["DOM", "DOM.Iterable", "ES2022"],
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": ".",
+    "paths": {
+      "@tweetquote/domain": ["packages/domain/src"],
+      "@tweetquote/editor-core": ["packages/editor-core/src"],
+      "@tweetquote/render-core": ["packages/render-core/src"],
+      "@tweetquote/ui": ["packages/ui/src"],
+      "@tweetquote/sdk": ["packages/sdk/src"],
+      "@tweetquote/config": ["packages/config/src"],
+      "@tweetquote/telemetry": ["packages/telemetry/src"]
+    }
+  }
+}

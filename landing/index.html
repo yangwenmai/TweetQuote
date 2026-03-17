@@ -1217,8 +1217,10 @@ const I18N = {
   }
 };
 
-const APP_URL = 'http://159.89.204.255:8088/';
-const EXTENSION_URL = '/extension/';
+// 本地开发改为 true 时用本地 API
+const USE_LOCAL_DEV_API = false;
+const APP_URL = window.__TQ_APP_URL__ || (USE_LOCAL_DEV_API ? 'http://localhost:8787/' : 'http://159.89.204.255:8088/');
+const EXTENSION_URL = 'https://github.com/yangwenmai/TweetQuote/releases/tag/v0.1.0';
 let lang = localStorage.getItem('tq_landing_lang') || (navigator.language.startsWith('zh') ? 'zh-CN' : 'en');
 
 function t(key) {

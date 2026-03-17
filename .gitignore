@@ -3,3 +3,11 @@ output/*
 __pycache__/*
 history/*
 data/*
+*.zip
+node_modules/
+packages/*/dist/
+apps/web/.next/
+apps/api/dist/
+apps/extension/dist/
+apps/api/prisma/dev.db*
+*.tsbuildinfo
