@@ -3,7 +3,7 @@ import { createRoot } from "react-dom/client";
 import { TweetQuoteApiClient } from "@tweetquote/sdk";
 import { designTokens } from "@tweetquote/config";
 import { Button, QuotePreview } from "@tweetquote/ui";
-import { type AppLanguage, type QuoteDocument, type TranslationDisplay, type TranslationProvider } from "@tweetquote/domain";
+import { type AppLanguage, type QuoteDocument, type QuotaSnapshot, type TranslationDisplay, type TranslationProvider } from "@tweetquote/domain";
 import {
   applyNodeTranslation,
   collectBatchItems,
@@ -86,6 +86,65 @@ function formatLayerLog(layer: { index: number; relation: "root" | "quote" | "re
   return `第 ${layer.index + 1} 层：${relationLabel} · ${author}`;
 }
 
+function formatQuotaResetTime(epochSeconds: number): string {
+  if (!epochSeconds) return "";
+  const date = new Date(epochSeconds * 1000);
+  if (Number.isNaN(date.getTime())) return "";
+  try {
+    return new Intl.DateTimeFormat("zh-CN", {
+      month: "numeric",
+      day: "numeric",
+      hour: "2-digit",
+      minute: "2-digit",
+    }).format(date);
+  } catch {
+    return date.toLocaleString();
+  }
+}
+
+function getQuotaResetText(quota: QuotaSnapshot): string {
+  if (!quota.requiresUpgrade) return "";
+  if (quota.exhaustedReason === "weekly" && quota.nextWeeklyResetAt) {
+    const time = formatQuotaResetTime(quota.nextWeeklyResetAt);
+    return time ? `本周额度已用完，预计在 ${time} 恢复。` : "额度恢复时间同步中，请稍后刷新查看。";
+  }
+  if (quota.nextDailyResetAt) {
+    const time = formatQuotaResetTime(quota.nextDailyResetAt);
+    return time ? `今日额度已用完，预计在 ${time} 恢复。` : "额度恢复时间同步中，请稍后刷新查看。";
+  }
+  return "额度恢复时间同步中，请稍后刷新查看。";
+}
+
+function getQuotaExhaustedMessage(quota: QuotaSnapshot): string {
+  const base = `托管抓取额度已达上限：每天最多 ${quota.dailyTotal} 次、每周最多 ${quota.weeklyTotal} 次。`;
+  const reset = getQuotaResetText(quota);
+  return reset ? `${base} ${reset}` : base;
+}
+
+function QuotaBadge({ quota }: { quota: QuotaSnapshot | null }) {
+  if (!quota) return null;
+  const exhausted = quota.requiresUpgrade;
+  const label = exhausted
+    ? "额度已达上限"
+    : `今日 ${quota.dailyRemaining}/${quota.dailyTotal} · 本周 ${quota.weeklyRemaining}/${quota.weeklyTotal}`;
+  return (
+    <span
+      style={{
+        display: "inline-flex",
+        alignItems: "center",
+        padding: "3px 10px",
+        borderRadius: 999,
+        fontSize: 12,
+        fontWeight: 800,
+        background: exhausted ? "#fff1f3" : "#e8f5fd",
+        color: exhausted ? "#c81e4d" : "#1d9bf0",
+      }}
+    >
+      {label}
+    </span>
+  );
+}
+
 function PanelApp() {
   const previewRef = useRef<HTMLDivElement | null>(null);
   const [tweetUrl, setTweetUrl] = useState("");
@@ -98,6 +157,8 @@ function PanelApp() {
   const [aiApiKey, setAiApiKey] = useState("");
   const [aiModel, setAiModel] = useState("");
   const [twitterApiKey, setTwitterApiKey] = useState("");
+  const [quota, setQuota] = useState<QuotaSnapshot | null>(null);
+  const [sessionReady, setSessionReady] = useState(false);
   const [activities, setActivities] = useState<ActivityItem[]>([]);
   const documentSummary = useMemo(() => getDocumentSummary(document), [document]);
   const hasContent = document.nodes.some((node) => node.content.trim() || node.translation.text.trim());
@@ -125,6 +186,8 @@ function PanelApp() {
     setAiModel(window.localStorage.getItem(storageKeys.aiModel) || "");
     api.createAnonymousSession(cached).then((session) => {
       setDeviceId(session.deviceId);
+      setQuota(session.quota);
+      setSessionReady(true);
       window.localStorage.setItem(storageKeys.extensionDeviceId, session.deviceId);
     });
   }, []);
@@ -134,7 +197,7 @@ function PanelApp() {
   }
 
   async function fetchCurrentTweet() {
-    if (!tweetUrl || busy.kind !== "idle") return;
+    if (!tweetUrl || busy.kind !== "idle" || !sessionReady) return;
     setBusy({ kind: "fetch" });
     setMessage("正在抓取引用链…");
     pushActivity("开始抓取当前推文引用链");
@@ -150,16 +213,28 @@ function PanelApp() {
         aiBaseUrl: aiBaseUrl || undefined,
         aiModel: aiModel || undefined,
         source: "extension",
-        deviceId: deviceId || `ext_${Date.now().toString(36)}`,
+        deviceId,
       });
       setDocument(response.document);
+      setQuota(response.quota);
       setMessage(`抓取完成，共 ${response.document.nodes.length} 层。`);
       response.meta.layers.forEach((layer) => {
         pushActivity(formatLayerLog(layer));
       });
       pushActivity(`抓取完成，共 ${response.document.nodes.length} 层`);
     } catch (error) {
-      setMessage(error instanceof Error ? error.message : "抓取失败");
+      const errMsg = error instanceof Error ? error.message : "抓取失败";
+      if (errMsg.includes("Free trial exhausted") || errMsg.includes("402")) {
+        if (quota) {
+          const refreshedQuota = await api.getQuota(deviceId).catch(() => quota);
+          setQuota(refreshedQuota);
+          setMessage(getQuotaExhaustedMessage(refreshedQuota));
+        } else {
+          setMessage("托管抓取额度已达上限，请稍后再试。");
+        }
+      } else {
+        setMessage(errMsg);
+      }
       pushActivity("抓取失败");
     } finally {
       setBusy({ kind: "idle" });
@@ -242,7 +317,6 @@ function PanelApp() {
       }
       const { toBlob } = await import("html-to-image");
       const blob = await toBlob(previewRef.current, {
-        cacheBust: true,
         pixelRatio: Math.max(1, document.renderSpec.exportScale),
         backgroundColor: "#ffffff",
         imagePlaceholder:
@@ -296,6 +370,9 @@ function PanelApp() {
           style={{ borderRadius: 999 }}
         />
         <strong>Tweet Quote</strong>
+        <div style={{ marginLeft: "auto" }}>
+          <QuotaBadge quota={quota} />
+        </div>
       </div>
       <div style={{ display: "grid", gap: 12, padding: 16 }}>
         <div
@@ -327,11 +404,26 @@ function PanelApp() {
           </div>
           <Button
             onClick={fetchCurrentTweet}
-            disabled={!tweetUrl || busy.kind !== "idle"}
+            disabled={!tweetUrl || busy.kind !== "idle" || !sessionReady}
             style={{ background: designTokens.colors.accent, border: "none", color: "#fff" }}
           >
-            {isFetchBusy ? "抓取中..." : "一键抓取"}
+            {!sessionReady ? "正在同步额度…" : isFetchBusy ? "抓取中..." : "一键抓取"}
           </Button>
+          {quota?.requiresUpgrade && (
+            <div
+              style={{
+                background: "#fff7f8",
+                border: "1px solid #f0c7d1",
+                borderRadius: 10,
+                padding: "10px 12px",
+                fontSize: 13,
+                lineHeight: 1.6,
+                color: "#c81e4d",
+              }}
+            >
+              {getQuotaResetText(quota) || "托管抓取额度已达上限，你仍可手工编辑或自带 Key 继续使用。"}
+            </div>
+          )}
         </div>
 
         <div
