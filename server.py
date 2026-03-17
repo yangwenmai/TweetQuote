@@ -5,6 +5,7 @@ Tweet Quote — 本地服务器
 然后浏览器打开 http://localhost:8080
 """
 
+import datetime
 import http.server
 import json
 import os
@@ -723,6 +724,102 @@ def translate_chain_items(raw_items, target_lang, provider, ai_base_url="", ai_a
     return translated
 
 
+def build_v1_quota(session):
+    stats = get_trial_usage_stats(session)
+    return {
+        "anonymousAllowed": True,
+        "tier": "anonymous",
+        "dailyTotal": DAILY_TRIAL_RENDER_LIMIT,
+        "dailyRemaining": stats["daily_remaining"],
+        "weeklyTotal": WEEKLY_TRIAL_RENDER_LIMIT,
+        "weeklyRemaining": stats["weekly_remaining"],
+        "requiresUpgrade": stats["requires_upgrade"],
+        "hostedTwitterAvailable": bool(TWITTERAPI_KEY),
+        "hostedAiAvailable": bool(AI_API_KEY),
+    }
+
+
+def build_v1_session_response(device_id, session):
+    return {
+        "deviceId": device_id,
+        "sessionId": f"sess_{device_id}",
+        "quota": build_v1_quota(session),
+        "defaultRenderProvider": "ai" if AI_API_KEY else ("google" if TWITTERAPI_KEY else "none"),
+    }
+
+
+def build_v1_document(tweet_id, raw_items, translated_map, source, target_lang, translation_provider):
+    now = datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="milliseconds").replace("+00:00", "Z")
+    nodes = []
+    layers = []
+    for idx, item in enumerate(raw_items):
+        item_id = str(item.get("id", idx))
+        translated = translated_map.get(str(idx), {})
+        author = item.get("author") or {}
+        relation = "root" if idx == 0 else (item.get("_rel") if item.get("_rel") in ("root", "quote", "reply") else "quote")
+        author_name = str(author.get("name", ""))
+        author_handle = str(author.get("userName", ""))
+        translation_text = translated.get("translation", "")
+        annotations = translated.get("annotations", [])
+        nodes.append({
+            "id": item_id,
+            "relation": relation,
+            "depth": idx,
+            "sourceTweetId": item_id,
+            "author": {
+                "name": author_name,
+                "handle": author_handle,
+                "avatarUrl": str(author.get("profilePicture", "")),
+                "isVerified": False,
+            },
+            "content": str(item.get("text", "")),
+            "createdAt": str(item.get("createdAt", "")),
+            "viewCount": item.get("viewCount") if isinstance(item.get("viewCount"), int) else None,
+            "media": [],
+            "translation": {
+                "provider": translation_provider if translation_text else "none",
+                "status": "success" if translation_text else "idle",
+                "language": target_lang,
+                "text": translation_text,
+                "annotations": annotations if isinstance(annotations, list) else [],
+                "error": "",
+                "version": 0,
+            },
+        })
+        layers.append({
+            "index": idx,
+            "relation": relation,
+            "authorName": author_name,
+            "authorHandle": author_handle,
+            "tweetId": item_id,
+        })
+    title = nodes[0]["content"][:32] if nodes else "Untitled quote"
+    document = {
+        "id": str(uuid.uuid4()),
+        "title": title,
+        "status": "draft",
+        "nodes": nodes,
+        "renderSpec": {
+            "language": target_lang,
+            "translationProvider": translation_provider,
+            "translationDisplay": "replace",
+            "includeAnnotations": True,
+            "exportScale": 2,
+            "theme": "paper",
+        },
+        "fetchContext": {
+            "source": source,
+            "entryUrl": f"https://x.com/i/status/{tweet_id}",
+            "tweetId": tweet_id,
+            "pageLanguage": "en",
+            "capturedAt": now,
+        },
+        "createdAt": now,
+        "updatedAt": now,
+    }
+    return document, layers
+
+
 def build_render_items(raw_items, translated_map):
     items = []
     for idx, item in enumerate(raw_items):
@@ -745,7 +842,9 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         super().__init__(*args, directory=DIR, **kwargs)
 
     def do_GET(self):
-        if self.path.startswith("/api/session"):
+        if self.path.startswith("/api/v1/quota/"):
+            self.v1_get_quota()
+        elif self.path.startswith("/api/session"):
             self.get_session()
         elif self.path.startswith("/api/ai-config"):
             self.get_ai_config()
@@ -791,7 +890,17 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         })
 
     def do_POST(self):
-        if self.path.startswith("/api/quote-chain/render"):
+        if self.path.startswith("/api/v1/session/anonymous"):
+            self.v1_create_session()
+        elif self.path.startswith("/api/v1/quote/fetch"):
+            self.v1_quote_fetch()
+        elif self.path.startswith("/api/v1/translation/batch"):
+            self.v1_translate_batch()
+        elif self.path.startswith("/api/v1/translation/translate"):
+            self.v1_translate_text()
+        elif self.path.startswith("/api/v1/document/save"):
+            self.v1_save_document()
+        elif self.path.startswith("/api/quote-chain/render"):
             self.render_quote_chain()
         elif self.path.startswith("/api/ai-translate-batch"):
             self.proxy_ai_translate_batch()
@@ -972,6 +1081,181 @@ class Handler(http.server.SimpleHTTPRequestHandler):
             self.send_json(400, {"error": str(e)})
         except UpstreamAPIError as e:
             self.send_json(e.status_code, {"error": e.message, "detail": e.detail})
+
+    def v1_create_session(self):
+        try:
+            payload = self.read_json_body()
+            device_id = payload.get("deviceId", "")
+            device_id, session = get_or_create_trial_session(device_id)
+            self.send_json(200, build_v1_session_response(device_id, session))
+        except ValueError as e:
+            self.send_json(400, {"error": str(e)})
+
+    def v1_get_quota(self):
+        path_parts = self.path.split("/")
+        device_id = urllib.parse.unquote(path_parts[-1]) if len(path_parts) > 4 else ""
+        device_id, session = get_or_create_trial_session(device_id)
+        self.send_json(200, build_v1_quota(session))
+
+    def v1_quote_fetch(self):
+        try:
+            payload = self.read_json_body()
+            tweet_value = payload.get("tweetUrl") or payload.get("tweetId") or ""
+            tweet_id = extract_tweet_id(tweet_value)
+            if not tweet_id:
+                self.send_json(400, {"error": "Missing or invalid tweetUrl / tweetId"})
+                return
+
+            translation_provider = clean_text(payload.get("translationProvider", "none")).lower() or "none"
+            include_annotations = bool(payload.get("includeAnnotations", False))
+            target_lang = clean_text(payload.get("targetLanguage") or "zh-CN") or "zh-CN"
+            request_api_key = clean_text(payload.get("apiKey", ""))
+            request_ai_key = clean_text(payload.get("aiApiKey", ""))
+            source = clean_text(payload.get("source", "web")) or "web"
+            using_hosted_twitter = not request_api_key
+            using_hosted_ai = translation_provider == "ai" and not request_ai_key
+            hosted_render = using_hosted_twitter or using_hosted_ai
+
+            device_id, session = get_or_create_trial_session(payload.get("deviceId", ""))
+            quota = build_v1_quota(session)
+            if hosted_render and quota["requiresUpgrade"]:
+                self.send_json(402, {"error": "Free trial exhausted", "quota": quota})
+                return
+
+            twitter_api_key = request_api_key or TWITTERAPI_KEY
+            raw_items = resolve_quote_chain(tweet_id, twitter_api_key)
+
+            translated_map = {}
+            if translation_provider != "none":
+                ai_base_url = clean_text(payload.get("aiBaseUrl", "")) or AI_BASE_URL
+                ai_api_key = request_ai_key or AI_API_KEY
+                ai_model = clean_text(payload.get("aiModel", "")) or AI_MODEL
+                translated_map = translate_chain_items(
+                    raw_items, target_lang, translation_provider,
+                    ai_base_url, ai_api_key, ai_model, include_annotations,
+                )
+
+            if hosted_render:
+                session = increment_trial_usage(device_id)
+                quota = build_v1_quota(session)
+
+            document, layers = build_v1_document(
+                tweet_id, raw_items, translated_map, source, target_lang, translation_provider,
+            )
+            self.send_json(200, {
+                "document": document,
+                "quota": quota,
+                "meta": {
+                    "chainLength": len(raw_items),
+                    "layers": layers,
+                    "source": source,
+                    "translationProvider": translation_provider,
+                    "targetLanguage": target_lang,
+                },
+            })
+        except ValueError as e:
+            self.send_json(400, {"error": str(e)})
+        except UpstreamAPIError as e:
+            self.send_json(e.status_code, {"error": e.message, "detail": e.detail})
+
+    def v1_translate_text(self):
+        try:
+            payload = self.read_json_body()
+            text = clean_text(payload.get("text", ""))
+            if not text:
+                self.send_json(400, {"error": "Missing text"})
+                return
+            target_lang = payload.get("targetLanguage", "zh-CN")
+            provider = payload.get("provider", "google")
+
+            if provider == "ai":
+                ai_base_url = clean_text(payload.get("aiBaseUrl", "")) or AI_BASE_URL
+                ai_api_key = clean_text(payload.get("aiApiKey", "")) or AI_API_KEY
+                ai_model = clean_text(payload.get("aiModel", "")) or AI_MODEL
+                result = translate_with_ai(text, target_lang, ai_base_url, ai_api_key, ai_model)
+                self.send_json(200, {
+                    "artifact": {
+                        "provider": "ai",
+                        "status": "success",
+                        "language": target_lang,
+                        "text": result.get("translation", ""),
+                        "annotations": result.get("annotations", []),
+                        "error": "",
+                        "version": 0,
+                    },
+                })
+            else:
+                result = translate_with_google(text, "auto", target_lang)
+                self.send_json(200, {
+                    "artifact": {
+                        "provider": "google",
+                        "status": "success",
+                        "language": target_lang,
+                        "text": result.get("translated", ""),
+                        "annotations": [],
+                        "error": "",
+                        "version": 0,
+                    },
+                })
+        except ValueError as e:
+            self.send_json(400, {"error": str(e)})
+        except UpstreamAPIError as e:
+            self.send_json(e.status_code, {"error": e.message, "detail": e.detail})
+
+    def v1_translate_batch(self):
+        try:
+            payload = self.read_json_body()
+            target_lang = payload.get("targetLanguage", "zh-CN")
+            provider = payload.get("provider", "google")
+            raw_items = payload.get("items", [])
+            if not raw_items:
+                self.send_json(400, {"error": "Missing items"})
+                return
+            prepared = [
+                {"id": str(item.get("id", idx)), "text": clean_text(item.get("text", "")), "contextRole": item.get("contextRole", "quote")}
+                for idx, item in enumerate(raw_items)
+                if clean_text(item.get("text", ""))
+            ]
+            if provider == "ai":
+                ai_base_url = clean_text(payload.get("aiBaseUrl", "")) or AI_BASE_URL
+                ai_api_key = clean_text(payload.get("aiApiKey", "")) or AI_API_KEY
+                ai_model = clean_text(payload.get("aiModel", "")) or AI_MODEL
+                results = translate_batch_with_ai(prepared, target_lang, ai_base_url, ai_api_key, ai_model)
+            else:
+                results = translate_batch_with_google(prepared, "auto", target_lang)
+            response_items = []
+            for r in results:
+                translation = r.get("translation") or r.get("translated") or ""
+                response_items.append({
+                    "id": str(r.get("id", "")),
+                    "artifact": {
+                        "provider": provider,
+                        "status": "success" if r.get("status") == "success" else "error",
+                        "language": target_lang,
+                        "text": translation,
+                        "annotations": r.get("annotations", []),
+                        "error": r.get("error", ""),
+                        "version": 0,
+                    },
+                })
+            self.send_json(200, {"items": response_items})
+        except ValueError as e:
+            self.send_json(400, {"error": str(e)})
+        except UpstreamAPIError as e:
+            self.send_json(e.status_code, {"error": e.message, "detail": e.detail})
+
+    def v1_save_document(self):
+        try:
+            payload = self.read_json_body()
+            document = payload.get("document")
+            if not document:
+                self.send_json(400, {"error": "Missing document"})
+                return
+            now = datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="milliseconds").replace("+00:00", "Z")
+            document["updatedAt"] = now
+            self.send_json(200, document)
+        except ValueError as e:
+            self.send_json(400, {"error": str(e)})
 
     def send_json(self, code, obj):
         body = json.dumps(obj, ensure_ascii=False).encode("utf-8")
