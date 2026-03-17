@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "description": "Open the current X/Twitter conversation in the new TweetQuote editor.",
   "permissions": ["storage"],
-  "host_permissions": ["https://x.com/*", "https://twitter.com/*", "https://tweetquote.app/*"],
+  "host_permissions": ["https://x.com/*", "https://twitter.com/*", "http://localhost:8787/*"],
   "background": {
     "service_worker": "background.js",
     "type": "module"

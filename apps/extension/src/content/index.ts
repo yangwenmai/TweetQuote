@@ -264,6 +264,46 @@ function ensureButton() {
   enableButtonDragging(button);
 }
 
+let domObserver: MutationObserver | null = null;
+let ensureButtonDebounceId: number | null = null;
+
+function scheduleEnsureButton() {
+  if (ensureButtonDebounceId !== null) {
+    window.clearTimeout(ensureButtonDebounceId);
+  }
+  ensureButtonDebounceId = window.setTimeout(() => {
+    ensureButtonDebounceId = null;
+    ensureButton();
+  }, 250);
+}
+
+function setupDomObserver() {
+  if (typeof MutationObserver === "undefined") {
+    window.setInterval(ensureButton, 1200);
+    return;
+  }
+  if (domObserver) return;
+
+  const startObserving = () => {
+    if (!document.body) {
+      window.requestAnimationFrame(startObserving);
+      return;
+    }
+    domObserver = new MutationObserver((mutations) => {
+      if (!mutations.some((mutation) => mutation.type === "childList")) {
+        return;
+      }
+      scheduleEnsureButton();
+    });
+    domObserver.observe(document.body, {
+      childList: true,
+      subtree: true,
+    });
+  };
+
+  startObserving();
+}
+
 window.addEventListener("resize", () => {
   const button = document.getElementById(BUTTON_ID) as HTMLButtonElement | null;
   if (!button) return;
@@ -279,4 +319,4 @@ window.addEventListener("resize", () => {
 });
 
 ensureButton();
-setInterval(ensureButton, 1200);
+setupDomObserver();

@@ -1,9 +1,20 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
+import fs from "node:fs/promises";
 import path from "node:path";
 
-export default defineConfig({
-  plugins: [react()],
+export default defineConfig(({ mode }) => ({
+  publicDir: false,
+  plugins: [
+    react(),
+    {
+      name: "tweetquote-manifest",
+      async closeBundle() {
+        const sourceManifest = mode === "development" ? "manifest.dev.json" : "manifest.json";
+        await fs.copyFile(path.resolve(__dirname, "public", sourceManifest), path.resolve(__dirname, "dist", "manifest.json"));
+      },
+    },
+  ],
   resolve: {
     alias: {
       "@tweetquote/config": path.resolve(__dirname, "../../packages/config/src"),
@@ -30,4 +41,4 @@ export default defineConfig({
       },
     },
   },
-});
+}));

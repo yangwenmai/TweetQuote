@@ -15,7 +15,16 @@ import {
 } from "@tweetquote/editor-core";
 import { getDocumentSummary } from "@tweetquote/render-core";
 
-const api = new TweetQuoteApiClient({ baseUrl: "http://localhost:8787" });
+const apiBaseUrl =
+  import.meta.env.VITE_TWEETQUOTE_API_BASE_URL?.trim() ||
+  (import.meta.env.MODE === "development" ? "http://localhost:8787" : "https://tweetquote.app");
+const runtimeEnv = globalThis as typeof globalThis & { __TQ_ENV__?: Record<string, string | undefined> };
+runtimeEnv.__TQ_ENV__ = {
+  ...(runtimeEnv.__TQ_ENV__ || {}),
+  NEXT_PUBLIC_API_BASE_URL: apiBaseUrl,
+};
+
+const api = new TweetQuoteApiClient({ baseUrl: apiBaseUrl });
 
 type BusyState =
   | { kind: "idle" }
