@@ -76,26 +76,34 @@ export class TrialSessionStore {
     const now = Math.floor(Date.now() / 1000);
     const dailyCutoff = new Date((now - DAY_SECONDS) * 1000);
     const weeklyCutoff = new Date((now - WEEK_SECONDS) * 1000);
-    const [dailyUsed, weeklyUsed] = await Promise.all([
-      prisma.usageEvent.count({
-        where: {
-          deviceId,
-          createdAt: { gte: dailyCutoff },
-        },
+    const [dailyEvents, weeklyEvents] = await Promise.all([
+      prisma.usageEvent.findMany({
+        where: { deviceId, createdAt: { gte: dailyCutoff } },
+        orderBy: { createdAt: "asc" },
+        select: { createdAt: true },
       }),
-      prisma.usageEvent.count({
-        where: {
-          deviceId,
-          createdAt: { gte: weeklyCutoff },
-        },
+      prisma.usageEvent.findMany({
+        where: { deviceId, createdAt: { gte: weeklyCutoff } },
+        orderBy: { createdAt: "asc" },
+        select: { createdAt: true },
       }),
     ]);
+    const dailyUsed = dailyEvents.length;
+    const weeklyUsed = weeklyEvents.length;
+    const dailyExhausted = dailyUsed >= apiEnv.dailyTrialLimit;
+    const weeklyExhausted = weeklyUsed >= apiEnv.weeklyTrialLimit;
+    const exhaustedReason = dailyExhausted ? "daily" as const : weeklyExhausted ? "weekly" as const : "" as const;
+    const firstDailyTs = dailyEvents[0] ? Math.floor(dailyEvents[0].createdAt.getTime() / 1000) : 0;
+    const firstWeeklyTs = weeklyEvents[0] ? Math.floor(weeklyEvents[0].createdAt.getTime() / 1000) : 0;
     return createDefaultQuota({
       dailyRemaining: Math.max(0, apiEnv.dailyTrialLimit - dailyUsed),
       weeklyRemaining: Math.max(0, apiEnv.weeklyTrialLimit - weeklyUsed),
       dailyTotal: apiEnv.dailyTrialLimit,
       weeklyTotal: apiEnv.weeklyTrialLimit,
-      requiresUpgrade: dailyUsed >= apiEnv.dailyTrialLimit || weeklyUsed >= apiEnv.weeklyTrialLimit,
+      requiresUpgrade: dailyExhausted || weeklyExhausted,
+      exhaustedReason,
+      nextDailyResetAt: firstDailyTs ? firstDailyTs + DAY_SECONDS : 0,
+      nextWeeklyResetAt: firstWeeklyTs ? firstWeeklyTs + WEEK_SECONDS : 0,
       hostedAiAvailable: Boolean(apiEnv.aiApiKey),
       hostedTwitterAvailable: Boolean(apiEnv.twitterApiKey),
     });
