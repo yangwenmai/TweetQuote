@@ -28,6 +28,7 @@ import {
 type ApiOptions = {
   baseUrl?: string;
   headers?: Record<string, string>;
+  fetchFn?: typeof globalThis.fetch;
 };
 
 type JsonValue = string | number | boolean | null | JsonValue[] | { [k: string]: JsonValue };
@@ -35,7 +36,8 @@ type JsonValue = string | number | boolean | null | JsonValue[] | { [k: string]:
 async function request<T>(path: string, init: RequestInit, parser: { parse: (input: unknown) => T }, options?: ApiOptions) {
   const env = getEnv("web");
   const baseUrl = options?.baseUrl ?? env.apiBaseUrl;
-  const response = await fetch(`${baseUrl}${path}`, {
+  const doFetch = options?.fetchFn ?? globalThis.fetch.bind(globalThis);
+  const response = await doFetch(`${baseUrl}${path}`, {
     ...init,
     headers: {
       "Content-Type": "application/json",
