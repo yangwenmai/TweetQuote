@@ -139,6 +139,9 @@ export const quotaSnapshotSchema = z.object({
   weeklyTotal: z.number().int().nonnegative().default(20),
   weeklyRemaining: z.number().int().nonnegative().default(20),
   requiresUpgrade: z.boolean().default(false),
+  exhaustedReason: z.enum(["", "daily", "weekly"]).default(""),
+  nextDailyResetAt: z.number().int().nonnegative().default(0),
+  nextWeeklyResetAt: z.number().int().nonnegative().default(0),
   hostedTwitterAvailable: z.boolean().default(false),
   hostedAiAvailable: z.boolean().default(false),
 });
