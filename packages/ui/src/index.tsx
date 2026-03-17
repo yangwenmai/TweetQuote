@@ -1,5 +1,5 @@
 import * as React from "react";
-import { designTokens, getEnv } from "@tweetquote/config";
+import { designTokens } from "@tweetquote/config";
 import type { QuoteDocument } from "@tweetquote/domain";
 
 type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
@@ -130,13 +130,8 @@ function getTranslationLabel(language: string) {
 function getAvatarSrc(avatarUrl: string) {
   const trimmed = avatarUrl.trim();
   if (!trimmed) return "";
-  if (/^(data:|blob:)/.test(trimmed)) return trimmed;
-  try {
-    const apiBaseUrl = getEnv("web").apiBaseUrl.replace(/\/$/, "");
-    return `${apiBaseUrl}/api/v1/assets/image?url=${encodeURIComponent(trimmed)}`;
-  } catch {
-    return trimmed;
-  }
+  // 直接使用原始 URL，Twitter 头像等公开图片可正常显示
+  return trimmed;
 }
 
 function ViewsIcon() {
