@@ -1,4 +1,4 @@
-import Fastify from "fastify";
+import Fastify, { type FastifyRequest } from "fastify";
 import {
   createAnonymousSession,
   exportJobRequestSchema,
@@ -16,6 +16,52 @@ const app = Fastify({ logger: false });
 const sessionStore = new TrialSessionStore();
 const documentStore = new DocumentStore();
 const exportStore = new ExportJobStore();
+const ALLOWED_IMAGE_HOSTNAMES = new Set(apiEnv.imageProxyAllowedHosts);
+const MAX_IMAGE_BYTES = 5 * 1024 * 1024;
+const IMAGE_FETCH_TIMEOUT_MS = 5000;
+
+function getFirstHeaderValue(value: string | string[] | undefined) {
+  if (typeof value === "string") {
+    return value.split(",")[0]?.trim();
+  }
+  return value?.[0]?.trim();
+}
+
+function getApiBaseUrl(request: FastifyRequest) {
+  if (apiEnv.publicApiBaseUrl) {
+    return apiEnv.publicApiBaseUrl.replace(/\/$/, "");
+  }
+  const proto = getFirstHeaderValue(request.headers["x-forwarded-proto"]) || request.protocol || "http";
+  const host = getFirstHeaderValue(request.headers["x-forwarded-host"]) || request.headers.host;
+  return host ? `${proto}://${host}` : `http://localhost:${apiEnv.port}`;
+}
+
+async function readUpstreamImageBuffer(upstream: Response) {
+  if (!upstream.body) {
+    return Buffer.from(await upstream.arrayBuffer());
+  }
+
+  const reader = upstream.body.getReader();
+  const chunks: Buffer[] = [];
+  let totalBytes = 0;
+
+  while (true) {
+    const { done, value } = await reader.read();
+    if (done) {
+      break;
+    }
+    if (!value) {
+      continue;
+    }
+    totalBytes += value.byteLength;
+    if (totalBytes > MAX_IMAGE_BYTES) {
+      throw new ApiError(413, "Image too large");
+    }
+    chunks.push(Buffer.from(value));
+  }
+
+  return Buffer.concat(chunks, totalBytes);
+}
 
 app.addHook("onSend", async (_request, reply, payload) => {
   reply.headers({
@@ -46,14 +92,14 @@ app.get("/api/v1/health", async () => ({
   port: apiEnv.port,
 }));
 
-app.get("/api/v1/runtime", async () => ({
+app.get("/api/v1/runtime", async (request) => ({
   featureFlags: {
     v2Api: true,
     v2Editor: true,
     v2Extension: true,
   },
   supportUrl: apiEnv.supportUrl,
-  apiBaseUrl: `http://localhost:${apiEnv.port}`,
+  apiBaseUrl: getApiBaseUrl(request),
 }));
 
 app.get("/api/v1/assets/image", async (request, reply) => {
@@ -77,18 +123,58 @@ app.get("/api/v1/assets/image", async (request, reply) => {
     return { error: "Unsupported image protocol" };
   }
 
-  const upstream = await fetch(targetUrl, {
-    headers: {
-      "User-Agent": "TweetQuote/2.0",
-    },
-  });
+  if (!ALLOWED_IMAGE_HOSTNAMES.has(targetUrl.hostname.toLowerCase())) {
+    reply.code(400);
+    return { error: "Image host not allowed" };
+  }
+
+  const controller = new AbortController();
+  const timeoutId = setTimeout(() => controller.abort(), IMAGE_FETCH_TIMEOUT_MS);
+  let upstream: Response;
+  try {
+    upstream = await fetch(targetUrl, {
+      headers: {
+        "User-Agent": "TweetQuote/2.0",
+      },
+      redirect: "error",
+      signal: controller.signal,
+    });
+  } catch {
+    reply.code(502);
+    return { error: "Failed to fetch image" };
+  } finally {
+    clearTimeout(timeoutId);
+  }
+
   if (!upstream.ok) {
     reply.code(upstream.status);
     return { error: "Failed to fetch image" };
   }
 
-  const contentType = upstream.headers.get("content-type") || "image/png";
-  const buffer = Buffer.from(await upstream.arrayBuffer());
+  const contentLength = Number(upstream.headers.get("content-length"));
+  if (!Number.isNaN(contentLength) && contentLength > MAX_IMAGE_BYTES) {
+    reply.code(413);
+    return { error: "Image too large" };
+  }
+
+  const contentType = upstream.headers.get("content-type") || "application/octet-stream";
+  if (!contentType.startsWith("image/")) {
+    reply.code(415);
+    return { error: "Unsupported image content type" };
+  }
+
+  let buffer: Buffer;
+  try {
+    buffer = await readUpstreamImageBuffer(upstream);
+  } catch (error) {
+    if (error instanceof ApiError && error.statusCode === 413) {
+      reply.code(413);
+      return { error: error.message };
+    }
+    reply.code(502);
+    return { error: "Failed to fetch image" };
+  }
+
   reply.header("Content-Type", contentType);
   reply.header("Cache-Control", "public, max-age=3600");
   return reply.send(buffer);

@@ -203,7 +203,14 @@ export async function translateWithAi(
 
   const content = ((data.choices as Array<Record<string, unknown>> | undefined)?.[0]?.message as Record<string, unknown> | undefined)
     ?.content;
-  const parsed = typeof content === "string" ? (JSON.parse(content) as Record<string, unknown>) : {};
+  let parsed: Record<string, unknown> = {};
+  if (typeof content === "string") {
+    try {
+      parsed = JSON.parse(content) as Record<string, unknown>;
+    } catch {
+      throw new ApiError(502, "AI translation returned invalid JSON", content.slice(0, 400));
+    }
+  }
   const translation = cleanText(parsed.translation);
   if (!translation) {
     throw new ApiError(502, "AI translation missing translation field");
