@@ -4,7 +4,7 @@
 
 把 Twitter 推文引用链变成一张可分享的高清图片，支持翻译与 AI 智能注释。
 
-🌐 [tweetquote.app](https://tweetquote.app)（规划中）
+🌐 [tweetquote.app](https://tweetquote.app)
 
 ## 截图
 
@@ -14,12 +14,10 @@
 
 ## 快速开始
 
-> 只需 Python 3（标准库即可，无需 pip install），3 步即可运行。
-
 ### 前置要求
 
-- [Python 3.7+](https://www.python.org/downloads/)（macOS / Linux 通常已自带）
-- 现代浏览器（Chrome / Edge / Safari / Firefox）
+- [Node.js 18+](https://nodejs.org/)
+- npm 9+（随 Node.js 一起安装）
 
 ### 运行步骤
 
@@ -28,18 +26,23 @@
 git clone https://github.com/yangwenmai/tweetquote.git
 cd tweetquote
 
-# 2. （可选）复制并编辑环境变量
-cp .env.local.example .env.local   # 如果有示例文件
-# 或手动创建 .env.local，填入你的 API Key（见下方「配置」章节）
+# 2. 安装依赖
+npm install
 
-# 3. 启动本地服务
-python3 server.py
+# 3.（可选）初始化本地 SQLite 数据库
+npm run db:push -w @tweetquote/api
 
-# 4. 打开浏览器访问
-#    http://localhost:8088/
+# 4.（可选）复制并编辑环境变量
+cp .env.local.example .env.local
+
+# 5. 启动 API 和 Web（在两个终端分别运行）
+npm run dev:api
+npm run dev:web
 ```
 
-启动成功后，终端会提示 `Serving on http://localhost:8088`，在浏览器打开即可使用。
+启动成功后：
+- API 服务：`http://localhost:8787`
+- Web 编辑器：`http://localhost:3000`
 
 ## 功能特性
 
@@ -51,6 +54,7 @@ python3 server.py
 | 🤖 **AI 智能注释** | 翻译时自动标注术语、俚语、文化背景等，悬停查看解释 |
 | 📤 **导出 PNG** | 支持 1x/2x/3x 倍率导出高清图片 |
 | 🌍 **中英切换** | 界面支持中文、英文 |
+| 🧩 **浏览器插件** | MV3 Chrome 插件，直接在 Twitter/X 页面上使用 |
 
 ## 配置
 
@@ -69,73 +73,70 @@ OPENAI_MODEL=gpt-4o-mini
 
 ### TwitterAPI.io（可选）
 
-用于链接自动抓取。可在 `.env.local` 中配置 `TWITTERAPI_KEY` 作为默认，或在界面顶部「TwitterAPI.io 配置」中填入 API Key。访问 [twitterapi.io](https://twitterapi.io) 获取 Key。
+用于链接自动抓取。可在 `.env.local` 中配置 `TWITTERAPI_KEY` 作为默认，或在界面「高级设置」中填入 API Key。访问 [twitterapi.io](https://twitterapi.io) 获取 Key。
 
 ## 项目结构
 
 ```
 tweetquote/
-├── server.py          # 本地 HTTP 服务
-├── index.html         # 主界面
-├── apps/              # V2 monorepo apps（web/api/extension）
-├── packages/          # V2 shared packages（domain/editor-core/render-core/sdk/ui/config/telemetry）
-├── screenshots/       # 项目截图
-├── .env.local         # 环境变量（不提交）
-├── docs/
-│   ├── FEATURES.md    # 详细功能文档
-│   ├── ARCHITECTURE_V2.md
-│   └── CUTOVER_CHECKLIST.md
-├── LICENSE            # MIT 开源协议
-└── README.md
+├── apps/
+│   ├── api/             # Fastify API（端口 8787）
+│   ├── web/             # Next.js Web 编辑器（端口 3000）
+│   └── extension/       # MV3 浏览器插件
+├── packages/
+│   ├── domain/          # 共享 schema 和领域模型
+│   ├── editor-core/     # 编辑命令和草稿工具
+│   ├── render-core/     # 预览摘要和渲染选择器
+│   ├── sdk/             # API 客户端和插件桥接类型
+│   ├── ui/              # 共享 UI 组件和引用预览渲染器
+│   ├── config/          # 运行时配置和 feature flags
+│   └── telemetry/       # 日志和性能钩子
+├── landing/             # 营销落地页（独立静态页）
+├── legacy/              # V1 旧版归档（server.py + index.html）
+├── screenshots/         # 项目截图
+├── docs/                # 设计与架构文档
+├── .env.local           # 环境变量（不提交）
+├── package.json         # Monorepo 根配置
+└── LICENSE              # MIT
 ```
 
-## V2 工程
-
-仓库现在包含一套并行重建中的 V2 monorepo：
-
-- `apps/web`：Next.js 新版营销站与编辑器
-- `apps/api`：Fastify API（当前开发态使用 Prisma + SQLite）
-- `apps/extension`：MV3 插件
-- `packages/*`：共享领域模型、编辑核心、渲染核心、SDK、UI、配置和 telemetry
-
-常用命令：
+## 常用命令
 
 ```bash
-# 安装新工程依赖
+# 安装依赖
 npm install
 
-# 类型检查
-npm run typecheck
-
-# 构建全部 V2 应用
-npm run build
-
-# 初始化本地 SQLite 数据库
-npm run db:push -w @tweetquote/api
-
 # 本地开发
-npm run dev:api
-npm run dev:web
-npm run dev:extension
+npm run dev:api          # 启动 API 服务
+npm run dev:web          # 启动 Web 编辑器
+npm run dev:extension    # 启动浏览器插件开发
+
+# 构建
+npm run build            # 构建全部应用和包
+
+# 类型检查
+npm run typecheck        # 全部工作区类型检查
+
+# 数据库
+npm run db:push -w @tweetquote/api    # 初始化/同步 SQLite schema
+
+# 生产运行
+npm run start -w @tweetquote/api      # 运行 API 生产构建
+npm run start -w @tweetquote/web      # 运行 Web 生产构建
 ```
-
-## 依赖
-
-- **Python 3**：标准库，无需额外安装
-- **html2canvas**：通过 CDN 加载，无需本地安装
 
 ## 常见问题
 
 <details>
-<summary><strong>Q: 启动报错 <code>python3: command not found</code></strong></summary>
+<summary><strong>Q: 启动报错 <code>Cannot find module</code></strong></summary>
 
-请确认已安装 Python 3。运行 `python3 --version` 检查。如未安装，前往 [python.org](https://www.python.org/downloads/) 下载。macOS 也可用 `brew install python3`。
+确认已运行 `npm install`。如果问题持续，尝试删除 `node_modules` 和 `package-lock.json` 后重新安装。
 </details>
 
 <details>
-<summary><strong>Q: 页面空白 / 无法打开</strong></summary>
+<summary><strong>Q: API 启动失败</strong></summary>
 
-确认终端中 `server.py` 正在运行且无报错，然后在浏览器访问 `http://localhost:8088/`。如端口冲突，可在 `server.py` 中修改端口号。
+确认 Node.js 版本 >= 18。运行 `node --version` 检查。如果使用了 Prisma，需要先运行 `npm run db:push -w @tweetquote/api` 初始化数据库。
 </details>
 
 <details>
@@ -143,6 +144,19 @@ npm run dev:extension
 
 可以。手动录入推文内容 + Google 翻译无需任何 Key。只有「链接自动抓取」和「AI 翻译/注释」需要对应的 API Key。
 </details>
+
+<details>
+<summary><strong>Q: legacy/ 目录是什么？</strong></summary>
+
+`legacy/` 目录包含 V1 旧版代码（Python `server.py` + 单文件 `index.html`），已归档不再维护。当前项目使用 TypeScript monorepo 架构。
+</details>
+
+## 详细文档
+
+- [docs/LOCAL_DEVELOPMENT.md](docs/LOCAL_DEVELOPMENT.md) — **本地运行操作指引**
+- [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) — 架构设计
+- [docs/FEATURES.md](docs/FEATURES.md) — 功能文档
+- [docs/DESIGN_BASELINE.md](docs/DESIGN_BASELINE.md) — 产品设计与交互基准
 
 ## 参与贡献
 
@@ -154,13 +168,6 @@ npm run dev:extension
 4. 推送到分支 (`git push origin feature/my-feature`)
 5. 提交 Pull Request
 
-## 详细文档
-
-更多功能说明、API 接口、技术栈等，请参阅：
-
-- [docs/FEATURES.md](docs/FEATURES.md)
-- [docs/DESIGN_BASELINE.md](docs/DESIGN_BASELINE.md) - 产品设计与交互基准
-
 ## License
 
-[MIT](LICENSE) - 你可以自由使用、修改和分发本项目。
+[MIT](LICENSE) — 你可以自由使用、修改和分发本项目。
