@@ -177,32 +177,53 @@ const ANNOTATION_TYPE_LABELS: Record<string, Record<string, string>> = {
   },
 };
 
-function AnnotationSpan({ annotation, language }: { annotation: Annotation; language: string }) {
+function sanitizeDomIdPart(raw: string): string {
+  const s = raw.replace(/[^a-zA-Z0-9_-]+/g, "-").replace(/^-+|-+$/g, "");
+  return s.slice(0, 48) || "x";
+}
+
+function AnnotationSpan({
+  annotation,
+  language,
+  idSuffix,
+}: {
+  annotation: Annotation;
+  language: string;
+  idSuffix: string;
+}) {
   const [hovered, setHovered] = React.useState(false);
+  const [focused, setFocused] = React.useState(false);
   const fallback = { color: "#8e44ad", bg: "rgba(142,68,173,0.08)", bgHover: "rgba(142,68,173,0.15)" };
   const st = ANNOTATION_COLORS[annotation.type] ?? fallback;
   const typeLabel = (ANNOTATION_TYPE_LABELS[language] || ANNOTATION_TYPE_LABELS.en)?.[annotation.type] || annotation.type;
-  const tooltipId = `ann-${annotation.term.replace(/\s+/g, "-")}`;
+  const tooltipId = `tq-ann-${sanitizeDomIdPart(idSuffix)}`;
 
+  const showTip = hovered || focused;
   return (
     <span
       tabIndex={0}
-      role="button"
-      aria-describedby={hovered ? tooltipId : undefined}
+      aria-describedby={showTip ? tooltipId : undefined}
       aria-label={`${annotation.term}: ${typeLabel}`}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
-      onFocus={() => setHovered(true)}
-      onBlur={() => setHovered(false)}
+      onFocus={() => {
+        setFocused(true);
+        setHovered(true);
+      }}
+      onBlur={() => {
+        setFocused(false);
+        setHovered(false);
+      }}
       style={{
         position: "relative",
         borderBottom: `2px dashed ${st.color}`,
-        background: hovered ? st.bgHover : st.bg,
+        background: showTip ? st.bgHover : st.bg,
         padding: "0 2px",
         borderRadius: 2,
         cursor: "help",
         transition: "background 0.2s",
-        outline: "none",
+        outline: focused ? `2px solid ${st.color}` : undefined,
+        outlineOffset: 2,
       }}
     >
       {annotation.term}
@@ -282,10 +303,12 @@ function AnnotatedText({
   text,
   annotations,
   language,
+  instanceId,
 }: {
   text: string;
   annotations: Annotation[];
   language: string;
+  instanceId: string;
 }) {
   if (!annotations || annotations.length === 0) return <>{text}</>;
 
@@ -297,14 +320,17 @@ function AnnotatedText({
     let bestIdx = -1;
     let bestAnnIndex = -1;
     for (let i = 0; i < remaining.length; i++) {
-      const idx = text.indexOf(remaining[i].term, searchFrom);
+      const ann = remaining[i];
+      if (!ann) continue;
+      const idx = text.indexOf(ann.term, searchFrom);
       if (idx >= 0 && (bestIdx < 0 || idx < bestIdx)) {
         bestIdx = idx;
         bestAnnIndex = i;
       }
     }
     if (bestAnnIndex < 0) break;
-    const [matched] = remaining.splice(bestAnnIndex, 1);
+    const matched = remaining.splice(bestAnnIndex, 1)[0];
+    if (!matched) break;
     matches.push({ ...matched, idx: bestIdx });
     searchFrom = bestIdx + matched.term.length;
   }
@@ -314,13 +340,14 @@ function AnnotatedText({
   const segments: React.ReactNode[] = [];
   let last = 0;
 
-  for (const ann of matches) {
+  matches.forEach((ann, i) => {
     if (ann.idx > last) {
       segments.push(<React.Fragment key={`t-${last}`}>{text.slice(last, ann.idx)}</React.Fragment>);
     }
-    segments.push(<AnnotationSpan key={`a-${ann.idx}`} annotation={ann} language={language} />);
+    const idSuffix = `${instanceId}-${i}-${ann.idx}`;
+    segments.push(<AnnotationSpan key={`a-${idSuffix}`} annotation={ann} language={language} idSuffix={idSuffix} />);
     last = ann.idx + ann.term.length;
-  }
+  });
 
   if (last < text.length) {
     segments.push(<React.Fragment key={`t-${last}`}>{text.slice(last)}</React.Fragment>);
@@ -460,6 +487,7 @@ export function QuotePreview({ document }: { document: QuoteDocument }) {
                     text={primaryText}
                     annotations={node.translation.annotations}
                     language={document.renderSpec.language}
+                    instanceId={node.id}
                   />
                 ) : (
                   primaryText
@@ -511,6 +539,7 @@ export function QuotePreview({ document }: { document: QuoteDocument }) {
                         text={translatedText}
                         annotations={node.translation.annotations}
                         language={document.renderSpec.language}
+                        instanceId={node.id}
                       />
                     ) : (
                       translatedText
