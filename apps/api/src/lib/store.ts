@@ -76,7 +76,11 @@ export class TrialSessionStore {
     const now = Math.floor(Date.now() / 1000);
     const dailyCutoff = new Date((now - DAY_SECONDS) * 1000);
     const weeklyCutoff = new Date((now - WEEK_SECONDS) * 1000);
-    const [dailyEvents, weeklyEvents] = await Promise.all([
+    const [session, dailyEvents, weeklyEvents] = await Promise.all([
+      prisma.anonymousSession.findUnique({
+        where: { deviceId },
+        select: { dailyLimit: true, weeklyLimit: true, bonusCredits: true },
+      }),
       prisma.usageEvent.findMany({
         where: { deviceId, createdAt: { gte: dailyCutoff } },
         orderBy: { createdAt: "asc" },
@@ -88,25 +92,81 @@ export class TrialSessionStore {
         select: { createdAt: true },
       }),
     ]);
+
+    const effectiveDailyLimit = session?.dailyLimit ?? apiEnv.dailyTrialLimit;
+    const effectiveWeeklyLimit = session?.weeklyLimit ?? apiEnv.weeklyTrialLimit;
+    const bonusCredits = session?.bonusCredits ?? 0;
+
     const dailyUsed = dailyEvents.length;
     const weeklyUsed = weeklyEvents.length;
-    const dailyExhausted = dailyUsed >= apiEnv.dailyTrialLimit;
-    const weeklyExhausted = weeklyUsed >= apiEnv.weeklyTrialLimit;
-    const exhaustedReason = dailyExhausted ? "daily" as const : weeklyExhausted ? "weekly" as const : "" as const;
+    const dailyExhausted = dailyUsed >= effectiveDailyLimit;
+    const weeklyExhausted = weeklyUsed >= effectiveWeeklyLimit;
+
+    const windowExhausted = dailyExhausted || weeklyExhausted;
+    const bonusOverDaily = dailyExhausted ? Math.max(0, dailyUsed - effectiveDailyLimit) : 0;
+    const bonusOverWeekly = weeklyExhausted ? Math.max(0, weeklyUsed - effectiveWeeklyLimit) : 0;
+    const bonusUsed = Math.max(bonusOverDaily, bonusOverWeekly);
+    const bonusRemaining = Math.max(0, bonusCredits - bonusUsed);
+    const requiresUpgrade = windowExhausted && bonusRemaining <= 0;
+
+    const exhaustedReason = requiresUpgrade
+      ? (dailyExhausted ? "daily" as const : "weekly" as const)
+      : "" as const;
     const firstDailyTs = dailyEvents[0] ? Math.floor(dailyEvents[0].createdAt.getTime() / 1000) : 0;
     const firstWeeklyTs = weeklyEvents[0] ? Math.floor(weeklyEvents[0].createdAt.getTime() / 1000) : 0;
     return createDefaultQuota({
-      dailyRemaining: Math.max(0, apiEnv.dailyTrialLimit - dailyUsed),
-      weeklyRemaining: Math.max(0, apiEnv.weeklyTrialLimit - weeklyUsed),
-      dailyTotal: apiEnv.dailyTrialLimit,
-      weeklyTotal: apiEnv.weeklyTrialLimit,
-      requiresUpgrade: dailyExhausted || weeklyExhausted,
+      dailyRemaining: windowExhausted
+        ? bonusRemaining
+        : Math.max(0, effectiveDailyLimit - dailyUsed),
+      weeklyRemaining: windowExhausted
+        ? bonusRemaining
+        : Math.max(0, effectiveWeeklyLimit - weeklyUsed),
+      dailyTotal: effectiveDailyLimit,
+      weeklyTotal: effectiveWeeklyLimit,
+      bonusCreditsRemaining: bonusRemaining,
+      requiresUpgrade,
       exhaustedReason,
       nextDailyResetAt: firstDailyTs ? firstDailyTs + DAY_SECONDS : 0,
       nextWeeklyResetAt: firstWeeklyTs ? firstWeeklyTs + WEEK_SECONDS : 0,
       hostedAiAvailable: Boolean(apiEnv.aiApiKey),
       hostedTwitterAvailable: Boolean(apiEnv.twitterApiKey),
     });
+  }
+
+  async updateQuotaOverride(deviceId: string, override: {
+    dailyLimit?: number | null;
+    weeklyLimit?: number | null;
+    bonusCredits?: number;
+    note?: string;
+  }) {
+    await this.getOrCreate(deviceId);
+    const data: Record<string, unknown> = {};
+    if (override.dailyLimit !== undefined) data.dailyLimit = override.dailyLimit;
+    if (override.weeklyLimit !== undefined) data.weeklyLimit = override.weeklyLimit;
+    if (override.bonusCredits !== undefined) data.bonusCredits = override.bonusCredits;
+    if (override.note !== undefined) data.note = override.note;
+    return prisma.anonymousSession.update({ where: { deviceId }, data });
+  }
+
+  async getSessionDetail(deviceId: string) {
+    const session = await prisma.anonymousSession.findUnique({
+      where: { deviceId },
+      select: {
+        deviceId: true,
+        dailyLimit: true,
+        weeklyLimit: true,
+        bonusCredits: true,
+        note: true,
+        createdAt: true,
+        lastSeenAt: true,
+      },
+    });
+    if (!session) return null;
+    return {
+      ...session,
+      effectiveDailyLimit: session.dailyLimit ?? apiEnv.dailyTrialLimit,
+      effectiveWeeklyLimit: session.weeklyLimit ?? apiEnv.weeklyTrialLimit,
+    };
   }
 }
 

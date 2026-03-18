@@ -19,6 +19,7 @@ export const storageKeys = {
   aiApiKey: "tnt_ai_api_key",
   aiModel: "tnt_ai_model",
   translationTargetLanguage: "tnt_translation_target_lang",
+  uiLanguage: "tnt_ui_language",
 } as const;
 
 export function restoreDraftDocument(raw: string | null | undefined) {

@@ -1,4 +1,4 @@
-# TweetQuote V2 Architecture
+# TweetQuote Architecture
 
 ## Monorepo Layout
 
@@ -40,3 +40,34 @@ This allows the old prototype and the new stack to coexist during cutover.
 - Anonymous sessions and rolling quota usage are stored in SQLite instead of JSON files.
 - Draft documents are stored through Prisma `Document` records.
 - This keeps the migration path open for a future switch from SQLite to Postgres without changing the API contract.
+
+## Quota System
+
+Anonymous trial quota supports **per-device overrides** on top of the global defaults (`dailyTrialLimit`, `weeklyTrialLimit` in `env.ts`).
+
+### Data Model
+
+`AnonymousSession` carries three optional override fields:
+
+| Field | Type | Default | Description |
+|-------|------|---------|-------------|
+| `dailyLimit` | `Int?` | `null` (uses global) | Per-device daily limit override |
+| `weeklyLimit` | `Int?` | `null` (uses global) | Per-device weekly limit override |
+| `bonusCredits` | `Int` | `0` | Extra credits beyond window limits |
+| `note` | `String` | `""` | Admin-facing memo (e.g. "春节活动赠送") |
+
+### Resolution Logic
+
+1. Effective daily/weekly limits = per-device value if set, otherwise global default.
+2. If daily or weekly window is exhausted, bonus credits act as overflow — `bonusRemaining = bonusCredits - weeklyUsed`.
+3. `requiresUpgrade` is `true` only when **both** window limits and bonus are exhausted.
+
+### Admin API
+
+All admin endpoints require `x-admin-token` header (or `Authorization: Bearer <token>`) matching the `ADMIN_TOKEN` env var.
+
+| Endpoint | Method | Description |
+|----------|--------|-------------|
+| `/api/v1/admin/session/:deviceId` | GET | Get session detail + current quota |
+| `/api/v1/admin/quota/override` | POST | Set per-device quota overrides |
+| `/api/v1/admin/session/:deviceId/usage` | DELETE | Clear all usage events for a device |

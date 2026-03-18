@@ -32,10 +32,7 @@ const localEnv = loadEnvFile(path.join(repoRoot, ".env.local"));
 export const apiEnv = {
   port: Number(process.env.PORT || 8787),
   repoRoot,
-  trialStorePath: path.join(repoRoot, "data", "trial_sessions.json"),
-  documentStorePath: path.join(repoRoot, "data", "documents.json"),
   outputDir: path.join(repoRoot, "output"),
-  sqliteDbPath: path.join(repoRoot, "apps", "api", "prisma", "dev.db"),
   aiProvider: process.env.LLM_PROVIDER || localEnv.LLM_PROVIDER || "",
   aiApiKey: process.env.OPENAI_API_KEY || localEnv.OPENAI_API_KEY || "",
   aiBaseUrl: process.env.OPENAI_BASE_URL || localEnv.OPENAI_BASE_URL || "https://api.openai.com/v1",
@@ -47,6 +44,7 @@ export const apiEnv = {
     .map((value) => value.trim().toLowerCase())
     .filter(Boolean),
   supportUrl: process.env.SUPPORT_CONTACT_URL || "https://x.com/maiyangai",
+  adminToken: process.env.ADMIN_TOKEN || localEnv.ADMIN_TOKEN || "",
   dailyTrialLimit: 3,
   weeklyTrialLimit: 20,
 };

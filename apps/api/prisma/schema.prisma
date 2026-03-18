@@ -29,11 +29,15 @@ model Document {
 }
 
 model AnonymousSession {
-  id         String      @id @default(cuid())
-  deviceId   String      @unique
-  createdAt  DateTime    @default(now())
-  lastSeenAt DateTime    @default(now())
-  usageEvents UsageEvent[]
+  id           String      @id @default(cuid())
+  deviceId     String      @unique
+  dailyLimit   Int?
+  weeklyLimit  Int?
+  bonusCredits Int         @default(0)
+  note         String      @default("")
+  createdAt    DateTime    @default(now())
+  lastSeenAt   DateTime    @default(now())
+  usageEvents  UsageEvent[]
 }
 
 model UsageEvent {

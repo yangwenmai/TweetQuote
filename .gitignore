@@ -1,13 +1,15 @@
 output/*
 .DS_Store
 .env*
+# 允许提交示例文件，供本地复制为 .env.local
+!.env.local.example
 # 扩展按环境打包用，可提交
 !apps/extension/.env.development
 !apps/extension/.env.test
 !apps/extension/.env.production
-__pycache__/*
-history/*
-data/*
+__pycache__/
+history/
+data/
 *.zip
 node_modules/
 packages/*/dist/

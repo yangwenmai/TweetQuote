@@ -1,6 +1,6 @@
 import * as React from "react";
 import { designTokens } from "@tweetquote/config";
-import type { QuoteDocument } from "@tweetquote/domain";
+import type { Annotation, QuoteDocument } from "@tweetquote/domain";
 
 type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
   tone?: "primary" | "secondary" | "ghost";
@@ -149,17 +149,227 @@ function ViewsIcon() {
   );
 }
 
+const ANNOTATION_COLORS: Record<string, { color: string; bg: string; bgHover: string }> = {
+  academic: { color: "#794bc4", bg: "rgba(121,75,196,0.08)", bgHover: "rgba(121,75,196,0.15)" },
+  technical: { color: "#2563eb", bg: "rgba(37,99,235,0.08)", bgHover: "rgba(37,99,235,0.15)" },
+  slang: { color: "#e67e22", bg: "rgba(230,126,34,0.08)", bgHover: "rgba(230,126,34,0.15)" },
+  idiom: { color: "#16a085", bg: "rgba(22,160,133,0.08)", bgHover: "rgba(22,160,133,0.15)" },
+  cultural: { color: "#c0392b", bg: "rgba(192,57,43,0.08)", bgHover: "rgba(192,57,43,0.15)" },
+  reference: { color: "#8e44ad", bg: "rgba(142,68,173,0.08)", bgHover: "rgba(142,68,173,0.15)" },
+};
+
+const ANNOTATION_TYPE_LABELS: Record<string, Record<string, string>> = {
+  "zh-CN": {
+    academic: "学术术语",
+    technical: "技术术语",
+    slang: "俚语 / 网络用语",
+    idiom: "习语 / 惯用表达",
+    cultural: "文化背景",
+    reference: "引用 / 典故",
+  },
+  en: {
+    academic: "Academic",
+    technical: "Technical",
+    slang: "Slang",
+    idiom: "Idiom",
+    cultural: "Cultural",
+    reference: "Reference",
+  },
+};
+
+function sanitizeDomIdPart(raw: string): string {
+  const s = raw.replace(/[^a-zA-Z0-9_-]+/g, "-").replace(/^-+|-+$/g, "");
+  return s.slice(0, 48) || "x";
+}
+
+function AnnotationSpan({
+  annotation,
+  language,
+  idSuffix,
+}: {
+  annotation: Annotation;
+  language: string;
+  idSuffix: string;
+}) {
+  const [hovered, setHovered] = React.useState(false);
+  const [focused, setFocused] = React.useState(false);
+  const fallback = { color: "#8e44ad", bg: "rgba(142,68,173,0.08)", bgHover: "rgba(142,68,173,0.15)" };
+  const st = ANNOTATION_COLORS[annotation.type] ?? fallback;
+  const typeLabel = (ANNOTATION_TYPE_LABELS[language] || ANNOTATION_TYPE_LABELS.en)?.[annotation.type] || annotation.type;
+  const tooltipId = `tq-ann-${sanitizeDomIdPart(idSuffix)}`;
+
+  const showTip = hovered || focused;
+  return (
+    <span
+      tabIndex={0}
+      aria-describedby={showTip ? tooltipId : undefined}
+      aria-label={`${annotation.term}: ${typeLabel}`}
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
+      onFocus={() => {
+        setFocused(true);
+        setHovered(true);
+      }}
+      onBlur={() => {
+        setFocused(false);
+        setHovered(false);
+      }}
+      style={{
+        position: "relative",
+        borderBottom: `2px dashed ${st.color}`,
+        background: showTip ? st.bgHover : st.bg,
+        padding: "0 2px",
+        borderRadius: 2,
+        cursor: "help",
+        transition: "background 0.2s",
+        outline: focused ? `2px solid ${st.color}` : undefined,
+        outlineOffset: 2,
+      }}
+    >
+      {annotation.term}
+      <span
+        aria-hidden="true"
+        style={{
+          display: "inline-flex",
+          alignItems: "center",
+          justifyContent: "center",
+          width: 14,
+          height: 14,
+          borderRadius: "50%",
+          background: st.color,
+          color: "#fff",
+          fontSize: 9,
+          fontWeight: 700,
+          marginLeft: 1,
+          verticalAlign: "text-top",
+          lineHeight: 1,
+        }}
+      >
+        ?
+      </span>
+      {hovered && (
+        <span
+          id={tooltipId}
+          role="tooltip"
+          style={{
+            position: "absolute",
+            bottom: "calc(100% + 8px)",
+            left: 0,
+            zIndex: 10000,
+            background: "#1a1a2e",
+            color: "#e8e8f0",
+            padding: "14px 18px",
+            borderRadius: 14,
+            fontSize: 13,
+            lineHeight: 1.6,
+            maxWidth: 340,
+            minWidth: 180,
+            boxShadow: "0 8px 32px rgba(0,0,0,0.3)",
+            whiteSpace: "normal",
+            wordBreak: "break-word" as const,
+            pointerEvents: "none" as const,
+          }}
+        >
+          <span
+            style={{
+              display: "inline-block",
+              padding: "2px 8px",
+              borderRadius: 6,
+              background: `${st.color}4d`,
+              color: "#c8a8f8",
+              fontSize: 11,
+              fontWeight: 600,
+              marginBottom: 8,
+            }}
+          >
+            {typeLabel}
+          </span>
+          {annotation.original && (
+            <span style={{ display: "block", color: "#a8a8c0", fontSize: 12, marginBottom: 6, fontStyle: "italic" }}>
+              {language === "zh-CN" ? "原文" : "Original"}: {annotation.original}
+            </span>
+          )}
+          {(annotation.original || annotation.type) && (
+            <span style={{ display: "block", height: 1, background: "rgba(255,255,255,0.1)", margin: "8px 0" }} />
+          )}
+          <span style={{ display: "block", color: "#e8e8f0" }}>{annotation.explanation}</span>
+        </span>
+      )}
+    </span>
+  );
+}
+
+function AnnotatedText({
+  text,
+  annotations,
+  language,
+  instanceId,
+}: {
+  text: string;
+  annotations: Annotation[];
+  language: string;
+  instanceId: string;
+}) {
+  if (!annotations || annotations.length === 0) return <>{text}</>;
+
+  const matches: Array<Annotation & { idx: number }> = [];
+  let searchFrom = 0;
+  const remaining = [...annotations];
+
+  while (remaining.length > 0 && searchFrom < text.length) {
+    let bestIdx = -1;
+    let bestAnnIndex = -1;
+    for (let i = 0; i < remaining.length; i++) {
+      const ann = remaining[i];
+      if (!ann) continue;
+      const idx = text.indexOf(ann.term, searchFrom);
+      if (idx >= 0 && (bestIdx < 0 || idx < bestIdx)) {
+        bestIdx = idx;
+        bestAnnIndex = i;
+      }
+    }
+    if (bestAnnIndex < 0) break;
+    const matched = remaining.splice(bestAnnIndex, 1)[0];
+    if (!matched) break;
+    matches.push({ ...matched, idx: bestIdx });
+    searchFrom = bestIdx + matched.term.length;
+  }
+
+  if (matches.length === 0) return <>{text}</>;
+
+  const segments: React.ReactNode[] = [];
+  let last = 0;
+
+  matches.forEach((ann, i) => {
+    if (ann.idx > last) {
+      segments.push(<React.Fragment key={`t-${last}`}>{text.slice(last, ann.idx)}</React.Fragment>);
+    }
+    const idSuffix = `${instanceId}-${i}-${ann.idx}`;
+    segments.push(<AnnotationSpan key={`a-${idSuffix}`} annotation={ann} language={language} idSuffix={idSuffix} />);
+    last = ann.idx + ann.term.length;
+  });
+
+  if (last < text.length) {
+    segments.push(<React.Fragment key={`t-${last}`}>{text.slice(last)}</React.Fragment>);
+  }
+
+  return <>{segments}</>;
+}
+
 export function QuotePreview({ document }: { document: QuoteDocument }) {
   return (
     <div style={{ display: "grid", gap: 12 }}>
       {document.nodes.map((node) => {
         const translatedText = node.translation.text.trim();
         const originalText = node.content.trim();
-        const showBilingual = Boolean(originalText && translatedText && document.renderSpec.translationDisplay === "bilingual");
+        const display = document.renderSpec.translationDisplay;
+        const showBilingual = Boolean(originalText && translatedText && display === "bilingual");
         const primaryText =
-          translatedText && document.renderSpec.translationDisplay === "replace"
-            ? translatedText
-            : originalText || translatedText || "暂无内容";
+          display === "original"
+            ? originalText || translatedText || ""
+            : translatedText && display === "replace"
+              ? translatedText
+              : originalText || translatedText || "";
 
         return (
           <div
@@ -268,7 +478,21 @@ export function QuotePreview({ document }: { document: QuoteDocument }) {
                   ) : null}
                 </div>
               </div>
-              <p style={{ margin: "10px 0 0", whiteSpace: "pre-wrap", lineHeight: 1.6, fontSize: 15 }}>{primaryText}</p>
+              <div style={{ margin: "10px 0 0", whiteSpace: "pre-wrap", lineHeight: 1.6, fontSize: 15 }}>
+                {document.renderSpec.includeAnnotations &&
+                node.translation.annotations.length > 0 &&
+                display === "replace" &&
+                translatedText ? (
+                  <AnnotatedText
+                    text={primaryText}
+                    annotations={node.translation.annotations}
+                    language={document.renderSpec.language}
+                    instanceId={node.id}
+                  />
+                ) : (
+                  primaryText
+                )}
+              </div>
               {(node.createdAt || node.viewCount !== null) && (
                 <div
                   style={{
@@ -309,9 +533,18 @@ export function QuotePreview({ document }: { document: QuoteDocument }) {
                   >
                     {getTranslationLabel(node.translation.language)}
                   </div>
-                  <p style={{ margin: 0, whiteSpace: "pre-wrap", lineHeight: 1.6, fontSize: 15, color: designTokens.colors.foreground }}>
-                    {translatedText}
-                  </p>
+                  <div style={{ margin: 0, whiteSpace: "pre-wrap", lineHeight: 1.6, fontSize: 15, color: designTokens.colors.foreground }}>
+                    {document.renderSpec.includeAnnotations && node.translation.annotations.length > 0 ? (
+                      <AnnotatedText
+                        text={translatedText}
+                        annotations={node.translation.annotations}
+                        language={document.renderSpec.language}
+                        instanceId={node.id}
+                      />
+                    ) : (
+                      translatedText
+                    )}
+                  </div>
                 </div>
               ) : null}
             </article>

@@ -3,18 +3,24 @@ import { SurfaceCard } from "@tweetquote/ui";
 
 type DocumentSettingsCardProps = {
   document: QuoteDocument;
-  language: AppLanguage;
+  /** 界面文案语言（按钮、提示等） */
+  uiLanguage: AppLanguage;
+  /** 翻译目标 / 导出语言（推文译文与长图输出用） */
+  outputLanguage: AppLanguage;
   onTitleChange: (value: string) => void;
-  onLanguageChange: (value: AppLanguage) => void;
+  onUiLanguageChange: (value: AppLanguage) => void;
+  onOutputLanguageChange: (value: AppLanguage) => void;
   onScaleChange: (value: number) => void;
   onThemeChange: (value: "paper" | "night") => void;
 };
 
 export function DocumentSettingsCard({
   document,
-  language,
+  uiLanguage,
+  outputLanguage,
   onTitleChange,
-  onLanguageChange,
+  onUiLanguageChange,
+  onOutputLanguageChange,
   onScaleChange,
   onThemeChange,
 }: DocumentSettingsCardProps) {
@@ -27,8 +33,15 @@ export function DocumentSettingsCard({
         </label>
         <div className="row">
           <label className="field" style={{ flex: 1 }}>
-            <span>界面语言 / 输出语言</span>
-            <select value={language} onChange={(event) => onLanguageChange(event.target.value as AppLanguage)}>
+            <span>界面语言</span>
+            <select value={uiLanguage} onChange={(event) => onUiLanguageChange(event.target.value as AppLanguage)}>
+              <option value="zh-CN">中文</option>
+              <option value="en">English</option>
+            </select>
+          </label>
+          <label className="field" style={{ flex: 1 }}>
+            <span>翻译 / 导出语言</span>
+            <select value={outputLanguage} onChange={(event) => onOutputLanguageChange(event.target.value as AppLanguage)}>
               <option value="zh-CN">中文</option>
               <option value="en">English</option>
             </select>
