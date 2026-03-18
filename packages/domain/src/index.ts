@@ -9,7 +9,7 @@ export type SourceKind = z.infer<typeof sourceKindSchema>;
 export const translationProviderSchema = z.enum(["none", "google", "ai"]);
 export type TranslationProvider = z.infer<typeof translationProviderSchema>;
 
-export const translationDisplaySchema = z.enum(["replace", "bilingual"]);
+export const translationDisplaySchema = z.enum(["replace", "bilingual", "original"]);
 export type TranslationDisplay = z.infer<typeof translationDisplaySchema>;
 
 export const quoteRelationSchema = z.enum(["root", "quote", "reply"]);
