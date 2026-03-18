@@ -9,8 +9,10 @@ import {
 } from "@tweetquote/domain";
 import { trackEvent } from "@tweetquote/telemetry";
 import { apiEnv } from "./lib/env";
+import { logger } from "./lib/logger";
 import { ApiError, buildDocumentFromQuoteRequest, extractTweetId, translateBatch, translateText } from "./lib/providers";
 import { DocumentStore, ExportJobStore, TrialSessionStore } from "./lib/store";
+import { prisma } from "./lib/prisma";
 
 const app = Fastify({ logger: false });
 const sessionStore = new TrialSessionStore();
@@ -63,12 +65,27 @@ async function readUpstreamImageBuffer(upstream: Response) {
   return Buffer.concat(chunks, totalBytes);
 }
 
-app.addHook("onSend", async (_request, reply, payload) => {
+app.addHook("onRequest", async (request) => {
+  (request as unknown as Record<string, number>).__startTime = Date.now();
+  if (request.method !== "OPTIONS") {
+    logger.info("http", `→ ${request.method} ${request.url}`, {
+      ip: request.ip,
+      contentType: request.headers["content-type"],
+    });
+  }
+});
+
+app.addHook("onSend", async (request, reply, payload) => {
   reply.headers({
     "Access-Control-Allow-Origin": "*",
     "Access-Control-Allow-Headers": "Content-Type, Authorization",
     "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
   });
+  if (request.method !== "OPTIONS") {
+    const startTime = (request as unknown as Record<string, number>).__startTime ?? Date.now();
+    const duration = Date.now() - startTime;
+    logger.info("http", `← ${request.method} ${request.url} ${reply.statusCode} (${duration}ms)`);
+  }
   return payload;
 });
 
@@ -76,9 +93,14 @@ app.options("*", async (_request, reply) => {
   reply.code(204).send();
 });
 
-app.setErrorHandler((error, _request, reply) => {
+app.setErrorHandler((error, request, reply) => {
   const statusCode = error instanceof ApiError ? error.statusCode : 500;
   const message = error instanceof Error ? error.message : "Internal server error";
+  logger.error("http", `Error handling ${request.method} ${request.url}: ${message}`, {
+    statusCode,
+    detail: error instanceof ApiError ? error.detail : "",
+    stack: logger.isDev ? error.stack : undefined,
+  });
   trackEvent({ name: "api.error", level: "error", payload: { statusCode, message } });
   reply.code(statusCode).send({
     error: message,
@@ -194,6 +216,9 @@ app.get("/api/v1/openapi.json", async () => ({
     "/api/v1/translation/batch": { post: { summary: "Translate batch items" } },
     "/api/v1/document/save": { post: { summary: "Save document" } },
     "/api/v1/export/jobs": { post: { summary: "Create export job" } },
+    "/api/v1/admin/session/{deviceId}": { get: { summary: "Get session detail (admin)" } },
+    "/api/v1/admin/quota/override": { post: { summary: "Override per-device quota (admin)" } },
+    "/api/v1/admin/session/{deviceId}/usage": { delete: { summary: "Clear usage events (admin)" } },
   },
 }));
 
@@ -241,20 +266,47 @@ app.post("/api/v1/quote/fetch", async (request, reply) => {
 
 app.post("/api/v1/translation/translate", async (request) => {
   const payload = translateTextRequestSchema.parse(request.body ?? {});
+  logger.info("translate", `Single translate request`, {
+    provider: payload.provider,
+    targetLanguage: payload.targetLanguage,
+    textLength: payload.text.length,
+    hasAiKey: Boolean(payload.aiApiKey),
+    aiModel: payload.aiModel ?? "default",
+  });
+  const start = Date.now();
   const artifact = await translateText(payload.provider, payload.text, payload.targetLanguage, {
     aiApiKey: payload.aiApiKey,
     aiBaseUrl: payload.aiBaseUrl,
     aiModel: payload.aiModel,
+  });
+  logger.info("translate", `Single translate done`, {
+    provider: payload.provider,
+    duration: `${Date.now() - start}ms`,
+    resultLength: artifact.text.length,
+    status: artifact.status,
   });
   return { artifact };
 });
 
 app.post("/api/v1/translation/batch", async (request) => {
   const payload = translateBatchRequestSchema.parse(request.body ?? {});
+  logger.info("translate", `Batch translate request`, {
+    provider: payload.provider,
+    targetLanguage: payload.targetLanguage,
+    itemCount: payload.items.length,
+    hasAiKey: Boolean(payload.aiApiKey),
+    aiModel: payload.aiModel ?? "default",
+  });
+  const start = Date.now();
   const items = await translateBatch(payload.provider, payload.items, payload.targetLanguage, {
     aiApiKey: payload.aiApiKey,
     aiBaseUrl: payload.aiBaseUrl,
     aiModel: payload.aiModel,
+  });
+  logger.info("translate", `Batch translate done`, {
+    provider: payload.provider,
+    duration: `${Date.now() - start}ms`,
+    itemCount: items.length,
   });
   return { items };
 });
@@ -277,6 +329,54 @@ app.get("/api/v1/document/:id", async (request, reply) => {
 app.post("/api/v1/export/jobs", async (request) => {
   exportJobRequestSchema.parse(request.body ?? {});
   return exportStore.create();
+});
+
+// ── Admin API ─────────────────────────────────────────────
+
+function requireAdmin(request: FastifyRequest) {
+  const token =
+    (request.headers["x-admin-token"] as string) ||
+    (request.headers.authorization || "").replace(/^Bearer\s+/i, "");
+  if (!apiEnv.adminToken || token !== apiEnv.adminToken) {
+    throw new ApiError(403, "Forbidden: invalid or missing admin token");
+  }
+}
+
+app.get("/api/v1/admin/session/:deviceId", async (request) => {
+  requireAdmin(request);
+  const { deviceId } = request.params as { deviceId: string };
+  const detail = await sessionStore.getSessionDetail(deviceId);
+  if (!detail) {
+    throw new ApiError(404, "Session not found");
+  }
+  const quota = await sessionStore.getQuotaSnapshot(deviceId);
+  return { session: detail, quota };
+});
+
+app.post("/api/v1/admin/quota/override", async (request, reply) => {
+  requireAdmin(request);
+  const body = (request.body ?? {}) as Record<string, unknown>;
+  const deviceId = typeof body.deviceId === "string" ? body.deviceId.trim() : "";
+  if (!deviceId) {
+    throw new ApiError(400, "deviceId is required");
+  }
+  const override: Record<string, unknown> = {};
+  if (body.dailyLimit !== undefined) override.dailyLimit = body.dailyLimit === null ? null : Number(body.dailyLimit);
+  if (body.weeklyLimit !== undefined) override.weeklyLimit = body.weeklyLimit === null ? null : Number(body.weeklyLimit);
+  if (body.bonusCredits !== undefined) override.bonusCredits = Number(body.bonusCredits);
+  if (typeof body.note === "string") override.note = body.note;
+  await sessionStore.updateQuotaOverride(deviceId, override);
+  const quota = await sessionStore.getQuotaSnapshot(deviceId);
+  const detail = await sessionStore.getSessionDetail(deviceId);
+  return { ok: true, session: detail, quota };
+});
+
+app.delete("/api/v1/admin/session/:deviceId/usage", async (request) => {
+  requireAdmin(request);
+  const { deviceId } = request.params as { deviceId: string };
+  const deleted = await prisma.usageEvent.deleteMany({ where: { deviceId } });
+  const quota = await sessionStore.getQuotaSnapshot(deviceId);
+  return { ok: true, deletedEvents: deleted.count, quota };
 });
 
 app.get("/api/twitter-config", async () => ({
@@ -395,6 +495,7 @@ app.post("/api/quote-chain/render", async (request, reply) => {
 
 app.post("/api/translate", async (request) => {
   const body = request.body as { text?: string; to?: string };
+  logger.info("translate", "[legacy] Google translate request", { textLength: (body.text || "").length, to: body.to });
   const artifact = await translateText("google", body.text || "", body.to || "zh-CN");
   return {
     translated: artifact.text,
@@ -404,6 +505,9 @@ app.post("/api/translate", async (request) => {
 
 app.post("/api/translate-batch", async (request) => {
   const body = request.body as { items?: Array<{ id?: string; text?: string }>; to?: string };
+  const itemCount = (body.items || []).length;
+  logger.info("translate", "[legacy] Google batch translate request", { itemCount, to: body.to });
+  const start = Date.now();
   const items = await translateBatch(
     "google",
     (body.items || []).map((item, index) => ({
@@ -413,6 +517,7 @@ app.post("/api/translate-batch", async (request) => {
     })),
     body.to || "zh-CN",
   );
+  logger.info("translate", "[legacy] Google batch translate done", { itemCount, duration: `${Date.now() - start}ms` });
   return {
     items: items.map((item) => ({
       id: item.id,
@@ -426,6 +531,11 @@ app.post("/api/translate-batch", async (request) => {
 
 app.post("/api/ai-translate", async (request) => {
   const body = request.body as { text?: string; to?: string; ai_api_key?: string; ai_base_url?: string; ai_model?: string };
+  logger.info("translate", "[legacy] AI translate request", {
+    textLength: (body.text || "").length,
+    to: body.to,
+    hasKey: Boolean(body.ai_api_key),
+  });
   const artifact = await translateText("ai", body.text || "", body.to || "zh-CN", {
     aiApiKey: body.ai_api_key,
     aiBaseUrl: body.ai_base_url,
@@ -445,6 +555,13 @@ app.post("/api/ai-translate-batch", async (request) => {
     ai_base_url?: string;
     ai_model?: string;
   };
+  const itemCount = (body.items || []).length;
+  logger.info("translate", "[legacy] AI batch translate request", {
+    itemCount,
+    to: body.to,
+    hasKey: Boolean(body.ai_api_key),
+  });
+  const start = Date.now();
   const items = await translateBatch(
     "ai",
     (body.items || []).map((item, index) => ({
@@ -459,6 +576,7 @@ app.post("/api/ai-translate-batch", async (request) => {
       aiModel: body.ai_model,
     },
   );
+  logger.info("translate", "[legacy] AI batch translate done", { itemCount, duration: `${Date.now() - start}ms` });
   return {
     items: items.map((item) => ({
       id: item.id,
@@ -473,9 +591,16 @@ app.post("/api/ai-translate-batch", async (request) => {
 const start = async () => {
   try {
     await app.listen({ port: apiEnv.port, host: "0.0.0.0" });
-    console.log(`TweetQuote API listening on http://localhost:${apiEnv.port}`);
+    logger.info("server", `TweetQuote API listening on http://localhost:${apiEnv.port}`, {
+      env: process.env.NODE_ENV ?? "development",
+      aiProvider: apiEnv.aiProvider || "(not set)",
+      aiModel: apiEnv.aiModel,
+      aiBaseUrlHost: (() => { try { return new URL(apiEnv.aiBaseUrl).hostname; } catch { return apiEnv.aiBaseUrl; } })(),
+      hasAiKey: Boolean(apiEnv.aiApiKey),
+      hasTwitterKey: Boolean(apiEnv.twitterApiKey),
+    });
   } catch (error) {
-    console.error(error);
+    logger.error("server", "Failed to start server", { error: String(error) });
     process.exit(1);
   }
 };
