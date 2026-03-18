@@ -138,6 +138,8 @@ export const quotaSnapshotSchema = z.object({
   dailyRemaining: z.number().int().nonnegative().default(3),
   weeklyTotal: z.number().int().nonnegative().default(20),
   weeklyRemaining: z.number().int().nonnegative().default(20),
+  /** Extra fetches left when daily/weekly window is exhausted (admin bonus pool). */
+  bonusCreditsRemaining: z.number().int().nonnegative().default(0),
   requiresUpgrade: z.boolean().default(false),
   exhaustedReason: z.enum(["", "daily", "weekly"]).default(""),
   nextDailyResetAt: z.number().int().nonnegative().default(0),

@@ -121,8 +121,9 @@ export class TrialSessionStore {
       weeklyRemaining: windowExhausted
         ? bonusRemaining
         : Math.max(0, effectiveWeeklyLimit - weeklyUsed),
-      dailyTotal: effectiveDailyLimit + bonusCredits,
-      weeklyTotal: effectiveWeeklyLimit + bonusCredits,
+      dailyTotal: effectiveDailyLimit,
+      weeklyTotal: effectiveWeeklyLimit,
+      bonusCreditsRemaining: bonusRemaining,
       requiresUpgrade,
       exhaustedReason,
       nextDailyResetAt: firstDailyTs ? firstDailyTs + DAY_SECONDS : 0,
