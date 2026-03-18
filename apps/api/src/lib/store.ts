@@ -103,7 +103,10 @@ export class TrialSessionStore {
     const weeklyExhausted = weeklyUsed >= effectiveWeeklyLimit;
 
     const windowExhausted = dailyExhausted || weeklyExhausted;
-    const bonusRemaining = Math.max(0, bonusCredits - weeklyUsed);
+    const bonusOverDaily = dailyExhausted ? Math.max(0, dailyUsed - effectiveDailyLimit) : 0;
+    const bonusOverWeekly = weeklyExhausted ? Math.max(0, weeklyUsed - effectiveWeeklyLimit) : 0;
+    const bonusUsed = Math.max(bonusOverDaily, bonusOverWeekly);
+    const bonusRemaining = Math.max(0, bonusCredits - bonusUsed);
     const requiresUpgrade = windowExhausted && bonusRemaining <= 0;
 
     const exhaustedReason = requiresUpgrade

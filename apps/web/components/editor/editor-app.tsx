@@ -34,6 +34,7 @@ runtimeEnv.__TQ_ENV__ = {
   ...(runtimeEnv.__TQ_ENV__ || {}),
   NEXT_PUBLIC_API_BASE_URL: apiBaseUrl,
 };
+const isDev = process.env.NODE_ENV !== "production";
 const api = new TweetQuoteApiClient({
   baseUrl: apiBaseUrl,
 });
@@ -553,7 +554,7 @@ export function EditorApp() {
     }
 
     const batchStart = Date.now();
-    console.log(`[TweetQuote] 批量翻译开始: provider=${nextProvider}, items=${items.length}`);
+    if (isDev) console.log(`[TweetQuote] 批量翻译开始: provider=${nextProvider}, items=${items.length}`);
     setBusy({ kind: "translate-batch", provider: nextProvider, completed: 0, total: items.length });
     setMessage(uiLanguage === "en" ? `Translating 0/${items.length}` : `正在翻译 0/${items.length}`);
     pushActivity(
@@ -565,7 +566,7 @@ export function EditorApp() {
       for (const [index, item] of items.entries()) {
         setBusy({ kind: "translate-batch", provider: nextProvider, completed: index, total: items.length });
         setMessage(uiLanguage === "en" ? `Translating ${index}/${items.length}` : `正在翻译 ${index}/${items.length}`);
-        console.log(`[TweetQuote]   翻译 ${index + 1}/${items.length}: id=${item.id}, textLen=${item.text.length}`);
+        if (isDev) console.log(`[TweetQuote]   翻译 ${index + 1}/${items.length}: id=${item.id}, textLen=${item.text.length}`);
         const itemStart = Date.now();
         const response = await api.translateText({
           text: item.text,
@@ -575,7 +576,7 @@ export function EditorApp() {
           aiBaseUrl: aiBaseUrl || undefined,
           aiModel: aiModel || undefined,
         });
-        console.log(`[TweetQuote]   翻译 ${index + 1}/${items.length} 完成 (${Date.now() - itemStart}ms)`);
+        if (isDev) console.log(`[TweetQuote]   翻译 ${index + 1}/${items.length} 完成 (${Date.now() - itemStart}ms)`);
         setDocument((current) => applyNodeTranslation(current, item.id, response.artifact));
         setBusy({ kind: "translate-batch", provider: nextProvider, completed: index + 1, total: items.length });
         setMessage(uiLanguage === "en" ? `Translating ${index + 1}/${items.length}` : `正在翻译 ${index + 1}/${items.length}`);
@@ -585,11 +586,11 @@ export function EditorApp() {
             : `已完成 ${index + 1}/${items.length} 条翻译`,
         );
       }
-      console.log(`[TweetQuote] 批量翻译完成: ${items.length} items, 总耗时 ${Date.now() - batchStart}ms`);
+      if (isDev) console.log(`[TweetQuote] 批量翻译完成: ${items.length} items, 总耗时 ${Date.now() - batchStart}ms`);
       setMessage(ui.messageBatchDone(items.length));
       pushActivity(uiLanguage === "en" ? "Batch translation finished" : "批量翻译完成");
     } catch (error) {
-      console.error(`[TweetQuote] 批量翻译失败:`, error);
+      if (isDev) console.error(`[TweetQuote] 批量翻译失败:`, error);
       setMessage(error instanceof Error ? error.message : ui.messageBatchFailed);
       pushActivity(uiLanguage === "en" ? "Batch translation failed" : "批量翻译失败");
     } finally {

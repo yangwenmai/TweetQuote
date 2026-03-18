@@ -26,7 +26,18 @@ runtimeEnv.__TQ_ENV__ = {
 
 const PROVIDER_STORAGE_KEY = "tq_v2_extension_provider";
 
-const webEditorBaseUrl = apiBaseUrl.replace(":8787", ":3000");
+const webEditorBaseUrl = (() => {
+  try {
+    const u = new URL(apiBaseUrl);
+    if (u.port === "8787") {
+      u.port = "3000";
+      return u.origin;
+    }
+    return u.origin;
+  } catch {
+    return apiBaseUrl;
+  }
+})();
 
 function createBackgroundFetch(): typeof globalThis.fetch {
   return ((input: RequestInfo | URL, init?: RequestInit): Promise<Response> => {
@@ -320,14 +331,14 @@ function PanelApp() {
     setTweetUrl(params.get("tweetUrl") || "");
     const cached = window.localStorage.getItem(storageKeys.extensionDeviceId) || "";
     const cachedLanguage = window.localStorage.getItem(storageKeys.translationTargetLanguage);
-    if (cachedLanguage === "zh-CN" || cachedLanguage === "en") {
-      setLanguage(cachedLanguage);
-    }
+    const initialLanguage: AppLanguage =
+      cachedLanguage === "zh-CN" || cachedLanguage === "en" ? cachedLanguage : "zh-CN";
+    setLanguage(initialLanguage);
     setTwitterApiKey(window.localStorage.getItem(storageKeys.twitterApiKey) || "");
     setAiBaseUrl(window.localStorage.getItem(storageKeys.aiBaseUrl) || "");
     setAiApiKey(window.localStorage.getItem(storageKeys.aiApiKey) || "");
     setAiModel(window.localStorage.getItem(storageKeys.aiModel) || "");
-    setMessage(language === "en" ? "Waiting to fetch the current tweet..." : "等待抓取当前推文…");
+    setMessage(initialLanguage === "en" ? "Waiting to fetch the current tweet..." : "等待抓取当前推文…");
     api.createAnonymousSession(cached).then((session) => {
       setDeviceId(session.deviceId);
       setQuota(session.quota);
@@ -423,7 +434,7 @@ function PanelApp() {
       return;
     }
     const batchStart = Date.now();
-    console.log(`[TweetQuote] 批量翻译开始: provider=${batchProvider}, items=${items.length}`);
+    if (import.meta.env.DEV) console.log(`[TweetQuote] 批量翻译开始: provider=${batchProvider}, items=${items.length}`);
     setBusy({ kind: "translate-batch", provider: batchProvider, completed: 0, total: items.length });
     setMessage(ui.messageTranslateProgress(0, items.length));
     const providerLabel = batchProvider === "ai" ? "AI" : "Google";
@@ -432,7 +443,7 @@ function PanelApp() {
       for (const [index, item] of items.entries()) {
         setBusy({ kind: "translate-batch", provider: batchProvider, completed: index, total: items.length });
         setMessage(ui.messageTranslateProgress(index, items.length));
-        console.log(`[TweetQuote]   翻译 ${index + 1}/${items.length}: id=${item.id}, textLen=${item.text.length}`);
+        if (import.meta.env.DEV) console.log(`[TweetQuote]   翻译 ${index + 1}/${items.length}: id=${item.id}, textLen=${item.text.length}`);
         const itemStart = Date.now();
         const response = await api.translateText({
           text: item.text,
@@ -442,17 +453,17 @@ function PanelApp() {
           aiBaseUrl: aiBaseUrl || undefined,
           aiModel: aiModel || undefined,
         });
-        console.log(`[TweetQuote]   翻译 ${index + 1}/${items.length} 完成 (${Date.now() - itemStart}ms)`);
+        if (import.meta.env.DEV) console.log(`[TweetQuote]   翻译 ${index + 1}/${items.length} 完成 (${Date.now() - itemStart}ms)`);
         setDocument((current) => applyNodeTranslation(current, item.id, response.artifact));
         setBusy({ kind: "translate-batch", provider: batchProvider, completed: index + 1, total: items.length });
         setMessage(ui.messageTranslateProgress(index + 1, items.length));
         pushActivity(`${index + 1}/${items.length}`);
       }
-      console.log(`[TweetQuote] 批量翻译完成: ${items.length} items, 总耗时 ${Date.now() - batchStart}ms`);
+      if (import.meta.env.DEV) console.log(`[TweetQuote] 批量翻译完成: ${items.length} items, 总耗时 ${Date.now() - batchStart}ms`);
       setMessage(ui.messageTranslateDone(items.length));
       pushActivity(ui.messageTranslateDone(items.length));
     } catch (error) {
-      console.error(`[TweetQuote] 批量翻译失败:`, error);
+      if (import.meta.env.DEV) console.error(`[TweetQuote] 批量翻译失败:`, error);
       setMessage(error instanceof Error ? error.message : ui.messageTranslateFailed);
       pushActivity(ui.messageTranslateFailed);
     } finally {

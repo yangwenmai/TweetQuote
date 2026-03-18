@@ -360,10 +360,25 @@ app.post("/api/v1/admin/quota/override", async (request, reply) => {
   if (!deviceId) {
     throw new ApiError(400, "deviceId is required");
   }
-  const override: Record<string, unknown> = {};
-  if (body.dailyLimit !== undefined) override.dailyLimit = body.dailyLimit === null ? null : Number(body.dailyLimit);
-  if (body.weeklyLimit !== undefined) override.weeklyLimit = body.weeklyLimit === null ? null : Number(body.weeklyLimit);
-  if (body.bonusCredits !== undefined) override.bonusCredits = Number(body.bonusCredits);
+
+  function parseNonNegInt(value: unknown, field: string): number {
+    const n = Number(value);
+    if (!Number.isFinite(n) || n < 0 || !Number.isInteger(n)) {
+      throw new ApiError(400, `${field} must be a non-negative integer`);
+    }
+    return n;
+  }
+
+  const override: Parameters<typeof sessionStore.updateQuotaOverride>[1] = {};
+  if (body.dailyLimit !== undefined) {
+    override.dailyLimit = body.dailyLimit === null ? null : parseNonNegInt(body.dailyLimit, "dailyLimit");
+  }
+  if (body.weeklyLimit !== undefined) {
+    override.weeklyLimit = body.weeklyLimit === null ? null : parseNonNegInt(body.weeklyLimit, "weeklyLimit");
+  }
+  if (body.bonusCredits !== undefined) {
+    override.bonusCredits = parseNonNegInt(body.bonusCredits, "bonusCredits");
+  }
   if (typeof body.note === "string") override.note = body.note;
   await sessionStore.updateQuotaOverride(deviceId, override);
   const quota = await sessionStore.getQuotaSnapshot(deviceId);

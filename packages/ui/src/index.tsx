@@ -179,16 +179,21 @@ const ANNOTATION_TYPE_LABELS: Record<string, Record<string, string>> = {
 
 function AnnotationSpan({ annotation, language }: { annotation: Annotation; language: string }) {
   const [hovered, setHovered] = React.useState(false);
-  const spanRef = React.useRef<HTMLSpanElement>(null);
   const fallback = { color: "#8e44ad", bg: "rgba(142,68,173,0.08)", bgHover: "rgba(142,68,173,0.15)" };
   const st = ANNOTATION_COLORS[annotation.type] ?? fallback;
   const typeLabel = (ANNOTATION_TYPE_LABELS[language] || ANNOTATION_TYPE_LABELS.en)?.[annotation.type] || annotation.type;
+  const tooltipId = `ann-${annotation.term.replace(/\s+/g, "-")}`;
 
   return (
     <span
-      ref={spanRef}
+      tabIndex={0}
+      role="button"
+      aria-describedby={hovered ? tooltipId : undefined}
+      aria-label={`${annotation.term}: ${typeLabel}`}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
+      onFocus={() => setHovered(true)}
+      onBlur={() => setHovered(false)}
       style={{
         position: "relative",
         borderBottom: `2px dashed ${st.color}`,
@@ -197,10 +202,12 @@ function AnnotationSpan({ annotation, language }: { annotation: Annotation; lang
         borderRadius: 2,
         cursor: "help",
         transition: "background 0.2s",
+        outline: "none",
       }}
     >
       {annotation.term}
       <span
+        aria-hidden="true"
         style={{
           display: "inline-flex",
           alignItems: "center",
@@ -221,6 +228,8 @@ function AnnotationSpan({ annotation, language }: { annotation: Annotation; lang
       </span>
       {hovered && (
         <span
+          id={tooltipId}
+          role="tooltip"
           style={{
             position: "absolute",
             bottom: "calc(100% + 8px)",
@@ -280,18 +289,32 @@ function AnnotatedText({
 }) {
   if (!annotations || annotations.length === 0) return <>{text}</>;
 
-  const sorted = annotations
-    .map((a) => ({ ...a, idx: text.indexOf(a.term) }))
-    .filter((a) => a.idx >= 0)
-    .sort((a, b) => a.idx - b.idx);
+  const matches: Array<Annotation & { idx: number }> = [];
+  let searchFrom = 0;
+  const remaining = [...annotations];
 
-  if (sorted.length === 0) return <>{text}</>;
+  while (remaining.length > 0 && searchFrom < text.length) {
+    let bestIdx = -1;
+    let bestAnnIndex = -1;
+    for (let i = 0; i < remaining.length; i++) {
+      const idx = text.indexOf(remaining[i].term, searchFrom);
+      if (idx >= 0 && (bestIdx < 0 || idx < bestIdx)) {
+        bestIdx = idx;
+        bestAnnIndex = i;
+      }
+    }
+    if (bestAnnIndex < 0) break;
+    const [matched] = remaining.splice(bestAnnIndex, 1);
+    matches.push({ ...matched, idx: bestIdx });
+    searchFrom = bestIdx + matched.term.length;
+  }
+
+  if (matches.length === 0) return <>{text}</>;
 
   const segments: React.ReactNode[] = [];
   let last = 0;
 
-  for (const ann of sorted) {
-    if (ann.idx < last) continue;
+  for (const ann of matches) {
     if (ann.idx > last) {
       segments.push(<React.Fragment key={`t-${last}`}>{text.slice(last, ann.idx)}</React.Fragment>);
     }
