@@ -138,6 +138,9 @@ function getQuotaExhaustedMessage(q: QuotaSnapshot, lang: AppLanguage): string {
 export function EditorApp() {
   const previewRef = useRef<HTMLDivElement | null>(null);
   const [deviceId, setDeviceId] = useState("");
+  /** 界面文案语言：按钮、提示等 */
+  const [uiLanguage, setUiLanguage] = useState<AppLanguage>("zh-CN");
+  /** 翻译目标 / 输出语言：推文翻译成何种语言、导出长图用何种语言 */
   const [language, setLanguage] = useState<AppLanguage>("zh-CN");
   const [provider, setProvider] = useState<TranslationProvider>("none");
   const [twitterApiKey, setTwitterApiKey] = useState("");
@@ -156,15 +159,19 @@ export function EditorApp() {
   useEffect(() => {
     const cachedDeviceId = window.localStorage.getItem(storageKeys.webDeviceId) || "";
     const restored = restoreDraftDocument(window.localStorage.getItem(storageKeys.webDraft));
-    const cachedLanguage = window.localStorage.getItem(storageKeys.translationTargetLanguage);
+    const cachedTargetLang = window.localStorage.getItem(storageKeys.translationTargetLanguage);
+    const cachedUiLang = window.localStorage.getItem(storageKeys.uiLanguage);
     if (restored) {
       setDocument(restored);
       setLanguage(restored.renderSpec.language);
       setProvider(restored.renderSpec.translationProvider);
-    } else if (cachedLanguage === "zh-CN" || cachedLanguage === "en") {
-      setLanguage(cachedLanguage);
+    } else if (cachedTargetLang === "zh-CN" || cachedTargetLang === "en") {
+      setLanguage(cachedTargetLang);
     } else {
       window.localStorage.removeItem(storageKeys.webDraft);
+    }
+    if (cachedUiLang === "zh-CN" || cachedUiLang === "en") {
+      setUiLanguage(cachedUiLang);
     }
     setTwitterApiKey(window.localStorage.getItem(storageKeys.twitterApiKey) || "");
     setAiBaseUrl(window.localStorage.getItem(storageKeys.aiBaseUrl) || "");
@@ -190,6 +197,10 @@ export function EditorApp() {
     window.localStorage.setItem(storageKeys.translationTargetLanguage, language);
   }, [language]);
 
+  useEffect(() => {
+    window.localStorage.setItem(storageKeys.uiLanguage, uiLanguage);
+  }, [uiLanguage]);
+
   function pushActivity(text: string) {
     setActivities((current) => [{ id: crypto.randomUUID(), text: formatActivity(text) }, ...current].slice(0, 12));
   }
@@ -211,7 +222,7 @@ export function EditorApp() {
   const activeNodeIndex = busy.kind === "translate-node" ? busy.index : -1;
   const activeNodeProvider = busy.kind === "translate-node" ? busy.provider : null;
   const ui =
-    language === "en"
+    uiLanguage === "en"
       ? {
           switchLanguage: "中文",
           loadExample: "Example",
@@ -248,6 +259,7 @@ export function EditorApp() {
           translationDisplay: "Translation Display",
           translationDisplayReplace: "Replace original by default",
           translationDisplayBilingual: "Show bilingual",
+          translationDisplayOriginal: "Show original only",
           exportScale: "Export Scale",
           exportPng: "Export as PNG",
           exportHintEmpty: "Fetch or fill content first, then export PNG.",
@@ -257,6 +269,7 @@ export function EditorApp() {
           settingsSectionTwitter: "🧪 Advanced Mode: Your TwitterAPI Key",
           settingsSectionAi: "🧪 Advanced Mode: Your AI Key",
           settingsSectionDocument: "Document & Output",
+          uiLanguageLabel: "Interface Language",
           twitterApiKey: "TwitterAPI Key",
           twitterApiPlaceholder: "Enter your API Key...",
           twitterApiConfigured: "✓ Configured",
@@ -266,7 +279,7 @@ export function EditorApp() {
           aiModel: "AI Model",
           aiConfigured: "✓ Configured",
           aiMissing: "Not configured - rely on hosted AI or fetch original text only by default",
-          outputLanguage: "Output Language",
+          outputLanguage: "Translation / Export Language",
           documentTitle: "Document Title",
           translationProvider: "Optional Auto-Translate After Fetch",
           clearSettings: "Clear Settings",
@@ -324,6 +337,7 @@ export function EditorApp() {
           translationDisplay: "译文显示",
           translationDisplayReplace: "默认用译文替换原文",
           translationDisplayBilingual: "双语显示",
+          translationDisplayOriginal: "仅显示原文",
           exportScale: "导出倍率",
           exportPng: "导出为 PNG",
           exportHintEmpty: "请先抓取或填写内容，再导出 PNG。",
@@ -333,6 +347,7 @@ export function EditorApp() {
           settingsSectionTwitter: "🧪 高级模式：自带 TwitterAPI Key",
           settingsSectionAi: "🧪 高级模式：自带 AI Key",
           settingsSectionDocument: "文档与输出",
+          uiLanguageLabel: "界面语言",
           twitterApiKey: "TwitterAPI Key",
           twitterApiPlaceholder: "输入你的 API Key...",
           twitterApiConfigured: "✓ 已配置",
@@ -342,7 +357,7 @@ export function EditorApp() {
           aiModel: "AI 模型",
           aiConfigured: "✓ 已配置",
           aiMissing: "未配置 — 默认依赖服务端托管 AI 或仅抓取原文",
-          outputLanguage: "输出语言",
+          outputLanguage: "翻译 / 导出语言",
           documentTitle: "文档标题",
           translationProvider: "抓取后自动翻译（可选）",
           clearSettings: "清空配置",
@@ -370,7 +385,7 @@ export function EditorApp() {
     setMode("manual");
     setDocument({
       ...resetDocumentDraft(),
-      title: language === "en" ? "OpenClaw Discussion Example" : "OpenClaw 讨论示例",
+      title: uiLanguage === "en" ? "OpenClaw Discussion Example" : "OpenClaw 讨论示例",
       nodes: [
         {
           id: "example-1",
@@ -438,9 +453,14 @@ export function EditorApp() {
     if (!tweetUrl.trim() || busy.kind !== "idle") return;
     setBusy({ kind: "fetch" });
     setMessage("");
-    pushActivity(language === "en" ? "Started fetching the quote chain" : "开始抓取引用链");
+    pushActivity(uiLanguage === "en" ? "Started fetching the quote chain" : "开始抓取引用链");
     try {
-      pushActivity(language === "en" ? "Request sent, waiting for server response" : "抓取请求已发出，等待服务端返回");
+      const fetchEndpoint = `${apiBaseUrl}/api/v1/quote/fetch`;
+      pushActivity(
+        uiLanguage === "en"
+          ? `Request sent, waiting for server (${fetchEndpoint})`
+          : `抓取请求已发出，等待服务端返回 (${fetchEndpoint})`,
+      );
       const response = await api.fetchQuoteDocument({
         tweetUrl,
         targetLanguage: language,
@@ -459,10 +479,10 @@ export function EditorApp() {
       setQuota(response.quota);
       setMode("manual");
       response.meta.layers.forEach((layer) => {
-        pushActivity(formatLayerLog(layer, language));
+        pushActivity(formatLayerLog(layer, uiLanguage));
       });
       pushActivity(
-        language === "en" ? `Fetch finished with ${response.document.nodes.length} layers` : `抓取完成，共 ${response.document.nodes.length} 层`,
+        uiLanguage === "en" ? `Fetch finished with ${response.document.nodes.length} layers` : `抓取完成，共 ${response.document.nodes.length} 层`,
       );
     } catch (error) {
       const errMsg = error instanceof Error ? error.message : ui.messageFetchFailed;
@@ -470,14 +490,14 @@ export function EditorApp() {
         const refreshedQuota = await api.getQuota(deviceId).catch(() => quota);
         if (refreshedQuota) {
           setQuota(refreshedQuota);
-          setMessage(getQuotaExhaustedMessage(refreshedQuota, language));
+          setMessage(getQuotaExhaustedMessage(refreshedQuota, uiLanguage));
         } else {
-          setMessage(language === "en" ? "Hosted render quota reached. Please try again later." : "托管抓取额度已达上限，请稍后再试。");
+          setMessage(uiLanguage === "en" ? "Hosted render quota reached. Please try again later." : "托管抓取额度已达上限，请稍后再试。");
         }
       } else {
         setMessage(errMsg);
       }
-      pushActivity(language === "en" ? "Fetch failed" : "抓取失败");
+      pushActivity(uiLanguage === "en" ? "Fetch failed" : "抓取失败");
     } finally {
       setBusy({ kind: "idle" });
     }
@@ -489,7 +509,7 @@ export function EditorApp() {
     setBusy({ kind: "translate-node", index, provider: nextProvider });
     setMessage("");
     pushActivity(
-      language === "en"
+      uiLanguage === "en"
         ? `Started ${getProviderLabel(nextProvider)} translation for layer ${index + 1}`
         : `开始用 ${getProviderLabel(nextProvider)} 翻译第 ${index + 1} 层`,
     );
@@ -504,19 +524,19 @@ export function EditorApp() {
       });
       setDocument((current) => applyNodeTranslation(current, node.id, response.artifact));
       setMessage(
-        language === "en"
+        uiLanguage === "en"
           ? `${getProviderLabel(nextProvider)} translation finished for layer ${index + 1}`
           : `${getProviderLabel(nextProvider)} 已完成第 ${index + 1} 层翻译`,
       );
       pushActivity(
-        language === "en"
+        uiLanguage === "en"
           ? `Layer ${index + 1} translation finished`
           : `第 ${index + 1} 层翻译完成`,
       );
     } catch (error) {
       setMessage(error instanceof Error ? error.message : ui.messageTranslateFailed);
       pushActivity(
-        language === "en"
+        uiLanguage === "en"
           ? `Layer ${index + 1} translation failed`
           : `第 ${index + 1} 层翻译失败`,
       );
@@ -532,17 +552,21 @@ export function EditorApp() {
       return;
     }
 
+    const batchStart = Date.now();
+    console.log(`[TweetQuote] 批量翻译开始: provider=${nextProvider}, items=${items.length}`);
     setBusy({ kind: "translate-batch", provider: nextProvider, completed: 0, total: items.length });
-    setMessage(language === "en" ? `Translating 0/${items.length}` : `正在翻译 0/${items.length}`);
+    setMessage(uiLanguage === "en" ? `Translating 0/${items.length}` : `正在翻译 0/${items.length}`);
     pushActivity(
-      language === "en"
+      uiLanguage === "en"
         ? `Started ${getProviderLabel(nextProvider)} batch translation for ${items.length} items`
         : `开始用 ${getProviderLabel(nextProvider)} 批量翻译，共 ${items.length} 条`,
     );
     try {
       for (const [index, item] of items.entries()) {
         setBusy({ kind: "translate-batch", provider: nextProvider, completed: index, total: items.length });
-        setMessage(language === "en" ? `Translating ${index}/${items.length}` : `正在翻译 ${index}/${items.length}`);
+        setMessage(uiLanguage === "en" ? `Translating ${index}/${items.length}` : `正在翻译 ${index}/${items.length}`);
+        console.log(`[TweetQuote]   翻译 ${index + 1}/${items.length}: id=${item.id}, textLen=${item.text.length}`);
+        const itemStart = Date.now();
         const response = await api.translateText({
           text: item.text,
           targetLanguage: language,
@@ -551,20 +575,23 @@ export function EditorApp() {
           aiBaseUrl: aiBaseUrl || undefined,
           aiModel: aiModel || undefined,
         });
+        console.log(`[TweetQuote]   翻译 ${index + 1}/${items.length} 完成 (${Date.now() - itemStart}ms)`);
         setDocument((current) => applyNodeTranslation(current, item.id, response.artifact));
         setBusy({ kind: "translate-batch", provider: nextProvider, completed: index + 1, total: items.length });
-        setMessage(language === "en" ? `Translating ${index + 1}/${items.length}` : `正在翻译 ${index + 1}/${items.length}`);
+        setMessage(uiLanguage === "en" ? `Translating ${index + 1}/${items.length}` : `正在翻译 ${index + 1}/${items.length}`);
         pushActivity(
-          language === "en"
+          uiLanguage === "en"
             ? `Translated ${index + 1}/${items.length}`
             : `已完成 ${index + 1}/${items.length} 条翻译`,
         );
       }
+      console.log(`[TweetQuote] 批量翻译完成: ${items.length} items, 总耗时 ${Date.now() - batchStart}ms`);
       setMessage(ui.messageBatchDone(items.length));
-      pushActivity(language === "en" ? "Batch translation finished" : "批量翻译完成");
+      pushActivity(uiLanguage === "en" ? "Batch translation finished" : "批量翻译完成");
     } catch (error) {
+      console.error(`[TweetQuote] 批量翻译失败:`, error);
       setMessage(error instanceof Error ? error.message : ui.messageBatchFailed);
-      pushActivity(language === "en" ? "Batch translation failed" : "批量翻译失败");
+      pushActivity(uiLanguage === "en" ? "Batch translation failed" : "批量翻译失败");
     } finally {
       setBusy({ kind: "idle" });
     }
@@ -625,15 +652,15 @@ export function EditorApp() {
   async function saveDocument() {
     setBusy({ kind: "save" });
     setMessage("");
-    pushActivity(language === "en" ? "Saving draft" : "正在保存草稿");
+    pushActivity(uiLanguage === "en" ? "Saving draft" : "正在保存草稿");
     try {
       const saved = await api.saveDocument(document);
       setDocument(saved);
       setMessage(ui.messageSaveSuccess);
-      pushActivity(language === "en" ? "Draft saved" : "草稿已保存");
+      pushActivity(uiLanguage === "en" ? "Draft saved" : "草稿已保存");
     } catch (error) {
       setMessage(error instanceof Error ? error.message : ui.messageSaveFailed);
-      pushActivity(language === "en" ? "Save failed" : "保存失败");
+      pushActivity(uiLanguage === "en" ? "Save failed" : "保存失败");
     } finally {
       setBusy({ kind: "idle" });
     }
@@ -642,7 +669,7 @@ export function EditorApp() {
   async function exportDocument() {
     setBusy({ kind: "export" });
     setMessage("");
-    pushActivity(language === "en" ? "Preparing PNG export" : "开始准备导出 PNG");
+    pushActivity(uiLanguage === "en" ? "Preparing PNG export" : "开始准备导出 PNG");
     try {
       if (!previewRef.current) {
         throw new Error("预览区域不可用");
@@ -667,10 +694,10 @@ export function EditorApp() {
       link.remove();
       window.URL.revokeObjectURL(downloadUrl);
       setMessage(ui.messageExportSuccess);
-      pushActivity(language === "en" ? "PNG exported" : "PNG 导出成功");
+      pushActivity(uiLanguage === "en" ? "PNG exported" : "PNG 导出成功");
     } catch (error) {
       setMessage(error instanceof Error ? error.message : ui.messageExportFailed);
-      pushActivity(language === "en" ? "PNG export failed" : "PNG 导出失败");
+      pushActivity(uiLanguage === "en" ? "PNG export failed" : "PNG 导出失败");
     } finally {
       setBusy({ kind: "idle" });
     }
@@ -690,7 +717,7 @@ export function EditorApp() {
             <span>Tweet Quote</span>
           </div>
           <div className="app-header-actions">
-            <Button tone="ghost" onClick={() => updateRenderLanguage(language === "zh-CN" ? "en" : "zh-CN")}>
+            <Button tone="ghost" onClick={() => setUiLanguage(uiLanguage === "zh-CN" ? "en" : "zh-CN")}>
               {ui.switchLanguage}
             </Button>
             <Button tone="ghost" onClick={loadExample} disabled={isFetchBusy || isBatchBusy || isSaveBusy || isExportBusy}>
@@ -839,7 +866,7 @@ export function EditorApp() {
                           disabled={busy.kind !== "idle" || !node.content.trim()}
                         >
                           {activeNodeIndex === index && activeNodeProvider === "google"
-                            ? language === "en"
+                            ? uiLanguage === "en"
                               ? "Google Translating..."
                               : "Google 翻译中..."
                             : ui.translateGoogle}
@@ -850,7 +877,7 @@ export function EditorApp() {
                           disabled={busy.kind !== "idle" || !node.content.trim()}
                         >
                           {activeNodeIndex === index && activeNodeProvider === "ai"
-                            ? language === "en"
+                            ? uiLanguage === "en"
                               ? "AI Translating..."
                               : "AI 翻译中..."
                             : ui.translateAi}
@@ -872,8 +899,8 @@ export function EditorApp() {
               <div className="translation-head">
                 <span>{ui.translationSection}</span>
                 <div className="row" style={{ gap: 8 }}>
-                  <select value={language} onChange={(event) => updateRenderLanguage(event.target.value as AppLanguage)}>
-                    <option value="zh-CN">{language === "en" ? "Chinese" : "中文"}</option>
+                  <select value={language} onChange={(event) => updateRenderLanguage(event.target.value as AppLanguage)} aria-label={ui.translationTarget}>
+                    <option value="zh-CN">{uiLanguage === "en" ? "Chinese" : "中文"}</option>
                     <option value="en">English</option>
                   </select>
                   <select
@@ -883,20 +910,21 @@ export function EditorApp() {
                   >
                     <option value="replace">{ui.translationDisplayReplace}</option>
                     <option value="bilingual">{ui.translationDisplayBilingual}</option>
+                    <option value="original">{ui.translationDisplayOriginal}</option>
                   </select>
                 </div>
               </div>
               <div className="translation-actions">
                 <Button tone="ghost" onClick={() => translateAll("google")} disabled={busy.kind !== "idle" || !hasTranslatableContent}>
                   {isBatchBusy && busy.provider === "google"
-                    ? language === "en"
+                    ? uiLanguage === "en"
                       ? `Google ${busy.completed}/${busy.total}`
                       : `Google ${busy.completed}/${busy.total}`
                     : ui.batchGoogle}
                 </Button>
                 <Button tone="ghost" onClick={() => translateAll("ai")} disabled={busy.kind !== "idle" || !hasTranslatableContent}>
                   {isBatchBusy && busy.provider === "ai"
-                    ? language === "en"
+                    ? uiLanguage === "en"
                       ? `AI ${busy.completed}/${busy.total}`
                       : `AI ${busy.completed}/${busy.total}`
                     : ui.batchAi}
@@ -935,7 +963,7 @@ export function EditorApp() {
               ) : null}
               <div className="secondary-actions">
                 <Button tone="ghost" onClick={saveDocument} disabled={busy.kind !== "idle"}>
-                  {isSaveBusy ? (language === "en" ? "Saving..." : "保存中...") : ui.saveDraft}
+                  {isSaveBusy ? (uiLanguage === "en" ? "Saving..." : "保存中...") : ui.saveDraft}
                 </Button>
               </div>
             </div>
@@ -1060,9 +1088,16 @@ export function EditorApp() {
           <div className="settings-section">
             <div className="settings-section-title">{ui.settingsSectionDocument}</div>
             <label className="field">
+              <span>{ui.uiLanguageLabel}</span>
+              <select value={uiLanguage} onChange={(event) => setUiLanguage(event.target.value as AppLanguage)}>
+                <option value="zh-CN">{uiLanguage === "en" ? "Chinese" : "中文"}</option>
+                <option value="en">English</option>
+              </select>
+            </label>
+            <label className="field">
               <span>{ui.outputLanguage}</span>
               <select value={language} onChange={(event) => updateRenderLanguage(event.target.value as AppLanguage)}>
-                <option value="zh-CN">{language === "en" ? "Chinese" : "中文"}</option>
+                <option value="zh-CN">{uiLanguage === "en" ? "Chinese" : "中文"}</option>
                 <option value="en">English</option>
               </select>
             </label>
@@ -1080,7 +1115,7 @@ export function EditorApp() {
                   setDocument((current) => updateDocumentProvider(current, nextProvider));
                 }}
               >
-                <option value="none">{language === "en" ? "No Translation" : "不翻译"}</option>
+                <option value="none">{uiLanguage === "en" ? "No Translation" : "不翻译"}</option>
                 <option value="google">Google</option>
                 <option value="ai">AI</option>
               </select>
