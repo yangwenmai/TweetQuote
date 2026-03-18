@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "TweetQuote Next",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Open the current X/Twitter conversation in the new TweetQuote editor.",
   "permissions": ["storage"],
   "host_permissions": ["https://x.com/*", "https://twitter.com/*", "https://tweetquote.app/*"],

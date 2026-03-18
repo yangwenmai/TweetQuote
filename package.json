@@ -9,9 +9,12 @@
     "dev:web": "npm run dev -w @tweetquote/web",
     "dev:api": "npm run dev -w @tweetquote/api",
     "dev:extension": "npm run dev -w @tweetquote/extension",
+    "start:api": "npm run start -w @tweetquote/api",
+    "start:web": "npm run start -w @tweetquote/web",
     "build": "npm run build --workspaces --if-present",
     "lint": "npm run lint --workspaces --if-present",
-    "typecheck": "npm run typecheck --workspaces --if-present"
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "db:push": "npm run db:push -w @tweetquote/api"
   },
   "devDependencies": {
     "@types/chrome": "^0.1.37",
