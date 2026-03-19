@@ -1,8 +1,8 @@
 # TweetQuote 服务器部署指南
 
-> 服务器：`159.89.204.255`  
-> API 地址：`http://159.89.204.255:8787`  
-> Web 地址：`http://159.89.204.255:3000`
+> 服务器：`164.90.153.103`  
+> API 地址：`http://164.90.153.103:8787`  
+> Web 地址：`http://164.90.153.103:3000`
 
 ---
 
@@ -61,7 +61,7 @@ ADMIN_TOKEN=你的管理Token
 
 # --- 重要：API 对外访问地址 ---
 # 让 API 返回的 URL（如图片代理、分享链接等）使用正确的公网地址
-PUBLIC_API_BASE_URL=http://159.89.204.255:8787
+PUBLIC_API_BASE_URL=http://164.90.153.103:8787
 EOF
 ```
 
@@ -75,7 +75,7 @@ EOF
 | `OPENAI_MODEL` | 可选 | 使用的模型名称 |
 | `TWITTERAPI_KEY` | 可选 | 推文链接自动抓取功能需要 |
 | `ADMIN_TOKEN` | 可选 | Admin API 鉴权 Token |
-| `PUBLIC_API_BASE_URL` | **推荐** | 服务器公网 API 地址，设为 `http://159.89.204.255:8787` |
+| `PUBLIC_API_BASE_URL` | **推荐** | 服务器公网 API 地址，设为 `http://164.90.153.103:8787` |
 
 ---
 
@@ -104,7 +104,7 @@ npm run build -w @tweetquote/api
 ### 5.2 构建 Web
 
 ```bash
-NEXT_PUBLIC_API_BASE_URL=http://159.89.204.255:8787 npm run build -w @tweetquote/web
+NEXT_PUBLIC_API_BASE_URL=http://164.90.153.103:8787 npm run build -w @tweetquote/web
 ```
 
 > **重要**：`NEXT_PUBLIC_API_BASE_URL` 必须在 **build 阶段** 传入！  
@@ -119,7 +119,7 @@ npm run build:test -w @tweetquote/extension
 使用 `--mode test`，读取 `apps/extension/.env.test`：
 
 ```
-VITE_TWEETQUOTE_API_BASE_URL=http://159.89.204.255:8787
+VITE_TWEETQUOTE_API_BASE_URL=http://164.90.153.103:8787
 ```
 
 产物在 `apps/extension/dist/`，下载到本地后在 Chrome 中加载即可。
@@ -128,7 +128,7 @@ VITE_TWEETQUOTE_API_BASE_URL=http://159.89.204.255:8787
 
 ```bash
 # API + Web 一起构建（Extension 需单独用 build:test）
-NEXT_PUBLIC_API_BASE_URL=http://159.89.204.255:8787 npm run build -w @tweetquote/api -w @tweetquote/web
+NEXT_PUBLIC_API_BASE_URL=http://164.90.153.103:8787 npm run build -w @tweetquote/api -w @tweetquote/web
 
 # Extension
 npm run build:test -w @tweetquote/extension
@@ -205,31 +205,31 @@ pm2 startup
 
 ```bash
 # 健康检查
-curl http://159.89.204.255:8787/api/v1/health
+curl http://164.90.153.103:8787/api/v1/health
 # 预期返回：{"ok":true,"service":"tweetquote-api","port":8787}
 
 # 运行时信息
-curl http://159.89.204.255:8787/api/v1/runtime
-# 预期包含：apiBaseUrl: "http://159.89.204.255:8787"
+curl http://164.90.153.103:8787/api/v1/runtime
+# 预期包含：apiBaseUrl: "http://164.90.153.103:8787"
 
 # Twitter 抓取配置检查
-curl http://159.89.204.255:8787/api/twitter-config
+curl http://164.90.153.103:8787/api/twitter-config
 # configured: true 表示 TWITTERAPI_KEY 已生效
 
 # AI 翻译配置检查
-curl http://159.89.204.255:8787/api/ai-config
+curl http://164.90.153.103:8787/api/ai-config
 # configured: true 表示 AI 相关 Key 已生效
 ```
 
 ### 7.2 验证 Web
 
-浏览器访问 `http://159.89.204.255:3000`，能正常打开编辑器界面。
+浏览器访问 `http://164.90.153.103:3000`，能正常打开编辑器界面。
 
 ### 7.3 验证 Extension
 
 1. 将服务器上 `apps/extension/dist/` 目录下载到本地
 2. Chrome → 扩展程序 → 开启「开发者模式」→ 加载已解压的扩展程序 → 选择 `dist` 目录
-3. 在 Twitter/X 页面使用插件，请求应发往 `http://159.89.204.255:8787`
+3. 在 Twitter/X 页面使用插件，请求应发往 `http://164.90.153.103:8787`
 
 ---
 
@@ -251,7 +251,7 @@ npm run db:push -w @tweetquote/api
 
 # 4. 重新构建
 npm run build -w @tweetquote/api
-NEXT_PUBLIC_API_BASE_URL=http://159.89.204.255:8787 npm run build -w @tweetquote/web
+NEXT_PUBLIC_API_BASE_URL=http://164.90.153.103:8787 npm run build -w @tweetquote/web
 
 # 5. 重启服务
 pm2 restart all
@@ -269,14 +269,14 @@ npm run build:test -w @tweetquote/extension
 ### 查看设备配额
 
 ```bash
-curl http://159.89.204.255:8787/api/v1/admin/session/{deviceId} \
+curl http://164.90.153.103:8787/api/v1/admin/session/{deviceId} \
   -H "x-admin-token: 你的ADMIN_TOKEN"
 ```
 
 ### 赠送额度
 
 ```bash
-curl -X POST http://159.89.204.255:8787/api/v1/admin/quota/override \
+curl -X POST http://164.90.153.103:8787/api/v1/admin/quota/override \
   -H "x-admin-token: 你的ADMIN_TOKEN" \
   -H "Content-Type: application/json" \
   -d '{"deviceId":"tq_xxx","bonusCredits":10,"note":"手动赠送"}'
@@ -285,7 +285,7 @@ curl -X POST http://159.89.204.255:8787/api/v1/admin/quota/override \
 ### 设置 VIP 限额
 
 ```bash
-curl -X POST http://159.89.204.255:8787/api/v1/admin/quota/override \
+curl -X POST http://164.90.153.103:8787/api/v1/admin/quota/override \
   -H "x-admin-token: 你的ADMIN_TOKEN" \
   -H "Content-Type: application/json" \
   -d '{"deviceId":"tq_xxx","dailyLimit":50,"weeklyLimit":200,"note":"VIP 用户"}'
@@ -294,7 +294,7 @@ curl -X POST http://159.89.204.255:8787/api/v1/admin/quota/override \
 ### 清空设备用量
 
 ```bash
-curl -X DELETE http://159.89.204.255:8787/api/v1/admin/session/{deviceId}/usage \
+curl -X DELETE http://164.90.153.103:8787/api/v1/admin/session/{deviceId}/usage \
   -H "x-admin-token: 你的ADMIN_TOKEN"
 ```
 
@@ -304,8 +304,8 @@ curl -X DELETE http://159.89.204.255:8787/api/v1/admin/session/{deviceId}/usage 
 
 | 组件 | 地址 | 用途 |
 |------|------|------|
-| API | `http://159.89.204.255:8787` | 后端接口（Fastify） |
-| Web | `http://159.89.204.255:3000` | 前端编辑器（Next.js） |
+| API | `http://164.90.153.103:8787` | 后端接口（Fastify） |
+| Web | `http://164.90.153.103:3000` | 前端编辑器（Next.js） |
 | Extension | 本地安装，请求指向 API | Chrome 浏览器插件 |
 
 ### 各组件如何找到 API
@@ -321,7 +321,7 @@ curl -X DELETE http://159.89.204.255:8787/api/v1/admin/session/{deviceId}/usage 
 ## 十一、常见问题
 
 **Q: Web 页面打开但请求不到 API？**  
-确认构建 Web 时是否传入了 `NEXT_PUBLIC_API_BASE_URL=http://159.89.204.255:8787`。此变量在构建时内联，运行时设置无效。需重新 build 后 restart。
+确认构建 Web 时是否传入了 `NEXT_PUBLIC_API_BASE_URL=http://164.90.153.103:8787`。此变量在构建时内联，运行时设置无效。需重新 build 后 restart。
 
 **Q: 如何更换 API 端口？**  
 启动时指定 `PORT` 环境变量即可，同时需更新：
