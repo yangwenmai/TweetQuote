@@ -3,6 +3,7 @@ import {
   createAnonymousSession,
   exportJobRequestSchema,
   quoteFetchRequestSchema,
+  randomUUID,
   saveDocumentInputSchema,
   translateBatchRequestSchema,
   translateTextRequestSchema,
@@ -242,7 +243,7 @@ app.get("/api/v1/quota/:deviceId", async (request) => {
 
 app.post("/api/v1/quote/fetch", async (request, reply) => {
   const payload = quoteFetchRequestSchema.parse(request.body ?? {});
-  const deviceId = payload.deviceId || `tq_${crypto.randomUUID().replace(/-/g, "")}`;
+  const deviceId = payload.deviceId || `tq_${randomUUID().replace(/-/g, "")}`;
   const quota = await sessionStore.getQuotaSnapshot(deviceId);
   const hostedRender = (!payload.apiKey && apiEnv.twitterApiKey) || (payload.translationProvider === "ai" && (!payload.aiApiKey && apiEnv.aiApiKey));
   if (hostedRender && quota.requiresUpgrade) {
@@ -460,7 +461,7 @@ app.post("/api/quote-chain/render", async (request, reply) => {
     deviceId: typeof body.device_id === "string" ? body.device_id : undefined,
   });
 
-  const deviceId = payload.deviceId || `tq_${crypto.randomUUID().replace(/-/g, "")}`;
+  const deviceId = payload.deviceId || `tq_${randomUUID().replace(/-/g, "")}`;
   const quota = await sessionStore.getQuotaSnapshot(deviceId);
   const hostedRender = (!payload.apiKey && apiEnv.twitterApiKey) || (payload.translationProvider === "ai" && (!payload.aiApiKey && apiEnv.aiApiKey));
   if (hostedRender && quota.requiresUpgrade) {

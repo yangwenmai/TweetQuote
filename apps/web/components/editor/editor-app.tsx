@@ -7,6 +7,7 @@ import {
   type QuoteDocument,
   type TranslationDisplay,
   type TranslationProvider,
+  randomUUID,
 } from "@tweetquote/domain";
 import {
   addLayer as appendLayer,
@@ -203,7 +204,7 @@ export function EditorApp() {
   }, [uiLanguage]);
 
   function pushActivity(text: string) {
-    setActivities((current) => [{ id: crypto.randomUUID(), text: formatActivity(text) }, ...current].slice(0, 12));
+    setActivities((current) => [{ id: randomUUID(), text: formatActivity(text) }, ...current].slice(0, 12));
   }
 
   const documentSummary = useMemo(() => getDocumentSummary(document), [document]);

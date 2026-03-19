@@ -3,7 +3,14 @@ import { createRoot } from "react-dom/client";
 import { TweetQuoteApiClient } from "@tweetquote/sdk";
 import { designTokens } from "@tweetquote/config";
 import { Button, QuotePreview } from "@tweetquote/ui";
-import { type AppLanguage, type QuoteDocument, type QuotaSnapshot, type TranslationDisplay, type TranslationProvider } from "@tweetquote/domain";
+import {
+  type AppLanguage,
+  type QuoteDocument,
+  type QuotaSnapshot,
+  type TranslationDisplay,
+  type TranslationProvider,
+  randomUUID,
+} from "@tweetquote/domain";
 import {
   applyNodeTranslation,
   collectBatchItems,
@@ -348,7 +355,7 @@ function PanelApp() {
   }, []);
 
   function pushActivity(text: string) {
-    setActivities((current) => [{ id: crypto.randomUUID(), text: formatActivity(text) }, ...current].slice(0, 12));
+    setActivities((current) => [{ id: randomUUID(), text: formatActivity(text) }, ...current].slice(0, 12));
   }
 
   function updatePreviewLanguage(nextLanguage: AppLanguage) {

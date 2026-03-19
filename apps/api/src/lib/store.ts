@@ -1,4 +1,11 @@
-import { createDefaultQuota, nowIso, quoteDocumentSchema, type QuoteDocument, type QuotaSnapshot } from "@tweetquote/domain";
+import {
+  createDefaultQuota,
+  nowIso,
+  quoteDocumentSchema,
+  randomUUID,
+  type QuoteDocument,
+  type QuotaSnapshot,
+} from "@tweetquote/domain";
 import { apiEnv } from "./env";
 import { prisma } from "./prisma";
 
@@ -33,7 +40,7 @@ export class TrialSessionStore {
 
   async getOrCreate(deviceId?: string): Promise<TrialSessionRecord> {
     const now = Math.floor(Date.now() / 1000);
-    const id = (deviceId || "").trim() || `tq_${crypto.randomUUID().replace(/-/g, "")}`;
+    const id = (deviceId || "").trim() || `tq_${randomUUID().replace(/-/g, "")}`;
     const session = await prisma.anonymousSession.upsert({
       where: { deviceId: id },
       create: {
@@ -214,7 +221,7 @@ export class ExportJobStore {
 
   create() {
     const job: ExportJob = {
-      id: crypto.randomUUID(),
+      id: randomUUID(),
       status: "finished",
       downloadUrl: "https://tweetquote.app/export/demo.png",
       createdAt: nowIso(),
