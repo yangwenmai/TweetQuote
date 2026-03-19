@@ -117,7 +117,7 @@ NEXT_PUBLIC_API_BASE_URL=http://YOUR_PUBLIC_HOST:8787 npm run build -w @tweetquo
 > **重要**：`NEXT_PUBLIC_API_BASE_URL` 必须在 **build 阶段** 传入！  
 > Next.js 会在构建时将 `NEXT_PUBLIC_*` 变量内联到客户端 JS 中，运行时设置无效。
 
-构建失败（内存、OOM、`Bus error`、小内存 VPS、standalone 部署）见 **「十一、常见问题 → Web 构建与 VPS」**。
+构建失败（内存、OOM、`Bus error`、小内存 VPS）见 **「十一、常见问题 → Web 构建与 VPS」**。
 
 ### 5.3 构建 Chrome 扩展
 
@@ -169,11 +169,9 @@ cd ~/tweetquote
 npm run start:web
 ```
 
-- 实际执行：`next start`
-- 监听地址：`http://localhost:3000`
+- 实际执行：`next start`（读取 `apps/web/.next/`，含 `static/`）
+- 默认可能只监听本机；VPS 对外提供服务时请配合下文设置 `HOSTNAME=0.0.0.0`
 - 默认端口 3000，可通过 `PORT` 环境变量覆盖
-
-若 Web 使用 **standalone** 包部署（见「十一、Web 构建与 VPS」），则不要在仓库根目录执行 `next start`，改为在解压后的 **`…/apps/web`** 目录执行 `node server.js`，并设置 `HOSTNAME=0.0.0.0`、`PORT`、`NODE_ENV=production`。
 
 ### 方式 B：使用 pm2（推荐）
 
@@ -187,8 +185,8 @@ cd ~/tweetquote
 # 启动 API（端口 8787）
 pm2 start npm --name "tweetquote-api" -- run start:api
 
-# 启动 Web（端口 3000）
-pm2 start npm --name "tweetquote-web" -- run start:web
+# 启动 Web（端口 3000；对外访问请绑定 0.0.0.0）
+HOSTNAME=0.0.0.0 PORT=3000 pm2 start npm --name "tweetquote-web" -- run start:web
 
 # 保存进程列表（重启服务器后自动恢复）
 pm2 save
@@ -196,6 +194,8 @@ pm2 save
 # 设置开机自启
 pm2 startup
 ```
+
+> **说明**：必须在 **仓库根** 执行 `npm run start:web`，workspace 才会正确解析到 `apps/web/.next`。若 pm2 里 Web 进程不是从仓库根启动，请 `pm2 delete tweetquote-web` 后按上文重新添加。
 
 #### pm2 常用命令
 
@@ -351,7 +351,7 @@ curl -X DELETE http://YOUR_PUBLIC_HOST:8787/api/v1/admin/session/{deviceId}/usag
 | 优先级 | 做法 | 说明 |
 |--------|------|------|
 | 1 | **升级 VPS 内存**（如 ≥ 2GB） | 最直接，同一台机上可继续 `npm install` + 构建 |
-| 2 | **异地构建 + 仅部署 Web 产物** | 本仓库 Web 已启用 **`output: 'standalone'`**；在大内存环境构建后，将 standalone 打成包上传到 VPS，**VPS 上可不跑完整 `npm install`** 即可跑前端（仅需 Node） |
+| 2 | **CI / 异地构建** | 在 **与 VPS 同架构的 Linux**（或 GitHub Actions Ubuntu）上完成 `npm install` + build；VPS 上 `git pull` 后再 `npm install` + build，或按 monorepo 结构同步产物。**勿**从 macOS/Windows 整目录拷贝 `node_modules` 到 Linux |
 | 3 | **Docker 多阶段构建** | 在 CI/本机构镜像，VPS 只拉镜像运行 |
 
 **`Bus error (core dumped)` / npm exit code 约 135**（构建阶段崩溃，未必在 dmesg 里先出现 OOM）：
@@ -361,27 +361,10 @@ curl -X DELETE http://YOUR_PUBLIC_HOST:8787/api/v1/admin/session/{deviceId}/usag
    或：`LD_PRELOAD="" NEXT_PUBLIC_API_BASE_URL=http://YOUR_PUBLIC_HOST:8787 npm run build -w @tweetquote/web`。
 2. 确认内存与 Swap；可尝试：  
    `NODE_OPTIONS='--max-old-space-size=4096' NEXT_PUBLIC_API_BASE_URL=http://YOUR_PUBLIC_HOST:8787 npm run build -w @tweetquote/web`。
-3. **勿将 macOS / Windows 上的 `node_modules` 整目录拷到 Linux**；应在目标 Linux 上执行 `npm install`，或改用 standalone/CI 在 **linux + 与 VPS 相同 CPU 架构** 下构建。
+3. **勿将 macOS / Windows 上的 `node_modules` 整目录拷到 Linux**；应在目标 Linux 上执行 `npm install`，或在 **与 VPS 相同 CPU 架构的 Linux / CI** 下完成构建后再部署。
 4. 核对 `uname -m` 与 Node 安装包架构一致；必要时在仓库根执行 `npm ls next @next/swc-linux-x64-gnu`（AMD64）或对应 ARM 包名排查。
 
-**standalone 部署概要**（与 VPS 架构一致的前提下，在构建机执行）：
-
-```bash
-npm install
-NEXT_PUBLIC_API_BASE_URL=http://YOUR_PUBLIC_HOST:8787 npm run build -w @tweetquote/web
-./scripts/package-web-standalone.sh
-cd apps/web/.next/standalone && tar czf ~/tweetquote-web-standalone.tar.gz .
-```
-
-上传到 VPS 解压后，在 **`…/apps/web`**（内含 `server.js`）执行：
-
-```bash
-HOSTNAME=0.0.0.0 PORT=3000 NODE_ENV=production node server.js
-```
-
-pm2 示例：`pm2 start server.js --name tweetquote-web --cwd /你的解压路径/apps/web`，并设置 `HOSTNAME`、`PORT`。
-
-**构建机与 VPS 的关系**：standalone 须在 **与生产相同的 Linux 架构**（如均为 `x86_64`）上构建；可用另一台 Linux、**GitHub Actions（Ubuntu）** 或 `docker build --platform linux/amd64`。**不要在 macOS 上装好依赖后直接拷 `node_modules` 到 Ubuntu**——与「是否 Ubuntu」无关，是操作系统不同导致原生模块不匹配。
+**构建机与生产环境**：请在 **与 VPS 相同的 Linux 架构**（如均为 `x86_64`）上构建；可用本机 Linux、**GitHub Actions（Ubuntu）** 或 `docker build --platform linux/amd64`。**不要在 macOS 上装好依赖后直接拷 `node_modules` 到 Ubuntu**──操作系统不同会导致原生模块（含 Next SWC）不匹配。
 
 **API**：若同一台小内存机对 API 执行 `npm install` 仍 OOM，可改为 CI 产出 `apps/api/dist` 与镜像/同步策略，或随 Web 一并升级内存。
 
@@ -402,6 +385,9 @@ pm2 restart tweetquote-api   # 或 delete 后按「六」重新 start
 
 **Q: Web 能打开但请求不到 API？**  
 构建 Web 时必须传入 `NEXT_PUBLIC_API_BASE_URL=http://YOUR_PUBLIC_HOST:8787`（构建时内联，运行时改环境变量无效）。修改后需重新 `npm run build -w @tweetquote/web` 并重启 Web。
+
+**Q: 控制台里 `GET /_next/static/chunks/xxxx.js` 报 500 或 ERR_ABORTED？**  
+多为 **未在仓库根重新构建** 或 **页面 HTML 与当前 `.next/static` 不一致**。请在 monorepo 根目录执行 `npm run build -w @tweetquote/web`，再 `pm2 restart tweetquote-web`，并确认存在 `apps/web/.next/static/chunks/`；浏览器 **硬性刷新** 或清理前置代理/CDN 缓存（避免缓存了引用旧 chunk 名的 HTML）。
 
 **Q: 如何更换 API 端口？**  
 启动时设置 `PORT`，并同步修改：`.env.local` 的 `PUBLIC_API_BASE_URL`、`apps/extension/.env.test` 的 `VITE_TWEETQUOTE_API_BASE_URL`，再重新构建 Web 与 Extension（`build:test`）。
