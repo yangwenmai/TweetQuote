@@ -270,9 +270,30 @@ export function nowIso() {
   return new Date().toISOString();
 }
 
+/**
+ * UUID v4. Uses `crypto.randomUUID` when available; otherwise falls back to
+ * `getRandomValues` so it works in non-secure browser contexts (e.g. `http://<LAN-IP>:3000`)
+ * where `randomUUID` is not exposed.
+ */
+export function randomUUID(): string {
+  const c = globalThis.crypto;
+  if (c && typeof c.randomUUID === "function") {
+    return c.randomUUID();
+  }
+  if (!c || typeof c.getRandomValues !== "function") {
+    throw new Error("tweetquote: crypto.getRandomValues is not available");
+  }
+  const buf = new Uint8Array(16);
+  c.getRandomValues(buf);
+  buf[6] = ((buf[6] ?? 0) & 0x0f) | 0x40;
+  buf[8] = ((buf[8] ?? 0) & 0x3f) | 0x80;
+  const hex = Array.from(buf, (b) => b.toString(16).padStart(2, "0")).join("");
+  return `${hex.slice(0, 8)}-${hex.slice(8, 12)}-${hex.slice(12, 16)}-${hex.slice(16, 20)}-${hex.slice(20)}`;
+}
+
 export function createEmptyNode(depth = 0): QuoteNode {
   return quoteNodeSchema.parse({
-    id: crypto.randomUUID(),
+    id: randomUUID(),
     relation: depth === 0 ? "root" : "quote",
     depth,
     author: {},
@@ -284,7 +305,7 @@ export function createEmptyNode(depth = 0): QuoteNode {
 export function createEmptyDocument(partial?: Partial<QuoteDocument>): QuoteDocument {
   const timestamp = nowIso();
   return quoteDocumentSchema.parse({
-    id: partial?.id ?? crypto.randomUUID(),
+    id: partial?.id ?? randomUUID(),
     title: partial?.title ?? "Untitled quote",
     status: partial?.status ?? "draft",
     nodes: partial?.nodes ?? [createEmptyNode(0)],
@@ -302,7 +323,7 @@ export function createDefaultQuota(overrides?: Partial<QuotaSnapshot>): QuotaSna
 export function createAnonymousSession(deviceId: string): AnonymousSession {
   return anonymousSessionSchema.parse({
     deviceId,
-    sessionId: crypto.randomUUID(),
+    sessionId: randomUUID(),
     quota: createDefaultQuota(),
     defaultRenderProvider: "none",
   });
@@ -315,7 +336,7 @@ export function normalizeLegacyRenderItems(
   const timestamp = nowIso();
   const nodes = items.map((item, index) =>
     quoteNodeSchema.parse({
-      id: String(item.id ?? crypto.randomUUID()),
+      id: String(item.id ?? randomUUID()),
       relation: index === 0 ? "root" : item._rel === "reply" ? "reply" : "quote",
       depth: index,
       sourceTweetId: String(item.id ?? ""),
