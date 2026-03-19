@@ -4,7 +4,10 @@
     "module": "CommonJS",
     "moduleResolution": "Node",
     "outDir": "dist",
-    "types": ["node"]
+    "rootDir": "src",
+    "types": ["node"],
+    "baseUrl": ".",
+    "paths": {}
   },
   "include": ["src/**/*.ts"]
 }
