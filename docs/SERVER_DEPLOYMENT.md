@@ -95,11 +95,17 @@ npm run db:push -w @tweetquote/api
 
 ### 5.1 构建 API
 
+API 依赖 workspace 包 `@tweetquote/domain`、`@tweetquote/telemetry`（运行时读其 `dist/`），需**先于或与 API 一并**构建。
+
 ```bash
-npm run build -w @tweetquote/api
+# 推荐：在仓库根目录一次性构建全部 workspace（含依赖顺序）
+npm run build
+
+# 或仅构建 API 及其直接依赖
+npm run build -w @tweetquote/domain -w @tweetquote/telemetry -w @tweetquote/api
 ```
 
-编译 TypeScript，产物输出到 `apps/api/dist/`。
+编译 TypeScript，入口产物为 `apps/api/dist/server.js`（与 `npm run start` 一致）。
 
 ### 5.2 构建 Web
 
@@ -167,6 +173,8 @@ npm run start:web
 ### 方式 B：使用 pm2（推荐）
 
 pm2 会在后台管理进程，崩溃自动重启，且支持开机自启。
+
+> **必须先构建 API**：`start:api` 会运行 `node apps/api/dist/server.js`。若未执行过「五、构建」中的 `npm run build -w @tweetquote/api`，会出现 `Cannot find module '.../dist/server.js'`。从 git 拉代码后 `dist/` 默认不存在，每次部署或换机都要先 build。
 
 ```bash
 cd ~/tweetquote
@@ -319,6 +327,19 @@ curl -X DELETE http://164.90.153.103:8787/api/v1/admin/session/{deviceId}/usage 
 ---
 
 ## 十一、常见问题
+
+**Q: pm2 报错 `Cannot find module '.../apps/api/dist/server.js'`？**  
+说明 API 尚未编译。在仓库根目录执行：
+
+```bash
+cd /path/to/TweetQuote   # 你的克隆路径，例如 /root/TweetQuote
+npm install
+npm run build   # 或：build domain、telemetry、api 三个 workspace，见「五、构建」
+ls apps/api/dist/server.js   # 应能列出文件
+pm2 restart tweetquote-api   # 或 pm2 delete tweetquote-api 后按文档重新 start
+```
+
+若仍失败，确认当前工作目录是** monorepo 根目录**（与根 `package.json` 同级），且未单独在 `apps/api` 里只跑 `npm run start` 却忘了在该包下执行 `npm run build`。
 
 **Q: Web 页面打开但请求不到 API？**  
 确认构建 Web 时是否传入了 `NEXT_PUBLIC_API_BASE_URL=http://164.90.153.103:8787`。此变量在构建时内联，运行时设置无效。需重新 build 后 restart。
