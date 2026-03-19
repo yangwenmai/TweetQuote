@@ -153,7 +153,9 @@ npm run start -w @tweetquote/web      # 运行 Web 生产构建
 
 ## 详细文档
 
-- [docs/LOCAL_DEVELOPMENT.md](docs/LOCAL_DEVELOPMENT.md) — **本地运行操作指引**
+- [docs/README.md](docs/README.md) — **文档索引**
+- [docs/LOCAL_DEVELOPMENT.md](docs/LOCAL_DEVELOPMENT.md) — 本地运行操作指引
+- [docs/SERVER_DEPLOYMENT.md](docs/SERVER_DEPLOYMENT.md) — 服务器部署与运维
 - [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) — 架构设计
 - [docs/FEATURES.md](docs/FEATURES.md) — 功能文档
 - [docs/DESIGN_BASELINE.md](docs/DESIGN_BASELINE.md) — 产品设计与交互基准

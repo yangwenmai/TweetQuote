@@ -159,8 +159,10 @@ ADMIN_TOKEN=your-secret-admin-token
 
 ### 8.2 查看设备配额详情
 
+`YOUR_DEVICE_ID` 一般为匿名会话返回的 `deviceId`（多以 `tq_` 开头）。
+
 ```bash
-curl http://localhost:8787/api/v1/admin/session/tq_02019b8468e044fb9b77b41c8a8c695d \
+curl "http://localhost:8787/api/v1/admin/session/YOUR_DEVICE_ID" \
   -H "x-admin-token: your-secret-admin-token"
 ```
 
@@ -173,7 +175,7 @@ curl http://localhost:8787/api/v1/admin/session/tq_02019b8468e044fb9b77b41c8a8c6
 curl -X POST http://localhost:8787/api/v1/admin/quota/override \
   -H "x-admin-token: your-secret-admin-token" \
   -H "Content-Type: application/json" \
-  -d '{"deviceId":"tq_02019b8468e044fb9b77b41c8a8c695d","bonusCredits":10,"note":"手动赠送"}'
+  -d '{"deviceId":"YOUR_DEVICE_ID","bonusCredits":10,"note":"手动赠送"}'
 ```
 
 ### 8.4 设置自定义日/周限额
@@ -183,7 +185,7 @@ curl -X POST http://localhost:8787/api/v1/admin/quota/override \
 curl -X POST http://localhost:8787/api/v1/admin/quota/override \
   -H "x-admin-token: your-secret-admin-token" \
   -H "Content-Type: application/json" \
-  -d '{"deviceId":"tq_02019b8468e044fb9b77b41c8a8c695d","dailyLimit":50,"weeklyLimit":200,"note":"VIP 用户"}'
+  -d '{"deviceId":"YOUR_DEVICE_ID","dailyLimit":50,"weeklyLimit":200,"note":"VIP 用户"}'
 ```
 
 恢复全局默认：把 `dailyLimit` / `weeklyLimit` 设为 `null`。
@@ -192,13 +194,13 @@ curl -X POST http://localhost:8787/api/v1/admin/quota/override \
 curl -X POST http://localhost:8787/api/v1/admin/quota/override \
   -H "x-admin-token: your-secret-admin-token" \
   -H "Content-Type: application/json" \
-  -d '{"deviceId":"tq_02019b8468e044fb9b77b41c8a8c695d","dailyLimit":null,"weeklyLimit":null}'
+  -d '{"deviceId":"YOUR_DEVICE_ID","dailyLimit":null,"weeklyLimit":null}'
 ```
 
 ### 8.5 清空设备用量
 
 ```bash
-curl -X DELETE http://localhost:8787/api/v1/admin/session/tq_02019b8468e044fb9b77b41c8a8c695d/usage \
+curl -X DELETE "http://localhost:8787/api/v1/admin/session/YOUR_DEVICE_ID/usage" \
   -H "x-admin-token: your-secret-admin-token"
 ```
 
@@ -234,6 +236,10 @@ curl -X DELETE http://localhost:8787/api/v1/admin/session/tq_02019b8468e044fb9b7
 
 ## 十、相关文档
 
-- [ARCHITECTURE.md](./ARCHITECTURE.md) — 架构设计  
+- [README.md](./README.md) — 文档索引  
+- [SERVER_DEPLOYMENT.md](./SERVER_DEPLOYMENT.md) — 生产部署  
+- [ARCHITECTURE.md](./ARCHITECTURE.md) — 架构与配额模型  
 - [FEATURES.md](./FEATURES.md) — 功能说明  
 - [DESIGN_BASELINE.md](./DESIGN_BASELINE.md) — 产品与交互设计  
+
+配额字段含义与解析逻辑详见 [ARCHITECTURE.md](./ARCHITECTURE.md)（与本文第八节互补）。

@@ -137,32 +137,6 @@ ADMIN_TOKEN=your-secret-admin-token
 
 ---
 
-## 文件结构
+## 仓库结构
 
-```
-tweetquote/
-├── apps/
-│   ├── api/             # Fastify API 服务
-│   │   ├── src/
-│   │   │   ├── server.ts        # 服务入口和路由
-│   │   │   └── lib/             # 环境配置、存储、翻译等
-│   │   └── prisma/
-│   │       └── schema.prisma    # 数据库 schema
-│   ├── web/             # Next.js Web 编辑器
-│   │   ├── app/                 # 页面路由
-│   │   └── components/editor/   # 编辑器组件
-│   └── extension/       # MV3 浏览器插件
-├── packages/
-│   ├── domain/          # 共享 schema 和领域模型
-│   ├── editor-core/     # 编辑命令和草稿工具
-│   ├── render-core/     # 预览摘要和渲染选择器
-│   ├── sdk/             # API 客户端和插件桥接类型
-│   ├── ui/              # 共享 UI 组件
-│   ├── config/          # 运行时配置和 feature flags
-│   └── telemetry/       # 日志和性能钩子
-├── landing/             # 营销落地页
-├── legacy/              # V1 旧版归档
-├── docs/                # 文档
-├── .env.local           # 环境变量（不提交）
-└── package.json         # Monorepo 根配置
-```
+目录树与包职责见仓库根目录 [README.md](../README.md)；更细的架构说明见 [ARCHITECTURE.md](./ARCHITECTURE.md)。
