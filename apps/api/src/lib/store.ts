@@ -28,7 +28,7 @@ export class TrialSessionStore {
       orderBy: { createdAt: "asc" },
       select: { createdAt: true },
     });
-    return events.map((item) => Math.floor(item.createdAt.getTime() / 1000));
+    return events.map((item: { createdAt: Date }) => Math.floor(item.createdAt.getTime() / 1000));
   }
 
   async getOrCreate(deviceId?: string): Promise<TrialSessionRecord> {

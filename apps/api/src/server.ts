@@ -94,17 +94,19 @@ app.options("*", async (_request, reply) => {
 });
 
 app.setErrorHandler((error, request, reply) => {
-  const statusCode = error instanceof ApiError ? error.statusCode : 500;
-  const message = error instanceof Error ? error.message : "Internal server error";
+  const err = error;
+  const statusCode = err instanceof ApiError ? err.statusCode : 500;
+  const message = err instanceof Error ? err.message : "Internal server error";
+  const errForStack = err instanceof Error ? err : undefined;
   logger.error("http", `Error handling ${request.method} ${request.url}: ${message}`, {
     statusCode,
-    detail: error instanceof ApiError ? error.detail : "",
-    stack: logger.isDev ? error.stack : undefined,
+    detail: err instanceof ApiError ? err.detail : "",
+    stack: logger.isDev ? errForStack?.stack : undefined,
   });
   trackEvent({ name: "api.error", level: "error", payload: { statusCode, message } });
   reply.code(statusCode).send({
     error: message,
-    detail: error instanceof ApiError ? error.detail : "",
+    detail: err instanceof ApiError ? err.detail : "",
   });
 });
 

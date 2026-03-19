@@ -47,4 +47,6 @@ export const apiEnv = {
   adminToken: process.env.ADMIN_TOKEN || localEnv.ADMIN_TOKEN || "",
   dailyTrialLimit: 3,
   weeklyTrialLimit: 20,
+  /** Absolute path to SQLite file when DATABASE_URL is unset (dev default). */
+  sqliteDbPath: path.join(repoRoot, "apps", "api", "prisma", "dev.db"),
 };
