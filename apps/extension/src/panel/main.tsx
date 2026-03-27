@@ -19,6 +19,7 @@ import {
   updateDocumentLanguage,
   updateDocumentScale,
   updateDocumentTranslationDisplay,
+  updateNodeMediaFromText,
 } from "@tweetquote/editor-core";
 import { getDocumentSummary } from "@tweetquote/render-core";
 
@@ -68,7 +69,12 @@ function createBackgroundFetch(): typeof globalThis.fetch {
             reject(new Error("No response from background script"));
             return;
           }
-          resolve(new Response(response.body, { status: response.status || 0, headers: { "Content-Type": "application/json" } }));
+          if (response.error || !response.status) {
+            reject(new Error(response.error || `Background fetch failed for ${url}`));
+            return;
+          }
+          const status = response.status >= 200 && response.status <= 599 ? response.status : 502;
+          resolve(new Response(response.body, { status, headers: { "Content-Type": "application/json" } }));
         },
       );
     });
@@ -163,6 +169,9 @@ function getUiStrings(language: AppLanguage, quota: QuotaSnapshot | null) {
           const rel = relation === "root" ? "Root" : relation === "reply" ? "Reply" : "Quote";
           return `Layer ${index + 1}: ${rel} · ${author}`;
         },
+        mediaSectionTitle: "Images (preview & export)",
+        mediaLayerLabel: (index: number) => `Layer ${index + 1}`,
+        mediaPlaceholder: "https://… (one per line)",
       }
     : {
         switchLanguage: "EN",
@@ -226,6 +235,9 @@ function getUiStrings(language: AppLanguage, quota: QuotaSnapshot | null) {
           const rel = relation === "root" ? "主推文" : relation === "reply" ? "回复" : "引用";
           return `第 ${index + 1} 层：${rel} · ${author}`;
         },
+        mediaSectionTitle: "图片（预览与导出）",
+        mediaLayerLabel: (index: number) => `第 ${index + 1} 层`,
+        mediaPlaceholder: "每行一条 https://…",
       };
 }
 
@@ -321,7 +333,9 @@ function PanelApp() {
   const [message, setMessage] = useState("");
 
   const documentSummary = useMemo(() => getDocumentSummary(document), [document]);
-  const hasContent = document.nodes.some((node) => node.content.trim() || node.translation.text.trim());
+  const hasContent = document.nodes.some(
+    (node) => node.content.trim() || node.translation.text.trim() || (node.media && node.media.length > 0),
+  );
   const translationTotal = document.nodes.filter((node) => node.content.trim()).length;
   const translationDone = document.nodes.filter((node) => node.translation.text.trim()).length;
   const hasTranslatableContent = translationTotal > 0;
@@ -351,6 +365,10 @@ function PanelApp() {
       setQuota(session.quota);
       setSessionReady(true);
       window.localStorage.setItem(storageKeys.extensionDeviceId, session.deviceId);
+    }).catch((err: Error) => {
+      setMessage(initialLanguage === "en"
+        ? `Cannot reach API server (${err.message}). Make sure the API is running.`
+        : `无法连接 API 服务 (${err.message})，请确认 API 已启动。`);
     });
   }, []);
 
@@ -730,6 +748,44 @@ function PanelApp() {
           </div>
         </div>
 
+        {document.nodes.length > 0 ? (
+          <div
+            style={{
+              background: "#fff",
+              border: `1px solid ${designTokens.colors.border}`,
+              borderRadius: 16,
+              padding: 14,
+              display: "grid",
+              gap: 10,
+            }}
+          >
+            <div style={{ fontSize: 13, fontWeight: 700, color: designTokens.colors.muted }}>{ui.mediaSectionTitle}</div>
+            {document.nodes.map((node, index) => (
+              <label key={node.id} style={{ display: "grid", gap: 6 }}>
+                <span style={{ fontSize: 12, color: designTokens.colors.muted }}>{ui.mediaLayerLabel(index)}</span>
+                <textarea
+                  value={(node.media ?? []).join("\n")}
+                  onChange={(event) => setDocument((current) => updateNodeMediaFromText(current, index, event.target.value))}
+                  rows={2}
+                  placeholder={ui.mediaPlaceholder}
+                  spellCheck={false}
+                  style={{
+                    width: "100%",
+                    boxSizing: "border-box",
+                    fontSize: 12,
+                    lineHeight: 1.4,
+                    padding: "8px 10px",
+                    borderRadius: 10,
+                    border: `1px solid ${designTokens.colors.border}`,
+                    fontFamily: "ui-monospace, monospace",
+                    resize: "vertical",
+                  }}
+                />
+              </label>
+            ))}
+          </div>
+        ) : null}
+
         {/* Preview Card */}
         <div
           style={{
@@ -771,7 +827,7 @@ function PanelApp() {
             {hasContent ? previewSummary : ui.previewEmpty}
           </div>
           <div ref={previewRef}>
-            <QuotePreview document={document} />
+            <QuotePreview document={document} mediaProxyBaseUrl={apiBaseUrl} />
           </div>
           <a
             href={webEditorBaseUrl}

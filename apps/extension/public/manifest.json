@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
   "name": "TweetQuote Next",
-  "version": "0.2.0",
-  "description": "Open the current X/Twitter conversation in the new TweetQuote editor.",
+  "version": "0.3.0",
+  "description": "Turn any X/Twitter quote chain into a beautiful, shareable image — with translation, AI annotations, and inline tweet images.",
   "permissions": ["storage"],
   "host_permissions": ["https://x.com/*", "https://twitter.com/*", "https://tweetquote.app/*"],
   "background": {
