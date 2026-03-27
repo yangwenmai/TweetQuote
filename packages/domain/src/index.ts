@@ -329,13 +329,77 @@ export function createAnonymousSession(deviceId: string): AnonymousSession {
   });
 }
 
+function readExtendedMediaArray(item: Record<string, unknown>): unknown[] {
+  const fromExt = (ext: Record<string, unknown> | undefined): unknown[] =>
+    ext && Array.isArray(ext.media) ? ext.media : [];
+
+  let media = fromExt(item.extendedEntities as Record<string, unknown> | undefined);
+  if (media.length === 0) {
+    media = fromExt(item.extended_entities as Record<string, unknown> | undefined);
+  }
+  if (media.length === 0) {
+    const legacy = item.legacy as Record<string, unknown> | undefined;
+    if (legacy) {
+      media = fromExt(legacy.extended_entities as Record<string, unknown> | undefined);
+      if (media.length === 0) {
+        media = fromExt(legacy.extendedEntities as Record<string, unknown> | undefined);
+      }
+    }
+  }
+  if (media.length === 0) {
+    const entities = item.entities as Record<string, unknown> | undefined;
+    if (entities && Array.isArray(entities.media)) {
+      media = entities.media;
+    }
+  }
+  return media;
+}
+
+function mediaItemToImageUrl(m: Record<string, unknown>): string {
+  const type = String(m.type ?? "");
+  if (type === "photo" || type === "animated_gif" || type === "video") {
+    return String(m.media_url_https ?? "");
+  }
+  return "";
+}
+
+function extractMediaUrls(item: Record<string, unknown>): string[] {
+  const mediaArr = readExtendedMediaArray(item);
+  return mediaArr
+    .filter((m): m is Record<string, unknown> => typeof m === "object" && m !== null)
+    .map((m) => mediaItemToImageUrl(m))
+    .filter((url) => url.length > 0);
+}
+
+function collectMediaTcoUrls(item: Record<string, unknown>): string[] {
+  const mediaArr = readExtendedMediaArray(item);
+  return mediaArr
+    .filter((m): m is Record<string, unknown> => typeof m === "object" && m !== null)
+    .map((m) => String(m.url ?? ""))
+    .filter((url) => url.length > 0);
+}
+
+function stripMediaTcoLinks(text: string, tcoUrls: string[]): string {
+  if (tcoUrls.length === 0) return text;
+  let result = text;
+  for (const tco of tcoUrls) {
+    result = result.replace(tco, "");
+  }
+  return result.trim();
+}
+
 export function normalizeLegacyRenderItems(
   items: Array<Record<string, unknown>>,
   source: SourceKind = "web",
 ): QuoteDocument {
   const timestamp = nowIso();
-  const nodes = items.map((item, index) =>
-    quoteNodeSchema.parse({
+  const nodes = items.map((item, index) => {
+    const mediaUrls = extractMediaUrls(item);
+    const tcoUrls = collectMediaTcoUrls(item);
+    const rawText = String(item.text ?? "");
+    const content = stripMediaTcoLinks(rawText, tcoUrls);
+
+    return quoteNodeSchema.parse({
       id: String(item.id ?? randomUUID()),
       relation: index === 0 ? "root" : item._rel === "reply" ? "reply" : "quote",
       depth: index,
@@ -345,17 +409,18 @@ export function normalizeLegacyRenderItems(
         handle: String((item.author as Record<string, unknown> | undefined)?.userName ?? ""),
         avatarUrl: String((item.author as Record<string, unknown> | undefined)?.profilePicture ?? ""),
       },
-      content: String(item.text ?? ""),
+      content,
       createdAt: String(item.createdAt ?? ""),
       viewCount: typeof item.viewCount === "number" ? item.viewCount : null,
+      media: mediaUrls,
       translation: {
         provider: item.translatedContent ? "ai" : "none",
         status: item.translatedContent ? "success" : "idle",
         text: String(item.translatedContent ?? ""),
         annotations: Array.isArray(item.annotations) ? item.annotations : [],
       },
-    }),
-  );
+    });
+  });
 
   return createEmptyDocument({
     title: nodes[0]?.content.slice(0, 32) || "Imported quote",
