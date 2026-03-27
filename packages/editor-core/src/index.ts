@@ -98,6 +98,26 @@ export function updateDocumentTranslationDisplay(document: QuoteDocument, transl
   });
 }
 
+/** One HTTPS URL per line; invalid lines are skipped. Parsed URLs must pass `quoteNodeSchema.media`. */
+export function updateNodeMediaFromText(document: QuoteDocument, index: number, raw: string): QuoteDocument {
+  const lines = raw.split(/\r?\n/).map((l) => l.trim()).filter(Boolean);
+  const urls: string[] = [];
+  for (const line of lines) {
+    try {
+      const u = new URL(line);
+      if (u.protocol !== "http:" && u.protocol !== "https:") continue;
+      urls.push(u.href);
+    } catch {
+      continue;
+    }
+  }
+  return quoteDocumentSchema.parse({
+    ...document,
+    nodes: document.nodes.map((node, nodeIndex) => (nodeIndex === index ? { ...node, media: urls } : node)),
+    updatedAt: nowIso(),
+  });
+}
+
 export function updateNodeField(
   document: QuoteDocument,
   index: number,
