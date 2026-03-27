@@ -24,6 +24,13 @@ function loadEnvFile(filepath: string) {
     }, {});
 }
 
+/** True when value is 1, true, yes, or on (case-insensitive). Empty is false. */
+function parseEnvBool(processVal: string | undefined, localVal: string | undefined): boolean {
+  const raw = (processVal ?? localVal ?? "").trim().toLowerCase();
+  if (!raw) return false;
+  return raw === "1" || raw === "true" || raw === "yes" || raw === "on";
+}
+
 const repoRoot = fs.existsSync(path.join(process.cwd(), "apps", "api", "prisma", "schema.prisma"))
   ? process.cwd()
   : path.resolve(process.cwd(), "../..");
@@ -45,8 +52,15 @@ export const apiEnv = {
     .filter(Boolean),
   supportUrl: process.env.SUPPORT_CONTACT_URL || "https://x.com/maiyangai",
   adminToken: process.env.ADMIN_TOKEN || localEnv.ADMIN_TOKEN || "",
-  dailyTrialLimit: 3,
-  weeklyTrialLimit: 20,
+  /** When true (see `parseEnvBool`), `fetchTweetById` logs full upstream tweet JSON (truncated, redacted) at debug level. */
+  twitterLogFullTweetJson: parseEnvBool(process.env.TWITTER_LOG_FULL_TWEET_JSON, localEnv.TWITTER_LOG_FULL_TWEET_JSON),
+  /**
+   * When true, hosted Twitter/AI usage is not counted and `requiresUpgrade` is never set (local dev / self-hosted).
+   * Does not affect users who pass their own `apiKey` / `aiApiKey` (those paths were already unlimited for "own key").
+   */
+  disableHostedQuota: parseEnvBool(process.env.TWEETQUOTE_DISABLE_HOSTED_QUOTA, localEnv.TWEETQUOTE_DISABLE_HOSTED_QUOTA),
+  dailyTrialLimit: Math.max(1, Number(process.env.TWEETQUOTE_DAILY_TRIAL_LIMIT ?? localEnv.TWEETQUOTE_DAILY_TRIAL_LIMIT ?? 3)) || 3,
+  weeklyTrialLimit: Math.max(1, Number(process.env.TWEETQUOTE_WEEKLY_TRIAL_LIMIT ?? localEnv.TWEETQUOTE_WEEKLY_TRIAL_LIMIT ?? 20)) || 20,
   /** Absolute path to SQLite file when DATABASE_URL is unset (dev default). */
   sqliteDbPath: path.join(repoRoot, "apps", "api", "prisma", "dev.db"),
 };

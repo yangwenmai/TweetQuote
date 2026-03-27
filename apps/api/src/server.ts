@@ -202,6 +202,7 @@ app.get("/api/v1/assets/image", async (request, reply) => {
 
   reply.header("Content-Type", contentType);
   reply.header("Cache-Control", "public, max-age=3600");
+  reply.header("Access-Control-Allow-Origin", "*");
   return reply.send(buffer);
 });
 
@@ -251,7 +252,7 @@ app.post("/api/v1/quote/fetch", async (request, reply) => {
     return { error: "Free trial exhausted", quota };
   }
   const result = await buildDocumentFromQuoteRequest(payload, quota);
-  if (hostedRender) {
+  if (hostedRender && !apiEnv.disableHostedQuota) {
     await sessionStore.increment(deviceId);
   }
   return {
@@ -470,7 +471,7 @@ app.post("/api/quote-chain/render", async (request, reply) => {
   }
 
   const result = await buildDocumentFromQuoteRequest(payload, quota);
-  if (hostedRender) {
+  if (hostedRender && !apiEnv.disableHostedQuota) {
     await sessionStore.increment(deviceId);
   }
   return {

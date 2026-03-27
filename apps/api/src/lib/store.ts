@@ -79,6 +79,22 @@ export class TrialSessionStore {
   }
 
   async getQuotaSnapshot(deviceId: string): Promise<QuotaSnapshot> {
+    if (apiEnv.disableHostedQuota) {
+      const d = apiEnv.dailyTrialLimit;
+      const w = apiEnv.weeklyTrialLimit;
+      return createDefaultQuota({
+        dailyRemaining: d,
+        weeklyRemaining: w,
+        dailyTotal: d,
+        weeklyTotal: w,
+        requiresUpgrade: false,
+        exhaustedReason: "",
+        nextDailyResetAt: 0,
+        nextWeeklyResetAt: 0,
+        hostedAiAvailable: Boolean(apiEnv.aiApiKey),
+        hostedTwitterAvailable: Boolean(apiEnv.twitterApiKey),
+      });
+    }
     await this.getOrCreate(deviceId);
     const now = Math.floor(Date.now() / 1000);
     const dailyCutoff = new Date((now - DAY_SECONDS) * 1000);
