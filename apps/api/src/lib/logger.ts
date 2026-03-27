@@ -1,3 +1,5 @@
+import { redactForLog } from "./redact";
+
 const isDev = process.env.NODE_ENV !== "production";
 
 type LogLevel = "debug" | "info" | "warn" | "error";
@@ -16,7 +18,8 @@ function ts() {
 function fmt(level: LogLevel, tag: string, msg: string, extra?: Record<string, unknown>) {
   const base = `[${ts()}] [${level.toUpperCase()}] [${tag}] ${msg}`;
   if (extra && Object.keys(extra).length > 0) {
-    return `${base} ${JSON.stringify(extra)}`;
+    const safe = redactForLog(extra) as Record<string, unknown>;
+    return `${base} ${JSON.stringify(safe)}`;
   }
   return base;
 }

@@ -13,6 +13,20 @@ import {
 } from "@tweetquote/domain";
 import { apiEnv } from "./env";
 import { logger } from "./logger";
+import { redactForLog, safeJsonForLog } from "./redact";
+
+const TWITTER_FULL_JSON_LOG_MAX_CHARS = 12000;
+
+function summarizeMediaUrlsForLog(t: Record<string, unknown>): string[] {
+  const ext = t.extendedEntities ?? t.extended_entities;
+  if (!ext || typeof ext !== "object" || !Array.isArray((ext as Record<string, unknown>).media)) {
+    return [];
+  }
+  return ((ext as Record<string, unknown>).media as unknown[])
+    .filter((m): m is Record<string, unknown> => typeof m === "object" && m !== null)
+    .map((m) => String(m.media_url_https ?? ""))
+    .filter(Boolean);
+}
 
 const MAX_CHAIN_DEPTH = 10;
 const MAX_ANNOTATIONS = 5;
@@ -52,7 +66,7 @@ async function fetchJson(url: string, init?: RequestInit) {
   const response = await fetch(url, init);
   const data = await response.json().catch(() => ({}));
   if (!response.ok) {
-    throw new ApiError(response.status, `Upstream request failed (${response.status})`, JSON.stringify(data).slice(0, 400));
+    throw new ApiError(response.status, `Upstream request failed (${response.status})`, safeJsonForLog(data, 400));
   }
   return data as Record<string, unknown>;
 }
@@ -74,7 +88,41 @@ async function fetchTweetById(tweetId: string, apiKey: string) {
   if (!tweet || typeof tweet !== "object") {
     throw new ApiError(404, "Tweet not found");
   }
-  return tweet as Record<string, unknown>;
+  const t = tweet as Record<string, unknown>;
+  const ext = t.extendedEntities ?? t.extended_entities;
+  const extMedia =
+    ext && typeof ext === "object" && Array.isArray((ext as Record<string, unknown>).media)
+      ? ((ext as Record<string, unknown>).media as unknown[]).length
+      : 0;
+  const legacy = t.legacy as Record<string, unknown> | undefined;
+  const legacyExt = legacy?.extended_entities ?? legacy?.extendedEntities;
+  const legacyMedia =
+    legacyExt && typeof legacyExt === "object" && Array.isArray((legacyExt as Record<string, unknown>).media)
+      ? ((legacyExt as Record<string, unknown>).media as unknown[]).length
+      : 0;
+  logger.debug("twitter", `fetchTweetById ${tweetId}`, {
+    topKeys: Object.keys(t),
+    extendedMediaCount: extMedia,
+    legacyExtendedMediaCount: legacyMedia,
+  });
+  if (apiEnv.twitterLogFullTweetJson) {
+    const redacted = redactForLog(t) as Record<string, unknown>;
+    let pretty = JSON.stringify(redacted, null, 2);
+    if (pretty.length > TWITTER_FULL_JSON_LOG_MAX_CHARS) {
+      pretty = `${pretty.slice(0, TWITTER_FULL_JSON_LOG_MAX_CHARS)}…`;
+    }
+    const mediaUrls = summarizeMediaUrlsForLog(t);
+    logger.debug(
+      "twitter",
+      `fetchTweetById ${tweetId} full JSON (redacted, max ${TWITTER_FULL_JSON_LOG_MAX_CHARS} chars)\n${pretty}`,
+      {
+        prettyChars: pretty.length,
+        mediaUrlCount: mediaUrls.length,
+        mediaUrls,
+      },
+    );
+  }
+  return t;
 }
 
 export async function resolveQuoteChain(tweetId: string, apiKey: string) {
@@ -103,10 +151,9 @@ export async function resolveQuoteChain(tweetId: string, apiKey: string) {
     }
 
     visited.add(nextId);
-    const nextTweet =
-      relation === "quote" && quoted?.text && quoted?.author
-        ? ({ ...quoted, _rel: relation } as Record<string, unknown>)
-        : ({ ...(await fetchTweetById(nextId, apiKey)), _rel: relation } as Record<string, unknown>);
+    // Always fetch by id so we get full payloads (extendedEntities / media). Embedded
+    // `quoted_tweet` objects are often truncated and omit media.
+    const nextTweet = { ...(await fetchTweetById(nextId, apiKey)), _rel: relation } as Record<string, unknown>;
     chain.push(nextTweet);
     current = nextTweet;
   }
@@ -235,9 +282,9 @@ export async function translateWithAi(
 
   if (!response.ok) {
     logger.error("ai", `LLM API returned ${response.status} (${elapsed}ms)`, {
-      detail: JSON.stringify(data).slice(0, 400),
+      detail: safeJsonForLog(data, 400),
     });
-    throw new ApiError(response.status, "AI translation failed", JSON.stringify(data).slice(0, 400));
+    throw new ApiError(response.status, "AI translation failed", safeJsonForLog(data, 400));
   }
 
   logger.debug("ai", `LLM API responded (${elapsed}ms)`, {
