@@ -356,7 +356,23 @@ function AnnotatedText({
   return <>{segments}</>;
 }
 
-export function QuotePreview({ document }: { document: QuoteDocument }) {
+/** Load tweet media via API proxy so images render without Twitter CDN CORS issues and html-to-image can export. */
+function resolveTweetMediaSrc(originalUrl: string, mediaProxyBaseUrl?: string): string {
+  const trimmed = mediaProxyBaseUrl?.trim();
+  if (!trimmed) return originalUrl;
+  const base = trimmed.replace(/\/$/, "");
+  return `${base}/api/v1/assets/image?url=${encodeURIComponent(originalUrl)}`;
+}
+
+export function QuotePreview({
+  document,
+  mediaProxyBaseUrl,
+}: {
+  document: QuoteDocument;
+  /** When set (e.g. API origin), attachment images use `/api/v1/assets/image?url=` — required for display + PNG export when CDN omits CORS. */
+  mediaProxyBaseUrl?: string;
+}) {
+  const useMediaProxy = Boolean(mediaProxyBaseUrl?.trim());
   return (
     <div style={{ display: "grid", gap: 12 }}>
       {document.nodes.map((node) => {
@@ -430,7 +446,6 @@ export function QuotePreview({ document }: { document: QuoteDocument }) {
                     alt={node.author.name || "avatar"}
                     width={40}
                     height={40}
-                    crossOrigin="anonymous"
                     referrerPolicy="no-referrer"
                     style={{ borderRadius: "999px", objectFit: "cover", flexShrink: 0 }}
                   />
@@ -493,6 +508,35 @@ export function QuotePreview({ document }: { document: QuoteDocument }) {
                   primaryText
                 )}
               </div>
+              {node.media && node.media.length > 0 && (
+                <div
+                  style={{
+                    marginTop: 10,
+                    display: "grid",
+                    gridTemplateColumns: node.media.length === 1 ? "1fr" : "1fr 1fr",
+                    gap: 4,
+                    borderRadius: 12,
+                    overflow: "hidden",
+                  }}
+                >
+                  {node.media.map((url, idx) => (
+                    <img
+                      key={`${node.id}-media-${idx}`}
+                      src={resolveTweetMediaSrc(url, mediaProxyBaseUrl)}
+                      alt=""
+                      {...(useMediaProxy ? { crossOrigin: "anonymous" as const } : {})}
+                      referrerPolicy="no-referrer"
+                      style={{
+                        width: "100%",
+                        display: "block",
+                        objectFit: "cover",
+                        maxHeight: node.media.length === 1 ? 320 : 200,
+                        borderRadius: node.media.length === 1 ? 12 : 0,
+                      }}
+                    />
+                  ))}
+                </div>
+              )}
               {(node.createdAt || node.viewCount !== null) && (
                 <div
                   style={{
