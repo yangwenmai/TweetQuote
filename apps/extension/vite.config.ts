@@ -16,14 +16,7 @@ export default defineConfig(({ mode }) => ({
     },
   ],
   resolve: {
-    alias: {
-      "@tweetquote/config": path.resolve(__dirname, "../../packages/config/src"),
-      "@tweetquote/domain": path.resolve(__dirname, "../../packages/domain/src"),
-      "@tweetquote/editor-core": path.resolve(__dirname, "../../packages/editor-core/src"),
-      "@tweetquote/render-core": path.resolve(__dirname, "../../packages/render-core/src"),
-      "@tweetquote/sdk": path.resolve(__dirname, "../../packages/sdk/src"),
-      "@tweetquote/ui": path.resolve(__dirname, "../../packages/ui/src"),
-    },
+    /* packages now export src/index.ts directly via package.json exports — no alias needed */
   },
   build: {
     outDir: "dist",
