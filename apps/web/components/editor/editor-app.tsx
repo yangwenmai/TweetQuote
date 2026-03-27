@@ -23,6 +23,7 @@ import {
   updateDocumentTranslationDisplay,
   updateDocumentTitle,
   updateNodeField,
+  updateNodeMediaFromText,
 } from "@tweetquote/editor-core";
 import { getDocumentSummary } from "@tweetquote/render-core";
 import { TweetQuoteApiClient } from "@tweetquote/sdk";
@@ -209,7 +210,12 @@ export function EditorApp() {
 
   const documentSummary = useMemo(() => getDocumentSummary(document), [document]);
   const hasContent = document.nodes.some(
-    (node) => node.content.trim() || node.author.name.trim() || node.author.handle.trim() || node.translation.text.trim(),
+    (node) =>
+      node.content.trim() ||
+      node.author.name.trim() ||
+      node.author.handle.trim() ||
+      node.translation.text.trim() ||
+      (node.media && node.media.length > 0),
   );
   const translationTotal = document.nodes.filter((node) => node.content.trim()).length;
   const translationDone = document.nodes.filter((node) => node.translation.text.trim()).length;
@@ -255,6 +261,8 @@ export function EditorApp() {
           createdAt: "Date",
           viewCount: "Views",
           content: "Tweet Content",
+          mediaImageUrls: "Image URLs",
+          mediaImageUrlsHint: "One HTTPS URL per line (from fetch or paste). Shown in preview and export.",
           translateGoogle: "Google Translate",
           translateAi: "AI Translate",
           translationResult: "Translation Result",
@@ -333,6 +341,8 @@ export function EditorApp() {
           createdAt: "日期",
           viewCount: "浏览量",
           content: "推文内容",
+          mediaImageUrls: "图片链接",
+          mediaImageUrlsHint: "每行一条 HTTPS 图片地址（抓取会自动填入，也可手动增删）。会显示在预览与导出图中。",
           translateGoogle: "Google 翻译",
           translateAi: "AI 翻译",
           translationResult: "翻译结果",
@@ -603,6 +613,10 @@ export function EditorApp() {
     setDocument((current) => updateNodeField(current, index, key, value));
   }
 
+  function updateNodeMedia(index: number, raw: string) {
+    setDocument((current) => updateNodeMediaFromText(current, index, raw));
+  }
+
   function addLayer() {
     setDocument((current) => appendLayer(current));
   }
@@ -861,6 +875,18 @@ export function EditorApp() {
                         <span>{ui.content}</span>
                         <textarea value={node.content} onChange={(event) => updateNode(index, "content", event.target.value)} />
                       </label>
+                      <label className="field">
+                        <span>{ui.mediaImageUrls}</span>
+                        <span className="muted" style={{ fontSize: 12, fontWeight: 400, display: "block", marginBottom: 4 }}>
+                          {ui.mediaImageUrlsHint}
+                        </span>
+                        <textarea
+                          rows={3}
+                          placeholder="https://pbs.twimg.com/media/..."
+                          value={(node.media ?? []).join("\n")}
+                          onChange={(event) => updateNodeMedia(index, event.target.value)}
+                        />
+                      </label>
                       <div className="row">
                         <Button
                           tone="ghost"
@@ -980,7 +1006,7 @@ export function EditorApp() {
                 </div>
                 {hasContent ? (
                   <div ref={previewRef}>
-                    <QuotePreview document={document} />
+                    <QuotePreview document={document} mediaProxyBaseUrl={apiBaseUrl} />
                   </div>
                 ) : (
                   <div
