@@ -12,6 +12,29 @@ chrome.runtime.onMessage.addListener((message, _sender, sendResponse) => {
     return;
   }
 
+  if (message?.type === "tweetquote.image-proxy") {
+    const { url } = message;
+    fetch(url)
+      .then(async (res) => {
+        if (!res.ok) {
+          sendResponse({ error: `HTTP ${res.status}` });
+          return;
+        }
+        const contentType = res.headers.get("content-type") || "image/jpeg";
+        const buffer = await res.arrayBuffer();
+        const bytes = new Uint8Array(buffer);
+        let binary = "";
+        for (let i = 0; i < bytes.length; i++) {
+          binary += String.fromCharCode(bytes[i]!);
+        }
+        sendResponse({ dataUrl: `data:${contentType};base64,${btoa(binary)}` });
+      })
+      .catch((err) => {
+        sendResponse({ error: String(err) });
+      });
+    return true;
+  }
+
   if (message?.type === "tweetquote.api-proxy") {
     const { url, init } = message;
     fetch(url, {
