@@ -26,6 +26,77 @@ import { getDocumentSummary } from "@tweetquote/render-core";
 const apiBaseUrl =
   import.meta.env.VITE_TWEETQUOTE_API_BASE_URL?.trim() ||
   (import.meta.env.MODE === "development" ? "http://localhost:8787" : "https://tweetquote.app");
+
+function resolveMediaProxySrc(originalUrl: string): string {
+  const base = apiBaseUrl.replace(/\/$/, "");
+  return `${base}/api/v1/assets/image?url=${encodeURIComponent(originalUrl)}`;
+}
+
+function waitForImages(container: HTMLElement): Promise<void> {
+  const images = Array.from(container.querySelectorAll("img"));
+  return Promise.all(
+    images.map((img) => {
+      if (img.complete && img.naturalWidth > 0) return Promise.resolve();
+      return new Promise<void>((resolve) => {
+        const done = () => resolve();
+        img.addEventListener("load", done, { once: true });
+        img.addEventListener("error", done, { once: true });
+      });
+    }),
+  ).then(() => undefined);
+}
+
+/**
+ * Fetch an image through the background service worker to bypass Mixed Content
+ * restrictions (the panel iframe lives on https://x.com but the API may be HTTP).
+ * Returns a self-contained data:image/… URL.
+ */
+function fetchImageViaBackground(url: string): Promise<string> {
+  return new Promise((resolve, reject) => {
+    chrome.runtime.sendMessage({ type: "tweetquote.image-proxy", url }, (response) => {
+      if (chrome.runtime.lastError) {
+        reject(new Error(chrome.runtime.lastError.message ?? "image proxy failed"));
+        return;
+      }
+      if (!response || response.error) {
+        reject(new Error(response?.error || "image proxy failed"));
+        return;
+      }
+      resolve(response.dataUrl);
+    });
+  });
+}
+
+/**
+ * Resolves all media URLs in the document to data URLs via the background proxy.
+ * Returns a Map<originalUrl, dataUrl> that updates as images finish loading.
+ */
+function useResolvedMediaUrls(doc: QuoteDocument): Map<string, string> {
+  const cacheRef = useRef(new Map<string, string>());
+  const pendingRef = useRef(new Set<string>());
+  const [, bump] = useState(0);
+
+  useEffect(() => {
+    if (!useBackgroundProxy) return;
+    const allUrls = [...new Set(doc.nodes.flatMap((n) => n.media ?? []).filter(Boolean))];
+    for (const url of allUrls) {
+      if (cacheRef.current.has(url) || pendingRef.current.has(url)) continue;
+      pendingRef.current.add(url);
+      fetchImageViaBackground(resolveMediaProxySrc(url))
+        .then((dataUrl) => {
+          cacheRef.current.set(url, dataUrl);
+          bump((n) => n + 1);
+        })
+        .catch(() => {})
+        .finally(() => {
+          pendingRef.current.delete(url);
+        });
+    }
+  }, [doc.nodes]);
+
+  return cacheRef.current;
+}
+
 const runtimeEnv = globalThis as typeof globalThis & { __TQ_ENV__?: Record<string, string | undefined> };
 runtimeEnv.__TQ_ENV__ = {
   ...(runtimeEnv.__TQ_ENV__ || {}),
@@ -332,6 +403,18 @@ function PanelApp() {
   const ui = useMemo(() => getUiStrings(language, quota), [language, quota]);
   const [message, setMessage] = useState("");
 
+  const mediaCache = useResolvedMediaUrls(document);
+  const displayDocument = useMemo<QuoteDocument>(() => {
+    if (mediaCache.size === 0) return document;
+    return {
+      ...document,
+      nodes: document.nodes.map((node) => ({
+        ...node,
+        media: (node.media ?? []).map((url) => mediaCache.get(url) ?? url),
+      })),
+    };
+  }, [document, mediaCache]);
+
   const documentSummary = useMemo(() => getDocumentSummary(document), [document]);
   const hasContent = document.nodes.some(
     (node) => node.content.trim() || node.translation.text.trim() || (node.media && node.media.length > 0),
@@ -520,6 +603,7 @@ function PanelApp() {
       if (!previewRef.current) {
         throw new Error(ui.messageExportNoPreview);
       }
+      await waitForImages(previewRef.current);
       const { toBlob } = await import("html-to-image");
       const blob = await toBlob(previewRef.current, {
         pixelRatio: Math.max(1, document.renderSpec.exportScale),
@@ -761,7 +845,7 @@ function PanelApp() {
           >
             <div style={{ fontSize: 13, fontWeight: 700, color: designTokens.colors.muted }}>{ui.mediaSectionTitle}</div>
             {document.nodes.map((node, index) => (
-              <label key={node.id} style={{ display: "grid", gap: 6 }}>
+              <div key={node.id} style={{ display: "grid", gap: 6 }}>
                 <span style={{ fontSize: 12, color: designTokens.colors.muted }}>{ui.mediaLayerLabel(index)}</span>
                 <textarea
                   value={(node.media ?? []).join("\n")}
@@ -781,7 +865,30 @@ function PanelApp() {
                     resize: "vertical",
                   }}
                 />
-              </label>
+                {(node.media ?? []).length > 0 && (
+                  <div style={{ display: "flex", gap: 6, flexWrap: "wrap" }}>
+                    {node.media.map((url, idx) => {
+                      const resolved = mediaCache.get(url);
+                      if (!resolved) return null;
+                      return (
+                        <img
+                          key={`thumb-${node.id}-${idx}`}
+                          src={resolved}
+                          alt=""
+                          style={{
+                            width: 80,
+                            height: 60,
+                            objectFit: "cover",
+                            borderRadius: 6,
+                            border: `1px solid ${designTokens.colors.border}`,
+                            background: designTokens.colors.accentSoft,
+                          }}
+                        />
+                      );
+                    })}
+                  </div>
+                )}
+              </div>
             ))}
           </div>
         ) : null}
@@ -827,7 +934,7 @@ function PanelApp() {
             {hasContent ? previewSummary : ui.previewEmpty}
           </div>
           <div ref={previewRef}>
-            <QuotePreview document={document} mediaProxyBaseUrl={apiBaseUrl} />
+            <QuotePreview document={displayDocument} />
           </div>
           <a
             href={webEditorBaseUrl}
