@@ -269,8 +269,8 @@ NEXT_PUBLIC_API_BASE_URL=http://YOUR_PUBLIC_HOST:8787 npm run build -w @tweetquo
 # 5. 重启服务
 pm2 restart all
 
-# 6.（可选）重新构建 Extension
-npm run build:test -w @tweetquote/extension
+# 6. Extension 在本地单独打包，不在服务器上操作
+#    本地执行：npm run build:test -w @tweetquote/extension
 ```
 
 ---
@@ -406,4 +406,4 @@ pm2 logs tweetquote-api --lines 100
 ```
 
 **Q: Extension 如何更新？**  
-在服务器上 `npm run build:test -w @tweetquote/extension`，将 `apps/extension/dist/` 下载到本地，在 Chrome 扩展页点击「刷新」。
+Extension 在**本地**打包，不在服务器上操作。在本地仓库根目录执行 `npm run build:test -w @tweetquote/extension`，产物在 `apps/extension/dist/`，然后在 Chrome 扩展页点击「刷新」即可。
