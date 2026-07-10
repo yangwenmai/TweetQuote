@@ -10,6 +10,11 @@ output/*
 __pycache__/
 history/
 data/
+# 每日精华引用榜数据需随仓库提交（否则部署环境 /daily 为空）
+!apps/web/data/
+!apps/web/data/daily/
+!apps/web/data/daily/*.json
+!apps/web/data/daily/.gitkeep
 *.zip
 node_modules/
 packages/*/dist/
