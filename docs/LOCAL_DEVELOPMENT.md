@@ -61,6 +61,9 @@ OPENAI_MODEL=gpt-4o-mini
 # 可选：推文链接自动抓取
 TWITTERAPI_KEY=your-twitterapi-key
 
+# 可选：调试上游推文 JSON（含 Article 检测字段，日志会脱敏）
+# TWITTER_LOG_FULL_TWEET_JSON=1
+
 # 可选：生产/代理场景下 API 对外地址（本地开发一般不需要）
 # PUBLIC_API_BASE_URL=https://your-api.example.com
 ```

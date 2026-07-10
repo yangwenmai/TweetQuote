@@ -26,6 +26,9 @@ TweetQuote 是面向 Twitter/X 推文引用链（Quote Chain）的可视化与�
 - **依赖**：TwitterAPI.io API Key（可在界面配置，或在 `.env.local` 中配置 `TWITTERAPI_KEY` 作为默认）
 - **支持链接格式**：`https://x.com/user/status/123456` 或 `https://twitter.com/user/status/123456`
 - **流程**：从最外层推文开始，递归解析 `quoted_tweet` 直至引用链结束
+- **Note Tweet 长文**：自动优先使用 `note_tweet.text` 完整正文（超过 280 字截断时）
+- **Twitter Article 长文**：检测到 Article 推文时自动调用 TwitterAPI.io `/twitter/article`，完整渲染标题、封面、段落与内嵌图片（每次 Article 请求约消耗 100 credits）
+- **链接与图片解析**：展开正文中的 `t.co` 为 `display_url`；从 `entities.urls` 识别 `pbs.twimg.com` 图片；标准附图仍从 `extendedEntities.media` 提取
 
 ### 2. 手工录入
 
@@ -52,8 +55,8 @@ TweetQuote 是面向 Twitter/X 推文引用链（Quote Chain）的可视化与�
 
 ### 5. 预览与导出
 
-- **实时预览**：左侧编辑，右侧实时渲染 Twitter 风格卡片
-- **导出**：支持 1x、2x、3x 倍率导出 PNG
+- **实时预览**：左侧编辑，右侧实时渲染 Twitter 风格卡片（含 Article 长文结构化排版）
+- **导出**：支持 1x、2x、3x 倍率导出 PNG（长 Article 会生成更高的图片）
 
 ### 6. 国际化
 
