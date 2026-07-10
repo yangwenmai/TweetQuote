@@ -7,6 +7,7 @@ import {
   type QuoteDocument,
   type TranslationDisplay,
   type TranslationProvider,
+  getTranslatableNodeText,
   randomUUID,
 } from "@tweetquote/domain";
 import {
@@ -215,9 +216,10 @@ export function EditorApp() {
       node.author.name.trim() ||
       node.author.handle.trim() ||
       node.translation.text.trim() ||
-      (node.media && node.media.length > 0),
+      (node.media && node.media.length > 0) ||
+      Boolean(node.article?.blocks.length || node.article?.title || node.article?.coverUrl),
   );
-  const translationTotal = document.nodes.filter((node) => node.content.trim()).length;
+  const translationTotal = document.nodes.filter((node) => getTranslatableNodeText(node).trim()).length;
   const translationDone = document.nodes.filter((node) => node.translation.text.trim()).length;
   const hasTranslatableContent = translationTotal > 0;
   const hasTranslations = translationDone > 0;
@@ -414,6 +416,7 @@ export function EditorApp() {
             "非常认同刘飞老师的观点。\n\n刚好今天中午跟朋友吃饭，我也表达了类似的观点。\n\n玩龙虾🦞可以，但是你去研究是为了挖掘你的副业还是为了玩而玩？我自己也玩了几天，确实能有一些价值，帮助你检索，完成对应任务，但是对于普通人来说，你没有场景何来现在有了龙虾🦞就有了场景？\n\n刘飞老师提炼的观点非常齐全，推荐大家自省。",
           createdAt: "Mar 9",
           viewCount: 194,
+          metrics: { views: 194, likes: 12, retweets: 1, replies: 3, quotes: 0, bookmarks: 2 },
           media: [],
           translation: {
             provider: "none",
@@ -440,6 +443,7 @@ export function EditorApp() {
             "调研了一阵子 OpenClaw 的使用案例（身边朋友，微信群，社交媒体等等），也体验了一下，感受跟之前的很类似：\n\n对于本来就有自己业务的，尤其是商业闭环的，才用得更好，也更愿意充值，因为真的能省事儿，带来生产力，很快就能正向循环。以开发者、自媒体、投资人和小企业老板为主。\n\n对于很多在创业或者作为牛马想搞副业的朋友，想从零开始用 OpenClaw 干拔一个有价值的生意，难度极大，概率极低。\n\n对于多数案例看起来，还是当玩具居多。充值都用免费渠道的 tokens，整天研究省钱，研究怎么让龙虾表演节目什么的，很快就觉得没劲了。\n\n新技术不等于产品价值。还是得有场景有工作流，才有价值。只会说「你自己去学习一下，帮我开发一个会火的 APP」是肯定一定没意义的。",
           createdAt: "9:15 AM · Mar 9, 2026",
           viewCount: 54500,
+          metrics: { views: 54500, likes: 620, retweets: 88, replies: 41, quotes: 12, bookmarks: 210 },
           media: [],
           translation: {
             provider: "none",
@@ -496,6 +500,13 @@ export function EditorApp() {
       pushActivity(
         uiLanguage === "en" ? `Fetch finished with ${response.document.nodes.length} layers` : `抓取完成，共 ${response.document.nodes.length} 层`,
       );
+      if (response.meta.articleFetches > 0) {
+        pushActivity(
+          uiLanguage === "en"
+            ? `Loaded ${response.meta.articleFetches} Twitter Article(s)`
+            : `已加载 ${response.meta.articleFetches} 篇 Twitter Article 长文`,
+        );
+      }
     } catch (error) {
       const errMsg = error instanceof Error ? error.message : ui.messageFetchFailed;
       if (errMsg.includes("Free trial exhausted") || errMsg.includes("402")) {

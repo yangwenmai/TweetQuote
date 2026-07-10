@@ -9,6 +9,8 @@ import {
   type QuotaSnapshot,
   type TranslationDisplay,
   type TranslationProvider,
+  collectImageUrlsFromNode,
+  getTranslatableNodeText,
   randomUUID,
 } from "@tweetquote/domain";
 import {
@@ -78,7 +80,7 @@ function useResolvedMediaUrls(doc: QuoteDocument): Map<string, string> {
 
   useEffect(() => {
     if (!useBackgroundProxy) return;
-    const allUrls = [...new Set(doc.nodes.flatMap((n) => n.media ?? []).filter(Boolean))];
+    const allUrls = [...new Set(doc.nodes.flatMap((node) => collectImageUrlsFromNode(node)))];
     for (const url of allUrls) {
       if (cacheRef.current.has(url) || pendingRef.current.has(url)) continue;
       pendingRef.current.add(url);
@@ -406,20 +408,36 @@ function PanelApp() {
   const mediaCache = useResolvedMediaUrls(document);
   const displayDocument = useMemo<QuoteDocument>(() => {
     if (mediaCache.size === 0) return document;
+    const remapUrl = (url: string) => mediaCache.get(url) ?? url;
     return {
       ...document,
       nodes: document.nodes.map((node) => ({
         ...node,
-        media: (node.media ?? []).map((url) => mediaCache.get(url) ?? url),
+        media: (node.media ?? []).map(remapUrl),
+        article: node.article
+          ? {
+              ...node.article,
+              coverUrl: node.article.coverUrl ? remapUrl(node.article.coverUrl) : node.article.coverUrl,
+              blocks: node.article.blocks.map((block) => ({
+                ...block,
+                url: block.url ? remapUrl(block.url) : block.url,
+                previewUrl: block.previewUrl ? remapUrl(block.previewUrl) : block.previewUrl,
+              })),
+            }
+          : node.article,
       })),
     };
   }, [document, mediaCache]);
 
   const documentSummary = useMemo(() => getDocumentSummary(document), [document]);
   const hasContent = document.nodes.some(
-    (node) => node.content.trim() || node.translation.text.trim() || (node.media && node.media.length > 0),
+    (node) =>
+      node.content.trim() ||
+      node.translation.text.trim() ||
+      (node.media && node.media.length > 0) ||
+      Boolean(node.article?.blocks.length || node.article?.title || node.article?.coverUrl),
   );
-  const translationTotal = document.nodes.filter((node) => node.content.trim()).length;
+  const translationTotal = document.nodes.filter((node) => getTranslatableNodeText(node).trim()).length;
   const translationDone = document.nodes.filter((node) => node.translation.text.trim()).length;
   const hasTranslatableContent = translationTotal > 0;
   const hasTranslations = translationDone > 0;
@@ -516,6 +534,13 @@ function PanelApp() {
         pushActivity(ui.layerLog(layer.index, layer.relation, author));
       });
       pushActivity(ui.messageFetchDone(response.document.nodes.length));
+      if (response.meta.articleFetches > 0) {
+        pushActivity(
+          language === "en"
+            ? `Loaded ${response.meta.articleFetches} Twitter Article(s)`
+            : `已加载 ${response.meta.articleFetches} 篇 Twitter Article 长文`,
+        );
+      }
     } catch (error) {
       const errMsg = error instanceof Error ? error.message : ui.messageFetchFailed;
       if (errMsg.includes("Free trial exhausted") || errMsg.includes("402")) {
