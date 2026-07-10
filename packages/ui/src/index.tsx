@@ -1,6 +1,7 @@
 import * as React from "react";
 import { designTokens } from "@tweetquote/config";
-import type { Annotation, QuoteDocument } from "@tweetquote/domain";
+import type { Annotation, ArticleBlock, ArticleContent, QuoteDocument, QuoteNode } from "@tweetquote/domain";
+import { collectImageUrlsFromArticle, getNodeIntroText } from "@tweetquote/domain";
 
 type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
   tone?: "primary" | "secondary" | "ghost";
@@ -299,6 +300,53 @@ function AnnotationSpan({
   );
 }
 
+const URL_IN_TEXT_REGEX =
+  /https?:\/\/[^\s\])}>,;!?]+(?:\([^\s)]*\))?|\b(?:x\.com|twitter\.com)\/[^\s\])}>,;!?]+|\b[a-z0-9][-a-z0-9.]*\.(?:com|org|net|io|co|app|dev|me|ai|xyz|info)(?:\/[^\s\])}>,;!?]*)?/gi;
+
+function trimUrlTrailingPunctuation(url: string): { href: string; trailing: string } {
+  let href = url;
+  let trailing = "";
+  while (href.length > 0) {
+    const last = href.at(-1);
+    if (!last || !/[)\]}>,;!?]/.test(last)) break;
+    trailing = last + trailing;
+    href = href.slice(0, -1);
+  }
+  return { href, trailing };
+}
+
+function linkifyPlainText(text: string, keyPrefix = "link"): React.ReactNode[] {
+  if (!text) return [];
+  const nodes: React.ReactNode[] = [];
+  let lastIndex = 0;
+  URL_IN_TEXT_REGEX.lastIndex = 0;
+  let match = URL_IN_TEXT_REGEX.exec(text);
+  while (match) {
+    const raw = match[0];
+    const start = match.index;
+    if (start > lastIndex) {
+      nodes.push(text.slice(lastIndex, start));
+    }
+    const { href, trailing } = trimUrlTrailingPunctuation(raw);
+    nodes.push(
+      <span key={`${keyPrefix}-${start}`} style={{ color: designTokens.colors.accent }}>
+        {href}
+      </span>,
+    );
+    if (trailing) nodes.push(trailing);
+    lastIndex = start + raw.length;
+    match = URL_IN_TEXT_REGEX.exec(text);
+  }
+  if (lastIndex < text.length) {
+    nodes.push(text.slice(lastIndex));
+  }
+  return nodes.length > 0 ? nodes : [text];
+}
+
+function LinkifiedText({ text, keyPrefix }: { text: string; keyPrefix?: string }) {
+  return <>{linkifyPlainText(text, keyPrefix)}</>;
+}
+
 function AnnotatedText({
   text,
   annotations,
@@ -310,7 +358,7 @@ function AnnotatedText({
   language: string;
   instanceId: string;
 }) {
-  if (!annotations || annotations.length === 0) return <>{text}</>;
+  if (!annotations || annotations.length === 0) return <LinkifiedText text={text} />;
 
   const matches: Array<Annotation & { idx: number }> = [];
   let searchFrom = 0;
@@ -335,14 +383,16 @@ function AnnotatedText({
     searchFrom = bestIdx + matched.term.length;
   }
 
-  if (matches.length === 0) return <>{text}</>;
+  if (matches.length === 0) return <LinkifiedText text={text} />;
 
   const segments: React.ReactNode[] = [];
   let last = 0;
 
   matches.forEach((ann, i) => {
     if (ann.idx > last) {
-      segments.push(<React.Fragment key={`t-${last}`}>{text.slice(last, ann.idx)}</React.Fragment>);
+      segments.push(
+        <React.Fragment key={`t-${last}`}>{linkifyPlainText(text.slice(last, ann.idx), `t-${last}`)}</React.Fragment>,
+      );
     }
     const idSuffix = `${instanceId}-${i}-${ann.idx}`;
     segments.push(<AnnotationSpan key={`a-${idSuffix}`} annotation={ann} language={language} idSuffix={idSuffix} />);
@@ -350,7 +400,9 @@ function AnnotatedText({
   });
 
   if (last < text.length) {
-    segments.push(<React.Fragment key={`t-${last}`}>{text.slice(last)}</React.Fragment>);
+    segments.push(
+      <React.Fragment key={`t-${last}`}>{linkifyPlainText(text.slice(last), `t-${last}`)}</React.Fragment>,
+    );
   }
 
   return <>{segments}</>;
@@ -362,6 +414,195 @@ function resolveTweetMediaSrc(originalUrl: string, mediaProxyBaseUrl?: string): 
   if (!trimmed) return originalUrl;
   const base = trimmed.replace(/\/$/, "");
   return `${base}/api/v1/assets/image?url=${encodeURIComponent(originalUrl)}`;
+}
+
+function ArticleImage({
+  url,
+  mediaProxyBaseUrl,
+  useMediaProxy,
+  maxHeight = 320,
+}: {
+  url: string;
+  mediaProxyBaseUrl?: string;
+  useMediaProxy: boolean;
+  maxHeight?: number;
+}) {
+  return (
+    <img
+      src={resolveTweetMediaSrc(url, mediaProxyBaseUrl)}
+      alt=""
+      {...(useMediaProxy ? { crossOrigin: "anonymous" as const } : {})}
+      referrerPolicy="no-referrer"
+      style={{
+        width: "100%",
+        display: "block",
+        objectFit: "cover",
+        maxHeight,
+        borderRadius: 12,
+      }}
+    />
+  );
+}
+
+function renderArticleBlock(
+  block: ArticleBlock,
+  index: number,
+  nodeId: string,
+  mediaProxyBaseUrl: string | undefined,
+  useMediaProxy: boolean,
+) {
+  const key = `${nodeId}-block-${index}`;
+  switch (block.type) {
+    case "header-one":
+      return (
+        <div key={key} style={{ fontSize: 18, fontWeight: 700, marginTop: index > 0 ? 16 : 8, lineHeight: 1.4 }}>
+          <LinkifiedText text={block.text ?? ""} keyPrefix={`${key}-h1`} />
+        </div>
+      );
+    case "header-two":
+      return (
+        <div key={key} style={{ fontSize: 16, fontWeight: 700, marginTop: index > 0 ? 14 : 8, lineHeight: 1.4 }}>
+          <LinkifiedText text={block.text ?? ""} keyPrefix={`${key}-h2`} />
+        </div>
+      );
+    case "header-three":
+      return (
+        <div key={key} style={{ fontSize: 15, fontWeight: 700, marginTop: index > 0 ? 12 : 8, lineHeight: 1.4 }}>
+          <LinkifiedText text={block.text ?? ""} keyPrefix={`${key}-h3`} />
+        </div>
+      );
+    case "unordered-list-item":
+      return (
+        <ul key={key} style={{ margin: "8px 0", paddingLeft: 20, lineHeight: 1.6 }}>
+          <li>
+            <LinkifiedText text={block.text ?? ""} keyPrefix={`${key}-ul`} />
+          </li>
+        </ul>
+      );
+    case "ordered-list-item":
+      return (
+        <ol key={key} style={{ margin: "8px 0", paddingLeft: 20, lineHeight: 1.6 }}>
+          <li>
+            <LinkifiedText text={block.text ?? ""} keyPrefix={`${key}-ol`} />
+          </li>
+        </ol>
+      );
+    case "image":
+      return block.url ? (
+        <div key={key} style={{ marginTop: 10 }}>
+          <ArticleImage url={block.url} mediaProxyBaseUrl={mediaProxyBaseUrl} useMediaProxy={useMediaProxy} />
+        </div>
+      ) : null;
+    case "gif": {
+      const gifUrl = block.previewUrl?.trim() || block.url?.trim();
+      return gifUrl ? (
+        <div key={key} style={{ marginTop: 10 }}>
+          <ArticleImage url={gifUrl} mediaProxyBaseUrl={mediaProxyBaseUrl} useMediaProxy={useMediaProxy} />
+        </div>
+      ) : null;
+    }
+    case "divider":
+      return (
+        <hr
+          key={key}
+          style={{
+            margin: "16px 0",
+            border: "none",
+            borderTop: `1px solid ${designTokens.colors.border}`,
+          }}
+        />
+      );
+    case "markdown":
+    case "unstyled":
+    default:
+      return block.text ? (
+        <p key={key} style={{ margin: "8px 0 0", whiteSpace: "pre-wrap", lineHeight: 1.6 }}>
+          <LinkifiedText text={block.text} keyPrefix={`${key}-p`} />
+        </p>
+      ) : null;
+  }
+}
+
+function ArticleBlocks({
+  article,
+  nodeId,
+  mediaProxyBaseUrl,
+  useMediaProxy,
+}: {
+  article: ArticleContent;
+  nodeId: string;
+  mediaProxyBaseUrl?: string;
+  useMediaProxy: boolean;
+}) {
+  return (
+    <div style={{ marginTop: 10 }}>
+      {article.title ? (
+        <div style={{ fontSize: 18, fontWeight: 700, lineHeight: 1.35, marginBottom: article.coverUrl ? 10 : 8 }}>
+          {article.title}
+        </div>
+      ) : null}
+      {article.coverUrl ? (
+        <div style={{ marginBottom: 10 }}>
+          <ArticleImage url={article.coverUrl} mediaProxyBaseUrl={mediaProxyBaseUrl} useMediaProxy={useMediaProxy} />
+        </div>
+      ) : null}
+      {article.previewText && !article.blocks.length ? (
+        <p style={{ margin: "8px 0 0", whiteSpace: "pre-wrap", lineHeight: 1.6, color: designTokens.colors.muted }}>
+          <LinkifiedText text={article.previewText} keyPrefix={`${nodeId}-preview`} />
+        </p>
+      ) : null}
+      {article.blocks.map((block, index) => renderArticleBlock(block, index, nodeId, mediaProxyBaseUrl, useMediaProxy))}
+    </div>
+  );
+}
+
+function getArticleImageUrlSet(article: ArticleContent | undefined): Set<string> {
+  return new Set(collectImageUrlsFromArticle(article));
+}
+
+function renderTranslationSection({
+  translatedText,
+  node,
+  document,
+  display,
+}: {
+  translatedText: string;
+  node: QuoteNode;
+  document: QuoteDocument;
+  display: QuoteDocument["renderSpec"]["translationDisplay"];
+}) {
+  return (
+    <div
+      style={{
+        marginTop: 12,
+        paddingTop: 12,
+        borderTop: `1px solid ${designTokens.colors.border}`,
+      }}
+    >
+      <div
+        style={{
+          color: designTokens.colors.accent,
+          fontSize: 12,
+          fontWeight: 700,
+          marginBottom: 6,
+        }}
+      >
+        {getTranslationLabel(node.translation.language)}
+      </div>
+      <div style={{ margin: 0, whiteSpace: "pre-wrap", lineHeight: 1.6, fontSize: 15, color: designTokens.colors.foreground }}>
+        {document.renderSpec.includeAnnotations && node.translation.annotations.length > 0 && display !== "original" ? (
+          <AnnotatedText
+            text={translatedText}
+            annotations={node.translation.annotations}
+            language={document.renderSpec.language}
+            instanceId={`${node.id}-translation`}
+          />
+        ) : (
+          <LinkifiedText text={translatedText} keyPrefix={`${node.id}-tr`} />
+        )}
+      </div>
+    </div>
+  );
 }
 
 export function QuotePreview({
@@ -377,15 +618,21 @@ export function QuotePreview({
     <div style={{ display: "grid", gap: 12 }}>
       {document.nodes.map((node) => {
         const translatedText = node.translation.text.trim();
-        const originalText = node.content.trim();
+        const hasArticle = Boolean(node.article);
+        const introText = getNodeIntroText(node);
+        const originalText = hasArticle ? introText : node.content.trim();
         const display = document.renderSpec.translationDisplay;
-        const showBilingual = Boolean(originalText && translatedText && display === "bilingual");
-        const primaryText =
-          display === "original"
+        const showBilingual = Boolean(translatedText && display === "bilingual" && (originalText || hasArticle));
+        const showArticleTranslation = Boolean(hasArticle && translatedText && display === "replace" && !showBilingual);
+        const primaryText = hasArticle
+          ? introText
+          : display === "original"
             ? originalText || translatedText || ""
             : translatedText && display === "replace"
               ? translatedText
               : originalText || translatedText || "";
+        const articleImageUrls = getArticleImageUrlSet(node.article);
+        const extraMedia = (node.media ?? []).filter((url) => !articleImageUrls.has(url));
 
         return (
           <div
@@ -493,33 +740,47 @@ export function QuotePreview({
                   ) : null}
                 </div>
               </div>
-              <div style={{ margin: "10px 0 0", whiteSpace: "pre-wrap", lineHeight: 1.6, fontSize: 15 }}>
-                {document.renderSpec.includeAnnotations &&
-                node.translation.annotations.length > 0 &&
-                display === "replace" &&
-                translatedText ? (
-                  <AnnotatedText
-                    text={primaryText}
-                    annotations={node.translation.annotations}
-                    language={document.renderSpec.language}
-                    instanceId={node.id}
-                  />
-                ) : (
-                  primaryText
-                )}
-              </div>
-              {node.media && node.media.length > 0 && (
+              {primaryText ? (
+                <div style={{ margin: "10px 0 0", whiteSpace: "pre-wrap", lineHeight: 1.6, fontSize: 15 }}>
+                  {document.renderSpec.includeAnnotations &&
+                  node.translation.annotations.length > 0 &&
+                  display === "replace" &&
+                  translatedText &&
+                  !hasArticle ? (
+                    <AnnotatedText
+                      text={primaryText}
+                      annotations={node.translation.annotations}
+                      language={document.renderSpec.language}
+                      instanceId={node.id}
+                    />
+                  ) : (
+                    <LinkifiedText text={primaryText} keyPrefix={`${node.id}-body`} />
+                  )}
+                </div>
+              ) : null}
+              {node.article ? (
+                <ArticleBlocks
+                  article={node.article}
+                  nodeId={node.id}
+                  mediaProxyBaseUrl={mediaProxyBaseUrl}
+                  useMediaProxy={useMediaProxy}
+                />
+              ) : null}
+              {showArticleTranslation
+                ? renderTranslationSection({ translatedText, node, document, display })
+                : null}
+              {extraMedia.length > 0 && (
                 <div
                   style={{
                     marginTop: 10,
                     display: "grid",
-                    gridTemplateColumns: node.media.length === 1 ? "1fr" : "1fr 1fr",
+                    gridTemplateColumns: extraMedia.length === 1 ? "1fr" : "1fr 1fr",
                     gap: 4,
                     borderRadius: 12,
                     overflow: "hidden",
                   }}
                 >
-                  {node.media.map((url, idx) => (
+                  {extraMedia.map((url, idx) => (
                     <img
                       key={`${node.id}-media-${idx}`}
                       src={resolveTweetMediaSrc(url, mediaProxyBaseUrl)}
@@ -530,8 +791,8 @@ export function QuotePreview({
                         width: "100%",
                         display: "block",
                         objectFit: "cover",
-                        maxHeight: node.media.length === 1 ? 320 : 200,
-                        borderRadius: node.media.length === 1 ? 12 : 0,
+                        maxHeight: extraMedia.length === 1 ? 320 : 200,
+                        borderRadius: extraMedia.length === 1 ? 12 : 0,
                       }}
                     />
                   ))}
@@ -559,38 +820,7 @@ export function QuotePreview({
                   ) : null}
                 </div>
               )}
-              {showBilingual ? (
-                <div
-                  style={{
-                    marginTop: 12,
-                    paddingTop: 12,
-                    borderTop: `1px solid ${designTokens.colors.border}`,
-                  }}
-                >
-                  <div
-                    style={{
-                      color: designTokens.colors.accent,
-                      fontSize: 12,
-                      fontWeight: 700,
-                      marginBottom: 6,
-                    }}
-                  >
-                    {getTranslationLabel(node.translation.language)}
-                  </div>
-                  <div style={{ margin: 0, whiteSpace: "pre-wrap", lineHeight: 1.6, fontSize: 15, color: designTokens.colors.foreground }}>
-                    {document.renderSpec.includeAnnotations && node.translation.annotations.length > 0 ? (
-                      <AnnotatedText
-                        text={translatedText}
-                        annotations={node.translation.annotations}
-                        language={document.renderSpec.language}
-                        instanceId={node.id}
-                      />
-                    ) : (
-                      translatedText
-                    )}
-                  </div>
-                </div>
-              ) : null}
+              {showBilingual ? renderTranslationSection({ translatedText, node, document, display }) : null}
             </article>
           </div>
         );
