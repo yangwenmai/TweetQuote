@@ -1,0 +1,15 @@
+{
+  "date": "2026-07-10",
+  "title": "每日 X 热门 Top 10",
+  "titleEn": "Daily Top 10 on X",
+  "items": [
+    {
+      "url": "https://x.com/username/status/1234567890000000000",
+      "reason": "一句话说明为什么上榜（可选，中文）",
+      "reasonEn": "One-line editorial note (optional, English)"
+    },
+    {
+      "url": "https://x.com/another/status/1234567890000000001"
+    }
+  ]
+}

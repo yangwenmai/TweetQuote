@@ -1,0 +1,47 @@
+{
+  "date": "2026-07-10",
+  "title": "每日 X 精华引用榜",
+  "titleEn": "Daily Quote Essence on X",
+  "items": [
+    {
+      "url": "https://x.com/kimmonismus/status/2075280933452669000",
+      "reason": "把Anthropic重置额度读成对GPT-5.6超级应用发布的即时反击，点出竞争姿态而非产品说明",
+      "reasonEn": "Reframes Anthropic’s rate-limit reset as a timed competitive retort to OpenAI’s GPT-5.6 SuperApp launch"
+    },
+    {
+      "url": "https://x.com/dotey/status/2075288698585809214",
+      "reason": "用长文拆解GPT-5.6/Sol-Terra-Luna、ChatGPT Work与桌面端合一，并挂上IPO与企业锁定逻辑",
+      "reasonEn": "Turns OpenAI’s launch into a Chinese deep dive on GPT-5.6 tiers, Work agents, and the IPO super-app strategy"
+    },
+    {
+      "url": "https://x.com/jacobmparis/status/2075288249623261216",
+      "reason": "一句“开发者 vs 真正干活的人”把ChatGPT分模式嘲成产品政治，引用远超原帖",
+      "reasonEn": "One-line dunk that rebrands ChatGPT modes as ‘devs vs people who actually get work done,’ outperforming the original"
+    },
+    {
+      "url": "https://x.com/aleabitoreddit/status/2075496116481884524",
+      "reason": "用光通信供应链订单与Nvidia辟谣，反驳散户恐慌抛售，把主题杀跌重框为基本面未变",
+      "reasonEn": "Supply-chain expert reply that reframes the photonics selloff as retail panic after denied Nvidia/Meta FUD"
+    },
+    {
+      "url": "https://x.com/iconnnz/status/2075450851989258275",
+      "reason": "把Meta Muse默认用人脸生图风险本地化并附关闭步骤，隐私警报跨语传播放量",
+      "reasonEn": "Localizes Meta Muse face-generation privacy risk with opt-out steps, massively amplifying the original warning"
+    },
+    {
+      "url": "https://x.com/Shinpei3350/status/2075477053210759532",
+      "reason": "Metaplanet IR用美日制度对照，解释BTC日利息数字信贷为何要靠证券型通证破局",
+      "reasonEn": "Metaplanet IR head reframes a dry BTC digital-credit filing as the Japan path to daily-yield, BTC-backed products"
+    },
+    {
+      "url": "https://x.com/zerohedge/status/2075392971164278817",
+      "reason": "Xbox大裁员对上CEO入联储顾问的并置吐槽，一句‘Meanwhile at the Fed’完成再框定",
+      "reasonEn": "Juxtaposes Xbox mass layoffs with the CEO’s Fed advisor role in a single ‘Meanwhile at the Fed’ dunk"
+    },
+    {
+      "url": "https://x.com/oran_ge/status/2074965201133375940",
+      "reason": "把GPT-6/Mythos/DeepSeek/MiniMax传闻压成中文科技圈下半年预训练军备赛速读",
+      "reasonEn": "Compresses GPT-6, Mythos, DeepSeek V4 and MiniMax Pro scoops into a CN-tech race map for H2"
+    }
+  ]
+}

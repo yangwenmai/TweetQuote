@@ -5,6 +5,8 @@
   "type": "commonjs",
   "scripts": {
     "dev": "tsx watch src/server.ts",
+    "daily:discover": "tsx scripts/discover-with-grok.ts",
+    "daily:generate": "tsx scripts/generate-daily-top.ts",
     "build": "tsc -p tsconfig.json",
     "start": "node dist/server.js",
     "typecheck": "tsc -p tsconfig.json --noEmit",
