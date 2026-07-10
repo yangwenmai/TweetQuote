@@ -1,0 +1,1037 @@
+{
+  "date": "2026-07-10",
+  "title": "每日 X 精华引用榜",
+  "titleEn": "Daily Quote Essence on X",
+  "generatedAt": "2026-07-10T13:16:33.712Z",
+  "entries": [
+    {
+      "rank": 1,
+      "essenceScore": 326776,
+      "heatScore": 192272,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 192272
+      },
+      "sourceUrl": "https://x.com/kimmonismus/status/2075280933452669000",
+      "reason": "把Anthropic重置额度读成对GPT-5.6超级应用发布的即时反击，点出竞争姿态而非产品说明",
+      "reasonEn": "Reframes Anthropic’s rate-limit reset as a timed competitive retort to OpenAI’s GPT-5.6 SuperApp launch",
+      "metrics": {
+        "views": 5872110,
+        "likes": 44499,
+        "retweets": 2955,
+        "replies": 3446,
+        "quotes": 3388,
+        "bookmarks": 2205
+      },
+      "document": {
+        "id": "f00c8249-a7e8-4bdc-a795-064e2d5d87a5",
+        "title": "What a move! Anthropic seriously",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2075280933452669000",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2075280933452669000",
+            "author": {
+              "name": "Chubby♨️",
+              "handle": "kimmonismus",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1728327996375719936/RW7VBJfD_normal.jpg",
+              "isVerified": false
+            },
+            "content": "What a move! Anthropic seriously waited until OpenAI released GPT-5.6 and the SuperApp before announcing they'd reset the weekly rates. That's a clear message to OpenAI.",
+            "createdAt": "Thu Jul 09 18:08:26 +0000 2026",
+            "viewCount": 185930,
+            "metrics": {
+              "views": 185930,
+              "likes": 2140,
+              "retweets": 60,
+              "replies": 118,
+              "quotes": 8,
+              "bookmarks": 138
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "真是一个举动！ Anthropic 认真地等待了 OpenAI 发布 GPT-5.6 和 SuperApp，然后才宣布他们将重置每周费率。这是向 OpenAI 传达的明确信息。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-10T12:30:06.909Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2075279141352706215",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2075279141352706215",
+            "author": {
+              "name": "ClaudeDevs",
+              "handle": "ClaudeDevs",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2044472418815893504/xf14RxM8_normal.png",
+              "isVerified": false
+            },
+            "content": "We've reset 5-hour and weekly rate limits for all users.",
+            "createdAt": "Thu Jul 09 18:01:18 +0000 2026",
+            "viewCount": 5872110,
+            "metrics": {
+              "views": 5872110,
+              "likes": 44499,
+              "retweets": 2955,
+              "replies": 3446,
+              "quotes": 3388,
+              "bookmarks": 2205
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "我们为所有用户重置了 5 小时和每周的费率限制。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-10T12:30:06.928Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2075280933452669000",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-10T12:30:06.669Z"
+        },
+        "createdAt": "2026-07-10T12:30:06.669Z",
+        "updatedAt": "2026-07-10T12:30:06.928Z"
+      }
+    },
+    {
+      "rank": 2,
+      "essenceScore": 145562,
+      "heatScore": 80437,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 80437
+      },
+      "sourceUrl": "https://x.com/dotey/status/2075288698585809214",
+      "reason": "用长文拆解GPT-5.6/Sol-Terra-Luna、ChatGPT Work与桌面端合一，并挂上IPO与企业锁定逻辑",
+      "reasonEn": "Turns OpenAI’s launch into a Chinese deep dive on GPT-5.6 tiers, Work agents, and the IPO super-app strategy",
+      "metrics": {
+        "views": 2936047,
+        "likes": 11225,
+        "retweets": 1249,
+        "replies": 551,
+        "quotes": 686,
+        "bookmarks": 1792
+      },
+      "document": {
+        "id": "bacd93db-e5c8-4076-bc5c-545ff570bd6b",
+        "title": "OpenAI 今天一口气发布了一整套产品更新：\n1. GPT-5",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2075288698585809214",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2075288698585809214",
+            "author": {
+              "name": "宝玉",
+              "handle": "dotey",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/561086911561736192/6_g58vEs_normal.jpeg",
+              "isVerified": false
+            },
+            "content": "OpenAI 今天一口气发布了一整套产品更新：\n1. GPT-5.6 正式向公众开放\n2. ChatGPT 和 Codex 合体成了一个桌面应用\n3. 一个叫 ChatGPT Work 的新功能让 AI 从聊天助手变成了能干活的 Agent。\n\n先说 GPT-5.6。\n\nGPT-5.6 今天正式放开，三个级别：Sol 是旗舰，主打复杂推理和长时间自主工作；Terra 是性价比款，官方说性能接近上一代旗舰 GPT-5.5 但价格只有一半；Luna 是轻量款，跑得快、便宜。API 定价方面，Sol 每百万 token 输入 5 美元、输出 30 美元，Luna 只要 1 美元和 6 美元。ChatGPT 免费用户和 Go 用户默认用 Terra，Plus 及以上可以自选模型。\n\nSol 还新增了两个推理档位：max 让模型花更多时间深度思考，ultra 则会调用多个子智能体(Agent)并行处理任务，有点像同时派出几个人分头干活再汇总。ultra 目前限 Pro 和 Enterprise 用户。\n\n再说 ChatGPT 和 Codex 桌面应用合并。\n\nOpenAI 把 ChatGPT 和 Codex 塞进了同一个桌面应用里，Chat、Work、Codex 三个模式共享同一套能力和任务历史，区别只在界面：Codex 展示代码差异和 PR（代码提交合并请求），Work 把技术细节隐藏掉，面向非开发者。用户可以在两个模式间自由切换。\n\nCodex 现在每周活跃用户 500 万，其中超过 100 万人用它做的是开发之外的工作，比如写报告、做分析。OpenAI 发现非开发者也涌进了 Codex，与其维护两个独立产品，不如合到一起。Fidji Simo（OpenAI 应用业务 CEO）内部邮件里说：“产品分散拖慢了我们的速度。”\n\nChatGPT Work 是这次最值得关注的新功能。它不再只是回答问题，还能跨应用执行任务：连接你的 Google Drive、Slack、邮箱等工具，自己拆解复杂项目，分步骤独立完成，需要时才问你。比如你给它一句话“把客户调研整理成营销方案”，它能自己读资料、写方案、生成不同市场的素材版本，全程带着上下文。还能设定定时任务，比如每周自动汇总 Slack 消息刷新会议议程。\n\nWork 也会登陆网页和手机端，意味着你不需要在电脑前也能发起和跟踪任务。\n\n另一个值得一提的是 Sites。现在 ChatGPT 对话里生成的可视化、仪表盘或小工具，点一下就能变成一个可分享的网站。做个项目进度面板发给团队、做个内部工具原型让同事试用，不用再折腾部署。\n\n浏览器也升级了，支持登录态网站操作、多标签页和文件下载，配合新的 Chrome 扩展，ChatGPT 可以在你浏览器里直接帮你干活。这让 Computer Use（电脑操控）能力有了更实际的落地场景。\n\nCodex 端也有几个开发者关心的更新：可以直接在应用里编辑文件、看 PR 和审查反馈、新增 Ultra 模式处理高难度编码任务。还有一个细节，Codex 加了从 Claude Code 迁移的导入功能，包括设置和偏好配置，显然是在争抢 Anthropic 的开发者用户。\n\n今天的发布放在更大的背景下看，是 OpenAI 超级应用战略的一步。把聊天、编码、浏览、文件操作全装进一个应用里，目标是成为 AI 时代的生产力平台，直接对标 Google Workspace 和 Microsoft 365。\n\n考虑到 OpenAI 刚向 SEC 提交了上市文件，企业用户贡献了其 40% 的收入，这次发布的商业逻辑也很清楚：用统一平台锁住企业客户，为 IPO 讲一个更大的故事。\n\n顺带一提，GPT-5.4 将在 7 月 23 日退役。",
+            "createdAt": "Thu Jul 09 18:39:17 +0000 2026",
+            "viewCount": 159900,
+            "metrics": {
+              "views": 159900,
+              "likes": 631,
+              "retweets": 92,
+              "replies": 68,
+              "quotes": 18,
+              "bookmarks": 378
+            },
+            "media": [],
+            "translation": {
+              "provider": "none",
+              "status": "idle",
+              "language": "zh-CN",
+              "text": "",
+              "annotations": [],
+              "error": "",
+              "version": 0
+            }
+          },
+          {
+            "id": "2075271421149020426",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2075271421149020426",
+            "author": {
+              "name": "OpenAI",
+              "handle": "OpenAI",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1885410181409820672/ztsaR0JW_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Sol, Terra, and Luna, our GPT‑5.6 family of models, are starting to roll out now in ChatGPT, Codex, and the API.",
+            "createdAt": "Thu Jul 09 17:30:38 +0000 2026",
+            "viewCount": 2936047,
+            "metrics": {
+              "views": 2936047,
+              "likes": 11225,
+              "retweets": 1249,
+              "replies": 551,
+              "quotes": 686,
+              "bookmarks": 1792
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HMz76c-bMAAjbW5.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "我们的 GPT-5.6 模型系列 Sol、Terra 和 Luna 现在开始在 ChatGPT、Codex 和 API 中推出。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-10T13:16:33.712Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2075288698585809214",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-10T13:16:33.504Z"
+        },
+        "createdAt": "2026-07-10T13:16:33.504Z",
+        "updatedAt": "2026-07-10T13:16:33.712Z"
+      }
+    },
+    {
+      "rank": 3,
+      "essenceScore": 71517,
+      "heatScore": 38289,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 38289
+      },
+      "sourceUrl": "https://x.com/oran_ge/status/2074965201133375940",
+      "reason": "把GPT-6/Mythos/DeepSeek/MiniMax传闻压成中文科技圈下半年预训练军备赛速读",
+      "reasonEn": "Compresses GPT-6, Mythos, DeepSeek V4 and MiniMax Pro scoops into a CN-tech race map for H2",
+      "metrics": {
+        "views": 1346779,
+        "likes": 6395,
+        "retweets": 430,
+        "replies": 192,
+        "quotes": 166,
+        "bookmarks": 1393
+      },
+      "document": {
+        "id": "10c1e96a-2f0e-472b-baa1-c1e79cd20bdb",
+        "title": "我靠这个虽然是传闻但信息量有点大，看着玩吧\n- GPT5.6 是",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2074965201133375940",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2074965201133375940",
+            "author": {
+              "name": "Orange AI",
+              "handle": "oran_ge",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1760074488073629696/ceSsuVCY_normal.png",
+              "isVerified": false
+            },
+            "content": "我靠这个虽然是传闻但信息量有点大，看着玩吧\n- GPT5.6 是 5 系最后一代，再见了，海外已经进入下一个超越 4T 的阶段\n- GPT6 马上就来了，规模更大，对标 Fable 5.1\n- GPT6 和 Fable 5.1 未来几周就回来，下半年是全新一代预训练模型的大战了\n- DeepSeek 即将发布 V4 GA，对标 GLM 5.2\n- DeepSeek 正在开发下一代更大的模型，估计也是 2T+\n- MiniMax 正在开发下一代 2.7T 的 MiniMax Pro 模型\n国产模型也都要进入 2T+新架构时代了",
+            "createdAt": "Wed Jul 08 21:13:49 +0000 2026",
+            "viewCount": 127140,
+            "metrics": {
+              "views": 127140,
+              "likes": 301,
+              "retweets": 23,
+              "replies": 43,
+              "quotes": 5,
+              "bookmarks": 112
+            },
+            "media": [],
+            "translation": {
+              "provider": "none",
+              "status": "idle",
+              "language": "zh-CN",
+              "text": "",
+              "annotations": [],
+              "error": "",
+              "version": 0
+            }
+          },
+          {
+            "id": "2074886230018568582",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2074886230018568582",
+            "author": {
+              "name": "leo 🐾",
+              "handle": "synthwavedd",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2070520587659657216/novnWEZQ_normal.jpg",
+              "isVerified": false
+            },
+            "content": "🚨 SCOOP(s): - GPT-5.6 will be the final model in the 5.x series. GPT-6 is slated to launch in about a month, earlier than expected, and possibly even later this month\n- GPT-6 will be based on a new, significantly larger pretrain (versus the ~4T 5.5/5.6 'Spud' base)\n- There is lots of excitement at OpenAI over this new base, which they believe will be much better able to compete with both Fable 5 and upcoming 5.1, targeting a similar release window. OpenAI initially intended to continue with Spud through GPT-6, but decided against it\n- On the topic of Fable 5.1, it is in the late stages of the pipeline at Anthropic and a release is expected \"in the coming weeks\" - On the other side of the globe, DeepSeek are preparing for an imminent launch of V4 GA, which seems likely to be on par with or better than GLM-5.2, and have begun work on a new, larger model that will compete with the upcoming 2.7T MiniMax Pro",
+            "createdAt": "Wed Jul 08 16:00:01 +0000 2026",
+            "viewCount": 1346779,
+            "metrics": {
+              "views": 1346779,
+              "likes": 6395,
+              "retweets": 430,
+              "replies": 192,
+              "quotes": 166,
+              "bookmarks": 1393
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "🚨 独家新闻： - GPT-5.6 将是 5.x 系列的最终模型。 GPT-6 预计将在大约一个月后推出，比预期早，甚至可能在本月晚些时候推出\n- GPT-6 将基于一个新的、更大的预训练（相对于 ~4T 5.5/5.6 'Spud' 基础）\n- OpenAI 对这个新基础感到非常兴奋，他们相信新基础将能够更好地与《神鬼寓言 5》和即将推出的 5.1 竞争，目标是类似的发布窗口。 OpenAI 最初打算通过 GPT-6 继续使用 Spud，但最终决定放弃\n- 关于《神鬼寓言 5.1》，它正处于 Anthropic 的后期开发阶段，预计将在“未来几周内”发布 - 在地球的另一边，DeepSeek 正在为即将推出的 V4 GA 做准备，它看起来可能与 GLM-5.2 相当或更好，并已开始开发一款新的更大型号，将与即将推出的 2.7T MiniMax Pro 竞争",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-10T12:30:21.524Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2074965201133375940",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-10T12:30:21.453Z"
+        },
+        "createdAt": "2026-07-10T12:30:21.453Z",
+        "updatedAt": "2026-07-10T12:30:21.525Z"
+      }
+    },
+    {
+      "rank": 4,
+      "essenceScore": 67325,
+      "heatScore": 40803,
+      "signals": {
+        "depth": 2,
+        "hasDunk": false,
+        "peakIndex": 0,
+        "peakHeat": 40803
+      },
+      "sourceUrl": "https://x.com/iconnnz/status/2075450851989258275",
+      "reason": "把Meta Muse默认用人脸生图风险本地化并附关闭步骤，隐私警报跨语传播放量",
+      "reasonEn": "Localizes Meta Muse face-generation privacy risk with opt-out steps, massively amplifying the original warning",
+      "metrics": {
+        "views": 538149,
+        "likes": 2919,
+        "retweets": 6656,
+        "replies": 24,
+        "quotes": 75,
+        "bookmarks": 3440
+      },
+      "document": {
+        "id": "4c21e144-abeb-41dc-8ced-2323823240a1",
+        "title": "อิเหี้ยยยย ถ้าไอจีใครเปิดเป็นบัญ",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2075450851989258275",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2075450851989258275",
+            "author": {
+              "name": "ค่อนคลุง",
+              "handle": "iconnnz",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1801106692274569216/WeSx3bvU_normal.jpg",
+              "isVerified": false
+            },
+            "content": "อิเหี้ยยยย ถ้าไอจีใครเปิดเป็นบัญชีสาธารณะ ตอนนี้ Meta มีฟีเจอร์ใหม่ ให้ใครก็ได้สามารถพิมพ์ชื่อ username ของเรา สร้างภาพ ai ที่อิงจากใบหน้าเราและรูปภาพของเราได้แล้ว ทำทำไมวะ วิธีปิด\nInstagram → โปรไฟล์ → เมนู (☰) → Sharing and Reuse → ปิด Posts and Reels ในหัวข้อ “Allow people to reuse your content on Instagram and with AI features at Meta” แต่วิธีดีสุดที่คนนี้บอก คือตั้งเป็นบัญชี private ปิดให้หมด ตามภาพ",
+            "createdAt": "Fri Jul 10 05:23:37 +0000 2026",
+            "viewCount": 538149,
+            "metrics": {
+              "views": 538149,
+              "likes": 2919,
+              "retweets": 6656,
+              "replies": 24,
+              "quotes": 75,
+              "bookmarks": 3440
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HM17jBiaoAAH6Bs.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "嘿嘿，如果谁的IG开了公众号，Meta现在有新功能了。现在任何人都可以输入我们的用户名并根据我们的脸和照片创建人工智能图像。为什么要这样做？如何关闭它？\nInstagram → 个人资料 → 菜单 (☰) → 共享和重用 → 关闭主题“允许人们在 Instagram 上重用您的内容并在 Meta 上使用 AI 功能”的帖子和卷轴，但这个人说的最好方法。即，将帐户设置为私人并关闭所有内容，如图所示。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-10T12:30:16.374Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2075217816056148433",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2075217816056148433",
+            "author": {
+              "name": "IT Guy",
+              "handle": "T3chFalcon",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1909168815113400322/WPHw_vc3_normal.jpg",
+              "isVerified": false
+            },
+            "content": "If your Instagram is public, Meta just enrolled you in something you didn't agree to. Their new AI tool, Muse Image, lets anyone @-mention your Instagram handle in Meta AI and generate images using your face and photos. launched Tuesday. opt-in by default. no notification when it happens. → you won't be told when someone creates an AI image of you → opting out only stops future generation; anything already made stays live → there's no mechanism to remove images created before you opted out how to turn it off:\nInstagram → Profile → Menu (☰) → Sharing and Reuse → turn off Posts and Reels under \"Allow people to reuse your content on Instagram and with AI features at Meta\" note: the setting is still rolling out. if you don't see it yet, keep checking. if you want the strongest protection right now: go private.",
+            "createdAt": "Thu Jul 09 13:57:37 +0000 2026",
+            "viewCount": 985637,
+            "metrics": {
+              "views": 985637,
+              "likes": 5127,
+              "retweets": 1793,
+              "replies": 72,
+              "quotes": 108,
+              "bookmarks": 4116
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HMynV--XIAAtAIA.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "如果您的 Instagram 是公开的，那么 Meta 只是为您注册了一些您不同意的内容。他们的新 AI 工具 Muse Image 可以让任何人在 Meta AI 中@提及您的 Instagram 账号，并使用您的脸部和照片生成图像。周二推出。默认选择加入。发生时没有通知。 → 当有人创建你的人工智能图像时，你不会被告知 → 选择退出只会阻止下一代；任何已经制作的内容都会保持活动状态→没有任何机制可以删除在您选择关闭它之前创建的图像：\nInstagram → 个人资料 → 菜单 (☰) → 共享和重用 → 关闭“允许人们在 Instagram 上重用您的内容并在 Meta 上使用 AI 功能”下的帖子和卷轴 注意：该设置仍在推出中。如果您还没有看到，请继续检查。如果您现在想要最强的保护：私有化。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-10T12:30:16.370Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2075450851989258275",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-10T12:30:16.275Z"
+        },
+        "createdAt": "2026-07-10T12:30:16.275Z",
+        "updatedAt": "2026-07-10T12:30:16.374Z"
+      }
+    },
+    {
+      "rank": 5,
+      "essenceScore": 15733,
+      "heatScore": 9025,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 9025
+      },
+      "sourceUrl": "https://x.com/zerohedge/status/2075392971164278817",
+      "reason": "Xbox大裁员对上CEO入联储顾问的并置吐槽，一句‘Meanwhile at the Fed’完成再框定",
+      "reasonEn": "Juxtaposes Xbox mass layoffs with the CEO’s Fed advisor role in a single ‘Meanwhile at the Fed’ dunk",
+      "metrics": {
+        "views": 292162,
+        "likes": 1137,
+        "retweets": 402,
+        "replies": 225,
+        "quotes": 59,
+        "bookmarks": 106
+      },
+      "document": {
+        "id": "7d7930f9-749e-4878-9c54-b71e5a091414",
+        "title": "Meanwhile at the Fed",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2075392971164278817",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2075392971164278817",
+            "author": {
+              "name": "zerohedge",
+              "handle": "zerohedge",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/72647502/tyler_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Meanwhile at the Fed",
+            "createdAt": "Fri Jul 10 01:33:37 +0000 2026",
+            "viewCount": 153341,
+            "metrics": {
+              "views": 153341,
+              "likes": 694,
+              "retweets": 136,
+              "replies": 51,
+              "quotes": 7,
+              "bookmarks": 73
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HM1G58GXkAIFBXE.png"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "与此同时，在美联储",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-10T12:30:19.705Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2075386597738942951",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2075386597738942951",
+            "author": {
+              "name": "Fox News",
+              "handle": "FoxNews",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2071660879158956032/g2DeTAZa_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Microsoft's Xbox division is cutting 1,600 jobs... but critics are pointing to another number that's fueling outrage. Microsoft says it's laying off 4,800 employees companywide, while federal data shows the company has also been approved for 2,273 H-1B employer-sponsored visa workers this year. Critics say American workers are being pushed aside in favor of lower-cost foreign labor, reigniting the debate over the H-1B visa system and who should be filling U.S. tech jobs. The H-1B program has become a major point of debate in Washington. President Trump recently tried to limit employers' use of the program by proposing a $100,000 fee on companies filing H-1B applications, saying the move would help prioritize American workers. A federal judge later struck down the proposal, ruling that it effectively imposed a tax that only Congress has the authority to enact.",
+            "createdAt": "Fri Jul 10 01:08:18 +0000 2026",
+            "viewCount": 292162,
+            "metrics": {
+              "views": 292162,
+              "likes": 1137,
+              "retweets": 402,
+              "replies": 225,
+              "quotes": 59,
+              "bookmarks": 106
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HM1BFoJXMAAPqQj.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "微软的 Xbox 部门正在裁员 1,600 人……但批评者指出另一个引发愤怒的数字。微软表示，该公司将在全公司范围内裁员 4,800 名员工，而联邦数据显示，该公司今年还获得了 2,273 名雇主担保签证员工的批准。批评人士称，美国工人正在被排挤，转而选择成本较低的外国劳动力，这重新引发了关于 H-1B 签证制度以及谁应该填补美国科技岗位的争论。 H-1B 计划已成为华盛顿争论的焦点。特朗普总统最近试图限制雇主对该计划的使用，提议向提交 H-1B 申请的公司收取 10 万美元的费用，称此举将有助于优先考虑美国工人。一名联邦法官后来否决了该提案，裁定该提案实际上征收了一项只有国会有权颁布的税。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-10T12:30:19.712Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2075392971164278817",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-10T12:30:19.644Z"
+        },
+        "createdAt": "2026-07-10T12:30:19.644Z",
+        "updatedAt": "2026-07-10T12:30:19.712Z"
+      }
+    },
+    {
+      "rank": 6,
+      "essenceScore": 12671,
+      "heatScore": 7084,
+      "signals": {
+        "depth": 4,
+        "hasDunk": false,
+        "peakIndex": 0,
+        "peakHeat": 7084
+      },
+      "sourceUrl": "https://x.com/aleabitoreddit/status/2075496116481884524",
+      "reason": "用光通信供应链订单与Nvidia辟谣，反驳散户恐慌抛售，把主题杀跌重框为基本面未变",
+      "reasonEn": "Supply-chain expert reply that reframes the photonics selloff as retail panic after denied Nvidia/Meta FUD",
+      "metrics": {
+        "views": 247877,
+        "likes": 992,
+        "retweets": 75,
+        "replies": 108,
+        "quotes": 7,
+        "bookmarks": 336
+      },
+      "document": {
+        "id": "77bce5bc-c836-4e72-90a3-833edbf46f24",
+        "title": "Yep, it’s interesting to witness",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2075496116481884524",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2075496116481884524",
+            "author": {
+              "name": "Serenity",
+              "handle": "aleabitoreddit",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1996176688414367744/LXfA_lIx_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Yep, it’s interesting to witness retail capitulation. After we got Bloomberg Meta compute article cleared up by their internal memo. And the 2 reports on delays were denied by Nvidia. Both of which caused the selloff in the first place... So Photonics / Nvidia’s roadmap hasn’t fundamentally changed: $LITE is still completely sold out for the next 2 years and likely into 2029. $SIVE is about to volume ramp with GlobalFoundries, Jabil, Poet, Ayar, and other hyperscaler suppliers. $TSM COUPE and their TW suppliers from Shunsin to Foci aren’t randomly disappearing into the void. $AAOI and their $471m/month h2 2027 revenue projections haven’t changed. $IQE and their epiwafer contracts with Macom and Tower Semi haven’t disappeared. $AXTI ownership of 40% of the InP substrate supply chains haven’t suddenly disappeared. As with any theme from Rocketlab + Space sector 50% drop back in 2025. Or Nebius + Neocloud 50% drop entering 2026. Or the Samsung/SK Hynix crash from Iran War LNG/Helium/Oil fears few months ago. Volatility from indiscriminate thematic selloffs isn’t typically representative of individual company fundamentals. Retail tends to build conviction over price movements and imaginary charts, then lose that when a stock drops. And institutions are probably placing limit orders to capitalize on that. Conviction shouldn’t be tied to the quote of a stock on a certain day, but long term revenue or operating income growth.",
+            "createdAt": "Fri Jul 10 08:23:29 +0000 2026",
+            "viewCount": 247877,
+            "metrics": {
+              "views": 247877,
+              "likes": 992,
+              "retweets": 75,
+              "replies": 108,
+              "quotes": 7,
+              "bookmarks": 336
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "是的，目睹零售业的投降是很有趣的。在我们收到彭博社元计算文章后，他们的内部备忘录澄清了这一点。而这 2 份关于延迟的报道都被 Nvidia 否认了。这两个因素首先导致了抛售……所以 Photonics / Nvidia 的路线图并没有从根本上改变：$LITE 在未来 2 年（甚至可能到 2029 年）仍然完全售空。$SIVE 即将与 GlobalFoundries、Jabil、Poet、Ayar 和其他超大规模供应商一起提高产量。 $TSM COUPE 及其从 Shunsin 到 Foci 的台湾供应商并不是随机消失的。 $AAOI 及其 2027 年下半年 4.71 亿美元/月的收入预测没有改变。 $IQE 以及他们与 Macom 和 Tower Semi 的外延片合同并没有消失。 $AXTI 拥有 40% InP 衬底供应链的所有权并没有突然消失。与 Rocketlab + 太空领域的任何主题一样，到 2025 年会下降 50%。或者进入 2026 年 Nebius + Neocloud 会下降 50%。或者几个月前因伊朗战争液化天然气/氦气/石油担忧而导致的三星/SK 海力士崩溃。不加选择的主题抛售带来的波动通常不能代表个别公司的基本面。零售业往往会对价格走势和想象的图表建立信心，但当股票下跌时就会失去信心。机构可能会下限价单来利用这一点。信念不应与某一天股票的报价挂钩，而应与长期收入或营业收入增长挂钩。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-10T12:30:14.714Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2075482186090688751",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2075482186090688751",
+            "author": {
+              "name": "Lee",
+              "handle": "Lee_Trades",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1587733262855806977/JelNHCH8_normal.jpg",
+              "isVerified": false
+            },
+            "content": "40% swing from the panic/X hysteria lows. I would not rely on X is an indicator but it can be a good contrarian tool. More to the point I think photonic sector is starting to bottom. $SIVE",
+            "createdAt": "Fri Jul 10 07:28:08 +0000 2026",
+            "viewCount": 218783,
+            "metrics": {
+              "views": 218783,
+              "likes": 45,
+              "retweets": 1,
+              "replies": 4,
+              "quotes": 0,
+              "bookmarks": 6
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "从恐慌/X 歇斯底里低点摆动 40%。我不会相信 X 是一个指标，但它可以是一个很好的反向工具。更重要的是，我认为光子行业正在开始触底。 $SIVE",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-10T12:30:14.701Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2075183263048433694",
+            "relation": "quote",
+            "depth": 2,
+            "sourceTweetId": "2075183263048433694",
+            "author": {
+              "name": "Lee",
+              "handle": "Lee_Trades",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1587733262855806977/JelNHCH8_normal.jpg",
+              "isVerified": false
+            },
+            "content": "I dont hold $SIVE but the amount of negativity around the stock currently is crazy. Probably a great time to buy if you can sit on hands and ignore the noise.",
+            "createdAt": "Thu Jul 09 11:40:19 +0000 2026",
+            "viewCount": 9763,
+            "metrics": {
+              "views": 9763,
+              "likes": 25,
+              "retweets": 1,
+              "replies": 0,
+              "quotes": 0,
+              "bookmarks": 1
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "我不持有 $SIVE，但目前该股的负面情绪非常严重。如果您可以坐在手上并忽略噪音，那么这可能是购买的好时机。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-10T12:30:14.694Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2075176530414579998",
+            "relation": "quote",
+            "depth": 3,
+            "sourceTweetId": "2075176530414579998",
+            "author": {
+              "name": "TopInvestor",
+              "handle": "Matrix_B0SS",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1446950637925765124/CvmOOVCv_normal.jpg",
+              "isVerified": false
+            },
+            "content": "It’s making me laugh with all the insiders selling and bearish news for $SIVE One good news will take to 5x to 10x again due to all bearish news we have heard these days Not selling a single share of $SIVE for institutions to buy",
+            "createdAt": "Thu Jul 09 11:13:34 +0000 2026",
+            "viewCount": 10476,
+            "metrics": {
+              "views": 10476,
+              "likes": 115,
+              "retweets": 5,
+              "replies": 3,
+              "quotes": 1,
+              "bookmarks": 4
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "所有内部人士都在抛售和看跌 $SIVE 的消息，这让我笑了 由于这些天我们听到的所有看跌消息，一个好消息将再次上涨 5 倍到 10 倍 不出售一股 $SIVE 供机构购买",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-10T12:30:14.789Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2075496116481884524",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-10T12:30:14.635Z"
+        },
+        "createdAt": "2026-07-10T12:30:14.635Z",
+        "updatedAt": "2026-07-10T12:30:14.789Z"
+      }
+    },
+    {
+      "rank": 7,
+      "essenceScore": 6983,
+      "heatScore": 4110,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 4110
+      },
+      "sourceUrl": "https://x.com/Shinpei3350/status/2075477053210759532",
+      "reason": "Metaplanet IR用美日制度对照，解释BTC日利息数字信贷为何要靠证券型通证破局",
+      "reasonEn": "Metaplanet IR head reframes a dry BTC digital-credit filing as the Japan path to daily-yield, BTC-backed products",
+      "metrics": {
+        "views": 148650,
+        "likes": 592,
+        "retweets": 106,
+        "replies": 11,
+        "quotes": 49,
+        "bookmarks": 29
+      },
+      "document": {
+        "id": "8f18a549-4ac3-4182-b534-b61464c6ab0b",
+        "title": "ビットコインを裏付けとし、年中無休で、日割りの利息・配当が発生す",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2075477053210759532",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2075477053210759532",
+            "author": {
+              "name": "奥野晋平（Shinpei Okuno）",
+              "handle": "Shinpei3350",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1910539524926824449/-bg_ocLc_normal.jpg",
+              "isVerified": false
+            },
+            "content": "ビットコインを裏付けとし、年中無休で、日割りの利息・配当が発生する金融商品をいつか実現したい。\n米国ではすでに、日割り配当型デジタルクレジット（BTCを裏付けとする優先株）の実績が生まれています。\n日本でこれを実現するには、制度・税務・決済実務の壁があります。\nだからこそ、STやSCの活用が重要になる。\n今回の検討開始は、その実現に向けた挑戦の始まりです。",
+            "createdAt": "Fri Jul 10 07:07:44 +0000 2026",
+            "viewCount": 71087,
+            "metrics": {
+              "views": 71087,
+              "likes": 652,
+              "retweets": 102,
+              "replies": 35,
+              "quotes": 29,
+              "bookmarks": 26
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "我希望有一天能实现一种由比特币支持的金融产品，每年 365 天每天支付利息和股息。\n在美国，已经有每日股息型数字信用（由比特币支持的优先股）的记录。\n日本要实现这一目标，在制度、税收和支付实践方面存在障碍。\n这就是为什么利用 ST 和 SC 很重要。\n这项研究的开始标志着实现这一目标的挑战的开始。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-10T12:30:17.994Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2075468732353094038",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2075468732353094038",
+            "author": {
+              "name": "Metaplanet Inc.",
+              "handle": "Metaplanet",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2025375596252200960/2EyM2Qe4_normal.jpg",
+              "isVerified": false
+            },
+            "content": "ビットコイン・JPYC・セキュリティトークンを活用したデジタルクレジット領域における共同検討開始のお知らせ",
+            "createdAt": "Fri Jul 10 06:34:40 +0000 2026",
+            "viewCount": 148650,
+            "metrics": {
+              "views": 148650,
+              "likes": 592,
+              "retweets": 106,
+              "replies": 11,
+              "quotes": 49,
+              "bookmarks": 29
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HM2Lz7bXUAA6ac2.jpg",
+              "https://pbs.twimg.com/media/HM2Lz7XWAAAomu6.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "关于开始使用比特币、JPYC、证券型代币进行数字信用领域联合研究的公告",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-10T12:30:17.995Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2075477053210759532",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-10T12:30:17.891Z"
+        },
+        "createdAt": "2026-07-10T12:30:17.891Z",
+        "updatedAt": "2026-07-10T12:30:17.995Z"
+      }
+    },
+    {
+      "rank": 8,
+      "essenceScore": 5473,
+      "heatScore": 4106,
+      "signals": {
+        "depth": 3,
+        "hasDunk": false,
+        "peakIndex": 0,
+        "peakHeat": 4106
+      },
+      "sourceUrl": "https://x.com/jacobmparis/status/2075288249623261216",
+      "reason": "一句“开发者 vs 真正干活的人”把ChatGPT分模式嘲成产品政治，引用远超原帖",
+      "reasonEn": "One-line dunk that rebrands ChatGPT modes as ‘devs vs people who actually get work done,’ outperforming the original",
+      "metrics": {
+        "views": 85394,
+        "likes": 2038,
+        "retweets": 48,
+        "replies": 41,
+        "quotes": 0,
+        "bookmarks": 67
+      },
+      "document": {
+        "id": "01580ce0-ed3d-4cdf-b080-4bbe8754e8aa",
+        "title": "ChatGPT now serves two audiences",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2075288249623261216",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2075288249623261216",
+            "author": {
+              "name": "jacob paris ▲",
+              "handle": "jacobmparis",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1995793737319153665/8SyoWndY_normal.jpg",
+              "isVerified": false
+            },
+            "content": "ChatGPT now serves two audiences:\n- developers - people who actually get work done",
+            "createdAt": "Thu Jul 09 18:37:30 +0000 2026",
+            "viewCount": 85394,
+            "metrics": {
+              "views": 85394,
+              "likes": 2038,
+              "retweets": 48,
+              "replies": 41,
+              "quotes": 0,
+              "bookmarks": 67
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "ChatGPT 现在为两个受众提供服务：\n- 开发人员 - 真正完成工作的人",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-10T12:30:11.386Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2075285388814373121",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2075285388814373121",
+            "author": {
+              "name": "Thomas Paul Mann",
+              "handle": "thomaspaulmann",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1250107714732273664/xgwMUSrS_normal.jpg",
+              "isVerified": false
+            },
+            "content": "We have now modes?!",
+            "createdAt": "Thu Jul 09 18:26:08 +0000 2026",
+            "viewCount": 89223,
+            "metrics": {
+              "views": 89223,
+              "likes": 16,
+              "retweets": 1,
+              "replies": 4,
+              "quotes": 3,
+              "bookmarks": 0
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HMzlClpXoAARR5h.png"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "我们现在有模式了吗？！",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-10T12:30:11.545Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2075285028523626531",
+            "relation": "reply",
+            "depth": 2,
+            "sourceTweetId": "2075285028523626531",
+            "author": {
+              "name": "Thomas Paul Mann",
+              "handle": "thomaspaulmann",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1250107714732273664/xgwMUSrS_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Codex == ChatGPT",
+            "createdAt": "Thu Jul 09 18:24:42 +0000 2026",
+            "viewCount": 4784,
+            "metrics": {
+              "views": 4784,
+              "likes": 102,
+              "retweets": 0,
+              "replies": 7,
+              "quotes": 0,
+              "bookmarks": 5
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HMzksc1W8AAQquw.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "法典 == ChatGPT",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-10T12:30:11.550Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2075288249623261216",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-10T12:30:11.312Z"
+        },
+        "createdAt": "2026-07-10T12:30:11.312Z",
+        "updatedAt": "2026-07-10T12:30:11.550Z"
+      }
+    }
+  ]
+}

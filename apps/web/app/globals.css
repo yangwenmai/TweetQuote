@@ -56,6 +56,24 @@ select {
   gap: 16px;
 }
 
+.daily-shell {
+  width: 100%;
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 32px 16px 64px;
+}
+
+.daily-list {
+  display: grid;
+  gap: 16px;
+}
+
+@media (max-width: 700px) {
+  .daily-shell {
+    padding: 24px 12px 48px;
+  }
+}
+
 .field {
   display: grid;
   gap: 6px;
