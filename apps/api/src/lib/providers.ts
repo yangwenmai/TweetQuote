@@ -1,6 +1,10 @@
 import {
   annotationSchema,
   createDefaultQuota,
+  detectArticleTweetId,
+  getTranslatableNodeText,
+  isAlreadyInLanguage,
+  normalizeArticlePayload,
   normalizeLegacyRenderItems,
   quoteDocumentSchema,
   quoteNodeSchema,
@@ -159,6 +163,63 @@ export async function resolveQuoteChain(tweetId: string, apiKey: string) {
   }
 
   return chain;
+}
+
+async function fetchArticleByTweetId(tweetId: string, apiKey: string) {
+  if (!tweetId || !apiKey) {
+    return null;
+  }
+  try {
+    const response = await fetch(`https://api.twitterapi.io/twitter/article?tweet_id=${encodeURIComponent(tweetId)}`, {
+      headers: {
+        "X-API-Key": apiKey,
+        "User-Agent": "TweetQuote/2.0",
+      },
+    });
+    const data = (await response.json().catch(() => ({}))) as Record<string, unknown>;
+    if (!response.ok || data.status === "failed") {
+      logger.debug("twitter", `fetchArticleByTweetId ${tweetId} skipped`, {
+        httpStatus: response.status,
+        message: typeof data.message === "string" ? data.message : "",
+      });
+      return null;
+    }
+    const article = normalizeArticlePayload(data.article);
+    if (article) {
+      logger.debug("twitter", `fetchArticleByTweetId ${tweetId}`, {
+        blockCount: article.blocks.length,
+        hasCover: Boolean(article.coverUrl),
+        titlePreview: article.title.slice(0, 80),
+      });
+    }
+    return article;
+  } catch (error) {
+    logger.debug("twitter", `fetchArticleByTweetId ${tweetId} error`, { error: String(error) });
+    return null;
+  }
+}
+
+export async function enrichChainWithArticles(chain: Array<Record<string, unknown>>, apiKey: string) {
+  const candidates = chain
+    .map((item) => ({ item, tweetId: detectArticleTweetId(item) }))
+    .filter((entry): entry is { item: Record<string, unknown>; tweetId: string } => Boolean(entry.tweetId));
+
+  if (candidates.length === 0) {
+    return 0;
+  }
+
+  const results = await Promise.all(
+    candidates.map(async ({ item, tweetId }) => {
+      const article = await fetchArticleByTweetId(tweetId, apiKey);
+      if (!article) {
+        return 0;
+      }
+      item._article = article;
+      return 1;
+    }),
+  );
+
+  return results.reduce<number>((sum, count) => sum + count, 0);
 }
 
 export async function translateWithGoogle(text: string, targetLanguage: string): Promise<TranslationArtifact> {
@@ -374,6 +435,7 @@ export async function translateBatch(
 export async function buildDocumentFromQuoteRequest(request: QuoteFetchRequest, quota = createDefaultQuota()): Promise<{
   document: QuoteDocument;
   quota: ReturnType<typeof createDefaultQuota>;
+  articleFetches: number;
   layers: Array<{
     index: number;
     relation: "root" | "quote" | "reply";
@@ -389,13 +451,19 @@ export async function buildDocumentFromQuoteRequest(request: QuoteFetchRequest, 
 
   const apiKey = request.apiKey || apiEnv.twitterApiKey;
   const chain = await resolveQuoteChain(tweetId, apiKey);
+  const articleFetches = await enrichChainWithArticles(chain, apiKey);
   const document = normalizeLegacyRenderItems(chain, request.source);
   const translatedNodes = await Promise.all(
     document.nodes.map(async (node) => {
-      if (!node.content || request.translationProvider === "none") {
+      const textToTranslate = getTranslatableNodeText(node);
+      if (
+        !textToTranslate ||
+        request.translationProvider === "none" ||
+        isAlreadyInLanguage(textToTranslate, request.targetLanguage)
+      ) {
         return node;
       }
-      const artifact = await translateText(request.translationProvider, node.content, request.targetLanguage, {
+      const artifact = await translateText(request.translationProvider, textToTranslate, request.targetLanguage, {
         aiApiKey: request.aiApiKey,
         aiBaseUrl: request.aiBaseUrl,
         aiModel: request.aiModel,
@@ -420,6 +488,7 @@ export async function buildDocumentFromQuoteRequest(request: QuoteFetchRequest, 
       updatedAt: new Date().toISOString(),
     }),
     quota,
+    articleFetches,
     layers: translatedNodes.map((node, index) => ({
       index,
       relation: node.relation,

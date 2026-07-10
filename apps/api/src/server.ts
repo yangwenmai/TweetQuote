@@ -264,6 +264,7 @@ app.post("/api/v1/quote/fetch", async (request, reply) => {
       source: payload.source,
       translationProvider: payload.translationProvider,
       targetLanguage: payload.targetLanguage,
+      articleFetches: result.articleFetches,
     },
   };
 });
@@ -489,6 +490,8 @@ app.post("/api/quote-chain/render", async (request, reply) => {
       text: node.content,
       translatedContent: node.translation.text,
       annotations: node.translation.annotations,
+      media: node.media,
+      article: node.article,
     })),
     meta: {
       translation_provider: payload.translationProvider,
@@ -496,6 +499,7 @@ app.post("/api/quote-chain/render", async (request, reply) => {
       chain_length: result.document.nodes.length,
       source: payload.source,
       hosted_render: hostedRender,
+      article_fetches: result.articleFetches,
     },
     session: {
       device_id: deviceId,
