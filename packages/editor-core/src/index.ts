@@ -1,6 +1,7 @@
 import {
   createEmptyDocument,
   createEmptyNode,
+  getTranslatableNodeText,
   nowIso,
   quoteDocumentSchema,
   type AppLanguage,
@@ -9,6 +10,8 @@ import {
   type TranslationArtifact,
   type TranslationProvider,
 } from "@tweetquote/domain";
+
+export { collectImageUrlsFromNode } from "@tweetquote/domain";
 
 export const storageKeys = {
   webDraft: "tq_v2_editor_draft",
@@ -196,10 +199,14 @@ export function applyBatchTranslations(
 
 export function collectBatchItems(document: QuoteDocument) {
   return document.nodes
-    .filter((node) => node.content.trim())
     .map((node) => ({
+      node,
+      text: getTranslatableNodeText(node).trim(),
+    }))
+    .filter((entry) => entry.text)
+    .map(({ node, text }) => ({
       id: node.id,
-      text: node.content.trim(),
+      text,
       contextRole: node.relation,
     }));
 }

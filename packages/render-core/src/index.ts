@@ -1,4 +1,5 @@
 import type { QuoteDocument } from "@tweetquote/domain";
+import { getTranslatableNodeText } from "@tweetquote/domain";
 
 export function getActiveNode(document: QuoteDocument) {
   return document.nodes[0] ?? null;
@@ -13,7 +14,7 @@ export function getDocumentSubtitle(document: QuoteDocument) {
 }
 
 export function getTranslationCoverage(document: QuoteDocument) {
-  const total = document.nodes.filter((node) => node.content.trim()).length;
+  const total = document.nodes.filter((node) => getTranslatableNodeText(node).trim()).length;
   const translated = document.nodes.filter((node) => node.translation.text.trim()).length;
   return {
     total,
