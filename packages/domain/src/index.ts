@@ -708,7 +708,12 @@ export function normalizeArticlePayload(raw: unknown): ArticleContent | null {
 export function flattenArticleToPlainText(article: ArticleContent): string {
   const parts: string[] = [];
   if (article.title.trim()) parts.push(article.title.trim());
-  if (article.previewText.trim()) parts.push(article.previewText.trim());
+  // previewText is a teaser that usually restates the opening blocks — include it
+  // only when there is no block body, otherwise translation/intro logic double-counts.
+  const hasBlockText = article.blocks.some((block) => Boolean(block.text?.trim()));
+  if (!hasBlockText && article.previewText.trim()) {
+    parts.push(article.previewText.trim());
+  }
   for (const block of article.blocks) {
     if (block.type === "divider") {
       parts.push("---");
@@ -719,6 +724,47 @@ export function flattenArticleToPlainText(article: ArticleContent): string {
     }
   }
   return parts.join("\n\n").trim();
+}
+
+function normalizeForArticleCompare(text: string): string {
+  return text.replace(/\s+/g, " ").trim().toLowerCase();
+}
+
+/**
+ * Drop paragraphs from tweet `content` that already appear in the Article
+ * (title / preview / blocks). Leftover text is genuine commentary shown above
+ * the structured article; empty means content was just a dump of the article.
+ */
+function extractUniqueArticleIntro(content: string, article: ArticleContent): string {
+  const intro = stripArticleUrlsFromText(content.trim());
+  if (!intro) return "";
+
+  const discardTexts = [article.title, article.previewText, ...article.blocks.map((block) => block.text ?? "")]
+    .map((text) => text.trim())
+    .filter(Boolean);
+  if (discardTexts.length === 0) return intro;
+
+  const articlePlain = flattenArticleToPlainText(article);
+  const introNorm = normalizeForArticleCompare(intro);
+  const articleNorm = normalizeForArticleCompare(articlePlain);
+  if (articleNorm && (introNorm === articleNorm || introNorm.includes(articleNorm) || articleNorm.includes(introNorm))) {
+    return "";
+  }
+
+  const kept = intro.split(/\n\n+/).filter((para) => {
+    const trimmed = para.trim();
+    if (!trimmed) return false;
+    const paraNorm = normalizeForArticleCompare(trimmed);
+    return !discardTexts.some((discard) => {
+      const discardNorm = normalizeForArticleCompare(discard);
+      return (
+        paraNorm === discardNorm ||
+        (paraNorm.length >= 24 && discardNorm.includes(paraNorm)) ||
+        (discardNorm.length >= 24 && paraNorm.includes(discardNorm))
+      );
+    });
+  });
+  return kept.join("\n\n").trim();
 }
 
 export function collectImageUrlsFromArticle(article: ArticleContent | undefined): string[] {
@@ -761,10 +807,11 @@ export function isAlreadyInLanguage(text: string, target: AppLanguage): boolean 
     : !hasKana && latin > 0 && hanRatio <= 0.05;
 }
 
-/** Text sent to translation providers (intro + full article body when present). */
+/** Text sent to translation providers (unique intro + article body when present). */
 export function getTranslatableNodeText(node: Pick<QuoteNode, "content" | "article">): string {
-  const intro = node.article ? stripArticleUrlsFromText(node.content.trim()) : node.content.trim();
-  const articlePlain = node.article ? flattenArticleToPlainText(node.article) : "";
+  if (!node.article) return node.content.trim();
+  const intro = getNodeIntroText(node);
+  const articlePlain = flattenArticleToPlainText(node.article);
   if (intro && articlePlain) {
     return `${intro}\n\n${articlePlain}`.trim();
   }
@@ -773,11 +820,8 @@ export function getTranslatableNodeText(node: Pick<QuoteNode, "content" | "artic
 
 /** Intro line shown above structured article blocks (empty when redundant). */
 export function getNodeIntroText(node: Pick<QuoteNode, "content" | "article">): string {
-  let intro = stripArticleUrlsFromText(node.content.trim());
-  if (!node.article) return intro;
-  const articlePlain = flattenArticleToPlainText(node.article);
-  if (!intro || intro === articlePlain) return "";
-  return intro;
+  if (!node.article) return stripArticleUrlsFromText(node.content.trim());
+  return extractUniqueArticleIntro(node.content, node.article);
 }
 
 function stripTcoUrls(text: string, tcoUrls: string[]): string {
@@ -823,7 +867,11 @@ export function normalizeLegacyRenderItems(
         : undefined;
 
     const articlePlain = article ? flattenArticleToPlainText(article) : "";
-    if (!content && articlePlain) {
+    if (article) {
+      // Keep only commentary that is not already in the Article; never mirror the
+      // full article into `content` (that double-renders with ArticleBlocks).
+      content = extractUniqueArticleIntro(content, article);
+    } else if (!content && articlePlain) {
       content = articlePlain;
     }
 
