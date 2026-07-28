@@ -23,3 +23,6 @@ apps/api/dist/
 apps/extension/dist/
 apps/api/prisma/dev.db*
 *.tsbuildinfo
+# 每日自动生成脚本的本地配置与日志（含公司 WiFi 名，勿提交）
+scripts/daily-auto.local
+scripts/logs/
