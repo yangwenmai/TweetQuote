@@ -202,6 +202,7 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    gap: 6px;
     min-height: 42px;
     padding: 0 14px;
     border-radius: 999px;
@@ -214,6 +215,25 @@
     background: transparent;
     cursor: pointer;
     transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+  }
+
+  .badge-new {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px 6px;
+    border-radius: 5px;
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    line-height: 1.2;
+    color: #fff;
+    background: var(--clay);
+  }
+
+  .eyebrow .badge-new {
+    margin-left: 2px;
   }
 
   .nav-link:hover,
@@ -665,6 +685,32 @@
     color: var(--ink);
   }
 
+  .daily-band {
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) auto;
+    gap: 28px;
+    align-items: end;
+    padding: 34px 0;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+  }
+
+  .daily-band .section-head {
+    gap: 14px;
+  }
+
+  .daily-band .section-head h2 {
+    max-width: 12em;
+  }
+
+  .daily-actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    padding-bottom: 4px;
+  }
+
   .cta {
     padding: 46px 0 76px;
   }
@@ -736,6 +782,7 @@
     .hero-grid,
     .story-grid,
     .workflow-grid,
+    .daily-band,
     .cta-box {
       grid-template-columns: 1fr;
     }
@@ -759,8 +806,12 @@
       min-height: 70px;
     }
 
-    .nav-links a[href^="#"] {
+    .nav-links a[href^="#"]:not([href="#daily"]) {
       display: none;
+    }
+
+    .daily-actions {
+      justify-content: flex-start;
     }
 
     .hero {
@@ -880,6 +931,7 @@
       <nav class="nav-links">
         <a href="#story" class="nav-link" data-i18n="nav.story"></a>
         <a href="#principles" class="nav-link" data-i18n="nav.principles"></a>
+        <a href="#daily" class="nav-link"><span data-i18n="nav.daily"></span><span class="badge-new" data-i18n="badge.new">New</span></a>
         <a href="#workflow" class="nav-link" data-i18n="nav.workflow"></a>
         <a href="https://github.com/yangwenmai/tweetquote" target="_blank" rel="noreferrer" class="nav-link">GitHub</a>
         <button class="lang-toggle" id="langToggle" onclick="switchLang()"></button>
@@ -1011,6 +1063,20 @@
       </div>
     </section>
 
+    <section class="section" id="daily">
+      <div class="container daily-band">
+        <div class="section-head">
+          <span class="eyebrow"><span data-i18n="daily.eyebrow"></span><span class="badge-new" data-i18n="badge.new">New</span></span>
+          <h2 data-i18n-html="daily.title"></h2>
+          <p data-i18n-html="daily.desc"></p>
+        </div>
+        <div class="daily-actions">
+          <a href="http://164.90.153.103:3000/daily" data-app-path="daily" target="_blank" rel="noreferrer" class="button button-primary" data-i18n="daily.cta"></a>
+          <a href="http://164.90.153.103:3000/daily/archive" data-app-path="daily/archive" target="_blank" rel="noreferrer" class="button button-secondary" data-i18n="daily.archive"></a>
+        </div>
+      </div>
+    </section>
+
     <section class="section" id="workflow">
       <div class="container workflow-grid">
         <div class="timeline">
@@ -1069,6 +1135,7 @@
     <div class="container footer-inner">
       <p data-i18n="footer.copy"></p>
       <div class="footer-links">
+        <a href="http://164.90.153.103:3000/daily" data-app-path="daily" target="_blank" rel="noreferrer" data-i18n="nav.daily"></a>
         <a href="https://x.com/maiyangai" target="_blank" rel="noreferrer">@MaiYangAI</a>
         <a href="https://github.com/yangwenmai/tweetquote" target="_blank" rel="noreferrer">GitHub</a>
         <a href="https://github.com/yangwenmai/tweetquote/blob/main/LICENSE" target="_blank" rel="noreferrer">MIT License</a>
@@ -1083,6 +1150,8 @@ const I18N = {
     "brand.tagline": "引用链，一键成图",
     "nav.story": "为什么需要",
     "nav.principles": "产品特色",
+    "nav.daily": "每日榜",
+    "badge.new": "New",
     "nav.workflow": "使用方式",
     "nav.cta": "安装插件",
     "lang.toggle": "EN",
@@ -1125,6 +1194,11 @@ const I18N = {
     "principles.card2.desc": "统一的排版风格、清晰的层级结构、完整的作者与时间信息，让你的引用看起来像出版物一样专业。",
     "principles.card3.title": "翻译内建其中",
     "principles.card3.desc": "Google 翻译和 AI 翻译开箱即用，支持批量翻译和双语对照显示，外文推文也能轻松理解与分享。",
+    "daily.eyebrow": "每日榜",
+    "daily.title": "不知道从哪条开始？<br>先看今日精华引用。",
+    "daily.desc": "每天精选 X 上最有价值的推文引用链，按「精华分」排行。看中了，一键做成图——从发现到分享，闭环完成。",
+    "daily.cta": "查看今日榜单",
+    "daily.archive": "历史归档",
     "workflow.eyebrow": "使用方式",
     "workflow.title": "三步完成，<br>从链接到成品图。",
     "workflow.desc": "无论是通过浏览器插件在 Twitter 页面直接操作，还是在网页版粘贴链接，流程都很简单：抓取、编辑、导出。",
@@ -1151,6 +1225,8 @@ const I18N = {
     "brand.tagline": "Quote chains, beautifully framed",
     "nav.story": "Why",
     "nav.principles": "Features",
+    "nav.daily": "Daily",
+    "badge.new": "New",
     "nav.workflow": "How it works",
     "nav.cta": "Install extension",
     "lang.toggle": "中文",
@@ -1193,6 +1269,11 @@ const I18N = {
     "principles.card2.desc": "Consistent typography, clear hierarchy, and complete author and timestamp information — your quotes look as polished as a published article.",
     "principles.card3.title": "Translation built in",
     "principles.card3.desc": "Google and AI translation work out of the box, with batch processing and bilingual display. Foreign tweets are now easy to understand and share.",
+    "daily.eyebrow": "Daily Top",
+    "daily.title": "Not sure where to start?<br>Browse today's essence quotes.",
+    "daily.desc": "Each day we rank the most valuable quote chains on X by an “essence” score. Find one worth sharing, then turn it into an image in one click.",
+    "daily.cta": "View today's list",
+    "daily.archive": "Archive",
     "workflow.eyebrow": "How it works",
     "workflow.title": "Three steps.<br>From a link to a finished image.",
     "workflow.desc": "Whether you use the browser extension directly on Twitter or paste a link in the web editor, the flow is simple: fetch, edit, export.",
@@ -1223,6 +1304,17 @@ let lang = localStorage.getItem('tq_landing_lang') || (navigator.language.starts
 
 function t(key) {
   return (I18N[lang] || I18N['zh-CN'])[key] || key;
+}
+
+function appPath(path) {
+  const base = APP_URL.endsWith('/') ? APP_URL : `${APP_URL}/`;
+  return new URL(String(path || '').replace(/^\//, ''), base).href;
+}
+
+function resolveAppLinks() {
+  document.querySelectorAll('[data-app-path]').forEach((el) => {
+    el.href = appPath(el.dataset.appPath);
+  });
 }
 
 function applyLang() {
@@ -1262,6 +1354,7 @@ function handleOpenApp() {
   return false;
 }
 
+resolveAppLinks();
 applyLang();
 </script>
 </body>
