@@ -1,0 +1,22 @@
+# 复制本文件为 scripts/daily-auto.local 并按需修改（daily-auto.local 已被 gitignore，不会提交）
+#
+#   cp scripts/daily-auto.local.example scripts/daily-auto.local
+#
+# 快速把「当前所连 WiFi」写进配置（人在公司时执行一次即可）：
+#   dev=$(networksetup -listallhardwareports | awk '/Wi-Fi|AirPort/{getline;print $2;exit}'); \
+#   ssid=$(ipconfig getsummary "${dev:-en0}" | sed -n 's/^ *SSID : //p' | head -1); \
+#   echo "OFFICE_SSID=\"$ssid\"" >> scripts/daily-auto.local
+
+# 公司 WiFi 名，多个用英文逗号分隔
+OFFICE_SSID=""
+
+# 生效时间窗口：8:00–9:59（END_HOUR 不含）
+START_HOUR=8
+END_HOUR=10
+
+# 生成后自动 git commit & push（让线上 /daily 更新）；默认关闭
+AUTO_PUSH=0
+
+# Grok 候选数量与榜单保留名次
+DISCOVER_COUNT=12
+TOP_N=10
