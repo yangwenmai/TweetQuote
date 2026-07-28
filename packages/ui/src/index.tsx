@@ -33,13 +33,13 @@ export function Button({ tone = "primary", style, ...props }: ButtonProps) {
       style={{
         appearance: "none",
         WebkitAppearance: "none",
-        borderRadius: 10,
-        padding: "10px 14px",
+        borderRadius: 999,
+        padding: "10px 16px",
         fontWeight: 700,
         fontSize: 14,
         lineHeight: 1.2,
         transition: "all 0.15s ease",
-        boxShadow: "0 1px 2px rgba(15, 20, 25, 0.04)",
+        boxShadow: "0 1px 2px rgba(45, 33, 20, 0.05)",
         opacity: props.disabled ? 0.55 : 1,
         cursor: props.disabled ? "default" : "pointer",
         ...palette,
@@ -622,15 +622,27 @@ export function QuotePreview({
         const introText = getNodeIntroText(node);
         const originalText = hasArticle ? introText : node.content.trim();
         const display = document.renderSpec.translationDisplay;
+        // Article long-form: "replace" must hide structured EN blocks (title/body/cover),
+        // same as plain tweets — otherwise "隐藏原文" still shows the original Article.
+        const hideOriginalArticle = Boolean(hasArticle && translatedText && display === "replace");
+        const showArticleBlocks = Boolean(hasArticle && !hideOriginalArticle);
         const showBilingual = Boolean(translatedText && display === "bilingual" && (originalText || hasArticle));
-        const showArticleTranslation = Boolean(hasArticle && translatedText && display === "replace" && !showBilingual);
         const primaryText = hasArticle
-          ? introText
+          ? hideOriginalArticle
+            ? translatedText
+            : introText
           : display === "original"
             ? originalText || translatedText || ""
             : translatedText && display === "replace"
               ? translatedText
               : originalText || translatedText || "";
+        const annotatePrimary = Boolean(
+          document.renderSpec.includeAnnotations &&
+            node.translation.annotations.length > 0 &&
+            display === "replace" &&
+            translatedText &&
+            (!hasArticle || hideOriginalArticle),
+        );
         const articleImageUrls = getArticleImageUrlSet(node.article);
         const extraMedia = (node.media ?? []).filter((url) => !articleImageUrls.has(url));
 
@@ -656,7 +668,7 @@ export function QuotePreview({
                       left: `${level * 22 + 9}px`,
                       width: isCurrentLevel ? 2 : 1,
                       borderRadius: 999,
-                      background: isCurrentLevel ? "rgba(29, 155, 240, 0.35)" : "rgba(225, 232, 237, 0.95)",
+                      background: isCurrentLevel ? "rgba(40, 77, 115, 0.35)" : "rgba(23, 20, 17, 0.12)",
                     }}
                   />
                 );
@@ -680,9 +692,9 @@ export function QuotePreview({
             <article
               style={{
                 padding: node.depth === 0 ? "16px 16px 12px" : "12px 16px",
-                borderRadius: 16,
+                borderRadius: 18,
                 border: `1px solid ${designTokens.colors.border}`,
-                background: "#fff",
+                background: designTokens.colors.panel,
                 boxShadow: node.depth === 0 ? designTokens.shadow.card : "none",
               }}
             >
@@ -702,7 +714,7 @@ export function QuotePreview({
                       width: 40,
                       height: 40,
                       borderRadius: "999px",
-                      background: "#536471",
+                      background: designTokens.colors.muted,
                       color: "#fff",
                       display: "flex",
                       alignItems: "center",
@@ -742,11 +754,7 @@ export function QuotePreview({
               </div>
               {primaryText ? (
                 <div style={{ margin: "10px 0 0", whiteSpace: "pre-wrap", lineHeight: 1.6, fontSize: 15 }}>
-                  {document.renderSpec.includeAnnotations &&
-                  node.translation.annotations.length > 0 &&
-                  display === "replace" &&
-                  translatedText &&
-                  !hasArticle ? (
+                  {annotatePrimary ? (
                     <AnnotatedText
                       text={primaryText}
                       annotations={node.translation.annotations}
@@ -758,7 +766,7 @@ export function QuotePreview({
                   )}
                 </div>
               ) : null}
-              {node.article ? (
+              {showArticleBlocks && node.article ? (
                 <ArticleBlocks
                   article={node.article}
                   nodeId={node.id}
@@ -766,9 +774,6 @@ export function QuotePreview({
                   useMediaProxy={useMediaProxy}
                 />
               ) : null}
-              {showArticleTranslation
-                ? renderTranslationSection({ translatedText, node, document, display })
-                : null}
               {extraMedia.length > 0 && (
                 <div
                   style={{
