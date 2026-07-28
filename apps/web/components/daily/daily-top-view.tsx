@@ -6,6 +6,7 @@ import { designTokens } from "@tweetquote/config";
 import type { DailyTop, DailyTopEntry, EngagementMetrics, QuoteDocument, TranslationDisplay } from "@tweetquote/domain";
 import { storageKeys } from "@tweetquote/editor-core";
 import { QuotePreview } from "@tweetquote/ui";
+import { SiteFooter, SiteTopbar } from "../site/site-chrome";
 
 type Lang = "zh-CN" | "en";
 
@@ -28,6 +29,8 @@ const DICT = {
     editor: "打开编辑器",
     langToggle: "EN",
     archive: "历史归档",
+    prevDay: "前一天",
+    nextDay: "后一天",
     depth: (n: number) => `${n} 层引用链`,
     dunk: "锐评超原推",
     showOriginal: "显示原文",
@@ -55,6 +58,8 @@ const DICT = {
     editor: "Open editor",
     langToggle: "中文",
     archive: "Archive",
+    prevDay: "Previous",
+    nextDay: "Next",
     depth: (n: number) => `${n}-tweet chain`,
     dunk: "out-dunks original",
     showOriginal: "Show original",
@@ -85,10 +90,10 @@ function formatDate(iso: string, lang: Lang): string {
 
 const RANK_COLORS: Record<number, string> = { 1: "#f7b500", 2: "#a7b0b8", 3: "#cd7f32" };
 
-/** Persist the entry as the editor draft; navigation is handled by the caller. */
-function stashEditorDraft(entry: DailyTopEntry) {
+/** Persist a document as the editor draft; navigation is handled by the caller. */
+function stashEditorDraft(document: QuoteDocument) {
   try {
-    window.localStorage.setItem(storageKeys.webDraft, JSON.stringify(entry.document));
+    window.localStorage.setItem(storageKeys.webDraft, JSON.stringify(document));
   } catch {
     // ignore storage failures; caller still navigates so the user isn't stuck
   }
@@ -106,7 +111,7 @@ function MetricChip({ label, value }: { label: string; value: string }) {
 function Badge({ text, tone = "neutral" }: { text: string; tone?: "neutral" | "hot" }) {
   const palette =
     tone === "hot"
-      ? { background: "#fdecef", color: designTokens.colors.danger, border: "1px solid #f6c9d3" }
+      ? { background: "rgba(184, 110, 79, 0.12)", color: designTokens.colors.clay, border: "1px solid rgba(184, 110, 79, 0.3)" }
       : { background: designTokens.colors.accentSoft, color: designTokens.colors.accent, border: `1px solid ${designTokens.colors.border}` };
   return (
     <span style={{ ...palette, fontSize: 12, fontWeight: 700, borderRadius: designTokens.radius.pill, padding: "2px 10px" }}>
@@ -254,7 +259,7 @@ function EntryCard({
             <button
               type="button"
               onClick={() => {
-                stashEditorDraft(entry);
+                stashEditorDraft(withDisplay(entry.document, display));
                 router.push("/");
               }}
               style={{
@@ -330,97 +335,119 @@ export function DailyTopView({
   const heading = (lang === "en" ? data?.titleEn : data?.title) || data?.title || t.heading;
   const chains = data?.entries ?? [];
   const hasContent = chains.length > 0;
+  // dates are newest-first: earlier index = newer issue, later index = older issue
+  const dateIndex = dates.indexOf(activeDate);
+  const newerDate = dateIndex > 0 ? dates[dateIndex - 1] : null;
+  const olderDate = dateIndex >= 0 && dateIndex < dates.length - 1 ? dates[dateIndex + 1] : null;
+
+  const dayNavButtonStyle = (enabled: boolean) => ({
+    appearance: "none" as const,
+    border: `1px solid ${designTokens.colors.border}`,
+    background: designTokens.colors.panel,
+    borderRadius: designTokens.radius.pill,
+    padding: "8px 14px",
+    fontSize: 13,
+    fontWeight: 700,
+    color: enabled ? designTokens.colors.foreground : designTokens.colors.muted,
+    cursor: enabled ? ("pointer" as const) : ("default" as const),
+    opacity: enabled ? 1 : 0.45,
+  });
 
   return (
-    <div className="daily-shell">
-      <header style={{ marginBottom: 24 }}>
-        <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 8 }}>
-          <h1 style={{ margin: 0, fontSize: 28, fontWeight: 800, flex: 1 }}>{heading}</h1>
-          <button
-            type="button"
-            onClick={toggleLang}
+    <>
+      <SiteTopbar lang={lang} active="daily" onToggleLang={toggleLang} />
+      <div className="daily-shell">
+        <header style={{ marginBottom: 28 }}>
+          <h1 className="display" style={{ margin: "0 0 12px", fontSize: 42, fontWeight: 700, lineHeight: 1.08 }}>{heading}</h1>
+          <p style={{ margin: "0 0 16px", color: designTokens.colors.muted, lineHeight: 1.7, fontSize: 16, maxWidth: 620 }}>
+            {t.subtitle}
+          </p>
+          <div style={{ display: "flex", alignItems: "center", gap: 12, flexWrap: "wrap" }}>
+            {dates.length > 0 ? (
+              <>
+                <button
+                  type="button"
+                  disabled={!olderDate}
+                  aria-label={t.prevDay}
+                  onClick={() => {
+                    if (olderDate) router.push(`/daily/${olderDate}`);
+                  }}
+                  style={dayNavButtonStyle(Boolean(olderDate))}
+                >
+                  ← {t.prevDay}
+                </button>
+                <select
+                  value={activeDate}
+                  onChange={(event) => {
+                    router.push(`/daily/${event.target.value}`);
+                  }}
+                  style={{
+                    appearance: "none",
+                    border: `1px solid ${designTokens.colors.border}`,
+                    background: designTokens.colors.panel,
+                    borderRadius: designTokens.radius.pill,
+                    padding: "8px 16px",
+                    fontSize: 13,
+                    fontWeight: 700,
+                    color: designTokens.colors.foreground,
+                    cursor: "pointer",
+                  }}
+                >
+                  {dates.map((date) => (
+                    <option key={date} value={date}>
+                      {date}
+                    </option>
+                  ))}
+                </select>
+                <button
+                  type="button"
+                  disabled={!newerDate}
+                  aria-label={t.nextDay}
+                  onClick={() => {
+                    if (newerDate) router.push(`/daily/${newerDate}`);
+                  }}
+                  style={dayNavButtonStyle(Boolean(newerDate))}
+                >
+                  {t.nextDay} →
+                </button>
+              </>
+            ) : null}
+            {data ? (
+              <span style={{ fontSize: 13, color: designTokens.colors.muted }}>
+                {t.generatedAt} {formatDate(data.generatedAt, lang)}
+              </span>
+            ) : null}
+          </div>
+        </header>
+
+        {!hasContent ? (
+          <div
             style={{
-              appearance: "none",
-              border: `1px solid ${designTokens.colors.border}`,
+              border: `1px dashed ${designTokens.colors.border}`,
+              borderRadius: designTokens.radius.lg,
+              padding: 48,
+              textAlign: "center",
+              color: designTokens.colors.muted,
               background: designTokens.colors.panel,
-              borderRadius: designTokens.radius.pill,
-              padding: "6px 14px",
-              fontWeight: 700,
-              fontSize: 13,
-              cursor: "pointer",
-              color: designTokens.colors.foreground,
             }}
           >
-            {t.langToggle}
-          </button>
-        </div>
-        <p style={{ margin: "0 0 12px", color: designTokens.colors.muted, lineHeight: 1.5 }}>{t.subtitle}</p>
-        <div style={{ display: "flex", alignItems: "center", gap: 12, flexWrap: "wrap" }}>
-          {dates.length > 0 ? (
-            <select
-              value={activeDate}
-              onChange={(event) => {
-                router.push(`/daily/${event.target.value}`);
-              }}
-              style={{
-                appearance: "none",
-                border: `1px solid ${designTokens.colors.border}`,
-                background: designTokens.colors.panel,
-                borderRadius: designTokens.radius.md,
-                padding: "6px 12px",
-                fontSize: 13,
-                color: designTokens.colors.foreground,
-                cursor: "pointer",
-              }}
-            >
-              {dates.map((date) => (
-                <option key={date} value={date}>
-                  {date}
-                </option>
-              ))}
-            </select>
-          ) : null}
-          {data ? (
-            <span style={{ fontSize: 13, color: designTokens.colors.muted }}>
-              {t.generatedAt} {formatDate(data.generatedAt, lang)}
-            </span>
-          ) : null}
-          <span style={{ marginLeft: "auto", display: "inline-flex", gap: 16 }}>
-            <a href="/daily/archive" style={{ fontSize: 13, color: designTokens.colors.accent, fontWeight: 600 }}>
-              {t.archive}
-            </a>
-            <a href="/" style={{ fontSize: 13, color: designTokens.colors.accent, fontWeight: 600 }}>
-              {t.editor} →
-            </a>
-          </span>
-        </div>
-      </header>
-
-      {!hasContent ? (
-        <div
-          style={{
-            border: `1px dashed ${designTokens.colors.border}`,
-            borderRadius: designTokens.radius.lg,
-            padding: 48,
-            textAlign: "center",
-            color: designTokens.colors.muted,
-          }}
-        >
-          {t.empty}
-        </div>
-      ) : (
-        <div className="daily-list">
-          {chains.map((entry) => (
-            <EntryCard
-              key={`chain-${entry.rank}-${entry.sourceUrl}`}
-              entry={entry}
-              lang={lang}
-              date={activeDate}
-              editable={editable}
-            />
-          ))}
-        </div>
-      )}
-    </div>
+            {t.empty}
+          </div>
+        ) : (
+          <div className="daily-list">
+            {chains.map((entry) => (
+              <EntryCard
+                key={`chain-${entry.rank}-${entry.sourceUrl}`}
+                entry={entry}
+                lang={lang}
+                date={activeDate}
+                editable={editable}
+              />
+            ))}
+          </div>
+        )}
+      </div>
+      <SiteFooter lang={lang} />
+    </>
   );
 }

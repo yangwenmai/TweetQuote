@@ -29,6 +29,7 @@ import {
 import { getDocumentSummary } from "@tweetquote/render-core";
 import { TweetQuoteApiClient } from "@tweetquote/sdk";
 import { Button, QuotePreview } from "@tweetquote/ui";
+import { SiteFooter, SiteTopbar } from "../site/site-chrome";
 
 const apiBaseUrl =
   process.env.NEXT_PUBLIC_API_BASE_URL?.trim() || (process.env.NODE_ENV === "production" ? "https://tweetquote.app" : "http://localhost:8787");
@@ -155,6 +156,8 @@ export function EditorApp() {
   const [mode, setMode] = useState<"auto" | "manual">("auto");
   const [settingsOpen, setSettingsOpen] = useState(false);
   const [document, setDocument] = useState<QuoteDocument>(() => resetDocumentDraft());
+  /** True once the mount effect has restored (or discarded) the cached draft, so we don't persist the placeholder over a stashed draft. */
+  const [hydrated, setHydrated] = useState(false);
   const [quota, setQuota] = useState<QuotaSnapshot | null>(null);
   const [busy, setBusy] = useState<BusyState>({ kind: "idle" });
   const [message, setMessage] = useState("");
@@ -181,6 +184,7 @@ export function EditorApp() {
     setAiBaseUrl(window.localStorage.getItem(storageKeys.aiBaseUrl) || "");
     setAiApiKey(window.localStorage.getItem(storageKeys.aiApiKey) || "");
     setAiModel(window.localStorage.getItem(storageKeys.aiModel) || "");
+    setHydrated(true);
     api
       .createAnonymousSession(cachedDeviceId)
       .then((session) => {
@@ -194,8 +198,9 @@ export function EditorApp() {
   }, []);
 
   useEffect(() => {
+    if (!hydrated) return;
     window.localStorage.setItem(storageKeys.webDraft, JSON.stringify(document));
-  }, [document]);
+  }, [document, hydrated]);
 
   useEffect(() => {
     window.localStorage.setItem(storageKeys.translationTargetLanguage, language);
@@ -733,31 +738,29 @@ export function EditorApp() {
   return (
     <>
       <div className="editor-main">
-        <div className="app-header">
-          <div className="app-header-left">
-            <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiHIZuDb--IJ-q5d97gWm1W2eyLj7BePcWnQ&s"
-              height={40}
-              width={40}
-              alt="Tweet Quote"
-            />
-            <span>Tweet Quote</span>
-          </div>
-          <div className="app-header-actions">
-            <Button tone="ghost" onClick={() => setUiLanguage(uiLanguage === "zh-CN" ? "en" : "zh-CN")}>
-              {ui.switchLanguage}
-            </Button>
-            <Button tone="ghost" onClick={loadExample} disabled={isFetchBusy || isBatchBusy || isSaveBusy || isExportBusy}>
-              {ui.loadExample}
-            </Button>
-            <Button tone="ghost" onClick={resetDocument} disabled={isFetchBusy || isBatchBusy || isSaveBusy || isExportBusy}>
-              {ui.reset}
-            </Button>
-            <Button tone="ghost" onClick={() => setSettingsOpen(true)}>
-              {ui.settings}
-            </Button>
-          </div>
-        </div>
+        <SiteTopbar
+          lang={uiLanguage}
+          active="editor"
+          onToggleLang={() => setUiLanguage(uiLanguage === "zh-CN" ? "en" : "zh-CN")}
+          actions={
+            <span className="app-header-actions">
+              <button type="button" className="nav-link" onClick={loadExample} disabled={isFetchBusy || isBatchBusy || isSaveBusy || isExportBusy}>
+                {ui.loadExample}
+              </button>
+              <button
+                type="button"
+                className="nav-link"
+                onClick={resetDocument}
+                disabled={isFetchBusy || isBatchBusy || isSaveBusy || isExportBusy}
+              >
+                {ui.reset}
+              </button>
+              <button type="button" className="nav-link" onClick={() => setSettingsOpen(true)}>
+                {ui.settings}
+              </button>
+            </span>
+          }
+        />
 
         <div className="editor-grid">
           <div className="panel-left">
@@ -785,11 +788,11 @@ export function EditorApp() {
                   <div className="hosted-card-actions">
                     <Button
                       onClick={() => window.open("https://chrome.google.com/webstore", "_blank", "noopener,noreferrer")}
-                      style={{ background: "#1d9bf0", borderColor: "#1d9bf0", color: "#fff" }}
+                      style={{ background: "var(--accent)", borderColor: "var(--accent)", color: "#fff" }}
                     >
                       {ui.installExtension}
                     </Button>
-                    <Button tone="ghost" onClick={() => setSettingsOpen(true)} style={{ color: "#1d9bf0", borderColor: "rgba(29, 155, 240, 0.26)" }}>
+                    <Button tone="ghost" onClick={() => setSettingsOpen(true)} style={{ color: "var(--accent)", borderColor: "rgba(40, 77, 115, 0.26)" }}>
                       {ui.openAdvancedSettings}
                     </Button>
                   </div>
@@ -971,7 +974,7 @@ export function EditorApp() {
                 <Button tone="ghost" disabled>
                   {ui.retryFailed}
                 </Button>
-                <Button tone="ghost" disabled style={{ color: "#e0245e", borderColor: "#f0c7d1" }}>
+                <Button tone="ghost" disabled style={{ color: "var(--danger)", borderColor: "rgba(184, 67, 79, 0.35)" }}>
                   {ui.stopBatch}
                 </Button>
               </div>
@@ -1026,7 +1029,7 @@ export function EditorApp() {
                       display: "flex",
                       alignItems: "center",
                       justifyContent: "center",
-                      color: "#536471",
+                      color: "var(--muted)",
                       fontSize: 15,
                     }}
                   >
@@ -1037,6 +1040,7 @@ export function EditorApp() {
             </div>
           </div>
         </div>
+        <SiteFooter lang={uiLanguage} />
       </div>
       <div className={`settings-overlay ${settingsOpen ? "open" : ""}`} onClick={(event) => event.target === event.currentTarget && setSettingsOpen(false)}>
         <div className="settings-drawer">
@@ -1160,7 +1164,7 @@ export function EditorApp() {
               </select>
             </label>
           </div>
-          <Button tone="ghost" onClick={clearSettings} style={{ justifyContent: "center", borderColor: "#e0245e", color: "#e0245e" }}>
+          <Button tone="ghost" onClick={clearSettings} style={{ justifyContent: "center", borderColor: "var(--danger)", color: "var(--danger)" }}>
             {ui.clearSettings}
           </Button>
           <div className="muted" style={{ fontSize: 13 }}>

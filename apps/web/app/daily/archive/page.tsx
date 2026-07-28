@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { designTokens } from "@tweetquote/config";
 import { loadDailyIndex } from "../../../lib/daily";
+import { SiteFooter, SiteTopbar } from "../../../components/site/site-chrome";
 
 export const dynamic = "force-dynamic";
 
@@ -14,15 +15,18 @@ export default function DailyArchivePage() {
 
   return (
     <main className="page-shell">
-      <div style={{ maxWidth: 720, margin: "0 auto", padding: "32px 16px 64px" }}>
-        <header style={{ marginBottom: 24 }}>
-          <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 8 }}>
-            <h1 style={{ margin: 0, fontSize: 28, fontWeight: 800, flex: 1 }}>历史归档</h1>
-            <a href="/daily" style={{ fontSize: 13, color: designTokens.colors.accent, fontWeight: 600 }}>
+      <SiteTopbar lang="zh-CN" active="archive" />
+      <div className="daily-shell" style={{ maxWidth: 760 }}>
+        <header style={{ marginBottom: 28 }}>
+          <div style={{ display: "flex", alignItems: "baseline", gap: 12, marginBottom: 12, flexWrap: "wrap" }}>
+            <h1 className="display" style={{ margin: 0, fontSize: 42, fontWeight: 700, lineHeight: 1.08, flex: 1 }}>
+              历史归档
+            </h1>
+            <a href="/daily" style={{ fontSize: 13, color: designTokens.colors.accent, fontWeight: 700 }}>
               返回最新 →
             </a>
           </div>
-          <p style={{ margin: 0, color: designTokens.colors.muted, lineHeight: 1.5 }}>
+          <p style={{ margin: 0, color: designTokens.colors.muted, lineHeight: 1.7, fontSize: 16 }}>
             每日 X 精华引用榜的往期存档，共 {index.length} 期。
           </p>
         </header>
@@ -68,6 +72,7 @@ export default function DailyArchivePage() {
           </div>
         )}
       </div>
+      <SiteFooter lang="zh-CN" />
     </main>
   );
 }
