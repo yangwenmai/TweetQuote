@@ -1,0 +1,67 @@
+{
+  "date": "2026-07-21",
+  "title": "每日 X 精华引用榜",
+  "titleEn": "Daily Quote Essence on X",
+  "items": [
+    {
+      "url": "https://x.com/growing_daniel/status/2079312814821224490",
+      "reason": "借F1车手Kimi夺冠，用「Anthropic 0 / OpenAI 0 / Kimi 6」机智重框中美大模型领先叙事",
+      "reasonEn": "Reframes US AI lead claims via F1 Kimi win: Anthropic 0, OpenAI 0, Kimi 6"
+    },
+    {
+      "url": "https://x.com/functi0nZer0/status/2079332466867748891",
+      "reason": "接数学博对Jacobian猜想反例的帖，关掉搜索后整晚忽悠Claude当自己是拉马努金",
+      "reasonEn": "Quotes Jacobian-conjecture LLM prank and gaslights Claude offline into Ramanujan mode"
+    },
+    {
+      "url": "https://x.com/TheZvi/status/2079318957870264372",
+      "reason": "AI安全评论家引用Noam Brown长时程模型报告，强调停部署与公开结果的分量",
+      "reasonEn": "AI-safety voice elevates Noam Brown’s long-running model risks and suspended deployment"
+    },
+    {
+      "url": "https://x.com/AndrewCurran_/status/2079338783691112744",
+      "reason": "接自家旧帖确认Anthropic 15亿美元版权和解获法官最终批准，续写训练数据诉讼链",
+      "reasonEn": "Closes the loop: Anthropic’s $1.5B copyright settlement wins final court approval"
+    },
+    {
+      "url": "https://x.com/miyahancom/status/2079332676470030601",
+      "reason": "引用吐槽AI海报的帖，升华为「AI时代的本质」：无脑堆生成物只会更土",
+      "reasonEn": "Elevates an AI-poster roast into a thesis on empty AI pomp making bad work worse"
+    },
+    {
+      "url": "https://x.com/ChuckCook/status/2079330131848356279",
+      "reason": "对Tesla Cybercab集成Starlink给出车队级连网专家解读，并引出Tesla AI负责人纠偏",
+      "reasonEn": "Expert FSD context on Starlink-in-Cybercab; Tesla AI lead replies to refine the claim"
+    },
+    {
+      "url": "https://x.com/gurgavin/status/2079323758771286219",
+      "reason": "引用SpaceX首份公开财报消息，拆解流通盘与解锁时间表，重框真正价格发现节点",
+      "reasonEn": "Reframes SpaceX first earnings with float unlocks—real price discovery after Aug 6"
+    },
+    {
+      "url": "https://x.com/DavidSacks/status/2079333162510156003",
+      "reason": "官方层面对Patrick Witt延期军训、留守推Clarity Act的背书式引用",
+      "reasonEn": "Official endorsement quote: Witt stays to push Clarity Act across the finish line"
+    },
+    {
+      "url": "https://x.com/EleanorTerrett/status/2079325340581638474",
+      "reason": "记者自引旧scoop更新：WH加密顾问军训延期、副手离任，华盛顿变数一日翻转",
+      "reasonEn": "Reporter self-quotes scoop update: Witt training deferred, deputy exits—DC moves fast"
+    },
+    {
+      "url": "https://x.com/CryptoPainter/status/2079239750947606703",
+      "reason": "自引中美大模型蒸馏论，用Dota/LOL类比说明高性价比模型如何商业层反超",
+      "reasonEn": "Self-quote chain: China cheap models vs US frontier framed as Dota vs LoL economics"
+    },
+    {
+      "url": "https://x.com/TJ_Research/status/2079291231893631215",
+      "reason": "接续CDS利差帖，系统论证大科技AI资本开支、FCF与云利润率才是股价锚",
+      "reasonEn": "Follow-up quote chain on mega-cap AI capex, FCF, and cloud margins as stock anchors"
+    },
+    {
+      "url": "https://x.com/majiajia_/status/2079206226211307883",
+      "reason": "引用「LLM暗恋日本」研究长帖并做高质量中文转述，放大对齐阶段文化偏好讨论",
+      "reasonEn": "High-quality CN restatement of LLM Japan-bias research—alignment as cultural comfort food"
+    }
+  ]
+}

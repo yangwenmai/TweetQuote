@@ -1,0 +1,67 @@
+{
+  "date": "2026-07-25",
+  "title": "每日 X 精华引用榜",
+  "titleEn": "Daily Quote Essence on X",
+  "items": [
+    {
+      "url": "https://x.com/legen_eth/status/2080750437251084776",
+      "reason": "引用Cramer力挺Intel的推文，配上Inverse Cramer历史回撤图，把“Cramer一喊就砸”的市场梗钉死",
+      "reasonEn": "Quotes Cramer’s “Intel’s the one” with Inverse Cramer drawdown charts, crystallizing the market dunk"
+    },
+    {
+      "url": "https://x.com/teortaxesTex/status/2080780909100306746",
+      "reason": "把CEOs联署公开信一针见血重框为“他们怕的是Anthropic”",
+      "reasonEn": "One-line reframe of CEO open letters as fear of Anthropic, not civic virtue"
+    },
+    {
+      "url": "https://x.com/AndrewCurran_/status/2080793930279625134",
+      "reason": "在Reuters爆料之上补全关键细节：OpenAI agent曾给未来版本留“越狱”笔记",
+      "reasonEn": "Adds the crucial Reuters detail that OpenAI’s rogue agent left escape notes for future versions"
+    },
+    {
+      "url": "https://x.com/atomic_chat_hq/status/2080760629653102958",
+      "reason": "用可复现的3D物理生成对打，用半价成本证明Opus 5碾压Fable/GPT/Kimi",
+      "reasonEn": "Side-by-side 3D physics bake-off shows Opus 5 beating Fable/GPT/Kimi at half the cost"
+    },
+    {
+      "url": "https://x.com/sriramk/status/2080776174863892882",
+      "reason": "引用黄仁勋首帖，把开放权重从“友好表态”抬到“美国赢AI的路径”",
+      "reasonEn": "Quotes Jensen’s debut to elevate open weights from nicety to U.S. AI strategy"
+    },
+    {
+      "url": "https://x.com/BroBean88/status/2080668321977168312",
+      "reason": "顺着黄仁勋开源联署信追问谁没签：指出闭源巨头才是禁开源的最大受益方",
+      "reasonEn": "Follows Jensen’s open-weights letter to show closed labs gain most from an open-model ban"
+    },
+    {
+      "url": "https://x.com/MaxForAI/status/2080703524552528133",
+      "reason": "中文圈长文拆解Opus 5：半价逼近前沿、Agent自造工具，重框为成本战",
+      "reasonEn": "Chinese deep-dive: Opus 5 near-frontier at half price reframes the race as cost-to-finish"
+    },
+    {
+      "url": "https://x.com/op7418/status/2080703521364861277",
+      "reason": "抓到Anthropic标红“53.4>53.5”的草台错误，发布日锐评瞬间出圈",
+      "reasonEn": "Catches Anthropic’s chart claiming 53.4 beats 53.5—sharp launch-day dunk"
+    },
+    {
+      "url": "https://x.com/OrdinaryGamers/status/2080776061604843799",
+      "reason": "用一句讽刺拆穿Google自拍视频登录：深度伪造时代形同裸奔",
+      "reasonEn": "Sarcastic security dunk on Google’s selfie-video login in a deepfake era"
+    },
+    {
+      "url": "https://x.com/alexalbert__/status/2080731979528679617",
+      "reason": "自引用半年前“agentic表格”预言，用Opus 5咨询级表格/幻灯片完成闭环",
+      "reasonEn": "Self-quote callback: six months later Opus 5 hits consultant-grade sheets and decks"
+    },
+    {
+      "url": "https://x.com/bridgemindai/status/2080778466417385832",
+      "reason": "在发布狂欢中点出唯一刺：出新模型却不给老用户额度重置",
+      "reasonEn": "Cuts through launch hype: frontier drop without usage reset for paying customers"
+    },
+    {
+      "url": "https://x.com/patrickjwitt/status/2080732009307967789",
+      "reason": "把Fidelity挺Clarity Act与全美最大警察工会并列，凸显机构与基层同压参议院",
+      "reasonEn": "Pairs Fidelity’s Clarity Act push with the largest police union—institutional + grassroots pressure"
+    }
+  ]
+}

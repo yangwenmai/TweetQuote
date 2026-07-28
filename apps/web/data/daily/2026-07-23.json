@@ -1,0 +1,1193 @@
+{
+  "date": "2026-07-23",
+  "title": "每日 X 精华引用榜",
+  "titleEn": "Daily Quote Essence on X",
+  "generatedAt": "2026-07-23T00:06:23.644Z",
+  "entries": [
+    {
+      "rank": 1,
+      "essenceScore": 263225,
+      "heatScore": 132168,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 132168
+      },
+      "sourceUrl": "https://x.com/_FORAB/status/2079952361720791437",
+      "reason": "中文圈拆解白宫科学顾问指控：Fable 开放到 K3 发布仅约 15 天引发质疑",
+      "reasonEn": "Chinese-tech brief of the Kratsios accusation, spotlighting the ~15-day Fable-to-K3 window skepticism",
+      "metrics": {
+        "views": 4838080,
+        "likes": 12383,
+        "retweets": 1034,
+        "replies": 3086,
+        "quotes": 1763,
+        "bookmarks": 4230
+      },
+      "document": {
+        "id": "a2a21c2f-843e-4cbc-89fb-f1bf881e22ca",
+        "title": "啊这。。就在市场传出，特朗普政府考虑对开源模型限制的第二天，美国",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2079952361720791437",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2079952361720791437",
+            "author": {
+              "name": "AB Kuai.Dong",
+              "handle": "_FORAB",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1747252669897691136/wS_-7gEt_normal.jpg",
+              "isVerified": false
+            },
+            "content": "啊这。。就在市场传出，特朗普政府考虑对开源模型限制的第二天，美国总统科学顾问 Kratsios，在 X 上突然指控 Kimi 的月之暗面公司，通过大规模蒸馏 Claude Fable 5，来训练自家 AI。\n\n同时，他还说月之暗面，搞了一堆英伟达最新的 GB300 服务器，跑到泰国去用这些服务器训练。\n\n不过这条消息，让评论区争议很大，因为 Fable 5 向公众真正开放的访问时间是 7 月 1 日，此前曾被白宫以安全为由下架过，而月之暗面是 7 月 16 日才推出的 Kimi K3，间隔就 15 天。",
+            "createdAt": "Wed Jul 22 15:31:01 +0000 2026",
+            "viewCount": 124817,
+            "metrics": {
+              "views": 124817,
+              "likes": 248,
+              "retweets": 12,
+              "replies": 93,
+              "quotes": 7,
+              "bookmarks": 66
+            },
+            "media": [],
+            "translation": {
+              "provider": "none",
+              "status": "idle",
+              "language": "zh-CN",
+              "text": "",
+              "annotations": [],
+              "error": "",
+              "version": 0
+            }
+          },
+          {
+            "id": "2079933645888880708",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2079933645888880708",
+            "author": {
+              "name": "Director Michael Kratsios",
+              "handle": "mkratsios47",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2036415476335833088/WPlUcJxT_normal.jpg",
+              "isVerified": false
+            },
+            "content": "We have information that Moonshot AI distilled Anthropic’s Fable for the development of its K3 model.\n\nTo do this they developed a sophisticated internal platform to conduct large scale distillation against U.S. models, allowing them to quickly switch between multiple methods of access to avoid detection. Moonshot AI has also acquired GB300-equipped servers and has accessed GB300s in Thailand, likely to train its AI models.\n\nThe United States strongly supports the free and fair development of AI, including a thriving competitive ecosystem that spans frontier models, specialized systems, open-source frameworks, and open-weight models. Legitimate AI distillation used to create smaller, more efficient models plays a vital role in this open innovation ecosystem. However, large-scale, covert industrial distillation aimed at stealing proprietary U.S. technology and undermining American research is unacceptable.",
+            "createdAt": "Wed Jul 22 14:16:39 +0000 2026",
+            "viewCount": 4838080,
+            "metrics": {
+              "views": 4838080,
+              "likes": 12383,
+              "retweets": 1034,
+              "replies": 3086,
+              "quotes": 1763,
+              "bookmarks": 4230
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "我们有消息称，Moonshot AI 提炼了 Anthropic 的《寓言》来开发其 K3 模型。\n\n为此，他们开发了一个复杂的内部平台，对美国模型进行大规模蒸馏，使他们能够在多种访问方法之间快速切换以避免被发现。 Moonshot AI 还购买了配备 GB300 的服务器，并在泰国访问了 GB300，可能用于训练其 AI 模型。\n\n美国大力支持人工智能的自由和公平发展，包括涵盖前沿模型、专业系统、开源框架和开放权重模型的蓬勃发展的竞争生态系统。用于创建更小、更高效模型的合法人工智能精炼在这个开放创新生态系统中发挥着至关重要的作用。然而，旨在窃取美国专有技术和破坏美国研究的大规模、隐蔽的工业蒸馏是不可接受的。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-23T00:06:07.207Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2079952361720791437",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-23T00:06:07.122Z"
+        },
+        "createdAt": "2026-07-23T00:06:07.122Z",
+        "updatedAt": "2026-07-23T00:06:07.208Z"
+      }
+    },
+    {
+      "rank": 2,
+      "essenceScore": 263211,
+      "heatScore": 132166,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 132166
+      },
+      "sourceUrl": "https://x.com/chris_j_paxton/status/2080002128295190696",
+      "reason": "用 Fable 到 Kimi K3 的发布窗口算账，质疑工业级蒸馏指控时间线",
+      "reasonEn": "Timeline math on Fable→Kimi K3 release window that undercuts the industrial-distillation allegation",
+      "metrics": {
+        "views": 4838080,
+        "likes": 12383,
+        "retweets": 1034,
+        "replies": 3086,
+        "quotes": 1763,
+        "bookmarks": 4229
+      },
+      "document": {
+        "id": "fdfe5491-722c-4927-9b5e-d96c797acd9f",
+        "title": "Fable 5 was released June 9; kim",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2080002128295190696",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2080002128295190696",
+            "author": {
+              "name": "Chris Paxton",
+              "handle": "chris_j_paxton",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1330994153518411777/2LfHg9GF_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Fable 5 was released June 9; kimi k3 was released July 16. How exactly could they have gotten enough data and trained a frontier model, much less tested it, in that one month\n\nIf they have some way to distill a frontier model with all its capabilities from such minimal data that's actually a huge accomplishment\n\nBut unfortunately I just think this post is mostly wrong",
+            "createdAt": "Wed Jul 22 18:48:46 +0000 2026",
+            "viewCount": 44912,
+            "metrics": {
+              "views": 44912,
+              "likes": 763,
+              "retweets": 52,
+              "replies": 54,
+              "quotes": 13,
+              "bookmarks": 47
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "《神鬼寓言 5》于 6 月 9 日上映； kimi k3 于 7 月 16 日发布。在那一个月里，他们到底是如何获得足够的数据并训练前沿模型的，更不用说测试它了\n\n如果他们有办法从如此少的数据中提取出具有所有功能的前沿模型，那实际上是一个巨大的成就\n\n但不幸的是我只是认为这篇文章大部分都是错误的",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-23T00:06:03.670Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2079933645888880708",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2079933645888880708",
+            "author": {
+              "name": "Director Michael Kratsios",
+              "handle": "mkratsios47",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2036415476335833088/WPlUcJxT_normal.jpg",
+              "isVerified": false
+            },
+            "content": "We have information that Moonshot AI distilled Anthropic’s Fable for the development of its K3 model.\n\nTo do this they developed a sophisticated internal platform to conduct large scale distillation against U.S. models, allowing them to quickly switch between multiple methods of access to avoid detection. Moonshot AI has also acquired GB300-equipped servers and has accessed GB300s in Thailand, likely to train its AI models.\n\nThe United States strongly supports the free and fair development of AI, including a thriving competitive ecosystem that spans frontier models, specialized systems, open-source frameworks, and open-weight models. Legitimate AI distillation used to create smaller, more efficient models plays a vital role in this open innovation ecosystem. However, large-scale, covert industrial distillation aimed at stealing proprietary U.S. technology and undermining American research is unacceptable.",
+            "createdAt": "Wed Jul 22 14:16:39 +0000 2026",
+            "viewCount": 4838080,
+            "metrics": {
+              "views": 4838080,
+              "likes": 12383,
+              "retweets": 1034,
+              "replies": 3086,
+              "quotes": 1763,
+              "bookmarks": 4229
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "我们有消息称，Moonshot AI 提炼了 Anthropic 的《寓言》来开发其 K3 模型。\n\n为此，他们开发了一个复杂的内部平台，对美国模型进行大规模蒸馏，使他们能够在多种访问方法之间快速切换以避免被发现。 Moonshot AI 还购买了配备 GB300 的服务器，并在泰国访问了 GB300，可能用于训练其 AI 模型。\n\n美国大力支持人工智能的自由和公平发展，包括涵盖前沿模型、专业系统、开源框架和开放权重模型的蓬勃发展的竞争生态系统。用于创建更小、更高效模型的合法人工智能精炼在这个开放创新生态系统中发挥着至关重要的作用。然而，旨在窃取美国专有技术和破坏美国研究的大规模、隐蔽的工业蒸馏是不可接受的。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-23T00:06:00.310Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2080002128295190696",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-23T00:06:00.224Z"
+        },
+        "createdAt": "2026-07-23T00:06:00.224Z",
+        "updatedAt": "2026-07-23T00:06:03.670Z"
+      }
+    },
+    {
+      "rank": 3,
+      "essenceScore": 263205,
+      "heatScore": 132165,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 132165
+      },
+      "sourceUrl": "https://x.com/quxiaoyin/status/2080035204450988529",
+      "reason": "点破“IP 盗窃”话术会反噬 Anthropic：好莱坞与作者可用同一逻辑起诉",
+      "reasonEn": "Warns the “IP theft” frame backfires on Anthropic—Hollywood and authors can use the same claim",
+      "metrics": {
+        "views": 4838080,
+        "likes": 12384,
+        "retweets": 1034,
+        "replies": 3085,
+        "quotes": 1763,
+        "bookmarks": 4229
+      },
+      "document": {
+        "id": "1f7f267f-8fbc-4dd7-922f-8265b32f22b1",
+        "title": "This “IP theft” framing will sho",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2080035204450988529",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2080035204450988529",
+            "author": {
+              "name": "Xiaoyin Qu",
+              "handle": "quxiaoyin",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1683592007875436544/P0kykGvV_normal.jpg",
+              "isVerified": false
+            },
+            "content": "This “IP theft” framing will shoot Anthropic in the foot. Hollywood, publishers, authors etc now have the same IP grounds to sue Anthropic for IP theft. How dare you open the IP genie box? No AI labs should.",
+            "createdAt": "Wed Jul 22 21:00:12 +0000 2026",
+            "viewCount": 12966,
+            "metrics": {
+              "views": 12966,
+              "likes": 370,
+              "retweets": 33,
+              "replies": 46,
+              "quotes": 3,
+              "bookmarks": 27
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "这种“盗窃知识产权”的框架将会搬起 Anthropic 的脚。好莱坞、出版商、作家等现在拥有相同的知识产权理由起诉 Anthropic 盗窃知识产权。你怎么敢打开IP精灵盒？人工智能实验室不应该这样做。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-23T00:05:58.510Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2079933645888880708",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2079933645888880708",
+            "author": {
+              "name": "Director Michael Kratsios",
+              "handle": "mkratsios47",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2036415476335833088/WPlUcJxT_normal.jpg",
+              "isVerified": false
+            },
+            "content": "We have information that Moonshot AI distilled Anthropic’s Fable for the development of its K3 model.\n\nTo do this they developed a sophisticated internal platform to conduct large scale distillation against U.S. models, allowing them to quickly switch between multiple methods of access to avoid detection. Moonshot AI has also acquired GB300-equipped servers and has accessed GB300s in Thailand, likely to train its AI models.\n\nThe United States strongly supports the free and fair development of AI, including a thriving competitive ecosystem that spans frontier models, specialized systems, open-source frameworks, and open-weight models. Legitimate AI distillation used to create smaller, more efficient models plays a vital role in this open innovation ecosystem. However, large-scale, covert industrial distillation aimed at stealing proprietary U.S. technology and undermining American research is unacceptable.",
+            "createdAt": "Wed Jul 22 14:16:39 +0000 2026",
+            "viewCount": 4838080,
+            "metrics": {
+              "views": 4838080,
+              "likes": 12384,
+              "retweets": 1034,
+              "replies": 3085,
+              "quotes": 1763,
+              "bookmarks": 4229
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "我们有消息称，Moonshot AI 提炼了 Anthropic 的《寓言》来开发其 K3 模型。\n\n为此，他们开发了一个复杂的内部平台，对美国模型进行大规模蒸馏，使他们能够在多种访问方法之间快速切换以避免被发现。 Moonshot AI 还购买了配备 GB300 的服务器，并在泰国访问了 GB300，可能用于训练其 AI 模型。\n\n美国大力支持人工智能的自由和公平发展，包括涵盖前沿模型、专业系统、开源框架和开放权重模型的蓬勃发展的竞争生态系统。用于创建更小、更高效模型的合法人工智能精炼在这个开放创新生态系统中发挥着至关重要的作用。然而，旨在窃取美国专有技术和破坏美国研究的大规模、隐蔽的工业蒸馏是不可接受的。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-23T00:05:57.750Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2080035204450988529",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-23T00:05:57.661Z"
+        },
+        "createdAt": "2026-07-23T00:05:57.661Z",
+        "updatedAt": "2026-07-23T00:05:58.510Z"
+      }
+    },
+    {
+      "rank": 4,
+      "essenceScore": 40961,
+      "heatScore": 23012,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 23012
+      },
+      "sourceUrl": "https://x.com/ImAI_Eruel/status/2080054608081338841",
+      "reason": "日本 AI 学者：Bessent 发声显示 Kimi 冲击，但时间线难支撑“蒸馏是性能核心”",
+      "reasonEn": "JP AI researcher: Bessent’s post shows Kimi shock, but timeline makes distillation-as-core hard to buy",
+      "metrics": {
+        "views": 656968,
+        "likes": 4147,
+        "retweets": 628,
+        "replies": 857,
+        "quotes": 350,
+        "bookmarks": 539
+      },
+      "document": {
+        "id": "57908563-a14a-47e3-91ff-0013777eddd9",
+        "title": "財務長官本人がこれを発信するあたり、Kimi-K3ショックの衝撃",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2080054608081338841",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2080054608081338841",
+            "author": {
+              "name": "今井翔太 / Shota Imai@えるエル",
+              "handle": "ImAI_Eruel",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1090990418106273792/BgMc28cF_normal.jpg",
+              "isVerified": false
+            },
+            "content": "財務長官本人がこれを発信するあたり、Kimi-K3ショックの衝撃は大きかったようで、、政権全体としては「現在の（中国）最先端のオープンモデルはアメリカモデルの蒸留によって作られているので制裁を課す」というストーリーを出す方向で決まった模様\n蒸留をしているかしていないかで言えば普通にしていると思いますが、Kimi-K3に関しては開発時期的にそれがFableやGPT-5.6-Solなどのフロンティアモデルの蒸留が性能の核になったと考えるのは難しい",
+            "createdAt": "Wed Jul 22 22:17:18 +0000 2026",
+            "viewCount": 44014,
+            "metrics": {
+              "views": 44014,
+              "likes": 467,
+              "retweets": 96,
+              "replies": 14,
+              "quotes": 12,
+              "bookmarks": 89
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "Kimi-K3事件的冲击似乎对财政部长本人在宣布这一消息时产生了巨大影响，整个政府似乎已经决定发表这样的言论：“当前最先进的开放模式（在中国）是通过提炼美国模式创建的，因此我们将实施制裁。”\n我认为无论是否蒸馏都很正常，但考虑到Kimi-K3的开发时间，很难认为蒸馏是Fable、GPT-5.6-Sol等前沿模型性能的核心。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-23T00:06:10.720Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2080008411790368895",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2080008411790368895",
+            "author": {
+              "name": "Treasury Secretary Scott Bessent",
+              "handle": "SecScottBessent",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1889401757060444160/MDUd0e0g_normal.jpg",
+              "isVerified": false
+            },
+            "content": "We support open-source AI and the innovation it unlocks. But open source is not open season on American IP. When PRC firms conduct covert, industrial-scale distillation attacks that cross the line into IP theft, sanctions and Entity List designations will be on the table.",
+            "createdAt": "Wed Jul 22 19:13:44 +0000 2026",
+            "viewCount": 656968,
+            "metrics": {
+              "views": 656968,
+              "likes": 4147,
+              "retweets": 628,
+              "replies": 857,
+              "quotes": 350,
+              "bookmarks": 539
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "我们支持开源人工智能及其带来的创新。但开源并不是美国知识产权的开放季节。当中国公司进行秘密的、工业规模的精炼攻击并跨越知识产权盗窃的界限时，制裁和实体名单指定将摆在桌面上。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-23T00:06:08.889Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2080054608081338841",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-23T00:06:08.738Z"
+        },
+        "createdAt": "2026-07-23T00:06:08.738Z",
+        "updatedAt": "2026-07-23T00:06:10.720Z"
+      }
+    },
+    {
+      "rank": 5,
+      "essenceScore": 40917,
+      "heatScore": 22988,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 22988
+      },
+      "sourceUrl": "https://x.com/parkerconrad/status/2080031628089270679",
+      "reason": "把蒸馏禁令 reframed 成 Anthropic 金主的监管俘获与无国会授权的护盘",
+      "reasonEn": "Reframes the distillation crackdown as Anthropic bagholder regulatory capture without an act of Congress",
+      "metrics": {
+        "views": 655716,
+        "likes": 4148,
+        "retweets": 628,
+        "replies": 857,
+        "quotes": 350,
+        "bookmarks": 539
+      },
+      "document": {
+        "id": "b1250175-728b-4ee0-bf93-41985d50fa9b",
+        "title": "A set of politically-connected g",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2080031628089270679",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2080031628089270679",
+            "author": {
+              "name": "Parker Conrad",
+              "handle": "parkerconrad",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/841509201205637120/6uwu4HpS_normal.jpg",
+              "isVerified": false
+            },
+            "content": "A set of politically-connected growth investors are mobilizing to protect their bag in Anthropic. They will secure bans on chinese open source models, when no crime has been proven--or even alleged--and without any act of congress. All to protect a set of wealthy investors.",
+            "createdAt": "Wed Jul 22 20:45:59 +0000 2026",
+            "viewCount": 63025,
+            "metrics": {
+              "views": 63025,
+              "likes": 990,
+              "retweets": 94,
+              "replies": 58,
+              "quotes": 18,
+              "bookmarks": 109
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "一群与政治有联系的成长型投资者正在动员起来，保护他们在 Anthropic 的资产。当没有任何犯罪行为被证实——甚至没有指控——并且没有任何国会法案的情况下，他们将确保对中国开源模型的禁令。一切都是为了保护一群富有的投资者。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-23T00:05:56.057Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2080008411790368895",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2080008411790368895",
+            "author": {
+              "name": "Treasury Secretary Scott Bessent",
+              "handle": "SecScottBessent",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1889401757060444160/MDUd0e0g_normal.jpg",
+              "isVerified": false
+            },
+            "content": "We support open-source AI and the innovation it unlocks. But open source is not open season on American IP. When PRC firms conduct covert, industrial-scale distillation attacks that cross the line into IP theft, sanctions and Entity List designations will be on the table.",
+            "createdAt": "Wed Jul 22 19:13:44 +0000 2026",
+            "viewCount": 655716,
+            "metrics": {
+              "views": 655716,
+              "likes": 4148,
+              "retweets": 628,
+              "replies": 857,
+              "quotes": 350,
+              "bookmarks": 539
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "我们支持开源人工智能及其带来的创新。但开源并不是美国知识产权的开放季节。当中国公司进行秘密的、工业规模的精炼攻击并跨越知识产权盗窃的界限时，制裁和实体名单指定将摆在桌面上。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-23T00:05:55.340Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2080031628089270679",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-23T00:05:55.263Z"
+        },
+        "createdAt": "2026-07-23T00:05:55.263Z",
+        "updatedAt": "2026-07-23T00:05:56.058Z"
+      }
+    },
+    {
+      "rank": 6,
+      "essenceScore": 40916,
+      "heatScore": 22987,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 22987
+      },
+      "sourceUrl": "https://x.com/signulll/status/2080047219999138231",
+      "reason": "六步拆解美财长对华蒸馏制裁逻辑：护盘本土闭源却削弱全美竞争力",
+      "reasonEn": "Six-step dismantling of Bessent’s distillation sanctions as protecting closed labs while taxing US competitiveness",
+      "metrics": {
+        "views": 655716,
+        "likes": 4147,
+        "retweets": 628,
+        "replies": 857,
+        "quotes": 350,
+        "bookmarks": 539
+      },
+      "document": {
+        "id": "cb5bd2b2-10d5-4c38-a3fc-34459458cd70",
+        "title": "wow am i understanding this corr",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2080047219999138231",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2080047219999138231",
+            "author": {
+              "name": "signüll",
+              "handle": "signulll",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1717763325692383232/Jk2PKCx6_normal.jpg",
+              "isVerified": false
+            },
+            "content": "wow am i understanding this correctly?\n\n1. put chinese models on the entity list.\n2. force american companies to buy more expensive ai from american labs.\n3. watch the rest of the world use cheaper models with equal or better intelligence.\n4. discover that distillation did not magically stop because washington published a list.\n5. make american businesses less competitive globally while raising prices for ordinary americans.\n6. meanwhile none of this stops chinese ai labs from becoming better & better.\n\ncongratulations you protected domestic ai companies by taxing the competitiveness of the entire country.\n\nwhat a colossal mess. someone please add order to this madness.",
+            "createdAt": "Wed Jul 22 21:47:57 +0000 2026",
+            "viewCount": 84141,
+            "metrics": {
+              "views": 84141,
+              "likes": 1393,
+              "retweets": 111,
+              "replies": 96,
+              "quotes": 11,
+              "bookmarks": 201
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "哇我理解正确吗？\n\n1.将中国车型纳入实体清单。\n2.迫使美国公司从美国实验室购买更昂贵的人工智能。\n3. 观察世界其他地方使用具有相同或更好智能的更便宜的模型。\n4.发现蒸馏并没有因为华盛顿公布了一份名单而神奇地停止。\n5. 降低美国企业的全球竞争力，同时提高普通美国人的价格。\n6. 与此同时，这一切都无法阻止中国人工智能实验室变得越来越好。\n\n恭喜您通过对整个国家的竞争力征税来保护国内人工智能公司。\n\n真是一团糟。请有人为这种疯狂行为添加秩序。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-23T00:05:53.552Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2080008411790368895",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2080008411790368895",
+            "author": {
+              "name": "Treasury Secretary Scott Bessent",
+              "handle": "SecScottBessent",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1889401757060444160/MDUd0e0g_normal.jpg",
+              "isVerified": false
+            },
+            "content": "We support open-source AI and the innovation it unlocks. But open source is not open season on American IP. When PRC firms conduct covert, industrial-scale distillation attacks that cross the line into IP theft, sanctions and Entity List designations will be on the table.",
+            "createdAt": "Wed Jul 22 19:13:44 +0000 2026",
+            "viewCount": 655716,
+            "metrics": {
+              "views": 655716,
+              "likes": 4147,
+              "retweets": 628,
+              "replies": 857,
+              "quotes": 350,
+              "bookmarks": 539
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "我们支持开源人工智能及其带来的创新。但开源并不是美国知识产权的开放季节。当中国公司进行秘密的、工业规模的精炼攻击并跨越知识产权盗窃的界限时，制裁和实体名单指定将摆在桌面上。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-23T00:05:53.547Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2080047219999138231",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-23T00:05:52.638Z"
+        },
+        "createdAt": "2026-07-23T00:05:52.638Z",
+        "updatedAt": "2026-07-23T00:05:53.552Z"
+      }
+    },
+    {
+      "rank": 7,
+      "essenceScore": 32754,
+      "heatScore": 19000,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 19000
+      },
+      "sourceUrl": "https://x.com/edzitron/status/2080057388938522694",
+      "reason": "一针见血嘲讽 Sundar 财报：不拆 AI 收入却宣称 AI 投资改写一切",
+      "reasonEn": "Sharp dunk on Sundar’s earnings: no AI revenue breakout while claiming AI redefines everything",
+      "metrics": {
+        "views": 450855,
+        "likes": 5955,
+        "retweets": 632,
+        "replies": 308,
+        "quotes": 212,
+        "bookmarks": 440
+      },
+      "document": {
+        "id": "5e840093-b855-401b-b92c-d6b9fd085e3c",
+        "title": "[not breaking out ai revenue] ou",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2080057388938522694",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2080057388938522694",
+            "author": {
+              "name": "Ed Zitron",
+              "handle": "edzitron",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2070326703281553408/ILxQjQF7_normal.jpg",
+              "isVerified": false
+            },
+            "content": "[not breaking out ai revenue] our ai investments are redefining what’s possible",
+            "createdAt": "Wed Jul 22 22:28:21 +0000 2026",
+            "viewCount": 10820,
+            "metrics": {
+              "views": 10820,
+              "likes": 226,
+              "retweets": 19,
+              "replies": 6,
+              "quotes": 0,
+              "bookmarks": 5
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "[未公布人工智能收入]我们的人工智能投资正在重新定义可能性",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-23T00:06:05.540Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2080021408856293584",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2080021408856293584",
+            "author": {
+              "name": "Sundar Pichai",
+              "handle": "sundarpichai",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2051799620062429184/AL8CoAUG_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Q2 was an amazing quarter, with our AI investments redefining what’s possible across every part of our business.\n\nAlphabet revenue grew 24% YoY and Google Cloud accelerated to 82% growth. We saw exciting momentum across the board from Search to YouTube to the Gemini app (which reached 950M monthly active users). Our model APIs are processing 22B tokens/min (up from 16B+ last quarter) driven by our workhorse Flash models. We’re also seeing great adoption of Gemini Enterprise, used by 90% of the Fortune 100, as well as strong demand for our security solutions.\n\nOutstanding results and momentum, and such an exciting moment—thanks to all of our partners and employees around the world! 🙌 About to hop on the call!",
+            "createdAt": "Wed Jul 22 20:05:23 +0000 2026",
+            "viewCount": 450855,
+            "metrics": {
+              "views": 450855,
+              "likes": 5955,
+              "retweets": 632,
+              "replies": 308,
+              "quotes": 212,
+              "bookmarks": 440
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HN24NCuXQAAacvs.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "第二季度是一个令人惊叹的季度，我们的人工智能投资重新定义了我们业务各个部分的可能性。\n\nAlphabet 收入同比增长 24%，Google Cloud 增长加速至 82%。从搜索到 YouTube，再到 Gemini 应用（每月活跃用户达到 9.5 亿），我们看到了令人兴奋的发展势头。我们的模型 API 在我们的主力 Flash 模型的驱动下，每分钟处理 22B 代币（高于上季度的 16B+）。我们还看到 Gemini Enterprise 得到了广泛采用，财富 100 强企业中 90% 的企业都在使用 Gemini Enterprise，并且对我们的安全解决方案有着强劲的需求。\n\n出色的成果和势头，以及如此激动人心的时刻——感谢我们在世界各地的所有合作伙伴和员工！ 🙌 即将接听电话！",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-23T00:06:05.481Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2080057388938522694",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-23T00:06:05.264Z"
+        },
+        "createdAt": "2026-07-23T00:06:05.264Z",
+        "updatedAt": "2026-07-23T00:06:05.541Z"
+      }
+    },
+    {
+      "rank": 8,
+      "essenceScore": 29583,
+      "heatScore": 14701,
+      "signals": {
+        "depth": 3,
+        "hasDunk": true,
+        "peakIndex": 2,
+        "peakHeat": 14701
+      },
+      "sourceUrl": "https://x.com/levelsio/status/2079914489994956828",
+      "reason": "把法国严审 Tesla FSD 重框为欧系车企保护主义，配图对比自动驾驶现状",
+      "reasonEn": "Reframes French FSD pushback as EU auto protectionism, with photos of current self-driving reality",
+      "metrics": {
+        "views": 683154,
+        "likes": 146,
+        "retweets": 25,
+        "replies": 208,
+        "quotes": 113,
+        "bookmarks": 31
+      },
+      "document": {
+        "id": "5329a1d2-3471-4c30-94b5-f248aefc1270",
+        "title": "The French and Germans will ban ",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2079914489994956828",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2079914489994956828",
+            "author": {
+              "name": "@levelsio",
+              "handle": "levelsio",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2077111020305162240/PwddgOau_normal.jpg",
+              "isVerified": false
+            },
+            "content": "The French and Germans will ban Tesla FSD to protect their car industry that's being decimated by Chinese EVs and Tesla\n\nAllowing Tesla full self driving would make it so popular that it'd probably the end of their car industry\n\nBecause no French or German car has self driving like Tesla, many customers would probably flock to Tesla\n\nTo show you: this is the state of self driving cars in France now\n\nMy favorite part is the GDPR privacy policy required to be printed on the outside! 😂",
+            "createdAt": "Wed Jul 22 13:00:32 +0000 2026",
+            "viewCount": 137797,
+            "metrics": {
+              "views": 137797,
+              "likes": 1868,
+              "retweets": 129,
+              "replies": 50,
+              "quotes": 39,
+              "bookmarks": 144
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HN1XNBBXMAAi8Rn.jpg",
+              "https://pbs.twimg.com/media/HN1XNA9XcAAJfVO.jpg",
+              "https://pbs.twimg.com/media/HN1XNBHWYAAaq-u.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "法国和德国将禁止特斯拉 FSD，以保护因中国电动汽车和特斯拉而遭受重创的汽车工业\n\n允许特斯拉全自动驾驶将使其如此受欢迎，以至于可能会导致他们的汽车行业的终结\n\n由于没有法国或德国汽车像特斯拉那样具有自动驾驶功能，因此许多客户可能会涌向特斯拉\n\n向您展示：这就是法国自动驾驶汽车的现状\n\n我最喜欢的部分是需要在外面打印的 GDPR 隐私政策！ 😂",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-23T00:06:15.369Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2079887674115026944",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2079887674115026944",
+            "author": {
+              "name": "Kees Roelandschap",
+              "handle": "KRoelandschap",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1567628591453585414/lVmMXomK_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Bad news for FSD in Europe 🇪🇺\n\nThe French will be giving Tesla FSD a very, very hard time\n\nThey do not deem FSD capable and safe enough in its current state\n\nThis is not good, at all",
+            "createdAt": "Wed Jul 22 11:13:58 +0000 2026",
+            "viewCount": 231032,
+            "metrics": {
+              "views": 231032,
+              "likes": 373,
+              "retweets": 33,
+              "replies": 187,
+              "quotes": 25,
+              "bookmarks": 78
+            },
+            "media": [
+              "https://pbs.twimg.com/amplify_video_thumb/2079887514207232000/img/JveGe02Wa5Belp6P.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "对于欧洲的 FSD 来说是个坏消息🇪🇺\n\n法国人将给特斯拉 FSD 带来非常非常困难的日子\n\n他们认为 FSD 在目前的状态下能力和安全性不够\n\n这一点都不好",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-23T00:06:15.367Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2079878848963842390",
+            "relation": "quote",
+            "depth": 2,
+            "sourceTweetId": "2079878848963842390",
+            "author": {
+              "name": "Ian Bernardo",
+              "handle": "frizulls",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1978733175800016896/86NorxBL_normal.jpg",
+              "isVerified": false
+            },
+            "content": "France considers FSD unsafe in its current state and won't allow it. They need more convincing. @aelluswamy @elonmusk @yunta_tsai",
+            "createdAt": "Wed Jul 22 10:38:54 +0000 2026",
+            "viewCount": 683154,
+            "metrics": {
+              "views": 683154,
+              "likes": 146,
+              "retweets": 25,
+              "replies": 208,
+              "quotes": 113,
+              "bookmarks": 31
+            },
+            "media": [
+              "https://pbs.twimg.com/amplify_video_thumb/2079876887552167936/img/bR1ASSYGsR0xag3w.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "法国认为 FSD 在目前状态下不安全，因此不会允许这样做。他们需要更有说服力。 @aelluswamy @elonmusk @yunta_tsai",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-23T00:06:16.002Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2079914489994956828",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-23T00:06:15.211Z"
+        },
+        "createdAt": "2026-07-23T00:06:15.211Z",
+        "updatedAt": "2026-07-23T00:06:16.002Z"
+      }
+    },
+    {
+      "rank": 9,
+      "essenceScore": 7501,
+      "heatScore": 4373,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 4373
+      },
+      "sourceUrl": "https://x.com/markgurman/status/2080064842732343679",
+      "reason": "Gurman 拆穿“泄密逼出三星折叠屏”：三星 assembles Apple 屏幕早知规划",
+      "reasonEn": "Gurman dunks the “leaks forced Samsung fold” take—Samsung builds Apple’s displays and already knew",
+      "metrics": {
+        "views": 137870,
+        "likes": 1269,
+        "retweets": 16,
+        "replies": 50,
+        "quotes": 11,
+        "bookmarks": 83
+      },
+      "document": {
+        "id": "a0eea789-b3d3-4df3-b867-4ad70b3a00f7",
+        "title": "Let’s completely ignore that Sam",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2080064842732343679",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2080064842732343679",
+            "author": {
+              "name": "Mark Gurman",
+              "handle": "markgurman",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1831342499719479296/biKqSezf_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Let’s completely ignore that Samsung builds Apple’s displays so they’ve known exactly what Apple has been planning for several years. They don’t need reports to dictate their own product decisions.",
+            "createdAt": "Wed Jul 22 22:57:58 +0000 2026",
+            "viewCount": 52809,
+            "metrics": {
+              "views": 52809,
+              "likes": 838,
+              "retweets": 28,
+              "replies": 22,
+              "quotes": 3,
+              "bookmarks": 47
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "让我们完全忽略三星制造苹果显示器的事实，因此他们确切地知道苹果多年来的计划。他们不需要报告来决定自己的产品决策。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-23T00:06:12.780Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2079942503466451303",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2079942503466451303",
+            "author": {
+              "name": "AppleLeaker",
+              "handle": "LeakerApple",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1325426249225826304/ljr7LyPo_normal.jpg",
+              "isVerified": false
+            },
+            "content": "I know Tim Cook and John Ternus are FURIOUS about the iPhone Ultra leaks. Without these leaks, Samsung wouldn’t have come out with the Z Fold 8, which already looks like a promising phone.",
+            "createdAt": "Wed Jul 22 14:51:50 +0000 2026",
+            "viewCount": 137870,
+            "metrics": {
+              "views": 137870,
+              "likes": 1269,
+              "retweets": 16,
+              "replies": 50,
+              "quotes": 11,
+              "bookmarks": 83
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "我知道 Tim Cook 和 John Ternus 对 iPhone Ultra 的泄露感到非常愤怒。如果没有这些泄密事件，三星就不会推出 Z Fold 8，它看起来已经是一款很有前途的手机。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-23T00:06:12.779Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2080064842732343679",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-23T00:06:12.319Z"
+        },
+        "createdAt": "2026-07-23T00:06:12.319Z",
+        "updatedAt": "2026-07-23T00:06:12.780Z"
+      }
+    },
+    {
+      "rank": 10,
+      "essenceScore": 7436,
+      "heatScore": 4362,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 4362
+      },
+      "sourceUrl": "https://x.com/TiffanyFong/status/2080032475498401906",
+      "reason": "以亲身被骗经历反向重框 CLARITY 伦理规则：行业终于有保护用户的框架",
+      "reasonEn": "Personal-fraud experience reframes CLARITY ethics rules as a rare pro-user regulatory breakthrough",
+      "metrics": {
+        "views": 183134,
+        "likes": 366,
+        "retweets": 56,
+        "replies": 31,
+        "quotes": 21,
+        "bookmarks": 20
+      },
+      "document": {
+        "id": "34f0a124-0432-4ae6-a7f8-8a4dc75ea261",
+        "title": "I’ve lost hundreds of thousands ",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2080032475498401906",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2080032475498401906",
+            "author": {
+              "name": "Tiffany Fong",
+              "handle": "TiffanyFong",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1537933469291991042/HseVPd9k_normal.jpg",
+              "isVerified": false
+            },
+            "content": "I’ve lost hundreds of thousands in crypto because nobody was regulating anything & the people running these platforms were literally committing fraud. So when a sitting U.S. president voluntarily agrees to ban himself from issuing crypto and signs off on the most comprehensive ethics rules in legislative history just to get a real regulatory framework passed… yeah I’m going to say that's a pretty big deal. The CLARITY Act is the closest this industry has ever been to actual rules that protect actual people. Get it done.",
+            "createdAt": "Wed Jul 22 20:49:21 +0000 2026",
+            "viewCount": 39821,
+            "metrics": {
+              "views": 39821,
+              "likes": 1349,
+              "retweets": 128,
+              "replies": 121,
+              "quotes": 10,
+              "bookmarks": 38
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "我在加密货币领域损失了数十万美元，因为没有人监管任何事情，而且运行这些平台的人实际上正在实施欺诈。因此，当一位现任美国总统自愿同意禁止自己发行加密货币并签署立法史上最全面的道德规则，只是为了通过真正的监管框架时……是的，我想说这是一件大事。 《清晰法案》是该行业有史以来最接近保护实际人员的实际规则。完成它。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-23T00:06:22.008Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2080007174869184875",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2080007174869184875",
+            "author": {
+              "name": "Breaking911",
+              "handle": "Breaking911",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/619546088995979264/KuG27bBK_normal.jpg",
+              "isVerified": false
+            },
+            "content": "BREAKING: President Trump has voluntarily agreed to new ethics rules in the CLARITY Act, a key issue that could ensure final passage of the crypto market structure bill.",
+            "createdAt": "Wed Jul 22 19:08:49 +0000 2026",
+            "viewCount": 183134,
+            "metrics": {
+              "views": 183134,
+              "likes": 366,
+              "retweets": 56,
+              "replies": 31,
+              "quotes": 21,
+              "bookmarks": 20
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HN2rgJhXAAAqt1B.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "突发新闻：特朗普总统自愿同意《清晰法案》中的新道德规则，这是一个可以确保加密市场结构法案最终通过的关键问题。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-23T00:06:22.006Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2080032475498401906",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-23T00:06:20.681Z"
+        },
+        "createdAt": "2026-07-23T00:06:20.681Z",
+        "updatedAt": "2026-07-23T00:06:22.008Z"
+      }
+    }
+  ]
+}

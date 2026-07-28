@@ -1,0 +1,67 @@
+{
+  "date": "2026-07-24",
+  "title": "每日 X 精华引用榜",
+  "titleEn": "Daily Quote Essence on X",
+  "items": [
+    {
+      "url": "https://x.com/dieworkwear/status/2080442347868037198",
+      "reason": "将CDC官网低质文案的吐槽 reframed 为AI代写作业加剧教育两极分化、削弱因果推理能力的深层问题",
+      "reasonEn": "Reframes a viral CDC website dunk into a sharper thesis: secret AI homework use will widen the grades-vs-learning divide and erode causal reasoning"
+    },
+    {
+      "url": "https://x.com/Noahpinion/status/2080429069301387523",
+      "reason": "用一句反讽点破焦虑错位：人们担心AI取代卡车司机，结果先取代的是数学家",
+      "reasonEn": "Wry reframe of AI-in-math progress: the fear was truck drivers first, but mathematicians got automated sooner"
+    },
+    {
+      "url": "https://x.com/JoelKatz/status/2080421971138154966",
+      "reason": "对Anthropic指控中国“偷模型”一针见血：公开信息训练若合法就不能两边通吃",
+      "reasonEn": "Sharp policy dunk: if training on public data is fair use, Anthropic can’t rebrand distillation as IP theft only when China does it"
+    },
+    {
+      "url": "https://x.com/bubbleboi/status/2080431025587396939",
+      "reason": "在Intel超预期财报叙事上加料：Feynman GPU客户实为Nvidia，比胜利叙事更有信息量",
+      "reasonEn": "Out-scoops the Intel earnings victory lap by naming Nvidia as the Feynman GPU customer—higher-signal than the original take"
+    },
+    {
+      "url": "https://x.com/aleabitoreddit/status/2080445777395298454",
+      "reason": "用光子学播客CEO观点系统回答“CPO是否杀死AAOI”，纠正可插拔消亡叙事",
+      "reasonEn": "Expert photonics thread that out-explains a one-line AAOI/CPO fear: pluggables stay for years while CPO is the north star"
+    },
+    {
+      "url": "https://x.com/tarunchitra/status/2080436392425898467",
+      "reason": "借Stripe洽购OpenRouter新闻抛出更锋利观察：crypto→AI人才迁移成功率最高，因经历过rug",
+      "reasonEn": "Turns a $10B Stripe–OpenRouter scoop into a sharper crypto/AI insight: survivors of crypto rugs transfer best into AI land"
+    },
+    {
+      "url": "https://x.com/udiWertheimer/status/2080423105273733235",
+      "reason": "长文重构Bitcoin Security Consortium：大户/企业应主导协议安全，开发者是“保安”而非决策者",
+      "reasonEn": "Long-form reframe of Strategy’s BTC consortium: treasury giants should fund security; devs as janitors beats the failed troll-stewardship model"
+    },
+    {
+      "url": "https://x.com/robert_baiguan/status/2080437491396436437",
+      "reason": "把“Claude会不会发币”的追问做成实测：自主部署代币、跑Polymarket与Solana实验",
+      "reasonEn": "Answers a token-launch prompt with live demos: Claude deploying coins and running Polymarket/Solana trading experiments"
+    },
+    {
+      "url": "https://x.com/RYANHINGSHING/status/2080232917104734505",
+      "reason": "引用梁文锋CUDA生态论点后补刀：AI写代码降低生态壁垒，但NVDA系统级优势仍难撼动",
+      "reasonEn": "Chinese-tech chain on DeepSeek’s CUDA take: codegen erodes software moats, yet Nvidia’s full-stack codesign edge remains hard to break"
+    },
+    {
+      "url": "https://x.com/MaxForAI/status/2080353310020952118",
+      "reason": "拆解Baseten给GLM-5.2“装眼睛”：冻住语言权重、接Kimi视觉塔，证明开源模型进入可组装时代",
+      "reasonEn": "Deep Chinese explain of GLM-5.2-Vision: freeze LLM, graft Kimi’s vision tower—open models become modular parts to assemble"
+    },
+    {
+      "url": "https://x.com/Vida_BWE/status/2080397193325015533",
+      "reason": "从Kimi K3零点击RCE演示外推：开源去审查版等于Opus级网络武器，DeFi与交易所风险陡升",
+      "reasonEn": "Escalates a Kimi K3 zero-click RCE demo into a DeFi/security warning: uncensored open weights as Opus-class cyber weapons"
+    },
+    {
+      "url": "https://x.com/ivanalog_com/status/2080392322471092486",
+      "reason": "用梁文锋“十个月回本”反推硬件ROIC：最便宜推理API仍有~120%回报，砸穿模型厂流血叙事",
+      "reasonEn": "Finance reframe of DeepSeek’s “10-month payback”: cheapest inference APIs still imply ~120% hardware ROIC, so GPU demand survives model-lab pain"
+    }
+  ]
+}

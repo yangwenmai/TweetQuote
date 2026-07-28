@@ -1,0 +1,67 @@
+{
+  "date": "2026-07-20",
+  "title": "每日 X 精华引用榜",
+  "titleEn": "Daily Quote Essence on X",
+  "items": [
+    {
+      "url": "https://x.com/jdlichtman/status/2079066717762863249",
+      "reason": "斯坦福数论学者把Fable证伪雅可比猜想讲清楚，并挂上张益唐博士论文的戏剧性背景",
+      "reasonEn": "Stanford number theorist reframes Fable’s Jacobian disproof with full math and the Yitang Zhang thesis backstory"
+    },
+    {
+      "url": "https://x.com/QiaochuYuan/status/2079087083663278170",
+      "reason": "补全背景：雅可比猜想最易出“假证明”，并引用Fable对“开放越久≠越难”的判断",
+      "reasonEn": "Adds the infamous wrong-proof history of the Jacobian conjecture and Fable’s takeaway on open-problem difficulty"
+    },
+    {
+      "url": "https://x.com/catboosted/status/2079068419593474307",
+      "reason": "一句反差梗：刷LeetCode想进Anthropic vs 人家在周末干翻世纪猜想",
+      "reasonEn": "Sharp culture dunk: FAANG leetcode grind vs Anthropic folks casually killing a century-old conjecture"
+    },
+    {
+      "url": "https://x.com/quxiaoyin/status/2079040865687961676",
+      "reason": "借HF被agent攻破事件，把美企用Claude被guardrails挡下 vs 中企用Kimi的安全不对称推到国家安全高度",
+      "reasonEn": "Escalates HF’s guardrail-blocked forensics into a China-vs-US national-security asymmetry argument"
+    },
+    {
+      "url": "https://x.com/kimmonismus/status/2079102866690638334",
+      "reason": "放大calle实锤：Codex/Fable因网安护栏拒修，Kimi单prompt 10小时修完15个critical bug",
+      "reasonEn": "Amplifies calle’s live demo that Kimi fixed 15 critical bugs Codex/Fable refused under cyber guardrails"
+    },
+    {
+      "url": "https://x.com/esrtweet/status/2079025013500547367",
+      "reason": "ESR接过“LLM能反编译驱动”：闭源二进制驱动秘密时代结束，并对Nvidia放狠话",
+      "reasonEn": "ESR escalates LLM driver RE into “binary-driver secrecy is dead,” with a Linus-style shot at Nvidia"
+    },
+    {
+      "url": "https://x.com/trq212/status/2079103743535280508",
+      "reason": "Anthropic Claude Code工程师直接引用用户吐槽并给出重启修复，产品侧当场灭火",
+      "reasonEn": "Claude Code engineer quotes a live Max-plan billing glitch and ships a restart fix in-thread"
+    },
+    {
+      "url": "https://x.com/SawyerMerritt/status/2079058950117322873",
+      "reason": "把马斯克一句“假新闻”钉在SpaceX订购520亿美元英伟达GPU传闻上，及时证伪",
+      "reasonEn": "Pins Elon’s “fake news” to the viral SpaceX $52B Nvidia order rumor for a clean tech-finance debunk"
+    },
+    {
+      "url": "https://x.com/adamscochran/status/2079026126962241764",
+      "reason": "把卢比奥“仍愿与伊朗外交解决”读成典型的“周一开盘前给市场下台阶”",
+      "reasonEn": "Reframes Rubio’s Iran diplomacy line as classic “off-ramp before Monday open” market theater"
+    },
+    {
+      "url": "https://x.com/CredibleCrypto/status/2078958859776114933",
+      "reason": "逐条反驳“CRV减产≠比特币稀缺”：供应上限、四年减半、锁仓sink都比早期BTC更狠",
+      "reasonEn": "Point-by-point rebuttal that CRV’s 15% cut + locks create Bitcoin-like scarcity, better on several metrics"
+    },
+    {
+      "url": "https://x.com/alanchen/status/2078941441351647714",
+      "reason": "把Kimi 48小时算力挤爆读成反转：不是capex见顶，而是推理需求外溢利好HBM/铲子",
+      "reasonEn": "Flips Kimi’s 48h sellout from “capex is dead” into proof that inference demand (HBM/picks) still tightens"
+    },
+    {
+      "url": "https://x.com/_FORAB/status/2079027687801426026",
+      "reason": "中文圈现场观察：Kimi限新订阅后闲鱼连夜卖号，并吐槽“黄仁勋终于有人理解我了”",
+      "reasonEn": "Chinese-market color: Kimi pauses signups, Xianyu floods with account sellers, and a Jensen-side joke lands"
+    }
+  ]
+}

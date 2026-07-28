@@ -1,0 +1,1208 @@
+{
+  "date": "2026-07-28",
+  "title": "每日 X 精华引用榜",
+  "titleEn": "Daily Quote Essence on X",
+  "generatedAt": "2026-07-28T01:31:47.089Z",
+  "entries": [
+    {
+      "rank": 1,
+      "essenceScore": 594771,
+      "heatScore": 299367,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 299367
+      },
+      "sourceUrl": "https://x.com/chamath/status/2081848871219581153",
+      "reason": "引用罕见书被撕脊扫描训练的长帖，一句“你们还在担心蒸馏？”把政策辩论扳向数据榨取伦理",
+      "reasonEn": "Quotes the rare-book shredding exposé and flips the open-weights fight: “And you’re worried about distillation?”",
+      "metrics": {
+        "views": 7499867,
+        "likes": 43268,
+        "retweets": 19275,
+        "replies": 2690,
+        "quotes": 4585,
+        "bookmarks": 14571
+      },
+      "document": {
+        "id": "3e49445d-5fde-4658-86b2-e6bebd3fb430",
+        "title": "And you’re worried about distill",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2081848871219581153",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2081848871219581153",
+            "author": {
+              "name": "Chamath Palihapitiya",
+              "handle": "chamath",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1883600182165848064/-9LbG3md_normal.jpg",
+              "isVerified": false
+            },
+            "content": "And you’re worried about distillation?\n\nThis is sad if true. A slowdown in tokenmaxxing would stop this madness.",
+            "createdAt": "Mon Jul 27 21:07:04 +0000 2026",
+            "viewCount": 202130,
+            "metrics": {
+              "views": 202130,
+              "likes": 1136,
+              "retweets": 74,
+              "replies": 72,
+              "quotes": 8,
+              "bookmarks": 147
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "您担心蒸馏吗？\n\n如果这是真的，那就太可悲了。代币最大化的放缓将会阻止这种疯狂行为。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-28T01:31:40.387Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2081534588485296565",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2081534588485296565",
+            "author": {
+              "name": "Hedgie",
+              "handle": "HedgieMarkets",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1905120369104625664/ir817Ix-_normal.jpg",
+              "isVerified": false
+            },
+            "content": "🦔AI companies are bulk-buying rare books, scanning them through high-speed machines that cut the spines off, and shredding the originals. A service called ISBNdb facilitates orders of up to a million books and keeps buyers anonymous. Pre-2022 books are premium because they're free of AI-generated text. A federal judge ruled the practice is fair use because eliminating the original means only one copy exists at a time. Anthropic hired the former head of Google Books partnerships to obtain \"all the books in the world.\"\n\nMy Take\nThis got to me. A bookseller told 404 Media that rare books with almost no surviving copies are being fed into this pipeline. Books that survived wars, fires, and centuries of handling are being shredded so an AI can learn to write a better marketing email.\nISBNdb's website literally says \"'AI company destroys two million books' is not a headline that generates sympathy,\" and they still built an entire business around making it happen quietly. They offer NDAs as a feature. They coach clients to call it \"digital preservation.\"\n\nI've covered AI companies scraping the internet, torrenting libraries, and stealing music. This is worse because it's irreversible. You can re-upload a website. You can reprint a bestseller. You can't replace the last three copies of an 18th-century botanical text once someone shreds them for training data. And the judge said it's legal. So it's going to accelerate.\n\"We shred rare books and offer NDAs so nobody finds out\" is a legitimate business model in 2026. What a timeline.\n\nHedgie🤗",
+            "createdAt": "Mon Jul 27 00:18:13 +0000 2026",
+            "viewCount": 7499867,
+            "metrics": {
+              "views": 7499867,
+              "likes": 43268,
+              "retweets": 19275,
+              "replies": 2690,
+              "quotes": 4585,
+              "bookmarks": 14571
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HOMX3t1XYAA3Pr7.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "🦔人工智能公司正在大量购买善本，通过高速机器进行扫描，切掉书脊，然后粉碎原版。一项名为 ISBNdb 的服务可促成多达 100 万本书的订单，并使买家保持匿名。 2022 年之前的书籍非常优质，因为它们不含人工智能生成的文本。一位联邦法官裁定这种做法属于合理使用，因为消除原始版本意味着一次只存在一份副本。 Anthropic聘请了谷歌图书合作伙伴关系的前负责人来获取“世界上所有的图书”。\n\n我的看法\n这让我很感动。一位书商告诉 404 Media，几乎没有幸存的珍本书籍正在被送入这条管道。在战争、火灾和几个世纪的处理中幸存下来的书籍正在被粉碎，以便人工智能可以学习编写更好的营销电子邮件。\nISBNdb 的网站字面意思是“‘人工智能公司销毁了 200 万本书’这不是一个能引起同情的标题”，而且他们仍然围绕着让它悄然发生来建立整个业务。他们提供保密协议作为一项功能。他们指导客户称之为“数字保存”。\n\n我介绍了人工智能公司抓取互联网、下载种子库和窃取音乐的情况。这更糟糕，因为它是不可逆转的。您可以重新上传网站。您可以重印畅销书。一旦有人将 18 世纪植物学文本的最后三份撕碎作为训练数据，您就无法替换它们。法官说这是合法的。所以它会加速。\n“我们粉碎善本并提供保密协议，这样就没有人发现”是 2026 年的合法商业模式。多么好的时间表啊。\n\n海吉🤗",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-28T01:31:40.398Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2081848871219581153",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-28T01:31:40.323Z"
+        },
+        "createdAt": "2026-07-28T01:31:40.323Z",
+        "updatedAt": "2026-07-28T01:31:40.398Z"
+      }
+    },
+    {
+      "rank": 2,
+      "essenceScore": 397240,
+      "heatScore": 204931,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 204931
+      },
+      "sourceUrl": "https://x.com/AYi_AInotes/status/2081784951582667030",
+      "reason": "引用月之暗面开源帖，系统点出权重+内核+MoE通信+AgentENV全栈白给，把开源从“放权重”抬到生态改规则",
+      "reasonEn": "Chinese-tech deep take: not just weights—kernels, MoE comms, and AgentENV make K3 a full-stack open-source rule change",
+      "metrics": {
+        "views": 6392757,
+        "likes": 33775,
+        "retweets": 5453,
+        "replies": 1099,
+        "quotes": 1754,
+        "bookmarks": 9741
+      },
+      "document": {
+        "id": "cf55be87-63ed-4cb7-ab51-779e102cfa93",
+        "title": "我操！@kimi_moonshot 月之暗面这波是真的疯了！\n2",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2081784951582667030",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2081784951582667030",
+            "author": {
+              "name": "AYi",
+              "handle": "AYi_AInotes",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1989157446829350912/pW828UwK_normal.jpg",
+              "isVerified": false
+            },
+            "content": "我操！@kimi_moonshot 月之暗面这波是真的疯了！\n2.8T 参数的 K3 直接全权重开源就算了，\n连推理内核、MoE 通信库、Agent 训练环境整套底层技术栈全给你端出来，硬生生把开源模型的天花板，直接抬到了闭源旗舰的家门口。\n\n不是放个权重就炒开源概念的挤牙膏操作，是从模型到底层能跑起来生态的所有东西全白给，1M 长上下文、MoE 架构性能够打闭源，\n\n之前天天喊开源追不上闭源的直接被打半残，\n开发者再也不用对着闭源 API 的限流、涨价受窝囊气。\n\n搞大模型的不用从零搭底层通信框架，\n做 Agent 的不用卡闭源接口的脖子，\n小团队也能基于全栈直接做二次开发，\n从今天起，全球开源 AI 的游戏规则，真的改了。\n\n今天之后，开源和闭源的代差，从两年砍到了半年。\nKimi K3 今天正式全开源，不是挤牙膏的版本更新。\n\n2.8T 总参数 MoE, 激活 104B, 原生 100 万上下文。\n\n靠 KDA 新注意力和 AttnRes 架构创新，单位算力智能密度直接提 2.5 倍，长上下文解码速度翻 6 倍。\n最狠的是，这根本不是只放个权重的假开源。\n\nFlashKDA 高性能内核，MoE 通信库，连用来做 Agent 强化学习的快照式训练环境 AgentENV, 全给你开源了。\n\n从推理到训练的整个底层栈，直接搬空。\n之前所有开源模型，本质都是在追闭源一年多前的尾巴。\n\n这是第一个真正摸到闭源顶尖门槛的开放模型。\n\n长编码、Agent、终端操作这些硬核任务，\n已经能和第一梯队闭源掰手腕。\n\n你永远可以相信开放的力量！！\n用K3搓了一个他自己开源的介绍视频，特此致敬🫡",
+            "createdAt": "Mon Jul 27 16:53:04 +0000 2026",
+            "viewCount": 86713,
+            "metrics": {
+              "views": 86713,
+              "likes": 401,
+              "retweets": 50,
+              "replies": 18,
+              "quotes": 3,
+              "bookmarks": 276
+            },
+            "media": [
+              "https://pbs.twimg.com/amplify_video_thumb/2081784594357968896/img/6tn3NS-KN4iquPNs.jpg"
+            ],
+            "translation": {
+              "provider": "none",
+              "status": "idle",
+              "language": "zh-CN",
+              "text": "",
+              "annotations": [],
+              "error": "",
+              "version": 0
+            }
+          },
+          {
+            "id": "2081760186235289764",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2081760186235289764",
+            "author": {
+              "name": "Kimi.ai",
+              "handle": "Kimi_Moonshot",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1910294000927645696/QseOV0uF_normal.png",
+              "isVerified": false
+            },
+            "content": "Releasing the model weights and technical report of Kimi K3.\n\nKimi K3 is our most capable model: a 2.8T MoE model with native visual understanding and a 1M-token context window.\n\nNew model architecture: 2.5x the intelligence per unit of compute, not just more params.\n\nAlongside Kimi K3, we're opening up more of the stack behind it — high-performance attention kernels, MoE communication library, and infrastructure for running agent environments at scale.\n\nModel weights: http://huggingface.co/moonshotai/Kimi-K3\nTech report: http://github.com/MoonshotAI/Kimi-K3/blob/master/k3_tech_report.pdf\nTech blog: http://kimi.com/blog/kimi-k3",
+            "createdAt": "Mon Jul 27 15:14:40 +0000 2026",
+            "viewCount": 6392757,
+            "metrics": {
+              "views": 6392757,
+              "likes": 33775,
+              "retweets": 5453,
+              "replies": 1099,
+              "quotes": 1754,
+              "bookmarks": 9741
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HOPlk-WbQAAMkwd.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "发布Kimi K3的型号重量和技术报告。\n\nKimi K3 是我们最强大的模型：具有原生视觉理解和 1M 代币上下文窗口的 2.8T MoE 模型。\n\n新模型架构：每单位计算的智能提高 2.5 倍，而不仅仅是更多参数。\n\n除了 Kimi K3 之外，我们还开放了其背后的更多堆栈——高性能注意力内核、MoE 通信库以及用于大规模运行代理环境的基础设施。\n\n模型权重：http://huggingface.co/moonshotai/Kimi-K3\n技术报告：http://github.com/MoonshotAI/Kimi-K3/blob/master/k3_tech_report.pdf\n技术博客：http://kimi.com/blog/kimi-k3",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-28T01:31:17.425Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2081784951582667030",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-28T01:31:17.358Z"
+        },
+        "createdAt": "2026-07-28T01:31:17.358Z",
+        "updatedAt": "2026-07-28T01:31:17.426Z"
+      }
+    },
+    {
+      "rank": 3,
+      "essenceScore": 397240,
+      "heatScore": 204931,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 204931
+      },
+      "sourceUrl": "https://x.com/eliebakouch/status/2081765265591685460",
+      "reason": "从业者视角指出MoonEP相对DeepEP的实质升级，把发布热度落回可复用基础设施",
+      "reasonEn": "Practitioner quote that lands the release: MoonEP is a real DeepEP-class upgrade the open stack actually runs on",
+      "metrics": {
+        "views": 6392757,
+        "likes": 33775,
+        "retweets": 5453,
+        "replies": 1099,
+        "quotes": 1754,
+        "bookmarks": 9741
+      },
+      "document": {
+        "id": "717c3a7c-9905-4ca1-86b5-ceb0d9400dfb",
+        "title": "wow with kimi K3 open weights, m",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2081765265591685460",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2081765265591685460",
+            "author": {
+              "name": "elie",
+              "handle": "eliebakouch",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1745893660099592193/MmYemsw6_normal.jpg",
+              "isVerified": false
+            },
+            "content": "wow with kimi K3 open weights, moonshot is also open sourcing a significative improvement over deepseek deepEP which is currently used by everyone in the open (vllm/sglang), this is huge\n\nhttps://github.com/MoonshotAI/MoonEP",
+            "createdAt": "Mon Jul 27 15:34:51 +0000 2026",
+            "viewCount": 16844,
+            "metrics": {
+              "views": 16844,
+              "likes": 267,
+              "retweets": 24,
+              "replies": 7,
+              "quotes": 1,
+              "bookmarks": 75
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HOPpp2yWYAAMqb0.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "哇，有了 kimi K3 开放权重，moonshot 也开源了，对目前每个人都在开放中使用的 deepseek deepEP 进行了重大改进（vllm/sglang），这是巨大的\n\nhttps://github.com/MoonshotAI/MoonEP",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-28T01:31:21.264Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2081760186235289764",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2081760186235289764",
+            "author": {
+              "name": "Kimi.ai",
+              "handle": "Kimi_Moonshot",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1910294000927645696/QseOV0uF_normal.png",
+              "isVerified": false
+            },
+            "content": "Releasing the model weights and technical report of Kimi K3.\n\nKimi K3 is our most capable model: a 2.8T MoE model with native visual understanding and a 1M-token context window.\n\nNew model architecture: 2.5x the intelligence per unit of compute, not just more params.\n\nAlongside Kimi K3, we're opening up more of the stack behind it — high-performance attention kernels, MoE communication library, and infrastructure for running agent environments at scale.\n\nModel weights: http://huggingface.co/moonshotai/Kimi-K3\nTech report: http://github.com/MoonshotAI/Kimi-K3/blob/master/k3_tech_report.pdf\nTech blog: http://kimi.com/blog/kimi-k3",
+            "createdAt": "Mon Jul 27 15:14:40 +0000 2026",
+            "viewCount": 6392757,
+            "metrics": {
+              "views": 6392757,
+              "likes": 33775,
+              "retweets": 5453,
+              "replies": 1099,
+              "quotes": 1754,
+              "bookmarks": 9741
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HOPlk-WbQAAMkwd.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "发布Kimi K3的型号重量和技术报告。\n\nKimi K3 是我们最强大的模型：具有原生视觉理解和 1M 代币上下文窗口的 2.8T MoE 模型。\n\n新模型架构：每单位计算的智能提高 2.5 倍，而不仅仅是更多参数。\n\n除了 Kimi K3 之外，我们还开放了其背后的更多堆栈——高性能注意力内核、MoE 通信库以及用于大规模运行代理环境的基础设施。\n\n模型权重：http://huggingface.co/moonshotai/Kimi-K3\n技术报告：http://github.com/MoonshotAI/Kimi-K3/blob/master/k3_tech_report.pdf\n技术博客：http://kimi.com/blog/kimi-k3",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-28T01:31:19.521Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2081765265591685460",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-28T01:31:19.452Z"
+        },
+        "createdAt": "2026-07-28T01:31:19.452Z",
+        "updatedAt": "2026-07-28T01:31:21.264Z"
+      }
+    },
+    {
+      "rank": 4,
+      "essenceScore": 397216,
+      "heatScore": 204922,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 204922
+      },
+      "sourceUrl": "https://x.com/totheagi/status/2081855316443205717",
+      "reason": "用80张RTX 5090跑通2.8T Kimi K3，证明前沿开源可在无HBM的消费级卡上落地，重写“谁能用得起”叙事",
+      "reasonEn": "Day-one proof: full 2.8T Kimi K3 on 80× RTX 5090s with zero HBM reframes open frontier as deployable on abundant gaming GPUs",
+      "metrics": {
+        "views": 6392757,
+        "likes": 33772,
+        "retweets": 5453,
+        "replies": 1098,
+        "quotes": 1754,
+        "bookmarks": 9739
+      },
+      "document": {
+        "id": "9edb5e65-39d1-41d0-a206-9635dd0ca4f0",
+        "title": "we got the full Kimi K3, 2.8T pa",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2081855316443205717",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2081855316443205717",
+            "author": {
+              "name": "Ning",
+              "handle": "totheagi",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1954379065785561088/6Y5X-T38_normal.jpg",
+              "isVerified": false
+            },
+            "content": "we got the full Kimi K3, 2.8T params, running on 80x RTX 5090s.\n\n20 tok/s single stream, day one, untuned. Last week we took GLM-5.2 from 30 to 110 tok/s on this same fleet. This number will climb.\n\nA first for open weights: frontier intelligence served with zero HBM, the scarcest silicon in AI. Just GDDR7 gaming cards, plain ethernet, and the official MXFP4 weights, nothing requantized.\n\nThe most powerful open model on Earth, on the most abundant GPUs on Earth. Any lab, startup, or university can now own it, probe it, fine-tune it, run agents on it.\n\n@Kimi_Moonshot",
+            "createdAt": "Mon Jul 27 21:32:41 +0000 2026",
+            "viewCount": 130121,
+            "metrics": {
+              "views": 130121,
+              "likes": 1441,
+              "retweets": 126,
+              "replies": 75,
+              "quotes": 47,
+              "bookmarks": 356
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HOQ7piJakAA0zFz.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "我们获得了完整的 Kimi K3，2.8T 参数，在 80x RTX 5090 上运行。\n\n20 tok/s 单流，第一天，未调整。上周，我们在同一机队上将 GLM-5.2 从 30 tok/s 提高到了 110 tok/s。这个数字将会攀升。\n\n开放权重的首创：前沿智能以零 HBM 服务，这是人工智能中最稀缺的芯片。只有 GDDR7 游戏卡、普通以太网和官方 MXFP4 权重，没有任何重新量化。\n\n地球上最强大的开放模型，使用地球上最丰富的 GPU。任何实验室、初创公司或大学现在都可以拥有它、探测它、微调它、在上面运行代理。\n\n@Kimi_Moonshot",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-28T01:31:15.560Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2081760186235289764",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2081760186235289764",
+            "author": {
+              "name": "Kimi.ai",
+              "handle": "Kimi_Moonshot",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1910294000927645696/QseOV0uF_normal.png",
+              "isVerified": false
+            },
+            "content": "Releasing the model weights and technical report of Kimi K3.\n\nKimi K3 is our most capable model: a 2.8T MoE model with native visual understanding and a 1M-token context window.\n\nNew model architecture: 2.5x the intelligence per unit of compute, not just more params.\n\nAlongside Kimi K3, we're opening up more of the stack behind it — high-performance attention kernels, MoE communication library, and infrastructure for running agent environments at scale.\n\nModel weights: http://huggingface.co/moonshotai/Kimi-K3\nTech report: http://github.com/MoonshotAI/Kimi-K3/blob/master/k3_tech_report.pdf\nTech blog: http://kimi.com/blog/kimi-k3",
+            "createdAt": "Mon Jul 27 15:14:40 +0000 2026",
+            "viewCount": 6392757,
+            "metrics": {
+              "views": 6392757,
+              "likes": 33772,
+              "retweets": 5453,
+              "replies": 1098,
+              "quotes": 1754,
+              "bookmarks": 9739
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HOPlk-WbQAAMkwd.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "发布Kimi K3的型号重量和技术报告。\n\nKimi K3 是我们最强大的模型：具有原生视觉理解和 1M 代币上下文窗口的 2.8T MoE 模型。\n\n新模型架构：每单位计算的智能提高 2.5 倍，而不仅仅是更多参数。\n\n除了 Kimi K3 之外，我们还开放了其背后的更多堆栈——高性能注意力内核、MoE 通信库以及用于大规模运行代理环境的基础设施。\n\n模型权重：http://huggingface.co/moonshotai/Kimi-K3\n技术报告：http://github.com/MoonshotAI/Kimi-K3/blob/master/k3_tech_report.pdf\n技术博客：http://kimi.com/blog/kimi-k3",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-28T01:31:15.671Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2081855316443205717",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-28T01:31:14.973Z"
+        },
+        "createdAt": "2026-07-28T01:31:14.973Z",
+        "updatedAt": "2026-07-28T01:31:15.671Z"
+      }
+    },
+    {
+      "rank": 5,
+      "essenceScore": 75259,
+      "heatScore": 35377,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 35377
+      },
+      "sourceUrl": "https://x.com/roanoke_gal/status/2081865754501161229",
+      "reason": "把“无危险能力的开源是公共品”拆穿为“玩具模型随便玩，别跟我们抢前沿”",
+      "reasonEn": "Viral dunk: “non-dangerous open weights are a public good” really means “play with 8B toys, don’t compete at the frontier”",
+      "metrics": {
+        "views": 1126611,
+        "likes": 3465,
+        "retweets": 486,
+        "replies": 1128,
+        "quotes": 786,
+        "bookmarks": 1654
+      },
+      "document": {
+        "id": "641dd444-4eb5-43a5-8818-f3d88bd7ab03",
+        "title": "@AnthropicAI lmao no.\n\nyou know ",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2081865754501161229",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2081865754501161229",
+            "author": {
+              "name": "roanoke_gal",
+              "handle": "roanoke_gal",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1890175120657780736/32Q9KsPg_normal.jpg",
+              "isVerified": false
+            },
+            "content": "@AnthropicAI lmao no.\n\nyou know full well that \"dangerous capabilities\" = frontier models. any model capable of decent defense has decent offense. this is just saying \"oh sure you can play with your little 8b toy model, we don't care. just don't fucking compete with us, peons\".",
+            "createdAt": "Mon Jul 27 22:14:09 +0000 2026",
+            "viewCount": 28914,
+            "metrics": {
+              "views": 28914,
+              "likes": 667,
+              "retweets": 14,
+              "replies": 10,
+              "quotes": 3,
+              "bookmarks": 12
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HORFqCfWgAAUZnv.png"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "@AnthropicAI lmao 没有。\n\n你很清楚“危险能力”=前沿模型。任何具有良好防御能力的模型都具有良好的进攻能力。这只是在说“哦，当然你可以玩你的小 8b 玩具模型，我们不在乎。只是不要他妈的与我们竞争，苦工”。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-28T01:31:33.838Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2081864750296658008",
+            "relation": "reply",
+            "depth": 1,
+            "sourceTweetId": "2081864750296658008",
+            "author": {
+              "name": "Anthropic",
+              "handle": "AnthropicAI",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1798110641414443008/XP8gyBaY_normal.jpg",
+              "isVerified": false
+            },
+            "content": "There’s been a lot of speculation about where we stand on open-weights models. We’ve outlined our views in full here: https://www.anthropic.com/news/position-open-weights-models",
+            "createdAt": "Mon Jul 27 22:10:10 +0000 2026",
+            "viewCount": 1126611,
+            "metrics": {
+              "views": 1126611,
+              "likes": 3465,
+              "retweets": 486,
+              "replies": 1128,
+              "quotes": 786,
+              "bookmarks": 1654
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "关于我们在开放权重模型上的立场有很多猜测。我们在这里完整概述了我们的观点：https://www.anthropic.com/news/position-open-weights-models",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-28T01:31:33.380Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2081865754501161229",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-28T01:31:33.157Z"
+        },
+        "createdAt": "2026-07-28T01:31:33.157Z",
+        "updatedAt": "2026-07-28T01:31:33.839Z"
+      }
+    },
+    {
+      "rank": 6,
+      "essenceScore": 75114,
+      "heatScore": 35311,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 35311
+      },
+      "sourceUrl": "https://x.com/teortaxesTex/status/2081868894122226046",
+      "reason": "对照Dario旧文截图，戳穿开源立场文开篇对“中国差距”叙事的自我矛盾",
+      "reasonEn": "Side-by-side receipts: Dario’s open-weights essay opens with spin contradicted by his own China-gap nightmare essays",
+      "metrics": {
+        "views": 1122958,
+        "likes": 3466,
+        "retweets": 487,
+        "replies": 1128,
+        "quotes": 787,
+        "bookmarks": 1654
+      },
+      "document": {
+        "id": "2123b2a4-211a-47a9-809a-d41dba06a5cc",
+        "title": "Dario opens his newest essay wit",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2081868894122226046",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2081868894122226046",
+            "author": {
+              "name": "Teortaxes▶️ (DeepSeek 推特🐋铁粉 2023 – ∞)",
+              "handle": "teortaxesTex",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1652169745037242368/KRPTShbG_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Dario opens his newest essay with bullshitting. In \"DeepSeek and Export Controls\" as well as in \"Two Scenarios\" and in \"Policy on the AI Exponential\", he makes it clear that China being merely *≤2 years behind*, not ahead or even at parity, is the nightmare scenario.",
+            "createdAt": "Mon Jul 27 22:26:38 +0000 2026",
+            "viewCount": 13405,
+            "metrics": {
+              "views": 13405,
+              "likes": 251,
+              "retweets": 14,
+              "replies": 16,
+              "quotes": 0,
+              "bookmarks": 53
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HORHqaHXsAAiTCQ.jpg",
+              "https://pbs.twimg.com/media/HORH7m7XMAAar4E.jpg",
+              "https://pbs.twimg.com/media/HORIHYrWYAEaKuT.jpg",
+              "https://pbs.twimg.com/media/HORIWuGWEAASrTF.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "达里奥以废话开头他最新的文章。在《DeepSeek 与出口管制》以及《两种情景》和《人工智能指数政策》中，他明确表示，中国仅落后*≤2 年*，没有领先甚至持平，这是一场噩梦。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-28T01:31:31.440Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2081864750296658008",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2081864750296658008",
+            "author": {
+              "name": "Anthropic",
+              "handle": "AnthropicAI",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1798110641414443008/XP8gyBaY_normal.jpg",
+              "isVerified": false
+            },
+            "content": "There’s been a lot of speculation about where we stand on open-weights models. We’ve outlined our views in full here: https://www.anthropic.com/news/position-open-weights-models",
+            "createdAt": "Mon Jul 27 22:10:10 +0000 2026",
+            "viewCount": 1122958,
+            "metrics": {
+              "views": 1122958,
+              "likes": 3466,
+              "retweets": 487,
+              "replies": 1128,
+              "quotes": 787,
+              "bookmarks": 1654
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "关于我们在开放权重模型上的立场有很多猜测。我们在这里完整概述了我们的观点：https://www.anthropic.com/news/position-open-weights-models",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-28T01:31:30.299Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2081868894122226046",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-28T01:31:30.192Z"
+        },
+        "createdAt": "2026-07-28T01:31:30.192Z",
+        "updatedAt": "2026-07-28T01:31:31.441Z"
+      }
+    },
+    {
+      "rank": 7,
+      "essenceScore": 75073,
+      "heatScore": 35297,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 35297
+      },
+      "sourceUrl": "https://x.com/KrittanawongMD/status/2081884929365782774",
+      "reason": "一针见血质疑Anthropic：用公网训练OK、用Claude输出蒸馏却成国安——原则边界在哪？",
+      "reasonEn": "Sharp inconsistency dunk: training on the public web is fine, but distilling Claude is a national-security issue—by what principle?",
+      "metrics": {
+        "views": 1122958,
+        "likes": 3464,
+        "retweets": 486,
+        "replies": 1127,
+        "quotes": 786,
+        "bookmarks": 1652
+      },
+      "document": {
+        "id": "41b90d38-4927-4813-97f6-d1d402e6cc19",
+        "title": "Anthropic’s position seems incon",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2081884929365782774",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2081884929365782774",
+            "author": {
+              "name": "Chayakrit Krittanawong, MD, FACC, FSCAI",
+              "handle": "KrittanawongMD",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2073800031593738240/KiTW1Spf_normal.png",
+              "isVerified": false
+            },
+            "content": "Anthropic’s position seems inconsistent:\n\n✅Training Claude on massive amounts of public internet data → Acceptable\n\n❌ Training another model on Claude’s outputs → National security concern\n\nWhat principle distinguishes these two cases?",
+            "createdAt": "Mon Jul 27 23:30:21 +0000 2026",
+            "viewCount": 16989,
+            "metrics": {
+              "views": 16989,
+              "likes": 197,
+              "retweets": 21,
+              "replies": 11,
+              "quotes": 0,
+              "bookmarks": 6
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "Anthropic 的立场似乎不一致：\n\n✅对克劳德进行大量公共互联网数据的培训 → 可以接受\n\n❌ 根据 Claude 的输出训练另一个模型 → 国家安全问题\n\n这两种情况的区别原理是什么？",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-28T01:31:28.263Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2081864750296658008",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2081864750296658008",
+            "author": {
+              "name": "Anthropic",
+              "handle": "AnthropicAI",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1798110641414443008/XP8gyBaY_normal.jpg",
+              "isVerified": false
+            },
+            "content": "There’s been a lot of speculation about where we stand on open-weights models. We’ve outlined our views in full here: https://www.anthropic.com/news/position-open-weights-models",
+            "createdAt": "Mon Jul 27 22:10:10 +0000 2026",
+            "viewCount": 1122958,
+            "metrics": {
+              "views": 1122958,
+              "likes": 3464,
+              "retweets": 486,
+              "replies": 1127,
+              "quotes": 786,
+              "bookmarks": 1652
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "关于我们在开放权重模型上的立场有很多猜测。我们在这里完整概述了我们的观点：https://www.anthropic.com/news/position-open-weights-models",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-28T01:31:27.802Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2081884929365782774",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-28T01:31:27.740Z"
+        },
+        "createdAt": "2026-07-28T01:31:27.740Z",
+        "updatedAt": "2026-07-28T01:31:28.264Z"
+      }
+    },
+    {
+      "rank": 8,
+      "essenceScore": 53464,
+      "heatScore": 28013,
+      "signals": {
+        "depth": 3,
+        "hasDunk": true,
+        "peakIndex": 2,
+        "peakHeat": 28013
+      },
+      "sourceUrl": "https://x.com/Sentdex/status/2081806878061801871",
+      "reason": "引用戴尔“本地前沿模型”炫耀帖，反驳门槛焦虑，提出K3当教师、蒸馏下渗的“trickle-down tokenomics”",
+      "reasonEn": "Quotes Dell’s $100K local-AI flex and reframes giant open models as teachers that distill down the compute ladder",
+      "metrics": {
+        "views": 1147968,
+        "likes": 3482,
+        "retweets": 109,
+        "replies": 177,
+        "quotes": 45,
+        "bookmarks": 378
+      },
+      "document": {
+        "id": "a6285d15-9a6c-4e97-92c5-3d771d1499b9",
+        "title": "Something I've heard personally,",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2081806878061801871",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2081806878061801871",
+            "author": {
+              "name": "Harrison Kinsley",
+              "handle": "Sentdex",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1027673085162528768/VbktJ2Jz_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Something I've heard personally, and keep seeing is a lot of anger over big models like Kimi K3, or even GLM 5.2, as well as compute like that Tobi shared.\n\na $100K computer is indeed outside the bounds of what most people can afford. no doubt.\n\nKimi K3 can't even run on that $100K computer\n\nThe thing that excites me a ton about Kimi K3 isn't that I will run it local. It's that many providers will serve it. They'll figure out how to serve it cheap and fast.\n\nThen people with those $100K machines and expensive cloud machines will distill it into much much much smaller models.\n\nKimi K3 is going to be the teacher of a massive amount of future models.\n\nThen people with 3/4/5090s will run many of those models.\n\nIt's all good. The thought of running GLM 5.2 level intelligence on a computer that you could have in your home for $50K even just a year ago was OUTRAGEOUSLY impossible. You needed millions of dollars and still wouldn't reach GLM 5.2.\n\nNow you need 50K.\n\nThis is a wonderful trend and it's all good for you, no matter where you sit on the compute ladder.\n\nTrickle down tokenomics",
+            "createdAt": "Mon Jul 27 18:20:12 +0000 2026",
+            "viewCount": 69743,
+            "metrics": {
+              "views": 69743,
+              "likes": 1008,
+              "retweets": 72,
+              "replies": 45,
+              "quotes": 12,
+              "bookmarks": 183
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HOQJe1UWQAAiUGu.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "我个人听说过，并且一直看到人们对像 Kimi K3 这样的大型模型，甚至 GLM 5.2，以及像 Tobi 分享的那样的计算感到愤怒。\n\n一台 10 万美元的电脑确实超出了大多数人的承受能力。无疑。\n\nKimi K3 甚至无法在那台价值 10 万美元的计算机上运行\n\nKimi K3 让我非常兴奋的并不是我将在本地运行它。许多提供商都会提供服务。他们会想出如何廉价而快速地提供服务。\n\n然后，拥有 10 万美元机器和昂贵云机器的人们会将其提炼成更小的模型。\n\nKimi K3 将成为大量未来车型的老师。\n\n然后拥有 3/4/5090 的人将运行许多这样的模型。\n\n一切都很好。就在一年前，在一台你可以花 5 万美元在家中拥有的计算机上运行 GLM 5.2 级智能的想法是极其不可能的。您需要数百万美元，但仍然无法达到 GLM 5.2。\n\n现在你需要50K。\n\n这是一个美妙的趋势，无论您处于计算阶梯的哪个位置，它都对您有好处。\n\n滴流代币经济学",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-28T01:31:25.168Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2081046501925548100",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2081046501925548100",
+            "author": {
+              "name": "Michael Dell 🇺🇸",
+              "handle": "MichaelDell",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2065882493136306176/Zt75bHLP_normal.jpg",
+              "isVerified": false
+            },
+            "content": "What @tobi is doing here is remarkable: running GLM-5.2, a 753B-parameter AI model, locally on a Dell Pro Max with GB300 at 40 tokens per second.\n\nNo data center. No API. No cloud.\n\nUnmetered intelligence. Frontier-scale AI is becoming personal.🚀",
+            "createdAt": "Sat Jul 25 15:58:44 +0000 2026",
+            "viewCount": 567987,
+            "metrics": {
+              "views": 567987,
+              "likes": 3724,
+              "retweets": 331,
+              "replies": 190,
+              "quotes": 50,
+              "bookmarks": 998
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "@tobi 在这里所做的事情非常出色：在 GB300 的 Dell Pro Max 上以每秒 40 个令牌的速度本地运行 GLM-5.2（一种 753B 参数的 AI 模型）。\n\n没有数据中心。没有 API。没有云。\n\n无限的智能。前沿人工智能正在变得个人化。🚀",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-28T01:31:24.651Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2080064389676158996",
+            "relation": "quote",
+            "depth": 2,
+            "sourceTweetId": "2080064389676158996",
+            "author": {
+              "name": "tobi lutke",
+              "handle": "tobi",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1999293930936909824/_HWYanot_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Thank you @nvidia for the hookup on this DGX Workstation. This will crunch a *lot* of high quality tokens here!\n\nThis thing is a total beast.",
+            "createdAt": "Wed Jul 22 22:56:10 +0000 2026",
+            "viewCount": 1147968,
+            "metrics": {
+              "views": 1147968,
+              "likes": 3482,
+              "retweets": 109,
+              "replies": 177,
+              "quotes": 45,
+              "bookmarks": 378
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HN3fiQTXAAABSOC.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "感谢 @nvidia 对此 DGX 工作站的连接。这将在这里消耗*大量*高质量的代币！\n\n这东西完全就是野兽。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-28T01:31:25.134Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2081806878061801871",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-28T01:31:24.077Z"
+        },
+        "createdAt": "2026-07-28T01:31:24.077Z",
+        "updatedAt": "2026-07-28T01:31:25.168Z"
+      }
+    },
+    {
+      "rank": 9,
+      "essenceScore": 37822,
+      "heatScore": 21909,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 21909
+      },
+      "sourceUrl": "https://x.com/unknowDLT/status/2081865377693200580",
+      "reason": "引用Citadel预期美联储意外加息，串起日元、流动性危机、Clarity与DTCC/SWIFT上链的宏观拼图",
+      "reasonEn": "Crypto macro quote chain: Fed surprise-hike headline → yen/liquidity, Clarity Act, and DTCC/SWIFT DLT as one orchestrated picture",
+      "metrics": {
+        "views": 753125,
+        "likes": 3853,
+        "retweets": 362,
+        "replies": 385,
+        "quotes": 183,
+        "bookmarks": 294
+      },
+      "document": {
+        "id": "952a2411-e984-487f-9a9b-0351186908de",
+        "title": "Kevin Warsh joined the Fed fully",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2081865377693200580",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2081865377693200580",
+            "author": {
+              "name": "{x}",
+              "handle": "unknowDLT",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1960493338743771136/T5oozyxF_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Kevin Warsh joined the Fed fully aware of what would happen in Japan. That’s why he didn’t raise rates he kept them the same to finish devaluing the yen.\n\nWhile they’re cooking up the biggest liquidity crisis in history, they want to pass the Clarity Act.\n\nThe DTCC and SWIFT are transitioning to DLT.\n\nCan you see the big picture or not? This is perfectly orchestrated.",
+            "createdAt": "Mon Jul 27 22:12:39 +0000 2026",
+            "viewCount": 30733,
+            "metrics": {
+              "views": 30733,
+              "likes": 614,
+              "retweets": 73,
+              "replies": 13,
+              "quotes": 3,
+              "bookmarks": 91
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "凯文·沃什 (Kevin Warsh) 加入美联储时，充分意识到日本会发生什么。这就是为什么他没有提高利率，而是保持利率不变以完成日元贬值。\n\n虽然他们正在酝酿历史上最大的流动性危机，但他们希望通过《澄清法案》。\n\nDTCC 和 SWIFT 正在向 DLT 过渡。\n\n你能看到大局吗？这是精心策划的。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-28T01:31:47.088Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2081863412695359912",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2081863412695359912",
+            "author": {
+              "name": "Watcher.Guru",
+              "handle": "WatcherGuru",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1641221212578754562/DfiC0KW2_normal.png",
+              "isVerified": false
+            },
+            "content": "JUST IN: 🇺🇸 Citadel Securities expects the Federal Reserve to raise interest rates this week in a surprise move.",
+            "createdAt": "Mon Jul 27 22:04:51 +0000 2026",
+            "viewCount": 753125,
+            "metrics": {
+              "views": 753125,
+              "likes": 3853,
+              "retweets": 362,
+              "replies": 385,
+              "quotes": 183,
+              "bookmarks": 294
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "刚刚：🇺🇸 Citadel 证券预计美联储本周将出人意料地加息。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-28T01:31:46.163Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2081865377693200580",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-28T01:31:46.092Z"
+        },
+        "createdAt": "2026-07-28T01:31:46.092Z",
+        "updatedAt": "2026-07-28T01:31:47.088Z"
+      }
+    },
+    {
+      "rank": 10,
+      "essenceScore": 28784,
+      "heatScore": 15713,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 15713
+      },
+      "sourceUrl": "https://x.com/zebriez/status/2081891968238702905",
+      "reason": "引用Lilian Weng离职信，升华为AI时代需要“高野心、中等节奏”公司浪潮的文化重框",
+      "reasonEn": "Quotes Lilian Weng’s exit note and reframes it as demand for high-ambition, moderately paced companies in the AI age",
+      "metrics": {
+        "views": 377463,
+        "likes": 5296,
+        "retweets": 98,
+        "replies": 222,
+        "quotes": 68,
+        "bookmarks": 963
+      },
+      "document": {
+        "id": "888909ba-1a2e-444f-a565-1a2aa97734de",
+        "title": "I think we are due for a wave of",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2081891968238702905",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2081891968238702905",
+            "author": {
+              "name": "Brie Wolfson",
+              "handle": "zebriez",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1575299483847446529/sJpswj3C_normal.jpg",
+              "isVerified": false
+            },
+            "content": "I think we are due for a wave of companies that are high technical ambition while moderately paced.\n\nEspecially in the time of AI, we should be able to build products and teams worthy of a life’s work without having to sacrifice so much.\n\nI suspect there are many more Lilian’s out there who want to make this same choice.\n\nThis was a very brave post.",
+            "createdAt": "Mon Jul 27 23:58:19 +0000 2026",
+            "viewCount": 8585,
+            "metrics": {
+              "views": 8585,
+              "likes": 90,
+              "retweets": 0,
+              "replies": 4,
+              "quotes": 0,
+              "bookmarks": 20
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "我认为我们应该迎来一波技术雄心勃勃但节奏适中的公司。\n\n尤其是在人工智能时代，我们应该能够构建值得一生工作的产品和团队，而不必做出太多牺牲。\n\n我怀疑还有更多的莉莲想要做出同样的选择。\n\n这是一个非常勇敢的帖子。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-28T01:31:38.554Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2081816923088814421",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2081816923088814421",
+            "author": {
+              "name": "Lilian Weng",
+              "handle": "lilianweng",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1923619459643711488/qmXOBhZ1_normal.jpg",
+              "isVerified": false
+            },
+            "content": "It is a hard and sad decision. I shared this message with folks at Thinky. Thank you all for the time together♥️ Just as the last sentence in my message: The future worth building is human.",
+            "createdAt": "Mon Jul 27 19:00:07 +0000 2026",
+            "viewCount": 377463,
+            "metrics": {
+              "views": 377463,
+              "likes": 5296,
+              "retweets": 98,
+              "replies": 222,
+              "quotes": 68,
+              "bookmarks": 963
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HOQZaU8aEAAvbqJ.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "这是一个艰难而悲伤的决定。我与 Thinky 的同事们分享了这条信息。谢谢大家一起度过的时光♥️ 正如我留言的最后一句话：值得建设的未来是人类。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-28T01:31:38.555Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2081891968238702905",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-28T01:31:37.862Z"
+        },
+        "createdAt": "2026-07-28T01:31:37.862Z",
+        "updatedAt": "2026-07-28T01:31:38.555Z"
+      }
+    }
+  ]
+}

@@ -1,0 +1,1244 @@
+{
+  "date": "2026-07-25",
+  "title": "每日 X 精华引用榜",
+  "titleEn": "Daily Quote Essence on X",
+  "generatedAt": "2026-07-25T00:09:46.341Z",
+  "entries": [
+    {
+      "rank": 1,
+      "essenceScore": 1809458,
+      "heatScore": 894094,
+      "signals": {
+        "depth": 3,
+        "hasDunk": true,
+        "peakIndex": 2,
+        "peakHeat": 894094
+      },
+      "sourceUrl": "https://x.com/BroBean88/status/2080668321977168312",
+      "reason": "顺着黄仁勋开源联署信追问谁没签：指出闭源巨头才是禁开源的最大受益方",
+      "reasonEn": "Follows Jensen’s open-weights letter to show closed labs gain most from an open-model ban",
+      "metrics": {
+        "views": 31184329,
+        "likes": 114152,
+        "retweets": 19569,
+        "replies": 11729,
+        "quotes": 7666,
+        "bookmarks": 25546
+      },
+      "document": {
+        "id": "5e8ee9cd-e345-450e-af8d-607ea1f536c6",
+        "title": "黄仁勋今晚开号发的那封联署信里，\nOpenAI、Anthropi",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2080668321977168312",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2080668321977168312",
+            "author": {
+              "name": "Bean哥",
+              "handle": "BroBean88",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1773029562840154114/m06uuY0l_normal.jpg",
+              "isVerified": false
+            },
+            "content": "黄仁勋今晚开号发的那封联署信里，\nOpenAI、Anthropic、Google 一个都没签。\n\nParticle 的创始人 Suhail Doshi 说过一句话，我觉得是理解整件事的钥匙。\n\n他说一旦全面切断中国开放权重模型，很多依赖低成本模型的美国初创公司可能撑不下去，会被迫把更多预算转向 Anthropic 这类闭源供应商。\n\n你把这句话读第二遍。\n\n封禁开源，等于把全美创业公司的预算，赶回那几家闭源大厂的口袋里。\n\n所以那三家沉默。它们是这场禁令的直接受益方。\n\n而且它们此前公开指责过中国公司通过蒸馏获取模型能力，还警告说中国开源模型的崛起威胁美国的 AI 领先地位。不是没表态，是早就表了相反的态。\n\n再看签字的那批，按生意模式排一遍就全明白了。\n\n1、英伟达、戴尔、IBM 卖硬件。微软、Meta 做基建，\n2、Palantir、Perplexity 做应用。a16z、YC 投小公司。\n3、Hugging Face、Mistral、Mozilla 本来就长在开源生态里。\n\n有一个共同点，没有一个是靠模型本身收租的。\n\n没签的那三家，全都是。\n\n开源之争从来不是理念之争。它是一场位置之争。\n\n你站在产业链的哪里，就决定了你说什么话。",
+            "createdAt": "Fri Jul 24 14:55:59 +0000 2026",
+            "viewCount": 70876,
+            "metrics": {
+              "views": 70876,
+              "likes": 201,
+              "retweets": 12,
+              "replies": 53,
+              "quotes": 5,
+              "bookmarks": 82
+            },
+            "media": [],
+            "translation": {
+              "provider": "none",
+              "status": "idle",
+              "language": "zh-CN",
+              "text": "",
+              "annotations": [],
+              "error": "",
+              "version": 0
+            }
+          },
+          {
+            "id": "2080658859837002003",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2080658859837002003",
+            "author": {
+              "name": "Bean哥",
+              "handle": "BroBean88",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1773029562840154114/m06uuY0l_normal.jpg",
+              "isVerified": false
+            },
+            "content": "为啥黄仁勋从不玩推特，今晚专门开了个号发这条推？\n\n二十多家公司联署支持开源，为什么 OpenAI、Anthropic、Google 一个都没签？\n\n为什么禁令一旦落地，最赚的恰恰是没签字的那几家？\n\n黄仁勋今晚第一条推文发的是一封公开信，《开放权重与美国 AI 领导力》。\n\n联署那串名单很长。\n\nMeta、微软、IBM、戴尔、Palantir、Perplexity、a16z、Y Combinator、Hugging Face、Mistral、Mozilla，加上英伟达自己，二十多家。\n\n我看名单习惯先看谁在。\n\n看完一遍又倒回去看了一遍，总觉得少了点什么。\n\nOpenAI 没签。Anthropic 没签。Google 也没签。\n\n这三家的缺席，比那二十多家的签字有意思得多。\n\n前两天美国财政部长贝森特对 Fox Business 说，政府正在调查中国 AI 模型是否窃取美国知识产权，并考虑采取制裁。\n\n几乎同一时间，将近 200 家硅谷公司通过新成立的 Little Tech Association 联名致信特朗普政府，反对切断美国开发者对中国开放权重模型的访问。\n\n华盛顿的风已经起来了。\n\n黄仁勋顶着这个风向公开唱反调，还破例给自己开了个号。一个人肯为一件事破掉自己多年的习惯，说明这件事在他心里的分量，比那个习惯重得多。\n\n那三家为什么集体沉默，\n以及为什么禁令一旦落地，最大的赢家恰恰是它们？",
+            "createdAt": "Fri Jul 24 14:18:23 +0000 2026",
+            "viewCount": 173905,
+            "metrics": {
+              "views": 173905,
+              "likes": 252,
+              "retweets": 22,
+              "replies": 74,
+              "quotes": 5,
+              "bookmarks": 96
+            },
+            "media": [],
+            "translation": {
+              "provider": "none",
+              "status": "idle",
+              "language": "zh-CN",
+              "text": "",
+              "annotations": [],
+              "error": "",
+              "version": 0
+            }
+          },
+          {
+            "id": "2080643682408321103",
+            "relation": "quote",
+            "depth": 2,
+            "sourceTweetId": "2080643682408321103",
+            "author": {
+              "name": "Jensen Huang",
+              "handle": "JensenHuang",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2080613261674962944/OMXX4RJ3_normal.jpg",
+              "isVerified": false
+            },
+            "content": "For my first post, I’m sharing a letter @NVIDIA signed on why open models matter.\n\nAI will transform every industry, power every company, and be built by every country.\n\nOpen models strengthen safety and cybersecurity, accelerate innovation and diffusion, and enable sovereignty.\n\nThe world needs both frontier closed models and frontier open models.\n\nhttps://images.nvidia.com/pdf/Open-Weights-and-American-AI-Leadership.pdf",
+            "createdAt": "Fri Jul 24 13:18:05 +0000 2026",
+            "viewCount": 31184329,
+            "metrics": {
+              "views": 31184329,
+              "likes": 114152,
+              "retweets": 19569,
+              "replies": 11729,
+              "quotes": 7666,
+              "bookmarks": 25546
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HN_qDVsa4AAI6XJ.jpg",
+              "https://pbs.twimg.com/media/HN_qDV1a8AARQwg.jpg",
+              "https://pbs.twimg.com/media/HN_qDV1awAAPTlH.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "在我的第一篇文章中，我将分享一封@NVIDIA 签名的信，解释为什么开放模型很重要。\n\n人工智能将改变每个行业、为每个公司提供动力、由每个国家建设。\n\n开放模式加强安全和网络安全，加速创新和扩散，并实现主权。\n\n世界既需要边境封闭模式，也需要边境开放模式。\n\nhttps://images.nvidia.com/pdf/Open-Weights-and-American-AI-Leadership.pdf",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-25T00:09:33.229Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2080668321977168312",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-25T00:09:33.151Z"
+        },
+        "createdAt": "2026-07-25T00:09:33.151Z",
+        "updatedAt": "2026-07-25T00:09:33.229Z"
+      }
+    },
+    {
+      "rank": 2,
+      "essenceScore": 1675305,
+      "heatScore": 894082,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 894082
+      },
+      "sourceUrl": "https://x.com/sriramk/status/2080776174863892882",
+      "reason": "引用黄仁勋首帖，把开放权重从“友好表态”抬到“美国赢AI的路径”",
+      "reasonEn": "Quotes Jensen’s debut to elevate open weights from nicety to U.S. AI strategy",
+      "metrics": {
+        "views": 31184329,
+        "likes": 114148,
+        "retweets": 19569,
+        "replies": 11728,
+        "quotes": 7666,
+        "bookmarks": 25543
+      },
+      "document": {
+        "id": "d69d4b80-12d9-46c1-a24a-1f17f999fd41",
+        "title": "open weight models are how the U",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2080776174863892882",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2080776174863892882",
+            "author": {
+              "name": "Sriram Krishnan",
+              "handle": "sriramk",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1873344970104492033/l7dRtM08_normal.jpg",
+              "isVerified": false
+            },
+            "content": "open weight models are how the U.S. wins on AI.",
+            "createdAt": "Fri Jul 24 22:04:33 +0000 2026",
+            "viewCount": 15412,
+            "metrics": {
+              "views": 15412,
+              "likes": 210,
+              "retweets": 15,
+              "replies": 21,
+              "quotes": 3,
+              "bookmarks": 8
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "开放权重模型是美国在人工智能领域获胜的方式。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-25T00:09:30.371Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2080643682408321103",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2080643682408321103",
+            "author": {
+              "name": "Jensen Huang",
+              "handle": "JensenHuang",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2080613261674962944/OMXX4RJ3_normal.jpg",
+              "isVerified": false
+            },
+            "content": "For my first post, I’m sharing a letter @NVIDIA signed on why open models matter.\n\nAI will transform every industry, power every company, and be built by every country.\n\nOpen models strengthen safety and cybersecurity, accelerate innovation and diffusion, and enable sovereignty.\n\nThe world needs both frontier closed models and frontier open models.\n\nhttps://images.nvidia.com/pdf/Open-Weights-and-American-AI-Leadership.pdf",
+            "createdAt": "Fri Jul 24 13:18:05 +0000 2026",
+            "viewCount": 31184329,
+            "metrics": {
+              "views": 31184329,
+              "likes": 114148,
+              "retweets": 19569,
+              "replies": 11728,
+              "quotes": 7666,
+              "bookmarks": 25543
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HN_qDVsa4AAI6XJ.jpg",
+              "https://pbs.twimg.com/media/HN_qDV1a8AARQwg.jpg",
+              "https://pbs.twimg.com/media/HN_qDV1awAAPTlH.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "在我的第一篇文章中，我将分享一封@NVIDIA 签名的信，解释为什么开放模型很重要。\n\n人工智能将改变每个行业、为每个公司提供动力、由每个国家建设。\n\n开放模式加强安全和网络安全，加速创新和扩散，并实现主权。\n\n世界既需要边境封闭模式，也需要边境开放模式。\n\nhttps://images.nvidia.com/pdf/Open-Weights-and-American-AI-Leadership.pdf",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-25T00:09:30.100Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2080776174863892882",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-25T00:09:30.013Z"
+        },
+        "createdAt": "2026-07-25T00:09:30.013Z",
+        "updatedAt": "2026-07-25T00:09:30.371Z"
+      }
+    },
+    {
+      "rank": 3,
+      "essenceScore": 549302,
+      "heatScore": 288445,
+      "signals": {
+        "depth": 3,
+        "hasDunk": true,
+        "peakIndex": 2,
+        "peakHeat": 288445
+      },
+      "sourceUrl": "https://x.com/op7418/status/2080703521364861277",
+      "reason": "抓到Anthropic标红“53.4>53.5”的草台错误，发布日锐评瞬间出圈",
+      "reasonEn": "Catches Anthropic’s chart claiming 53.4 beats 53.5—sharp launch-day dunk",
+      "metrics": {
+        "views": 9635113,
+        "likes": 49810,
+        "retweets": 5992,
+        "replies": 2578,
+        "quotes": 4135,
+        "bookmarks": 5198
+      },
+      "document": {
+        "id": "59444c30-a479-43bf-978a-b01177167dd5",
+        "title": "笑死 Anthropic 这么草台？\n\n这 Opus 5 的测试",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2080703521364861277",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2080703521364861277",
+            "author": {
+              "name": "歸藏(guizang.ai)",
+              "handle": "op7418",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1636981205504786434/xDl77JIw_normal.jpg",
+              "isVerified": false
+            },
+            "content": "笑死 Anthropic 这么草台？\n\n这 Opus 5 的测试成绩分数标红不太对吧\n\n53.4 大于 53.5？",
+            "createdAt": "Fri Jul 24 17:15:51 +0000 2026",
+            "viewCount": 40502,
+            "metrics": {
+              "views": 40502,
+              "likes": 87,
+              "retweets": 1,
+              "replies": 33,
+              "quotes": 2,
+              "bookmarks": 9
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HOAkovFa0AAcPJK.jpg"
+            ],
+            "translation": {
+              "provider": "none",
+              "status": "idle",
+              "language": "zh-CN",
+              "text": "",
+              "annotations": [],
+              "error": "",
+              "version": 0
+            }
+          },
+          {
+            "id": "2080701512679145525",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2080701512679145525",
+            "author": {
+              "name": "歸藏(guizang.ai)",
+              "handle": "op7418",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1636981205504786434/xDl77JIw_normal.jpg",
+              "isVerified": false
+            },
+            "content": "来了！Opus 5 模型发布，价格跟 Opus 4.8 相同\n\n在测评成绩上大幅优于 Opus 4.8，同时相当多的测评成绩都高于 Fable 5。\n\n终于有个能用的模型了！\n\n要再不出，我感觉 Claude Max 都没必要续订了，性价比过低，4.8 跟屎一样",
+            "createdAt": "Fri Jul 24 17:07:52 +0000 2026",
+            "viewCount": 71819,
+            "metrics": {
+              "views": 71819,
+              "likes": 66,
+              "retweets": 2,
+              "replies": 21,
+              "quotes": 2,
+              "bookmarks": 16
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HOAi_oRbUAAFF27.jpg"
+            ],
+            "translation": {
+              "provider": "none",
+              "status": "idle",
+              "language": "zh-CN",
+              "text": "",
+              "annotations": [],
+              "error": "",
+              "version": 0
+            }
+          },
+          {
+            "id": "2080699495453528290",
+            "relation": "quote",
+            "depth": 2,
+            "sourceTweetId": "2080699495453528290",
+            "author": {
+              "name": "Claude",
+              "handle": "claudeai",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1950950107937185792/QOfEjFoJ_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Introducing Claude Opus 5.\n\nIt's a thoughtful and proactive model that comes close to the frontier intelligence of Fable 5 at half the price.",
+            "createdAt": "Fri Jul 24 16:59:51 +0000 2026",
+            "viewCount": 9635113,
+            "metrics": {
+              "views": 9635113,
+              "likes": 49810,
+              "retweets": 5992,
+              "replies": 2578,
+              "quotes": 4135,
+              "bookmarks": 5198
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HOAifjuWcAESshR.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "介绍克劳德作品 5。\n\n这是一个深思熟虑且积极主动的模型，以一半的价格接近《神鬼寓言 5》的前沿智能。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-25T00:09:37.249Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2080703521364861277",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-25T00:09:37.170Z"
+        },
+        "createdAt": "2026-07-25T00:09:37.170Z",
+        "updatedAt": "2026-07-25T00:09:37.250Z"
+      }
+    },
+    {
+      "rank": 4,
+      "essenceScore": 506035,
+      "heatScore": 288445,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 288445
+      },
+      "sourceUrl": "https://x.com/bridgemindai/status/2080778466417385832",
+      "reason": "在发布狂欢中点出唯一刺：出新模型却不给老用户额度重置",
+      "reasonEn": "Cuts through launch hype: frontier drop without usage reset for paying customers",
+      "metrics": {
+        "views": 9635113,
+        "likes": 49810,
+        "retweets": 5992,
+        "replies": 2578,
+        "quotes": 4135,
+        "bookmarks": 5198
+      },
+      "document": {
+        "id": "c5be07c4-8fb6-49c9-8905-cc1600bd0b91",
+        "title": "Anthropic is the only AI company",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2080778466417385832",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2080778466417385832",
+            "author": {
+              "name": "BridgeMind",
+              "handle": "bridgemindai",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2011440113071382528/e2Qscbca_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Anthropic is the only AI company that would release a new frontier model and not give their customers a reset.\n\nFix this @AnthropicAI.",
+            "createdAt": "Fri Jul 24 22:13:40 +0000 2026",
+            "viewCount": 20896,
+            "metrics": {
+              "views": 20896,
+              "likes": 546,
+              "retweets": 25,
+              "replies": 60,
+              "quotes": 3,
+              "bookmarks": 14
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "Anthropic 是唯一一家发布新前沿模型且不给客户重置的人工智能公司。\n\n解决这个问题@AnthropicAI。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-25T00:09:44.159Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2080699495453528290",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2080699495453528290",
+            "author": {
+              "name": "Claude",
+              "handle": "claudeai",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1950950107937185792/QOfEjFoJ_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Introducing Claude Opus 5.\n\nIt's a thoughtful and proactive model that comes close to the frontier intelligence of Fable 5 at half the price.",
+            "createdAt": "Fri Jul 24 16:59:51 +0000 2026",
+            "viewCount": 9635113,
+            "metrics": {
+              "views": 9635113,
+              "likes": 49810,
+              "retweets": 5992,
+              "replies": 2578,
+              "quotes": 4135,
+              "bookmarks": 5198
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HOAifjuWcAESshR.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "介绍克劳德作品 5。\n\n这是一个深思熟虑且积极主动的模型，以一半的价格接近《神鬼寓言 5》的前沿智能。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-25T00:09:43.638Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2080778466417385832",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-25T00:09:43.520Z"
+        },
+        "createdAt": "2026-07-25T00:09:43.520Z",
+        "updatedAt": "2026-07-25T00:09:44.160Z"
+      }
+    },
+    {
+      "rank": 5,
+      "essenceScore": 506032,
+      "heatScore": 288442,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 288442
+      },
+      "sourceUrl": "https://x.com/MaxForAI/status/2080703524552528133",
+      "reason": "中文圈长文拆解Opus 5：半价逼近前沿、Agent自造工具，重框为成本战",
+      "reasonEn": "Chinese deep-dive: Opus 5 near-frontier at half price reframes the race as cost-to-finish",
+      "metrics": {
+        "views": 9635113,
+        "likes": 49807,
+        "retweets": 5992,
+        "replies": 2578,
+        "quotes": 4135,
+        "bookmarks": 5198
+      },
+      "document": {
+        "id": "c402e10b-62ef-4ae1-845b-2fb13c9b9348",
+        "title": "卧槽？？？？tmd这次 @claudeai 把牙膏挤爆了🤯！！",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2080703524552528133",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2080703524552528133",
+            "author": {
+              "name": "Max For AI",
+              "handle": "MaxForAI",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1885611457376903171/zWWnahYp_normal.jpg",
+              "isVerified": false
+            },
+            "content": "卧槽？？？？tmd这次 @claudeai 把牙膏挤爆了🤯！！！\n\nAnthropic刚刚发布Claude Opus 5。\n\n以拉爆Claude Fable 5的前沿能力，价格直接来到Fable的一半。\n\nOpus 5的API价格是每百万Token输入5美元、输出25美元，和Opus 4.8完全相同。\n\nFable 5则是10美元和50美元。\n\nAnthropic直接把它定义为一款可以每天使用的高端模型，并将其设为Claude Max默认模型、Claude Pro最强模型。\n\n跑分方面在CursorBench 3.2中，Opus 5开启最高Effort后，成绩只比Fable 5峰值低0.5%，但单任务成本只有后者一半。\n\n在Frontier-Bench上，它以更低的单任务成本，将Opus 4.8的成绩提升到两倍以上。\n\nAnthropic称，Opus 5目前已经在Frontier-Bench和GDPval-AA等编程、知识工作评测中达到SOTA。\n\nAgent和电脑操作的提升更夸张，同时ARC-AGI 3成绩是第二名的3倍。。。\n\nZapier AutomationBench中，同等成本下通过率约为第二名的1.5倍，即使使用最低Effort，完成的任务也比其他模型更多。\n\nOSWorld 2.0中，Opus 5只花Fable 5略高于三分之一的成本，就超过了Fable 5的最好成绩。\n\n但这次最值得关注的，可能还不是跑分。\n\nAnthropic反复强调Opus 5更擅长验证自己的工作，并持续迭代到任务真正完成。\n\n一个测试里，模型拿不到机械零件原图，只能访问原始像素。Opus 5自己写了一套计算机视觉管线，提取几何结构，最后在FreeCAD中重建出了完整零件。\n\n另一个任务中，它发现没有实时数据流可以验证代码，于是顺手给自己搭了一套测试框架。\n\n这是一种很关键的Agent能力：发现当前环境缺少完成任务所需的工具，然后自己创造工具。\n\nOpus 5同时加入了Fast Mode，速度大约是默认模式的2.5倍，价格是基础版本的两倍。\n\nAPI模型名为claude-opus-5，目前已经登陆Claude、Claude Code、Claude Cowork和Claude Platform。\n\nAnthropic现在的模型分层也越来越清楚：\n\nSonnet负责规模和成本；\n\nOpus负责绝大部分高难度日常工作；\n\nFable和Mythos继续探索能力与高风险领域的最前沿。\n\nOpus 5真正的场景是大量编程、研究、数据分析和Agent任务，它正在让用户很难继续为Fable 5支付两倍价格。\n\n前沿模型开始主动下放能力、压低价格。\n\n模型战争接下来的重点，会从谁的能力上限最高，逐渐变成谁能用更低成本，把任务稳定地做完。\n\n牛逼，看来前段时间 @OpenAI 和中国开源模型们（ @Kimi_Moonshot 和 @Zai_org ）真的给A/太多压力了！\n\n继续加油啊家人们！",
+            "createdAt": "Fri Jul 24 17:15:52 +0000 2026",
+            "viewCount": 50845,
+            "metrics": {
+              "views": 50845,
+              "likes": 160,
+              "retweets": 11,
+              "replies": 23,
+              "quotes": 6,
+              "bookmarks": 44
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HOAkxzdakAAtxWO.png",
+              "https://pbs.twimg.com/media/HOAkzeFbgAAsCuJ.jpg",
+              "https://pbs.twimg.com/media/HOAk0zhbgAIWrXP.jpg"
+            ],
+            "translation": {
+              "provider": "none",
+              "status": "idle",
+              "language": "zh-CN",
+              "text": "",
+              "annotations": [],
+              "error": "",
+              "version": 0
+            }
+          },
+          {
+            "id": "2080699495453528290",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2080699495453528290",
+            "author": {
+              "name": "Claude",
+              "handle": "claudeai",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1950950107937185792/QOfEjFoJ_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Introducing Claude Opus 5.\n\nIt's a thoughtful and proactive model that comes close to the frontier intelligence of Fable 5 at half the price.",
+            "createdAt": "Fri Jul 24 16:59:51 +0000 2026",
+            "viewCount": 9635113,
+            "metrics": {
+              "views": 9635113,
+              "likes": 49807,
+              "retweets": 5992,
+              "replies": 2578,
+              "quotes": 4135,
+              "bookmarks": 5198
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HOAifjuWcAESshR.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "介绍克劳德作品 5。\n\n这是一个深思熟虑且积极主动的模型，以一半的价格接近《神鬼寓言 5》的前沿智能。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-25T00:09:34.837Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2080703524552528133",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-25T00:09:34.759Z"
+        },
+        "createdAt": "2026-07-25T00:09:34.759Z",
+        "updatedAt": "2026-07-25T00:09:34.837Z"
+      }
+    },
+    {
+      "rank": 6,
+      "essenceScore": 505733,
+      "heatScore": 288274,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 288274
+      },
+      "sourceUrl": "https://x.com/atomic_chat_hq/status/2080760629653102958",
+      "reason": "用可复现的3D物理生成对打，用半价成本证明Opus 5碾压Fable/GPT/Kimi",
+      "reasonEn": "Side-by-side 3D physics bake-off shows Opus 5 beating Fable/GPT/Kimi at half the cost",
+      "metrics": {
+        "views": 9626944,
+        "likes": 49804,
+        "retweets": 5992,
+        "replies": 2578,
+        "quotes": 4135,
+        "bookmarks": 5197
+      },
+      "document": {
+        "id": "bc2985c6-3401-4049-8b73-646047ac2256",
+        "title": "Opus 5 crushed Fable 5 at 3D des",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2080760629653102958",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2080760629653102958",
+            "author": {
+              "name": "atomic.chat",
+              "handle": "atomic_chat_hq",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2037454994899959808/L7uqgUfL_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Opus 5 crushed Fable 5 at 3D destruction physics for 2x cheaper!\n\nWe gave four models the same task: build three self-contained HTML scenes with real physics\n\nPrompts:\n- A tornado that sucks in a whole field\n- A wrecking ball taking down an apartment block\n- An overloaded truck collapsing a truss bridge\n\nOutputs:\n- Opus 5: 55.9K tokens, $1.40\n- Fable 5: 55.1K tokens, $2.82\n- Kimi K3: 35.7K tokens, $0.55\n- GPT 5.6: 20.1K tokens, $0.31\n\nOpus got all three right unlike the other models. Houses fly up the funnel and out the top, the wall breaks where the ball hits and the rubble piles up, the bridge drops the truck into the river. Fable had almost nothing on the ground for the tornado to pick up, its building collapsed on its own before the ball even touched it and its bridge blew into sticks all at once. GPT is the cheapest here but its ball never reached the building at all and its bridge fell apart in a way nothing falls apart in real life. Kimi K3, the new Chinese frontier model, ended up in the same place as GPT",
+            "createdAt": "Fri Jul 24 21:02:47 +0000 2026",
+            "viewCount": 95869,
+            "metrics": {
+              "views": 95869,
+              "likes": 545,
+              "retweets": 43,
+              "replies": 18,
+              "quotes": 14,
+              "bookmarks": 205
+            },
+            "media": [
+              "https://pbs.twimg.com/amplify_video_thumb/2080760395166257153/img/DkPLPgWYiNh7xxZy.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "Opus 5 在 3D 破坏物理方面击败了《神鬼寓言 5》，价格便宜了 2 倍！\n\n我们给四个模型分配了相同的任务：构建三个具有真实物理特性的独立 HTML 场景\n\n提示：\n- 一场龙卷风吞噬了整个田野\n- 一个破坏球摧毁了一座公寓楼\n- 一辆超载的卡车压垮了一座桁架桥\n\n输出：\n- Opus 5：55.9K 代币，1.40 美元\n- 《神鬼寓言 5》：55.1K 代币，2.82 美元\n- Kimi K3：35.7K 代币，0.55 美元\n- GPT 5.6：20.1K 代币，0.31 美元\n\n与其他型号不同，Opus 的三项都正确。房屋飞上漏斗并从顶部飞出，球击中的地方墙壁破裂，瓦砾堆积起来，桥梁将卡车扔进河里。 《神鬼寓言》地面上几乎没有任何东西可以被龙卷风卷起，它的建筑在球接触到它之前就自行倒塌了，它的桥也一下子被吹成了木棍。 GPT 是这里最便宜的，但它的球根本没有到达建筑物，而且它的桥以现实生活中没有任何东西会崩溃的方式崩溃了。中国新前沿车型Kimi K3最终与GPT同名",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-25T00:09:28.430Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2080699495453528290",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2080699495453528290",
+            "author": {
+              "name": "Claude",
+              "handle": "claudeai",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1950950107937185792/QOfEjFoJ_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Introducing Claude Opus 5.\n\nIt's a thoughtful and proactive model that comes close to the frontier intelligence of Fable 5 at half the price.",
+            "createdAt": "Fri Jul 24 16:59:51 +0000 2026",
+            "viewCount": 9626944,
+            "metrics": {
+              "views": 9626944,
+              "likes": 49804,
+              "retweets": 5992,
+              "replies": 2578,
+              "quotes": 4135,
+              "bookmarks": 5197
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HOAifjuWcAESshR.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "介绍克劳德作品 5。\n\n这是一个深思熟虑且积极主动的模型，以一半的价格接近《神鬼寓言 5》的前沿智能。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-25T00:09:27.004Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2080760629653102958",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-25T00:09:26.869Z"
+        },
+        "createdAt": "2026-07-25T00:09:26.869Z",
+        "updatedAt": "2026-07-25T00:09:28.430Z"
+      }
+    },
+    {
+      "rank": 7,
+      "essenceScore": 228557,
+      "heatScore": 113749,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 113749
+      },
+      "sourceUrl": "https://x.com/OrdinaryGamers/status/2080776061604843799",
+      "reason": "用一句讽刺拆穿Google自拍视频登录：深度伪造时代形同裸奔",
+      "reasonEn": "Sarcastic security dunk on Google’s selfie-video login in a deepfake era",
+      "metrics": {
+        "views": 4562069,
+        "likes": 6802,
+        "retweets": 913,
+        "replies": 1620,
+        "quotes": 1613,
+        "bookmarks": 2444
+      },
+      "document": {
+        "id": "ceeb152e-0144-475c-9f28-73a9bcd2f5f5",
+        "title": "No way this could go wrong at al",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2080776061604843799",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2080776061604843799",
+            "author": {
+              "name": "Mutahar",
+              "handle": "OrdinaryGamers",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1899691448385081344/TS4nyGbl_normal.jpg",
+              "isVerified": false
+            },
+            "content": "No way this could go wrong at all in the age of generative AI and deepfakes.",
+            "createdAt": "Fri Jul 24 22:04:06 +0000 2026",
+            "viewCount": 15731,
+            "metrics": {
+              "views": 15731,
+              "likes": 311,
+              "retweets": 17,
+              "replies": 3,
+              "quotes": 1,
+              "bookmarks": 14
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "在生成人工智能和深度造假的时代，这根本不可能出错。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-25T00:09:39.658Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2080284006512201760",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2080284006512201760",
+            "author": {
+              "name": "Google",
+              "handle": "Google",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2042749771337564160/AgOFPEL3_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Forgot your password? Lost your phone? Can’t get into your account?\n\nYou can now use a selfie video to log into your Google Account.\n\nThe new feature is easy to use and lets you sign in — even if you forget your password or don’t have your usual phone or laptop — with a quick selfie.",
+            "createdAt": "Thu Jul 23 13:28:51 +0000 2026",
+            "viewCount": 4562069,
+            "metrics": {
+              "views": 4562069,
+              "likes": 6802,
+              "retweets": 913,
+              "replies": 1620,
+              "quotes": 1613,
+              "bookmarks": 2444
+            },
+            "media": [
+              "https://pbs.twimg.com/tweet_video_thumb/HN6nPgDXQAA_m3W.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "忘记密码了吗？手机丢了？无法进入您的帐户？\n\n您现在可以使用自拍视频登录您的 Google 帐户。\n\n这项新功能易于使用，即使您忘记了密码或没有常用的手机或笔记本电脑，您也可以通过快速自拍来登录。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-25T00:09:39.110Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2080776061604843799",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-25T00:09:38.820Z"
+        },
+        "createdAt": "2026-07-25T00:09:38.820Z",
+        "updatedAt": "2026-07-25T00:09:39.659Z"
+      }
+    },
+    {
+      "rank": 8,
+      "essenceScore": 104338,
+      "heatScore": 60554,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 60554
+      },
+      "sourceUrl": "https://x.com/legen_eth/status/2080750437251084776",
+      "reason": "引用Cramer力挺Intel的推文，配上Inverse Cramer历史回撤图，把“Cramer一喊就砸”的市场梗钉死",
+      "reasonEn": "Quotes Cramer’s “Intel’s the one” with Inverse Cramer drawdown charts, crystallizing the market dunk",
+      "metrics": {
+        "views": 2736933,
+        "likes": 2067,
+        "retweets": 103,
+        "replies": 898,
+        "quotes": 447,
+        "bookmarks": 151
+      },
+      "document": {
+        "id": "77c02a31-f20e-4cdd-9a4d-fcc006d33aaf",
+        "title": "Never seen anyone with this much",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2080750437251084776",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2080750437251084776",
+            "author": {
+              "name": "legen",
+              "handle": "legen_eth",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1658226074268884993/z9V9vXlS_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Never seen anyone with this much influence over the market",
+            "createdAt": "Fri Jul 24 20:22:17 +0000 2026",
+            "viewCount": 354546,
+            "metrics": {
+              "views": 354546,
+              "likes": 3315,
+              "retweets": 87,
+              "replies": 65,
+              "quotes": 8,
+              "bookmarks": 105
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HOBPfscWYAEj0PS.jpg",
+              "https://pbs.twimg.com/media/HOBPfsbXYAAY4WU.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "从未见过对市场有如此大影响力的人",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-25T00:09:20.071Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2080398942517248060",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2080398942517248060",
+            "author": {
+              "name": "Jim Cramer",
+              "handle": "jimcramer",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1461426655046606860/PzlSk4fZ_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Intel's the one.",
+            "createdAt": "Thu Jul 23 21:05:34 +0000 2026",
+            "viewCount": 2736933,
+            "metrics": {
+              "views": 2736933,
+              "likes": 2067,
+              "retweets": 103,
+              "replies": 898,
+              "quotes": 447,
+              "bookmarks": 151
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "英特尔就是其中之一。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-25T00:09:19.600Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2080750437251084776",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-25T00:09:19.284Z"
+        },
+        "createdAt": "2026-07-25T00:09:19.284Z",
+        "updatedAt": "2026-07-25T00:09:20.072Z"
+      }
+    },
+    {
+      "rank": 9,
+      "essenceScore": 41877,
+      "heatScore": 21258,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 21258
+      },
+      "sourceUrl": "https://x.com/alexalbert__/status/2080731979528679617",
+      "reason": "自引用半年前“agentic表格”预言，用Opus 5咨询级表格/幻灯片完成闭环",
+      "reasonEn": "Self-quote callback: six months later Opus 5 hits consultant-grade sheets and decks",
+      "metrics": {
+        "views": 649940,
+        "likes": 4404,
+        "retweets": 170,
+        "replies": 184,
+        "quotes": 53,
+        "bookmarks": 1409
+      },
+      "document": {
+        "id": "67aacfdb-786e-4b4d-a825-177c2abc65e6",
+        "title": "Just over 6 months later, Opus 5",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2080731979528679617",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2080731979528679617",
+            "author": {
+              "name": "Alex Albert",
+              "handle": "alexalbert__",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1856486626072915968/JEQpB9CW_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Just over 6 months later, Opus 5 now produces near-superhuman level spreadsheets and slide decks that match what a consultant would make. Things are changing fast.",
+            "createdAt": "Fri Jul 24 19:08:56 +0000 2026",
+            "viewCount": 141801,
+            "metrics": {
+              "views": 141801,
+              "likes": 1500,
+              "retweets": 84,
+              "replies": 36,
+              "quotes": 6,
+              "bookmarks": 539
+            },
+            "media": [
+              "https://pbs.twimg.com/amplify_video_thumb/2080719295458500608/img/BNyXLVuL_YZOIfHh.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "仅仅 6 个多月后，Opus 5 现在可以生成接近超人水平的电子表格和幻灯片，与顾问制作的内容相匹配。事情变化很快。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-25T00:09:41.338Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2005670179045523595",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2005670179045523595",
+            "author": {
+              "name": "Alex Albert",
+              "handle": "alexalbert__",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1856486626072915968/JEQpB9CW_normal.jpg",
+              "isVerified": false
+            },
+            "content": "I'm hearing from many folks across finance industry that Claude for Excel is blowing their minds.\n\nThe agentic coding takeoff but for other fields is coming in 2026.",
+            "createdAt": "Mon Dec 29 16:00:08 +0000 2025",
+            "viewCount": 649940,
+            "metrics": {
+              "views": 649940,
+              "likes": 4404,
+              "retweets": 170,
+              "replies": 184,
+              "quotes": 53,
+              "bookmarks": 1409
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "我从金融行业的许多人那里听说 Claude for Excel 令他们大吃一惊。\n\n其他领域的代理编码将于 2026 年迎来腾飞。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-25T00:09:41.939Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2080731979528679617",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-25T00:09:41.249Z"
+        },
+        "createdAt": "2026-07-25T00:09:41.249Z",
+        "updatedAt": "2026-07-25T00:09:41.939Z"
+      }
+    },
+    {
+      "rank": 10,
+      "essenceScore": 25069,
+      "heatScore": 14859,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 14859
+      },
+      "sourceUrl": "https://x.com/patrickjwitt/status/2080732009307967789",
+      "reason": "把Fidelity挺Clarity Act与全美最大警察工会并列，凸显机构与基层同压参议院",
+      "reasonEn": "Pairs Fidelity’s Clarity Act push with the largest police union—institutional + grassroots pressure",
+      "metrics": {
+        "views": 340239,
+        "likes": 4363,
+        "retweets": 922,
+        "replies": 122,
+        "quotes": 119,
+        "bookmarks": 162
+      },
+      "document": {
+        "id": "24ba3434-25a9-4622-b6ac-199aead3fcc6",
+        "title": "The world’s largest police union",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2080732009307967789",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2080732009307967789",
+            "author": {
+              "name": "Patrick Witt",
+              "handle": "patrickjwitt",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1956165524334710790/WlcmDFE6_normal.jpg",
+              "isVerified": false
+            },
+            "content": "The world’s largest police union and the world’s third-largest asset manager agree: pass the Clarity Act.",
+            "createdAt": "Fri Jul 24 19:09:03 +0000 2026",
+            "viewCount": 40653,
+            "metrics": {
+              "views": 40653,
+              "likes": 1725,
+              "retweets": 280,
+              "replies": 39,
+              "quotes": 6,
+              "bookmarks": 37
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "全球最大的警察工会和全球第三大资产管理公司一致同意：通过《澄清法案》。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-25T00:09:46.339Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2080717659822260304",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2080717659822260304",
+            "author": {
+              "name": "Fidelity Public Policy",
+              "handle": "FidelityPolicy",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1911806365019856896/rspCL3id_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Fidelity urges Senate passage of the CLARITY Act. The time is now for clear rules of the road that are essential to strengthening investor confidence, providing certainty for market participants, and reinforcing U.S. leadership in global digital asset markets.",
+            "createdAt": "Fri Jul 24 18:12:02 +0000 2026",
+            "viewCount": 340239,
+            "metrics": {
+              "views": 340239,
+              "likes": 4363,
+              "retweets": 922,
+              "replies": 122,
+              "quotes": 119,
+              "bookmarks": 162
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "富达敦促参议院通过《澄清法案》。现在是制定明确规则的时候了，这对于增强投资者信心、为市场参与者提供确定性以及加强美国在全球数字资产市场的领导地位至关重要。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-25T00:09:45.819Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2080732009307967789",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-25T00:09:45.738Z"
+        },
+        "createdAt": "2026-07-25T00:09:45.738Z",
+        "updatedAt": "2026-07-25T00:09:46.339Z"
+      }
+    }
+  ]
+}

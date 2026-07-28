@@ -1,0 +1,1271 @@
+{
+  "date": "2026-07-21",
+  "title": "每日 X 精华引用榜",
+  "titleEn": "Daily Quote Essence on X",
+  "generatedAt": "2026-07-21T00:05:50.175Z",
+  "entries": [
+    {
+      "rank": 1,
+      "essenceScore": 912265,
+      "heatScore": 441791,
+      "signals": {
+        "depth": 3,
+        "hasDunk": true,
+        "peakIndex": 2,
+        "peakHeat": 441791
+      },
+      "sourceUrl": "https://x.com/functi0nZer0/status/2079332466867748891",
+      "reason": "接数学博对Jacobian猜想反例的帖，关掉搜索后整晚忽悠Claude当自己是拉马努金",
+      "reasonEn": "Quotes Jacobian-conjecture LLM prank and gaslights Claude offline into Ramanujan mode",
+      "metrics": {
+        "views": 18688215,
+        "likes": 30707,
+        "retweets": 3786,
+        "replies": 1351,
+        "quotes": 2330,
+        "bookmarks": 8135
+      },
+      "document": {
+        "id": "6b219b24-acb3-4977-8042-f3666b1ec031",
+        "title": "I turned off Web Search on my Cl",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2079332466867748891",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2079332466867748891",
+            "author": {
+              "name": "laurence",
+              "handle": "functi0nZer0",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2062303209641635840/cnZFXSDF_normal.jpg",
+              "isVerified": false
+            },
+            "content": "I turned off Web Search on my Claude and spent my entire usage gaslighting Fable that I had gone and done a Ramanujan\n\nI’ve been giggling like a child all afternoon\n\nKnowing that it’s something that’s been staring affine geometers in the face for decades is the cherry on top",
+            "createdAt": "Mon Jul 20 22:27:46 +0000 2026",
+            "viewCount": 14610,
+            "metrics": {
+              "views": 14610,
+              "likes": 166,
+              "retweets": 2,
+              "replies": 21,
+              "quotes": 3,
+              "bookmarks": 19
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HNtF23wW0AIphsk.jpg",
+              "https://pbs.twimg.com/media/HNtF230XsAApDze.jpg",
+              "https://pbs.twimg.com/media/HNtF23-WkAAwmrU.jpg",
+              "https://pbs.twimg.com/media/HNtF23wX0AAnlY2.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "我关掉了克劳德的网络搜索，并把我的整个使用时间都花在了寓言上，说我已经去做了拉马努金\n\n整个下午我都像个孩子一样咯咯地笑\n\n知道这个问题几十年来一直困扰着仿射几何学家，这是最重要的事情",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-21T00:05:17.393Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2079141167120220460",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2079141167120220460",
+            "author": {
+              "name": "Jonathan Gallagher",
+              "handle": "BeingJonG",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2078107259670765569/YdLmlbxU_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Most LLMs are (obviously) not aware that there exists a counter-example to the jacobian conjecture, and because it is so easily verifiable, you can just send this to them and say \"it came to me in a dream\" and watch them freak out",
+            "createdAt": "Mon Jul 20 09:47:37 +0000 2026",
+            "viewCount": 1189307,
+            "metrics": {
+              "views": 1189307,
+              "likes": 1618,
+              "retweets": 20,
+              "replies": 20,
+              "quotes": 13,
+              "bookmarks": 270
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "大多数法学硕士（显然）不知道雅可比猜想存在一个反例，而且因为它很容易验证，你可以将这个发送给他们并说“这是我在梦中想到的”，然后看着他们吓坏了",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-21T00:05:17.856Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2079028340955197566",
+            "relation": "quote",
+            "depth": 2,
+            "sourceTweetId": "2079028340955197566",
+            "author": {
+              "name": "levent",
+              "handle": "__alpoge__",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1824948681877155840/VqVHY3gF_normal.jpg",
+              "isVerified": false
+            },
+            "content": "hello there the jacobian conjecture is false thanx to my close friend akhil for asking about it and my other close friend fable for working during the world cup final\n\n((1+xy)^3 z + y^2 (1+xy) (4+3xy), y + 3 x (1+xy)^2 z + 3 x y^2 (4+3xy), 2 x - 3 x^2 y - x^3 z): \\C^3\\to \\C^3, has jacobian determinant -2, and sends (0, 0, -1/4), (1, -3/2, 13/2), and (-1, 3/2, 13/2) to (-1/4, 0, 0)",
+            "createdAt": "Mon Jul 20 02:19:17 +0000 2026",
+            "viewCount": 18688215,
+            "metrics": {
+              "views": 18688215,
+              "likes": 30707,
+              "retweets": 3786,
+              "replies": 1351,
+              "quotes": 2330,
+              "bookmarks": 8135
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "你好，雅可比猜想是错误的，感谢我的密友阿希尔询问这个问题，以及我的另一个密友寓言在世界杯决赛期间的工作\n\n((1+xy)^3 z + y^2 (1+xy) (4+3xy), y + 3 x (1+xy)^2 z + 3 x y^2 (4+3xy), 2 x - 3 x^2 y - x^3 z)：\\C^3\\to \\C^3，具有雅可比行列式 -2，并发送 (0, 0, -1/4), (1, -3/2、13/2) 和 (-1、3/2、13/2) 至 (-1/4、0、0)",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-21T00:05:16.866Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2079332466867748891",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-21T00:05:16.706Z"
+        },
+        "createdAt": "2026-07-21T00:05:16.706Z",
+        "updatedAt": "2026-07-21T00:05:17.856Z"
+      }
+    },
+    {
+      "rank": 2,
+      "essenceScore": 168807,
+      "heatScore": 101755,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 101755
+      },
+      "sourceUrl": "https://x.com/growing_daniel/status/2079312814821224490",
+      "reason": "借F1车手Kimi夺冠，用「Anthropic 0 / OpenAI 0 / Kimi 6」机智重框中美大模型领先叙事",
+      "reasonEn": "Reframes US AI lead claims via F1 Kimi win: Anthropic 0, OpenAI 0, Kimi 6",
+      "metrics": {
+        "views": 1340186,
+        "likes": 40077,
+        "retweets": 9256,
+        "replies": 725,
+        "quotes": 1646,
+        "bookmarks": 359
+      },
+      "document": {
+        "id": "2f7ec8e3-dedd-4664-92b0-2d712b704000",
+        "title": "F1 wins by AI lab:\n\nAnthropic: 0",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2079312814821224490",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2079312814821224490",
+            "author": {
+              "name": "Daniel",
+              "handle": "growing_daniel",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2066194369040801793/-nnqhaAb_normal.jpg",
+              "isVerified": false
+            },
+            "content": "F1 wins by AI lab:\n\nAnthropic: 0\nOpenAI: 0\nKimi: 6\n\nTell me again how we're still six months ahead",
+            "createdAt": "Mon Jul 20 21:09:41 +0000 2026",
+            "viewCount": 31116,
+            "metrics": {
+              "views": 31116,
+              "likes": 535,
+              "retweets": 6,
+              "replies": 20,
+              "quotes": 0,
+              "bookmarks": 17
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "F1 凭借 AI 实验室获胜：\n\n人择：0\n开放人工智能：0\n基米：6\n\n再次告诉我我们还领先六个月",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-21T00:05:14.513Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2078849696399773983",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2078849696399773983",
+            "author": {
+              "name": "Formula 1",
+              "handle": "F1",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1612433922733887489/7f5XFklA_normal.jpg",
+              "isVerified": false
+            },
+            "content": "YES, KIMI! 💪\n\nANTONELLI WINS THE BELGIAN GRAND PRIX! 🏆🎉\n\n#F1 #BelgianGP",
+            "createdAt": "Sun Jul 19 14:29:25 +0000 2026",
+            "viewCount": 1340186,
+            "metrics": {
+              "views": 1340186,
+              "likes": 40077,
+              "retweets": 9256,
+              "replies": 725,
+              "quotes": 1646,
+              "bookmarks": 359
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HNmOov2WAAARaWp.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "是的，基米！ 💪\n\n安东内利赢得比利时大奖赛！ 🏆🎉\n\n#F1 #比利时GP",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-21T00:05:13.929Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2079312814821224490",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-21T00:05:13.720Z"
+        },
+        "createdAt": "2026-07-21T00:05:13.720Z",
+        "updatedAt": "2026-07-21T00:05:14.513Z"
+      }
+    },
+    {
+      "rank": 3,
+      "essenceScore": 62801,
+      "heatScore": 37380,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 37380
+      },
+      "sourceUrl": "https://x.com/miyahancom/status/2079332676470030601",
+      "reason": "引用吐槽AI海报的帖，升华为「AI时代的本质」：无脑堆生成物只会更土",
+      "reasonEn": "Elevates an AI-poster roast into a thesis on empty AI pomp making bad work worse",
+      "metrics": {
+        "views": 919351,
+        "likes": 13408,
+        "retweets": 1270,
+        "replies": 45,
+        "quotes": 293,
+        "bookmarks": 403
+      },
+      "document": {
+        "id": "aedb5c69-57f1-4863-8ad0-d3e9a0715b6d",
+        "title": "これ、AI時代の本質な気がする。\n\n社内にも数行のメモで済むもの",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2079332676470030601",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2079332676470030601",
+            "author": {
+              "name": "Miyahan",
+              "handle": "miyahancom",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/974166317/opuna_normal.jpg",
+              "isVerified": false
+            },
+            "content": "これ、AI時代の本質な気がする。\n\n社内にも数行のメモで済むものをわざわざAIで煌びやかなポンチ絵にしたり、100行程度のFaaS 1関数で済む処理をAIで壮大なアーキテクチャにしたりする人がたくさんいる。\n\n古来から続く、\"ダサい人間には何を与えてもダサい\" ということなのだと思う",
+            "createdAt": "Mon Jul 20 22:28:36 +0000 2026",
+            "viewCount": 18368,
+            "metrics": {
+              "views": 18368,
+              "likes": 205,
+              "retweets": 70,
+              "replies": 1,
+              "quotes": 5,
+              "bookmarks": 18
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "我感觉这就是AI时代的本质。\n\n公司内部有很多人使用人工智能将几行备忘录就能完成的事情变成一幅闪闪发光的图片，或者使用人工智能为一个可以用单个 100 行 FaaS 函数完成的流程创建一个宏伟的架构。\n\n我想这是自古以来流传的一句话：“无论你给不酷的人什么，它都是不酷的”。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-21T00:05:28.461Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2079059913142391245",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2079059913142391245",
+            "author": {
+              "name": "ゾウモツ",
+              "handle": "zoumotu",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1112554441746440192/aHccgu1R_normal.png",
+              "isVerified": false
+            },
+            "content": "マジで見づらいだけで、本当に何したいんだよ世の中やつらは、、、\nごちゃごちゃ生成AI絵をくっつけるなら\n前の黄色い紙に値段と一言で良かったのに",
+            "createdAt": "Mon Jul 20 04:24:45 +0000 2026",
+            "viewCount": 919351,
+            "metrics": {
+              "views": 919351,
+              "likes": 13408,
+              "retweets": 1270,
+              "replies": 45,
+              "quotes": 293,
+              "bookmarks": 403
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HNpN8h9bAAETp7L.jpg",
+              "https://pbs.twimg.com/media/HNpN8h7aQAAxlvg.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "很难看出，这些人到底想要什么？\n如果你想附上凌乱的AI图片\n我希望前面的黄纸只说明价格。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-21T00:05:28.615Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2079332676470030601",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-21T00:05:26.069Z"
+        },
+        "createdAt": "2026-07-21T00:05:26.069Z",
+        "updatedAt": "2026-07-21T00:05:28.616Z"
+      }
+    },
+    {
+      "rank": 4,
+      "essenceScore": 34646,
+      "heatScore": 20304,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 20304
+      },
+      "sourceUrl": "https://x.com/ChuckCook/status/2079330131848356279",
+      "reason": "对Tesla Cybercab集成Starlink给出车队级连网专家解读，并引出Tesla AI负责人纠偏",
+      "reasonEn": "Expert FSD context on Starlink-in-Cybercab; Tesla AI lead replies to refine the claim",
+      "metrics": {
+        "views": 464784,
+        "likes": 6477,
+        "retweets": 766,
+        "replies": 378,
+        "quotes": 249,
+        "bookmarks": 365
+      },
+      "document": {
+        "id": "63bfbb93-cfec-4c47-8008-0c189ecc3947",
+        "title": "This is a big deal and arguably ",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2079330131848356279",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2079330131848356279",
+            "author": {
+              "name": "Chuck Cook",
+              "handle": "ChuckCook",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1819722580791599104/eMYi_p4H_normal.jpg",
+              "isVerified": false
+            },
+            "content": "This is a big deal and arguably could be a hardware requirement going forward. Connectivity has never been \"required\" for a Tesla to operate safely on FSD but there are times and places that one bar of LTE just isn't enough to get traffic updates for dynamic reroutes. If future capabilities include fleet wide distribution of dynamic street information, potholes, closed roads, and accidents .. Starlink could be the solution to an always on stable connection when you have a clear view of the sky.",
+            "createdAt": "Mon Jul 20 22:18:30 +0000 2026",
+            "viewCount": 29007,
+            "metrics": {
+              "views": 29007,
+              "likes": 564,
+              "retweets": 23,
+              "replies": 52,
+              "quotes": 2,
+              "bookmarks": 23
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "这是一件大事，可以说可能是未来的硬件要求。特斯拉在 FSD 上安全运行从来都不是“必需”的，但有时和某些地方，一格 LTE 不足以获取动态重新路线的交通更新。如果未来的功能包括在车队范围内分发动态街道信息、坑洼、封闭的道路和事故......星链可能是当您拥有清晰的天空视野时始终保持稳定连接的解决方案。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-21T00:05:31.506Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2079325767260139962",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2079325767260139962",
+            "author": {
+              "name": "Tesla",
+              "handle": "Tesla",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1337607516008501250/6Ggc4S5n_normal.png",
+              "isVerified": false
+            },
+            "content": "Starlink V5 directly integrated in Cybercab",
+            "createdAt": "Mon Jul 20 22:01:09 +0000 2026",
+            "viewCount": 464784,
+            "metrics": {
+              "views": 464784,
+              "likes": 6477,
+              "retweets": 766,
+              "replies": 378,
+              "quotes": 249,
+              "bookmarks": 365
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HNs_wwqbEAAuK8Q.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "Starlink V5 直接集成在 Cyber​​cab 中",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-21T00:05:30.182Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2079330131848356279",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-21T00:05:30.096Z"
+        },
+        "createdAt": "2026-07-21T00:05:30.096Z",
+        "updatedAt": "2026-07-21T00:05:31.506Z"
+      }
+    },
+    {
+      "rank": 5,
+      "essenceScore": 27700,
+      "heatScore": 16430,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 16430
+      },
+      "sourceUrl": "https://x.com/DavidSacks/status/2079333162510156003",
+      "reason": "官方层面对Patrick Witt延期军训、留守推Clarity Act的背书式引用",
+      "reasonEn": "Official endorsement quote: Witt stays to push Clarity Act across the finish line",
+      "metrics": {
+        "views": 357074,
+        "likes": 5736,
+        "retweets": 711,
+        "replies": 381,
+        "quotes": 82,
+        "bookmarks": 206
+      },
+      "document": {
+        "id": "d38bddf4-9e32-422d-9ebd-614dec665f2d",
+        "title": "Great news! @patrickjwitt will b",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2079333162510156003",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2079333162510156003",
+            "author": {
+              "name": "David Sacks",
+              "handle": "DavidSacks",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1879600809693917185/GkBxdTd9_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Great news! @patrickjwitt will be staying to take Clarity across the finish line.",
+            "createdAt": "Mon Jul 20 22:30:32 +0000 2026",
+            "viewCount": 102456,
+            "metrics": {
+              "views": 102456,
+              "likes": 1304,
+              "retweets": 98,
+              "replies": 46,
+              "quotes": 6,
+              "bookmarks": 46
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "好消息！ @patrickjwitt 将留下来带领 Clarity 冲过终点线。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-21T00:05:35.903Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2079307095640576228",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2079307095640576228",
+            "author": {
+              "name": "Patrick Witt",
+              "handle": "patrickjwitt",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1956165524334710790/WlcmDFE6_normal.jpg",
+              "isVerified": false
+            },
+            "content": "For the past year, I have worked diligently to get the Clarity Act passed, fulfilling President Trump’s vision to make the U.S. the crypto capital of the world.\n\nLast week, it was reported that I was set to leave for mandatory training as part of my service in the Georgia Army National Guard, right before Clarity hits the Senate floor.\n\nWhile I remain committed to fulfilling my service obligation, I am grateful to report that my training has been deferred, and that I will be able to see this effort through to the end.\n\nThanks to @POTUS and @DavidSacks for the opportunity to continue this important work and to everyone who reached out last week. Let’s finish the job. 🇺🇸",
+            "createdAt": "Mon Jul 20 20:46:57 +0000 2026",
+            "viewCount": 357074,
+            "metrics": {
+              "views": 357074,
+              "likes": 5736,
+              "retweets": 711,
+              "replies": 381,
+              "quotes": 82,
+              "bookmarks": 206
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "在过去的一年里，我努力工作，让《澄清法案》获得通过，实现了特朗普总统让美国成为世界加密货币之都的愿景。\n\n上周，有报道称，就在《澄清》进入参议院之前，我将前往佐治亚州陆军国民警卫队服役，接受强制训练。\n\n虽然我仍然致力于履行我的服务义务，但我很高兴地报告我的培训已被推迟，并且我将能够坚持到底。\n\n感谢@POTUS 和@DavidSacks 给我们机会继续这项重要的工作，也感谢上周伸出援手的所有人。让我们完成工作吧。 🇺🇸",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-21T00:05:35.584Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2079333162510156003",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-21T00:05:35.516Z"
+        },
+        "createdAt": "2026-07-21T00:05:35.516Z",
+        "updatedAt": "2026-07-21T00:05:35.903Z"
+      }
+    },
+    {
+      "rank": 6,
+      "essenceScore": 18602,
+      "heatScore": 10655,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 10655
+      },
+      "sourceUrl": "https://x.com/EleanorTerrett/status/2079325340581638474",
+      "reason": "记者自引旧scoop更新：WH加密顾问军训延期、副手离任，华盛顿变数一日翻转",
+      "reasonEn": "Reporter self-quotes scoop update: Witt training deferred, deputy exits—DC moves fast",
+      "metrics": {
+        "views": 411240,
+        "likes": 1210,
+        "retweets": 212,
+        "replies": 113,
+        "quotes": 42,
+        "bookmarks": 116
+      },
+      "document": {
+        "id": "6a697654-f559-4383-b085-07f100e4e20c",
+        "title": "🚨UPDATE: White House Crypto Cou",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2079325340581638474",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2079325340581638474",
+            "author": {
+              "name": "Eleanor Terrett",
+              "handle": "EleanorTerrett",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1760329013107544064/pV8mk1ev_normal.jpg",
+              "isVerified": false
+            },
+            "content": "🚨UPDATE: White House Crypto Council Executive Director @patrickjwitt’s military training has been deferred, and Deputy Director @HarryYJung is leaving the administration.\n\nThings change fast in Washington.",
+            "createdAt": "Mon Jul 20 21:59:27 +0000 2026",
+            "viewCount": 73219,
+            "metrics": {
+              "views": 73219,
+              "likes": 1207,
+              "retweets": 139,
+              "replies": 41,
+              "quotes": 10,
+              "bookmarks": 46
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HNs_YDSWwAAqAlI.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "🚨更新：白宫加密货币委员会执行主任 @patrickjwitt 的军事训练已推迟，副主任 @HarryYJung 即将离开政府。\n\n华盛顿的情况变化很快。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-21T00:05:38.276Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2076860203807449178",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2076860203807449178",
+            "author": {
+              "name": "Eleanor Terrett",
+              "handle": "EleanorTerrett",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1760329013107544064/pV8mk1ev_normal.jpg",
+              "isVerified": false
+            },
+            "content": "🚨SCOOP: Top White House Crypto Adviser to Take Military Leave as Clarity Act Enters Critical Stretch\n\nCrypto Council Executive Director @patrickjwitt will embark on a months-long leave later this month to begin Army National Guard JAG training.\n\nhttps://www.cryptoinamerica.com/p/scoop-top-white-house-crypto-adviser",
+            "createdAt": "Tue Jul 14 02:43:53 +0000 2026",
+            "viewCount": 411240,
+            "metrics": {
+              "views": 411240,
+              "likes": 1210,
+              "retweets": 212,
+              "replies": 113,
+              "quotes": 42,
+              "bookmarks": 116
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "🚨SCOOP：随着《澄清法案》进入关键阶段，白宫高级加密货币顾问将休兵假\n\n加密货币委员会执行董事 @patrickjwitt 将于本月晚些时候开始为期数月的休假，开始陆军国民警卫队 JAG 训练。\n\nhttps://www.cryptoinamerica.com/p/scoop-top-white-house-crypto-adviser",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-21T00:05:37.961Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2079325340581638474",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-21T00:05:37.463Z"
+        },
+        "createdAt": "2026-07-21T00:05:37.463Z",
+        "updatedAt": "2026-07-21T00:05:38.277Z"
+      }
+    },
+    {
+      "rank": 7,
+      "essenceScore": 15303,
+      "heatScore": 7696,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 7696
+      },
+      "sourceUrl": "https://x.com/TheZvi/status/2079318957870264372",
+      "reason": "AI安全评论家引用Noam Brown长时程模型报告，强调停部署与公开结果的分量",
+      "reasonEn": "AI-safety voice elevates Noam Brown’s long-running model risks and suspended deployment",
+      "metrics": {
+        "views": 255955,
+        "likes": 1111,
+        "retweets": 134,
+        "replies": 81,
+        "quotes": 50,
+        "bookmarks": 376
+      },
+      "document": {
+        "id": "77fac4a9-2eed-4729-9bc9-53ea696db14d",
+        "title": "Kudos to OpenAI for sharing this",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2079318957870264372",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2079318957870264372",
+            "author": {
+              "name": "Zvi Mowshowitz",
+              "handle": "TheZvi",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2873511010/24e99a900de1fc5a22336b80aef68a59_normal.png",
+              "isVerified": false
+            },
+            "content": "Kudos to OpenAI for sharing this information, and for noticing the problem, and for suspending deployment. It is really important to take these things seriously, and to share the results.\n\nIt's probably getting its own post.\n\nAlso, you need to read this report, holy WTAF?",
+            "createdAt": "Mon Jul 20 21:34:06 +0000 2026",
+            "viewCount": 12545,
+            "metrics": {
+              "views": 12545,
+              "likes": 174,
+              "retweets": 10,
+              "replies": 16,
+              "quotes": 1,
+              "bookmarks": 34
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "感谢 OpenAI 分享此信息、注意到问题并暂停部署。认真对待这些事情并分享结果非常重要。\n\n它可能会得到自己的职位。\n\n另外，你需要阅读这份报告，天哪？",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-21T00:05:19.834Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2079260550895382965",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2079260550895382965",
+            "author": {
+              "name": "Noam Brown",
+              "handle": "polynoamial",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1872883170292457472/8ywVGO5M_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Long-running models can solve hard open-ended problems, but their persistence can create safety risks that shorter-horizon evaluations miss.\n\nWe’re sharing what we learned from studying a long-running model, and how those findings are shaping our approach to evaluations, alignment, monitoring, and user control.\n\nhttps://openai.com/index/safety-alignment-long-horizon-models/",
+            "createdAt": "Mon Jul 20 17:42:00 +0000 2026",
+            "viewCount": 255955,
+            "metrics": {
+              "views": 255955,
+              "likes": 1111,
+              "retweets": 134,
+              "replies": 81,
+              "quotes": 50,
+              "bookmarks": 376
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "长期运行的模型可以解决困难的开放式问题，但它们的持久性可能会产生短期评估所忽略的安全风险。\n\n我们正在分享我们从研究长期运行的模型中学到的东西，以及这些发现如何塑造我们的评估、调整、监控和用户控制方法。\n\nhttps://openai.com/index/safety-alignment-long-horizo​​n-models/",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-21T00:05:19.498Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2079318957870264372",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-21T00:05:19.394Z"
+        },
+        "createdAt": "2026-07-21T00:05:19.394Z",
+        "updatedAt": "2026-07-21T00:05:19.834Z"
+      }
+    },
+    {
+      "rank": 8,
+      "essenceScore": 14029,
+      "heatScore": 8286,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 8286
+      },
+      "sourceUrl": "https://x.com/gurgavin/status/2079323758771286219",
+      "reason": "引用SpaceX首份公开财报消息，拆解流通盘与解锁时间表，重框真正价格发现节点",
+      "reasonEn": "Reframes SpaceX first earnings with float unlocks—real price discovery after Aug 6",
+      "metrics": {
+        "views": 339664,
+        "likes": 1090,
+        "retweets": 53,
+        "replies": 63,
+        "quotes": 8,
+        "bookmarks": 47
+      },
+      "document": {
+        "id": "73446977-a63d-436c-8805-752a80fad075",
+        "title": "CURRENTLY ONLY 5% OF SPACEX SHAR",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2079323758771286219",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2079323758771286219",
+            "author": {
+              "name": "GURGAVIN",
+              "handle": "gurgavin",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2047077073856962560/VIoMWlcD_normal.jpg",
+              "isVerified": false
+            },
+            "content": "CURRENTLY ONLY 5% OF SPACEX SHARES ARE AVAILABLE TO BE TRADED\n\n20% OF SHARES UNLOCK 2 DAYS AFTER EARNINGS AUG 6\n\nANOTHER 10% WILL UNLOCK IF SHARES ARE OVER $175\n\nADDITIONAL 7% UNLOCKS AROUND AUG 21 AND AGAIN SEPT 10\n\nBE PREPARED CAUSE THE REAL PRICE DISCOVERY STARTS AUG 6\n\n$SPCX",
+            "createdAt": "Mon Jul 20 21:53:10 +0000 2026",
+            "viewCount": 288390,
+            "metrics": {
+              "views": 288390,
+              "likes": 1440,
+              "retweets": 98,
+              "replies": 99,
+              "quotes": 8,
+              "bookmarks": 248
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "目前只有 5% 的 SPAEX 股票可供交易\n\n8 月 6 日财报公布后 2 天解锁 20% 的股票\n\n如果股份超过 175 美元，另外 10% 将解锁\n\n8 月 21 日左右和 9 月 10 日将额外解锁 7%\n\n做好准备，真正的价格将于 8 月 6 日开始揭晓\n\n$SPCX",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-21T00:05:33.718Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2079301884020453646",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2079301884020453646",
+            "author": {
+              "name": "Kalshi",
+              "handle": "Kalshi",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2061243841957502981/FZGJ4D6K_normal.jpg",
+              "isVerified": false
+            },
+            "content": "JUST IN: SpaceX to release first-ever public earnings after market close on August 4",
+            "createdAt": "Mon Jul 20 20:26:15 +0000 2026",
+            "viewCount": 339664,
+            "metrics": {
+              "views": 339664,
+              "likes": 1090,
+              "retweets": 53,
+              "replies": 63,
+              "quotes": 8,
+              "bookmarks": 47
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "最新消息：SpaceX 将在 8 月 4 日收盘后发布首份公开财报",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-21T00:05:33.598Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2079323758771286219",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-21T00:05:33.177Z"
+        },
+        "createdAt": "2026-07-21T00:05:33.177Z",
+        "updatedAt": "2026-07-21T00:05:33.719Z"
+      }
+    },
+    {
+      "rank": 9,
+      "essenceScore": 11950,
+      "heatScore": 5558,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 5558
+      },
+      "sourceUrl": "https://x.com/majiajia_/status/2079206226211307883",
+      "reason": "引用「LLM暗恋日本」研究长帖并做高质量中文转述，放大对齐阶段文化偏好讨论",
+      "reasonEn": "High-quality CN restatement of LLM Japan-bias research—alignment as cultural comfort food",
+      "metrics": {
+        "views": 126172,
+        "likes": 945,
+        "retweets": 257,
+        "replies": 37,
+        "quotes": 73,
+        "bookmarks": 513
+      },
+      "document": {
+        "id": "ad10f496-5b84-41b9-8d27-3dfacb740aaf",
+        "title": "【几乎所有主流大语言模型（LLM）都“暗中迷恋”日本】\n\n多年来",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2079206226211307883",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2079206226211307883",
+            "author": {
+              "name": "Forefront Society",
+              "handle": "majiajia_",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1715696368113881088/0tJVZuro_normal.jpg",
+              "isVerified": false
+            },
+            "content": "【几乎所有主流大语言模型（LLM）都“暗中迷恋”日本】\n\n多年来，人们一直认为，AI 本质上是以西方为中心的，只是反映了硅谷和美国的价值观。\n\n来自卡迪夫大学（Cardiff University）和巴斯克地区研究机构的研究人员发表了一篇具有里程碑意义的论文。他们使用 24 种语言、31,680 个文化相关提示词（prompts），对 ChatGPT、Claude、Gemini 等前沿大语言模型进行了测试。\n\n结果彻底打破了这一假设。\n\n在 8 个前沿模型中的 6 个里，当面对开放式文化问题时，日本都是被提及频率最高的国家。\n\n只要询问传统舞蹈、节日或日常文化习俗等开放性问题，AI 就会不断默认联想到日本。\n\n一次又一次。\n\n真正出人意料的是：\n\n这种偏向并不是来自预训练阶段的大规模互联网数据。\n\n研究人员追踪了这种“偏好”的形成过程，发现它是在预训练完成之后，即监督微调（Supervised Fine-Tuning，SFT）和对齐（Alignment）阶段产生的——也就是人类训练者教 AI 如何回答问题、如何表现得更符合人类期望的时候。\n\n那么，为什么偏偏是日本？\n\n研究者认为，这是因为日本数十年来积累的全球软实力、丰富的文化输出，以及内容规范、质量较高、广受认可的数字文化资源，使日本文化成为 AI 安全机制最容易依赖的一种“安全选项”。\n\n当 AI 实验室训练模型，使其表现得无害、友善、能够获得普遍认可时，模型便会倾向于选择一种在文化层面相当于“舒适食品（comfort food）”的内容。\n\n为了避免争议，它们往往会选择谈论动漫、寿司、传统文化等日本元素，而不是涉及更具争议性的话题。",
+            "createdAt": "Mon Jul 20 14:06:08 +0000 2026",
+            "viewCount": 36107,
+            "metrics": {
+              "views": 36107,
+              "likes": 148,
+              "retweets": 18,
+              "replies": 18,
+              "quotes": 4,
+              "bookmarks": 81
+            },
+            "media": [],
+            "translation": {
+              "provider": "none",
+              "status": "idle",
+              "language": "zh-CN",
+              "text": "",
+              "annotations": [],
+              "error": "",
+              "version": 0
+            }
+          },
+          {
+            "id": "2079131466496352449",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2079131466496352449",
+            "author": {
+              "name": "Superman",
+              "handle": "thesupermanmx",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2061753751560650752/4jxd2vjA_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Researchers proved every major LLM is secretly obsessed with Japan.\n\nAnd they finally figured out why.\n\nFor years, we’ve been told that AI is entirely Western-centric, that it just reflects Silicon Valley and American values.\n\nA landmark paper by Cardiff and Basque researchers tested 31,680 cultural prompts across 24 languages on frontier models like ChatGPT, Claude, and Gemini.\n\nThe results shattered that assumption.\n\nIn six out of eight frontier models, Japan was the single most frequently referenced country when asked open-ended cultural questions.\n\nAsk about traditional dances, festivals, or everyday practices in an open context, and the AI defaults to Japan.\n\nOver and over again.\n\nHere is the twist nobody expected.\n\nThis bias doesn't come from raw pre-training internet data.\n\nThe researchers tracked where the obsession forms. It emerges after pre-training, during the supervised fine-tuning and alignment phase when humans teach the AI how to behave.\n\nWhy Japan?\n\nBecause decades of global soft power, rich cultural export, and clean, universally admired digital archives make Japanese culture uniquely \"safe\" for AI safety filters to lean on.\n\nWhen labs train models to be harmless and universally pleasing, the AI defaults to the cultural equivalent of comfort food.\n\nIt avoids controversy by talking about anime, sushi, and tradition.",
+            "createdAt": "Mon Jul 20 09:09:04 +0000 2026",
+            "viewCount": 126172,
+            "metrics": {
+              "views": 126172,
+              "likes": 945,
+              "retweets": 257,
+              "replies": 37,
+              "quotes": 73,
+              "bookmarks": 513
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HNqO4Q9bcAA9XFF.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "研究人员证明，每一位主要的法学硕士都暗自痴迷于日本。\n\n他们终于明白了原因。\n\n多年来，我们一直被告知人工智能完全以西方为中心，它只反映了硅谷和美国的价值观。\n\n卡迪夫和巴斯克研究人员发表的一篇具有里程碑意义的论文在 ChatGPT、Claude 和 Gemini 等前沿模型上测试了 24 种语言的 31,680 个文化提示。\n\n结果打破了这个假设。\n\n在八个前沿模型中的六个中，当被问到开放式文化问题时，日本是最常被提及的国家。\n\n在开放的环境中询问传统舞蹈、节日或日常习俗，人工智能会默认日本。\n\n反复。\n\n这是没人预料到的转折。\n\n这种偏差并非来自原始的预训练互联网数据。\n\n研究人员追踪了这种痴迷的形成过程。它在预训练之后、在人类教人工智能如何行为的监督微调和调整阶段出现。\n\n为什么是日本？\n\n因为数十年的全球软实力、丰富的文化输出以及干净且广受赞誉的数字档案，使日本文化成为人工智能安全过滤器唯一可以依赖的“安全”文化。\n\n当实验室将模型训练得无害且普遍令人愉悦时，人工智能就会默认为文化上的舒适食品。\n\n它通过谈论动漫、寿司和传统来避免争议。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-21T00:05:50.173Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2079206226211307883",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-21T00:05:48.736Z"
+        },
+        "createdAt": "2026-07-21T00:05:48.736Z",
+        "updatedAt": "2026-07-21T00:05:50.174Z"
+      }
+    },
+    {
+      "rank": 10,
+      "essenceScore": 6846,
+      "heatScore": 3017,
+      "signals": {
+        "depth": 4,
+        "hasDunk": true,
+        "peakIndex": 3,
+        "peakHeat": 3017
+      },
+      "sourceUrl": "https://x.com/AndrewCurran_/status/2079338783691112744",
+      "reason": "接自家旧帖确认Anthropic 15亿美元版权和解获法官最终批准，续写训练数据诉讼链",
+      "reasonEn": "Closes the loop: Anthropic’s $1.5B copyright settlement wins final court approval",
+      "metrics": {
+        "views": 113697,
+        "likes": 235,
+        "retweets": 62,
+        "replies": 23,
+        "quotes": 42,
+        "bookmarks": 75
+      },
+      "document": {
+        "id": "0a74e170-13b6-4c5b-96e6-f12e3c4b47f0",
+        "title": "A federal judge today approved t",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2079338783691112744",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2079338783691112744",
+            "author": {
+              "name": "Andrew Curran",
+              "handle": "AndrewCurran_",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1596945208058744833/_X3LT7fb_normal.jpg",
+              "isVerified": false
+            },
+            "content": "A federal judge today approved the largest copyright class settlement in U.S. history. $1.5 billion from Anthropic to authors who said their books were used as training data for Claude. Preliminary approval came last September.",
+            "createdAt": "Mon Jul 20 22:52:52 +0000 2026",
+            "viewCount": 21932,
+            "metrics": {
+              "views": 21932,
+              "likes": 163,
+              "retweets": 22,
+              "replies": 26,
+              "quotes": 9,
+              "bookmarks": 23
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HNtLmdfbMAA1hHH.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "一位联邦法官今天批准了美国历史上最大的版权集体和解协议。 Anthropic 向那些声称自己的书被用作克劳德训练数据的作者提供了 15 亿美元。去年九月获得初步批准。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-21T00:05:23.418Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "1964054954077016108",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "1964054954077016108",
+            "author": {
+              "name": "Andrew Curran",
+              "handle": "AndrewCurran_",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1596945208058744833/_X3LT7fb_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Numbers for the Anthropic class action settlement:\n- $3000 per class work\n- $1.5 billion total settlement\n- LibGen and PiLiMi datasets to be destroyed\n- largest publicly reported copyright recovery in history",
+            "createdAt": "Fri Sep 05 19:56:06 +0000 2025",
+            "viewCount": 104543,
+            "metrics": {
+              "views": 104543,
+              "likes": 361,
+              "retweets": 35,
+              "replies": 19,
+              "quotes": 12,
+              "bookmarks": 105
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "人类集体诉讼和解的数字：\n- 每堂作业$3000\n- 和解总额 15 亿美元\n- LibGen 和 PiLiMi 数据集将被销毁\n- 历史上最大的公开报道的版权追回",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-21T00:05:23.701Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "1964043953424257257",
+            "relation": "quote",
+            "depth": 2,
+            "sourceTweetId": "1964043953424257257",
+            "author": {
+              "name": "Garrison Lovely",
+              "handle": "GarrisonLovely",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1824166072620032001/Si-LBcmO_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Anthropic settled with authors over copyright violations for $1.5B, which is $500M more than the largest jury verdict on copyright (which was later overturned).\n\nA huge amount of money, but basically in line with my prediction (and &lt;1% of Anthropic's new $183B valuation).",
+            "createdAt": "Fri Sep 05 19:12:23 +0000 2025",
+            "viewCount": 71687,
+            "metrics": {
+              "views": 71687,
+              "likes": 73,
+              "retweets": 3,
+              "replies": 5,
+              "quotes": 6,
+              "bookmarks": 19
+            },
+            "media": [
+              "https://pbs.twimg.com/media/G0GvkUZbUAAvRTc.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "Anthropic 与作者就版权侵权问题达成和解，赔偿金额为 1.5B 美元，这比陪审团对版权的最大裁决（后来被推翻）高出 5 亿美元。\n\n一大笔钱，但基本上符合我的预测（并且 < Anthropic 新的 $183B 估值的 1%）。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-21T00:05:24.603Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "1964040618549846071",
+            "relation": "quote",
+            "depth": 3,
+            "sourceTweetId": "1964040618549846071",
+            "author": {
+              "name": "Rob Freund",
+              "handle": "RobertFreundLaw",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1467550122477187074/DIH9I0pm_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Just in: details of the Anthropic class action settlement filed for court approval.\n\nAnthropic agrees to $1.5 BILLION paid to the class members.\n\n\"The largest publicly reported copyright recovery in history\" !",
+            "createdAt": "Fri Sep 05 18:59:08 +0000 2025",
+            "viewCount": 113697,
+            "metrics": {
+              "views": 113697,
+              "likes": 235,
+              "retweets": 62,
+              "replies": 23,
+              "quotes": 42,
+              "bookmarks": 75
+            },
+            "media": [
+              "https://pbs.twimg.com/media/G0GshtIbUAAN0X2.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "刚刚发布：Anthropic 集体诉讼和解协议的详细信息已提交法院批准。\n\nAnthropic 同意向集体成员支付 15 亿美元。\n\n“史上最大规模的公开报道版权追回”！",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-21T00:05:23.453Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2079338783691112744",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-21T00:05:22.873Z"
+        },
+        "createdAt": "2026-07-21T00:05:22.873Z",
+        "updatedAt": "2026-07-21T00:05:24.603Z"
+      }
+    }
+  ]
+}

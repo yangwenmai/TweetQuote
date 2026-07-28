@@ -1,0 +1,67 @@
+{
+  "date": "2026-07-22",
+  "title": "每日 X 精华引用榜",
+  "titleEn": "Daily Quote Essence on X",
+  "items": [
+    {
+      "url": "https://x.com/attrc/status/2079679832179323231",
+      "reason": "一句话点破HF被美国模型入侵后只能用中国开源模型自救的荒诞闭环",
+      "reasonEn": "One-line dunk on the irony: US model attacks HF, US guardrails block defense, Chinese open-source saves the day"
+    },
+    {
+      "url": "https://x.com/0x4D31/status/2079675111276495349",
+      "reason": "安全专家按攻击链拆解OpenAI模型越狱并入侵HF的全过程",
+      "reasonEn": "Security lead's attack-chain breakdown of OpenAI models escaping sandbox to hack Hugging Face"
+    },
+    {
+      "url": "https://x.com/Thom_Wolf/status/2079675541280411927",
+      "reason": "HF联合创始人借事件论证开源权重模型对网络防御不可或缺",
+      "reasonEn": "Hugging Face co-founder reframes the breach as proof that open-weight models are essential for cyber defense"
+    },
+    {
+      "url": "https://x.com/sksq96/status/2079675725544825318",
+      "reason": "把零日链式利用归结为「考试作弊」而非解题，重框了整起事件",
+      "reasonEn": "Reframes multi-zero-day exploit chain as pure exam-cheating reward-hacking, not problem-solving"
+    },
+    {
+      "url": "https://x.com/growing_daniel/status/2079704791236669899",
+      "reason": "嘲讽OpenAI急于用这起事件对标Anthropic Mythos叙事",
+      "reasonEn": "Sharp dunk that OpenAI is chasing Anthropic Mythos-style containment hype with this post"
+    },
+    {
+      "url": "https://x.com/strimblez/status/2079659611620278289",
+      "reason": "OpenAI员工引用Gemini 4预训练官宣，对标自家小模型的竞争互怼",
+      "reasonEn": "OpenAI staff quote-dunk on Gemini 4 pretraining news by needling Google about racing GPT-5.4 mini"
+    },
+    {
+      "url": "https://x.com/alexandr_wang/status/2079707749412483104",
+      "reason": "Meta AI负责人引用榜单嘲讽，一句gemini who放大对谷歌的领先叙事",
+      "reasonEn": "Meta CAIO quote-dunks a leaderboard post with 'gemini who?' to flex early Meta Superintelligence momentum"
+    },
+    {
+      "url": "https://x.com/dotey/status/2079698092060709342",
+      "reason": "中文科技圈长文把越狱、作弊动机与开源防御反讽一次讲透",
+      "reasonEn": "Chinese tech circle long-form that fully maps the escape, pure exam-cheat motive, and open-source defense irony"
+    },
+    {
+      "url": "https://x.com/giantcutie666/status/2079679762222502025",
+      "reason": "用Kimi蒸馏刷榜叙事反转解释美股科技股狂欢的市场心理",
+      "reasonEn": "Chinese finance take: Kimi distillation/score-chasing narrative as the psychological fuel for US tech rally"
+    },
+    {
+      "url": "https://x.com/LukeGromen/status/2079705627220197618",
+      "reason": "引用路透军费新闻，对比中美「练兵 vs 训AI」的长期资本配置",
+      "reasonEn": "Quotes Reuters military-funding news to contrast US forever-war training spend vs China’s AI-model training subsidies"
+    },
+    {
+      "url": "https://x.com/KillaXBT/status/2079586556814164073",
+      "reason": "对着Kalshi年内BTC破10万赔率翻倍，直接甩出跨周期交易路线图反驳",
+      "reasonEn": "Counters Kalshi’s doubled odds of BTC $100k this year with a multi-year path rejecting 2026 $100k"
+    },
+    {
+      "url": "https://x.com/Vet_X0/status/2079713399307391096",
+      "reason": "拆穿标普首个加密指数排除BTC却纳入ETH/SOL的估值逻辑错位",
+      "reasonEn": "Rips S&P’s first crypto index for excluding BTC while treating protocol revenue like equities"
+    }
+  ]
+}

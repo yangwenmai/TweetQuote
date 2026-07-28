@@ -1,0 +1,67 @@
+{
+  "date": "2026-07-28",
+  "title": "每日 X 精华引用榜",
+  "titleEn": "Daily Quote Essence on X",
+  "items": [
+    {
+      "url": "https://x.com/totheagi/status/2081855316443205717",
+      "reason": "用80张RTX 5090跑通2.8T Kimi K3，证明前沿开源可在无HBM的消费级卡上落地，重写“谁能用得起”叙事",
+      "reasonEn": "Day-one proof: full 2.8T Kimi K3 on 80× RTX 5090s with zero HBM reframes open frontier as deployable on abundant gaming GPUs"
+    },
+    {
+      "url": "https://x.com/AYi_AInotes/status/2081784951582667030",
+      "reason": "引用月之暗面开源帖，系统点出权重+内核+MoE通信+AgentENV全栈白给，把开源从“放权重”抬到生态改规则",
+      "reasonEn": "Chinese-tech deep take: not just weights—kernels, MoE comms, and AgentENV make K3 a full-stack open-source rule change"
+    },
+    {
+      "url": "https://x.com/eliebakouch/status/2081765265591685460",
+      "reason": "从业者视角指出MoonEP相对DeepEP的实质升级，把发布热度落回可复用基础设施",
+      "reasonEn": "Practitioner quote that lands the release: MoonEP is a real DeepEP-class upgrade the open stack actually runs on"
+    },
+    {
+      "url": "https://x.com/Sentdex/status/2081806878061801871",
+      "reason": "引用戴尔“本地前沿模型”炫耀帖，反驳门槛焦虑，提出K3当教师、蒸馏下渗的“trickle-down tokenomics”",
+      "reasonEn": "Quotes Dell’s $100K local-AI flex and reframes giant open models as teachers that distill down the compute ladder"
+    },
+    {
+      "url": "https://x.com/KrittanawongMD/status/2081884929365782774",
+      "reason": "一针见血质疑Anthropic：用公网训练OK、用Claude输出蒸馏却成国安——原则边界在哪？",
+      "reasonEn": "Sharp inconsistency dunk: training on the public web is fine, but distilling Claude is a national-security issue—by what principle?"
+    },
+    {
+      "url": "https://x.com/teortaxesTex/status/2081868894122226046",
+      "reason": "对照Dario旧文截图，戳穿开源立场文开篇对“中国差距”叙事的自我矛盾",
+      "reasonEn": "Side-by-side receipts: Dario’s open-weights essay opens with spin contradicted by his own China-gap nightmare essays"
+    },
+    {
+      "url": "https://x.com/roanoke_gal/status/2081865754501161229",
+      "reason": "把“无危险能力的开源是公共品”拆穿为“玩具模型随便玩，别跟我们抢前沿”",
+      "reasonEn": "Viral dunk: “non-dangerous open weights are a public good” really means “play with 8B toys, don’t compete at the frontier”"
+    },
+    {
+      "url": "https://x.com/theo/status/2081880182936502474",
+      "reason": "引用自己三天前对Opus 5的看好帖当场改口，形成“越用越失望”的高信号自纠链",
+      "reasonEn": "Quotes his own early Opus 5 praise three days later to reverse: rarer self-correction chain that outranks the hype"
+    },
+    {
+      "url": "https://x.com/zebriez/status/2081891968238702905",
+      "reason": "引用Lilian Weng离职信，升华为AI时代需要“高野心、中等节奏”公司浪潮的文化重框",
+      "reasonEn": "Quotes Lilian Weng’s exit note and reframes it as demand for high-ambition, moderately paced companies in the AI age"
+    },
+    {
+      "url": "https://x.com/chamath/status/2081848871219581153",
+      "reason": "引用罕见书被撕脊扫描训练的长帖，一句“你们还在担心蒸馏？”把政策辩论扳向数据榨取伦理",
+      "reasonEn": "Quotes the rare-book shredding exposé and flips the open-weights fight: “And you’re worried about distillation?”"
+    },
+    {
+      "url": "https://x.com/seiichiro_matsu/status/2081894637254648319",
+      "reason": "引用“摩根士丹利预警内存见顶导致暴跌”说法，拿出同日更强势报告反驳因果叙事",
+      "reasonEn": "Finance rebuttal: challenges the “MS memory-peak report caused the dump” story with a same-week bullish MS note still topping Kioxia"
+    },
+    {
+      "url": "https://x.com/unknowDLT/status/2081865377693200580",
+      "reason": "引用Citadel预期美联储意外加息，串起日元、流动性危机、Clarity与DTCC/SWIFT上链的宏观拼图",
+      "reasonEn": "Crypto macro quote chain: Fed surprise-hike headline → yen/liquidity, Clarity Act, and DTCC/SWIFT DLT as one orchestrated picture"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "date": "2026-07-27",
+  "title": "每日 X 精华引用榜",
+  "titleEn": "Daily Quote Essence on X",
+  "items": [
+    {
+      "url": "https://x.com/Mononofu/status/2080937562739531837",
+      "reason": "用「那CUDA和驱动也开源吧」讽刺老黄首帖挺开放权重，引爆本周开源辩论",
+      "reasonEn": "Viral dunk on Jensen’s open-weights debut: sarcastically demanding CUDA and GPU drivers go open source"
+    },
+    {
+      "url": "https://x.com/AndrewYNg/status/2081103828859117908",
+      "reason": "吴恩达一句话定调：私人代码可以不开放，但不能阻止别人开源",
+      "reasonEn": "Andrew Ng reframes the open-source fight: private code is fine—blocking others from open-sourcing is not"
+    },
+    {
+      "url": "https://x.com/GavinSBaker/status/2081367707081965783",
+      "reason": "用数据反击讽刺帖：英伟达本身就是领先的开源AI公司，且联署信并未要求闭源厂商交模型",
+      "reasonEn": "Counters the CUDA snark with data that NVIDIA already leads open-source AI—and the letter never demanded closed labs open their models"
+    },
+    {
+      "url": "https://x.com/Back2Batk/status/2081143161208852581",
+      "reason": "只截「前万亿富翁」四个字，把AI乌托邦叙事变成全网爆款嘲讽",
+      "reasonEn": "Three-word quote dunk—“Former trillionaire”—that outran the original Elon-AI prosperity story"
+    },
+    {
+      "url": "https://x.com/aurelgrandfan/status/2081280860028854730",
+      "reason": "接话AI让万物变便宜：讽刺正是这波AI热把内存价格翻倍",
+      "reasonEn": "Reply-chain rebuttal: “AI makes everything cheap” meets the reality that RAM prices doubled"
+    },
+    {
+      "url": "https://x.com/WallStreet0Name/status/2080647302126150092",
+      "reason": "引用老黄首帖，六层拆解开放权重联署信——从生态到蒸馏合规",
+      "reasonEn": "Chinese deep dive quoting Jensen’s first post: six-layer read of the open-weights letter, including distillation politics"
+    },
+    {
+      "url": "https://x.com/BTCBruce1/status/2080818687653663184",
+      "reason": "引用老黄挺开源首帖，重框中美AI为算力/能源/场景三维竞争",
+      "reasonEn": "Quotes Jensen’s open-models debut to reframe US–China AI as a compute, energy, and application race"
+    },
+    {
+      "url": "https://x.com/0xAA_Science/status/2080622222209876280",
+      "reason": "引用长文提炼梁文锋观点：蒸馏、持续学习与中国模型格局收敛",
+      "reasonEn": "Quote commentary that extracts Liang Wenfeng’s takes on distillation, continual learning, and China model consolidation"
+    },
+    {
+      "url": "https://x.com/teortaxesTex/status/2081417464588456245",
+      "reason": "引用Kimi K3官宣，倒计时开放权重落地，对照中美开放节奏",
+      "reasonEn": "Quotes Kimi K3’s launch post with a <24h open-weights countdown—China open-frontier timing as the punchline"
+    },
+    {
+      "url": "https://x.com/wliang/status/2081526892579140016",
+      "reason": "接续自家NVDA叙事：2500亿背书OpenAI算力，质问AI泡沫空头",
+      "reasonEn": "Self-chain finance dunk: NVDA’s ~$250B OpenAI data-center backstop as rebuttal to AI-bubble bears"
+    },
+    {
+      "url": "https://x.com/CryptoMichNL/status/2080655490841723304",
+      "reason": "引用Lepard访谈重框投降盘：真正杀死比特币叙事的是财政纪律",
+      "reasonEn": "Quotes Lepard’s macro case to reframe crypto capitulation: only genuine fiscal restraint kills the Bitcoin thesis"
+    },
+    {
+      "url": "https://x.com/CryptoUB/status/2081509879546544326",
+      "reason": "引用Ansem「最被厌恶的反弹最猛」并补全熊转牛的情绪翻转逻辑",
+      "reasonEn": "Extends Ansem’s “hated rallies” line into the full sentiment flip from crypto-is-dead to FOMO-to-buy"
+    }
+  ]
+}

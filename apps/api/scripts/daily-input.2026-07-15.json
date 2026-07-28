@@ -1,0 +1,67 @@
+{
+  "date": "2026-07-15",
+  "title": "每日 X 精华引用榜",
+  "titleEn": "Daily Quote Essence on X",
+  "items": [
+    {
+      "url": "https://x.com/AlexFinn/status/2077171122957848785",
+      "reason": "借 PrismML 手机端 27B 本地模型发布，把焦点从参数刷榜拉到本地 AI 轨迹与斜率",
+      "reasonEn": "Quotes PrismML’s phone-running 27B to reframe the story around local-AI trajectory, not peak benchmarks"
+    },
+    {
+      "url": "https://x.com/swyx/status/2077162040108748830",
+      "reason": "在 Codex 日活暴涨数据上加码，把 GPT-5.6 定位成 ChatGPT 以来最成功、甚至改写 IPO 叙事的发布",
+      "reasonEn": "Builds on Codex user-spike data to call GPT-5.6 OpenAI’s biggest launch since ChatGPT—IPO-altering"
+    },
+    {
+      "url": "https://x.com/tunguz/status/2077143064796356687",
+      "reason": "用前 Nvidia 数据科学家身份点题：这是首个公开的递归自我改进（RSI）实验证据",
+      "reasonEn": "Ex-Nvidia ML voice stamps Weco’s result as the first *public* experimental evidence of RSI"
+    },
+    {
+      "url": "https://x.com/beffjezos/status/2077158122372878462",
+      "reason": "引用对 Claude 广告的吐槽并加码嘲讽：doomer 营销已拉满",
+      "reasonEn": "Quotes the Claude-ad critique and sharpens it: doomer marketing at all-time highs"
+    },
+    {
+      "url": "https://x.com/litcapital/status/2077147911100485792",
+      "reason": "用梗图回怼 OpenAI 首款硬件新闻，把「无屏 AI 音箱」钉成尴尬产品选型",
+      "reasonEn": "Meme-dunks OpenAI’s first-device scoop, reframing the screenless speaker as a product punchline"
+    },
+    {
+      "url": "https://x.com/pmarca/status/2077153798854992069",
+      "reason": "用一个词「Concerning」给 Karp 谈 Thiel 被欧洲排斥的长视频定调，放大科技地缘张力",
+      "reasonEn": "One-word 「Concerning」 reframe of Karp on Europe freezing out Thiel—tech geopolitics in a QT"
+    },
+    {
+      "url": "https://x.com/RobertMSterling/status/2077164312704246093",
+      "reason": "回应「付费匿名大号 QT 融资」：付费水军已失效，愿免费帮正品项目放大",
+      "reasonEn": "Answers paid anonymous QT-for-fundraise playbook by offering free amplifies—astroturf credibility dunk"
+    },
+    {
+      "url": "https://x.com/great_martis/status/2077167006072349170",
+      "reason": "把「通胀降至 3.5%、好于预期」一刀切回：仍比美联储 2% 目标高 75%",
+      "reasonEn": "Cuts through soft CPI celebration: 3.5% is still 75% above the Fed’s 2% target"
+    },
+    {
+      "url": "https://x.com/DrJStrategy/status/2077185459868905824",
+      "reason": "在 Warsh 国会作证视频上做深度解读：联储从恐惧增长回到真实经济与供给侧逻辑",
+      "reasonEn": "Expert reframe of Warsh testimony: a Fed that no longer fears growth, back to real-economy supply side"
+    },
+    {
+      "url": "https://x.com/AYi_AInotes/status/2077080777431425421",
+      "reason": "深度拆解 Claude for Teachers：AI 教育应从「替代学生」转向「赋能老师」的杠杆叙事",
+      "reasonEn": "Chinese deep dive: Claude for Teachers flips AI-ed from student replacement to teacher leverage"
+    },
+    {
+      "url": "https://x.com/MaxForAI/status/2077092259556954292",
+      "reason": "把 Nico 从 Vercel 跳槽 OpenAI 做 Codex App 写成完整人才与产品逻辑链",
+      "reasonEn": "Full Chinese brief on Vercel AI SDK lead joining OpenAI Codex—why the hire fits agent product gaps"
+    },
+    {
+      "url": "https://x.com/xiaomustock/status/2077055927786885527",
+      "reason": "自引存储抄底逻辑后升华：物理 AI 三维数据将使存储需求远超分析师基于现状的测算",
+      "reasonEn": "Extends own Hynix thesis: physical AI’s video-scale tokens make storage the underpriced bottleneck"
+    }
+  ]
+}

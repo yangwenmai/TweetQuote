@@ -1,0 +1,1310 @@
+{
+  "date": "2026-07-15",
+  "title": "每日 X 精华引用榜",
+  "titleEn": "Daily Quote Essence on X",
+  "generatedAt": "2026-07-15T01:05:56.111Z",
+  "entries": [
+    {
+      "rank": 1,
+      "essenceScore": 316284,
+      "heatScore": 149887,
+      "signals": {
+        "depth": 3,
+        "hasDunk": true,
+        "peakIndex": 2,
+        "peakHeat": 149887
+      },
+      "sourceUrl": "https://x.com/beffjezos/status/2077158122372878462",
+      "reason": "引用对 Claude 广告的吐槽并加码嘲讽：doomer 营销已拉满",
+      "reasonEn": "Quotes the Claude-ad critique and sharpens it: doomer marketing at all-time highs",
+      "metrics": {
+        "views": 5910592,
+        "likes": 15067,
+        "retweets": 998,
+        "replies": 910,
+        "quotes": 816,
+        "bookmarks": 4673
+      },
+      "document": {
+        "id": "cfa3ce30-7278-4f78-b604-86bf99601d51",
+        "title": "Wow I can't believe this is the ",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2077158122372878462",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2077158122372878462",
+            "author": {
+              "name": "Beff (e/acc)",
+              "handle": "beffjezos",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2005482858975023104/s9wmB9qT_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Wow I can't believe this is the new Claude ad.\n\nDoomer marketing is hitting all time highs",
+            "createdAt": "Tue Jul 14 22:27:42 +0000 2026",
+            "viewCount": 33621,
+            "metrics": {
+              "views": 33621,
+              "likes": 215,
+              "retweets": 4,
+              "replies": 10,
+              "quotes": 0,
+              "bookmarks": 35
+            },
+            "media": [
+              "https://pbs.twimg.com/ext_tw_video_thumb/2077158016680669184/pu/img/29bOm0y269TfOFeO.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "哇，我不敢相信这是克劳德的新广告。\n\n末日营销创历史新高",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-15T01:05:27.457Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2076996862939205848",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2076996862939205848",
+            "author": {
+              "name": "Dan Shipper 📧",
+              "handle": "danshipper",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1946219091305340928/_Ef-eDlc_normal.jpg",
+              "isVerified": false
+            },
+            "content": "im sorry this is very strange and unnecessary\n\ni actually like the tagline but we don't need the shots of *checks notes* burning houses and graves!",
+            "createdAt": "Tue Jul 14 11:46:55 +0000 2026",
+            "viewCount": 88121,
+            "metrics": {
+              "views": 88121,
+              "likes": 448,
+              "retweets": 11,
+              "replies": 38,
+              "quotes": 2,
+              "bookmarks": 69
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "抱歉，这很奇怪而且没有必要\n\n我实际上喜欢这个口号，但我们不需要*检查笔记*燃烧房屋和坟墓的镜头！",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-15T01:05:26.896Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2075271759289303522",
+            "relation": "quote",
+            "depth": 2,
+            "sourceTweetId": "2075271759289303522",
+            "author": {
+              "name": "Claude",
+              "handle": "claudeai",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1950950107937185792/QOfEjFoJ_normal.jpg",
+              "isVerified": false
+            },
+            "content": "There’s hope in hard questions.",
+            "createdAt": "Thu Jul 09 17:31:58 +0000 2026",
+            "viewCount": 5910592,
+            "metrics": {
+              "views": 5910592,
+              "likes": 15067,
+              "retweets": 998,
+              "replies": 910,
+              "quotes": 816,
+              "bookmarks": 4673
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HMzYzrcXMAAeKQI.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "难题中蕴藏着希望。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-15T01:05:26.900Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2077158122372878462",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-15T01:05:26.663Z"
+        },
+        "createdAt": "2026-07-15T01:05:26.663Z",
+        "updatedAt": "2026-07-15T01:05:27.458Z"
+      }
+    },
+    {
+      "rank": 2,
+      "essenceScore": 189710,
+      "heatScore": 99162,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 99162
+      },
+      "sourceUrl": "https://x.com/AYi_AInotes/status/2077080777431425421",
+      "reason": "深度拆解 Claude for Teachers：AI 教育应从「替代学生」转向「赋能老师」的杠杆叙事",
+      "reasonEn": "Chinese deep dive: Claude for Teachers flips AI-ed from student replacement to teacher leverage",
+      "metrics": {
+        "views": 3240452,
+        "likes": 17360,
+        "retweets": 1309,
+        "replies": 912,
+        "quotes": 702,
+        "bookmarks": 4568
+      },
+      "document": {
+        "id": "e9f633ea-2104-4fdb-8212-f5456da23769",
+        "title": "Damn，Anthropic 这次直接把 AI 教育的主流叙事干",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2077080777431425421",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2077080777431425421",
+            "author": {
+              "name": "AYi",
+              "handle": "AYi_AInotes",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1989157446829350912/pW828UwK_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Damn，Anthropic 这次直接把 AI 教育的主流叙事干翻了🤯。。。\n\n过去两年所有 AI 教育产品的叙事，全盯着学生端，个性化家教，自适应题库，一对一辅导，讲得都很性感，\n\n但Anthropic 直接掉头往反方向走，把 AI 塞到老师手里，而不是学生手里。\n\n这个选择的底层逻辑特别朴素，\n一个老师影响几十上百个学生，帮老师省一小时备课时间，杠杆效应跟帮一个学生省一小时完全不在一个量级，\n\n老师才是最懂班级学情的人，谁阅读跟不上，谁需要挑战题，这些判断 AI 替代不了，但 AI 可以把做差异化材料的三个小时全部省下来。\n\n更狠的是这四步棋，\n内置全美 50 州学术标准。\n合规成本直接归零。\n隐私标准联合工会制定。\n教学技能库全部开源。\n\n但这些都还不是最核心的，\n他们没有单纯的做一个 AI 教育工具，更像是在把 Claude 做成老师的认知外骨骼，备课，差异化材料，学情分析，重复任务自动化，\n\n当整个工作流都跑在 Claude 上，它就不再是可选工具了，而是一种基础设施，这种工作流粘性，比任何学生端产品都深得多。\n\n我觉得这才是 AI 教育更持久的方向，不去追逐取代老师的性感叙事，而是实实在在赋能那些每天站在教室里的人，\n\n我相信改变教育最有效的杠杆，往往不是直接改变学生，而是改变那些影响学生的人。",
+            "createdAt": "Tue Jul 14 17:20:22 +0000 2026",
+            "viewCount": 24567,
+            "metrics": {
+              "views": 24567,
+              "likes": 78,
+              "retweets": 14,
+              "replies": 7,
+              "quotes": 0,
+              "bookmarks": 89
+            },
+            "media": [
+              "https://pbs.twimg.com/amplify_video_thumb/2077080684472958976/img/GVkBu9LEuEFpAYkk.jpg"
+            ],
+            "translation": {
+              "provider": "none",
+              "status": "idle",
+              "language": "zh-CN",
+              "text": "",
+              "annotations": [],
+              "error": "",
+              "version": 0
+            }
+          },
+          {
+            "id": "2077047278078931243",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2077047278078931243",
+            "author": {
+              "name": "Claude",
+              "handle": "claudeai",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1950950107937185792/QOfEjFoJ_normal.jpg",
+              "isVerified": false
+            },
+            "content": "We're introducing Claude for Teachers: free access to premium Claude capabilities for verified K-12 educators in the US, with a library of teaching skills and a direct connection to evidence-based curricula, mapped to academic standards in all 50 states.\n\nhttps://claude.com/solutions/teachers",
+            "createdAt": "Tue Jul 14 15:07:15 +0000 2026",
+            "viewCount": 3240452,
+            "metrics": {
+              "views": 3240452,
+              "likes": 17360,
+              "retweets": 1309,
+              "replies": 912,
+              "quotes": 702,
+              "bookmarks": 4568
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HNMmWvKW4AAju32.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "我们正在推出 Claude for Teachers：供美国经过验证的 K-12 教育工作者免费使用高级 Claude 功能，其中包含教学技能库，并与基于证据的课程直接连接，符合所有 50 个州的学术标准。\n\nhttps://claude.com/solutions/teachers",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-15T01:05:49.982Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2077080777431425421",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-15T01:05:49.411Z"
+        },
+        "createdAt": "2026-07-15T01:05:49.411Z",
+        "updatedAt": "2026-07-15T01:05:49.983Z"
+      }
+    },
+    {
+      "rank": 3,
+      "essenceScore": 137122,
+      "heatScore": 74347,
+      "signals": {
+        "depth": 3,
+        "hasDunk": true,
+        "peakIndex": 2,
+        "peakHeat": 74347
+      },
+      "sourceUrl": "https://x.com/swyx/status/2077162040108748830",
+      "reason": "在 Codex 日活暴涨数据上加码，把 GPT-5.6 定位成 ChatGPT 以来最成功、甚至改写 IPO 叙事的发布",
+      "reasonEn": "Builds on Codex user-spike data to call GPT-5.6 OpenAI’s biggest launch since ChatGPT—IPO-altering",
+      "metrics": {
+        "views": 2325329,
+        "likes": 18039,
+        "retweets": 809,
+        "replies": 1888,
+        "quotes": 666,
+        "bookmarks": 800
+      },
+      "document": {
+        "id": "a5814339-437c-40f9-a54c-d91e06f5cf13",
+        "title": "uhm this gpt 5.6 launch might be",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2077162040108748830",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2077162040108748830",
+            "author": {
+              "name": "swyx",
+              "handle": "swyx",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2073162797354217472/hNny55eF_normal.jpg",
+              "isVerified": false
+            },
+            "content": "uhm this gpt 5.6 launch might be the openai's most successful model ever since...\n\nsince chatgpt?\n\nthis is IPO altering stuff going on here",
+            "createdAt": "Tue Jul 14 22:43:16 +0000 2026",
+            "viewCount": 25605,
+            "metrics": {
+              "views": 25605,
+              "likes": 255,
+              "retweets": 11,
+              "replies": 28,
+              "quotes": 4,
+              "bookmarks": 39
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HNOP2m2bAAAC2k7.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "嗯，这次 gpt 5.6 的发布可能是 openai 以来最成功的型号......\n\n自从聊天以来？\n\n这是 IPO 改变这里正在发生的事情",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-15T01:05:19.090Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2076840521574842401",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2076840521574842401",
+            "author": {
+              "name": "Latent.Space",
+              "handle": "latentspacepod",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1888346877428641792/rMxtG84Z_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Did... Codex just overtake Claude Code?\n\n24.5 hours ago Tibo announced 6M active users.\n\nthis means Codex usage jumped 1M in ~ONE DAY.\n\nthe last user number we heard from Claude Code was 2M in Feb: https://www.latent.space/p/ainews-codex-usage-up-10x-in-6-months\n\nmore analysis within, but this is very big if true.",
+            "createdAt": "Tue Jul 14 01:25:40 +0000 2026",
+            "viewCount": 41910,
+            "metrics": {
+              "views": 41910,
+              "likes": 69,
+              "retweets": 7,
+              "replies": 19,
+              "quotes": 8,
+              "bookmarks": 15
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HNJrcjvasAAN48K.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "Codex 刚刚超越了 Claude Code 吗？\n\n24.5 小时前 Tibo 宣布活跃用户达到 600 万。\n\n这意味着 Codex 使用量在一天之内跃升了 100 万。\n\n我们从 Claude Code 那里听到的最后一个用户数量是 2 月份的 200 万：https://www.latent.space/p/ainews-codex-usage-up-10x-in-6-months\n\n里面有更多的分析，但如果这是真的的话，这是非常大的。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-15T01:05:19.835Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2076735790567338203",
+            "relation": "quote",
+            "depth": 2,
+            "sourceTweetId": "2076735790567338203",
+            "author": {
+              "name": "Tibo",
+              "handle": "thsottiaux",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2075819673263001600/pj1vyX6I_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Thank you to the 7M active users who are now using Codex and ChatGPT Work.\n\nWe have added a banked reset to everyone's account to celebrate the milestone. You can apply the reset in the desktop app or on web and it will replenish the weekly usage for you.\n\nHave fun out there.",
+            "createdAt": "Mon Jul 13 18:29:31 +0000 2026",
+            "viewCount": 2325329,
+            "metrics": {
+              "views": 2325329,
+              "likes": 18039,
+              "retweets": 809,
+              "replies": 1888,
+              "quotes": 666,
+              "bookmarks": 800
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "感谢现在使用 Codex 和 ChatGPT Work 的 700 万活跃用户。\n\n我们为每个人的帐户添加了银行重置以庆祝这一里程碑。您可以在桌面应用程序或网络上应用重置，它将为您补充每周的使用量。\n\n在那里玩得开心。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-15T01:05:19.204Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2077162040108748830",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-15T01:05:19.024Z"
+        },
+        "createdAt": "2026-07-15T01:05:19.024Z",
+        "updatedAt": "2026-07-15T01:05:19.835Z"
+      }
+    },
+    {
+      "rank": 4,
+      "essenceScore": 48683,
+      "heatScore": 29202,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 29202
+      },
+      "sourceUrl": "https://x.com/great_martis/status/2077167006072349170",
+      "reason": "把「通胀降至 3.5%、好于预期」一刀切回：仍比美联储 2% 目标高 75%",
+      "reasonEn": "Cuts through soft CPI celebration: 3.5% is still 75% above the Fed’s 2% target",
+      "metrics": {
+        "views": 775417,
+        "likes": 9409,
+        "retweets": 895,
+        "replies": 408,
+        "quotes": 154,
+        "bookmarks": 161
+      },
+      "document": {
+        "id": "4e038e95-717c-4017-b63d-78c219cdf231",
+        "title": "But 75% higher than the Fed's ta",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2077167006072349170",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2077167006072349170",
+            "author": {
+              "name": "The Great Martis",
+              "handle": "great_martis",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1366626515882975235/Qdo2hhJn_normal.jpg",
+              "isVerified": false
+            },
+            "content": "But 75% higher than the Fed's target rate.",
+            "createdAt": "Tue Jul 14 23:03:00 +0000 2026",
+            "viewCount": 16914,
+            "metrics": {
+              "views": 16914,
+              "likes": 164,
+              "retweets": 11,
+              "replies": 6,
+              "quotes": 0,
+              "bookmarks": 2
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "但比美联储的目标利率高出75%。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-15T01:05:45.000Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2077007739361075333",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2077007739361075333",
+            "author": {
+              "name": "Watcher.Guru",
+              "handle": "WatcherGuru",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1641221212578754562/DfiC0KW2_normal.png",
+              "isVerified": false
+            },
+            "content": "BREAKING: 🇺🇸 US inflation falls to 3.5%, lower than expectations.",
+            "createdAt": "Tue Jul 14 12:30:08 +0000 2026",
+            "viewCount": 775417,
+            "metrics": {
+              "views": 775417,
+              "likes": 9409,
+              "retweets": 895,
+              "replies": 408,
+              "quotes": 154,
+              "bookmarks": 161
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "突发新闻：🇺🇸 美国通胀率降至 3.5%，低于预期。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-15T01:05:44.457Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2077167006072349170",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-15T01:05:44.229Z"
+        },
+        "createdAt": "2026-07-15T01:05:44.229Z",
+        "updatedAt": "2026-07-15T01:05:45.000Z"
+      }
+    },
+    {
+      "rank": 5,
+      "essenceScore": 42157,
+      "heatScore": 19608,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 19608
+      },
+      "sourceUrl": "https://x.com/tunguz/status/2077143064796356687",
+      "reason": "用前 Nvidia 数据科学家身份点题：这是首个公开的递归自我改进（RSI）实验证据",
+      "reasonEn": "Ex-Nvidia ML voice stamps Weco’s result as the first *public* experimental evidence of RSI",
+      "metrics": {
+        "views": 351647,
+        "likes": 3593,
+        "retweets": 384,
+        "replies": 106,
+        "quotes": 92,
+        "bookmarks": 3671
+      },
+      "document": {
+        "id": "65e632a0-be2c-4c91-86cd-b40e0a4db920",
+        "title": "And here we go - first *public* ",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2077143064796356687",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2077143064796356687",
+            "author": {
+              "name": "Bojan Tunguz",
+              "handle": "tunguz",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1876996209421742080/RostTdnj_normal.jpg",
+              "isVerified": false
+            },
+            "content": "And here we go - first *public* experimental evidence of RSI.\n\nAs a side note, this post came on my timeline even though I don’t follow the author, so yes, the algorithm is still able to provide me with the content that I am interested in outside of my narrow circles of mutuals.",
+            "createdAt": "Tue Jul 14 21:27:52 +0000 2026",
+            "viewCount": 30125,
+            "metrics": {
+              "views": 30125,
+              "likes": 292,
+              "retweets": 17,
+              "replies": 3,
+              "quotes": 0,
+              "bookmarks": 175
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "我们开始了 - RSI 的第一个“公开”实验证据。\n\n附带说明一下，即使我不关注作者，这篇文章也出现在我的时间线上，所以是的，该算法仍然能够为我提供我在狭隘的共同圈子之外感兴趣的内容。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-15T01:05:22.858Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2077079778793042425",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2077079778793042425",
+            "author": {
+              "name": "Zhengyao Jiang",
+              "handle": "zhengyaojiang",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1494604578938966019/H_sdfinN_normal.jpg",
+              "isVerified": false
+            },
+            "content": "The first experimental evidence of recursive self-improvement (RSI).\n\nAutoresearching the autoresearch agent for eight days.\n\nThe result beats the harness we hand-tuned for two years, on held-out benchmarks: 🧵(1/7)",
+            "createdAt": "Tue Jul 14 17:16:24 +0000 2026",
+            "viewCount": 351647,
+            "metrics": {
+              "views": 351647,
+              "likes": 3593,
+              "retweets": 384,
+              "replies": 106,
+              "quotes": 92,
+              "bookmarks": 3671
+            },
+            "media": [
+              "https://pbs.twimg.com/amplify_video_thumb/2077078715675365376/img/oGVDGTD5OOmjcWYP.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "递归自我改进（RSI）的第一个实验证据。\n\n自动研究自动研究代理八天。\n\n在坚持的基准上，结果击败了我们手工调整了两年的安全带：🧵(1/7)",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-15T01:05:21.805Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2077143064796356687",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-15T01:05:21.706Z"
+        },
+        "createdAt": "2026-07-15T01:05:21.706Z",
+        "updatedAt": "2026-07-15T01:05:22.858Z"
+      }
+    },
+    {
+      "rank": 6,
+      "essenceScore": 40968,
+      "heatScore": 19055,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 19055
+      },
+      "sourceUrl": "https://x.com/AlexFinn/status/2077171122957848785",
+      "reason": "借 PrismML 手机端 27B 本地模型发布，把焦点从参数刷榜拉到本地 AI 轨迹与斜率",
+      "reasonEn": "Quotes PrismML’s phone-running 27B to reframe the story around local-AI trajectory, not peak benchmarks",
+      "metrics": {
+        "views": 426679,
+        "likes": 3246,
+        "retweets": 505,
+        "replies": 169,
+        "quotes": 294,
+        "bookmarks": 2270
+      },
+      "document": {
+        "id": "b4a98667-9697-4e6f-871d-8fe0f4f0b81a",
+        "title": "Local AI is the future, and if y",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2077171122957848785",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2077171122957848785",
+            "author": {
+              "name": "Alex Finn",
+              "handle": "AlexFinn",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1745232634278461440/7gQcr_R__normal.jpg",
+              "isVerified": false
+            },
+            "content": "Local AI is the future, and if you’re not on the bandwagon yet then you’re delusional\n\nA 27B model just released today that can run on your iPhone\n\nBased on Qwen 3.6 Which is Sonnet from 6 months ago level, PrismML figured out a way to fit it on a mobile device\n\nIs it the smartest AI model ever? No.\n\nIs it the fastest AI model ever? No.\n\nWill it be your daily driver? Not even remotely close.\n\nIt probably won’t even take away most major workflows for you.\n\nBut here’s the point: look at the trajectory. Look at where we were 6 months ago, 12 months ago, 24 months ago\n\n24 months ago local models were for massive multi million dollar data centers\n\nNow you can fit them on your phone\n\nIf you don’t think 12 months from now we’ll have models better than the ones out today running on Mac Minis, you just have 0 foresight\n\nStart educating yourself on local AI now before it eats everything",
+            "createdAt": "Tue Jul 14 23:19:22 +0000 2026",
+            "viewCount": 23467,
+            "metrics": {
+              "views": 23467,
+              "likes": 169,
+              "retweets": 18,
+              "replies": 35,
+              "quotes": 0,
+              "bookmarks": 73
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "本地人工智能是未来，如果你还没有跟上潮流，那么你就陷入了妄想\n\n今天刚刚发布的 27B 型号可以在你的 iPhone 上运行\n\n基于 Qwen 3.6（即 6 个月前的 Sonnet）水平，PrismML 找到了一种将其安装在移动设备上的方法\n\n它是有史以来最智能的人工智能模型吗？不。\n\n它是有史以来最快的人工智能模型吗？不。\n\n它会成为你的日常司机吗？甚至远距离都不近。\n\n它甚至可能不会为您取消大多数主要工作流程。\n\n但重点是：看轨迹。看看我们 6 个月前、12 个月前、24 个月前的情况\n\n24 个月前，本地模型适用于价值数百万美元的大型数据中心\n\n现在您可以将它们安装到您的手机上\n\n如果你认为 12 个月后我们不会推出比现在在 Mac Mini 上运行的模型更好的模型，那么你的远见就是 0\n\n在本地人工智能吞噬一切之前，立即开始自我教育",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-15T01:05:15.503Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2077084891284721827",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2077084891284721827",
+            "author": {
+              "name": "PrismML",
+              "handle": "PrismML",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2025105666692812800/QQOxLQPq_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Today, we’re announcing Bonsai 27B: the first 27B-class model to run on a phone.\n\nBonsai 27B is the new multimodal flagship of the Bonsai family. Based on Qwen3.6 27B, it brings a new capability tier to local AI: multi-step reasoning, structured tool use, long-context workflows, and coherent agentic loops.\n\nUntil now, models in this class have been impractical to deploy locally. A 27B model occupies roughly 54 GB in 16-bit precision, and even a strong 4-bit build is around 18GB - too large for a phone and for most laptops.\nBonsai 27B changes that.\n\nIt comes in two variants:\n• Ternary Bonsai 27B: 5.9 GB, 1.71 effective bits per weight, optimized for laptop-class quality.\n• 1-bit Bonsai 27B: 3.9 GB, 1.125 effective bits per weight, optimized for phone-class footprint.\n\nEverything is open-sourced today under the Apache 2.0 license.",
+            "createdAt": "Tue Jul 14 17:36:43 +0000 2026",
+            "viewCount": 426679,
+            "metrics": {
+              "views": 426679,
+              "likes": 3246,
+              "retweets": 505,
+              "replies": 169,
+              "quotes": 294,
+              "bookmarks": 2270
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HNM70U_bEAQdQFX.png"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "今天，我们宣布推出 Bonsai 27B：首款在手机上运行的 27B 级模型。\n\nBonsai 27B 是 Bonsai 家族的新多式联运旗舰产品。它基于 Qwen3.6 27B，为本地人工智能带来了新的能力层：多步骤推理、结构化工具使用、长上下文工作流程和连贯的代理循环。\n\n到目前为止，此类模型在本地部署还不切实际。 27B 型号在 16 位精度下占用大约 54 GB，即使是强大的 4 位版本也大约需要 18 GB - 对于手机和大多数笔记本电脑来说太大了。\nBonsai 27B 改变了这一点。\n\n它有两种变体：\n• Ternary Bonsai 27B：5.9 GB，每权重 1.71 有效位，针对笔记本电脑级质量进行了优化。\n• 1 位 Bonsai 27B：3.9 GB，每权重 1.125 个有效位，针对电话级占用空间进行了优化。\n\n如今，所有内容均在 Apache 2.0 许可证下开源。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-15T01:05:14.837Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2077171122957848785",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-15T01:05:14.555Z"
+        },
+        "createdAt": "2026-07-15T01:05:14.555Z",
+        "updatedAt": "2026-07-15T01:05:15.504Z"
+      }
+    },
+    {
+      "rank": 7,
+      "essenceScore": 32666,
+      "heatScore": 13333,
+      "signals": {
+        "depth": 4,
+        "hasDunk": true,
+        "peakIndex": 3,
+        "peakHeat": 13333
+      },
+      "sourceUrl": "https://x.com/pmarca/status/2077153798854992069",
+      "reason": "用一个词「Concerning」给 Karp 谈 Thiel 被欧洲排斥的长视频定调，放大科技地缘张力",
+      "reasonEn": "One-word 「Concerning」 reframe of Karp on Europe freezing out Thiel—tech geopolitics in a QT",
+      "metrics": {
+        "views": 539504,
+        "likes": 695,
+        "retweets": 69,
+        "replies": 55,
+        "quotes": 31,
+        "bookmarks": 719
+      },
+      "document": {
+        "id": "f1a5c2c3-76f1-4487-98b7-c9170bbd7700",
+        "title": "Concerning.",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2077153798854992069",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2077153798854992069",
+            "author": {
+              "name": "Marc Andreessen 🇺🇸",
+              "handle": "pmarca",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1820716712234303489/9GpKDZjq_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Concerning.",
+            "createdAt": "Tue Jul 14 22:10:31 +0000 2026",
+            "viewCount": 77201,
+            "metrics": {
+              "views": 77201,
+              "likes": 572,
+              "retweets": 27,
+              "replies": 29,
+              "quotes": 3,
+              "bookmarks": 85
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "有关。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-15T01:05:36.683Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2076799098502664536",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2076799098502664536",
+            "author": {
+              "name": "Jawwwn",
+              "handle": "jawwwn_",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1966983763801632770/I260COz2_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Palantir CEO Alex Karp says Peter Thiel is so misunderstood in Europe that Germany effectively lost their most successful investor:\n\n\"I think the treatment of Peter is atrocious.\"\n\n\"I think the question historically one would have asked in Germany is: can we afford this? Can we afford not to learn from this person?\"\n\n\"The German tech scene should be #2 in the world by any historical standard. Honestly, the German tech scene was the #1 in the world, so #2 is already, like, maybe shouldn't be the aspiration.\"\n\n\"It's on no one's list.\"\n\n\" The largest company in Germany by market cap, I think, is Siemens, and Palantir is significantly larger, even where we're obviously undervalued currently.\"\n\n\"I've known Peter Since we were poor students at Stanford. We had conversations as poor students fighting about intellectual things. He was always heterodox right. I was always heterodox left. I don't think much has changed. He's still heterodox right, meaning he's very frustrating to classic Republicans.\"\n\n\"He's never been a neocon. He actually does not really believe in classic Republican economic theory. He was the first person to flag and will always flag—you tend to have people on the right basically explaining all problems as the result of capitalism not being driven far enough.\"\n\n\" That's just not Peter's view.\"\n\n\"He's not a simplistic or a caricature thinker on the right. And he's definitely not the caricature that the left wants to present.\"\n\n\"But what's fascinating to me is—why is it so important to spend so much time blocking Peter from the German market?\"\n\n\"It's so obviously thin what they're saying about him, what they say about Palantir, so obviously doesn't make sense on the merits. You only need 10 minutes, 5 minutes on Google to see this isn't true.\"",
+            "createdAt": "Mon Jul 13 22:41:04 +0000 2026",
+            "viewCount": 305491,
+            "metrics": {
+              "views": 305491,
+              "likes": 2067,
+              "retweets": 137,
+              "replies": 48,
+              "quotes": 13,
+              "bookmarks": 1311
+            },
+            "media": [
+              "https://pbs.twimg.com/amplify_video_thumb/2076798708881240064/img/bJtc-OaEMiZ0LbUN.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "Palantir 首席执行官亚历克斯·卡普 (Alex Karp) 表示，彼得·泰尔 (Peter Thiel) 在欧洲受到如此严重的误解，以至于德国实际上失去了最成功的投资者：\n\n“我认为彼得受到的对待是残酷的。”\n\n“我认为历史上人们在德国会问的问题是：我们能承受这个吗？我们能承受不向这个人学习吗？”\n\n“按照任何历史标准，德国科技界都应该位居世界第二。老实说，德国科技界是世界第一，所以第二名已经是，也许不应该成为人们的愿望。”\n\n“它不在任何人的名单上。”\n\n“我认为，德国市值最大的公司是西门子，而 Palantir 的规模要大得多，即使我们目前的估值明显被低估。”\n\n“自从我们还是斯坦福大学的穷学生时，我就认识彼得了。我们像穷学生一样在智力问题上争论。他总是非正统的右派。我总是非正统的左派。我认为没有太大变化。他仍然是非正统的右派，这意味着他让典型的共和党人感到非常沮丧。”\n\n“他从来都不是新保守派。实际上，他并不真正相信经典的共和党经济理论。他是第一个表示不满的人，而且永远都会表示不满——你往往会看到右翼人士基本上将所有问题解释为资本主义发展不够深入的结果。”\n\n“ 这不是彼得的观点。”\n\n“他不是一个简单化或讽刺的右翼思想家。他也绝对不是左派想要呈现的漫画。”\n\n“但令我着迷的是——为什么花这么多时间阻止彼得进入德国市场如此重要？”\n\n“他们对他的评价、对 Palantir 的评价显然都太肤浅了，所以显然在其优点上毫无意义。你只需要在谷歌上花 10 分钟、5 分钟就知道这不是真的。”",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-15T01:05:36.685Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2076796716528099532",
+            "relation": "quote",
+            "depth": 2,
+            "sourceTweetId": "2076796716528099532",
+            "author": {
+              "name": "sourcery",
+              "handle": "sourceryy",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1983214024767553537/IenNgEX1_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Cyan Banister (@cyantist) says the two people that inspire her the most are Peter Thiel and @pmarca:\n\n\"I always joke that I didn't go to university. I went to Peter Thiel University.\"\n\n\"I've never met anyone more tolerant, more open-minded. He gets such a bad rap for a lot of things. He's probably one of the most poorly understood people.\"\n\n\"He's operating 1,000 feet above everybody else. His mind is not like other minds. It's kinda like @elonmusk. You don't know what to do with it, so it's just easier to hate it.\"\n\n\" Marc Andreessen was my hero when I was a teenager. I used to see him on the cover of magazines.\"\n\n\"Netscape was his thing, and Netscape changed my world and changed the whole world.\"\n\n\"The two of them probably would not want to be in the same sentence together being heralded.\"",
+            "createdAt": "Mon Jul 13 22:31:36 +0000 2026",
+            "viewCount": 270666,
+            "metrics": {
+              "views": 270666,
+              "likes": 199,
+              "retweets": 14,
+              "replies": 6,
+              "quotes": 3,
+              "bookmarks": 96
+            },
+            "media": [
+              "https://pbs.twimg.com/amplify_video_thumb/2076796487884009472/img/Y939b-YYeqGmzuHy.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "Cyan Banister (@cyantist) 说对她启发最大的两个人是 Peter Thiel 和 @pmarca：\n\n“我总是开玩笑说我没有上大学。我去了彼得泰尔大学。”\n\n“我从来没有见过比他更宽容、更开放的人。他在很多事情上都受到了不好的评价。他可能是最不被理解的人之一。”\n\n“他比其他人高出 1000 英尺。他的思想与其他人不同。有点像 @elonmusk。你不知道如何处理它，所以更容易讨厌它。”\n\n“当我十几岁的时候，马克·安德森是我的英雄。我经常在杂志封面上看到他。”\n\n“网景是他的事，网景改变了我的世界，也改变了整个世界。”\n\n“他们两个可能不想在同一句话中一起被宣布。”",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-15T01:05:37.167Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2075581306159694250",
+            "relation": "quote",
+            "depth": 3,
+            "sourceTweetId": "2075581306159694250",
+            "author": {
+              "name": "Molly O’Shea",
+              "handle": "MollySOShea",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1673061505351450624/2A8YvQ2N_normal.jpg",
+              "isVerified": false
+            },
+            "content": "NEW: Cyan Banister's Legendary Track Record\n\nHer first investment ever? SpaceX.\n\nIn 2007, she invested every dollar she had into SpaceX & never sold.\n\nCombined, @cyantist & Scott Banister are easily the #1 angel investors in the world.\n\nSpaceX. Anduril. Uber. PayPal. Affirm. Flexport. Postmates. Niantic. Opendoor. Carta. Together AI. Diamond Foundry. Crusoe. Flock Safety. Substrate. Brave. Depop. Calm. TrueMed. Turing. Crusoe\n\nCyan spent 4 years at Founders Fund, now Co-Founder & General Partner, @LongJourneyVC\n\nPlus Founders Fund's Mafia, beating Phil Hellmuth in poker live, & free speech as her number one cause.\n\nWe cover\n› The space between your values & your actions\n› Human beings as why machines\n› Why Marc Andreessen is wrong about introspection\n› Peter Thiel University\n› Nanotech & biotech\n\n𝐓𝐈𝐌𝐄𝐒𝐓𝐀𝐌𝐏𝐒\n(00:00) Cyan Banister, Long Journey Ventures\n(01:13) Inside Long Journey HQ\n(02:17) The wild story behind the office mural\n(05:32) What Cyan's actual house looks like\n(07:18) The candle ritual\n(08:08) What the Long Journey logo actually means\n(10:41) Mafia's breakout stars\n(14:45) Cyan's strategy\n(16:30) What really happens off-camera at Mafia\n(18:58) The blooper reel nobody's seen yet\n(23:54) Brian Singerman x $40 /mo board game club\n(29:10) Confessions of an accidental poker legend\n(33:37) What relentless optimism reveals about people\n(35:42) Why so many people are scared to be weird\n(37:32) The daily ritual she prescribes to everyone\n(43:56) The \"why\" behind her biggest investments\n(50:49) Why sci-fi movies keep predicting the future\n(53:37) Should you even go to college right now?\n(59:58) Unconventional investing philosophy\n(1:01:57) Full list of Cyan's investments\n(1:04:28) All-in on SpaceX\n(1:08:57) Why she never sold a single SpaceX share\n(1:12:53) Top Bets: Becoming Bio + Substrate\n(1:15:52) America's reindustrialization moment is now\n(1:19:16) Cyan's mentors\n(1:22:54) Manifesting Rick Rubin\n(1:24:00) Real take on the Peter Thiel events",
+            "createdAt": "Fri Jul 10 14:02:00 +0000 2026",
+            "viewCount": 539504,
+            "metrics": {
+              "views": 539504,
+              "likes": 695,
+              "retweets": 69,
+              "replies": 55,
+              "quotes": 31,
+              "bookmarks": 719
+            },
+            "media": [
+              "https://pbs.twimg.com/amplify_video_thumb/2075363339882881024/img/q3hiOp74KLyeQrur.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "新：Cyan Banister 的传奇业绩记录\n\n她的第一笔投资？太空探索技术公司。\n\n2007 年，她将自己所有的钱都投入了 SpaceX，但从未出售。\n\n加起来，@cyantist 和 Scott Banister 轻松成为世界排名第一的天使投资人。\n\n太空探索技术公司。安杜里尔。优步。贝宝。确认。柔性端口。邮友们。尼安蒂克。开门。宪章。一起人工智能。钻石铸造厂。克鲁索。鸡群安全。基材。勇敢的。德波普。冷静的。真医学。图灵。克鲁索\n\nCyan 在 Founders Fund 工作了 4 年，现任@LongJourneyVC 联合创始人兼普通合伙人\n\n再加上 Founders Fund 的 Mafia，在现场扑克比赛中击败 Phil Hellmuth，言论自由成为她的首要事业。\n\n我们涵盖\n› 你的价值观和你的行动之间的差距\n› 人类为何是机器\n› 为什么马克·安德森关于内省的观点是错误的\n› 彼得泰尔大学\n› 纳米技术和生物技术\n\n𝐓𝐈𝐌𝐄𝐒𝐓𝐀𝐌𝐏𝐒\n(00:00) 青色栏杆，Long Journey Ventures\n(01:13) 长途旅行总部内部\n(02:17) 办公室壁画背后的疯狂故事\n(05:32) Cyan 的真实房子是什么样子\n(07:18) 蜡烛仪式\n(08:08) Long Journey 徽标的实际含义是什么\n(10:41) Mafia 的新星\n(14:45) Cyan 的策略\n(16:30) 《黑手党》镜头外到底发生了什么\n(18:58) 还没有人见过的花絮卷轴\n(23:54) Brian Singerman x 每月 40 美元的棋盘游戏俱乐部\n(29:10) 一位偶然的扑克传奇人物的自白\n(33:37) 不懈的乐观揭示了人们的什么\n(35:42) 为什么这么多人害怕变得怪异\n(37:32) 她为每个人规定的日常仪式\n(43:56) 她最大的投资背后的“原因”\n(50:49) 为什么科幻电影不断预测未来\n(53:37) 你现在应该上大学吗？\n(59:58) 非常规投资理念\n(1:01:57) Cyan 投资的完整列表\n(1:04:28) 全力投入 SpaceX\n(1:08:57) 为什么她从未出售过 SpaceX 股票\n(1:12:53) 最大的赌注：成为生物+底物\n(1:15:52) 现在是美国的再工业化时刻\n(1:19:16) Cyan 的导师\n(1:22:54) 表现瑞克·鲁宾\n(1:24:00) Peter Thiel 事件的真实呈现",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-15T01:05:37.344Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2077153798854992069",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-15T01:05:36.490Z"
+        },
+        "createdAt": "2026-07-15T01:05:36.490Z",
+        "updatedAt": "2026-07-15T01:05:37.344Z"
+      }
+    },
+    {
+      "rank": 8,
+      "essenceScore": 17553,
+      "heatScore": 10155,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 10155
+      },
+      "sourceUrl": "https://x.com/xiaomustock/status/2077055927786885527",
+      "reason": "自引存储抄底逻辑后升华：物理 AI 三维数据将使存储需求远超分析师基于现状的测算",
+      "reasonEn": "Extends own Hynix thesis: physical AI’s video-scale tokens make storage the underpriced bottleneck",
+      "metrics": {
+        "views": 483253,
+        "likes": 293,
+        "retweets": 8,
+        "replies": 50,
+        "quotes": 9,
+        "bookmarks": 23
+      },
+      "document": {
+        "id": "5da66261-af30-4320-b991-fea05f51e19e",
+        "title": "请发给你的韩国朋友。\nAI能干的事情过去2年，\n慢慢从一维数据到",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2077055927786885527",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2077055927786885527",
+            "author": {
+              "name": "川沐｜Trumoo🐮",
+              "handle": "xiaomustock",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1595742328450211840/oO6w9IYm_normal.jpg",
+              "isVerified": false
+            },
+            "content": "请发给你的韩国朋友。\nAI能干的事情过去2年，\n慢慢从一维数据到二维数据再到未来的三维数据进化，也就是文字，图片，三维视频。\n这经历的时间也才短短2年多，24年到现在26年。而存储扩产在2028年，也就是2年后，AI会发展成什么样，这些傻逼预测分析师硅谷投资客都没有考虑进去，他们只是基于现在的AI状态来分析存储未来尤其是存储2028年的未来做出当下的判断，他们都是傻逼。\n\n如果物理AI能突破，处理的资料都是视频资料，不是文字，存储数据内容从一维到三维，存储的需求量是天量。人们现在对存储的假设是基于现有AI水平来测算。\n但这些傻逼都没有考虑进去2年后AI会发展成什么样，\n现在AI视频已经可以以假乱真，\n俩年后更是不敢想象会进化到啥程度，\n如果AI能进化到理解现实物理世界，那它处理的数据全是视频数据，\n存储需求的数量级可能是百倍于现在，\n要坚信你的存储。\n试想一下AI俩年后会发展成什么样，回想过去俩年AI的进化速度和对存储需求的增长速度，不要再扔掉你们宝贵的 #海力士 $SKHYX 了。\n\nAI用量会在俩年后暴增数倍，想象你2年后使用频率，从现在一天3-5次会不会暴增到30-50次？\nAI使用群体数量俩年后会不会从1B暴增到几B？（使用群体不限于人，包括汽车，包括手机，包括机器人，甚至智能体本身…）\n\nAI现在人70%的使用是文字token，俩年后会不会进化到视频影像物理三维视频token输入输出？（这里存储数据量差别千倍万倍。）\n\n这里面的需求差别2年后会是现在的多少倍？十倍还是百倍？\n那俩年后的存储产量增量是几倍？翻倍都撑死了吧？这些傻逼预测师永远不会这么给你算，只会基于现在AI状态误导你。\n\n拿出你们290万韩元梭哈的勇气，\n190万韩元都不敢买，真去死了算了。",
+            "createdAt": "Tue Jul 14 15:41:37 +0000 2026",
+            "viewCount": 112818,
+            "metrics": {
+              "views": 112818,
+              "likes": 223,
+              "retweets": 32,
+              "replies": 71,
+              "quotes": 4,
+              "bookmarks": 80
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HNMvWjcaYAAZdJ0.jpg"
+            ],
+            "translation": {
+              "provider": "none",
+              "status": "idle",
+              "language": "zh-CN",
+              "text": "",
+              "annotations": [],
+              "error": "",
+              "version": 0
+            }
+          },
+          {
+            "id": "2076876646037307471",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2076876646037307471",
+            "author": {
+              "name": "川沐｜Trumoo🐮",
+              "handle": "xiaomustock",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1595742328450211840/oO6w9IYm_normal.jpg",
+              "isVerified": false
+            },
+            "content": "克服恐惧的最好办法就是面对恐惧，\n海力士不行，整个AI产业链都在一起崩。\n刚抄了南海2x，成本51.5。\n甭管什么Ai几把概念，都是和存储一荣俱荣",
+            "createdAt": "Tue Jul 14 03:49:13 +0000 2026",
+            "viewCount": 483253,
+            "metrics": {
+              "views": 483253,
+              "likes": 293,
+              "retweets": 8,
+              "replies": 50,
+              "quotes": 9,
+              "bookmarks": 23
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HNKMTJ_bwAA_qjl.jpg"
+            ],
+            "translation": {
+              "provider": "none",
+              "status": "idle",
+              "language": "zh-CN",
+              "text": "",
+              "annotations": [],
+              "error": "",
+              "version": 0
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2077055927786885527",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-15T01:05:56.109Z"
+        },
+        "createdAt": "2026-07-15T01:05:56.109Z",
+        "updatedAt": "2026-07-15T01:05:56.110Z"
+      }
+    },
+    {
+      "rank": 9,
+      "essenceScore": 6187,
+      "heatScore": 3650,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 3650
+      },
+      "sourceUrl": "https://x.com/MaxForAI/status/2077092259556954292",
+      "reason": "把 Nico 从 Vercel 跳槽 OpenAI 做 Codex App 写成完整人才与产品逻辑链",
+      "reasonEn": "Full Chinese brief on Vercel AI SDK lead joining OpenAI Codex—why the hire fits agent product gaps",
+      "metrics": {
+        "views": 69505,
+        "likes": 1549,
+        "retweets": 25,
+        "replies": 236,
+        "quotes": 8,
+        "bookmarks": 70
+      },
+      "document": {
+        "id": "9e5a9af0-2aef-4320-9be1-504cf1e645a1",
+        "title": "OpenAI又从 @vercel 挖来了一名Agent应用层核心",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2077092259556954292",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2077092259556954292",
+            "author": {
+              "name": "Max For AI",
+              "handle": "MaxForAI",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1885611457376903171/zWWnahYp_normal.jpg",
+              "isVerified": false
+            },
+            "content": "OpenAI又从 @vercel 挖来了一名Agent应用层核心成员。\n\nVercel AI SDK核心成员@nicoalbanese10 宣布加入 @OpenAI ，参与Codex App的开发。\n\n他并不是传统意义上的模型研究员，也不是单纯做开发者关系的人。\n他过去几年的工作，基本都围绕同一个问题展开：如何把底层模型能力，变成开发者每天真正能够使用的产品。\n\nNico本科就读于USC、香港科技大学和博科尼大学联合开设的World Bachelor in Business项目，毕业后没有直接进入科技公司，而是在伦敦的早期基金Ascension负责Pre-seed项目投资。\n\n后来他开始自己写产品，并开发了Kirimase。\nKirimase是一套面向Next.js开发者的命令行工具，思路类似Ruby on Rails的脚手架。\n开发者可以通过命令直接配置数据库、身份验证、Stripe支付、邮件服务，并生成完整的CRUD代码。这个项目获得了约2800个GitHub Star，后来被迁移到了Vercel官方GitHub组织下。\n\n2024年前后，Nico加入Vercel，进入AI SDK核心团队。\n过去两年里，他参与了AI SDK从3.3到6.0的多次关键版本升级，包括模型中间件、多步骤工具调用、结构化输出、类型安全的Chat、Agent循环、MCP、工具执行审批，以及Agent调试工具DevTools。\n到2025年7月，Vercel AI SDK的周下载量已经超过200万。\n这套SDK实际上定义了大量Web开发者今天构建AI应用的方式：如何接入不同模型，如何流式返回结果，如何展示工具调用，如何保存Agent状态，如何处理多步任务，以及如何调试模型在每一步到底做了什么。\n\n最近，Nico还开发并开源了Open Agents。\n这是一个运行在云端的Coding Agent系统，支持GitHub集成、持久化沙箱和可恢复的长时间工作流。\nNico称，这个Agent后来写下了他发布的每一行代码，甚至包括Open Agents自身。\n项目开源后获得了超过5000个GitHub Star。\n\n可以说Nico的经历和Codex App几乎完全对口。\nCodex现在需要解决的核心问题，已经不只是模型能不能写出代码。\n随着Agent能够同时运行几十分钟甚至数小时，产品还需要处理任务状态、文件系统、权限审批、GitHub协作、失败恢复、并行Agent，以及用户如何查看和接管Agent的工作。\n这些恰好都是Nico过去两年在Vercel反复处理的问题。\n\n他自己也表示，过去几个月一直全天使用Codex，自己发布的每一行代码和绝大部分其他工作，几乎都在Codex里完成。\n\n现在，他从Codex的重度用户，直接变成了Codex App的建设者。\n\n祝贺Nico！",
+            "createdAt": "Tue Jul 14 18:05:59 +0000 2026",
+            "viewCount": 9026,
+            "metrics": {
+              "views": 9026,
+              "likes": 39,
+              "retweets": 3,
+              "replies": 6,
+              "quotes": 0,
+              "bookmarks": 19
+            },
+            "media": [],
+            "translation": {
+              "provider": "none",
+              "status": "idle",
+              "language": "zh-CN",
+              "text": "",
+              "annotations": [],
+              "error": "",
+              "version": 0
+            }
+          },
+          {
+            "id": "2077061159593648490",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2077061159593648490",
+            "author": {
+              "name": "Nico Albanese",
+              "handle": "nicoalbanese10",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1433185013097508864/k3FzfdA5_normal.jpg",
+              "isVerified": false
+            },
+            "content": "I’m joining @OpenAI to help build the Codex app!\n\nI’ve been using Codex all day, every day for months. It’s where I write every line of code I ship and get just about everything else done.\n\nCan’t wait to help shape what comes next.",
+            "createdAt": "Tue Jul 14 16:02:25 +0000 2026",
+            "viewCount": 69505,
+            "metrics": {
+              "views": 69505,
+              "likes": 1549,
+              "retweets": 25,
+              "replies": 236,
+              "quotes": 8,
+              "bookmarks": 70
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HNMtQsGWQAAipSS.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "我加入 @OpenAI 来帮助构建 Codex 应用程序！\n\n几个月来我每天都在使用 Codex。我在这里编写我发布的每一行代码并完成其他所有事情。\n\n迫不及待地想帮助塑造接下来的发展。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-15T01:05:51.837Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2077092259556954292",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-15T01:05:51.493Z"
+        },
+        "createdAt": "2026-07-15T01:05:51.493Z",
+        "updatedAt": "2026-07-15T01:05:51.838Z"
+      }
+    },
+    {
+      "rank": 10,
+      "essenceScore": 2709,
+      "heatScore": 1426,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 1426
+      },
+      "sourceUrl": "https://x.com/litcapital/status/2077147911100485792",
+      "reason": "用梗图回怼 OpenAI 首款硬件新闻，把「无屏 AI 音箱」钉成尴尬产品选型",
+      "reasonEn": "Meme-dunks OpenAI’s first-device scoop, reframing the screenless speaker as a product punchline",
+      "metrics": {
+        "views": 69159,
+        "likes": 12,
+        "retweets": 2,
+        "replies": 2,
+        "quotes": 5,
+        "bookmarks": 3
+      },
+      "document": {
+        "id": "93f31498-a5f9-4dfc-ac57-b9258e4b47e8",
+        "title": "OpenAI deciding which hardware d",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2077147911100485792",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2077147911100485792",
+            "author": {
+              "name": "litquidity",
+              "handle": "litcapital",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1611406816130338816/KWJfnndd_normal.jpg",
+              "isVerified": false
+            },
+            "content": "OpenAI deciding which hardware device to launch",
+            "createdAt": "Tue Jul 14 21:47:08 +0000 2026",
+            "viewCount": 24596,
+            "metrics": {
+              "views": 24596,
+              "likes": 225,
+              "retweets": 1,
+              "replies": 3,
+              "quotes": 1,
+              "bookmarks": 7
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HNODBErW0AAWLxe.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "OpenAI 决定启动哪个硬件设备",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-15T01:05:31.917Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2077146106408882543",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2077146106408882543",
+            "author": {
+              "name": "Exec Sum",
+              "handle": "exec_sum",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1923386273185910784/ODDqEv6a_normal.jpg",
+              "isVerified": false
+            },
+            "content": "BREAKING: OpenAI’s first device will be a movable, screenless smart speaker built as an AI companion.",
+            "createdAt": "Tue Jul 14 21:39:57 +0000 2026",
+            "viewCount": 69159,
+            "metrics": {
+              "views": 69159,
+              "likes": 12,
+              "retweets": 2,
+              "replies": 2,
+              "quotes": 5,
+              "bookmarks": 3
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "突发新闻：OpenAI 的第一款设备将是一款可移动、无屏幕的智能扬声器，作为人工智能伴侣而构建。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-15T01:05:31.651Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2077147911100485792",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-15T01:05:31.486Z"
+        },
+        "createdAt": "2026-07-15T01:05:31.486Z",
+        "updatedAt": "2026-07-15T01:05:31.917Z"
+      }
+    }
+  ]
+}

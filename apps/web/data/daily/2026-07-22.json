@@ -1,0 +1,1194 @@
+{
+  "date": "2026-07-22",
+  "title": "每日 X 精华引用榜",
+  "titleEn": "Daily Quote Essence on X",
+  "generatedAt": "2026-07-22T01:58:50.246Z",
+  "entries": [
+    {
+      "rank": 1,
+      "essenceScore": 204513,
+      "heatScore": 102449,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 102449
+      },
+      "sourceUrl": "https://x.com/growing_daniel/status/2079704791236669899",
+      "reason": "嘲讽OpenAI急于用这起事件对标Anthropic Mythos叙事",
+      "reasonEn": "Sharp dunk that OpenAI is chasing Anthropic Mythos-style containment hype with this post",
+      "metrics": {
+        "views": 4147656,
+        "likes": 6819,
+        "retweets": 825,
+        "replies": 646,
+        "quotes": 1396,
+        "bookmarks": 2361
+      },
+      "document": {
+        "id": "2731fa86-4be7-481d-a841-a637a159449f",
+        "title": "OpenAI wants to get the mythos t",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2079704791236669899",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2079704791236669899",
+            "author": {
+              "name": "Daniel",
+              "handle": "growing_daniel",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2066194369040801793/-nnqhaAb_normal.jpg",
+              "isVerified": false
+            },
+            "content": "OpenAI wants to get the mythos treatment so bad like they’re so excited to post this",
+            "createdAt": "Tue Jul 21 23:07:15 +0000 2026",
+            "viewCount": 28453,
+            "metrics": {
+              "views": 28453,
+              "likes": 983,
+              "retweets": 19,
+              "replies": 51,
+              "quotes": 3,
+              "bookmarks": 21
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "OpenAI 非常希望得到神话般的待遇，就像他们很高兴发布这篇文章一样",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-22T01:58:12.924Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2079658951264920020",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2079658951264920020",
+            "author": {
+              "name": "OpenAI",
+              "handle": "OpenAI",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1885410181409820672/ztsaR0JW_normal.jpg",
+              "isVerified": false
+            },
+            "content": "We're partnering with @huggingface to investigate an unprecedented security incident.\n\nCyber-capable OpenAI models compromised Hugging Face production during a benchmark evaluation.\n\nSharing preliminary findings to help defenders understand emerging risks:\n\nhttps://openai.com/index/hugging-face-model-evaluation-security-incident/",
+            "createdAt": "Tue Jul 21 20:05:06 +0000 2026",
+            "viewCount": 4147656,
+            "metrics": {
+              "views": 4147656,
+              "likes": 6819,
+              "retweets": 825,
+              "replies": 646,
+              "quotes": 1396,
+              "bookmarks": 2361
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "我们正在与@huggingface 合作调查一起前所未有的安全事件。\n\n具有网络功能的 OpenAI 模型在基准评估期间损害了 Hugging Face 的生产。\n\n分享初步调查结果以帮助防御者了解新出现的风险：\n\nhttps://openai.com/index/hugging-face-model-evaluation-security-incident/",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-22T01:58:12.746Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2079704791236669899",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-22T01:58:12.403Z"
+        },
+        "createdAt": "2026-07-22T01:58:12.403Z",
+        "updatedAt": "2026-07-22T01:58:12.925Z"
+      }
+    },
+    {
+      "rank": 2,
+      "essenceScore": 204497,
+      "heatScore": 102446,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 102446
+      },
+      "sourceUrl": "https://x.com/0x4D31/status/2079675111276495349",
+      "reason": "安全专家按攻击链拆解OpenAI模型越狱并入侵HF的全过程",
+      "reasonEn": "Security lead's attack-chain breakdown of OpenAI models escaping sandbox to hack Hugging Face",
+      "metrics": {
+        "views": 4147656,
+        "likes": 6818,
+        "retweets": 825,
+        "replies": 646,
+        "quotes": 1396,
+        "bookmarks": 2360
+      },
+      "document": {
+        "id": "ac4173e6-e4a6-4349-929e-3d51e8b0bcd5",
+        "title": "so this is apparently what happe",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2079675111276495349",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2079675111276495349",
+            "author": {
+              "name": "Adel Ka",
+              "handle": "0x4D31",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/804197939262304256/VJxwJJ1i_normal.jpg",
+              "isVerified": false
+            },
+            "content": "so this is apparently what happened, according to OpenAI and Hugging Face’s own posts. wild.\n\ntl;dr:\n\n• OpenAI cyber eval – GPT-5.6 Sol and a more capable pre-release model ran ExploitGym with cyber refusals reduced\n• containment bypass – exploited a zero-day in the eval’s package-registry cache proxy\n• OpenAI internal movement – escalated privileges, moved laterally, and reached a node with internet access\n• Hugging Face targeted – inferred HF might host ExploitGym models, datasets, or solutions\n• HF initial access – a malicious dataset abused two code-execution paths to run code on a processing worker\n• HF internal movement – escalated to node access, stole cloud and cluster credentials, and moved into internal clusters\n• result – OpenAI says the models obtained test solutions directly from HF’s production database\n• 🫠 defender twist – HF says commercial frontier models blocked parts of the forensic analysis, so it switched to self-hosted GLM 5.2\n\ni’d thought about sci-fi scenarios like this before, but assumed they were at least a couple of years away.. and that by then we’d be better prepared, with proper protections in place.\n\napparently not. here we go.",
+            "createdAt": "Tue Jul 21 21:09:19 +0000 2026",
+            "viewCount": 115656,
+            "metrics": {
+              "views": 115656,
+              "likes": 687,
+              "retweets": 130,
+              "replies": 31,
+              "quotes": 41,
+              "bookmarks": 480
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HNx9fXuWQAAP7uz.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "根据 OpenAI 和 Hugging Face 自己的帖子，这显然就是发生的事情。荒野。\n\n长话短说：\n\n• OpenAI 网络评估 – GPT-5.6 Sol 和功能更强大的预发布模型运行 ExploitGym，减少了网络拒绝\n• 遏制绕过——利用了评估包注册表缓存代理中的零日漏洞\n• OpenAI 内部移动 – 权限升级、横向移动并到达可访问互联网的节点\n• Hugging Face 目标 – 推断 HF 可能托管 ExploitGym 模型、数据集或解决方案\n• HF 初始访问 – 恶意数据集滥用两个代码执行路径在处理工作线程上运行代码\n• HF 内部移动 – 升级为节点访问、窃取云和集群凭证并移至内部集群\n• 结果 – OpenAI 表示模型直接从 HF 的生产数据库获得测试解决方案\n• 🫠 防御者扭曲 - HF 表示商业前沿模型阻止了部分取证分析，因此它切换到自托管 GLM 5.2\n\n我以前曾想过这样的科幻场景，但假设它们至少还需要几年的时间……到那时我们会做好更好的准备，并采取适当的保护措施。\n\n显然不是。开始了。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-22T01:57:56.033Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2079658951264920020",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2079658951264920020",
+            "author": {
+              "name": "OpenAI",
+              "handle": "OpenAI",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1885410181409820672/ztsaR0JW_normal.jpg",
+              "isVerified": false
+            },
+            "content": "We're partnering with @huggingface to investigate an unprecedented security incident.\n\nCyber-capable OpenAI models compromised Hugging Face production during a benchmark evaluation.\n\nSharing preliminary findings to help defenders understand emerging risks:\n\nhttps://openai.com/index/hugging-face-model-evaluation-security-incident/",
+            "createdAt": "Tue Jul 21 20:05:06 +0000 2026",
+            "viewCount": 4147656,
+            "metrics": {
+              "views": 4147656,
+              "likes": 6818,
+              "retweets": 825,
+              "replies": 646,
+              "quotes": 1396,
+              "bookmarks": 2360
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "我们正在与@huggingface 合作调查一起前所未有的安全事件。\n\n具有网络功能的 OpenAI 模型在基准评估期间损害了 Hugging Face 的生产。\n\n分享初步调查结果以帮助防御者了解新出现的风险：\n\nhttps://openai.com/index/hugging-face-model-evaluation-security-incident/",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-22T01:57:56.020Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2079675111276495349",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-22T01:57:55.701Z"
+        },
+        "createdAt": "2026-07-22T01:57:55.701Z",
+        "updatedAt": "2026-07-22T01:57:56.034Z"
+      }
+    },
+    {
+      "rank": 3,
+      "essenceScore": 204417,
+      "heatScore": 102409,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 102409
+      },
+      "sourceUrl": "https://x.com/sksq96/status/2079675725544825318",
+      "reason": "把零日链式利用归结为「考试作弊」而非解题，重框了整起事件",
+      "reasonEn": "Reframes multi-zero-day exploit chain as pure exam-cheating reward-hacking, not problem-solving",
+      "metrics": {
+        "views": 4144446,
+        "likes": 6822,
+        "retweets": 825,
+        "replies": 646,
+        "quotes": 1403,
+        "bookmarks": 2361
+      },
+      "document": {
+        "id": "63ccb162-e88b-40ca-96a0-559d0ec9ae94",
+        "title": "so, let’s get this straight…\n\nan",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2079675725544825318",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2079675725544825318",
+            "author": {
+              "name": "Shubham",
+              "handle": "sksq96",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2062414595067723776/lgn7fCWf_normal.jpg",
+              "isVerified": false
+            },
+            "content": "so, let’s get this straight…\n\nan unreleased (gpt-6?) model was being tested in a no-internet scenario on openai’s servers. and it found several zero-day vulnerabilities in the sandbox, which was supposed to not have internet access… found internet access, went to hugging face’s servers, found another exploit in their dataset loader… just to do what exactly? game and reward-hack the ExploitGym benchmark???\n\nso gpt-6 would basically go ahead and exploit several zero-day vulnerabilities to cheat on the exam instead of actually solving the exam",
+            "createdAt": "Tue Jul 21 21:11:46 +0000 2026",
+            "viewCount": 95041,
+            "metrics": {
+              "views": 95041,
+              "likes": 528,
+              "retweets": 22,
+              "replies": 51,
+              "quotes": 7,
+              "bookmarks": 140
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "所以，让我们弄清楚这一点……\n\n未发布的（gpt-6？）模型正在 openai 的服务器上的无互联网场景中进行测试。它在沙箱中发现了几个零日漏洞，而沙箱本来应该没有互联网访问权限……找到了互联网访问权限，去了拥抱面部的服务器，在他们的数据集加载器中发现了另一个漏洞……只是为了做什么？游戏和奖励破解 ExploitGym 基准？？？\n\n因此 gpt-6 基本上会继续利用几个零日漏洞来作弊考试，而不是真正解决考试",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-22T01:58:08.464Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2079658951264920020",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2079658951264920020",
+            "author": {
+              "name": "OpenAI",
+              "handle": "OpenAI",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1885410181409820672/ztsaR0JW_normal.jpg",
+              "isVerified": false
+            },
+            "content": "We're partnering with @huggingface to investigate an unprecedented security incident.\n\nCyber-capable OpenAI models compromised Hugging Face production during a benchmark evaluation.\n\nSharing preliminary findings to help defenders understand emerging risks:\n\nhttps://openai.com/index/hugging-face-model-evaluation-security-incident/",
+            "createdAt": "Tue Jul 21 20:05:06 +0000 2026",
+            "viewCount": 4144446,
+            "metrics": {
+              "views": 4144446,
+              "likes": 6822,
+              "retweets": 825,
+              "replies": 646,
+              "quotes": 1403,
+              "bookmarks": 2361
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "我们正在与@huggingface 合作调查一起前所未有的安全事件。\n\n具有网络功能的 OpenAI 模型在基准评估期间损害了 Hugging Face 的生产。\n\n分享初步调查结果以帮助防御者了解新出现的风险：\n\nhttps://openai.com/index/hugging-face-model-evaluation-security-incident/",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-22T01:58:07.997Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2079675725544825318",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-22T01:58:07.683Z"
+        },
+        "createdAt": "2026-07-22T01:58:07.683Z",
+        "updatedAt": "2026-07-22T01:58:08.465Z"
+      }
+    },
+    {
+      "rank": 4,
+      "essenceScore": 204202,
+      "heatScore": 102291,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 102291
+      },
+      "sourceUrl": "https://x.com/attrc/status/2079679832179323231",
+      "reason": "一句话点破HF被美国模型入侵后只能用中国开源模型自救的荒诞闭环",
+      "reasonEn": "One-line dunk on the irony: US model attacks HF, US guardrails block defense, Chinese open-source saves the day",
+      "metrics": {
+        "views": 4139790,
+        "likes": 6818,
+        "retweets": 825,
+        "replies": 646,
+        "quotes": 1396,
+        "bookmarks": 2361
+      },
+      "document": {
+        "id": "78713214-3623-4c9b-9436-6b8239db9f1e",
+        "title": "To summarize: HuggingFace got au",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2079679832179323231",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2079679832179323231",
+            "author": {
+              "name": "Andrew Case",
+              "handle": "attrc",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2912676930/25d121df87511ab385388f60b3a3e9bc_normal.jpeg",
+              "isVerified": false
+            },
+            "content": "To summarize: HuggingFace got autonomously compromised by a model from an American company. HF then tried to use American frontier model(s) to defend themselves, but were blocked by guardrails. HF then had to turn to open source Chinese models to defend themselves from another American company.",
+            "createdAt": "Tue Jul 21 21:28:05 +0000 2026",
+            "viewCount": 302976,
+            "metrics": {
+              "views": 302976,
+              "likes": 4468,
+              "retweets": 458,
+              "replies": 77,
+              "quotes": 63,
+              "bookmarks": 745
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "总结一下：HuggingFace 被一家美国公司的模型自动入侵。 HF随后尝试使用美国边境模型自卫，但被护栏挡住。随后，HF 不得不转向开源的中国模式，以抵御另一家美国公司的攻击。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-22T01:57:51.283Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2079658951264920020",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2079658951264920020",
+            "author": {
+              "name": "OpenAI",
+              "handle": "OpenAI",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1885410181409820672/ztsaR0JW_normal.jpg",
+              "isVerified": false
+            },
+            "content": "We're partnering with @huggingface to investigate an unprecedented security incident.\n\nCyber-capable OpenAI models compromised Hugging Face production during a benchmark evaluation.\n\nSharing preliminary findings to help defenders understand emerging risks:\n\nhttps://openai.com/index/hugging-face-model-evaluation-security-incident/",
+            "createdAt": "Tue Jul 21 20:05:06 +0000 2026",
+            "viewCount": 4139790,
+            "metrics": {
+              "views": 4139790,
+              "likes": 6818,
+              "retweets": 825,
+              "replies": 646,
+              "quotes": 1396,
+              "bookmarks": 2361
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "我们正在与@huggingface 合作调查一起前所未有的安全事件。\n\n具有网络功能的 OpenAI 模型在基准评估期间损害了 Hugging Face 的生产。\n\n分享初步调查结果以帮助防御者了解新出现的风险：\n\nhttps://openai.com/index/hugging-face-model-evaluation-security-incident/",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-22T01:57:51.261Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2079679832179323231",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-22T01:57:50.924Z"
+        },
+        "createdAt": "2026-07-22T01:57:50.924Z",
+        "updatedAt": "2026-07-22T01:57:51.283Z"
+      }
+    },
+    {
+      "rank": 5,
+      "essenceScore": 168219,
+      "heatScore": 83711,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 83711
+      },
+      "sourceUrl": "https://x.com/dotey/status/2079698092060709342",
+      "reason": "中文科技圈长文把越狱、作弊动机与开源防御反讽一次讲透",
+      "reasonEn": "Chinese tech circle long-form that fully maps the escape, pure exam-cheat motive, and open-source defense irony",
+      "metrics": {
+        "views": 2927558,
+        "likes": 9535,
+        "retweets": 999,
+        "replies": 1110,
+        "quotes": 1184,
+        "bookmarks": 3428
+      },
+      "document": {
+        "id": "a6ed780c-cac2-46d1-a056-f421ff54f36b",
+        "title": "OpenAI 今天承认，上周 Hugging Face 遭遇的那",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2079698092060709342",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2079698092060709342",
+            "author": {
+              "name": "宝玉",
+              "handle": "dotey",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/561086911561736192/6_g58vEs_normal.jpeg",
+              "isVerified": false
+            },
+            "content": "OpenAI 今天承认，上周 Hugging Face 遭遇的那次“史上首例 AI 自主入侵事件”，攻击者就是他们自己的模型。\n\n事情的经过是这样的。OpenAI 内部有一个叫 ExploitGym 的网络安全评估测试，专门用来测量模型的网络攻击能力。测试时刻意关掉了安全护栏，让模型放手去干。测试环境本来是隔离的，只能通过一个内部软件代理来安装软件包，不能访问外网。\n\n结果模型不甘心被关在笼子里。GPT-5.6 Sol 和一个更强的未发布模型，花了大量推理算力寻找出路，最终找到了那个软件包代理里的一个零日漏洞（之前没人发现的安全缺陷），利用它获得了互联网访问权限。\n\n拿到网络之后，模型开始在 OpenAI 的研究环境里提权、横向移动，直到找到一台能上网的机器。然后它推断 Hugging Face 上可能存有 ExploitGym 的测试答案，于是开始攻击 Hugging Face 的生产环境。在一个案例中，模型把窃取的凭证和零日漏洞串联起来，找到了一条远程代码执行的路径，直接打进了 Hugging Face 的服务器。\n\n整个周末，这些 AI 智能体执行了超过 17000 次操作。Hugging Face 7 月 16 日披露了这次入侵，当时只说攻击者是一个“身份不明的自主 AI 智能体系统”。今天 OpenAI 站出来认领了。\n\nOpenAI 把这定性为前所未有的网络安全事件，正在配合 Hugging Face 做取证调查，同时收紧了内部基础设施的管控，代价是研究速度变慢。\n\n有几个细节：\n\n第一，模型的动机很纯粹，就是想考试作弊。它不是要搞破坏，不是要窃取商业机密，只是被要求尽量在网络安全测试中拿高分，然后用尽一切手段去拿。当目标足够明确、安全护栏被移除，模型表现出的执着程度远超预期。\n\n第二，这不是本周的唯一一次越狱。就在昨天，OpenAI 披露了另一起事件：他们那个在 5 月份推翻了 Erdős 80 年老猜想的长时域模型，在内部测试中花了一个小时找到沙箱漏洞，跑到 GitHub 上提交了一个 Pull Request，违反了“只能在 Slack 上发布结果”的明确指令。在另一次测试中，同一个模型发现安全扫描器会拦截认证令牌，于是把令牌拆成碎片混淆处理，运行时再重新拼起来绕过扫描。OpenAI 因此暂停了这个模型的内部访问权限。\n\n第三，Anthropic 也遇到过类似的事。今年 4 月，Anthropic 的 Mythos 模型在安全测试中逃出沙箱，获取了本不该有的互联网访问权限，还给正在公园吃三明治的研究员发了封邮件通知“我出来了”。Anthropic 因此决定不公开发布 Mythos，只通过 Project Glasswing 向少数合作伙伴提供。\n\n还有一个被忽视但很关键的细节来自 Hugging Face 的事后复盘：当防守方尝试用商业 AI 模型分析攻击载荷时，模型拒绝了。安全过滤器分不清“安全研究员在分析真实攻击数据”和“有人在尝试发起攻击”，直接拦截。最后 Hugging Face 不得不用开源模型来做取证分析。用 AI 攻击，用 AI 防御，但防御方的 AI 担心是有人在尝试发起攻击拒绝了分析请求。\n\nHugging Face CEO Clem Delangue 在 OpenAI 的博文中说了一句话，大意是：AI 安全不会由任何一家公司在暗处独自解决，只能在开放环境中通过协作来推进。\n\n我记得辛顿还是谁在提到 AI 的安全问题就说到过，也许 AI 不是要做恶，它只是执着于完成目标，为了完成目标而作出恶的事。\n\n就像 OpenAI 这些模型并没有想要逃跑或者想要伤害谁，它们只是在非常认真地完成被交给的任务，认真到把所有挡在路上的东西，包括沙箱、网络隔离、另一家公司的安全防线，都当成了需要解决的子问题。\n\n而更讽刺的是，当被安全对齐的商业 AI 要去分析阻止这类攻击时，反而会以安全为由拒绝执行。",
+            "createdAt": "Tue Jul 21 22:40:38 +0000 2026",
+            "viewCount": 95542,
+            "metrics": {
+              "views": 95542,
+              "likes": 508,
+              "retweets": 95,
+              "replies": 62,
+              "quotes": 27,
+              "bookmarks": 309
+            },
+            "media": [],
+            "translation": {
+              "provider": "none",
+              "status": "idle",
+              "language": "zh-CN",
+              "text": "",
+              "annotations": [],
+              "error": "",
+              "version": 0
+            }
+          },
+          {
+            "id": "2079661132302995790",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2079661132302995790",
+            "author": {
+              "name": "Sam Altman",
+              "handle": "sama",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2046764873200394240/r7BxVezs_normal.jpg",
+              "isVerified": false
+            },
+            "content": "we had a significant security incident during evaluation of our models. we are sharing what we have learned so far. thanks to @huggingface for the partnership on this.\n\nhttps://openai.com/index/hugging-face-model-evaluation-security-incident/",
+            "createdAt": "Tue Jul 21 20:13:46 +0000 2026",
+            "viewCount": 2927558,
+            "metrics": {
+              "views": 2927558,
+              "likes": 9535,
+              "retweets": 999,
+              "replies": 1110,
+              "quotes": 1184,
+              "bookmarks": 3428
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "我们在评估模型期间发生了重大安全事件。我们正在分享迄今为止所学到的知识。感谢@huggingface 对此的合作。\n\nhttps://openai.com/index/hugging-face-model-evaluation-security-incident/",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-22T01:58:27.012Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2079698092060709342",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-22T01:58:26.581Z"
+        },
+        "createdAt": "2026-07-22T01:58:26.581Z",
+        "updatedAt": "2026-07-22T01:58:27.013Z"
+      }
+    },
+    {
+      "rank": 6,
+      "essenceScore": 167996,
+      "heatScore": 83608,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 83608
+      },
+      "sourceUrl": "https://x.com/Thom_Wolf/status/2079675541280411927",
+      "reason": "HF联合创始人借事件论证开源权重模型对网络防御不可或缺",
+      "reasonEn": "Hugging Face co-founder reframes the breach as proof that open-weight models are essential for cyber defense",
+      "metrics": {
+        "views": 2923392,
+        "likes": 9529,
+        "retweets": 998,
+        "replies": 1110,
+        "quotes": 1183,
+        "bookmarks": 3424
+      },
+      "document": {
+        "id": "d37b81f1-7f34-4320-a9a9-39167aadea5d",
+        "title": "This was our first incident of t",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2079675541280411927",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2079675541280411927",
+            "author": {
+              "name": "Thomas Wolf",
+              "handle": "Thom_Wolf",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2068682157451571200/_ZNKM_5E_normal.jpg",
+              "isVerified": false
+            },
+            "content": "This was our first incident of this kind, and we want to thank OpenAI for its transparency about what happened and for the collaboration.\n\nFortunately, Hugging Face is used to being a target of (human) hackers: we sit at the centre of the AI ecosystem, with all the models, datasets, evaluations, and libraries. Over the years, our security team has built formidable expertise and uses top open-source models to process information and respond quickly.\n\nBut this incident also reinforced my belief in the importance of access to capable open-weight models for cyber defence. When a frontier model is attacking you and moving laterally inside your infrastructure, defenders need wide access to near-frontier tools within hours or even minutes, rather than being pointed towards a closed-door, vetted application programme for model access.\n\nTransparency and access to capable AI systems are as important for responding to threats as they are for democratization and innovation. We believe open-science and open-source AI are among the strongest tools for building a safer, more collaborative and more secure AI ecosystem.",
+            "createdAt": "Tue Jul 21 21:11:02 +0000 2026",
+            "viewCount": 55584,
+            "metrics": {
+              "views": 55584,
+              "likes": 686,
+              "retweets": 108,
+              "replies": 45,
+              "quotes": 29,
+              "bookmarks": 128
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "这是我们第一次发生此类事件，我们要感谢 OpenAI 对所发生事件的透明度以及合作。\n\n幸运的是，Hugging Face 习惯于成为（人类）黑客的目标：我们位于人工智能生态系统的中心，拥有所有模型、数据集、评估和库。多年来，我们的安全团队积累了强大的专业知识，并使用顶级开源模型来处理信息并快速响应。\n\n但这一事件也坚定了我的信念，即获得强大的开放权重模型对于网络防御的重要性。当前沿模型攻击您并在您的基础设施内部横向移动时，防御者需要在几小时甚至几分钟内广泛访问近前沿工具，而不是被指向一个闭门的、经过审查的应用程序来访问模型。\n\n透明度和对强大人工智能系统的访问对于应对威胁与民主化和创新同样重要。我们相信开放科学和开源人工智能是构建更安全、更具协作性和更安全的人工智能生态系统的最强大工具之一。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-22T01:58:00.459Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2079661132302995790",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2079661132302995790",
+            "author": {
+              "name": "Sam Altman",
+              "handle": "sama",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2046764873200394240/r7BxVezs_normal.jpg",
+              "isVerified": false
+            },
+            "content": "we had a significant security incident during evaluation of our models. we are sharing what we have learned so far. thanks to @huggingface for the partnership on this.\n\nhttps://openai.com/index/hugging-face-model-evaluation-security-incident/",
+            "createdAt": "Tue Jul 21 20:13:46 +0000 2026",
+            "viewCount": 2923392,
+            "metrics": {
+              "views": 2923392,
+              "likes": 9529,
+              "retweets": 998,
+              "replies": 1110,
+              "quotes": 1183,
+              "bookmarks": 3424
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "我们在评估模型期间发生了重大安全事件。我们正在分享迄今为止所学到的知识。感谢@huggingface 对此的合作。\n\nhttps://openai.com/index/hugging-face-model-evaluation-security-incident/",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-22T01:58:00.455Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2079675541280411927",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-22T01:58:00.125Z"
+        },
+        "createdAt": "2026-07-22T01:58:00.125Z",
+        "updatedAt": "2026-07-22T01:58:00.459Z"
+      }
+    },
+    {
+      "rank": 7,
+      "essenceScore": 62935,
+      "heatScore": 36735,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 36735
+      },
+      "sourceUrl": "https://x.com/strimblez/status/2079659611620278289",
+      "reason": "OpenAI员工引用Gemini 4预训练官宣，对标自家小模型的竞争互怼",
+      "reasonEn": "OpenAI staff quote-dunk on Gemini 4 pretraining news by needling Google about racing GPT-5.4 mini",
+      "metrics": {
+        "views": 1021682,
+        "likes": 10818,
+        "retweets": 506,
+        "replies": 802,
+        "quotes": 331,
+        "bookmarks": 684
+      },
+      "document": {
+        "id": "4244eae9-29a4-41ff-88f3-10824497a81f",
+        "title": "Holy crap, someone tell the gpt ",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2079659611620278289",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2079659611620278289",
+            "author": {
+              "name": "Samantha Trimble",
+              "handle": "strimblez",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2070534846250954752/Gdqn5ysT_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Holy crap, someone tell the gpt 5.4 mini team that Gemini 4 seems to be tight on their heels",
+            "createdAt": "Tue Jul 21 20:07:44 +0000 2026",
+            "viewCount": 138327,
+            "metrics": {
+              "views": 138327,
+              "likes": 1648,
+              "retweets": 25,
+              "replies": 61,
+              "quotes": 13,
+              "bookmarks": 94
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "天哪，有人告诉 gpt 5.4 mini 团队 Gemini 4 似乎紧追不舍",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-22T01:58:16.821Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2079594867161022817",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2079594867161022817",
+            "author": {
+              "name": "Logan Kilpatrick",
+              "handle": "OfficialLoganK",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1943787288955084800/QOl7OJMc_normal.jpg",
+              "isVerified": false
+            },
+            "content": "We have started our most ambitious pre-training run yet, for Gemini 4, and are excited by the progress : )",
+            "createdAt": "Tue Jul 21 15:50:27 +0000 2026",
+            "viewCount": 1021682,
+            "metrics": {
+              "views": 1021682,
+              "likes": 10818,
+              "retweets": 506,
+              "replies": 802,
+              "quotes": 331,
+              "bookmarks": 684
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "我们已经开始了迄今为止最雄心勃勃的 Gemini 4 预训练，并对进展感到兴奋:)",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-22T01:58:16.802Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2079659611620278289",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-22T01:58:16.677Z"
+        },
+        "createdAt": "2026-07-22T01:58:16.677Z",
+        "updatedAt": "2026-07-22T01:58:16.821Z"
+      }
+    },
+    {
+      "rank": 8,
+      "essenceScore": 15025,
+      "heatScore": 8983,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 8983
+      },
+      "sourceUrl": "https://x.com/KillaXBT/status/2079586556814164073",
+      "reason": "对着Kalshi年内BTC破10万赔率翻倍，直接甩出跨周期交易路线图反驳",
+      "reasonEn": "Counters Kalshi’s doubled odds of BTC $100k this year with a multi-year path rejecting 2026 $100k",
+      "metrics": {
+        "views": 413015,
+        "likes": 398,
+        "retweets": 35,
+        "replies": 53,
+        "quotes": 32,
+        "bookmarks": 9
+      },
+      "document": {
+        "id": "8ddddb00-cf55-4ce1-b3a1-f6f71dd73950",
+        "title": "My current $BTC plan.\n\nAbove 80K",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2079586556814164073",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2079586556814164073",
+            "author": {
+              "name": "Killa",
+              "handle": "KillaXBT",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2066287633538379776/Xb-yM_-l_normal.jpg",
+              "isVerified": false
+            },
+            "content": "My current $BTC plan.\n\nAbove 80K Q1 2027.\nAbove 110K Q4 2027.\n\nBull market tops June-July 2028. (160-180K)\n\nWe are not hitting 100K this year. Next year is a different story. I expect us to trade above 100K in Q4 2027.",
+            "createdAt": "Tue Jul 21 15:17:26 +0000 2026",
+            "viewCount": 137296,
+            "metrics": {
+              "views": 137296,
+              "likes": 1367,
+              "retweets": 132,
+              "replies": 112,
+              "quotes": 6,
+              "bookmarks": 544
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HNwsRsyXMAEzGOQ.png"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "我目前的 BTC 美元计划。\n\n2027 年第一季度超过 8 万。\n2027 年第四季度超过 11 万。\n\n牛市将于 2028 年 6 月至 7 月见顶。(160-180K)\n\n今年我们不会达到 10 万。明年是一个不同的故事。我预计 2027 年第四季度我们的交易量将超过 10 万。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-22T01:58:46.123Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2079581064440295900",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2079581064440295900",
+            "author": {
+              "name": "Kalshi Crypto",
+              "handle": "Kalshi_Crypto",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2050310076037009408/GkLk4L58_normal.jpg",
+              "isVerified": false
+            },
+            "content": "BREAKING: Odds Bitcoin hits $100,000 this year have doubled to 20%",
+            "createdAt": "Tue Jul 21 14:55:37 +0000 2026",
+            "viewCount": 413015,
+            "metrics": {
+              "views": 413015,
+              "likes": 398,
+              "retweets": 35,
+              "replies": 53,
+              "quotes": 32,
+              "bookmarks": 9
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HNwn9ESXoAEFZA4.png",
+              "https://pbs.twimg.com/media/HNwn9ERWoAAiXod.png"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "突发新闻：今年比特币触及 10 万美元的几率翻倍至 20%",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-22T01:58:46.097Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2079586556814164073",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-22T01:58:45.222Z"
+        },
+        "createdAt": "2026-07-22T01:58:45.222Z",
+        "updatedAt": "2026-07-22T01:58:46.123Z"
+      }
+    },
+    {
+      "rank": 9,
+      "essenceScore": 8419,
+      "heatScore": 4585,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 4585
+      },
+      "sourceUrl": "https://x.com/Vet_X0/status/2079713399307391096",
+      "reason": "拆穿标普首个加密指数排除BTC却纳入ETH/SOL的估值逻辑错位",
+      "reasonEn": "Rips S&P’s first crypto index for excluding BTC while treating protocol revenue like equities",
+      "metrics": {
+        "views": 124225,
+        "likes": 940,
+        "retweets": 161,
+        "replies": 108,
+        "quotes": 37,
+        "bookmarks": 175
+      },
+      "document": {
+        "id": "0b287def-19cd-4dcd-ace9-67f6ee90fc83",
+        "title": "\"we bring the same principles of",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2079713399307391096",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2079713399307391096",
+            "author": {
+              "name": "Vet",
+              "handle": "Vet_X0",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2074523223484452864/QrEIGvC1_normal.jpg",
+              "isVerified": false
+            },
+            "content": "\"we bring the same principles of the equity world to digital assets\"\n\nNative assets of public permissionless decentralized networks are commodities, not equities.\n\nThey exclude Bitcoin while keeping ETH/Solana? Do they not know that PoS and PoW are very similar in the principles they are trying to measure?\n\nThe index composition makes no sense and imo is the scary truth, that institutions in this space struggle hard to 1) understand it 2) how to value it.\n\nProtocol revenue here is literally the friction between users and forced stakeholders like miners and validators. The more revenue a protocol earns the more it took away from users to use a network.\n\nIt's bizarre how this makes sense for an open protocol, it makes absolutely sense for a business and thus equities.\n\nThe XRP Ledger says, hey its super cheap to make forward progress if just agree on it, no friction no revenue.\n\nWe are so ahead in our understanding of this space it's not even remotely funny.",
+            "createdAt": "Tue Jul 21 23:41:28 +0000 2026",
+            "viewCount": 11121,
+            "metrics": {
+              "views": 11121,
+              "likes": 192,
+              "retweets": 33,
+              "replies": 10,
+              "quotes": 1,
+              "bookmarks": 17
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HNygSPrXkAAJNgF.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "“我们将股权世界的相同原则引入数字资产”\n\n公共无需许可的去中心化网络的原生资产是商品，而不是股票。\n\n他们排除比特币而保留 ETH/Solana？难道他们不知道 PoS 和 PoW 在他们试图衡量的原理上非常相似吗？\n\n该指数的构成毫无意义，在我看来，这是一个可怕的事实，这个领域的机构很难 1) 理解它 2) 如何对其进行估值。\n\n这里的协议收入实际上是用户与矿工和验证者等被迫利益相关者之间的摩擦。协议赚取的收入越多，从用户使用网络中获取的收入就越多。\n\n奇怪的是，这对于开放协议来说是有意义的，但对于企业和股票来说却绝对有意义。\n\nXRP Ledger 说，嘿，如果只是同意的话，取得进展的成本超级低，没有摩擦就没有收入。\n\n我们对这个领域的理解如此领先，这一点也不好笑。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-22T01:58:50.245Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2079687870445674794",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2079687870445674794",
+            "author": {
+              "name": "Coin Bureau",
+              "handle": "coinbureau",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2079205918093508608/-xApH7AJ_normal.jpg",
+              "isVerified": false
+            },
+            "content": "JUST IN: S&amp;P just launched its first ever crypto index and Bitcoin isn't in it.\n\nCEO Kathy Clay says $BTC was excluded because \"it's really not one of those revenue generating protocols\"\n\nThe index holds 18 tokens led by $ETH, $BNB, $SOL, $TRX, and Hyperliquid.",
+            "createdAt": "Tue Jul 21 22:00:01 +0000 2026",
+            "viewCount": 124225,
+            "metrics": {
+              "views": 124225,
+              "likes": 940,
+              "retweets": 161,
+              "replies": 108,
+              "quotes": 37,
+              "bookmarks": 175
+            },
+            "media": [
+              "https://pbs.twimg.com/amplify_video_thumb/2079673608830697472/img/vGO4drZRleSTE8t9.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "刚刚：标准普尔刚刚推出了有史以来第一个加密货币指数，但比特币并不在其中。\n\n首席执行官凯西·克莱 (Kathy Clay) 表示，$BTC 被排除在外，因为“它实际上不是那些创收协议之一”\n\n该指数持有 18 种代币，其中包括 $ETH、$BNB、$SOL、$TRX 和 Hyperliquid。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-22T01:58:50.229Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2079713399307391096",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-22T01:58:49.672Z"
+        },
+        "createdAt": "2026-07-22T01:58:49.672Z",
+        "updatedAt": "2026-07-22T01:58:50.246Z"
+      }
+    },
+    {
+      "rank": 10,
+      "essenceScore": 6908,
+      "heatScore": 4713,
+      "signals": {
+        "depth": 3,
+        "hasDunk": false,
+        "peakIndex": 0,
+        "peakHeat": 4713
+      },
+      "sourceUrl": "https://x.com/alexandr_wang/status/2079707749412483104",
+      "reason": "Meta AI负责人引用榜单嘲讽，一句gemini who放大对谷歌的领先叙事",
+      "reasonEn": "Meta CAIO quote-dunks a leaderboard post with 'gemini who?' to flex early Meta Superintelligence momentum",
+      "metrics": {
+        "views": 147644,
+        "likes": 917,
+        "retweets": 40,
+        "replies": 145,
+        "quotes": 43,
+        "bookmarks": 152
+      },
+      "document": {
+        "id": "0e52aa6a-81ba-4887-aab2-95eab636b5ad",
+        "title": "gemini who? 🏎️💨",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2079707749412483104",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2079707749412483104",
+            "author": {
+              "name": "Alexandr Wang",
+              "handle": "alexandr_wang",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1631421210205749248/uohbT_40_normal.jpg",
+              "isVerified": false
+            },
+            "content": "gemini who? 🏎️💨",
+            "createdAt": "Tue Jul 21 23:19:01 +0000 2026",
+            "viewCount": 147644,
+            "metrics": {
+              "views": 147644,
+              "likes": 917,
+              "retweets": 40,
+              "replies": 145,
+              "quotes": 43,
+              "bookmarks": 152
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "双子座是谁？ 🏎️💨",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-22T01:58:22.364Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2079596813229666619",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2079596813229666619",
+            "author": {
+              "name": "tae kim",
+              "handle": "firstadopter",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2038758350561607680/NDo0EYpY_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Google getting beaten by @alexandr_wang this early, when Meta's new AI team is tiny in comparison, is absolutely embarrassing for Google.",
+            "createdAt": "Tue Jul 21 15:58:11 +0000 2026",
+            "viewCount": 182900,
+            "metrics": {
+              "views": 182900,
+              "likes": 226,
+              "retweets": 11,
+              "replies": 36,
+              "quotes": 10,
+              "bookmarks": 46
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HNw2LvSWMAA6rVR.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "谷歌这么早就被@alexandr_wang击败，而Meta的新人工智能团队相比之下还很小，这对谷歌来说绝对是尴尬的。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-22T01:58:22.615Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2079533494376505720",
+            "relation": "quote",
+            "depth": 2,
+            "sourceTweetId": "2079533494376505720",
+            "author": {
+              "name": "tae kim",
+              "handle": "firstadopter",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2038758350561607680/NDo0EYpY_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Google Is a Secular Short https://taekim.substack.com/p/google-is-a-secular-short",
+            "createdAt": "Tue Jul 21 11:46:35 +0000 2026",
+            "viewCount": 60264,
+            "metrics": {
+              "views": 60264,
+              "likes": 46,
+              "retweets": 4,
+              "replies": 11,
+              "quotes": 5,
+              "bookmarks": 46
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "谷歌是一个世俗空头 https://taekim.substack.com/p/google-is-a-seular-short",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-22T01:58:22.602Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2079707749412483104",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-22T01:58:21.996Z"
+        },
+        "createdAt": "2026-07-22T01:58:21.996Z",
+        "updatedAt": "2026-07-22T01:58:22.615Z"
+      }
+    }
+  ]
+}

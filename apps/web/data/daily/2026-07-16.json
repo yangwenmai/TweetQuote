@@ -1,0 +1,1364 @@
+{
+  "date": "2026-07-16",
+  "title": "每日 X 精华引用榜",
+  "titleEn": "Daily Quote Essence on X",
+  "generatedAt": "2026-07-16T10:43:54.850Z",
+  "entries": [
+    {
+      "rank": 1,
+      "essenceScore": 308547,
+      "heatScore": 134257,
+      "signals": {
+        "depth": 3,
+        "hasDunk": true,
+        "peakIndex": 2,
+        "peakHeat": 134257
+      },
+      "sourceUrl": "https://x.com/rasbt/status/2077540575255880126",
+      "reason": "在他人参数盘点之上补上 conv/RMSNorm/相对位置偏置等架构要点，专家拆解胜过官宣",
+      "reasonEn": "Expert architecture add-on (conv layers, embedding RMSNorm, relative bias vs RoPE) that out-explains the release posts",
+      "metrics": {
+        "views": 5064166,
+        "likes": 12098,
+        "retweets": 1623,
+        "replies": 475,
+        "quotes": 1001,
+        "bookmarks": 6027
+      },
+      "document": {
+        "id": "3c6698e6-4109-41e1-abf7-b338ff72fbb7",
+        "title": "Interesting surprise drop from T",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2077540575255880126",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2077540575255880126",
+            "author": {
+              "name": "Sebastian Raschka",
+              "handle": "rasbt",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1661187442043486209/a3E4t1eV_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Interesting surprise drop from Thinky! The Inkling model looks pretty solid on benchmarks, and it has some little surprises in its architecture:\n\n- Small conv layers in several places\n- An RMSNorm for the embeddings (before the block RMSNorm)\n- Rel. position bias instead of RoPE",
+            "createdAt": "Wed Jul 15 23:47:26 +0000 2026",
+            "viewCount": 59346,
+            "metrics": {
+              "views": 59346,
+              "likes": 772,
+              "retweets": 81,
+              "replies": 20,
+              "quotes": 5,
+              "bookmarks": 359
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HNToFIsW4AAmqEO.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "Thinky 带来有趣的惊喜！ Inkling 模型在基准测试中看起来非常稳定，并且其架构中有一些小惊喜：\n\n- 多个地方的小型转换层\n- 嵌入的 RMSNorm（在块 RMSNorm 之前）\n- 相对。位置偏差代替 RoPE",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-16T10:43:17.057Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2077463243463721085",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2077463243463721085",
+            "author": {
+              "name": "elie",
+              "handle": "eliebakouch",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1745893660099592193/MmYemsw6_normal.jpg",
+              "isVerified": false
+            },
+            "content": "first open weight thinking machine model!! 975B total, 41B active trained on 45T tokens, 1M context, multimodal in\n\nsliding window with a 5:1 ratio and 512 size, deepseek aux-free load balancing and 2 shared experts (usually people only use 1), actually curious why the model is less sparse than kimi (~4.2% vs 3.2%). they use a short convolution after k and v, output and ffn (see plot), muon (they cite manifold muon but mention weight decay so not sure), muP, and have a very nice RL scaling curve and chain of thought!\n\none very cool part of the release imo is how well their small variant (276B total, 12B active) performs compared to the big one. they mention they changed the pre-training data mix and recipe, very curious about those changes and to see them scaled up to ~1T (or more?) soon 👀\n\n> \"It is not the most performant model available today, closed or open. We trained Inkling for solid capabilities across the board rather than state-of-the-art performance in a single area, to serve as a foundation for the models we will train in the future.\"\n\nalso this is really refreshing to see in a model release, huge congrats :)",
+            "createdAt": "Wed Jul 15 18:40:09 +0000 2026",
+            "viewCount": 86118,
+            "metrics": {
+              "views": 86118,
+              "likes": 461,
+              "retweets": 39,
+              "replies": 18,
+              "quotes": 3,
+              "bookmarks": 162
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HNShuQKW0AAdxY7.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "首次开启体重思维机模型！！总共 975B，41B 主动训练了 45T 令牌，1M 上下文，多模式\n\n比例为 5:1、大小为 512 的滑动窗口、deepseek 无辅助负载平衡和 2 个共享专家（通常人们只使用 1 个），实际上很好奇为什么该模型比 kimi 稀疏（~4.2% vs 3.2%）。他们在 k 和 v、输出和 ffn（参见图）、muon（他们引用了流形 muon，但提到了权重衰减，所以不确定）、muP 之后使用了一个短卷积，并且有一个非常好的 RL 缩放曲线和思想链！\n\n在我看来，该版本的一个非常酷的部分是他们的小版本（总共 276B，12B 活动）与大版本相比表现如何。他们提到他们改变了预训练数据组合和配方，对这些变化非常好奇，并希望看到它们很快扩展到约 1T（或更多？）👀\n\n>“无论是封闭的还是开放的，它都不是当今性能最好的模型。我们对 Inkling 进行了全面的训练，使其具备扎实的能力，而不是在单一领域达到最先进的性能，以此作为我们未来训练模型的基础。”\n\n而且，在模型发布中看到这确实令人耳目一新，巨大的祝贺:)",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-16T10:43:17.058Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2077454609551921208",
+            "relation": "quote",
+            "depth": 2,
+            "sourceTweetId": "2077454609551921208",
+            "author": {
+              "name": "Thinking Machines",
+              "handle": "thinkymachines",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2075275500420001792/Q9J4M1DL_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Today, we are introducing Inkling.\n\nInkling reasons efficiently across text, image, and audio modalities. We are making the full weights available.\n\nhttps://thinkingmachines.ai/news/introducing-inkling/\n\nAvailable today for fine-tuning on Tinker. Play with it in the Inkling Playground. 🧵",
+            "createdAt": "Wed Jul 15 18:05:50 +0000 2026",
+            "viewCount": 5064166,
+            "metrics": {
+              "views": 5064166,
+              "likes": 12098,
+              "retweets": 1623,
+              "replies": 475,
+              "quotes": 1001,
+              "bookmarks": 6027
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "今天，我们要介绍的是Inkling。\n\nInkling 可以跨文本、图像和音频方式有效地进行推理。我们正在提供完整的权重。\n\nhttps://thinkingmachines.ai/news/introducing-inkling/\n\n今天可在 Tinker 上进行微调。在 Inkling Playground 中与它玩耍。 🧵",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-16T10:43:17.224Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2077540575255880126",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-16T10:43:16.890Z"
+        },
+        "createdAt": "2026-07-16T10:43:16.890Z",
+        "updatedAt": "2026-07-16T10:43:17.224Z"
+      }
+    },
+    {
+      "rank": 2,
+      "essenceScore": 288412,
+      "heatScore": 134256,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 134256
+      },
+      "sourceUrl": "https://x.com/indigox/status/2077521343105671301",
+      "reason": "中文圈第一时间把 Inkling 标成 Llama 之后美国真正可用的完全开放权重大模型",
+      "reasonEn": "Chinese-tech framing of Inkling as the first fully open-weight U.S. model worth playing with post-Llama",
+      "metrics": {
+        "views": 5064166,
+        "likes": 12097,
+        "retweets": 1623,
+        "replies": 475,
+        "quotes": 1001,
+        "bookmarks": 6027
+      },
+      "document": {
+        "id": "ae4e31c8-511d-49a4-b8c4-3faf4d4628db",
+        "title": "终于，美国也有了完全开放权重的大模型，在 Llama 失败之后 ",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2077521343105671301",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2077521343105671301",
+            "author": {
+              "name": "indigo",
+              "handle": "indigox",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1521250220067098624/ZhlFfRWZ_normal.png",
+              "isVerified": false
+            },
+            "content": "终于，美国也有了完全开放权重的大模型，在 Llama 失败之后 。。。Thinking Machines 的首个 OpenWeight Model - Inkling，从零开始完全在 GB300s 上训练，9750 亿参数，410 亿活跃，100 万上下文，完全多模态（文本、图像、音频），可控推理深度，大家又有可以玩的了！模型越多元，对用户越有利😘",
+            "createdAt": "Wed Jul 15 22:31:01 +0000 2026",
+            "viewCount": 70186,
+            "metrics": {
+              "views": 70186,
+              "likes": 239,
+              "retweets": 22,
+              "replies": 22,
+              "quotes": 1,
+              "bookmarks": 108
+            },
+            "media": [],
+            "translation": {
+              "provider": "none",
+              "status": "idle",
+              "language": "zh-CN",
+              "text": "",
+              "annotations": [],
+              "error": "",
+              "version": 0
+            }
+          },
+          {
+            "id": "2077454609551921208",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2077454609551921208",
+            "author": {
+              "name": "Thinking Machines",
+              "handle": "thinkymachines",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2075275500420001792/Q9J4M1DL_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Today, we are introducing Inkling.\n\nInkling reasons efficiently across text, image, and audio modalities. We are making the full weights available.\n\nhttps://thinkingmachines.ai/news/introducing-inkling/\n\nAvailable today for fine-tuning on Tinker. Play with it in the Inkling Playground. 🧵",
+            "createdAt": "Wed Jul 15 18:05:50 +0000 2026",
+            "viewCount": 5064166,
+            "metrics": {
+              "views": 5064166,
+              "likes": 12097,
+              "retweets": 1623,
+              "replies": 475,
+              "quotes": 1001,
+              "bookmarks": 6027
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "今天，我们要介绍的是Inkling。\n\nInkling 可以跨文本、图像和音频方式有效地进行推理。我们正在提供完整的权重。\n\nhttps://thinkingmachines.ai/news/introducing-inkling/\n\n今天可在 Tinker 上进行微调。在 Inkling Playground 中与它玩耍。 🧵",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-16T10:43:30.629Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2077521343105671301",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-16T10:43:30.565Z"
+        },
+        "createdAt": "2026-07-16T10:43:30.565Z",
+        "updatedAt": "2026-07-16T10:43:30.630Z"
+      }
+    },
+    {
+      "rank": 3,
+      "essenceScore": 288408,
+      "heatScore": 134257,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 134257
+      },
+      "sourceUrl": "https://x.com/Jason/status/2077664005515014653",
+      "reason": "用「Open Source/open weights… what OpenAI was supposed to be」把 Inkling 开源直接刺向 OpenAI 初心",
+      "reasonEn": "Sharp dunk: open weights as “what OpenAI was supposed to be,” reframing Thinking Machines’ drop as an industry rebuke",
+      "metrics": {
+        "views": 5064166,
+        "likes": 12098,
+        "retweets": 1623,
+        "replies": 475,
+        "quotes": 1001,
+        "bookmarks": 6027
+      },
+      "document": {
+        "id": "1a0fea27-0167-4a9c-89e4-62f493f9e44c",
+        "title": "Open Source, open weights… what ",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2077664005515014653",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2077664005515014653",
+            "author": {
+              "name": "@jason",
+              "handle": "Jason",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1828870492633104384/o37xorx4_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Open Source, open weights… what OpenAI was supposed to be\n\n@miramurati 👏\n\nGreat to see so much innovation from American startups… it’s blistering!",
+            "createdAt": "Thu Jul 16 07:57:54 +0000 2026",
+            "viewCount": 24479,
+            "metrics": {
+              "views": 24479,
+              "likes": 251,
+              "retweets": 10,
+              "replies": 4,
+              "quotes": 2,
+              "bookmarks": 26
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "开源、开放权重……OpenAI 应该是什么\n\n@米拉穆拉蒂👏\n\n很高兴看到美国初创公司有如此多的创新……真是太棒了！",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-16T10:43:22.185Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2077454609551921208",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2077454609551921208",
+            "author": {
+              "name": "Thinking Machines",
+              "handle": "thinkymachines",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2075275500420001792/Q9J4M1DL_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Today, we are introducing Inkling.\n\nInkling reasons efficiently across text, image, and audio modalities. We are making the full weights available.\n\nhttps://thinkingmachines.ai/news/introducing-inkling/\n\nAvailable today for fine-tuning on Tinker. Play with it in the Inkling Playground. 🧵",
+            "createdAt": "Wed Jul 15 18:05:50 +0000 2026",
+            "viewCount": 5064166,
+            "metrics": {
+              "views": 5064166,
+              "likes": 12098,
+              "retweets": 1623,
+              "replies": 475,
+              "quotes": 1001,
+              "bookmarks": 6027
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "今天，我们要介绍的是Inkling。\n\nInkling 可以跨文本、图像和音频方式有效地进行推理。我们正在提供完整的权重。\n\nhttps://thinkingmachines.ai/news/introducing-inkling/\n\n今天可在 Tinker 上进行微调。在 Inkling Playground 中与它玩耍。 🧵",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-16T10:43:21.678Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2077664005515014653",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-16T10:43:21.600Z"
+        },
+        "createdAt": "2026-07-16T10:43:21.600Z",
+        "updatedAt": "2026-07-16T10:43:22.186Z"
+      }
+    },
+    {
+      "rank": 4,
+      "essenceScore": 288362,
+      "heatScore": 134233,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 134233
+      },
+      "sourceUrl": "https://x.com/jxmnop/status/2077504236380946595",
+      "reason": "把 Inkling 发布重构成「唯一未蒸馏自 OpenAI/Anthropic 的开放权重前沿模型」，观点盖过原帖叙事",
+      "reasonEn": "Reframes Inkling as the rare open-weight frontier stack not distilled from OpenAI/Anthropic — the claim that defined the thread",
+      "metrics": {
+        "views": 5062983,
+        "likes": 12097,
+        "retweets": 1623,
+        "replies": 475,
+        "quotes": 1001,
+        "bookmarks": 6027
+      },
+      "document": {
+        "id": "edcd61dc-4abc-4405-806e-07fe45b2aaa8",
+        "title": "people are underestimating what ",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2077504236380946595",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2077504236380946595",
+            "author": {
+              "name": "Jack Morris",
+              "handle": "jxmnop",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1961438478299705344/7GZdkd4k_normal.jpg",
+              "isVerified": false
+            },
+            "content": "people are underestimating what a big deal this is\n\nthis is the ONLY open-weight model that's trained without distilling from OpenAI or Anthropic\n\n• Kimi distills\n• GLM distills\n• Qwen distills\n• Nemotron distills (Kimi & DeepSeek, which counts)\n\nbasically a fully different tech stack. the first pure open frontier coding model. very exciting",
+            "createdAt": "Wed Jul 15 21:23:02 +0000 2026",
+            "viewCount": 482333,
+            "metrics": {
+              "views": 482333,
+              "likes": 3169,
+              "retweets": 106,
+              "replies": 138,
+              "quotes": 18,
+              "bookmarks": 1131
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "人们低估了这件事的严重性\n\n这是唯一一个无需从 OpenAI 或 Anthropic 中提取而进行训练的开放权重模型\n\n• 基米蒸馏酒\n• GLM 蒸馏物\n• Qwen 蒸馏液\n• Nemotron 蒸馏（Kimi 和 DeepSeek，这很重要）\n\n基本上是一个完全不同的技术堆栈。第一个纯粹的开放前沿编码模型。非常令人兴奋",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-16T10:43:14.471Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2077454609551921208",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2077454609551921208",
+            "author": {
+              "name": "Thinking Machines",
+              "handle": "thinkymachines",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2075275500420001792/Q9J4M1DL_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Today, we are introducing Inkling.\n\nInkling reasons efficiently across text, image, and audio modalities. We are making the full weights available.\n\nhttps://thinkingmachines.ai/news/introducing-inkling/\n\nAvailable today for fine-tuning on Tinker. Play with it in the Inkling Playground. 🧵",
+            "createdAt": "Wed Jul 15 18:05:50 +0000 2026",
+            "viewCount": 5062983,
+            "metrics": {
+              "views": 5062983,
+              "likes": 12097,
+              "retweets": 1623,
+              "replies": 475,
+              "quotes": 1001,
+              "bookmarks": 6027
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "今天，我们要介绍的是Inkling。\n\nInkling 可以跨文本、图像和音频方式有效地进行推理。我们正在提供完整的权重。\n\nhttps://thinkingmachines.ai/news/introducing-inkling/\n\n今天可在 Tinker 上进行微调。在 Inkling Playground 中与它玩耍。 🧵",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-16T10:43:14.056Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2077504236380946595",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-16T10:43:13.986Z"
+        },
+        "createdAt": "2026-07-16T10:43:13.986Z",
+        "updatedAt": "2026-07-16T10:43:14.472Z"
+      }
+    },
+    {
+      "rank": 5,
+      "essenceScore": 261721,
+      "heatScore": 137124,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 137124
+      },
+      "sourceUrl": "https://x.com/tualatrix/status/2077554030730260886",
+      "reason": "点破马斯克开源 Grok Build 是为解决信任问题，并补上 Rust/仓库链接",
+      "reasonEn": "Chinese-dev take: open-sourcing Grok Build is the right trust move (plus Rust + repo context)",
+      "metrics": {
+        "views": 5386419,
+        "likes": 12925,
+        "retweets": 1843,
+        "replies": 778,
+        "quotes": 900,
+        "bookmarks": 3343
+      },
+      "document": {
+        "id": "64f5ddcd-e4d9-4000-9579-28a2a698de0b",
+        "title": "马斯克解决 Grok Build 信任问题的方式是：把 Grok",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2077554030730260886",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2077554030730260886",
+            "author": {
+              "name": "图拉鼎",
+              "handle": "tualatrix",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/675270246509350912/lV9-F5ey_normal.jpg",
+              "isVerified": false
+            },
+            "content": "马斯克解决 Grok Build 信任问题的方式是：把 Grok Build 开源。这招确实很正确。PS: Grok Build 也是 Rust 写的。https://github.com/xai-org/grok-build",
+            "createdAt": "Thu Jul 16 00:40:54 +0000 2026",
+            "viewCount": 41394,
+            "metrics": {
+              "views": 41394,
+              "likes": 129,
+              "retweets": 5,
+              "replies": 19,
+              "quotes": 2,
+              "bookmarks": 35
+            },
+            "media": [],
+            "translation": {
+              "provider": "none",
+              "status": "idle",
+              "language": "zh-CN",
+              "text": "",
+              "annotations": [],
+              "error": "",
+              "version": 0
+            }
+          },
+          {
+            "id": "2077494535387828644",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2077494535387828644",
+            "author": {
+              "name": "SpaceXAI",
+              "handle": "SpaceXAI",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2074224934159876096/aelorWHq_normal.jpg",
+              "isVerified": false
+            },
+            "content": "We've open-sourced Grok Build and have reset usage limits for all users.\n\nOpen sourcing Grok Build allows anyone to support making a reliable and robust harness. Check out our code, including the Git repo for the Grok Build CLI.\n\nhttp://x.ai/open-source",
+            "createdAt": "Wed Jul 15 20:44:29 +0000 2026",
+            "viewCount": 5386419,
+            "metrics": {
+              "views": 5386419,
+              "likes": 12925,
+              "retweets": 1843,
+              "replies": 778,
+              "quotes": 900,
+              "bookmarks": 3343
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "我们开源了 Grok Build，并为所有用户重置了使用限制。\n\n开源 Grok Build 允许任何人支持制作可靠且强大的线束。查看我们的代码，包括 Grok Build CLI 的 Git 存储库。\n\nhttp://x.ai/开源",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-16T10:43:32.868Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2077554030730260886",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-16T10:43:32.506Z"
+        },
+        "createdAt": "2026-07-16T10:43:32.506Z",
+        "updatedAt": "2026-07-16T10:43:32.869Z"
+      }
+    },
+    {
+      "rank": 6,
+      "essenceScore": 143827,
+      "heatScore": 72281,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 72281
+      },
+      "sourceUrl": "https://x.com/paulg/status/2077522510116000125",
+      "reason": "用经典「sudo make me a sandwich」一句话把 DoorDash CLI 变成技术圈迷因级锐评",
+      "reasonEn": "One-liner reframes DoorDash’s agent CLI as the classic sudo-make-me-a-sandwich joke — commentary that owns the chain",
+      "metrics": {
+        "views": 2586534,
+        "likes": 9078,
+        "retweets": 373,
+        "replies": 809,
+        "quotes": 855,
+        "bookmarks": 3085
+      },
+      "document": {
+        "id": "c3e50b31-ad0b-4eb8-b560-95d9d61c7e17",
+        "title": "Finally, sudo make me a sandwich",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2077522510116000125",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2077522510116000125",
+            "author": {
+              "name": "Paul Graham",
+              "handle": "paulg",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1824002576/pg-railsconf_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Finally, sudo make me a sandwich is reality.",
+            "createdAt": "Wed Jul 15 22:35:39 +0000 2026",
+            "viewCount": 444453,
+            "metrics": {
+              "views": 444453,
+              "likes": 4511,
+              "retweets": 265,
+              "replies": 91,
+              "quotes": 12,
+              "bookmarks": 439
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "最后，sudo给我做三明治是现实。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-16T10:43:12.369Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2077516962515599799",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2077516962515599799",
+            "author": {
+              "name": "Andy Fang",
+              "handle": "andyfang",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/556765270316814337/fLJPmSYb_normal.jpeg",
+              "isVerified": false
+            },
+            "content": "Today we're opening up the DoorDash CLI in limited beta.\n\n`dd-cli` lets you order DoorDash directly from your agent: search stores, find the best deals, check out, and more.\n\nEarly access for US/Canadian macOS developers by waitlist. Excited to see what folks build!",
+            "createdAt": "Wed Jul 15 22:13:36 +0000 2026",
+            "viewCount": 2586534,
+            "metrics": {
+              "views": 2586534,
+              "likes": 9078,
+              "retweets": 373,
+              "replies": 809,
+              "quotes": 855,
+              "bookmarks": 3085
+            },
+            "media": [
+              "https://pbs.twimg.com/amplify_video_thumb/2077516767459459072/img/VBtj98dAcFeCzRym.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "今天，我们将开放 DoorDash CLI 的有限测试版。\n\n`dd-cli` 可让您直接从代理商处订购 DoorDash：搜索商店、查找最优惠的价格、结帐等等。\n\n美国/加拿大 macOS 开发者可通过候补名单抢先体验。很高兴看到人们建造了什么！",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-16T10:43:11.882Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2077522510116000125",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-16T10:43:11.672Z"
+        },
+        "createdAt": "2026-07-16T10:43:11.672Z",
+        "updatedAt": "2026-07-16T10:43:12.369Z"
+      }
+    },
+    {
+      "rank": 7,
+      "essenceScore": 91506,
+      "heatScore": 33275,
+      "signals": {
+        "depth": 6,
+        "hasDunk": true,
+        "peakIndex": 5,
+        "peakHeat": 33275
+      },
+      "sourceUrl": "https://x.com/ShanghaoJin/status/2077614219990822929",
+      "reason": "把 AI 产业链「缺货」叙事从 GPU/存储/光电扭到「信用担保才是最硬缺货」",
+      "reasonEn": "Ex-GS finance take: AI scarcity trade is credit/guarantee supply, not just chips, power, or optics",
+      "metrics": {
+        "views": 1153674,
+        "likes": 2784,
+        "retweets": 530,
+        "replies": 436,
+        "quotes": 78,
+        "bookmarks": 2361
+      },
+      "document": {
+        "id": "8f66e396-783c-43bb-b867-2235729c794c",
+        "title": "市场炒缺货，盯着AI投资产业链每个零部件从GPU、存储、光、电（",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2077614219990822929",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2077614219990822929",
+            "author": {
+              "name": "Herman Jin",
+              "handle": "ShanghaoJin",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1765746894008102912/8X9HsTj8_normal.jpg",
+              "isVerified": false
+            },
+            "content": "市场炒缺货，盯着AI投资产业链每个零部件从GPU、存储、光、电（sic gan mlcc..）\n\n为啥无视最明显的缺货呢？资金信用提供方\n\n信用担保提供缺货是未来两年最确信的交易，超过任何一个零部件。半导体牛人们\n\n技术缺货都未必不能绕过\n\n只有钱（信用提供“缺货”）不可能绕过",
+            "createdAt": "Thu Jul 16 04:40:04 +0000 2026",
+            "viewCount": 45457,
+            "metrics": {
+              "views": 45457,
+              "likes": 155,
+              "retweets": 13,
+              "replies": 25,
+              "quotes": 2,
+              "bookmarks": 56
+            },
+            "media": [],
+            "translation": {
+              "provider": "none",
+              "status": "idle",
+              "language": "zh-CN",
+              "text": "",
+              "annotations": [],
+              "error": "",
+              "version": 0
+            }
+          },
+          {
+            "id": "2062499738709340167",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2062499738709340167",
+            "author": {
+              "name": "Herman Jin",
+              "handle": "ShanghaoJin",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1765746894008102912/8X9HsTj8_normal.jpg",
+              "isVerified": false
+            },
+            "content": "@bboczeng 最终把AMZN CDS搞上去",
+            "createdAt": "Thu Jun 04 11:40:31 +0000 2026",
+            "viewCount": 48018,
+            "metrics": {
+              "views": 48018,
+              "likes": 15,
+              "retweets": 0,
+              "replies": 1,
+              "quotes": 1,
+              "bookmarks": 3
+            },
+            "media": [],
+            "translation": {
+              "provider": "none",
+              "status": "idle",
+              "language": "zh-CN",
+              "text": "",
+              "annotations": [],
+              "error": "",
+              "version": 0
+            }
+          },
+          {
+            "id": "2062474442517934409",
+            "relation": "reply",
+            "depth": 2,
+            "sourceTweetId": "2062474442517934409",
+            "author": {
+              "name": "勃勃OC",
+              "handle": "bboczeng",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1830797876731224064/bg8OYzEG_normal.jpg",
+              "isVerified": false
+            },
+            "content": "@ShanghaoJin 说明谷歌宁可自己不赚钱，现金流为负，举债也要继续加大投资啊\n\n最终利好的就是存储\n\n😂😂",
+            "createdAt": "Thu Jun 04 10:00:00 +0000 2026",
+            "viewCount": 4531,
+            "metrics": {
+              "views": 4531,
+              "likes": 7,
+              "retweets": 0,
+              "replies": 2,
+              "quotes": 0,
+              "bookmarks": 0
+            },
+            "media": [],
+            "translation": {
+              "provider": "none",
+              "status": "idle",
+              "language": "zh-CN",
+              "text": "",
+              "annotations": [],
+              "error": "",
+              "version": 0
+            }
+          },
+          {
+            "id": "2062385852618313788",
+            "relation": "reply",
+            "depth": 3,
+            "sourceTweetId": "2062385852618313788",
+            "author": {
+              "name": "Herman Jin",
+              "handle": "ShanghaoJin",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1765746894008102912/8X9HsTj8_normal.jpg",
+              "isVerified": false
+            },
+            "content": "从基本面点评AVGO预期问题\n\nGoog清醒了。原来花钱太generous，现在意识到AI工厂，要比1.capex；2.capex效率、3.capex资金\n\nGoog系的全跟跌，中间要做区分。总包商margin维持变难了，TPU自研+ MTK竞争会变大。但是关键供货商其实还利好，Goog融资干嘛呢？\n\n难道Goog还能做激光器？\n\n基本面不等同交易",
+            "createdAt": "Thu Jun 04 04:07:59 +0000 2026",
+            "viewCount": 64097,
+            "metrics": {
+              "views": 64097,
+              "likes": 247,
+              "retweets": 21,
+              "replies": 24,
+              "quotes": 3,
+              "bookmarks": 66
+            },
+            "media": [],
+            "translation": {
+              "provider": "none",
+              "status": "idle",
+              "language": "zh-CN",
+              "text": "",
+              "annotations": [],
+              "error": "",
+              "version": 0
+            }
+          },
+          {
+            "id": "2062349108371959826",
+            "relation": "reply",
+            "depth": 4,
+            "sourceTweetId": "2062349108371959826",
+            "author": {
+              "name": "Herman Jin",
+              "handle": "ShanghaoJin",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1765746894008102912/8X9HsTj8_normal.jpg",
+              "isVerified": false
+            },
+            "content": "引自己长文，看AVGO业绩预期后市场反应\n\n窥一斑而知全豹，就明白市场的“钢丝”有多细，容错率有多差\n\n想象一下如果是anthropic出来增速下滑呢？",
+            "createdAt": "Thu Jun 04 01:41:58 +0000 2026",
+            "viewCount": 173495,
+            "metrics": {
+              "views": 173495,
+              "likes": 406,
+              "retweets": 22,
+              "replies": 52,
+              "quotes": 4,
+              "bookmarks": 81
+            },
+            "media": [],
+            "translation": {
+              "provider": "none",
+              "status": "idle",
+              "language": "zh-CN",
+              "text": "",
+              "annotations": [],
+              "error": "",
+              "version": 0
+            }
+          },
+          {
+            "id": "2061747648764530968",
+            "relation": "quote",
+            "depth": 5,
+            "sourceTweetId": "2061747648764530968",
+            "author": {
+              "name": "Herman Jin",
+              "handle": "ShanghaoJin",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1765746894008102912/8X9HsTj8_normal.jpg",
+              "isVerified": false
+            },
+            "content": "凡所有相，皆是虚妄。若见诸相非相，则见如来\n\n作为一个AI死多头，我知道在所有人狂欢的时候，但凡发出一点悲观的言论都必被讥讽、嘲笑\n\n但是，我很想写此文，其实是复盘与反思：不但是为自己这两年半写X、做交易做的；也是也是对这个疯狂市场做的\n\n很幸运，作为闲暇的爱好，写X结识了很多新朋友。感谢互相欣赏与启发，在过去2年里，我从24年4月初清仓BTC换成AVGO NVDA，大选前AAOI PLTR TSLA INTC，关税战后INTC GOOG，25年底又加仓INTC AAOI，到今年春节逃跑、再满仓AMD NOK（最近又操作了ORCL LITE）。虽然，有买彩票SUP归零，MRVL MDB也有赚有亏，但是我一直坚信AI对token的需求会让半导体every dog has its time，获得了不差得收益。期间不少小伙伴们也都赚到不少于10倍收益\n\n然而，此刻要清醒的意识到，收益并不是我们选股牛，眼光独到，而是市场牛！我复盘了我自己今年3月最后一周，周末前全仓买入。赚钱并不是因为当时买对了AMD，而是当时call 对了市场资金结构\n\n所以，在这个时点上更需要静心凝神，好好反思下市场接下去会如何\n\n喝醉酒的人是不会知道自己喝醉的；沉醉美梦中的人也不会意识到黄粱一梦，这过程可以很久，我们也可以继续疯，但是必须要清醒地在更高阶意识中，认识到随时有被敲醒的风险\n\nOne of the four beasts saying, COME AND SEE – Revelation 6:1\n\n不同于华尔街很多人，我是“坚信”AI的\n\n30年来第一次，AI模型用并行计算替代串联计算，把半导体的进步直接变成了生产力（之前科技进步只是作为平台，让用科技的软件、以及用软件的人创造价值）\n\nAI的结果是token需求指数级升高vs 而半导体供应只能线性增加。加上整个半导体老登们在过去几年黄金时间，没有因 “信” 而扩产，今年需求真正开始爆发后全产业链缺货。造就了这轮大牛市\n\n不过，大牛市的命脉是市场price in了:\n\n模型收入加速度，不远得未来可以justify Hyperscalers 的Capex\n\n要知道任何动摇命脉预期的都会让市场陷入恐慌\n\n1. 铜墙铁壁：horseman之一就是微观、公司层面真的无懈可击\n\n从看模型架构、从架构看需求，微观看半导体每一个赛道，每一个公司都近乎完美。每一个，都越看的细致，越了解深入，越是有自信---- 这就是典型低PE泡沫\n\nRule of Thumb：当看了几十、上百家公司，每家需求、盈利都真实solid，你就必须质疑这个市场有没有问题\n\n低PE泡沫一样是一个泡沫，只是他不同于2000年。高PE是个预期泡沫，市场会不停设定更高的收益预期，一旦核心公司预期破灭，整体预期立即调整，多米诺骨牌一样一片片倒下。这就好像去年的IGV，市场忽然不给EV/EBITDA估值了\n\n但是低PE泡沫没有这个问题，盈利增长会给你足够信心在稍微下跌之后不断加仓冲进去。毕竟谁能拒绝个位数PE的存储，每年涨价涨盈利，毛利率80%。这个过程中，小跌小买，大跌大买。只要不被切中“命门”市场会非常坚挺。持续性正反馈，好像美梦一样让人不愿醒来，也不相信是做梦（买过p2p的知道我说的什么感觉吧）\n\n不对称反馈：明显的体验是在过去1年中，市场对于宏观负面风险的反馈明显弱于正面利好。此时，并非没有“野蛮人”，而是公司盈利能力的城池固若金汤。不管伊朗危机、油价、通胀、利率、Fed统统能拒之门外。反之，一旦命门被破，所有野蛮人都会杀回来，过去没跌的够的一次性补完\n\n2. 去监管与宏观流动性宽裕：\n\n整个金融体系自从2008年金融海啸之后经历了一轮长期的监管与去杠杆，为了弥补系统性流动性损失美联储对应展开了一轮持续的QE。银行当时平均杠杆x30~x40，后来降低到了x15~20。去年美联储降低了eSLR要求，实质性让银行理论可扩4-5万亿美元资产负债表\n其实，4月后银行间流动性泛滥，也加剧了风险资产狂欢，低PE下杠杆入市\n\n流动性是一切之王，流动性泛滥征服一切。如果说疫情期间120b/月是细水长流，现在就是开闸放水。对应过往平衡的QE没有转向QT情况下，直接放任银行去监管，制造大量流动性\n\n但是流动性又如多巴胺，不是快乐分子，而是期待分子\n\n放任之后，现在通胀黏着，Fed其实没有短期降息余地。甚至在危机一旦发生之后，都很难去QE，只有降息手段的Fed面对可能的危机是一个纸老虎。而短期流动性的另一面是，目前半导体、特别是存储中的杠杆已经太高了\n\n3. 群雄并起：He went forth conquering, and to conquer\n\n可能因为TSMC带头不相信AI，半导体行业整体在过去2年没有应对AI需求大规模扩产\n\n后果是，当整个产业面临硅基洪流需求，忽然傻眼。过去半导体产业链主要是为了消费电子设计、定价的。而现在，不但订单忽然拉满，而且需要不停迭代架构\n\nNVDA就从GPU fabless，进步到rack方案解决，再往token factory迈进。每个过程需要的技术、供货商都不同。所有供货商都没有经过如此量产设计。这就好像把一台拖拉机强行拉上高铁，让他以200mile速度奔驰，每个零件都会嗡嗡作响。半导体每个细分行业都缺货，缺产能，提高不够产能\n\n与之伴生的一个问题是：原来卖方市场只有TSMC一个“守门员”控货源、控margin、控价格。原仔汤搓的产业有肉吃，需求方对价格产能有预期，良性发展。今天忽然五亿探长“雷诺”控制不住了，每个“小混混“都能来涨价、收保护费。真正的结果不是半导体都牛叉，而是失控：失控会影响每GW需要投入的成本核算，影响到命脉的预期。会给capex与模型收入会师蒙上阴影\n\n4. 钢丝起舞\n\nAI模型收入预期太满\n\n回顾一下，市场坚信定价Anthropic + OpenAI + Gemini的收入会快速增加让Capex合理。这条命脉的信仰是不能有一点动摇的。哪怕略微的动摇都会导致二级市场剧烈波动\n\n那么，过去GPT 5.0也有模型不及预期，市场质疑scaling law为什么没有让半导体大跌？\n\n首先当时半导体没有像今天这样全面开花，也没有如此高的杠杆；其次，当时hyperscaler的现金流冗余较多，只要他们表示相信，拿钱来capex支持是很容易度过难关的。毕竟一旦他们有钱、继续capex，可见2年NVDA收益确定性高，没有人能顶风做空NVDA的\n\n后来也发生过GPT被Gemini追平，并且导致Orcl持有其大量backlog订单而被做空。不过大总统的好兄弟老Larry敢对wall street说F you，用股权融资也要继续加注。很快， Opus横空出世让人意识到AGI时代已经到了\n\n然而，今年capex已经到了770b，明年要1tril，华尔街是不会看Hyperscaler总营收多少的（道理就跟当时ORCL一样：OAI Anthropic可都是拿了他们投资款的），他们必须看到Anthropic 与OAI的增速持续，这个才是维系整个链条自转下去的核心\n\n与此同时，这个游戏中大厂一直担任AI的监护人角色。但是他们的自由现金流已经变负了。“父母老了，力尽了“，后面的路要靠自己。而且市场满满预期下，对这条路一根筋的执着，不会给“主线”一丝一毫的容错\n\n（你们可以回想NV rack液冷出问题，交换机CPO良率问题，这些小巫见大巫、假以时日一定能解决的问题，市场尚且没有任何容错）\n\n命门在Anthropic：大过，大者过也。栋桡，本末弱也\n\n供应延迟、乃至技术卡壳的问题是腠理之疾；任何模型端的风吹草动才是心腹大患\n\n现在御三家模型的统一问题：算力不够，所以失智\n\n我在自己大量使用模型编程、交易程序部署，多个AWS服务互动过程中发现，Opus4.8实际能力已经远远不如中国模型kimi了。虽然GPT还勉强可堪一用，但是也在逐步降智。市场在用固有软件思维考虑AI, 系统开发成本高、使用成本很低。试用好用将来也就可以稳定保证系统质量。但是AI是一个工厂，模型输出需要成本，饭店吃饭的人多了，厨房做不过来，质量自然变差了\n\n第二个市场固有思维：指数的token需求是没有波动的，也不因质量改变。事实上，虽然我因为模型变蠢多用了很多token。但是我质疑token质量不断下降，token消耗增加的怪异剪刀差可以持久。现在很多公司确实对token使用有KPI考核，很多惯性订阅使用者也会加速使用，但如果算力瓶颈无法解决，我非常担心Anthropic增长曲线会变缓。而且算力问题非一蹴而就，也不是一个新模型能解决的\n\n但是当市场开始意识到这个问题的时候，投资人会质问：\n\n1. 跑不过蒸馏你的，模型花那么多钱训练干嘛？\n\n2. 模型是不是商品化的model commoditize ？\n\n当承载整个AI时代的模型“梦”也将受到质疑，整个盈收逻辑将来能否自我循环跑通将被质疑，所有今天拿了PE估值的半导体都同样会被质疑--- 你是不是周期性的？？\n\n有人会说，失智既然因为算力不够就应该加大投入半导体解决问题\n\n没错！但是钱呢？\n\n如果刨掉OAI 与Anthropic拿到的融资款反哺云厂，他们能有多少净现金流可以继续支持这个投入？这个账对华尔街来说非常好算。当然不排除他们像当时orcl，哪怕融股权也要继续投入，熬过这关。到那时，可能市场的反应就会远远超过去年，假设AMZN Meta如果面临CDS 飙升、负现金流，他能否像老larry一样孤注一掷是不确定的\n\n另外有人会说，OAI收入增加能不能弥补投资人担心。我认为预期如此之满的状况下，因为“比烂”而被替代是很难让人安心的（两军对战关羽被阵斩了，你说还有个张飞？没用的）\n\n同时，我们也要意识到。这个Low PE的泡沫又是非常坚韧的，在没有直击到命门伤到命脉预期之前，几乎无敌。不过，一旦点中死穴就会轰然倒塌\n\n我就业以来也曾看过好几次次纸碎金迷，潮起潮落，没有一次全民疯狂会ends well；\n\n也没有一次梦在其中的人，会想明白这个赛道“怎么输”。最近一次币圈小伙伴熟悉的Defi summer。Uniswap很短时间狂卷几十bil USD，当时觉得取代部分传统金融只是时间问题、多少问题，根本不会想、也想不明白“怎么会输”。然而，如果喝醉酒的人想明白怎么会输，他就不会输了\n\n不管Anthropic模型怎么样，面临什么问题，都不会动摇AI是人类第三次工业革命。AI过程不会受任何危机影响，碾着狂欢者的尸体也会继续前行，直到他替代几亿脑力劳动者\n\n最后评论Low PE泡沫：不要说做空，哪怕踏空，痛苦指数都非常高。回头看看2007年做空subprime的哪些基金，有几个活到了最后狂欢？\n\n牛市踏空都会变成笑柄的环境，我接下去会需要很多Aura力量与专注的力量，去一边看空一边做多。请原谅会减少在推特上消耗自己修为论道了，赠言：\n\n可以喝酒，但是不能喝醉\n可以讲故事，但是不能真信\n可以跳上party桌子跳舞，但是双眼必须紧紧盯着DJ，他放着音乐跑了，你也得跟着跑",
+            "createdAt": "Tue Jun 02 09:51:59 +0000 2026",
+            "viewCount": 1153674,
+            "metrics": {
+              "views": 1153674,
+              "likes": 2784,
+              "retweets": 530,
+              "replies": 436,
+              "quotes": 78,
+              "bookmarks": 2361
+            },
+            "media": [],
+            "translation": {
+              "provider": "none",
+              "status": "idle",
+              "language": "zh-CN",
+              "text": "",
+              "annotations": [],
+              "error": "",
+              "version": 0
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2077614219990822929",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-16T10:43:44.291Z"
+        },
+        "createdAt": "2026-07-16T10:43:44.291Z",
+        "updatedAt": "2026-07-16T10:43:44.294Z"
+      }
+    },
+    {
+      "rank": 8,
+      "essenceScore": 25871,
+      "heatScore": 14062,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 14062
+      },
+      "sourceUrl": "https://x.com/awesomekling/status/2077692884296360348",
+      "reason": "在 Linus 力挺内核用 AI 的截图上表态：软件开发已不可逆地变天",
+      "reasonEn": "Ladybird founder backs Linus on AI in the kernel and frames it as irreversible industry change",
+      "metrics": {
+        "views": 279823,
+        "likes": 4721,
+        "retweets": 486,
+        "replies": 84,
+        "quotes": 109,
+        "bookmarks": 896
+      },
+      "document": {
+        "id": "7192ecd5-fa42-4b8e-9e32-b24fbe6cb52e",
+        "title": "Linus is 100% right, and at this",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2077692884296360348",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2077692884296360348",
+            "author": {
+              "name": "Andreas Kling",
+              "handle": "awesomekling",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2000586443077373955/2BQTH8rC_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Linus is 100% right, and at this point we need to accept that software development is never going to be the same again.",
+            "createdAt": "Thu Jul 16 09:52:39 +0000 2026",
+            "viewCount": 5855,
+            "metrics": {
+              "views": 5855,
+              "likes": 196,
+              "retweets": 13,
+              "replies": 10,
+              "quotes": 3,
+              "bookmarks": 20
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "Linus 是 100% 正确的，在这一点上我们需要接受软件开发再也不会一样了。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-16T10:43:23.908Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2077426451456872866",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2077426451456872866",
+            "author": {
+              "name": "Gustavo Noronha",
+              "handle": "gustavokov",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1576927161587490816/tlV4CZ1H_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Linus jogou a real: AI é útil e vai ser usada no desenvolvimento do kernel Linux, quem achar ruim pode fazer fork e vazar",
+            "createdAt": "Wed Jul 15 16:13:57 +0000 2026",
+            "viewCount": 279823,
+            "metrics": {
+              "views": 279823,
+              "likes": 4721,
+              "retweets": 486,
+              "replies": 84,
+              "quotes": 109,
+              "bookmarks": 896
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HNSATY2XAAAqs2A.png",
+              "https://pbs.twimg.com/media/HNSAUkaXQAA9J4y.png"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "Linus直言不讳：AI很有用，将用于Linux内核的开发，任何认为不好的人都可以fork它并泄露它",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-16T10:43:24.011Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2077692884296360348",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-16T10:43:23.717Z"
+        },
+        "createdAt": "2026-07-16T10:43:23.717Z",
+        "updatedAt": "2026-07-16T10:43:24.011Z"
+      }
+    },
+    {
+      "rank": 9,
+      "essenceScore": 23448,
+      "heatScore": 10906,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 10906
+      },
+      "sourceUrl": "https://x.com/gdb/status/2077622035984105848",
+      "reason": "用 GPT-5.6 Sol Pro 证伪 BH 程序在相关高斯检验上的 FDR 猜想，给科研推文官方背书",
+      "reasonEn": "Amplifies a Wharton result: GPT-5.6 Sol Pro disproved a long-open BH/FDR conjecture — research that needed the quote spotlight",
+      "metrics": {
+        "views": 384400,
+        "likes": 1223,
+        "retweets": 196,
+        "replies": 37,
+        "quotes": 33,
+        "bookmarks": 617
+      },
+      "document": {
+        "id": "bf13c30f-a13d-4753-ad57-2e0d537288bc",
+        "title": "GPT-5.6 Sol Pro for resolving an",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2077622035984105848",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2077622035984105848",
+            "author": {
+              "name": "Greg Brockman",
+              "handle": "gdb",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1347621377503711233/bHg3ipfD_normal.jpg",
+              "isVerified": false
+            },
+            "content": "GPT-5.6 Sol Pro for resolving an important open question in statistics:",
+            "createdAt": "Thu Jul 16 05:11:08 +0000 2026",
+            "viewCount": 43722,
+            "metrics": {
+              "views": 43722,
+              "likes": 354,
+              "retweets": 20,
+              "replies": 31,
+              "quotes": 6,
+              "bookmarks": 46
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "GPT-5.6 Sol Pro 用于解决统计中的一个重要的开放问题：",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-16T10:43:18.941Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2077082912021786660",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2077082912021786660",
+            "author": {
+              "name": "Edgar Dobriban",
+              "handle": "EdgarDobriban",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1205275845381754880/HhW87BSO_normal.jpg",
+              "isVerified": false
+            },
+            "content": "AI has helped resolve an important question in statistics. In the area of multiple hypothesis testing, the goal of controlling the false discovery rate (FDR) has been introduced in a seminal paper by Benjamini and Hochberg (1995). They also introduced a method (the Benjamini-Hochberg or BH method) and proved it controls the FDR. This method has been widely adopted in modern high-throughput science, including in genomics, astronomy, economics, etc. The paper has has garnered more than 130,000 citations to date.\n\nHowever Benjamini and Hochberg showed FDR control only when the data for the individual tests are *independent*. In practice, these data are often dependent; a good example is data on genetic variants due to linkage disequilibrium. Later work has focused on extending the validity of the BH procedure, e.g., to a form of positive dependence by Benjamini and Yekutieli (2001).\n\nThe question of when the BH procedure controls the FDR has remained open. Over the last twenty years, many authors, including Reiner-Benaim (2007), Kim and van de Wiel (2008), Benjamini (2010), Sarkar (2023), Sarkar and Zhang (2025), have conjectured that the BH procedure controls the FDR for two-sided tests using any correlated Gaussian data. These authors have presented both theoretical and empirical evidence supporting, but not directly showing, the conjecture.\n\nWith the help of AI (specifically GPT-5.6 Sol Pro), I have settled the question in the negative: The Benjamini-Hochberg procedure does *not* generally control the false discovery rate at the desired level for correlated two-sided Gaussian tests. This was done by exhibiting a Gaussian factor model for which, at a nominal level alpha=0.01, the false discovery rate is proved to be FDR>0.0104.\n\nThere is a lot of interesting commentary to be made:\n\n1. This result should be of interest to everybody in the field of statistics. Emmanuel Candes of Stanford University once called the false discovery rate and the Benjamini-Hochberg procedure \"one of the two most important developments in statistics after 1950\" (the other being James-Stein shrinkage). The present conjecture is probably the most central question about FDR/BH that was unresolved to date.\n\n2. GPT-5.6 one-shot the problem after 90 minutes of reasoning, whereas with 5.5 I was not able to solve it even after iterating with multiple parallel agents for perhaps 20 hours. So the capability improvement is quite real. Exciting times to live in!\n\n3. The argument is not especially surprising, but it does combine an asymptotic approach (standard for FDR analysis, see e.g., Genovese and Wasserman, Efron, etc) with a numerical certificate in a way that would be pretty non-standard in the field. Once we have the specific example, then straightforward simulations also support that the false discovery rate is indeed higher than the nominal value (see attached fig).\n\n4. The current degree of violation over the nominal level is relatively small (0.104 vs 0.1). So the importance of this result is mainly conceptual. The practical implications remain to be determined.\n\nOverall, an exciting development! Preprint is available here (https://faculty.wharton.upenn.edu/wp-content/uploads/2017/06/bh.pdf) and will be on arxiv tonight; supporting code is here (https://github.com/dobriban/BH).",
+            "createdAt": "Tue Jul 14 17:28:51 +0000 2026",
+            "viewCount": 384400,
+            "metrics": {
+              "views": 384400,
+              "likes": 1223,
+              "retweets": 196,
+              "replies": 37,
+              "quotes": 33,
+              "bookmarks": 617
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HNNH3UGXgAAUBbC.jpg",
+              "https://pbs.twimg.com/media/HNNH3UJXQAANno6.jpg",
+              "https://pbs.twimg.com/media/HNNH3UMW8AAj1SF.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "人工智能帮助解决了统计学中的一个重要问题。在多重假设检验领域，Benjamini 和 Hochberg (1995) 在一篇开创性的论文中引入了控制错误发现率 (FDR) 的目标。他们还引入了一种方法（Benjamini-Hochberg 或 BH 方法）并证明它可以控制 FDR。该方法已广泛应用于现代高通量科学，包括基因组学、天文学、经济学等领域。迄今为止，该论文已获得超过13万次引用。\n\n然而，只有当各个测试的数据“独立”时，本杰明尼和霍赫伯格才显示出 FDR 控制。在实践中，这些数据通常是相互依赖的；一个很好的例子是连锁不平衡导致的遗传变异数据。后来的工作重点是扩展 BH 程序的有效性，例如 Benjamini 和 Yekutieli (2001) 提出的积极依赖形式。\n\nBH 程序何时控制 FDR 的问题仍然悬而未决。在过去的二十年中，许多作者，包括 Reiner-Benaim (2007)、Kim 和 van de Wiel (2008)、Benjamini (2010)、Sarkar (2023)、Sarkar 和Zhang (2025)，推测 BH 过程使用任何相关高斯数据控制双边检验的 FDR。这些作者提出了理论和经验证据来支持这一猜想，但没有直接证明这一点。\n\n在 AI（特别是 GPT-5.6 Sol Pro）的帮助下，我以否定的方式解决了这个问题：Benjamini-Hochberg 程序通常“不能”将错误发现率控制在相关两侧高斯检验所需的水平。这是通过展示高斯因子模型来完成的，在标称水平 alpha=0.01 下，错误发现率被证明为 FDR>0.0104。\n\n有很多有趣的评论：\n\n1. 这个结果应该是统计领域的每个人都感兴趣的。斯坦福大学的 Emmanuel Candes 曾将错误发现率和 Benjamini-Hochberg 程序称为“1950 年后统计学上最重要的两个发展之一”（另一个是 James-Stein 收缩）。目前的猜想可能是迄今为止尚未解决的有关 FDR/BH 的最核心问题。\n\n2. GPT-5.6 在 90 分钟的推理后一次性解决了这个问题，而在 5.5 中，即使在使用多个并行代理迭代大约 20 小时后，我也无法解决它。所以能力的提升是非常真实的。生活的激动人心的时代！\n\n3. 这个论点并不特别令人惊讶，但它确实将渐近方法（FDR 分析的标准，参见例如 Genovese 和 Wasserman、Efron 等）与数字证书结合起来，这在该领域是非常不标准的。一旦我们有了具体的例子，那么直接的模拟也支持错误发现率确实高于名义值（见附图）。\n\n4、目前超标程度较小（0.104 vs 0.1）。所以这个结果的重要性主要是概念性的。实际影响仍有待确定。\n\n总体而言，这是一个令人兴奋的发展！预印本可在此处获取（https://faculty.wharton.upenn.edu/wp-content/uploads/2017/06/bh.pdf），并将于今晚在 arxiv 上发布；支持代码在这里（https://github.com/dobriban/BH）。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-16T10:43:20.058Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2077622035984105848",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-16T10:43:18.841Z"
+        },
+        "createdAt": "2026-07-16T10:43:18.841Z",
+        "updatedAt": "2026-07-16T10:43:20.063Z"
+      }
+    },
+    {
+      "rank": 10,
+      "essenceScore": 14922,
+      "heatScore": 7896,
+      "signals": {
+        "depth": 3,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 7896
+      },
+      "sourceUrl": "https://x.com/SawyerMerritt/status/2077631136688165017",
+      "reason": "把 Elon 太空 AI 卫星功耗上调翻译成 NVL72/Rubin 机架可部署的具体规格",
+      "reasonEn": "Translates Musk’s AI1 satellite power hike into clear NVL72/Rubin rack capacity for a general tech audience",
+      "metrics": {
+        "views": 204187,
+        "likes": 2437,
+        "retweets": 188,
+        "replies": 149,
+        "quotes": 25,
+        "bookmarks": 219
+      },
+      "document": {
+        "id": "0d8b6680-2b31-422c-aefa-1e4d2a2d778e",
+        "title": "Elon Musk says that @SpaceX has ",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2077631136688165017",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2077631136688165017",
+            "author": {
+              "name": "Sawyer Merritt",
+              "handle": "SawyerMerritt",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1837744842715082752/xH9vYixL_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Elon Musk says that @SpaceX has decided to increase the peak power of its upcoming AI satellite (called AI1) by 67% to ~250kW (up from 150kW), and its average power by 33% to 160kW (up from 120kW).\n\nThis will be enough to handle an Nvidia Rubin NVL72 rack, which contains 72 Rubin GPUs. In general, the AI1 satellite will be compute provider interchangeable.",
+            "createdAt": "Thu Jul 16 05:47:18 +0000 2026",
+            "viewCount": 99885,
+            "metrics": {
+              "views": 99885,
+              "likes": 1560,
+              "retweets": 120,
+              "replies": 30,
+              "quotes": 5,
+              "bookmarks": 93
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HNU4S-DW4AAcGlZ.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "埃隆·马斯克表示，@SpaceX 已决定将其即将推出的 AI 卫星（称为 AI1）的峰值功率增加 67% 至约 250kW（从 150kW 增加），并将其平均功率增加 33% 至 160kW（从 120kW 增加）。\n\n这足以处理 Nvidia Rubin NVL72 机架，其中包含 72 个 Rubin GPU。一般来说，AI1 卫星将由计算提供商互换。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-16T10:43:28.777Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2077626509615829213",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2077626509615829213",
+            "author": {
+              "name": "Elon Musk",
+              "handle": "elonmusk",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2053244804520427520/m8mdWZCG_normal.jpg",
+              "isVerified": false
+            },
+            "content": "@aaronburnett GPU average power consumption if it’s doing inference over the course of 24 hours is ~2/3 of its peak power, even if you’re super efficient.\n\nSpaceX AI Sat V1 peak power spec has been raised to ~250kW (battery-assisted), with average power of ~160kW. Will be able to handle an NVL72 Ruben rack.\n\nThis is just version 1.",
+            "createdAt": "Thu Jul 16 05:28:54 +0000 2026",
+            "viewCount": 204187,
+            "metrics": {
+              "views": 204187,
+              "likes": 2437,
+              "retweets": 188,
+              "replies": 149,
+              "quotes": 25,
+              "bookmarks": 219
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "@aaronburnett 如果在 24 小时内进行推理，GPU 的平均功耗约为其峰值功率的 2/3，即使您非常高效。\n\nSpaceX AI Sat V1 峰值功率规格已提高至约 250kW（电池辅助），平均功率为约 160kW。将能够处理 NVL72 Ruben 机架。\n\n这只是版本 1。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-16T10:43:28.767Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2077481532835660283",
+            "relation": "reply",
+            "depth": 2,
+            "sourceTweetId": "2077481532835660283",
+            "author": {
+              "name": "Aaron Burnett",
+              "handle": "aaronburnett",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2049987217477513216/GJx9_LdR_normal.jpg",
+              "isVerified": false
+            },
+            "content": "orbital data centers have one glaring constraint few are discussing publicly: inference network coherence. We tackled it this week in our analysis \"The Orbital Inference Containment Tax\"\n\ntbf we mostly hand-waved coherence in our early ODC models (other things to learn first), but went deep after encouragement from someone who's worked on this problem for years.\n\nFair warning: this is the easily the densest analysis we've ever done, because we're modeling at the edge of both AI and spacecraft.\n\nIf you have the time to dive in, it's really f*ing interesting and insightful for what I expect will happen with orbital architecture over the next few years.\n\nIf this isn't your day job, share the link with your AI of choice and have it get you up to speed.\nhttps://research.33fg.com/analysis/the-orbital-inference-containment-tax\n\ncore learnings this week:\n\n- Frontier LLMs are mixture-of-experts models. Ground operators spread hundreds of experts across big GPU pools down to about 1 expert per GPU. NVIDIA's benchmark shows that spreading is worth up to 1.8x more tokens/second per GPU. and tokens/second is $/second in inference.\n\n- A self contained satellite today can't spread that wide. GPUs computing one answer must sync every ~5 microseconds, and light only covers a ~750m round trip in that window. consequently a coherent GPU team ends at the edge.\n\n- Your options to address this are formation-fly sats ~150m apart (Google's Suncatcher bet, orders of magnitude closer than Starlinks fly today) or eat the penalty of containing the model inside one sat.\n\n- An AI1 sat's power spec ≈ one rack of GB300s (NVL72) 72 GPUs. if you force a 256 expert model into that box then each GPU has to juggle 3.56 experts vs ~1 on the ground.\n\n- We conservatively stacked every assumption against orbit and worst case, a sat is 44% less efficient at processing tokens than on the ground.\n\nThat's what we call 'the containment tax' 1.8 sats worth of GPUs to do the work of 1\n\nnote,we used max conservative assumptions as I believe it's important to stress test the orbital compute thesis when reasonable.\n\nThat said the tax decays, when modeled the levers become pretty clear...\n\n1) SpaceXAI's C-rewrite captures up to half the tax consistent with the token/second uplift we modeled last week.\n\n2) Co-design the model to fit the sat's 72 GPUs. The largest single lever, and it's a training decision, not a hardware program.\n\nand\n\n3) add more GPUs per sat via power density. The next node class (assuming a 200kw-240kw class sat) cuts the baseline to 1.44x before software improvements even runs\n\n1 and 3 are already underway at SpaceX.\n\n2 is the cheap, logical next step given their compute advantage and ~3.5-week model release cadence\n\nnothing stops them offering co-design as a service to neocloud customers.\n\nwhat we expect? Grok and Composer are the first two models co-designed for orbital inference sats and any external customer co-design comes later.\n\nScoping note: the containment tax hits the revenue and payback side of the equation, not the cost side, so it's not in our orbital-vs-terrestrial cost work yet.\n\nThese learnings will roll into future iterations of AI compute and the SpaceX Gigamodels.\n\nThanks for reading and happy modeling!",
+            "createdAt": "Wed Jul 15 19:52:49 +0000 2026",
+            "viewCount": 77829,
+            "metrics": {
+              "views": 77829,
+              "likes": 403,
+              "retweets": 42,
+              "replies": 29,
+              "quotes": 10,
+              "bookmarks": 170
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HNStuSfX0AAqtUg.jpg",
+              "https://pbs.twimg.com/media/HNSt04kXEAALJvd.jpg",
+              "https://pbs.twimg.com/media/HNSt04hWcAAQQia.jpg",
+              "https://pbs.twimg.com/media/HNSt03kXQAAsJA5.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "轨道数据中心有一个很少有人公开讨论的明显限制：推理网络的一致性。我们本周在分析“轨道推理遏制税”中解决了这个问题\n\ntbf 我们在早期的 ODC 模型中主要是挥舞着一致性（其他需要首先学习的东西），但在多年来致力于解决这个问题的人的鼓励下，我们进行了深入研究。\n\n公平警告：这无疑是我们做过的最密集的分析，因为我们是在人工智能和航天器的边缘进行建模。\n\n如果你有时间深入研究，这对我预计未来几年轨道架构将发生的事情来说真的非常有趣且富有洞察力。\n\n如果这不是您的日常工作，请与您选择的人工智能分享链接，让它帮助您加快速度。\nhttps://research.33fg.com/analysis/the-orbital-inference-containment-tax\n\n本周核心学习内容：\n\n- 前沿法学硕士是专家混合模式。地面操作员将数百名专家分布在大型 GPU 池中，减少到每个 GPU 大约 1 名专家。 NVIDIA 的基准测试表明，每 GPU 每秒的传播价值可增加 1.8 倍的令牌。在推断中，令牌/秒是 $/秒。\n\n- 今天的独立卫星无法传播那么广。计算一个答案的 GPU 必须每约 5 微秒同步一次，而光在该窗口中仅覆盖约 750m 的往返行程。因此，一个团结一致的 GPU 团队最终会陷入边缘。\n\n- 解决这个问题的选择是编队飞行，间隔约 150m（谷歌的 Suncatcher 赌注，比今天的 Starlinks 飞行要近几个数量级），或者承担将模型包含在一个卫星内的惩罚。\n\n- AI1 sat 的功率规格 ≈ 一个 GB300s (NVL72) 72 个 GPU 机架。如果你将 256 名专家模型强行放入该盒子中，那么每个 GPU 必须同时处理 3.56 名专家和约 1 名地面专家。\n\n- 我们保守地将所有假设与轨道和最坏情况相结合，卫星处理代币的效率比地面低 44%。\n\n这就是我们所说的“遏制税” 1.8 sats 的 GPU 可以完成 1 的工作\n\n请注意，我们使用了最大保守假设，因为我认为在合理的情况下对轨道计算论文进行压力测试很重要。\n\n也就是说，税收衰减，在建模时杠杆变得非常清晰......\n\n1) SpaceXAI 的 C 重写捕获了高达一半的税收，与我们上周建模的代币/第二次提升一致。\n\n2) 共同设计模型以适应卫星的 72 个 GPU。最大的单一杠杆，这是一个训练决策，而不是一个硬件程序。\n\n和\n\n3) 通过功率密度为每卫星添加更多 GPU。下一个节点类别（假设 200kw-240kw 类别 sat）在软件改进甚至运行之前将基线削减至 1.44 倍\n\n1 号和 3 号已经在 SpaceX 进行。\n\n考虑到其计算优势和约 3.5 周的模型发布节奏，2 是廉价、合乎逻辑的下一步\n\n没有什么可以阻止他们向 Neocloud 客户提供协同设计服务。\n\n我们期望什么？ Grok 和 Composer 是为轨道推理卫星联合设计的前两个模型，任何外部客户的联合设计都会在稍后推出。\n\n范围说明：遏制税涉及等式的收入和投资回报方面，而不是成本方面，因此它尚未包含在我们的轨道与地面成本工作中。\n\n这些知识将融入人工智能计算和 SpaceX Gigamodels 的未来迭代中。\n\n感谢您的阅读并祝您建模愉快！",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-16T10:43:28.965Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2077631136688165017",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-16T10:43:27.859Z"
+        },
+        "createdAt": "2026-07-16T10:43:27.859Z",
+        "updatedAt": "2026-07-16T10:43:28.966Z"
+      }
+    }
+  ]
+}

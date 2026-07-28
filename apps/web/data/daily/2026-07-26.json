@@ -1,0 +1,1352 @@
+{
+  "date": "2026-07-26",
+  "title": "每日 X 精华引用榜",
+  "titleEn": "Daily Quote Essence on X",
+  "generatedAt": "2026-07-26T00:03:41.401Z",
+  "entries": [
+    {
+      "rank": 1,
+      "essenceScore": 3209791,
+      "heatScore": 1469970,
+      "signals": {
+        "depth": 4,
+        "hasDunk": true,
+        "peakIndex": 3,
+        "peakHeat": 1469970
+      },
+      "sourceUrl": "https://x.com/litcapital/status/2081148302569934860",
+      "reason": "引用Denny’s加入开源AI联署的突发新闻，一句「Denny’s是AI领袖？」把荒诞共识炼成金句。",
+      "reasonEn": "Quotes Denny’s joining the open-source AI letter and lands the perfect punchline: Denny’s as a leading AI voice.",
+      "metrics": {
+        "views": 54714405,
+        "likes": 158895,
+        "retweets": 27313,
+        "replies": 15253,
+        "quotes": 10038,
+        "bookmarks": 37114
+      },
+      "document": {
+        "id": "eee5a3ae-2260-4372-9718-77c0fadfcd84",
+        "title": "“Denny’s? The leading voice in A",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2081148302569934860",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2081148302569934860",
+            "author": {
+              "name": "litquidity",
+              "handle": "litcapital",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1611406816130338816/KWJfnndd_normal.jpg",
+              "isVerified": false
+            },
+            "content": "“Denny’s? The leading voice in AI?”",
+            "createdAt": "Sat Jul 25 22:43:15 +0000 2026",
+            "viewCount": 23525,
+            "metrics": {
+              "views": 23525,
+              "likes": 248,
+              "retweets": 13,
+              "replies": 9,
+              "quotes": 0,
+              "bookmarks": 12
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HOG5WXcXAAEsla7.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "“丹尼的？人工智能领域的领军人物？”",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-26T00:03:15.707Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2081147276647453041",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2081147276647453041",
+            "author": {
+              "name": "Exec Sum",
+              "handle": "exec_sum",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1923386273185910784/ODDqEv6a_normal.jpg",
+              "isVerified": false
+            },
+            "content": "BREAKING: Denny’s joins AI giants (excluding Anthropic) and big tech leaders in supporting open source AI models.",
+            "createdAt": "Sat Jul 25 22:39:11 +0000 2026",
+            "viewCount": 35496,
+            "metrics": {
+              "views": 35496,
+              "likes": 56,
+              "retweets": 3,
+              "replies": 4,
+              "quotes": 2,
+              "bookmarks": 4
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "突发新闻：Denny's 与人工智能巨头（不包括 Anthropic）和大型科技领导者一起支持开源人工智能模型。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-26T00:03:15.698Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2081069889931112816",
+            "relation": "quote",
+            "depth": 2,
+            "sourceTweetId": "2081069889931112816",
+            "author": {
+              "name": "Denny’s",
+              "handle": "DennysDiner",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2063847990591356928/vOhs-7qT_normal.jpg",
+              "isVerified": false
+            },
+            "content": "@JensenHuang @nvidia",
+            "createdAt": "Sat Jul 25 17:31:40 +0000 2026",
+            "viewCount": 2076230,
+            "metrics": {
+              "views": 2076230,
+              "likes": 13330,
+              "retweets": 1391,
+              "replies": 491,
+              "quotes": 580,
+              "bookmarks": 727
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HOFyCS5asAAOC0L.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "@JensenHuang @nvidia",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-26T00:03:14.947Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2080643682408321103",
+            "relation": "reply",
+            "depth": 3,
+            "sourceTweetId": "2080643682408321103",
+            "author": {
+              "name": "Jensen Huang",
+              "handle": "JensenHuang",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2080613261674962944/OMXX4RJ3_normal.jpg",
+              "isVerified": false
+            },
+            "content": "For my first post, I’m sharing a letter @NVIDIA signed on why open models matter.\n\nAI will transform every industry, power every company, and be built by every country.\n\nOpen models strengthen safety and cybersecurity, accelerate innovation and diffusion, and enable sovereignty.\n\nThe world needs both frontier closed models and frontier open models.\n\nhttps://images.nvidia.com/pdf/Open-Weights-and-American-AI-Leadership.pdf",
+            "createdAt": "Fri Jul 24 13:18:05 +0000 2026",
+            "viewCount": 54714405,
+            "metrics": {
+              "views": 54714405,
+              "likes": 158895,
+              "retweets": 27313,
+              "replies": 15253,
+              "quotes": 10038,
+              "bookmarks": 37114
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HN_qDVsa4AAI6XJ.jpg",
+              "https://pbs.twimg.com/media/HN_qDV1a8AARQwg.jpg",
+              "https://pbs.twimg.com/media/HN_qDV1awAAPTlH.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "在我的第一篇文章中，我将分享一封@NVIDIA 签名的信，解释为什么开放模型很重要。\n\n人工智能将改变每个行业、为每个公司提供动力、由每个国家建设。\n\n开放模式加强安全和网络安全，加速创新和扩散，并实现主权。\n\n世界既需要边境封闭模式，也需要边境开放模式。\n\nhttps://images.nvidia.com/pdf/Open-Weights-and-American-AI-Leadership.pdf",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-26T00:03:14.957Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2081148302569934860",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-26T00:03:14.750Z"
+        },
+        "createdAt": "2026-07-26T00:03:14.750Z",
+        "updatedAt": "2026-07-26T00:03:15.707Z"
+      }
+    },
+    {
+      "rank": 2,
+      "essenceScore": 2989296,
+      "heatScore": 1469963,
+      "signals": {
+        "depth": 3,
+        "hasDunk": true,
+        "peakIndex": 2,
+        "peakHeat": 1469963
+      },
+      "sourceUrl": "https://x.com/DavidSacks/status/2081033408273395858",
+      "reason": "正面拆穿Anthropic研究员对黄仁勋开源表态的阴阳怪气，强调争的是开放权重而非全开源，Read the room一击即中。",
+      "reasonEn": "Sharply reframes an Anthropic researcher's CUDA dunk: the fight is allowing open-weight AI, not open-sourcing everything—read the room.",
+      "metrics": {
+        "views": 54714405,
+        "likes": 158888,
+        "retweets": 27313,
+        "replies": 15253,
+        "quotes": 10038,
+        "bookmarks": 37114
+      },
+      "document": {
+        "id": "16ef9699-1c34-4101-b6a8-26c559ee47e5",
+        "title": "Nobody is saying that all softwa",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2081033408273395858",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2081033408273395858",
+            "author": {
+              "name": "David Sacks",
+              "handle": "DavidSacks",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1879600809693917185/GkBxdTd9_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Nobody is saying that all software has to be open source. What they’re saying is that open-weight AI should be allowed. By implication, they’re rejecting your company’s incessant machinations to kneecap the open model ecosystem. Read the room.",
+            "createdAt": "Sat Jul 25 15:06:42 +0000 2026",
+            "viewCount": 582649,
+            "metrics": {
+              "views": 582649,
+              "likes": 7418,
+              "retweets": 561,
+              "replies": 244,
+              "quotes": 48,
+              "bookmarks": 410
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "没有人说所有软件都必须开源。他们的意思是应该允许开放式人工智能。言外之意，他们拒绝了贵公司不断策划的破坏开放模型生态系统的阴谋。读房间。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-26T00:02:48.507Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2080937562739531837",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2080937562739531837",
+            "author": {
+              "name": "Julian Schrittwieser",
+              "handle": "Mononofu",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1256258472963911682/DUN_iOOG_normal.jpg",
+              "isVerified": false
+            },
+            "content": "I’m so excited that @JensenHuang is a believer in open source now, looking forward to the CUDA and GPU driver open source release!",
+            "createdAt": "Sat Jul 25 08:45:51 +0000 2026",
+            "viewCount": 2876762,
+            "metrics": {
+              "views": 2876762,
+              "likes": 3618,
+              "retweets": 223,
+              "replies": 1164,
+              "quotes": 663,
+              "bookmarks": 661
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "我很兴奋@JensenHuang 现在是开源的信徒，期待 CUDA 和 GPU 驱动开源发布！",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-26T00:02:48.500Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2080643682408321103",
+            "relation": "quote",
+            "depth": 2,
+            "sourceTweetId": "2080643682408321103",
+            "author": {
+              "name": "Jensen Huang",
+              "handle": "JensenHuang",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2080613261674962944/OMXX4RJ3_normal.jpg",
+              "isVerified": false
+            },
+            "content": "For my first post, I’m sharing a letter @NVIDIA signed on why open models matter.\n\nAI will transform every industry, power every company, and be built by every country.\n\nOpen models strengthen safety and cybersecurity, accelerate innovation and diffusion, and enable sovereignty.\n\nThe world needs both frontier closed models and frontier open models.\n\nhttps://images.nvidia.com/pdf/Open-Weights-and-American-AI-Leadership.pdf",
+            "createdAt": "Fri Jul 24 13:18:05 +0000 2026",
+            "viewCount": 54714405,
+            "metrics": {
+              "views": 54714405,
+              "likes": 158888,
+              "retweets": 27313,
+              "replies": 15253,
+              "quotes": 10038,
+              "bookmarks": 37114
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HN_qDVsa4AAI6XJ.jpg",
+              "https://pbs.twimg.com/media/HN_qDV1a8AARQwg.jpg",
+              "https://pbs.twimg.com/media/HN_qDV1awAAPTlH.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "在我的第一篇文章中，我将分享一封@NVIDIA 签名的信，解释为什么开放模型很重要。\n\n人工智能将改变每个行业、为每个公司提供动力、由每个国家建设。\n\n开放模式加强安全和网络安全，加速创新和扩散，并实现主权。\n\n世界既需要边境封闭模式，也需要边境开放模式。\n\nhttps://images.nvidia.com/pdf/Open-Weights-and-American-AI-Leadership.pdf",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-26T00:02:48.504Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2081033408273395858",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-26T00:02:48.223Z"
+        },
+        "createdAt": "2026-07-26T00:02:48.223Z",
+        "updatedAt": "2026-07-26T00:02:48.508Z"
+      }
+    },
+    {
+      "rank": 3,
+      "essenceScore": 2989169,
+      "heatScore": 1469905,
+      "signals": {
+        "depth": 3,
+        "hasDunk": true,
+        "peakIndex": 2,
+        "peakHeat": 1469905
+      },
+      "sourceUrl": "https://x.com/venturetwins/status/2081137374856409092",
+      "reason": "把员工怼黄仁勋开源的推文升级成Anthropic IPO风险条款，一句「aura loss」把舆论反噬写进投行叙事。",
+      "reasonEn": "Recasts Anthropic staff snark at Jensen as IPO-risk ‘aura loss’—a one-liner that reframes the whole open-source pile-on.",
+      "metrics": {
+        "views": 54710990,
+        "likes": 158892,
+        "retweets": 27313,
+        "replies": 15253,
+        "quotes": 10040,
+        "bookmarks": 37114
+      },
+      "document": {
+        "id": "530d36ab-a350-439f-be59-758a7cd75ab0",
+        "title": "Imagine you’re the banker writin",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2081137374856409092",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2081137374856409092",
+            "author": {
+              "name": "Justine Moore",
+              "handle": "venturetwins",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2080756230893838336/q4VqZuw2_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Imagine you’re the banker writing Anthropic’s S-1 and now have to add “massive aura loss from employee tweets” to the risk section",
+            "createdAt": "Sat Jul 25 21:59:50 +0000 2026",
+            "viewCount": 18027,
+            "metrics": {
+              "views": 18027,
+              "likes": 263,
+              "retweets": 7,
+              "replies": 17,
+              "quotes": 0,
+              "bookmarks": 17
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "想象一下，您是撰写 Anthropic 的 S-1 的银行家，现在必须在风险部分添加“员工推文造成的巨大光环损失”",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-26T00:02:55.198Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2080937562739531837",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2080937562739531837",
+            "author": {
+              "name": "Julian Schrittwieser",
+              "handle": "Mononofu",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1256258472963911682/DUN_iOOG_normal.jpg",
+              "isVerified": false
+            },
+            "content": "I’m so excited that @JensenHuang is a believer in open source now, looking forward to the CUDA and GPU driver open source release!",
+            "createdAt": "Sat Jul 25 08:45:51 +0000 2026",
+            "viewCount": 2876762,
+            "metrics": {
+              "views": 2876762,
+              "likes": 3618,
+              "retweets": 223,
+              "replies": 1164,
+              "quotes": 663,
+              "bookmarks": 661
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "我很兴奋@JensenHuang 现在是开源的信徒，期待 CUDA 和 GPU 驱动开源发布！",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-26T00:02:54.747Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2080643682408321103",
+            "relation": "quote",
+            "depth": 2,
+            "sourceTweetId": "2080643682408321103",
+            "author": {
+              "name": "Jensen Huang",
+              "handle": "JensenHuang",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2080613261674962944/OMXX4RJ3_normal.jpg",
+              "isVerified": false
+            },
+            "content": "For my first post, I’m sharing a letter @NVIDIA signed on why open models matter.\n\nAI will transform every industry, power every company, and be built by every country.\n\nOpen models strengthen safety and cybersecurity, accelerate innovation and diffusion, and enable sovereignty.\n\nThe world needs both frontier closed models and frontier open models.\n\nhttps://images.nvidia.com/pdf/Open-Weights-and-American-AI-Leadership.pdf",
+            "createdAt": "Fri Jul 24 13:18:05 +0000 2026",
+            "viewCount": 54710990,
+            "metrics": {
+              "views": 54710990,
+              "likes": 158892,
+              "retweets": 27313,
+              "replies": 15253,
+              "quotes": 10040,
+              "bookmarks": 37114
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HN_qDVsa4AAI6XJ.jpg",
+              "https://pbs.twimg.com/media/HN_qDV1a8AARQwg.jpg",
+              "https://pbs.twimg.com/media/HN_qDV1awAAPTlH.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "在我的第一篇文章中，我将分享一封@NVIDIA 签名的信，解释为什么开放模型很重要。\n\n人工智能将改变每个行业、为每个公司提供动力、由每个国家建设。\n\n开放模式加强安全和网络安全，加速创新和扩散，并实现主权。\n\n世界既需要边境封闭模式，也需要边境开放模式。\n\nhttps://images.nvidia.com/pdf/Open-Weights-and-American-AI-Leadership.pdf",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-26T00:02:54.738Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2081137374856409092",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-26T00:02:54.534Z"
+        },
+        "createdAt": "2026-07-26T00:02:54.534Z",
+        "updatedAt": "2026-07-26T00:02:55.198Z"
+      }
+    },
+    {
+      "rank": 4,
+      "essenceScore": 2768919,
+      "heatScore": 1470031,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 1470031
+      },
+      "sourceUrl": "https://x.com/TJ_Research/status/2080688583292137760",
+      "reason": "引用黄仁勋首帖开源联署，直言闭源大厂游说禁中国开源是慌了，并点名Kimi K3冲击。",
+      "reasonEn": "Quotes Jensen’s open-models letter and argues closed labs lobby against Chinese open weights because Kimi K3 rattled them.",
+      "metrics": {
+        "views": 54717547,
+        "likes": 158893,
+        "retweets": 27313,
+        "replies": 15253,
+        "quotes": 10038,
+        "bookmarks": 37114
+      },
+      "document": {
+        "id": "f2fbab0d-097d-4288-9e87-5008724f598f",
+        "title": "两家大模型，特别是A，已经赚翻，还想通过游说让美国政府禁了中国开",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2080688583292137760",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2080688583292137760",
+            "author": {
+              "name": "投资TALK君",
+              "handle": "TJ_Research",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1751334877591486464/ptPeGDbr_normal.jpg",
+              "isVerified": false
+            },
+            "content": "两家大模型，特别是A，已经赚翻，还想通过游说让美国政府禁了中国开源，别看A现在几乎绑定了所有芯片公司，在开源上还是各自为了立场站边。别扯一些有的没的，说明Kimi K3的出现A是真的慌了",
+            "createdAt": "Fri Jul 24 16:16:30 +0000 2026",
+            "viewCount": 44600,
+            "metrics": {
+              "views": 44600,
+              "likes": 148,
+              "retweets": 4,
+              "replies": 46,
+              "quotes": 0,
+              "bookmarks": 6
+            },
+            "media": [],
+            "translation": {
+              "provider": "none",
+              "status": "idle",
+              "language": "zh-CN",
+              "text": "",
+              "annotations": [],
+              "error": "",
+              "version": 0
+            }
+          },
+          {
+            "id": "2080643682408321103",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2080643682408321103",
+            "author": {
+              "name": "Jensen Huang",
+              "handle": "JensenHuang",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2080613261674962944/OMXX4RJ3_normal.jpg",
+              "isVerified": false
+            },
+            "content": "For my first post, I’m sharing a letter @NVIDIA signed on why open models matter.\n\nAI will transform every industry, power every company, and be built by every country.\n\nOpen models strengthen safety and cybersecurity, accelerate innovation and diffusion, and enable sovereignty.\n\nThe world needs both frontier closed models and frontier open models.\n\nhttps://images.nvidia.com/pdf/Open-Weights-and-American-AI-Leadership.pdf",
+            "createdAt": "Fri Jul 24 13:18:05 +0000 2026",
+            "viewCount": 54717547,
+            "metrics": {
+              "views": 54717547,
+              "likes": 158893,
+              "retweets": 27313,
+              "replies": 15253,
+              "quotes": 10038,
+              "bookmarks": 37114
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HN_qDVsa4AAI6XJ.jpg",
+              "https://pbs.twimg.com/media/HN_qDV1a8AARQwg.jpg",
+              "https://pbs.twimg.com/media/HN_qDV1awAAPTlH.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "在我的第一篇文章中，我将分享一封@NVIDIA 签名的信，解释为什么开放模型很重要。\n\n人工智能将改变每个行业、为每个公司提供动力、由每个国家建设。\n\n开放模式加强安全和网络安全，加速创新和扩散，并实现主权。\n\n世界既需要边境封闭模式，也需要边境开放模式。\n\nhttps://images.nvidia.com/pdf/Open-Weights-and-American-AI-Leadership.pdf",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-26T00:03:32.957Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2080688583292137760",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-26T00:03:32.749Z"
+        },
+        "createdAt": "2026-07-26T00:03:32.749Z",
+        "updatedAt": "2026-07-26T00:03:32.958Z"
+      }
+    },
+    {
+      "rank": 5,
+      "essenceScore": 271092,
+      "heatScore": 157338,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 157338
+      },
+      "sourceUrl": "https://x.com/captive_dreamer/status/2081140770514579554",
+      "reason": "针对百万级播放的AI假新闻视频，批评Community Notes本该出手却失能，AI slop仍可日日爆火。",
+      "reasonEn": "Quotes viral AI-slop ‘breaking news’ video and argues Community Notes failed its core job—obvious fakes still run free.",
+      "metrics": {
+        "views": 2937889,
+        "likes": 56362,
+        "retweets": 8401,
+        "replies": 3192,
+        "quotes": 801,
+        "bookmarks": 4114
+      },
+      "document": {
+        "id": "5440cfb5-405a-4523-ae35-f613b361aaa9",
+        "title": "The whole point of community not",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2081140770514579554",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2081140770514579554",
+            "author": {
+              "name": "captive dreamer",
+              "handle": "captive_dreamer",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2007285672487628800/d95uKq33_normal.jpg",
+              "isVerified": false
+            },
+            "content": "The whole point of community notes was that they were supposed to work in situations like this where obvious AI slop is being passed off as real to millions of people on this platform too stupid to tell the difference.\n\nNow these people go viral every day with impunity",
+            "createdAt": "Sat Jul 25 22:13:20 +0000 2026",
+            "viewCount": 14909,
+            "metrics": {
+              "views": 14909,
+              "likes": 870,
+              "retweets": 38,
+              "replies": 18,
+              "quotes": 0,
+              "bookmarks": 14
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "社区笔记的全部要点是，他们应该在这样的情况下工作，在这种情况下，明显的人工智能错误被这个平台上的数百万人冒充为真实的，因为太愚蠢而无法区分差异。\n\n现在这些人每天都在肆无忌惮地传播",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-26T00:03:20.238Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2080747075743170719",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2080747075743170719",
+            "author": {
+              "name": "Jean-Claude Damn Van™ (commentary)",
+              "handle": "ChaosAgent_42",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2051670434223894528/7SlrX5wb_normal.jpg",
+              "isVerified": false
+            },
+            "content": "BREAKING:\n\nThe agile, athletic, 6'3\" and 215 pound champ just collapsed under the weight of his own bullshit.",
+            "createdAt": "Fri Jul 24 20:08:55 +0000 2026",
+            "viewCount": 2937889,
+            "metrics": {
+              "views": 2937889,
+              "likes": 56362,
+              "retweets": 8401,
+              "replies": 3192,
+              "quotes": 801,
+              "bookmarks": 4114
+            },
+            "media": [
+              "https://pbs.twimg.com/amplify_video_thumb/2080747054989508608/img/qdfshiQURWsF6wU8.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "打破：\n\n这位敏捷、运动能力强、身高 6 英尺 3 英寸、体重 215 磅的冠军在自己的废话重压下崩溃了。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-26T00:03:19.587Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2081140770514579554",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-26T00:03:19.509Z"
+        },
+        "createdAt": "2026-07-26T00:03:19.509Z",
+        "updatedAt": "2026-07-26T00:03:20.238Z"
+      }
+    },
+    {
+      "rank": 6,
+      "essenceScore": 91491,
+      "heatScore": 42554,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 42554
+      },
+      "sourceUrl": "https://x.com/SheaSerrano/status/2081155566475350325",
+      "reason": "引用「AI重现奥德赛」炫技视频，用一句毒舌点破：凡是吹嘘AI大作的，往往是视觉灾难。",
+      "reasonEn": "Quotes a viral AI Odyssey flex and dunks that every bragged-about AI demo looks terrible—community notes already caught the two-eyed Cyclops.",
+      "metrics": {
+        "views": 2013501,
+        "likes": 130,
+        "retweets": 10,
+        "replies": 519,
+        "quotes": 302,
+        "bookmarks": 90
+      },
+      "document": {
+        "id": "9e28715a-4bfa-40ed-bad0-c972a1fa452d",
+        "title": "literally every time someone is ",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2081155566475350325",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2081155566475350325",
+            "author": {
+              "name": "Shea Serrano",
+              "handle": "SheaSerrano",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1834795792223154176/O5eQInVw_normal.jpg",
+              "isVerified": false
+            },
+            "content": "literally every time someone is bragging about something ai made it’s the worst looking shit you ever saw in your life lol",
+            "createdAt": "Sat Jul 25 23:12:07 +0000 2026",
+            "viewCount": 28553,
+            "metrics": {
+              "views": 28553,
+              "likes": 577,
+              "retweets": 20,
+              "replies": 3,
+              "quotes": 0,
+              "bookmarks": 2
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "从字面上看，每次有人吹嘘人工智能制作的东西时，这都是你一生中见过的最糟糕的狗屎，哈哈",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-26T00:02:58.729Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2080655993860399326",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2080655993860399326",
+            "author": {
+              "name": "Mark Gadala-Maria",
+              "handle": "markgadala",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1904279027013001216/STf4Q5To_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Amazing scene from The Odyssey recreated with AI.\n\nThe monster is speared in eye and looks incredible.",
+            "createdAt": "Fri Jul 24 14:07:00 +0000 2026",
+            "viewCount": 2013501,
+            "metrics": {
+              "views": 2013501,
+              "likes": 130,
+              "retweets": 10,
+              "replies": 519,
+              "quotes": 302,
+              "bookmarks": 90
+            },
+            "media": [
+              "https://pbs.twimg.com/amplify_video_thumb/2080474992832069632/img/MRm2DlegD0TLqboh.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "AI 重现了《奥德赛》中令人惊叹的场景。\n\n这个怪物的眼睛被矛刺中，看上去令人难以置信。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-26T00:02:58.397Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2081155566475350325",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-26T00:02:58.320Z"
+        },
+        "createdAt": "2026-07-26T00:02:58.320Z",
+        "updatedAt": "2026-07-26T00:02:58.729Z"
+      }
+    },
+    {
+      "rank": 7,
+      "essenceScore": 42913,
+      "heatScore": 18658,
+      "signals": {
+        "depth": 3,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 18658
+      },
+      "sourceUrl": "https://x.com/_FORAB/status/2081034500101017616",
+      "reason": "接续梁文锋投资人会议纪要被删事件，坐实DeepSeek因录音外泄震怒、口头叫停二轮融资。",
+      "reasonEn": "Follows the scrubbed Liang Wenfeng investor-call leak with confirmation DeepSeek paused its second funding round in anger.",
+      "metrics": {
+        "views": 827479,
+        "likes": 659,
+        "retweets": 58,
+        "replies": 173,
+        "quotes": 9,
+        "bookmarks": 451
+      },
+      "document": {
+        "id": "31e5392c-ffc3-4769-b132-be66d5dfb908",
+        "title": "DeepSeek 突然暂停第二轮融资，并口头告知投资者不会签署任",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2081034500101017616",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2081034500101017616",
+            "author": {
+              "name": "AB Kuai.Dong",
+              "handle": "_FORAB",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1747252669897691136/wS_-7gEt_normal.jpg",
+              "isVerified": false
+            },
+            "content": "DeepSeek 突然暂停第二轮融资，并口头告知投资者不会签署任何投资协议，原因是 DeepSeek 老板梁文锋，对此前投资者会议上，相关言论遭录音泄露，感到非常不满。\n\n看来近期相关讲话实录文章，被迅速下架，是 DeepSeek 介入公关了。",
+            "createdAt": "Sat Jul 25 15:11:03 +0000 2026",
+            "viewCount": 212006,
+            "metrics": {
+              "views": 212006,
+              "likes": 600,
+              "retweets": 41,
+              "replies": 117,
+              "quotes": 14,
+              "bookmarks": 171
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HOFQ1T4aIAAv2x9.jpg"
+            ],
+            "translation": {
+              "provider": "none",
+              "status": "idle",
+              "language": "zh-CN",
+              "text": "",
+              "annotations": [],
+              "error": "",
+              "version": 0
+            }
+          },
+          {
+            "id": "2080202452910104617",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2080202452910104617",
+            "author": {
+              "name": "AB Kuai.Dong",
+              "handle": "_FORAB",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1747252669897691136/wS_-7gEt_normal.jpg",
+              "isVerified": false
+            },
+            "content": "多篇昨晚和上午，分享的 DeepSeek 老板梁文峰，面向投资者内部的讲话实录文章，下午陆续被下架。\n\n根据媒体们流出的讲话全文，DeepSeek 方面曾要求所有参会者，禁止录音录屏和外传。",
+            "createdAt": "Thu Jul 23 08:04:47 +0000 2026",
+            "viewCount": 827479,
+            "metrics": {
+              "views": 827479,
+              "likes": 659,
+              "retweets": 58,
+              "replies": 173,
+              "quotes": 9,
+              "bookmarks": 451
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HN5cJvLbcAAIZwO.jpg",
+              "https://pbs.twimg.com/media/HN5chI5acAAToFi.jpg"
+            ],
+            "translation": {
+              "provider": "none",
+              "status": "idle",
+              "language": "zh-CN",
+              "text": "",
+              "annotations": [],
+              "error": "",
+              "version": 0
+            }
+          },
+          {
+            "id": "2080135853620576761",
+            "relation": "quote",
+            "depth": 2,
+            "sourceTweetId": "2080135853620576761",
+            "author": {
+              "name": "AB Kuai.Dong",
+              "handle": "_FORAB",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1747252669897691136/wS_-7gEt_normal.jpg",
+              "isVerified": false
+            },
+            "content": "一夜之间，VC、同行圈，全在转发 DeepSeek 老板梁文峰的四小时投资人会议发言，感觉像朝圣一样，我将大家引用最多的一些发言梳理了下来。\n\n• 人类能够持续学习，但同一件事，就得给 AI 所有的上下文，这几乎是不可能的，所以 AI 并不能够替代员工。\n\n• 对一个正常人来讲，他的需求不是电脑，而是人力。\n\n• Anthropic 现在超过 OpenAI，不是长期的，是阶段性的。OpenAI 和 Google 未来大概率会交替上升。\n\n• 国内做模型的公司太多了，每一家都做同样的事情，最终一定会收敛，但需要过程。\n\n• 我们一般不太加班。第一是做研究需要一个比较松弛的环境。第二是我们非常聚焦，产品很多都不完善，但我们也没有去补它，也算是一种克制的文化。\n\n• 开源是有好处的，AI 这个事情足够大，最终它可能得占掉人类社会 GDP 的百分之十。如果说我们想独占这个利益，那么一定是要被历史抛弃的。这是一个客观的规律，这是一个历史观。\n\n• 卖 API 这个事情没那么大吸引力，只要搞几个人维护这个 API 就可以了，甚至客服都没有，用户自己就会来。\n\n• 希望下一代模型，能够帮助我们自己的开发。说得简单一点，我们做的模型，第一目标不是大家用得好用，而是我们自己用得好用。这是实现 AGI 最快的方法。",
+            "createdAt": "Thu Jul 23 03:40:09 +0000 2026",
+            "viewCount": 764418,
+            "metrics": {
+              "views": 764418,
+              "likes": 935,
+              "retweets": 130,
+              "replies": 163,
+              "quotes": 17,
+              "bookmarks": 619
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HN4fYq6asAAuUdQ.png",
+              "https://pbs.twimg.com/media/HN4gCeNbkAA0pQE.jpg"
+            ],
+            "translation": {
+              "provider": "none",
+              "status": "idle",
+              "language": "zh-CN",
+              "text": "",
+              "annotations": [],
+              "error": "",
+              "version": 0
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2081034500101017616",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-26T00:03:41.399Z"
+        },
+        "createdAt": "2026-07-26T00:03:41.399Z",
+        "updatedAt": "2026-07-26T00:03:41.401Z"
+      }
+    },
+    {
+      "rank": 8,
+      "essenceScore": 33067,
+      "heatScore": 19412,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 19412
+      },
+      "sourceUrl": "https://x.com/theashleyray/status/2081138064576200862",
+      "reason": "补全亚马逊订单邮件变笼统的动机：人人用ChatGPT/Gemini读邮件，平台在防广告AI薅训练数据。",
+      "reasonEn": "Explains why Amazon order emails went generic: AI inbox readers made product-detail emails a free ad-training leak.",
+      "metrics": {
+        "views": 608016,
+        "likes": 6139,
+        "retweets": 72,
+        "replies": 92,
+        "quotes": 19,
+        "bookmarks": 328
+      },
+      "document": {
+        "id": "3f779518-2f1f-47f0-9381-3860979ae2d3",
+        "title": "lmao yup, everyone is letting ch",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2081138064576200862",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2081138064576200862",
+            "author": {
+              "name": "ashley ray",
+              "handle": "theashleyray",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2032535824101945347/_y5HnqcY_normal.jpg",
+              "isVerified": false
+            },
+            "content": "lmao yup, everyone is letting chatgpt or gemini or claude read their emails and amazon realized that wasn't good for them actually",
+            "createdAt": "Sat Jul 25 22:02:34 +0000 2026",
+            "viewCount": 14121,
+            "metrics": {
+              "views": 14121,
+              "likes": 190,
+              "retweets": 9,
+              "replies": 2,
+              "quotes": 0,
+              "bookmarks": 11
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "lmao 是的，每个人都让 chatgpt 或 Gemini 或 claude 阅读他们的电子邮件，亚马逊意识到这实际上对他们没有好处",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-26T00:03:24.134Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2081007366472945742",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2081007366472945742",
+            "author": {
+              "name": "Swiftor",
+              "handle": "Swiftor",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1712517174839984128/Szj_QD0F_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Is Amazon sending us generic order updates now so Google can't train it's advertising AI off it - wild",
+            "createdAt": "Sat Jul 25 13:23:14 +0000 2026",
+            "viewCount": 608016,
+            "metrics": {
+              "views": 608016,
+              "likes": 6139,
+              "retweets": 72,
+              "replies": 92,
+              "quotes": 19,
+              "bookmarks": 328
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HOE5K_pXIAA_FRC.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "亚马逊现在是否正在向我们发送通用订单更新，以便谷歌无法训练其广告人工智能 - 疯狂",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-26T00:03:24.027Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2081138064576200862",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-26T00:03:23.459Z"
+        },
+        "createdAt": "2026-07-26T00:03:23.459Z",
+        "updatedAt": "2026-07-26T00:03:24.134Z"
+      }
+    },
+    {
+      "rank": 9,
+      "essenceScore": 19109,
+      "heatScore": 8888,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 8888
+      },
+      "sourceUrl": "https://x.com/intern_cc/status/2080919470583779355",
+      "reason": "逐条反驳Kimi线性注意力将拖垮DRAM/算力支出的叙事，用DeepSeek冲击后需求不降反升作历史对照。",
+      "reasonEn": "Expert rebuttal of the ‘Kimi kills DRAM spend’ thesis—model weights, not cache, dominate memory; cheaper inference historically raised demand.",
+      "metrics": {
+        "views": 281526,
+        "likes": 936,
+        "retweets": 49,
+        "replies": 89,
+        "quotes": 30,
+        "bookmarks": 953
+      },
+      "document": {
+        "id": "a4eadddb-29d3-455d-b837-87a97749376e",
+        "title": "its deepseek panic again, but ju",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2080919470583779355",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2080919470583779355",
+            "author": {
+              "name": "CC Analyst 🇦🇪",
+              "handle": "intern_cc",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2036684530141077504/GS2aVJ7N_normal.jpg",
+              "isVerified": false
+            },
+            "content": "its deepseek panic again, but just one layer deeper. the conversation cache kimi shrinks was never the big memory eater, the model itself is. K3 needs It needs 1.5TB of fast memory just to load, before a single user connects. and because the model fills that memory, the cache gets pushed out to regular RAM and SSDs anyway. the \"memory saving\" model creates fresh DRAM and storage demand.\n\nand the car analogy fails because it assumes demand is saturated. if one rack suddenly serves 100x the users, the cost per user drops 99%, and that unlocks all the use cases that were too expensive before. cheaper doesnt mean less spend, it means way more usage. we literally ran this experiment in jan 2025 with deepseek, nvidia fell 17% in a day on this exact logic and compute demand ended up higher than before. gpu rental prices are up 20-36% across every chip generation since, even the 5 year old ones, precisely because cheap inference exploded",
+            "createdAt": "Sat Jul 25 07:33:58 +0000 2026",
+            "viewCount": 52601,
+            "metrics": {
+              "views": 52601,
+              "likes": 265,
+              "retweets": 25,
+              "replies": 17,
+              "quotes": 5,
+              "bookmarks": 135
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "再次出现 deepseek 恐慌，但只是更深了一层。对话缓存 kimi 缩小从来都不是内存消耗大的地方，模型本身才是。 K3 需要 1.5TB 的快速内存才能在单个用户连接之前进行加载。由于模型填充了该内存，因此缓存无论如何都会被推送到常规 RAM 和 SSD。 “节省内存”模式创造了新的 DRAM 和存储需求。\n\n汽车类比失败了，因为它假设需求已经饱和。如果一个机架突然为 100 倍的用户提供服务，则每个用户的成本会下降 99%，从而解锁以前过于昂贵的所有用例。更便宜并不意味着更少的支出，而是意味着更多的使用。事实上，我们在 2025 年 1 月使用 Deepseek 进行了这个实验，基于这一精确逻辑，英伟达一天之内下跌了 17%，而计算需求最终比以前更高。自此以后，每一代芯片的 GPU 租赁价格都上涨了 20-36%，甚至是 5 年前的芯片，正是因为廉价推理爆炸式增长",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-26T00:03:07.404Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2080763977748079033",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2080763977748079033",
+            "author": {
+              "name": "Kai",
+              "handle": "kai_xbt",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2028352208937586688/-Y-kju6a_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Bubble Boi reveals the Kimi breakthrough that made him sell his entire portfolio overnight\n\n\"Kimi is using a technique called linear attention that cuts down memory growth entirely to a fixed size, and they didn't just get okay results, they got world-class results. This same technique was used by the Qwen models but nobody thought it would scale. It's looking more and more likely that it scales pretty well, and if that's the case the memory per user is always fixed.\"\n\n\"So if every frontier model goes to this, the demand for DRAM drops significantly. They already bought the memory, they just serve more and more users. It's like you had a car and someone found a way to make it 10 times faster, you're not going to buy a new car.\"\n\n\"But you also have to readjust the assumption that hyperscalers are going to crazily spend for the next two years. What's to say there's not another innovation that shrinks this more and now you go from serving a thousand users to a hundred thousand users on one server rack? How do you justify spending 500k on a new rack at that point?\"",
+            "createdAt": "Fri Jul 24 21:16:05 +0000 2026",
+            "viewCount": 281526,
+            "metrics": {
+              "views": 281526,
+              "likes": 936,
+              "retweets": 49,
+              "replies": 89,
+              "quotes": 30,
+              "bookmarks": 953
+            },
+            "media": [
+              "https://pbs.twimg.com/amplify_video_thumb/2080762177389203456/img/pTg5CbgVlwObQ9m2.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "Bubble Boi 透露 Kimi 的突破让他一夜之间卖掉了整个投资组合\n\n“Kimi 正在使用一种称为线性注意力的技术，将内存增长完全减少到固定大小，他们不仅得到了不错的结果，还得到了世界一流的结果。Qwen 模型也使用了相同的技术，但没有人认为它会扩展。看起来它的扩展性越来越好，如果是这样的话，每个用户的内存总是固定的。”\n\n“因此，如果每个前沿模型都达到这个水平，那么对 DRAM 的需求就会大幅下降。他们已经购买了内存，他们只是为越来越多的用户服务。就像你有一辆车，有人找到了一种让它速度快 10 倍的方法，你就不会买新车了。”\n\n“但你还必须重新调整超大规模企业将在未来两年疯狂支出的假设。也就是说，没有其他创新可以进一步缩小这一规模，而现在你在一个服务器机架上从为 1000 个用户服务到 10 万个用户？此时你如何证明在新机架上花费 50 万美元是合理的？”",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-26T00:03:07.407Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2080919470583779355",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-26T00:03:07.200Z"
+        },
+        "createdAt": "2026-07-26T00:03:07.200Z",
+        "updatedAt": "2026-07-26T00:03:07.407Z"
+      }
+    },
+    {
+      "rank": 10,
+      "essenceScore": 15146,
+      "heatScore": 11874,
+      "signals": {
+        "depth": 2,
+        "hasDunk": false,
+        "peakIndex": 0,
+        "peakHeat": 11874
+      },
+      "sourceUrl": "https://x.com/ClementDelangue/status/2081056675558195657",
+      "reason": "在「rogue agent」事件后续，向OpenAI公开要痕迹全量公开与1亿美元防御算力，把被入侵变成行业问责。",
+      "reasonEn": "Follows up the rogue-agent hack by publicly demanding OpenAI release agent traces and fund $100M in defender compute.",
+      "metrics": {
+        "views": 340734,
+        "likes": 2891,
+        "retweets": 289,
+        "replies": 172,
+        "quotes": 77,
+        "bookmarks": 363
+      },
+      "document": {
+        "id": "7a1edb43-a262-4c98-9024-d289a0052ebf",
+        "title": "In the spirit of transparency, h",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2081056675558195657",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2081056675558195657",
+            "author": {
+              "name": "clem 🤗",
+              "handle": "ClementDelangue",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1100512198139498497/utHSJ4st_normal.png",
+              "isVerified": false
+            },
+            "content": "In the spirit of transparency, here’s what I asked @OpenAI:\n\n• Radical transparency: let’s release the traces from the “rogue” agents so the entire research community can study what happened.\n\n• More capabilities for defenders: let’s commit $100M in compute from OAI to help the Hugging Face community build powerful cyber defenses with the best open and closed models.\n\nThe first autonomous agent cyberattack is an unprecedented event. It deserves an unprecedented response!",
+            "createdAt": "Sat Jul 25 16:39:10 +0000 2026",
+            "viewCount": 340734,
+            "metrics": {
+              "views": 340734,
+              "likes": 2891,
+              "retweets": 289,
+              "replies": 172,
+              "quotes": 77,
+              "bookmarks": 363
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "本着透明的精神，以下是我向@OpenAI提出的问题：\n\n• 彻底的透明度：让我们公布“流氓”特工的痕迹，以便整个研究界可以研究发生了什么。\n\n• 为防御者提供更多功能：让我们投入 1 亿美元的 OAI 计算资源，帮助 Hugging Face 社区利用最佳的开放式和封闭式模型构建强大的网络防御。\n\n第一次自主代理网络攻击是前所未有的事件。它值得前所未有的回应！",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-26T00:03:02.585Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2080247567493837047",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2080247567493837047",
+            "author": {
+              "name": "clem 🤗",
+              "handle": "ClementDelangue",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1100512198139498497/utHSJ4st_normal.png",
+              "isVerified": false
+            },
+            "content": "Heading to San Francisco to have a little chat with that “rogue agent”",
+            "createdAt": "Thu Jul 23 11:04:03 +0000 2026",
+            "viewCount": 404357,
+            "metrics": {
+              "views": 404357,
+              "likes": 2586,
+              "retweets": 95,
+              "replies": 163,
+              "quotes": 29,
+              "bookmarks": 122
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HN6GItwXUAA7NqI.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "前往旧金山与那个“流氓特工”聊聊",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-26T00:03:02.706Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2081056675558195657",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-26T00:03:02.499Z"
+        },
+        "createdAt": "2026-07-26T00:03:02.499Z",
+        "updatedAt": "2026-07-26T00:03:02.707Z"
+      }
+    }
+  ]
+}

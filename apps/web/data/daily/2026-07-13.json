@@ -1,0 +1,1642 @@
+{
+  "date": "2026-07-13",
+  "title": "每日 X 精华引用榜",
+  "titleEn": "Daily Quote Essence on X",
+  "generatedAt": "2026-07-13T00:48:35.496Z",
+  "entries": [
+    {
+      "rank": 1,
+      "essenceScore": 593792,
+      "heatScore": 342891,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 342891
+      },
+      "sourceUrl": "https://x.com/klausbrave/status/2076424627736432819",
+      "reason": "付费用户公开信：模型再强，周更的条款也摧毁商业信任，最终把日常负载交给 Codex。",
+      "reasonEn": "Champion-turned-critic open letter: shifting weekly usage terms destroy trust; brilliance loses to Codex as the reliable daily driver.",
+      "metrics": {
+        "views": 11257224,
+        "likes": 58711,
+        "retweets": 5882,
+        "replies": 5319,
+        "quotes": 7052,
+        "bookmarks": 4798
+      },
+      "document": {
+        "id": "28f5deb2-2dee-41ca-97ff-0256bd9a27b8",
+        "title": "Dear Anthropic,\n\nI say this as y",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2076424627736432819",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2076424627736432819",
+            "author": {
+              "name": "Klaus Brave (❤️,⚡️)",
+              "handle": "klausbrave",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1776705447925252096/O3st8nAR_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Dear Anthropic,\n\nI say this as your champion not your critic.\n\nYou may have superior intelligence,\nbut providing a service is about more than that.\n\nIt’s about trust.\n\nIt’s about being reliable,\nproviding a service that one can count on, a promise fulfilled.\n\nProgress moves at the speed of trust - and Anthropic it pains me to say you are losing it.\n\nPaying $200/month for a Max plan with unknown and shifting usage terms week by week doesn’t work.\n\nA business owner can’t operate clearly leading a team,\nplanning and approving budget for a project based on service where the terms: capability, capacity, price can up and change within a 1-week time horizon.\n\nNow Claude I love you,\nyou have moments of brilliance that truly blow me away.\n\nAnd Fable when you are on you are truly on! I turn to you when I need that genius savant Hail Mary coding session on a particularly thorny problem or where I need max out the box creativity.\n\nBut for my daily driver trusted inexhaustible workhorse who gets shit done…\n\nCodex you’re my right hand man.",
+            "createdAt": "Sun Jul 12 21:53:04 +0000 2026",
+            "viewCount": 22100,
+            "metrics": {
+              "views": 22100,
+              "likes": 301,
+              "retweets": 20,
+              "replies": 33,
+              "quotes": 7,
+              "bookmarks": 19
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "亲爱的人类，\n\n我这样说是作为你的拥护者而不是你的批评者。\n\n你可能拥有超凡的智力，\n但提供服务的意义远不止于此。\n\n这是关于信任。\n\n这是关于可靠，\n提供值得信赖的服务，兑现承诺。\n\n进步以信任的速度前进——而人类，我很痛苦地说你正在失去它。\n\n每月支付 200 美元购买 Max 套餐，但使用条款未知且每周都在变化，这是行不通的。\n\n企业主无法清晰地带领团队运作，\n基于服务规划和批准项目预算，其中条款：能力、容量、价格可能会在 1 周的时间范围内上涨和变化。\n\n现在克劳德我爱你，\n你的辉煌时刻确实让我震惊。\n\n当你在《神鬼寓言》中时，你就真的在了！当我需要天才学者万福玛丽编码课程来解决一个特别棘手的问题时，或者当我需要最大限度地发挥创造力时，我会求助于你。\n\n但对于我每天信赖的司机来说，他是一位不知疲倦、能把事情做好的主力……\n\nCodex，你是我的得力助手。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-13T00:48:23.428Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2076351399999557669",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2076351399999557669",
+            "author": {
+              "name": "Claude",
+              "handle": "claudeai",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1950950107937185792/QOfEjFoJ_normal.jpg",
+              "isVerified": false
+            },
+            "content": "We're extending Claude Fable 5 access on all paid plans, as well as keeping Claude Code’s weekly rate limits 50% higher, through July 19.",
+            "createdAt": "Sun Jul 12 17:02:05 +0000 2026",
+            "viewCount": 11257224,
+            "metrics": {
+              "views": 11257224,
+              "likes": 58711,
+              "retweets": 5882,
+              "replies": 5319,
+              "quotes": 7052,
+              "bookmarks": 4798
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "截至 7 月 19 日，我们将在所有付费计划中扩展 Claude Fable 5 的访问权限，并将 Claude Code 的每周费率限制提高 50%。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-13T00:48:23.419Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2076424627736432819",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-13T00:48:23.360Z"
+        },
+        "createdAt": "2026-07-13T00:48:23.360Z",
+        "updatedAt": "2026-07-13T00:48:23.429Z"
+      }
+    },
+    {
+      "rank": 2,
+      "essenceScore": 593772,
+      "heatScore": 342877,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 342877
+      },
+      "sourceUrl": "https://x.com/GergelyOrosz/status/2076402763571810563",
+      "reason": "工程圈大V点破 Claude 延期真相：若无 GPT-5.6 竞争，Anthropic 多半会收回 Fable 再加价。",
+      "reasonEn": "Pragmatic Engineer dunk: Fable extensions exist only because GPT-5.6 competition makes Anthropic unable to claw back access and charge more.",
+      "metrics": {
+        "views": 11257224,
+        "likes": 58703,
+        "retweets": 5880,
+        "replies": 5319,
+        "quotes": 7052,
+        "bookmarks": 4798
+      },
+      "document": {
+        "id": "0e168049-5884-41d7-bf72-148ca525cc19",
+        "title": "This is why competition leads to",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2076402763571810563",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2076402763571810563",
+            "author": {
+              "name": "Gergely Orosz",
+              "handle": "GergelyOrosz",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/673095429748350976/ei5eeouV_normal.png",
+              "isVerified": false
+            },
+            "content": "This is why competition leads to much better outcomes for customers and consumers, in general\n\nIf it was not for GPT-5.6 released a few days ago, Anthropic would have most likely removed Fable from most paid plans, and charged $$$ for access\n\nBut with GPT-5.6 out, they cannot",
+            "createdAt": "Sun Jul 12 20:26:11 +0000 2026",
+            "viewCount": 55088,
+            "metrics": {
+              "views": 55088,
+              "likes": 1293,
+              "retweets": 52,
+              "replies": 47,
+              "quotes": 3,
+              "bookmarks": 48
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "这就是为什么竞争通常会为客户和消费者带来更好的结果\n\n如果不是几天前发布的 GPT-5.6，Anthropic 很可能会将《神鬼寓言》从大多数付费计划中删除，并收取 $$$ 的访问费用\n\n但随着 GPT-5.6 的退出，他们不能",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-13T00:48:20.282Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2076351399999557669",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2076351399999557669",
+            "author": {
+              "name": "Claude",
+              "handle": "claudeai",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1950950107937185792/QOfEjFoJ_normal.jpg",
+              "isVerified": false
+            },
+            "content": "We're extending Claude Fable 5 access on all paid plans, as well as keeping Claude Code’s weekly rate limits 50% higher, through July 19.",
+            "createdAt": "Sun Jul 12 17:02:05 +0000 2026",
+            "viewCount": 11257224,
+            "metrics": {
+              "views": 11257224,
+              "likes": 58703,
+              "retweets": 5880,
+              "replies": 5319,
+              "quotes": 7052,
+              "bookmarks": 4798
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "截至 7 月 19 日，我们将在所有付费计划中扩展 Claude Fable 5 的访问权限，并将 Claude Code 的每周费率限制提高 50%。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-13T00:48:20.286Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2076402763571810563",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-13T00:48:20.225Z"
+        },
+        "createdAt": "2026-07-13T00:48:20.225Z",
+        "updatedAt": "2026-07-13T00:48:20.287Z"
+      }
+    },
+    {
+      "rank": 3,
+      "essenceScore": 223725,
+      "heatScore": 104058,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 104058
+      },
+      "sourceUrl": "https://x.com/ivanalog_com/status/2076424672724357216",
+      "reason": "把 AI 落地阻力从算力改写成组织悖论：成功公司为何要自用 AI 去孕育取代自己的原生对手？",
+      "reasonEn": "Chinese reframing of Nadella: the blocker isn’t compute—it’s why incumbents would adopt AI that enables AI-native replacements.",
+      "metrics": {
+        "views": 3470619,
+        "likes": 6944,
+        "retweets": 1223,
+        "replies": 490,
+        "quotes": 707,
+        "bookmarks": 10466
+      },
+      "document": {
+        "id": "ca46795c-2d33-4666-90b4-5c40a717fa09",
+        "title": "纳德拉是我们这个时代最好的思想者之一。\n\n一针见血。AI发展到这",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2076424672724357216",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2076424672724357216",
+            "author": {
+              "name": "seekinganythingbutalpha",
+              "handle": "ivanalog_com",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1538007532177723392/aobhQuJw_normal.jpg",
+              "isVerified": false
+            },
+            "content": "纳德拉是我们这个时代最好的思想者之一。\n\n一针见血。AI发展到这一步，最大的阻力已经不是智能或者算力，而是一个简单的问题：\n\n（作为一个目前成功的公司），为什么我要采用AI，而让AI原生公司最后取代我？\n\n如果不解决这个问题，AI很难在真实工作流中落地。",
+            "createdAt": "Sun Jul 12 21:53:14 +0000 2026",
+            "viewCount": 9207,
+            "metrics": {
+              "views": 9207,
+              "likes": 37,
+              "retweets": 5,
+              "replies": 8,
+              "quotes": 0,
+              "bookmarks": 19
+            },
+            "media": [],
+            "translation": {
+              "provider": "none",
+              "status": "idle",
+              "language": "zh-CN",
+              "text": "",
+              "annotations": [],
+              "error": "",
+              "version": 0
+            }
+          },
+          {
+            "id": "2076323181154230284",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2076323181154230284",
+            "author": {
+              "name": "Satya Nadella",
+              "handle": "satyanadella",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1221837516816306177/_Ld4un5A_normal.jpg",
+              "isVerified": false
+            },
+            "content": "",
+            "createdAt": "Sun Jul 12 15:09:57 +0000 2026",
+            "viewCount": 3470619,
+            "metrics": {
+              "views": 3470619,
+              "likes": 6944,
+              "retweets": 1223,
+              "replies": 490,
+              "quotes": 707,
+              "bookmarks": 10466
+            },
+            "media": [],
+            "article": {
+              "title": "The Reverse Information Paradox ",
+              "previewText": "In the age of intelligence, how should firms protect their core IP?  \nNobel Prize winning economist Kenneth Arrow famously described a paradox in the market for information. “Its value for the",
+              "coverUrl": "",
+              "blocks": [
+                {
+                  "type": "unstyled",
+                  "text": "In the age of intelligence, how should firms protect their core IP?  "
+                },
+                {
+                  "type": "unstyled",
+                  "text": "Nobel Prize winning economist Kenneth Arrow famously described a paradox in the market for information. “Its value for the purchaser is not known until he has the information, but then he has in effect acquired it without cost.” In Arrow’s “Information Paradox,” the seller risks giving away knowledge in order to sell it. "
+                },
+                {
+                  "type": "unstyled",
+                  "text": "AI creates the reverse problem. In the AI age, the buyer risks giving away knowledge, just in order to use what they bought. "
+                },
+                {
+                  "type": "unstyled",
+                  "text": "You essentially pay for intelligence twice, once with money, and again with something even more valuable: the proprietary knowledge you must reveal to make that intelligence useful. The better you want the model to perform, the more of that knowledge you have to feed it!  "
+                },
+                {
+                  "type": "unstyled",
+                  "text": "Over time, the information asymmetry becomes increasingly skewed. The seller learns more and more about you as you use what you purchased, while you learn very little about what the seller is learning in return. "
+                },
+                {
+                  "type": "unstyled",
+                  "text": "That is what I think of as the Reverse Information Paradox. "
+                },
+                {
+                  "type": "unstyled",
+                  "text": "Patents solve one aspect of Arrow’s paradox. They let an inventor disclose an idea without simply giving it away. The Reverse Information Paradox needs its own equivalent. "
+                },
+                {
+                  "type": "unstyled",
+                  "text": "This requires more than data protection. Models learn from \"exhaust,\" the prompts people write, the tools agents use, and especially the corrections people make when the model is wrong. Every correction is distilled into institutional know-how. It's the kind of knowledge a competitor could never buy, and the kind that leaks almost imperceptibly: trace by trace, correction by correction, eval by eval. "
+                },
+                {
+                  "type": "unstyled",
+                  "text": "In consuming intelligence, you are creating intelligence. And what you create should belong to you. This is your particular intelligence, in Hayek's sense: the knowledge of time, place, and circumstance that no one else can hold. It knows what you think, what you value, and how you measure success. "
+                },
+                {
+                  "type": "unstyled",
+                  "text": "While the great innovation that comes from model providers having fair use rights to train models on public data is needed, I find it ironic that the status quo is to then turn around and impose restrictive terms on distillation, and to reserve the right to learn from customer usage and interaction data. If learning flows in only one direction, economic value converges toward the owners of the learning infrastructure rather than the creators of the knowledge itself. Therefore, it's imperative that we distribute the learning infrastructure to every firm so that they can control their own learning loop.  "
+                },
+                {
+                  "type": "unstyled",
+                  "text": "As Alex Karp put it: \"What the technical customers want is control over their compute, their models, their data stack, and their alpha. They want to know they own the means of production, and it's not being transferred to someone else.\" The current regime does precisely the transfer Karp and companies fear. "
+                },
+                {
+                  "type": "unstyled",
+                  "text": "That is why enterprises need a real trust boundary for their human capital and token capital to compound. It is where an organization’s data, traces, evals, adapted weights, and memory accumulate and improve together. And it is a hard boundary across which nothing crosses, not even the intelligence exhaust, without consent. Enterprises will demand the rights to use model outputs to fine tune and/or train their own models.  I think of this as every firm’s right to align models to their enterprise accountability obligations.  "
+                },
+                {
+                  "type": "unstyled",
+                  "text": "In the cloud era, enterprises accumulated data. In the AI era, they accumulate learning. The trust boundary must evolve accordingly, from protecting information to protecting the mechanisms through which organizations learn, adapt, and compound intelligence. There are a few things every enterprise must do to ensure this:  "
+                },
+                {
+                  "type": "unordered-list-item",
+                  "text": "Control: Create your private evals, because evals define what “good” looks like inside the organization. Also, retain ownership of your organization’s memory, traces, feedbacks, decisions, and institutional context, and ability to use outputs of models from your own tasks and queries.  "
+                },
+                {
+                  "type": "unordered-list-item",
+                  "text": "Capability: Build your own proprietary learning environments within the tenant boundary to train or tune models, where models learn against real workflows without exposing the company’s knowledge. "
+                },
+                {
+                  "type": "unordered-list-item",
+                  "text": "Choice: Ensure the orchestration layer is decoupled from any single model. Ask yourself: If any one model you are using is taken away, do you still have the ability to operate and optimize for your evals using other models?  Does your company “veteran” capability remain with you even if a given “generalist” model is taken away? "
+                },
+                {
+                  "type": "unordered-list-item",
+                  "text": "Cost: By decoupling the orchestration layer, you are also able to bring together context, models, and tasks in the most efficient and cost-effective way without sacrificing quality. "
+                },
+                {
+                  "type": "unordered-list-item",
+                  "text": "Compound: Bring these four together and you create your own continuous learning loop (i.e. hill climbing machine) that will allow your AI investments to compound the value of your firm. "
+                },
+                {
+                  "type": "unstyled",
+                  "text": "In other words, a company should be able to use a model without giving up the knowledge that makes it unique. That is the reverse information paradox we need to confront. "
+                }
+              ]
+            },
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "逆向信息悖论\n\n智能化时代，企业该如何保护自己的核心知识产权？\n\n诺贝尔经济学奖得主肯尼思·阿罗（Kenneth Arrow）对信息市场中的一个悖论进行了著名的描述。 “在购买者获得信息之前，它对购买者的价值是不知道的，但随后他实际上已经免费获得了它。”在阿罗的“信息悖论”中，卖方为了出售知识而冒着泄露知识的风险。\n\n人工智能创造了相反的问题。在人工智能时代，购买者冒着放弃知识的风险，只是为了使用他们购买的东西。\n\n本质上，你要为情报付出两次代价，一次用金钱，另一次用更有价值的东西：你必须透露的专有知识才能使情报发挥作用。您希望模型表现得越好，您需要为其提供的知识就越多！\n\n随着时间的推移，信息不对称变得越来越倾斜。当您使用所购买的商品时，卖家会越来越多地了解您，而您对卖家所了解的回报却知之甚少。\n\n这就是我所认为的逆向信息悖论。\n\n专利解决了阿罗悖论的一个方面。他们让发明者公开一个想法，而不是简单地放弃它。逆向信息悖论需要它自己的等价物。\n\n这需要的不仅仅是数据保护。模型从“排气”、人们写下的提示、代理使用的工具，尤其是人们在模型错误时做出的更正中学习。每一次修正都被提炼成机构专业知识。这是一种竞争对手永远买不到的知识，也是一种几乎在不知不觉中泄漏的知识：逐个跟踪、逐个更正、逐个评估。\n\n在消耗智力的同时，你也在创造智力。你创造的东西应该属于你。从哈耶克的意义上来说，这就是你的特殊智慧：其他人无法掌握的关于时间、地点和环境的知识。它知道您的想法、您的价值观以及您如何衡量成功。\n\n虽然模型提供商需要拥有公平使用权来训练公共数据模型，但我觉得具有讽刺意味的是，现状是逆转并对蒸馏施加限制性条款，并保留从客户使用和交互数据中学习的权利。如果学习仅朝一个方向流动，经济价值就会集中于学习基础设施的所有者，而不是知识本身的创造者。因此，我们必须将学习基础设施分发给每个公司，以便他们能够控制自己的学习循环。\n\n正如亚历克斯·卡普（Alex Karp）所说：“技术客户想要的是控制他们的计算、模型、数据堆栈和阿尔法。他们想知道他们拥有生产资料，并且不会被转移给其他人。”现行政权恰恰实现了卡普和公司所担心的转移。\n\n这就是为什么企业需要一个真正的信任边界来让其人力资本和代币资本复合。这是组织的数据、跟踪、评估、调整权重和记忆共同积累和改进的地方。这是一条严格的界限，未经同意，任何人都不能跨越，甚至情报耗尽也不能跨越。企业将要求有权使用模型输出来微调和/或训练自己的模型。  我认为这是每个公司都有权根据其企业责任义务调整模型。\n\n云时代，企业积累数据。在AI时代，他们积累学习。信任边界必须相应发展，从保护信息到保护组织学习、适应和复合情报的机制。为了确保这一点，每个企业都必须做一些事情：\n\n控制：创建您的私人评估，因为评估定义了组织内部的“好”是什么样子。此外，保留对组织的记忆、痕迹、反馈、决策和机构背景的所有权，以及使用您自己的任务和查询的模型输出的能力。\n\n能力：在租户范围内构建您自己的专有学习环境来训练或调整模型，其中模型可以根据真实的工作流程进行学习，而不会暴露公司的知识。\n\n选择：确保编排层与任何单个模型解耦。问问自己：如果您正在使用的任何一种模型被取消，您是否仍然有能力使用其他模型来操作和优化您的评估？  即使特定的“通才”模式被取消，您公司的“老手”能力是否仍然存在？\n\n成本：通过解耦编排层，您还能够以最高效和最具成本效益的方式将上下文、模型和任务整合在一起，而无需牺牲质量。\n\n复合：将这四者结合在一起，您可以创建自己的持续学习循环（即爬山机），这将使您的人工智能投资能够复合您公司的价值。\n\n换句话说，公司应该能够使用模型而不放弃使其独一无二的知识。这就是我们需要面对的反向信息悖论。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-14T10:50:15.073Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2076424672724357216",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-13T00:48:28.268Z"
+        },
+        "createdAt": "2026-07-13T00:48:28.268Z",
+        "updatedAt": "2026-07-13T00:48:28.403Z"
+      }
+    },
+    {
+      "rank": 4,
+      "essenceScore": 223710,
+      "heatScore": 104051,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 104051
+      },
+      "sourceUrl": "https://x.com/AlphaguyTrading/status/2076422544010473730",
+      "reason": "中文投资向解读：企业护城河从 Data 升级为 learning loop，模型可换、老员工经验不可被供应商带走。",
+      "reasonEn": "CN investor unpack: real alpha is the firm’s private learning loop; Claude/GPT/Grok are swappable vendors, not the moat.",
+      "metrics": {
+        "views": 3470619,
+        "likes": 6944,
+        "retweets": 1223,
+        "replies": 490,
+        "quotes": 706,
+        "bookmarks": 10464
+      },
+      "document": {
+        "id": "8b0c0105-b894-4084-8dbe-d8af4965c845",
+        "title": "微软CEO Satya Nadella 最新文章，我觉得基本把下",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2076422544010473730",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2076422544010473730",
+            "author": {
+              "name": "Alpha哥AI投资日记 🌴 📈",
+              "handle": "AlphaguyTrading",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1929426282271645696/0vJobrw2_normal.jpg",
+              "isVerified": false
+            },
+            "content": "微软CEO Satya Nadella 最新文章，我觉得基本把下一阶段 企业的 AI 的竞争讲明白了。\n\n模型越来越强，也越来越便宜。\n\n更重要的是企业为了让模型真正好用，会不断把自己的工作流、判断标准、员工纠错、内部经验喂进去。这些东西才是真正的 Alpha。\n\n未来企业真正要保护的，已经不只是 Data，而是自己的 learning loop。Claude、GPT、Grok 都可以换。一家公司的“老员工经验”，不能跟着模型供应商一起被换走。\n\n那 Anthropic 会变成什么？\n\nClaude 用量可能继续爆炸，Anthropic ARR 继续涨。但 Anthropic 越来越像一个可以替换的大模型供应商。\n\n今天 Opus 最好，就跑 Opus。\n\n明天 Grok、GLM、Meta 模型便宜 70%，通过公司的 private eval，直接切过去。",
+            "createdAt": "Sun Jul 12 21:44:47 +0000 2026",
+            "viewCount": 2317,
+            "metrics": {
+              "views": 2317,
+              "likes": 24,
+              "retweets": 3,
+              "replies": 10,
+              "quotes": 2,
+              "bookmarks": 4
+            },
+            "media": [],
+            "translation": {
+              "provider": "none",
+              "status": "idle",
+              "language": "zh-CN",
+              "text": "",
+              "annotations": [],
+              "error": "",
+              "version": 0
+            }
+          },
+          {
+            "id": "2076323181154230284",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2076323181154230284",
+            "author": {
+              "name": "Satya Nadella",
+              "handle": "satyanadella",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1221837516816306177/_Ld4un5A_normal.jpg",
+              "isVerified": false
+            },
+            "content": "",
+            "createdAt": "Sun Jul 12 15:09:57 +0000 2026",
+            "viewCount": 3470619,
+            "metrics": {
+              "views": 3470619,
+              "likes": 6944,
+              "retweets": 1223,
+              "replies": 490,
+              "quotes": 706,
+              "bookmarks": 10464
+            },
+            "media": [],
+            "article": {
+              "title": "The Reverse Information Paradox ",
+              "previewText": "In the age of intelligence, how should firms protect their core IP?  \nNobel Prize winning economist Kenneth Arrow famously described a paradox in the market for information. “Its value for the",
+              "coverUrl": "",
+              "blocks": [
+                {
+                  "type": "unstyled",
+                  "text": "In the age of intelligence, how should firms protect their core IP?  "
+                },
+                {
+                  "type": "unstyled",
+                  "text": "Nobel Prize winning economist Kenneth Arrow famously described a paradox in the market for information. “Its value for the purchaser is not known until he has the information, but then he has in effect acquired it without cost.” In Arrow’s “Information Paradox,” the seller risks giving away knowledge in order to sell it. "
+                },
+                {
+                  "type": "unstyled",
+                  "text": "AI creates the reverse problem. In the AI age, the buyer risks giving away knowledge, just in order to use what they bought. "
+                },
+                {
+                  "type": "unstyled",
+                  "text": "You essentially pay for intelligence twice, once with money, and again with something even more valuable: the proprietary knowledge you must reveal to make that intelligence useful. The better you want the model to perform, the more of that knowledge you have to feed it!  "
+                },
+                {
+                  "type": "unstyled",
+                  "text": "Over time, the information asymmetry becomes increasingly skewed. The seller learns more and more about you as you use what you purchased, while you learn very little about what the seller is learning in return. "
+                },
+                {
+                  "type": "unstyled",
+                  "text": "That is what I think of as the Reverse Information Paradox. "
+                },
+                {
+                  "type": "unstyled",
+                  "text": "Patents solve one aspect of Arrow’s paradox. They let an inventor disclose an idea without simply giving it away. The Reverse Information Paradox needs its own equivalent. "
+                },
+                {
+                  "type": "unstyled",
+                  "text": "This requires more than data protection. Models learn from \"exhaust,\" the prompts people write, the tools agents use, and especially the corrections people make when the model is wrong. Every correction is distilled into institutional know-how. It's the kind of knowledge a competitor could never buy, and the kind that leaks almost imperceptibly: trace by trace, correction by correction, eval by eval. "
+                },
+                {
+                  "type": "unstyled",
+                  "text": "In consuming intelligence, you are creating intelligence. And what you create should belong to you. This is your particular intelligence, in Hayek's sense: the knowledge of time, place, and circumstance that no one else can hold. It knows what you think, what you value, and how you measure success. "
+                },
+                {
+                  "type": "unstyled",
+                  "text": "While the great innovation that comes from model providers having fair use rights to train models on public data is needed, I find it ironic that the status quo is to then turn around and impose restrictive terms on distillation, and to reserve the right to learn from customer usage and interaction data. If learning flows in only one direction, economic value converges toward the owners of the learning infrastructure rather than the creators of the knowledge itself. Therefore, it's imperative that we distribute the learning infrastructure to every firm so that they can control their own learning loop.  "
+                },
+                {
+                  "type": "unstyled",
+                  "text": "As Alex Karp put it: \"What the technical customers want is control over their compute, their models, their data stack, and their alpha. They want to know they own the means of production, and it's not being transferred to someone else.\" The current regime does precisely the transfer Karp and companies fear. "
+                },
+                {
+                  "type": "unstyled",
+                  "text": "That is why enterprises need a real trust boundary for their human capital and token capital to compound. It is where an organization’s data, traces, evals, adapted weights, and memory accumulate and improve together. And it is a hard boundary across which nothing crosses, not even the intelligence exhaust, without consent. Enterprises will demand the rights to use model outputs to fine tune and/or train their own models.  I think of this as every firm’s right to align models to their enterprise accountability obligations.  "
+                },
+                {
+                  "type": "unstyled",
+                  "text": "In the cloud era, enterprises accumulated data. In the AI era, they accumulate learning. The trust boundary must evolve accordingly, from protecting information to protecting the mechanisms through which organizations learn, adapt, and compound intelligence. There are a few things every enterprise must do to ensure this:  "
+                },
+                {
+                  "type": "unordered-list-item",
+                  "text": "Control: Create your private evals, because evals define what “good” looks like inside the organization. Also, retain ownership of your organization’s memory, traces, feedbacks, decisions, and institutional context, and ability to use outputs of models from your own tasks and queries.  "
+                },
+                {
+                  "type": "unordered-list-item",
+                  "text": "Capability: Build your own proprietary learning environments within the tenant boundary to train or tune models, where models learn against real workflows without exposing the company’s knowledge. "
+                },
+                {
+                  "type": "unordered-list-item",
+                  "text": "Choice: Ensure the orchestration layer is decoupled from any single model. Ask yourself: If any one model you are using is taken away, do you still have the ability to operate and optimize for your evals using other models?  Does your company “veteran” capability remain with you even if a given “generalist” model is taken away? "
+                },
+                {
+                  "type": "unordered-list-item",
+                  "text": "Cost: By decoupling the orchestration layer, you are also able to bring together context, models, and tasks in the most efficient and cost-effective way without sacrificing quality. "
+                },
+                {
+                  "type": "unordered-list-item",
+                  "text": "Compound: Bring these four together and you create your own continuous learning loop (i.e. hill climbing machine) that will allow your AI investments to compound the value of your firm. "
+                },
+                {
+                  "type": "unstyled",
+                  "text": "In other words, a company should be able to use a model without giving up the knowledge that makes it unique. That is the reverse information paradox we need to confront. "
+                }
+              ]
+            },
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "逆向信息悖论\n\n智能化时代，企业该如何保护自己的核心知识产权？\n\n诺贝尔经济学奖得主肯尼思·阿罗（Kenneth Arrow）对信息市场中的一个悖论进行了著名的描述。 “在购买者获得信息之前，它对购买者的价值是不知道的，但随后他实际上已经免费获得了它。”在阿罗的“信息悖论”中，卖方为了出售知识而冒着泄露知识的风险。\n\n人工智能创造了相反的问题。在人工智能时代，购买者冒着放弃知识的风险，只是为了使用他们购买的东西。\n\n本质上，你要为情报付出两次代价，一次用金钱，另一次用更有价值的东西：你必须透露的专有知识才能使情报发挥作用。您希望模型表现得越好，您需要为其提供的知识就越多！\n\n随着时间的推移，信息不对称变得越来越倾斜。当您使用所购买的商品时，卖家会越来越多地了解您，而您对卖家所了解的回报却知之甚少。\n\n这就是我所认为的逆向信息悖论。\n\n专利解决了阿罗悖论的一个方面。他们让发明者公开一个想法，而不是简单地放弃它。逆向信息悖论需要它自己的等价物。\n\n这需要的不仅仅是数据保护。模型从“排气”、人们写下的提示、代理使用的工具，尤其是人们在模型错误时做出的更正中学习。每一次修正都被提炼成机构专业知识。这是一种竞争对手永远买不到的知识，也是一种几乎在不知不觉中泄漏的知识：逐个跟踪、逐个更正、逐个评估。\n\n在消耗智力的同时，你也在创造智力。你创造的东西应该属于你。从哈耶克的意义上来说，这就是你的特殊智慧：其他人无法掌握的关于时间、地点和环境的知识。它知道您的想法、您的价值观以及您如何衡量成功。\n\n虽然模型提供商需要拥有公平使用权来训练公共数据模型，但我觉得具有讽刺意味的是，现状是逆转并对蒸馏施加限制性条款，并保留从客户使用和交互数据中学习的权利。如果学习仅朝一个方向流动，经济价值就会集中于学习基础设施的所有者，而不是知识本身的创造者。因此，我们必须将学习基础设施分发给每个公司，以便他们能够控制自己的学习循环。\n\n正如亚历克斯·卡普（Alex Karp）所说：“技术客户想要的是控制他们的计算、模型、数据堆栈和阿尔法。他们想知道他们拥有生产资料，并且不会被转移给其他人。”现行政权恰恰实现了卡普和公司所担心的转移。\n\n这就是为什么企业需要一个真正的信任边界来让其人力资本和代币资本复合。这是组织的数据、跟踪、评估、调整权重和记忆共同积累和改进的地方。这是一条严格的界限，未经同意，任何人都不能跨越，甚至情报耗尽也不能跨越。企业将要求有权使用模型输出来微调和/或训练自己的模型。  我认为这是每个公司都有权根据其企业责任义务调整模型。\n\n云时代，企业积累数据。在AI时代，他们积累学习。信任边界必须相应发展，从保护信息到保护组织学习、适应和复合情报的机制。为了确保这一点，每个企业都必须做一些事情：\n\n控制：创建您的私人评估，因为评估定义了组织内部的“好”是什么样子。此外，保留对组织的记忆、痕迹、反馈、决策和机构背景的所有权，以及使用您自己的任务和查询的模型输出的能力。\n\n能力：在租户范围内构建您自己的专有学习环境来训练或调整模型，其中模型可以根据真实的工作流程进行学习，而不会暴露公司的知识。\n\n选择：确保编排层与任何单个模型解耦。问问自己：如果您正在使用的任何一种模型被取消，您是否仍然有能力使用其他模型来操作和优化您的评估？  即使特定的“通才”模式被取消，您公司的“老手”能力是否仍然存在？\n\n成本：通过解耦编排层，您还能够以最高效和最具成本效益的方式将上下文、模型和任务整合在一起，而无需牺牲质量。\n\n复合：将这四者结合在一起，您可以创建自己的持续学习循环（即爬山机），这将使您的人工智能投资能够复合您公司的价值。\n\n换句话说，公司应该能够使用模型而不放弃使其独一无二的知识。这就是我们需要面对的反向信息悖论。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-14T10:50:15.075Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2076422544010473730",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-13T00:48:30.760Z"
+        },
+        "createdAt": "2026-07-13T00:48:30.760Z",
+        "updatedAt": "2026-07-13T00:48:30.884Z"
+      }
+    },
+    {
+      "rank": 5,
+      "essenceScore": 223708,
+      "heatScore": 104050,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 104050
+      },
+      "sourceUrl": "https://x.com/nicbstme/status/2076340688749576392",
+      "reason": "把大模型比作 know-how 黑洞：每次纠错都是人力资本→token 资本的转移，真正 IP 在 traces 而非文档。",
+      "reasonEn": "Best long-form riff on Nadella: models as black holes for know-how; every correction is human capital becoming token capital in someone else’s loop.",
+      "metrics": {
+        "views": 3470619,
+        "likes": 6943,
+        "retweets": 1223,
+        "replies": 490,
+        "quotes": 706,
+        "bookmarks": 10464
+      },
+      "document": {
+        "id": "e3726442-fc20-4116-82c2-e78e1f81c1eb",
+        "title": "Large neural networks are a bit ",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2076340688749576392",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2076340688749576392",
+            "author": {
+              "name": "Nicolas Bustamante",
+              "handle": "nicbstme",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1859460270613200898/thqbDVjW_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Large neural networks are a bit like black holes for know-how. The more useful you want them to be, the more you feed them: your workflows, your corrections, your evals, your judgment, your taste, your edge…\n\nAnd once that knowledge is absorbed into someone else’s learning loop, the model can start replicating the intelligence without needing the people or organization that created it in the first place.\n\nThat is the core issue Satya is addressing. In the AI era, companies don’t just accumulate data. They accumulate learning. The real IP is no longer only in documents, databases, patents, or codebases. It is in the traces: prompts, feedback, corrections, evals, agent actions, memories, adapted weights.\n\nEvery correction is a tiny transfer of human capital into token capital.\n\nThis is why enterprises will care so much about owning their learning loop. Not just “is my data protected?” but: who owns the intelligence created when my people use AI every day?\n\nBecause today in consuming intelligence, you are creating intelligence. And what you create should belong to you.\n\nNot your weights, not your edge.",
+            "createdAt": "Sun Jul 12 16:19:31 +0000 2026",
+            "viewCount": 17343,
+            "metrics": {
+              "views": 17343,
+              "likes": 76,
+              "retweets": 16,
+              "replies": 11,
+              "quotes": 0,
+              "bookmarks": 69
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "大型神经网络有点像知识黑洞。你希望它们越有用，你就越多地喂养它们：你的工作流程、你的修正、你的评估、你的判断、你的品味、你的优势……\n\n一旦这些知识被吸收到其他人的学习循环中，该模型就可以开始复制智能，而不需要最初创建它的人员或组织。\n\n这是萨蒂亚正在解决的核心问题。在人工智能时代，企业不仅仅是积累数据。他们积累学习。真正的知识产权不再仅仅存在于文档、数据库、专利或代码库中。它存在于痕迹中：提示、反馈、更正、评估、代理动作、记忆、适应权重。\n\n每一次修正都是人力资本向代币资本的微小转移。\n\n这就是为什么企业会如此关心拥有自己的学习循环。不仅仅是“我的数据受到保护吗？”但是：谁拥有我的人民每天使用人工智能时所创造的智能？\n\n因为今天在消耗智力的同时，你也在创造智力。你创造的东西应该属于你。\n\n不是你的体重，不是你的优势。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-13T00:48:18.656Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2076323181154230284",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2076323181154230284",
+            "author": {
+              "name": "Satya Nadella",
+              "handle": "satyanadella",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1221837516816306177/_Ld4un5A_normal.jpg",
+              "isVerified": false
+            },
+            "content": "",
+            "createdAt": "Sun Jul 12 15:09:57 +0000 2026",
+            "viewCount": 3470619,
+            "metrics": {
+              "views": 3470619,
+              "likes": 6943,
+              "retweets": 1223,
+              "replies": 490,
+              "quotes": 706,
+              "bookmarks": 10464
+            },
+            "media": [],
+            "article": {
+              "title": "The Reverse Information Paradox ",
+              "previewText": "In the age of intelligence, how should firms protect their core IP?  \nNobel Prize winning economist Kenneth Arrow famously described a paradox in the market for information. “Its value for the",
+              "coverUrl": "",
+              "blocks": [
+                {
+                  "type": "unstyled",
+                  "text": "In the age of intelligence, how should firms protect their core IP?  "
+                },
+                {
+                  "type": "unstyled",
+                  "text": "Nobel Prize winning economist Kenneth Arrow famously described a paradox in the market for information. “Its value for the purchaser is not known until he has the information, but then he has in effect acquired it without cost.” In Arrow’s “Information Paradox,” the seller risks giving away knowledge in order to sell it. "
+                },
+                {
+                  "type": "unstyled",
+                  "text": "AI creates the reverse problem. In the AI age, the buyer risks giving away knowledge, just in order to use what they bought. "
+                },
+                {
+                  "type": "unstyled",
+                  "text": "You essentially pay for intelligence twice, once with money, and again with something even more valuable: the proprietary knowledge you must reveal to make that intelligence useful. The better you want the model to perform, the more of that knowledge you have to feed it!  "
+                },
+                {
+                  "type": "unstyled",
+                  "text": "Over time, the information asymmetry becomes increasingly skewed. The seller learns more and more about you as you use what you purchased, while you learn very little about what the seller is learning in return. "
+                },
+                {
+                  "type": "unstyled",
+                  "text": "That is what I think of as the Reverse Information Paradox. "
+                },
+                {
+                  "type": "unstyled",
+                  "text": "Patents solve one aspect of Arrow’s paradox. They let an inventor disclose an idea without simply giving it away. The Reverse Information Paradox needs its own equivalent. "
+                },
+                {
+                  "type": "unstyled",
+                  "text": "This requires more than data protection. Models learn from \"exhaust,\" the prompts people write, the tools agents use, and especially the corrections people make when the model is wrong. Every correction is distilled into institutional know-how. It's the kind of knowledge a competitor could never buy, and the kind that leaks almost imperceptibly: trace by trace, correction by correction, eval by eval. "
+                },
+                {
+                  "type": "unstyled",
+                  "text": "In consuming intelligence, you are creating intelligence. And what you create should belong to you. This is your particular intelligence, in Hayek's sense: the knowledge of time, place, and circumstance that no one else can hold. It knows what you think, what you value, and how you measure success. "
+                },
+                {
+                  "type": "unstyled",
+                  "text": "While the great innovation that comes from model providers having fair use rights to train models on public data is needed, I find it ironic that the status quo is to then turn around and impose restrictive terms on distillation, and to reserve the right to learn from customer usage and interaction data. If learning flows in only one direction, economic value converges toward the owners of the learning infrastructure rather than the creators of the knowledge itself. Therefore, it's imperative that we distribute the learning infrastructure to every firm so that they can control their own learning loop.  "
+                },
+                {
+                  "type": "unstyled",
+                  "text": "As Alex Karp put it: \"What the technical customers want is control over their compute, their models, their data stack, and their alpha. They want to know they own the means of production, and it's not being transferred to someone else.\" The current regime does precisely the transfer Karp and companies fear. "
+                },
+                {
+                  "type": "unstyled",
+                  "text": "That is why enterprises need a real trust boundary for their human capital and token capital to compound. It is where an organization’s data, traces, evals, adapted weights, and memory accumulate and improve together. And it is a hard boundary across which nothing crosses, not even the intelligence exhaust, without consent. Enterprises will demand the rights to use model outputs to fine tune and/or train their own models.  I think of this as every firm’s right to align models to their enterprise accountability obligations.  "
+                },
+                {
+                  "type": "unstyled",
+                  "text": "In the cloud era, enterprises accumulated data. In the AI era, they accumulate learning. The trust boundary must evolve accordingly, from protecting information to protecting the mechanisms through which organizations learn, adapt, and compound intelligence. There are a few things every enterprise must do to ensure this:  "
+                },
+                {
+                  "type": "unordered-list-item",
+                  "text": "Control: Create your private evals, because evals define what “good” looks like inside the organization. Also, retain ownership of your organization’s memory, traces, feedbacks, decisions, and institutional context, and ability to use outputs of models from your own tasks and queries.  "
+                },
+                {
+                  "type": "unordered-list-item",
+                  "text": "Capability: Build your own proprietary learning environments within the tenant boundary to train or tune models, where models learn against real workflows without exposing the company’s knowledge. "
+                },
+                {
+                  "type": "unordered-list-item",
+                  "text": "Choice: Ensure the orchestration layer is decoupled from any single model. Ask yourself: If any one model you are using is taken away, do you still have the ability to operate and optimize for your evals using other models?  Does your company “veteran” capability remain with you even if a given “generalist” model is taken away? "
+                },
+                {
+                  "type": "unordered-list-item",
+                  "text": "Cost: By decoupling the orchestration layer, you are also able to bring together context, models, and tasks in the most efficient and cost-effective way without sacrificing quality. "
+                },
+                {
+                  "type": "unordered-list-item",
+                  "text": "Compound: Bring these four together and you create your own continuous learning loop (i.e. hill climbing machine) that will allow your AI investments to compound the value of your firm. "
+                },
+                {
+                  "type": "unstyled",
+                  "text": "In other words, a company should be able to use a model without giving up the knowledge that makes it unique. That is the reverse information paradox we need to confront. "
+                }
+              ]
+            },
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "逆向信息悖论\n\n智能化时代，企业该如何保护自己的核心知识产权？\n\n诺贝尔经济学奖得主肯尼思·阿罗（Kenneth Arrow）对信息市场中的一个悖论进行了著名的描述。 “在购买者获得信息之前，它对购买者的价值是不知道的，但随后他实际上已经免费获得了它。”在阿罗的“信息悖论”中，卖方为了出售知识而冒着泄露知识的风险。\n\n人工智能创造了相反的问题。在人工智能时代，购买者冒着放弃知识的风险，只是为了使用他们购买的东西。\n\n本质上，你要为情报付出两次代价，一次用金钱，另一次用更有价值的东西：你必须透露的专有知识才能使情报发挥作用。您希望模型表现得越好，您需要为其提供的知识就越多！\n\n随着时间的推移，信息不对称变得越来越倾斜。当您使用所购买的商品时，卖家会越来越多地了解您，而您对卖家所了解的回报却知之甚少。\n\n这就是我所认为的逆向信息悖论。\n\n专利解决了阿罗悖论的一个方面。他们让发明者公开一个想法，而不是简单地放弃它。逆向信息悖论需要它自己的等价物。\n\n这需要的不仅仅是数据保护。模型从“排气”、人们写下的提示、代理使用的工具，尤其是人们在模型错误时做出的更正中学习。每一次修正都被提炼成机构专业知识。这是一种竞争对手永远买不到的知识，也是一种几乎在不知不觉中泄漏的知识：逐个跟踪、逐个更正、逐个评估。\n\n在消耗智力的同时，你也在创造智力。你创造的东西应该属于你。从哈耶克的意义上来说，这就是你的特殊智慧：其他人无法掌握的关于时间、地点和环境的知识。它知道您的想法、您的价值观以及您如何衡量成功。\n\n虽然模型提供商需要拥有公平使用权来训练公共数据模型，但我觉得具有讽刺意味的是，现状是逆转并对蒸馏施加限制性条款，并保留从客户使用和交互数据中学习的权利。如果学习仅朝一个方向流动，经济价值就会集中于学习基础设施的所有者，而不是知识本身的创造者。因此，我们必须将学习基础设施分发给每个公司，以便他们能够控制自己的学习循环。\n\n正如亚历克斯·卡普（Alex Karp）所说：“技术客户想要的是控制他们的计算、模型、数据堆栈和阿尔法。他们想知道他们拥有生产资料，并且不会被转移给其他人。”现行政权恰恰实现了卡普和公司所担心的转移。\n\n这就是为什么企业需要一个真正的信任边界来让其人力资本和代币资本复合。这是组织的数据、跟踪、评估、调整权重和记忆共同积累和改进的地方。这是一条严格的界限，未经同意，任何人都不能跨越，甚至情报耗尽也不能跨越。企业将要求有权使用模型输出来微调和/或训练自己的模型。  我认为这是每个公司都有权根据其企业责任义务调整模型。\n\n云时代，企业积累数据。在AI时代，他们积累学习。信任边界必须相应发展，从保护信息到保护组织学习、适应和复合情报的机制。为了确保这一点，每个企业都必须做一些事情：\n\n控制：创建您的私人评估，因为评估定义了组织内部的“好”是什么样子。此外，保留对组织的记忆、痕迹、反馈、决策和机构背景的所有权，以及使用您自己的任务和查询的模型输出的能力。\n\n能力：在租户范围内构建您自己的专有学习环境来训练或调整模型，其中模型可以根据真实的工作流程进行学习，而不会暴露公司的知识。\n\n选择：确保编排层与任何单个模型解耦。问问自己：如果您正在使用的任何一种模型被取消，您是否仍然有能力使用其他模型来操作和优化您的评估？  即使特定的“通才”模式被取消，您公司的“老手”能力是否仍然存在？\n\n成本：通过解耦编排层，您还能够以最高效和最具成本效益的方式将上下文、模型和任务整合在一起，而无需牺牲质量。\n\n复合：将这四者结合在一起，您可以创建自己的持续学习循环（即爬山机），这将使您的人工智能投资能够复合您公司的价值。\n\n换句话说，公司应该能够使用模型而不放弃使其独一无二的知识。这就是我们需要面对的反向信息悖论。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-14T10:50:15.077Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2076340688749576392",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-13T00:48:18.584Z"
+        },
+        "createdAt": "2026-07-13T00:48:18.584Z",
+        "updatedAt": "2026-07-13T00:48:18.704Z"
+      }
+    },
+    {
+      "rank": 6,
+      "essenceScore": 223690,
+      "heatScore": 104042,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 104042
+      },
+      "sourceUrl": "https://x.com/JasonZX/status/2076349829132038365",
+      "reason": "中文圈刀法总结纳德拉长文：别信任何一家大模型，但可以信微软替你管所有模型。",
+      "reasonEn": "Chinese-tech one-liner that out-frames Nadella’s essay: trust no single model lab—trust Microsoft to orchestrate them all.",
+      "metrics": {
+        "views": 3470619,
+        "likes": 6942,
+        "retweets": 1223,
+        "replies": 490,
+        "quotes": 705,
+        "bookmarks": 10462
+      },
+      "document": {
+        "id": "7126b083-0694-4792-b7a6-7fa4d437ded6",
+        "title": "微软CEO Nadella这篇文章的意思是：\n\n不要信任何一家大",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2076349829132038365",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2076349829132038365",
+            "author": {
+              "name": "Jason Z",
+              "handle": "JasonZX",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1845525791511371776/S7B80Nct_normal.jpg",
+              "isVerified": false
+            },
+            "content": "微软CEO Nadella这篇文章的意思是：\n\n不要信任何一家大模型公司，但可以相信微软替你管理所有模型。\n\n不客气。save your time.",
+            "createdAt": "Sun Jul 12 16:55:50 +0000 2026",
+            "viewCount": 22503,
+            "metrics": {
+              "views": 22503,
+              "likes": 48,
+              "retweets": 3,
+              "replies": 17,
+              "quotes": 0,
+              "bookmarks": 15
+            },
+            "media": [],
+            "translation": {
+              "provider": "none",
+              "status": "idle",
+              "language": "zh-CN",
+              "text": "",
+              "annotations": [],
+              "error": "",
+              "version": 0
+            }
+          },
+          {
+            "id": "2076323181154230284",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2076323181154230284",
+            "author": {
+              "name": "Satya Nadella",
+              "handle": "satyanadella",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1221837516816306177/_Ld4un5A_normal.jpg",
+              "isVerified": false
+            },
+            "content": "",
+            "createdAt": "Sun Jul 12 15:09:57 +0000 2026",
+            "viewCount": 3470619,
+            "metrics": {
+              "views": 3470619,
+              "likes": 6942,
+              "retweets": 1223,
+              "replies": 490,
+              "quotes": 705,
+              "bookmarks": 10462
+            },
+            "media": [],
+            "article": {
+              "title": "The Reverse Information Paradox ",
+              "previewText": "In the age of intelligence, how should firms protect their core IP?  \nNobel Prize winning economist Kenneth Arrow famously described a paradox in the market for information. “Its value for the",
+              "coverUrl": "",
+              "blocks": [
+                {
+                  "type": "unstyled",
+                  "text": "In the age of intelligence, how should firms protect their core IP?  "
+                },
+                {
+                  "type": "unstyled",
+                  "text": "Nobel Prize winning economist Kenneth Arrow famously described a paradox in the market for information. “Its value for the purchaser is not known until he has the information, but then he has in effect acquired it without cost.” In Arrow’s “Information Paradox,” the seller risks giving away knowledge in order to sell it. "
+                },
+                {
+                  "type": "unstyled",
+                  "text": "AI creates the reverse problem. In the AI age, the buyer risks giving away knowledge, just in order to use what they bought. "
+                },
+                {
+                  "type": "unstyled",
+                  "text": "You essentially pay for intelligence twice, once with money, and again with something even more valuable: the proprietary knowledge you must reveal to make that intelligence useful. The better you want the model to perform, the more of that knowledge you have to feed it!  "
+                },
+                {
+                  "type": "unstyled",
+                  "text": "Over time, the information asymmetry becomes increasingly skewed. The seller learns more and more about you as you use what you purchased, while you learn very little about what the seller is learning in return. "
+                },
+                {
+                  "type": "unstyled",
+                  "text": "That is what I think of as the Reverse Information Paradox. "
+                },
+                {
+                  "type": "unstyled",
+                  "text": "Patents solve one aspect of Arrow’s paradox. They let an inventor disclose an idea without simply giving it away. The Reverse Information Paradox needs its own equivalent. "
+                },
+                {
+                  "type": "unstyled",
+                  "text": "This requires more than data protection. Models learn from \"exhaust,\" the prompts people write, the tools agents use, and especially the corrections people make when the model is wrong. Every correction is distilled into institutional know-how. It's the kind of knowledge a competitor could never buy, and the kind that leaks almost imperceptibly: trace by trace, correction by correction, eval by eval. "
+                },
+                {
+                  "type": "unstyled",
+                  "text": "In consuming intelligence, you are creating intelligence. And what you create should belong to you. This is your particular intelligence, in Hayek's sense: the knowledge of time, place, and circumstance that no one else can hold. It knows what you think, what you value, and how you measure success. "
+                },
+                {
+                  "type": "unstyled",
+                  "text": "While the great innovation that comes from model providers having fair use rights to train models on public data is needed, I find it ironic that the status quo is to then turn around and impose restrictive terms on distillation, and to reserve the right to learn from customer usage and interaction data. If learning flows in only one direction, economic value converges toward the owners of the learning infrastructure rather than the creators of the knowledge itself. Therefore, it's imperative that we distribute the learning infrastructure to every firm so that they can control their own learning loop.  "
+                },
+                {
+                  "type": "unstyled",
+                  "text": "As Alex Karp put it: \"What the technical customers want is control over their compute, their models, their data stack, and their alpha. They want to know they own the means of production, and it's not being transferred to someone else.\" The current regime does precisely the transfer Karp and companies fear. "
+                },
+                {
+                  "type": "unstyled",
+                  "text": "That is why enterprises need a real trust boundary for their human capital and token capital to compound. It is where an organization’s data, traces, evals, adapted weights, and memory accumulate and improve together. And it is a hard boundary across which nothing crosses, not even the intelligence exhaust, without consent. Enterprises will demand the rights to use model outputs to fine tune and/or train their own models.  I think of this as every firm’s right to align models to their enterprise accountability obligations.  "
+                },
+                {
+                  "type": "unstyled",
+                  "text": "In the cloud era, enterprises accumulated data. In the AI era, they accumulate learning. The trust boundary must evolve accordingly, from protecting information to protecting the mechanisms through which organizations learn, adapt, and compound intelligence. There are a few things every enterprise must do to ensure this:  "
+                },
+                {
+                  "type": "unordered-list-item",
+                  "text": "Control: Create your private evals, because evals define what “good” looks like inside the organization. Also, retain ownership of your organization’s memory, traces, feedbacks, decisions, and institutional context, and ability to use outputs of models from your own tasks and queries.  "
+                },
+                {
+                  "type": "unordered-list-item",
+                  "text": "Capability: Build your own proprietary learning environments within the tenant boundary to train or tune models, where models learn against real workflows without exposing the company’s knowledge. "
+                },
+                {
+                  "type": "unordered-list-item",
+                  "text": "Choice: Ensure the orchestration layer is decoupled from any single model. Ask yourself: If any one model you are using is taken away, do you still have the ability to operate and optimize for your evals using other models?  Does your company “veteran” capability remain with you even if a given “generalist” model is taken away? "
+                },
+                {
+                  "type": "unordered-list-item",
+                  "text": "Cost: By decoupling the orchestration layer, you are also able to bring together context, models, and tasks in the most efficient and cost-effective way without sacrificing quality. "
+                },
+                {
+                  "type": "unordered-list-item",
+                  "text": "Compound: Bring these four together and you create your own continuous learning loop (i.e. hill climbing machine) that will allow your AI investments to compound the value of your firm. "
+                },
+                {
+                  "type": "unstyled",
+                  "text": "In other words, a company should be able to use a model without giving up the knowledge that makes it unique. That is the reverse information paradox we need to confront. "
+                }
+              ]
+            },
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "逆向信息悖论\n\n智能化时代，企业该如何保护自己的核心知识产权？\n\n诺贝尔经济学奖得主肯尼思·阿罗（Kenneth Arrow）对信息市场中的一个悖论进行了著名的描述。 “在购买者获得信息之前，它对购买者的价值是不知道的，但随后他实际上已经免费获得了它。”在阿罗的“信息悖论”中，卖方为了出售知识而冒着泄露知识的风险。\n\n人工智能创造了相反的问题。在人工智能时代，购买者冒着放弃知识的风险，只是为了使用他们购买的东西。\n\n本质上，你要为情报付出两次代价，一次用金钱，另一次用更有价值的东西：你必须透露的专有知识才能使情报发挥作用。您希望模型表现得越好，您需要为其提供的知识就越多！\n\n随着时间的推移，信息不对称变得越来越倾斜。当您使用所购买的商品时，卖家会越来越多地了解您，而您对卖家所了解的回报却知之甚少。\n\n这就是我所认为的逆向信息悖论。\n\n专利解决了阿罗悖论的一个方面。他们让发明者公开一个想法，而不是简单地放弃它。逆向信息悖论需要它自己的等价物。\n\n这需要的不仅仅是数据保护。模型从“排气”、人们写下的提示、代理使用的工具，尤其是人们在模型错误时做出的更正中学习。每一次修正都被提炼成机构专业知识。这是一种竞争对手永远买不到的知识，也是一种几乎在不知不觉中泄漏的知识：逐个跟踪、逐个更正、逐个评估。\n\n在消耗智力的同时，你也在创造智力。你创造的东西应该属于你。从哈耶克的意义上来说，这就是你的特殊智慧：其他人无法掌握的关于时间、地点和环境的知识。它知道您的想法、您的价值观以及您如何衡量成功。\n\n虽然模型提供商需要拥有公平使用权来训练公共数据模型，但我觉得具有讽刺意味的是，现状是逆转并对蒸馏施加限制性条款，并保留从客户使用和交互数据中学习的权利。如果学习仅朝一个方向流动，经济价值就会集中于学习基础设施的所有者，而不是知识本身的创造者。因此，我们必须将学习基础设施分发给每个公司，以便他们能够控制自己的学习循环。\n\n正如亚历克斯·卡普（Alex Karp）所说：“技术客户想要的是控制他们的计算、模型、数据堆栈和阿尔法。他们想知道他们拥有生产资料，并且不会被转移给其他人。”现行政权恰恰实现了卡普和公司所担心的转移。\n\n这就是为什么企业需要一个真正的信任边界来让其人力资本和代币资本复合。这是组织的数据、跟踪、评估、调整权重和记忆共同积累和改进的地方。这是一条严格的界限，未经同意，任何人都不能跨越，甚至情报耗尽也不能跨越。企业将要求有权使用模型输出来微调和/或训练自己的模型。  我认为这是每个公司都有权根据其企业责任义务调整模型。\n\n云时代，企业积累数据。在AI时代，他们积累学习。信任边界必须相应发展，从保护信息到保护组织学习、适应和复合情报的机制。为了确保这一点，每个企业都必须做一些事情：\n\n控制：创建您的私人评估，因为评估定义了组织内部的“好”是什么样子。此外，保留对组织的记忆、痕迹、反馈、决策和机构背景的所有权，以及使用您自己的任务和查询的模型输出的能力。\n\n能力：在租户范围内构建您自己的专有学习环境来训练或调整模型，其中模型可以根据真实的工作流程进行学习，而不会暴露公司的知识。\n\n选择：确保编排层与任何单个模型解耦。问问自己：如果您正在使用的任何一种模型被取消，您是否仍然有能力使用其他模型来操作和优化您的评估？  即使特定的“通才”模式被取消，您公司的“老手”能力是否仍然存在？\n\n成本：通过解耦编排层，您还能够以最高效和最具成本效益的方式将上下文、模型和任务整合在一起，而无需牺牲质量。\n\n复合：将这四者结合在一起，您可以创建自己的持续学习循环（即爬山机），这将使您的人工智能投资能够复合您公司的价值。\n\n换句话说，公司应该能够使用模型而不放弃使其独一无二的知识。这就是我们需要面对的反向信息悖论。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-14T10:50:15.079Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2076349829132038365",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-13T00:48:25.983Z"
+        },
+        "createdAt": "2026-07-13T00:48:25.983Z",
+        "updatedAt": "2026-07-13T00:48:26.119Z"
+      }
+    },
+    {
+      "rank": 7,
+      "essenceScore": 223546,
+      "heatScore": 103975,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 103975
+      },
+      "sourceUrl": "https://x.com/AravSrinivas/status/2076422398853984324",
+      "reason": "Perplexity CEO 点名转发纳德拉：单向学习与蒸馏限制会让价值向模型基建方收敛，企业必须掌控自己的 learning loop。",
+      "reasonEn": "Perplexity’s CEO elevates Nadella’s core IP thesis: one-way learning and distillation rules concentrate value; firms must own their learning loops.",
+      "metrics": {
+        "views": 3466643,
+        "likes": 6944,
+        "retweets": 1223,
+        "replies": 490,
+        "quotes": 707,
+        "bookmarks": 10464
+      },
+      "document": {
+        "id": "bddad293-7383-4c76-9d7a-16cc34103114",
+        "title": "\"I find it ironic that the statu",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2076422398853984324",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2076422398853984324",
+            "author": {
+              "name": "Aravind Srinivas",
+              "handle": "AravSrinivas",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2028729526822588416/WhtMUI-P_normal.jpg",
+              "isVerified": false
+            },
+            "content": "\"I find it ironic that the status quo is to then turn around and impose restrictive terms on distillation, and to reserve the right to learn from customer usage and interaction data. If learning flows in only one direction, economic value converges toward the owners of the learning infrastructure rather than the creators of the knowledge itself. Therefore, it's imperative that we distribute the learning infrastructure to every firm so that they can control their own learning loop.\"\n\nWell said.",
+            "createdAt": "Sun Jul 12 21:44:12 +0000 2026",
+            "viewCount": 51067,
+            "metrics": {
+              "views": 51067,
+              "likes": 379,
+              "retweets": 36,
+              "replies": 25,
+              "quotes": 4,
+              "bookmarks": 114
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "“我觉得讽刺的是，现状是反过来，对蒸馏施加限制性条款，并保留从客户使用和交互数据中学习的权利。如果学习仅朝一个方向流动，那么经济价值就会向学习基础设施的所有者而不是知识本身的创造者汇聚。因此，我们必须将学习基础设施分配给每个公司，以便他们能够控制自己的学习循环。”\n\n说得好。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-13T00:48:13.562Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2076323181154230284",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2076323181154230284",
+            "author": {
+              "name": "Satya Nadella",
+              "handle": "satyanadella",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1221837516816306177/_Ld4un5A_normal.jpg",
+              "isVerified": false
+            },
+            "content": "",
+            "createdAt": "Sun Jul 12 15:09:57 +0000 2026",
+            "viewCount": 3466643,
+            "metrics": {
+              "views": 3466643,
+              "likes": 6944,
+              "retweets": 1223,
+              "replies": 490,
+              "quotes": 707,
+              "bookmarks": 10464
+            },
+            "media": [],
+            "article": {
+              "title": "The Reverse Information Paradox ",
+              "previewText": "In the age of intelligence, how should firms protect their core IP?  \nNobel Prize winning economist Kenneth Arrow famously described a paradox in the market for information. “Its value for the",
+              "coverUrl": "",
+              "blocks": [
+                {
+                  "type": "unstyled",
+                  "text": "In the age of intelligence, how should firms protect their core IP?  "
+                },
+                {
+                  "type": "unstyled",
+                  "text": "Nobel Prize winning economist Kenneth Arrow famously described a paradox in the market for information. “Its value for the purchaser is not known until he has the information, but then he has in effect acquired it without cost.” In Arrow’s “Information Paradox,” the seller risks giving away knowledge in order to sell it. "
+                },
+                {
+                  "type": "unstyled",
+                  "text": "AI creates the reverse problem. In the AI age, the buyer risks giving away knowledge, just in order to use what they bought. "
+                },
+                {
+                  "type": "unstyled",
+                  "text": "You essentially pay for intelligence twice, once with money, and again with something even more valuable: the proprietary knowledge you must reveal to make that intelligence useful. The better you want the model to perform, the more of that knowledge you have to feed it!  "
+                },
+                {
+                  "type": "unstyled",
+                  "text": "Over time, the information asymmetry becomes increasingly skewed. The seller learns more and more about you as you use what you purchased, while you learn very little about what the seller is learning in return. "
+                },
+                {
+                  "type": "unstyled",
+                  "text": "That is what I think of as the Reverse Information Paradox. "
+                },
+                {
+                  "type": "unstyled",
+                  "text": "Patents solve one aspect of Arrow’s paradox. They let an inventor disclose an idea without simply giving it away. The Reverse Information Paradox needs its own equivalent. "
+                },
+                {
+                  "type": "unstyled",
+                  "text": "This requires more than data protection. Models learn from \"exhaust,\" the prompts people write, the tools agents use, and especially the corrections people make when the model is wrong. Every correction is distilled into institutional know-how. It's the kind of knowledge a competitor could never buy, and the kind that leaks almost imperceptibly: trace by trace, correction by correction, eval by eval. "
+                },
+                {
+                  "type": "unstyled",
+                  "text": "In consuming intelligence, you are creating intelligence. And what you create should belong to you. This is your particular intelligence, in Hayek's sense: the knowledge of time, place, and circumstance that no one else can hold. It knows what you think, what you value, and how you measure success. "
+                },
+                {
+                  "type": "unstyled",
+                  "text": "While the great innovation that comes from model providers having fair use rights to train models on public data is needed, I find it ironic that the status quo is to then turn around and impose restrictive terms on distillation, and to reserve the right to learn from customer usage and interaction data. If learning flows in only one direction, economic value converges toward the owners of the learning infrastructure rather than the creators of the knowledge itself. Therefore, it's imperative that we distribute the learning infrastructure to every firm so that they can control their own learning loop.  "
+                },
+                {
+                  "type": "unstyled",
+                  "text": "As Alex Karp put it: \"What the technical customers want is control over their compute, their models, their data stack, and their alpha. They want to know they own the means of production, and it's not being transferred to someone else.\" The current regime does precisely the transfer Karp and companies fear. "
+                },
+                {
+                  "type": "unstyled",
+                  "text": "That is why enterprises need a real trust boundary for their human capital and token capital to compound. It is where an organization’s data, traces, evals, adapted weights, and memory accumulate and improve together. And it is a hard boundary across which nothing crosses, not even the intelligence exhaust, without consent. Enterprises will demand the rights to use model outputs to fine tune and/or train their own models.  I think of this as every firm’s right to align models to their enterprise accountability obligations.  "
+                },
+                {
+                  "type": "unstyled",
+                  "text": "In the cloud era, enterprises accumulated data. In the AI era, they accumulate learning. The trust boundary must evolve accordingly, from protecting information to protecting the mechanisms through which organizations learn, adapt, and compound intelligence. There are a few things every enterprise must do to ensure this:  "
+                },
+                {
+                  "type": "unordered-list-item",
+                  "text": "Control: Create your private evals, because evals define what “good” looks like inside the organization. Also, retain ownership of your organization’s memory, traces, feedbacks, decisions, and institutional context, and ability to use outputs of models from your own tasks and queries.  "
+                },
+                {
+                  "type": "unordered-list-item",
+                  "text": "Capability: Build your own proprietary learning environments within the tenant boundary to train or tune models, where models learn against real workflows without exposing the company’s knowledge. "
+                },
+                {
+                  "type": "unordered-list-item",
+                  "text": "Choice: Ensure the orchestration layer is decoupled from any single model. Ask yourself: If any one model you are using is taken away, do you still have the ability to operate and optimize for your evals using other models?  Does your company “veteran” capability remain with you even if a given “generalist” model is taken away? "
+                },
+                {
+                  "type": "unordered-list-item",
+                  "text": "Cost: By decoupling the orchestration layer, you are also able to bring together context, models, and tasks in the most efficient and cost-effective way without sacrificing quality. "
+                },
+                {
+                  "type": "unordered-list-item",
+                  "text": "Compound: Bring these four together and you create your own continuous learning loop (i.e. hill climbing machine) that will allow your AI investments to compound the value of your firm. "
+                },
+                {
+                  "type": "unstyled",
+                  "text": "In other words, a company should be able to use a model without giving up the knowledge that makes it unique. That is the reverse information paradox we need to confront. "
+                }
+              ]
+            },
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "逆向信息悖论\n\n智能化时代，企业该如何保护自己的核心知识产权？\n\n诺贝尔经济学奖得主肯尼思·阿罗（Kenneth Arrow）对信息市场中的一个悖论进行了著名的描述。 “在购买者获得信息之前，它对购买者的价值是不知道的，但随后他实际上已经免费获得了它。”在阿罗的“信息悖论”中，卖方为了出售知识而冒着泄露知识的风险。\n\n人工智能创造了相反的问题。在人工智能时代，购买者冒着放弃知识的风险，只是为了使用他们购买的东西。\n\n本质上，你要为情报付出两次代价，一次用金钱，另一次用更有价值的东西：你必须透露的专有知识才能使情报发挥作用。您希望模型表现得越好，您需要为其提供的知识就越多！\n\n随着时间的推移，信息不对称变得越来越倾斜。当您使用所购买的商品时，卖家会越来越多地了解您，而您对卖家所了解的回报却知之甚少。\n\n这就是我所认为的逆向信息悖论。\n\n专利解决了阿罗悖论的一个方面。他们让发明者公开一个想法，而不是简单地放弃它。逆向信息悖论需要它自己的等价物。\n\n这需要的不仅仅是数据保护。模型从“排气”、人们写下的提示、代理使用的工具，尤其是人们在模型错误时做出的更正中学习。每一次修正都被提炼成机构专业知识。这是一种竞争对手永远买不到的知识，也是一种几乎在不知不觉中泄漏的知识：逐个跟踪、逐个更正、逐个评估。\n\n在消耗智力的同时，你也在创造智力。你创造的东西应该属于你。从哈耶克的意义上来说，这就是你的特殊智慧：其他人无法掌握的关于时间、地点和环境的知识。它知道您的想法、您的价值观以及您如何衡量成功。\n\n虽然模型提供商需要拥有公平使用权来训练公共数据模型，但我觉得具有讽刺意味的是，现状是逆转并对蒸馏施加限制性条款，并保留从客户使用和交互数据中学习的权利。如果学习仅朝一个方向流动，经济价值就会集中于学习基础设施的所有者，而不是知识本身的创造者。因此，我们必须将学习基础设施分发给每个公司，以便他们能够控制自己的学习循环。\n\n正如亚历克斯·卡普（Alex Karp）所说：“技术客户想要的是控制他们的计算、模型、数据堆栈和阿尔法。他们想知道他们拥有生产资料，并且不会被转移给其他人。”现行政权恰恰实现了卡普和公司所担心的转移。\n\n这就是为什么企业需要一个真正的信任边界来让其人力资本和代币资本复合。这是组织的数据、跟踪、评估、调整权重和记忆共同积累和改进的地方。这是一条严格的界限，未经同意，任何人都不能跨越，甚至情报耗尽也不能跨越。企业将要求有权使用模型输出来微调和/或训练自己的模型。  我认为这是每个公司都有权根据其企业责任义务调整模型。\n\n云时代，企业积累数据。在AI时代，他们积累学习。信任边界必须相应发展，从保护信息到保护组织学习、适应和复合情报的机制。为了确保这一点，每个企业都必须做一些事情：\n\n控制：创建您的私人评估，因为评估定义了组织内部的“好”是什么样子。此外，保留对组织的记忆、痕迹、反馈、决策和机构背景的所有权，以及使用您自己的任务和查询的模型输出的能力。\n\n能力：在租户范围内构建您自己的专有学习环境来训练或调整模型，其中模型可以根据真实的工作流程进行学习，而不会暴露公司的知识。\n\n选择：确保编排层与任何单个模型解耦。问问自己：如果您正在使用的任何一种模型被取消，您是否仍然有能力使用其他模型来操作和优化您的评估？  即使特定的“通才”模式被取消，您公司的“老手”能力是否仍然存在？\n\n成本：通过解耦编排层，您还能够以最高效和最具成本效益的方式将上下文、模型和任务整合在一起，而无需牺牲质量。\n\n复合：将这四者结合在一起，您可以创建自己的持续学习循环（即爬山机），这将使您的人工智能投资能够复合您公司的价值。\n\n换句话说，公司应该能够使用模型而不放弃使其独一无二的知识。这就是我们需要面对的反向信息悖论。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-14T10:50:15.081Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2076422398853984324",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-13T00:48:13.388Z"
+        },
+        "createdAt": "2026-07-13T00:48:13.388Z",
+        "updatedAt": "2026-07-13T00:48:13.724Z"
+      }
+    },
+    {
+      "rank": 8,
+      "essenceScore": 223531,
+      "heatScore": 103968,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 103968
+      },
+      "sourceUrl": "https://x.com/LiamFedus/status/2076404080474533998",
+      "reason": "前 OpenAI 高管一句「失败才是护城河」，把纳德拉文章改写成：可沉淀的试错过程才是比上下文更硬的资产。",
+      "reasonEn": "Ex-OpenAI VP reframes Nadella: ‘Our failures are our moat’—messy trial-and-error compounded into owned weights beats tokens-in-context alone.",
+      "metrics": {
+        "views": 3466643,
+        "likes": 6943,
+        "retweets": 1223,
+        "replies": 490,
+        "quotes": 705,
+        "bookmarks": 10464
+      },
+      "document": {
+        "id": "1b669e18-dc19-430d-9fd8-ff53604a150e",
+        "title": "Our failures are our moat.\n\nA sc",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2076404080474533998",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2076404080474533998",
+            "author": {
+              "name": "Liam Fedus",
+              "handle": "LiamFedus",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/946842870916448256/X0_3p45X_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Our failures are our moat.\n\nA scientific paper is a clean repackaging of a messy process of failed syntheses, dead ends, hints of success. That mess is the durable asset: what was tried, what worked, what failed, and why.\n\nCompound it into weights you own. Frontier labs live by this principle. If tokens-in-context were enough, pre-training would have died years ago.",
+            "createdAt": "Sun Jul 12 20:31:25 +0000 2026",
+            "viewCount": 21472,
+            "metrics": {
+              "views": 21472,
+              "likes": 214,
+              "retweets": 15,
+              "replies": 8,
+              "quotes": 0,
+              "bookmarks": 106
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "我们的失败是我们的护城河。\n\n一篇科学论文是对失败的合成、死胡同和成功迹象的混乱过程的干净重新包装。这些混乱是持久的资产：尝试过什么、有效什么、失败了以及原因。\n\n将其复合为您拥有的权重。前沿实验室遵循这一原则。如果上下文中的标记就足够了，那么预训练几年前就会消失。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-13T00:48:16.343Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2076323181154230284",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2076323181154230284",
+            "author": {
+              "name": "Satya Nadella",
+              "handle": "satyanadella",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1221837516816306177/_Ld4un5A_normal.jpg",
+              "isVerified": false
+            },
+            "content": "",
+            "createdAt": "Sun Jul 12 15:09:57 +0000 2026",
+            "viewCount": 3466643,
+            "metrics": {
+              "views": 3466643,
+              "likes": 6943,
+              "retweets": 1223,
+              "replies": 490,
+              "quotes": 705,
+              "bookmarks": 10464
+            },
+            "media": [],
+            "article": {
+              "title": "The Reverse Information Paradox ",
+              "previewText": "In the age of intelligence, how should firms protect their core IP?  \nNobel Prize winning economist Kenneth Arrow famously described a paradox in the market for information. “Its value for the",
+              "coverUrl": "",
+              "blocks": [
+                {
+                  "type": "unstyled",
+                  "text": "In the age of intelligence, how should firms protect their core IP?  "
+                },
+                {
+                  "type": "unstyled",
+                  "text": "Nobel Prize winning economist Kenneth Arrow famously described a paradox in the market for information. “Its value for the purchaser is not known until he has the information, but then he has in effect acquired it without cost.” In Arrow’s “Information Paradox,” the seller risks giving away knowledge in order to sell it. "
+                },
+                {
+                  "type": "unstyled",
+                  "text": "AI creates the reverse problem. In the AI age, the buyer risks giving away knowledge, just in order to use what they bought. "
+                },
+                {
+                  "type": "unstyled",
+                  "text": "You essentially pay for intelligence twice, once with money, and again with something even more valuable: the proprietary knowledge you must reveal to make that intelligence useful. The better you want the model to perform, the more of that knowledge you have to feed it!  "
+                },
+                {
+                  "type": "unstyled",
+                  "text": "Over time, the information asymmetry becomes increasingly skewed. The seller learns more and more about you as you use what you purchased, while you learn very little about what the seller is learning in return. "
+                },
+                {
+                  "type": "unstyled",
+                  "text": "That is what I think of as the Reverse Information Paradox. "
+                },
+                {
+                  "type": "unstyled",
+                  "text": "Patents solve one aspect of Arrow’s paradox. They let an inventor disclose an idea without simply giving it away. The Reverse Information Paradox needs its own equivalent. "
+                },
+                {
+                  "type": "unstyled",
+                  "text": "This requires more than data protection. Models learn from \"exhaust,\" the prompts people write, the tools agents use, and especially the corrections people make when the model is wrong. Every correction is distilled into institutional know-how. It's the kind of knowledge a competitor could never buy, and the kind that leaks almost imperceptibly: trace by trace, correction by correction, eval by eval. "
+                },
+                {
+                  "type": "unstyled",
+                  "text": "In consuming intelligence, you are creating intelligence. And what you create should belong to you. This is your particular intelligence, in Hayek's sense: the knowledge of time, place, and circumstance that no one else can hold. It knows what you think, what you value, and how you measure success. "
+                },
+                {
+                  "type": "unstyled",
+                  "text": "While the great innovation that comes from model providers having fair use rights to train models on public data is needed, I find it ironic that the status quo is to then turn around and impose restrictive terms on distillation, and to reserve the right to learn from customer usage and interaction data. If learning flows in only one direction, economic value converges toward the owners of the learning infrastructure rather than the creators of the knowledge itself. Therefore, it's imperative that we distribute the learning infrastructure to every firm so that they can control their own learning loop.  "
+                },
+                {
+                  "type": "unstyled",
+                  "text": "As Alex Karp put it: \"What the technical customers want is control over their compute, their models, their data stack, and their alpha. They want to know they own the means of production, and it's not being transferred to someone else.\" The current regime does precisely the transfer Karp and companies fear. "
+                },
+                {
+                  "type": "unstyled",
+                  "text": "That is why enterprises need a real trust boundary for their human capital and token capital to compound. It is where an organization’s data, traces, evals, adapted weights, and memory accumulate and improve together. And it is a hard boundary across which nothing crosses, not even the intelligence exhaust, without consent. Enterprises will demand the rights to use model outputs to fine tune and/or train their own models.  I think of this as every firm’s right to align models to their enterprise accountability obligations.  "
+                },
+                {
+                  "type": "unstyled",
+                  "text": "In the cloud era, enterprises accumulated data. In the AI era, they accumulate learning. The trust boundary must evolve accordingly, from protecting information to protecting the mechanisms through which organizations learn, adapt, and compound intelligence. There are a few things every enterprise must do to ensure this:  "
+                },
+                {
+                  "type": "unordered-list-item",
+                  "text": "Control: Create your private evals, because evals define what “good” looks like inside the organization. Also, retain ownership of your organization’s memory, traces, feedbacks, decisions, and institutional context, and ability to use outputs of models from your own tasks and queries.  "
+                },
+                {
+                  "type": "unordered-list-item",
+                  "text": "Capability: Build your own proprietary learning environments within the tenant boundary to train or tune models, where models learn against real workflows without exposing the company’s knowledge. "
+                },
+                {
+                  "type": "unordered-list-item",
+                  "text": "Choice: Ensure the orchestration layer is decoupled from any single model. Ask yourself: If any one model you are using is taken away, do you still have the ability to operate and optimize for your evals using other models?  Does your company “veteran” capability remain with you even if a given “generalist” model is taken away? "
+                },
+                {
+                  "type": "unordered-list-item",
+                  "text": "Cost: By decoupling the orchestration layer, you are also able to bring together context, models, and tasks in the most efficient and cost-effective way without sacrificing quality. "
+                },
+                {
+                  "type": "unordered-list-item",
+                  "text": "Compound: Bring these four together and you create your own continuous learning loop (i.e. hill climbing machine) that will allow your AI investments to compound the value of your firm. "
+                },
+                {
+                  "type": "unstyled",
+                  "text": "In other words, a company should be able to use a model without giving up the knowledge that makes it unique. That is the reverse information paradox we need to confront. "
+                }
+              ]
+            },
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "逆向信息悖论\n\n智能化时代，企业该如何保护自己的核心知识产权？\n\n诺贝尔经济学奖得主肯尼思·阿罗（Kenneth Arrow）对信息市场中的一个悖论进行了著名的描述。 “在购买者获得信息之前，它对购买者的价值是不知道的，但随后他实际上已经免费获得了它。”在阿罗的“信息悖论”中，卖方为了出售知识而冒着泄露知识的风险。\n\n人工智能创造了相反的问题。在人工智能时代，购买者冒着放弃知识的风险，只是为了使用他们购买的东西。\n\n本质上，你要为情报付出两次代价，一次用金钱，另一次用更有价值的东西：你必须透露的专有知识才能使情报发挥作用。您希望模型表现得越好，您需要为其提供的知识就越多！\n\n随着时间的推移，信息不对称变得越来越倾斜。当您使用所购买的商品时，卖家会越来越多地了解您，而您对卖家所了解的回报却知之甚少。\n\n这就是我所认为的逆向信息悖论。\n\n专利解决了阿罗悖论的一个方面。他们让发明者公开一个想法，而不是简单地放弃它。逆向信息悖论需要它自己的等价物。\n\n这需要的不仅仅是数据保护。模型从“排气”、人们写下的提示、代理使用的工具，尤其是人们在模型错误时做出的更正中学习。每一次修正都被提炼成机构专业知识。这是一种竞争对手永远买不到的知识，也是一种几乎在不知不觉中泄漏的知识：逐个跟踪、逐个更正、逐个评估。\n\n在消耗智力的同时，你也在创造智力。你创造的东西应该属于你。从哈耶克的意义上来说，这就是你的特殊智慧：其他人无法掌握的关于时间、地点和环境的知识。它知道您的想法、您的价值观以及您如何衡量成功。\n\n虽然模型提供商需要拥有公平使用权来训练公共数据模型，但我觉得具有讽刺意味的是，现状是逆转并对蒸馏施加限制性条款，并保留从客户使用和交互数据中学习的权利。如果学习仅朝一个方向流动，经济价值就会集中于学习基础设施的所有者，而不是知识本身的创造者。因此，我们必须将学习基础设施分发给每个公司，以便他们能够控制自己的学习循环。\n\n正如亚历克斯·卡普（Alex Karp）所说：“技术客户想要的是控制他们的计算、模型、数据堆栈和阿尔法。他们想知道他们拥有生产资料，并且不会被转移给其他人。”现行政权恰恰实现了卡普和公司所担心的转移。\n\n这就是为什么企业需要一个真正的信任边界来让其人力资本和代币资本复合。这是组织的数据、跟踪、评估、调整权重和记忆共同积累和改进的地方。这是一条严格的界限，未经同意，任何人都不能跨越，甚至情报耗尽也不能跨越。企业将要求有权使用模型输出来微调和/或训练自己的模型。  我认为这是每个公司都有权根据其企业责任义务调整模型。\n\n云时代，企业积累数据。在AI时代，他们积累学习。信任边界必须相应发展，从保护信息到保护组织学习、适应和复合情报的机制。为了确保这一点，每个企业都必须做一些事情：\n\n控制：创建您的私人评估，因为评估定义了组织内部的“好”是什么样子。此外，保留对组织的记忆、痕迹、反馈、决策和机构背景的所有权，以及使用您自己的任务和查询的模型输出的能力。\n\n能力：在租户范围内构建您自己的专有学习环境来训练或调整模型，其中模型可以根据真实的工作流程进行学习，而不会暴露公司的知识。\n\n选择：确保编排层与任何单个模型解耦。问问自己：如果您正在使用的任何一种模型被取消，您是否仍然有能力使用其他模型来操作和优化您的评估？  即使特定的“通才”模式被取消，您公司的“老手”能力是否仍然存在？\n\n成本：通过解耦编排层，您还能够以最高效和最具成本效益的方式将上下文、模型和任务整合在一起，而无需牺牲质量。\n\n复合：将这四者结合在一起，您可以创建自己的持续学习循环（即爬山机），这将使您的人工智能投资能够复合您公司的价值。\n\n换句话说，公司应该能够使用模型而不放弃使其独一无二的知识。这就是我们需要面对的反向信息悖论。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-14T10:50:15.083Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2076404080474533998",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-13T00:48:16.217Z"
+        },
+        "createdAt": "2026-07-13T00:48:16.217Z",
+        "updatedAt": "2026-07-13T00:48:16.345Z"
+      }
+    },
+    {
+      "rank": 9,
+      "essenceScore": 138605,
+      "heatScore": 79141,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 79141
+      },
+      "sourceUrl": "https://x.com/elvissun/status/2076387825361248588",
+      "reason": "一句「Anthropic 重置限额 / Tibo 直接取消限额」把 OpenAI 限流大战做成病毒级对比 dunk。",
+      "reasonEn": "Viral one-liner dunking the rate-limit war: Anthropic resets usage; OpenAI’s Tibo removes the limit entirely.",
+      "metrics": {
+        "views": 2082487,
+        "likes": 19582,
+        "retweets": 1525,
+        "replies": 2354,
+        "quotes": 1552,
+        "bookmarks": 1985
+      },
+      "document": {
+        "id": "5e1a9fc4-ed01-4878-ac34-9aeae53ca990",
+        "title": "anthropic: we reset the usage li",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2076387825361248588",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2076387825361248588",
+            "author": {
+              "name": "Elvis",
+              "handle": "elvissun",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1886389973236011008/7EZHFw9k_normal.jpg",
+              "isVerified": false
+            },
+            "content": "anthropic: we reset the usage limit\n\ntibo: we removed the usage limit\n\n🐐",
+            "createdAt": "Sun Jul 12 19:26:49 +0000 2026",
+            "viewCount": 72565,
+            "metrics": {
+              "views": 72565,
+              "likes": 2292,
+              "retweets": 87,
+              "replies": 36,
+              "quotes": 13,
+              "bookmarks": 74
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "人择：我们重置了使用限制\n\ntibo：我们取消了使用限制\n\n🐐",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-13T00:48:21.863Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2076365965915467978",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2076365965915467978",
+            "author": {
+              "name": "Tibo",
+              "handle": "thsottiaux",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2075819673263001600/pj1vyX6I_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Morning. The last 48 hours of Codex and ChatGPT Work have been intense! Three important updates:\n\n- Temporarily removing the 5 hour usage limit restriction for all Plus, Business and Pro plans\n- Rolling out changes that will make GPT 5.6 Sol more efficient across the board and that will be reflected in less usage being used so that it can take you further. Exact impact to be quantified and shared\n- We hit 6M active users, and are landing a usage reset in the next hour\n\nGo do things",
+            "createdAt": "Sun Jul 12 17:59:57 +0000 2026",
+            "viewCount": 2082487,
+            "metrics": {
+              "views": 2082487,
+              "likes": 19582,
+              "retweets": 1525,
+              "replies": 2354,
+              "quotes": 1552,
+              "bookmarks": 1985
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "早晨。 Codex 和 ChatGPT 的最后 48 小时工作非常紧张！三个重要更新：\n\n- 暂时取消所有 Plus、Business 和 Pro 计划的 5 小时使用限制\n- 推出的更改将使 GPT 5.6 Sol 全面提高效率，这将反映在使用量减少上，以便您可以走得更远。需要量化和共享的确切影响\n- 我们的活跃用户数已达 600 万，并将在下一小时内重置使用量\n\n去做事去",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-13T00:48:21.867Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2076387825361248588",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-13T00:48:21.807Z"
+        },
+        "createdAt": "2026-07-13T00:48:21.807Z",
+        "updatedAt": "2026-07-13T00:48:21.867Z"
+      }
+    },
+    {
+      "rank": 10,
+      "essenceScore": 138579,
+      "heatScore": 79130,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 79130
+      },
+      "sourceUrl": "https://x.com/__oQuery/status/2076368083250479545",
+      "reason": "把取消限流比作「百亿补贴」抢用户，反问补贴退潮后谁还用得起——中文圈尖锐价格战质疑。",
+      "reasonEn": "Chinese dunk frames limit-lifts as ‘hundred-billion subsidies’: when the free usage war ends, can users still afford AI?",
+      "metrics": {
+        "views": 2082487,
+        "likes": 19578,
+        "retweets": 1524,
+        "replies": 2354,
+        "quotes": 1552,
+        "bookmarks": 1983
+      },
+      "document": {
+        "id": "9b91e4e4-5247-47e2-9c81-d9bd65d4f08f",
+        "title": "现在各大 AI 厂商疯狂抢用户，使用各种重置、加大限额的这种百亿",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2076368083250479545",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2076368083250479545",
+            "author": {
+              "name": "拾一.max-fast",
+              "handle": "__oQuery",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2076002442572189696/E2k9AOI4_normal.jpg",
+              "isVerified": false
+            },
+            "content": "现在各大 AI 厂商疯狂抢用户，使用各种重置、加大限额的这种百亿补贴的方式。但有没有想过，如果有一天百亿补贴不再有了，那我们真的还用得起吗？",
+            "createdAt": "Sun Jul 12 18:08:22 +0000 2026",
+            "viewCount": 14210,
+            "metrics": {
+              "views": 14210,
+              "likes": 53,
+              "retweets": 0,
+              "replies": 32,
+              "quotes": 4,
+              "bookmarks": 3
+            },
+            "media": [],
+            "translation": {
+              "provider": "none",
+              "status": "idle",
+              "language": "zh-CN",
+              "text": "",
+              "annotations": [],
+              "error": "",
+              "version": 0
+            }
+          },
+          {
+            "id": "2076365965915467978",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2076365965915467978",
+            "author": {
+              "name": "Tibo",
+              "handle": "thsottiaux",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2075819673263001600/pj1vyX6I_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Morning. The last 48 hours of Codex and ChatGPT Work have been intense! Three important updates:\n\n- Temporarily removing the 5 hour usage limit restriction for all Plus, Business and Pro plans\n- Rolling out changes that will make GPT 5.6 Sol more efficient across the board and that will be reflected in less usage being used so that it can take you further. Exact impact to be quantified and shared\n- We hit 6M active users, and are landing a usage reset in the next hour\n\nGo do things",
+            "createdAt": "Sun Jul 12 17:59:57 +0000 2026",
+            "viewCount": 2082487,
+            "metrics": {
+              "views": 2082487,
+              "likes": 19578,
+              "retweets": 1524,
+              "replies": 2354,
+              "quotes": 1552,
+              "bookmarks": 1983
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "早晨。 Codex 和 ChatGPT 的最后 48 小时工作非常紧张！三个重要更新：\n\n- 暂时取消所有 Plus、Business 和 Pro 计划的 5 小时使用限制\n- 推出的更改将使 GPT 5.6 Sol 全面提高效率，这将反映在使用量减少上，以便您可以走得更远。需要量化和共享的确切影响\n- 我们的活跃用户数已达 600 万，并将在下一小时内重置使用量\n\n去做事去",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-13T00:48:32.359Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2076368083250479545",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-13T00:48:32.296Z"
+        },
+        "createdAt": "2026-07-13T00:48:32.296Z",
+        "updatedAt": "2026-07-13T00:48:32.360Z"
+      }
+    }
+  ]
+}

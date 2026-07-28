@@ -1,0 +1,1287 @@
+{
+  "date": "2026-07-27",
+  "title": "每日 X 精华引用榜",
+  "titleEn": "Daily Quote Essence on X",
+  "generatedAt": "2026-07-27T01:18:01.179Z",
+  "entries": [
+    {
+      "rank": 1,
+      "essenceScore": 3282634,
+      "heatScore": 1613835,
+      "signals": {
+        "depth": 3,
+        "hasDunk": true,
+        "peakIndex": 2,
+        "peakHeat": 1613835
+      },
+      "sourceUrl": "https://x.com/AndrewYNg/status/2081103828859117908",
+      "reason": "吴恩达一句话定调：私人代码可以不开放，但不能阻止别人开源",
+      "reasonEn": "Andrew Ng reframes the open-source fight: private code is fine—blocking others from open-sourcing is not",
+      "metrics": {
+        "views": 60804081,
+        "likes": 168484,
+        "retweets": 29030,
+        "replies": 15888,
+        "quotes": 10511,
+        "bookmarks": 39435
+      },
+      "document": {
+        "id": "82254976-7d6c-426d-80c8-df459ce43633",
+        "title": "@Mononofu @JensenHuang This is a",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2081103828859117908",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2081103828859117908",
+            "author": {
+              "name": "Andrew Ng",
+              "handle": "AndrewYNg",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/733174243714682880/oyG30NEH_normal.jpg",
+              "isVerified": false
+            },
+            "content": "@Mononofu @JensenHuang This is a false equivalence. Everyone has the right to keep their code private. The problem is when someone tries to stop OTHERS from open sourcing.",
+            "createdAt": "Sat Jul 25 19:46:32 +0000 2026",
+            "viewCount": 454890,
+            "metrics": {
+              "views": 454890,
+              "likes": 11466,
+              "retweets": 864,
+              "replies": 130,
+              "quotes": 114,
+              "bookmarks": 494
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "@Mononofu @JensenHuang 这是一个错误的等价。每个人都有权将自己的代码保密。问题是当有人试图阻止其他人开源时。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-27T01:17:37.004Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2080937562739531837",
+            "relation": "reply",
+            "depth": 1,
+            "sourceTweetId": "2080937562739531837",
+            "author": {
+              "name": "Julian Schrittwieser",
+              "handle": "Mononofu",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1256258472963911682/DUN_iOOG_normal.jpg",
+              "isVerified": false
+            },
+            "content": "I’m so excited that @JensenHuang is a believer in open source now, looking forward to the CUDA and GPU driver open source release!",
+            "createdAt": "Sat Jul 25 08:45:51 +0000 2026",
+            "viewCount": 5703954,
+            "metrics": {
+              "views": 5703954,
+              "likes": 5164,
+              "retweets": 323,
+              "replies": 1648,
+              "quotes": 988,
+              "bookmarks": 1008
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "我很兴奋@JensenHuang 现在是开源的信徒，期待 CUDA 和 GPU 驱动开源发布！",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-27T01:17:37.008Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2080643682408321103",
+            "relation": "quote",
+            "depth": 2,
+            "sourceTweetId": "2080643682408321103",
+            "author": {
+              "name": "Jensen Huang",
+              "handle": "JensenHuang",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2080613261674962944/OMXX4RJ3_normal.jpg",
+              "isVerified": false
+            },
+            "content": "For my first post, I’m sharing a letter @NVIDIA signed on why open models matter.\n\nAI will transform every industry, power every company, and be built by every country.\n\nOpen models strengthen safety and cybersecurity, accelerate innovation and diffusion, and enable sovereignty.\n\nThe world needs both frontier closed models and frontier open models.\n\nhttps://images.nvidia.com/pdf/Open-Weights-and-American-AI-Leadership.pdf",
+            "createdAt": "Fri Jul 24 13:18:05 +0000 2026",
+            "viewCount": 60804081,
+            "metrics": {
+              "views": 60804081,
+              "likes": 168484,
+              "retweets": 29030,
+              "replies": 15888,
+              "quotes": 10511,
+              "bookmarks": 39435
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HN_qDVsa4AAI6XJ.jpg",
+              "https://pbs.twimg.com/media/HN_qDV1a8AARQwg.jpg",
+              "https://pbs.twimg.com/media/HN_qDV1awAAPTlH.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "在我的第一篇文章中，我将分享一封@NVIDIA 签名的信，解释为什么开放模型很重要。\n\n人工智能将改变每个行业、为每个公司提供动力、由每个国家建设。\n\n开放模式加强安全和网络安全，加速创新和扩散，并实现主权。\n\n世界既需要边境封闭模式，也需要边境开放模式。\n\nhttps://images.nvidia.com/pdf/Open-Weights-and-American-AI-Leadership.pdf",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-27T01:17:37.078Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2081103828859117908",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-27T01:17:36.907Z"
+        },
+        "createdAt": "2026-07-27T01:17:36.907Z",
+        "updatedAt": "2026-07-27T01:17:37.078Z"
+      }
+    },
+    {
+      "rank": 2,
+      "essenceScore": 3282634,
+      "heatScore": 1613835,
+      "signals": {
+        "depth": 3,
+        "hasDunk": true,
+        "peakIndex": 2,
+        "peakHeat": 1613835
+      },
+      "sourceUrl": "https://x.com/GavinSBaker/status/2081367707081965783",
+      "reason": "用数据反击讽刺帖：英伟达本身就是领先的开源AI公司，且联署信并未要求闭源厂商交模型",
+      "reasonEn": "Counters the CUDA snark with data that NVIDIA already leads open-source AI—and the letter never demanded closed labs open their models",
+      "metrics": {
+        "views": 60804081,
+        "likes": 168484,
+        "retweets": 29030,
+        "replies": 15888,
+        "quotes": 10511,
+        "bookmarks": 39435
+      },
+      "document": {
+        "id": "e6519dbe-7eba-4644-80d1-8ca189c6f456",
+        "title": "Nvidia is the leading open sourc",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2081367707081965783",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2081367707081965783",
+            "author": {
+              "name": "Gavin Baker",
+              "handle": "GavinSBaker",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1396219525754937345/5L4n5L3O_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Nvidia is the leading open source AI company by a wide margin.\n\nThe silliness of this post is compounded by the fact that the letter did not suggest that closed source AI companies should open source their models.",
+            "createdAt": "Sun Jul 26 13:15:05 +0000 2026",
+            "viewCount": 150918,
+            "metrics": {
+              "views": 150918,
+              "likes": 1587,
+              "retweets": 101,
+              "replies": 77,
+              "quotes": 7,
+              "bookmarks": 173
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HOKA5bsW0AEE7Lt.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "Nvidia 是遥遥领先的领先开源人工智能公司。\n\n这篇文章的愚蠢之处在于，这封信并没有建议闭源人工智能公司应该开源他们的模型。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-27T01:17:39.580Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2080937562739531837",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2080937562739531837",
+            "author": {
+              "name": "Julian Schrittwieser",
+              "handle": "Mononofu",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1256258472963911682/DUN_iOOG_normal.jpg",
+              "isVerified": false
+            },
+            "content": "I’m so excited that @JensenHuang is a believer in open source now, looking forward to the CUDA and GPU driver open source release!",
+            "createdAt": "Sat Jul 25 08:45:51 +0000 2026",
+            "viewCount": 5703954,
+            "metrics": {
+              "views": 5703954,
+              "likes": 5164,
+              "retweets": 323,
+              "replies": 1648,
+              "quotes": 988,
+              "bookmarks": 1008
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "我很兴奋@JensenHuang 现在是开源的信徒，期待 CUDA 和 GPU 驱动开源发布！",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-27T01:17:39.619Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2080643682408321103",
+            "relation": "quote",
+            "depth": 2,
+            "sourceTweetId": "2080643682408321103",
+            "author": {
+              "name": "Jensen Huang",
+              "handle": "JensenHuang",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2080613261674962944/OMXX4RJ3_normal.jpg",
+              "isVerified": false
+            },
+            "content": "For my first post, I’m sharing a letter @NVIDIA signed on why open models matter.\n\nAI will transform every industry, power every company, and be built by every country.\n\nOpen models strengthen safety and cybersecurity, accelerate innovation and diffusion, and enable sovereignty.\n\nThe world needs both frontier closed models and frontier open models.\n\nhttps://images.nvidia.com/pdf/Open-Weights-and-American-AI-Leadership.pdf",
+            "createdAt": "Fri Jul 24 13:18:05 +0000 2026",
+            "viewCount": 60804081,
+            "metrics": {
+              "views": 60804081,
+              "likes": 168484,
+              "retweets": 29030,
+              "replies": 15888,
+              "quotes": 10511,
+              "bookmarks": 39435
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HN_qDVsa4AAI6XJ.jpg",
+              "https://pbs.twimg.com/media/HN_qDV1a8AARQwg.jpg",
+              "https://pbs.twimg.com/media/HN_qDV1awAAPTlH.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "在我的第一篇文章中，我将分享一封@NVIDIA 签名的信，解释为什么开放模型很重要。\n\n人工智能将改变每个行业、为每个公司提供动力、由每个国家建设。\n\n开放模式加强安全和网络安全，加速创新和扩散，并实现主权。\n\n世界既需要边境封闭模式，也需要边境开放模式。\n\nhttps://images.nvidia.com/pdf/Open-Weights-and-American-AI-Leadership.pdf",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-27T01:17:39.621Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2081367707081965783",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-27T01:17:39.513Z"
+        },
+        "createdAt": "2026-07-27T01:17:39.513Z",
+        "updatedAt": "2026-07-27T01:17:39.621Z"
+      }
+    },
+    {
+      "rank": 3,
+      "essenceScore": 3040569,
+      "heatScore": 1613843,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 1613843
+      },
+      "sourceUrl": "https://x.com/WallStreet0Name/status/2080647302126150092",
+      "reason": "引用老黄首帖，六层拆解开放权重联署信——从生态到蒸馏合规",
+      "reasonEn": "Chinese deep dive quoting Jensen’s first post: six-layer read of the open-weights letter, including distillation politics",
+      "metrics": {
+        "views": 60804081,
+        "likes": 168486,
+        "retweets": 29032,
+        "replies": 15888,
+        "quotes": 10511,
+        "bookmarks": 39435
+      },
+      "document": {
+        "id": "7f505189-5736-49ef-a90f-e471ebb25e42",
+        "title": "黄仁勋来X了，发表了第一篇推文\n\n文章主要表达了六层意思：\n\n1",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2080647302126150092",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2080647302126150092",
+            "author": {
+              "name": "华尔街没有名字",
+              "handle": "WallStreet0Name",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1905787442600550400/F6qAR_3__normal.jpg",
+              "isVerified": false
+            },
+            "content": "黄仁勋来X了，发表了第一篇推文\n\n文章主要表达了六层意思：\n\n1. 把开放权重类比为早期的开源软件\n文章认为，互联网的发展依赖 Linux 等开源软件。类似地，美国未来的 AI 竞争力，也不能只依赖某一家最强的封闭模型，而要依赖一个广泛、开放、可扩散的生态。\n其逻辑是：\n更多人可以使用底层技术\n更多企业可以开发应用\n成本下降\n技术扩散到制造、医疗、农业、教育和中小企业\n美国整体 AI 生产力提高\n\n2. 降低企业使用 AI 的成本\n\n企业不需要从零训练模型，也不必每次都支付最昂贵的前沿模型 API 费用。\n可以把不同模型放到不同任务中：\n复杂研究使用高性能前沿模型\n客服、分类、数据提取使用小模型\n涉及隐私的数据在本地运行\n特定行业模型进行内部微调\n文章认为，这种分层使用才能让 AI 真正进入数十亿个日常任务。\n\n3. 防止少数厂商垄断\n开放权重能够减少企业对单一模型供应商的依赖。\n企业可以：\n更换模型供应商\n自己保存模型和微调成果\n控制内部数据\n在不同云平台之间迁移\n在本地数据中心部署\n避免 API 涨价或服务中断\n因此，这份声明明显反对过度的供应商锁定，希望模型、芯片、云、应用和服务各层都保持竞争。\n\n4. 认为开放也可以提高安全性\n文章承认开放权重存在风险：\n模型发布后，开发者无法完全收回\n修改版本难以追踪\n恶意使用者也可能获得模型\n模型可能被移除安全限制\n但签署方认为，封闭模型也可能被攻击、滥用或出现隐藏问题。开放模型可以让更多研究人员进行测试、红队评估、漏洞发现和安全改进。\n这是全文中争议较大的主张。开放有利于审计，也会降低恶意使用门槛，两方面风险同时存在。声明明显强调了开放带来的安全收益。\n\n5. 要求政府支持算力和公共 AI 基础设施\n文件对美国政策制定者提出了几项要求：\n政策诉求实际含义扩大初创企业和研究人员的算力获取降低训练、微调和推理成本投资共享数据集、工具和评估框架建设公共 AI 基础设施避免过早限制开放模型降低开放模型公司的监管风险保持多个前沿模型供应商防止能力集中于少数企业支持应用层发展让 AI 进入真实行业工作流\n换句话说，签署方希望美国政府提供资源，同时减少对开放模型的限制。\n\n6. 为“模型蒸馏”争取合法空间\n这是全文政策含义最强的一段。\n“蒸馏”是指利用一个模型的输出，训练或改进另一个模型。例如，让大型模型生成答案，再用这些答案训练更小、更便宜的模型。\n声明的立场是：\n正常的模型蒸馏属于常用研发技术\n不应把所有蒸馏都视为盗窃\n非法抓取、违反合同或侵权行为可以单独处理\n不应因少数违法行为而全面限制蒸馏技术\n这实际上是在影响未来关于模型知识产权、API 使用条款、训练数据和竞争法的监管规则。",
+            "createdAt": "Fri Jul 24 13:32:28 +0000 2026",
+            "viewCount": 75861,
+            "metrics": {
+              "views": 75861,
+              "likes": 152,
+              "retweets": 13,
+              "replies": 101,
+              "quotes": 1,
+              "bookmarks": 51
+            },
+            "media": [],
+            "translation": {
+              "provider": "none",
+              "status": "idle",
+              "language": "zh-CN",
+              "text": "",
+              "annotations": [],
+              "error": "",
+              "version": 0
+            }
+          },
+          {
+            "id": "2080643682408321103",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2080643682408321103",
+            "author": {
+              "name": "Jensen Huang",
+              "handle": "JensenHuang",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2080613261674962944/OMXX4RJ3_normal.jpg",
+              "isVerified": false
+            },
+            "content": "For my first post, I’m sharing a letter @NVIDIA signed on why open models matter.\n\nAI will transform every industry, power every company, and be built by every country.\n\nOpen models strengthen safety and cybersecurity, accelerate innovation and diffusion, and enable sovereignty.\n\nThe world needs both frontier closed models and frontier open models.\n\nhttps://images.nvidia.com/pdf/Open-Weights-and-American-AI-Leadership.pdf",
+            "createdAt": "Fri Jul 24 13:18:05 +0000 2026",
+            "viewCount": 60804081,
+            "metrics": {
+              "views": 60804081,
+              "likes": 168486,
+              "retweets": 29032,
+              "replies": 15888,
+              "quotes": 10511,
+              "bookmarks": 39435
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HN_qDVsa4AAI6XJ.jpg",
+              "https://pbs.twimg.com/media/HN_qDV1a8AARQwg.jpg",
+              "https://pbs.twimg.com/media/HN_qDV1awAAPTlH.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "在我的第一篇文章中，我将分享一封@NVIDIA 签名的信，解释为什么开放模型很重要。\n\n人工智能将改变每个行业、为每个公司提供动力、由每个国家建设。\n\n开放模式加强安全和网络安全，加速创新和扩散，并实现主权。\n\n世界既需要边境封闭模式，也需要边境开放模式。\n\nhttps://images.nvidia.com/pdf/Open-Weights-and-American-AI-Leadership.pdf",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-27T01:17:46.059Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2080647302126150092",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-27T01:17:45.991Z"
+        },
+        "createdAt": "2026-07-27T01:17:45.991Z",
+        "updatedAt": "2026-07-27T01:17:46.060Z"
+      }
+    },
+    {
+      "rank": 4,
+      "essenceScore": 3040558,
+      "heatScore": 1613835,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 1613835
+      },
+      "sourceUrl": "https://x.com/Mononofu/status/2080937562739531837",
+      "reason": "用「那CUDA和驱动也开源吧」讽刺老黄首帖挺开放权重，引爆本周开源辩论",
+      "reasonEn": "Viral dunk on Jensen’s open-weights debut: sarcastically demanding CUDA and GPU drivers go open source",
+      "metrics": {
+        "views": 60804081,
+        "likes": 168484,
+        "retweets": 29030,
+        "replies": 15888,
+        "quotes": 10511,
+        "bookmarks": 39435
+      },
+      "document": {
+        "id": "cb234d1d-37f0-4ca7-be2a-6c2374e8bfb0",
+        "title": "I’m so excited that @JensenHuang",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2080937562739531837",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2080937562739531837",
+            "author": {
+              "name": "Julian Schrittwieser",
+              "handle": "Mononofu",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1256258472963911682/DUN_iOOG_normal.jpg",
+              "isVerified": false
+            },
+            "content": "I’m so excited that @JensenHuang is a believer in open source now, looking forward to the CUDA and GPU driver open source release!",
+            "createdAt": "Sat Jul 25 08:45:51 +0000 2026",
+            "viewCount": 5703954,
+            "metrics": {
+              "views": 5703954,
+              "likes": 5164,
+              "retweets": 323,
+              "replies": 1648,
+              "quotes": 988,
+              "bookmarks": 1008
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "我很兴奋@JensenHuang 现在是开源的信徒，期待 CUDA 和 GPU 驱动开源发布！",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-27T01:17:34.511Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2080643682408321103",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2080643682408321103",
+            "author": {
+              "name": "Jensen Huang",
+              "handle": "JensenHuang",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2080613261674962944/OMXX4RJ3_normal.jpg",
+              "isVerified": false
+            },
+            "content": "For my first post, I’m sharing a letter @NVIDIA signed on why open models matter.\n\nAI will transform every industry, power every company, and be built by every country.\n\nOpen models strengthen safety and cybersecurity, accelerate innovation and diffusion, and enable sovereignty.\n\nThe world needs both frontier closed models and frontier open models.\n\nhttps://images.nvidia.com/pdf/Open-Weights-and-American-AI-Leadership.pdf",
+            "createdAt": "Fri Jul 24 13:18:05 +0000 2026",
+            "viewCount": 60804081,
+            "metrics": {
+              "views": 60804081,
+              "likes": 168484,
+              "retweets": 29030,
+              "replies": 15888,
+              "quotes": 10511,
+              "bookmarks": 39435
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HN_qDVsa4AAI6XJ.jpg",
+              "https://pbs.twimg.com/media/HN_qDV1a8AARQwg.jpg",
+              "https://pbs.twimg.com/media/HN_qDV1awAAPTlH.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "在我的第一篇文章中，我将分享一封@NVIDIA 签名的信，解释为什么开放模型很重要。\n\n人工智能将改变每个行业、为每个公司提供动力、由每个国家建设。\n\n开放模式加强安全和网络安全，加速创新和扩散，并实现主权。\n\n世界既需要边境封闭模式，也需要边境开放模式。\n\nhttps://images.nvidia.com/pdf/Open-Weights-and-American-AI-Leadership.pdf",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-27T01:17:34.478Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2080937562739531837",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-27T01:17:34.250Z"
+        },
+        "createdAt": "2026-07-27T01:17:34.250Z",
+        "updatedAt": "2026-07-27T01:17:34.511Z"
+      }
+    },
+    {
+      "rank": 5,
+      "essenceScore": 3040558,
+      "heatScore": 1613835,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 1613835
+      },
+      "sourceUrl": "https://x.com/BTCBruce1/status/2080818687653663184",
+      "reason": "引用老黄挺开源首帖，重框中美AI为算力/能源/场景三维竞争",
+      "reasonEn": "Quotes Jensen’s open-models debut to reframe US–China AI as a compute, energy, and application race",
+      "metrics": {
+        "views": 60804081,
+        "likes": 168484,
+        "retweets": 29030,
+        "replies": 15888,
+        "quotes": 10511,
+        "bookmarks": 39435
+      },
+      "document": {
+        "id": "ffdd103a-8090-4811-8108-f21a70f49129",
+        "title": "老黄来X的第一条推文\n就是呼吁美国的大模型开源\n中美AI 的竞争",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2080818687653663184",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2080818687653663184",
+            "author": {
+              "name": "Bruce J",
+              "handle": "BTCBruce1",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2006972166689140737/UeFhvX1U_normal.jpg",
+              "isVerified": false
+            },
+            "content": "老黄来X的第一条推文\n就是呼吁美国的大模型开源\n中美AI 的竞争其实就是算力的竞争\n短期看 GPU 储备\n中期看系统工程与硬件生态\n长期看场景落地与能源供给\n\n短期GPU 和储备决定“谁跑得更快”\n美国掌握全球顶级设计生态Nvidia, AMD\n先进制造链条TSMC, High-NA EUV\n以及高带宽内存优先分配权。\n\n中国是单卡不够，集群来凑\n面对先进制程限制，通过国产芯片\n如华为、寒武纪、摩尔线程等的多卡堆叠\n还有算法降本以 DeepSeek 等为代表的路线\n通过极高效率的架构创新降低GPU依赖\n\n中期系统工程与硬件生态决定算力效率\n当集群规模扩充至万卡甚至十万卡级别时\n“有多少GPU” 的比赛就变成了\n“谁能把几万张卡真正高效用起来”\n迈威尔就是提高算力效率的公司\n\n长期看场景落地与能源供给\n能源即算力\nAI 的终局是“将电能转换为智能”\n数据中心是极致的吞电兽\n电网容量直接决定了能否持续运营百万卡级别的计算矩阵。\n\n在电这方面\n中国的电网与新能源基础设施遥遥领先美国\n\n应用场景即数据与收益\n算力是巨大的沉没成本\n唯有应用场景能够带来商业闭环\n美国的强项在“最强大脑”\n必须在通用前沿大模型、AGI上保持领先\n开源是必须的\n\n中国更擅长智能社会和产业赋能\n比如机器人、智能制造、智慧供应链等等\n在千行百业的 Token 应用上具备天然的规模\n效应和场景深度。",
+            "createdAt": "Sat Jul 25 00:53:29 +0000 2026",
+            "viewCount": 30147,
+            "metrics": {
+              "views": 30147,
+              "likes": 98,
+              "retweets": 9,
+              "replies": 101,
+              "quotes": 1,
+              "bookmarks": 19
+            },
+            "media": [],
+            "translation": {
+              "provider": "none",
+              "status": "idle",
+              "language": "zh-CN",
+              "text": "",
+              "annotations": [],
+              "error": "",
+              "version": 0
+            }
+          },
+          {
+            "id": "2080643682408321103",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2080643682408321103",
+            "author": {
+              "name": "Jensen Huang",
+              "handle": "JensenHuang",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2080613261674962944/OMXX4RJ3_normal.jpg",
+              "isVerified": false
+            },
+            "content": "For my first post, I’m sharing a letter @NVIDIA signed on why open models matter.\n\nAI will transform every industry, power every company, and be built by every country.\n\nOpen models strengthen safety and cybersecurity, accelerate innovation and diffusion, and enable sovereignty.\n\nThe world needs both frontier closed models and frontier open models.\n\nhttps://images.nvidia.com/pdf/Open-Weights-and-American-AI-Leadership.pdf",
+            "createdAt": "Fri Jul 24 13:18:05 +0000 2026",
+            "viewCount": 60804081,
+            "metrics": {
+              "views": 60804081,
+              "likes": 168484,
+              "retweets": 29030,
+              "replies": 15888,
+              "quotes": 10511,
+              "bookmarks": 39435
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HN_qDVsa4AAI6XJ.jpg",
+              "https://pbs.twimg.com/media/HN_qDV1a8AARQwg.jpg",
+              "https://pbs.twimg.com/media/HN_qDV1awAAPTlH.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "在我的第一篇文章中，我将分享一封@NVIDIA 签名的信，解释为什么开放模型很重要。\n\n人工智能将改变每个行业、为每个公司提供动力、由每个国家建设。\n\n开放模式加强安全和网络安全，加速创新和扩散，并实现主权。\n\n世界既需要边境封闭模式，也需要边境开放模式。\n\nhttps://images.nvidia.com/pdf/Open-Weights-and-American-AI-Leadership.pdf",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-27T01:17:47.628Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2080818687653663184",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-27T01:17:47.558Z"
+        },
+        "createdAt": "2026-07-27T01:17:47.558Z",
+        "updatedAt": "2026-07-27T01:17:47.629Z"
+      }
+    },
+    {
+      "rank": 6,
+      "essenceScore": 1273456,
+      "heatScore": 618233,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 618233
+      },
+      "sourceUrl": "https://x.com/teortaxesTex/status/2081417464588456245",
+      "reason": "引用Kimi K3官宣，倒计时开放权重落地，对照中美开放节奏",
+      "reasonEn": "Quotes Kimi K3’s launch post with a <24h open-weights countdown—China open-frontier timing as the punchline",
+      "metrics": {
+        "views": 23851099,
+        "likes": 57365,
+        "retweets": 7684,
+        "replies": 1745,
+        "quotes": 3428,
+        "bookmarks": 23510
+      },
+      "document": {
+        "id": "7ea8614a-9eca-4cc2-bb7d-68afc5c8e458",
+        "title": "meanwhile time in China:\n00:32 M",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2081417464588456245",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2081417464588456245",
+            "author": {
+              "name": "Teortaxes▶️ (DeepSeek 推特🐋铁粉 2023 – ∞)",
+              "handle": "teortaxesTex",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1652169745037242368/KRPTShbG_normal.jpg",
+              "isVerified": false
+            },
+            "content": "meanwhile time in China:\n00:32 Monday, July 27, 2026\nStrictly under 24 hours until an open frontier model",
+            "createdAt": "Sun Jul 26 16:32:49 +0000 2026",
+            "viewCount": 13170,
+            "metrics": {
+              "views": 13170,
+              "likes": 184,
+              "retweets": 4,
+              "replies": 7,
+              "quotes": 0,
+              "bookmarks": 9
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HOKt1KEXgAAQO1Z.png"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "同时在中国时间:\n2026 年 7 月 27 日星期一 00:32\n严格限制在 24 小时内开放边境模型",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-27T01:17:53.343Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2077830229968683203",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2077830229968683203",
+            "author": {
+              "name": "Kimi.ai",
+              "handle": "Kimi_Moonshot",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1910294000927645696/QseOV0uF_normal.png",
+              "isVerified": false
+            },
+            "content": "Introducing Kimi K3: Open Frontier Intelligence\n\n🔹 2.8 Trillion Parameters, 1 Million Context, Native Multimodal\n🔹 Kimi Delta Attention enables up to 6.3x faster decoding in million-token contexts\n🔹 Attention Residuals deliver ~25% higher training efficiency at <2% additional cost\n🔹 Built for long-horizon agentic coding and self-evolving workflows\n\nKimi K3 is now live on on http://Kimi.com, Kimi Work, Kimi Code, and the Kimi API.\nOpen Weights by July 27, 2026.\n\n🔗 API: http://platform.kimi.ai\n🔗 Tech blog: http://kimi.com/blog/kimi-k3",
+            "createdAt": "Thu Jul 16 18:58:25 +0000 2026",
+            "viewCount": 23851099,
+            "metrics": {
+              "views": 23851099,
+              "likes": 57365,
+              "retweets": 7684,
+              "replies": 1745,
+              "quotes": 3428,
+              "bookmarks": 23510
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HNXu0kobMAAPljb.png",
+              "https://pbs.twimg.com/media/HNXu2GWaYAAwH4w.png"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "Kimi K3 简介：开放前沿智能\n\n🔹 2.8 万亿个参数，100 万个上下文，原生多模态\n🔹 Kimi Delta Attention 可在百万令牌上下文中将解码速度提高高达 6.3 倍\n🔹 注意力残差以 <2% 的额外成本提供约 25% 的训练效率\n🔹 专为长期代理编码和自我进化工作流程而构建\n\nKimi K3 现已在 http://Kimi.com、Kimi Work、Kimi Code 和 Kimi API 上上线。\n2026 年 7 月 27 日之前开放权重。\n\n🔗 API：http://platform.kimi.ai\n🔗 技术博客：http://kimi.com/blog/kimi-k3",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-27T01:17:53.341Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2081417464588456245",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-27T01:17:52.590Z"
+        },
+        "createdAt": "2026-07-27T01:17:52.590Z",
+        "updatedAt": "2026-07-27T01:17:53.343Z"
+      }
+    },
+    {
+      "rank": 7,
+      "essenceScore": 91987,
+      "heatScore": 49031,
+      "signals": {
+        "depth": 3,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 49031
+      },
+      "sourceUrl": "https://x.com/aurelgrandfan/status/2081280860028854730",
+      "reason": "接话AI让万物变便宜：讽刺正是这波AI热把内存价格翻倍",
+      "reasonEn": "Reply-chain rebuttal: “AI makes everything cheap” meets the reality that RAM prices doubled",
+      "metrics": {
+        "views": 383447,
+        "likes": 29658,
+        "retweets": 2386,
+        "replies": 13,
+        "quotes": 2,
+        "bookmarks": 2257
+      },
+      "document": {
+        "id": "205963a2-20ed-45e1-a252-6e35bc32b2b8",
+        "title": "@Back2Batk \"society will prosper",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2081280860028854730",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2081280860028854730",
+            "author": {
+              "name": "Lopiu Bigfan",
+              "handle": "aurelgrandfan",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2028221736106225664/BAGHJ7n8_normal.jpg",
+              "isVerified": false
+            },
+            "content": "@Back2Batk \"society will prosper under AI because everything will be so cheap\" as if it isn't the reason why the price of RAM doubled",
+            "createdAt": "Sun Jul 26 07:30:00 +0000 2026",
+            "viewCount": 16896,
+            "metrics": {
+              "views": 16896,
+              "likes": 527,
+              "retweets": 5,
+              "replies": 0,
+              "quotes": 0,
+              "bookmarks": 1
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "@Back2Batk“社会将在人工智能下繁荣，因为一切都会变得如此便宜”，好像这不是 RAM 价格翻倍的原因",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-27T01:17:44.397Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2081143161208852581",
+            "relation": "reply",
+            "depth": 1,
+            "sourceTweetId": "2081143161208852581",
+            "author": {
+              "name": "💗 Lunie 💗",
+              "handle": "Back2Batk",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2081506192996663296/r6OCc_YH_normal.jpg",
+              "isVerified": false
+            },
+            "content": "\"Former trillionaire\"",
+            "createdAt": "Sat Jul 25 22:22:50 +0000 2026",
+            "viewCount": 383447,
+            "metrics": {
+              "views": 383447,
+              "likes": 29658,
+              "retweets": 2386,
+              "replies": 13,
+              "quotes": 2,
+              "bookmarks": 2257
+            },
+            "media": [
+              "https://pbs.twimg.com/amplify_video_thumb/2081143073229217792/img/IJVvL9c_TXdNlo9c.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "“前亿万富翁”",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-27T01:17:44.060Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2081137424122667027",
+            "relation": "quote",
+            "depth": 2,
+            "sourceTweetId": "2081137424122667027",
+            "author": {
+              "name": "Pubity",
+              "handle": "pubity",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1778055517925146624/nJXOa2UM_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Former trillionaire Elon Musk claims money won't matter by 2036.\n\nHe believes society will prosper under AI and that inflation won't matter because goods and services will be so cheap.",
+            "createdAt": "Sat Jul 25 22:00:02 +0000 2026",
+            "viewCount": 671801,
+            "metrics": {
+              "views": 671801,
+              "likes": 1504,
+              "retweets": 60,
+              "replies": 138,
+              "quotes": 136,
+              "bookmarks": 185
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HOGke9vXcAA3gv1.jpg",
+              "https://pbs.twimg.com/media/HOGlEgvW4AAuPIg.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "前亿万富翁埃隆·马斯克声称，到 2036 年，金钱将不再重要。\n\n他相信，在人工智能的推动下，社会将会繁荣，通货膨胀并不重要，因为商品和服务将变得非常便宜。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-27T01:17:44.257Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2081280860028854730",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-27T01:17:43.998Z"
+        },
+        "createdAt": "2026-07-27T01:17:43.998Z",
+        "updatedAt": "2026-07-27T01:17:44.397Z"
+      }
+    },
+    {
+      "rank": 8,
+      "essenceScore": 60116,
+      "heatScore": 49030,
+      "signals": {
+        "depth": 2,
+        "hasDunk": false,
+        "peakIndex": 0,
+        "peakHeat": 49030
+      },
+      "sourceUrl": "https://x.com/Back2Batk/status/2081143161208852581",
+      "reason": "只截「前万亿富翁」四个字，把AI乌托邦叙事变成全网爆款嘲讽",
+      "reasonEn": "Three-word quote dunk—“Former trillionaire”—that outran the original Elon-AI prosperity story",
+      "metrics": {
+        "views": 383447,
+        "likes": 29657,
+        "retweets": 2386,
+        "replies": 13,
+        "quotes": 2,
+        "bookmarks": 2257
+      },
+      "document": {
+        "id": "a7690406-5287-43d0-be3c-0a8049b0f0b0",
+        "title": "\"Former trillionaire\"",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2081143161208852581",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2081143161208852581",
+            "author": {
+              "name": "💗 Lunie 💗",
+              "handle": "Back2Batk",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2081506192996663296/r6OCc_YH_normal.jpg",
+              "isVerified": false
+            },
+            "content": "\"Former trillionaire\"",
+            "createdAt": "Sat Jul 25 22:22:50 +0000 2026",
+            "viewCount": 383447,
+            "metrics": {
+              "views": 383447,
+              "likes": 29657,
+              "retweets": 2386,
+              "replies": 13,
+              "quotes": 2,
+              "bookmarks": 2257
+            },
+            "media": [
+              "https://pbs.twimg.com/amplify_video_thumb/2081143073229217792/img/IJVvL9c_TXdNlo9c.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "“前亿万富翁”",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-27T01:17:41.646Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2081137424122667027",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2081137424122667027",
+            "author": {
+              "name": "Pubity",
+              "handle": "pubity",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1778055517925146624/nJXOa2UM_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Former trillionaire Elon Musk claims money won't matter by 2036.\n\nHe believes society will prosper under AI and that inflation won't matter because goods and services will be so cheap.",
+            "createdAt": "Sat Jul 25 22:00:02 +0000 2026",
+            "viewCount": 671801,
+            "metrics": {
+              "views": 671801,
+              "likes": 1504,
+              "retweets": 60,
+              "replies": 138,
+              "quotes": 136,
+              "bookmarks": 185
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HOGke9vXcAA3gv1.jpg",
+              "https://pbs.twimg.com/media/HOGlEgvW4AAuPIg.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "前亿万富翁埃隆·马斯克声称，到 2036 年，金钱将不再重要。\n\n他相信，在人工智能的推动下，社会将会繁荣，通货膨胀并不重要，因为商品和服务将变得非常便宜。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-27T01:17:41.402Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2081143161208852581",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-27T01:17:41.171Z"
+        },
+        "createdAt": "2026-07-27T01:17:41.171Z",
+        "updatedAt": "2026-07-27T01:17:41.646Z"
+      }
+    },
+    {
+      "rank": 9,
+      "essenceScore": 8703,
+      "heatScore": 4169,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 4169
+      },
+      "sourceUrl": "https://x.com/CryptoMichNL/status/2080655490841723304",
+      "reason": "引用Lepard访谈重框投降盘：真正杀死比特币叙事的是财政纪律",
+      "reasonEn": "Quotes Lepard’s macro case to reframe crypto capitulation: only genuine fiscal restraint kills the Bitcoin thesis",
+      "metrics": {
+        "views": 188299,
+        "likes": 128,
+        "retweets": 28,
+        "replies": 32,
+        "quotes": 5,
+        "bookmarks": 56
+      },
+      "document": {
+        "id": "99c8afaa-e048-48ce-b7c8-31858070ae43",
+        "title": "#Crypto twitter right now: the F",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2080655490841723304",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2080655490841723304",
+            "author": {
+              "name": "Michaël van de Poppe",
+              "handle": "CryptoMichNL",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1696225706768740353/ta6goKxa_normal.jpg",
+              "isVerified": false
+            },
+            "content": "#Crypto twitter right now: the Fed is hawkish, rates stay higher, sell your bags, it's over.\n\nLawrence Lepard's response: \"My personal view is the markets got it all wrong.\"\n\nThe market is pricing in a world where governments get disciplined: \"We're in one of those periods right now where it looks like monetary stability and responsibility is going to return, which I think is not correct.\"\n\nHis logic is brutal in its simplicity — the one thing that would actually kill the #Bitcoin thesis is fiscal responsibility.\nGovernments worldwide ending deficit spending. That's the bet you're making when you capitulate here.\n\nSo the real question isn't \"is the Fed hawkish this quarter.\"\n\nIt's: do you believe governments are about to stop spending money they don't have — for the first time in your lifetime?\n\nThat's the whole trade. Everything else is noise.",
+            "createdAt": "Fri Jul 24 14:05:00 +0000 2026",
+            "viewCount": 32783,
+            "metrics": {
+              "views": 32783,
+              "likes": 130,
+              "retweets": 11,
+              "replies": 30,
+              "quotes": 1,
+              "bookmarks": 6
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "#Crypto twitter 现在：美联储是鹰派，利率保持较高水平，卖掉你的包，一切都结束了。\n\n劳伦斯·莱帕德的回应是：“我个人的观点是市场完全错了。”\n\n市场正在定价一个政府受到纪律约束的世界：“我们现在正处于货币稳定和责任似乎将回归的时期之一，我认为这是不正确的。”\n\n他的逻辑简单粗暴——真正会扼杀#Bitcoin 论文的一件事是财政责任。\n世界各国政府结束赤字支出。这就是你在这里投降时所下的赌注。\n\n因此，真正的问题不是“美联储本季度是否立场强硬”。\n\n问题是：你是否相信政府将停止支出他们没有的钱——这是你一生中的第一次？\n\n这就是整个交易。其他一切都是噪音。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-27T01:17:57.937Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2079612367487553742",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2079612367487553742",
+            "author": {
+              "name": "Michaël van de Poppe",
+              "handle": "CryptoMichNL",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1696225706768740353/ta6goKxa_normal.jpg",
+              "isVerified": false
+            },
+            "content": "\"The government system is set up whereby it has to continually dilute the currency to keep it going. And that really represents a theft of the earnings and productivity of the middle to lower classes.\"\n\nLawrence Lepard (@LawrenceLepard) wrote The Big Print. He's spent his career studying monetary debasement and he came on to explain why they can never stop printing, and what that means for Bitcoin at $60K.\n\nHis call, in his own words: \"I think Bitcoin could go up three x in the next two years. Let's say it's 60 round numbers at 60 today. My working model is kind of two years out, we'll be at 180.\"\n\nWe cover:\n- Why in a credit-based system they're trapped: \"you have to grow credit and you have to grow the money supply, or else the whole thing collapses\"\n- Why he says the Fed is \"gaslighting us\" and what they can't admit\n- Gold ran 67% last year while Bitcoin lagged. Why he thinks that lag gets followed by \"severe outperformance\"\n- The scale: Bitcoin at ~$1.3T, gold at ~$30T, ~$1,000T of global financial assets\n- Why he calls Bitcoin \"monetary debasement insurance,\" not a trade\n- The 10–20% allocation question, and why he says you'd regret not having it\n- \"The Big Print\": the two we've already had, and the one he says is still coming\n\nThat's his call, not mine, but it's one of the clearest cases I've heard for why the currency has to keep getting diluted.\n\nThanks to Lawrence for coming on @new_era_finance.\n\nThanks for @okxdutch for being our partner for the show.\n\nTimestamps:\n00:00 – Intro\n01:21 – Investing in MicroStrategy: A Contrarian View\n10:05 – Michael Saylor’s Bitcoin Strategy\n20:14 – Bitcoin vs. Gold\n24:01 – What’s Causing the Bitcoin Sell-Off?\n29:02 – AI, Economic Growth and the Federal Reserve\n32:34 – Inflation, Wealth Inequality and Economic Discontent\n40:41 – Bitcoin and the Case for Sound Money\n43:54 – Could Hyperinflation Become a Reality?\n47:50 – Navigating Volatility and Liquidity Crises\n55:51 – What Inflation Data Really Tells Us",
+            "createdAt": "Tue Jul 21 17:00:00 +0000 2026",
+            "viewCount": 188299,
+            "metrics": {
+              "views": 188299,
+              "likes": 128,
+              "retweets": 28,
+              "replies": 32,
+              "quotes": 5,
+              "bookmarks": 56
+            },
+            "media": [
+              "https://pbs.twimg.com/amplify_video_thumb/2077394228179603456/img/ZpvE3WECPLNdzZzQ.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "“政府体系的建立必须不断稀释货币以维持其运转。这实际上代表着中下阶层收入和生产力的盗窃。”\n\nLawrence Lepard (@LawrenceLepard) 撰写了《大字》。他的整个职业生涯都在研究货币贬值，他解释了为什么他们永远不会停止印刷，以及这对 6 万美元的比特币意味着什么。\n\n用他自己的话来说，他的呼吁是：“我认为比特币在未来两年内可能会上涨三倍。假设今天的价格是 60，是 60 整数。我的工作模型是两年后，我们将达到 180。”\n\n我们涵盖：\n- 为什么在基于信贷的体系中他们会陷入困境：“你必须增加信贷，你必须增加货币供应量，否则整个系统就会崩溃”\n- 为什么他说美联储正在“给我们加油”以及他们不能承认的事情\n- 黄金去年上涨了 67%，而比特币则落后。为什么他认为滞后之后会出现“严重的表现不佳”\n- 规模：比特币~$1.3T，黄金~$30T，全球金融资产~$1,000T\n- 为什么他称比特币为“货币贬值保险”，而不是一种交易\n- 10-20% 的分配问题，以及为什么他说你会后悔没有它\n- “The Big Print”：我们已经有了两个，他说的那个还将出现\n\n这是他的决定，不是我的，但这是我听过的最清楚的案例之一，说明了为什么货币必须不断被稀释。\n\n感谢劳伦斯来到@new_era_finance。\n\n感谢@okxdutch 成为我们的节目合作伙伴。\n\n时间戳：\n00:00 – 简介\n01:21 – 投资 MicroStrategy：逆向观点\n10:05 – Michael Saylor 的比特币策略\n20:14 – 比特币与黄金\n24:01 – 是什么导致比特币抛售？\n29:02 – 人工智能、经济增长和美联储\n32:34 – 通货膨胀、财富不平等和经济不满\n40:41 – 比特币和稳健货币的案例\n43:54 – 恶性通货膨胀会成为现实吗？\n47:50 – 应对波动性和流动性危机\n55:51 – 通货膨胀数据真正告诉我们什么",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-27T01:17:58.212Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2080655490841723304",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-27T01:17:57.058Z"
+        },
+        "createdAt": "2026-07-27T01:17:57.058Z",
+        "updatedAt": "2026-07-27T01:17:58.213Z"
+      }
+    },
+    {
+      "rank": 10,
+      "essenceScore": 7396,
+      "heatScore": 4456,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 4456
+      },
+      "sourceUrl": "https://x.com/CryptoUB/status/2081509879546544326",
+      "reason": "引用Ansem「最被厌恶的反弹最猛」并补全熊转牛的情绪翻转逻辑",
+      "reasonEn": "Extends Ansem’s “hated rallies” line into the full sentiment flip from crypto-is-dead to FOMO-to-buy",
+      "metrics": {
+        "views": 101309,
+        "likes": 1319,
+        "retweets": 130,
+        "replies": 295,
+        "quotes": 35,
+        "bookmarks": 13
+      },
+      "document": {
+        "id": "a12237e8-7986-4020-a4ee-88afe7fe4b31",
+        "title": "This is EXACTLY what people forg",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2081509879546544326",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2081509879546544326",
+            "author": {
+              "name": "UB",
+              "handle": "CryptoUB",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1886579630708051968/xatd4n8D_normal.jpg",
+              "isVerified": false
+            },
+            "content": "This is EXACTLY what people forget after extended periods of terrible crypto conditions.\n\n- Hated rallies are incredibly aggressive.\n- Three days of relentless up only is all it takes for the “crypto is dead” crowd to become the “I hope it pulls back so I can buy” crowd.",
+            "createdAt": "Sun Jul 26 22:40:02 +0000 2026",
+            "viewCount": 13745,
+            "metrics": {
+              "views": 13745,
+              "likes": 138,
+              "retweets": 15,
+              "replies": 31,
+              "quotes": 2,
+              "bookmarks": 5
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "这正是人们在长期糟糕的加密条件之后忘记的事情。\n\n- 令人讨厌的集会具有令人难以置信的侵略性。\n- 只需三天的持续上涨，“加密货币已死”人群就会变成“我希望它回落，以便我可以购买”人群。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-27T01:18:01.178Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2081497679129956469",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2081497679129956469",
+            "author": {
+              "name": "Ansem 🐂🀄️",
+              "handle": "blknoiz06",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2052070109758226438/xlyPdLmn_normal.jpg",
+              "isVerified": false
+            },
+            "content": "the hated rallies are the most aggressive",
+            "createdAt": "Sun Jul 26 21:51:33 +0000 2026",
+            "viewCount": 101309,
+            "metrics": {
+              "views": 101309,
+              "likes": 1319,
+              "retweets": 130,
+              "replies": 295,
+              "quotes": 35,
+              "bookmarks": 13
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "最令人讨厌的集会是最具攻击性的",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-27T01:17:59.790Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2081509879546544326",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-27T01:17:59.722Z"
+        },
+        "createdAt": "2026-07-27T01:17:59.722Z",
+        "updatedAt": "2026-07-27T01:18:01.178Z"
+      }
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "date": "2026-07-23",
+  "title": "每日 X 精华引用榜",
+  "titleEn": "Daily Quote Essence on X",
+  "items": [
+    {
+      "url": "https://x.com/signulll/status/2080047219999138231",
+      "reason": "六步拆解美财长对华蒸馏制裁逻辑：护盘本土闭源却削弱全美竞争力",
+      "reasonEn": "Six-step dismantling of Bessent’s distillation sanctions as protecting closed labs while taxing US competitiveness"
+    },
+    {
+      "url": "https://x.com/parkerconrad/status/2080031628089270679",
+      "reason": "把蒸馏禁令 reframed 成 Anthropic 金主的监管俘获与无国会授权的护盘",
+      "reasonEn": "Reframes the distillation crackdown as Anthropic bagholder regulatory capture without an act of Congress"
+    },
+    {
+      "url": "https://x.com/quxiaoyin/status/2080035204450988529",
+      "reason": "点破“IP 盗窃”话术会反噬 Anthropic：好莱坞与作者可用同一逻辑起诉",
+      "reasonEn": "Warns the “IP theft” frame backfires on Anthropic—Hollywood and authors can use the same claim"
+    },
+    {
+      "url": "https://x.com/chris_j_paxton/status/2080002128295190696",
+      "reason": "用 Fable 到 Kimi K3 的发布窗口算账，质疑工业级蒸馏指控时间线",
+      "reasonEn": "Timeline math on Fable→Kimi K3 release window that undercuts the industrial-distillation allegation"
+    },
+    {
+      "url": "https://x.com/edzitron/status/2080057388938522694",
+      "reason": "一针见血嘲讽 Sundar 财报：不拆 AI 收入却宣称 AI 投资改写一切",
+      "reasonEn": "Sharp dunk on Sundar’s earnings: no AI revenue breakout while claiming AI redefines everything"
+    },
+    {
+      "url": "https://x.com/_FORAB/status/2079952361720791437",
+      "reason": "中文圈拆解白宫科学顾问指控：Fable 开放到 K3 发布仅约 15 天引发质疑",
+      "reasonEn": "Chinese-tech brief of the Kratsios accusation, spotlighting the ~15-day Fable-to-K3 window skepticism"
+    },
+    {
+      "url": "https://x.com/ImAI_Eruel/status/2080054608081338841",
+      "reason": "日本 AI 学者：Bessent 发声显示 Kimi 冲击，但时间线难支撑“蒸馏是性能核心”",
+      "reasonEn": "JP AI researcher: Bessent’s post shows Kimi shock, but timeline makes distillation-as-core hard to buy"
+    },
+    {
+      "url": "https://x.com/markgurman/status/2080064842732343679",
+      "reason": "Gurman 拆穿“泄密逼出三星折叠屏”：三星 assembles Apple 屏幕早知规划",
+      "reasonEn": "Gurman dunks the “leaks forced Samsung fold” take—Samsung builds Apple’s displays and already knew"
+    },
+    {
+      "url": "https://x.com/levelsio/status/2079914489994956828",
+      "reason": "把法国严审 Tesla FSD 重框为欧系车企保护主义，配图对比自动驾驶现状",
+      "reasonEn": "Reframes French FSD pushback as EU auto protectionism, with photos of current self-driving reality"
+    },
+    {
+      "url": "https://x.com/ChrisMurphyCT/status/2080052926899233084",
+      "reason": "参议员接棒政策分析：CLARITY 伦理条款祖父化川普既有加密利益",
+      "reasonEn": "Senator amplifies policy analysis: CLARITY ethics language grandfathers Trump’s existing crypto profits"
+    },
+    {
+      "url": "https://x.com/TiffanyFong/status/2080032475498401906",
+      "reason": "以亲身被骗经历反向重框 CLARITY 伦理规则：行业终于有保护用户的框架",
+      "reasonEn": "Personal-fraud experience reframes CLARITY ethics rules as a rare pro-user regulatory breakthrough"
+    },
+    {
+      "url": "https://x.com/fxtrader/status/2079900744241885322",
+      "reason": "用黄仁勋 Axios 专访对冲美方限开源叙事：免费模型利于硬件且限制或伤己",
+      "reasonEn": "Counters US open-model restriction talk with Jensen’s Axios rebuttal: free AI helps hardware; bans may weaken the US"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "date": "2026-07-26",
+  "title": "每日 X 精华引用榜",
+  "titleEn": "Daily Quote Essence on X",
+  "items": [
+    {
+      "url": "https://x.com/DavidSacks/status/2081033408273395858",
+      "reason": "正面拆穿Anthropic研究员对黄仁勋开源表态的阴阳怪气，强调争的是开放权重而非全开源，Read the room一击即中。",
+      "reasonEn": "Sharply reframes an Anthropic researcher's CUDA dunk: the fight is allowing open-weight AI, not open-sourcing everything—read the room."
+    },
+    {
+      "url": "https://x.com/venturetwins/status/2081137374856409092",
+      "reason": "把员工怼黄仁勋开源的推文升级成Anthropic IPO风险条款，一句「aura loss」把舆论反噬写进投行叙事。",
+      "reasonEn": "Recasts Anthropic staff snark at Jensen as IPO-risk ‘aura loss’—a one-liner that reframes the whole open-source pile-on."
+    },
+    {
+      "url": "https://x.com/SheaSerrano/status/2081155566475350325",
+      "reason": "引用「AI重现奥德赛」炫技视频，用一句毒舌点破：凡是吹嘘AI大作的，往往是视觉灾难。",
+      "reasonEn": "Quotes a viral AI Odyssey flex and dunks that every bragged-about AI demo looks terrible—community notes already caught the two-eyed Cyclops."
+    },
+    {
+      "url": "https://x.com/ClementDelangue/status/2081056675558195657",
+      "reason": "在「rogue agent」事件后续，向OpenAI公开要痕迹全量公开与1亿美元防御算力，把被入侵变成行业问责。",
+      "reasonEn": "Follows up the rogue-agent hack by publicly demanding OpenAI release agent traces and fund $100M in defender compute."
+    },
+    {
+      "url": "https://x.com/intern_cc/status/2080919470583779355",
+      "reason": "逐条反驳Kimi线性注意力将拖垮DRAM/算力支出的叙事，用DeepSeek冲击后需求不降反升作历史对照。",
+      "reasonEn": "Expert rebuttal of the ‘Kimi kills DRAM spend’ thesis—model weights, not cache, dominate memory; cheaper inference historically raised demand."
+    },
+    {
+      "url": "https://x.com/litcapital/status/2081148302569934860",
+      "reason": "引用Denny’s加入开源AI联署的突发新闻，一句「Denny’s是AI领袖？」把荒诞共识炼成金句。",
+      "reasonEn": "Quotes Denny’s joining the open-source AI letter and lands the perfect punchline: Denny’s as a leading AI voice."
+    },
+    {
+      "url": "https://x.com/captive_dreamer/status/2081140770514579554",
+      "reason": "针对百万级播放的AI假新闻视频，批评Community Notes本该出手却失能，AI slop仍可日日爆火。",
+      "reasonEn": "Quotes viral AI-slop ‘breaking news’ video and argues Community Notes failed its core job—obvious fakes still run free."
+    },
+    {
+      "url": "https://x.com/theashleyray/status/2081138064576200862",
+      "reason": "补全亚马逊订单邮件变笼统的动机：人人用ChatGPT/Gemini读邮件，平台在防广告AI薅训练数据。",
+      "reasonEn": "Explains why Amazon order emails went generic: AI inbox readers made product-detail emails a free ad-training leak."
+    },
+    {
+      "url": "https://x.com/brian_armstrong/status/2081131965491634385",
+      "reason": "引用Coinbase与贝莱德等成立比特币安全联盟，澄清量子计算非眼前威胁、但要提前备战。",
+      "reasonEn": "Quotes Coinbase’s Bitcoin Security Consortium launch and calibrates the quantum threat: not immediate, but prepare early."
+    },
+    {
+      "url": "https://x.com/TJ_Research/status/2080688583292137760",
+      "reason": "引用黄仁勋首帖开源联署，直言闭源大厂游说禁中国开源是慌了，并点名Kimi K3冲击。",
+      "reasonEn": "Quotes Jensen’s open-models letter and argues closed labs lobby against Chinese open weights because Kimi K3 rattled them."
+    },
+    {
+      "url": "https://x.com/liumengxinfly/status/2080882262032482631",
+      "reason": "重访斯坦福CS336后指出：课上架构几乎全是中国开源模型拼盘，海外闭源不再给可教的技术报告。",
+      "reasonEn": "After rewatching Stanford CS336, notes the syllabus is now a Chinese open-model showcase—Western labs stopped publishing teachable reports."
+    },
+    {
+      "url": "https://x.com/_FORAB/status/2081034500101017616",
+      "reason": "接续梁文锋投资人会议纪要被删事件，坐实DeepSeek因录音外泄震怒、口头叫停二轮融资。",
+      "reasonEn": "Follows the scrubbed Liang Wenfeng investor-call leak with confirmation DeepSeek paused its second funding round in anger."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "date": "2026-07-16",
+  "title": "每日 X 精华引用榜",
+  "titleEn": "Daily Quote Essence on X",
+  "items": [
+    {
+      "url": "https://x.com/paulg/status/2077522510116000125",
+      "reason": "用经典「sudo make me a sandwich」一句话把 DoorDash CLI 变成技术圈迷因级锐评",
+      "reasonEn": "One-liner reframes DoorDash’s agent CLI as the classic sudo-make-me-a-sandwich joke — commentary that owns the chain"
+    },
+    {
+      "url": "https://x.com/jxmnop/status/2077504236380946595",
+      "reason": "把 Inkling 发布重构成「唯一未蒸馏自 OpenAI/Anthropic 的开放权重前沿模型」，观点盖过原帖叙事",
+      "reasonEn": "Reframes Inkling as the rare open-weight frontier stack not distilled from OpenAI/Anthropic — the claim that defined the thread"
+    },
+    {
+      "url": "https://x.com/rasbt/status/2077540575255880126",
+      "reason": "在他人参数盘点之上补上 conv/RMSNorm/相对位置偏置等架构要点，专家拆解胜过官宣",
+      "reasonEn": "Expert architecture add-on (conv layers, embedding RMSNorm, relative bias vs RoPE) that out-explains the release posts"
+    },
+    {
+      "url": "https://x.com/gdb/status/2077622035984105848",
+      "reason": "用 GPT-5.6 Sol Pro 证伪 BH 程序在相关高斯检验上的 FDR 猜想，给科研推文官方背书",
+      "reasonEn": "Amplifies a Wharton result: GPT-5.6 Sol Pro disproved a long-open BH/FDR conjecture — research that needed the quote spotlight"
+    },
+    {
+      "url": "https://x.com/Jason/status/2077664005515014653",
+      "reason": "用「Open Source/open weights… what OpenAI was supposed to be」把 Inkling 开源直接刺向 OpenAI 初心",
+      "reasonEn": "Sharp dunk: open weights as “what OpenAI was supposed to be,” reframing Thinking Machines’ drop as an industry rebuke"
+    },
+    {
+      "url": "https://x.com/awesomekling/status/2077692884296360348",
+      "reason": "在 Linus 力挺内核用 AI 的截图上表态：软件开发已不可逆地变天",
+      "reasonEn": "Ladybird founder backs Linus on AI in the kernel and frames it as irreversible industry change"
+    },
+    {
+      "url": "https://x.com/SawyerMerritt/status/2077631136688165017",
+      "reason": "把 Elon 太空 AI 卫星功耗上调翻译成 NVL72/Rubin 机架可部署的具体规格",
+      "reasonEn": "Translates Musk’s AI1 satellite power hike into clear NVL72/Rubin rack capacity for a general tech audience"
+    },
+    {
+      "url": "https://x.com/indigox/status/2077521343105671301",
+      "reason": "中文圈第一时间把 Inkling 标成 Llama 之后美国真正可用的完全开放权重大模型",
+      "reasonEn": "Chinese-tech framing of Inkling as the first fully open-weight U.S. model worth playing with post-Llama"
+    },
+    {
+      "url": "https://x.com/tualatrix/status/2077554030730260886",
+      "reason": "点破马斯克开源 Grok Build 是为解决信任问题，并补上 Rust/仓库链接",
+      "reasonEn": "Chinese-dev take: open-sourcing Grok Build is the right trust move (plus Rust + repo context)"
+    },
+    {
+      "url": "https://x.com/0x0_air/status/2077578716436406527",
+      "reason": "对续费焦虑帖直接给出「用 Codex + 开源仓自写指纹浏览器」的反杀级方案，互动远超原推",
+      "reasonEn": "Outperforms a low-engagement renewal-whine by shipping a Codex-from-OSS fingerprint-browser alternative"
+    },
+    {
+      "url": "https://x.com/ShanghaoJin/status/2077614219990822929",
+      "reason": "把 AI 产业链「缺货」叙事从 GPU/存储/光电扭到「信用担保才是最硬缺货」",
+      "reasonEn": "Ex-GS finance take: AI scarcity trade is credit/guarantee supply, not just chips, power, or optics"
+    },
+    {
+      "url": "https://x.com/Emreislek/status/2077653678886891638",
+      "reason": "引用自家周期图回击「比特币已死」，把 12–18 个月熊市与减半后修正框架重新钉上时间线",
+      "reasonEn": "Cycle chart quote that reframes “Bitcoin is dead” as a standard post-halving 12-month correction window"
+    }
+  ]
+}

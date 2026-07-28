@@ -1,0 +1,67 @@
+{
+  "date": "2026-07-13",
+  "title": "每日 X 精华引用榜",
+  "titleEn": "Daily Quote Essence on X",
+  "items": [
+    {
+      "url": "https://x.com/AravSrinivas/status/2076422398853984324",
+      "reason": "Perplexity CEO 点名转发纳德拉：单向学习与蒸馏限制会让价值向模型基建方收敛，企业必须掌控自己的 learning loop。",
+      "reasonEn": "Perplexity’s CEO elevates Nadella’s core IP thesis: one-way learning and distillation rules concentrate value; firms must own their learning loops."
+    },
+    {
+      "url": "https://x.com/LiamFedus/status/2076404080474533998",
+      "reason": "前 OpenAI 高管一句「失败才是护城河」，把纳德拉文章改写成：可沉淀的试错过程才是比上下文更硬的资产。",
+      "reasonEn": "Ex-OpenAI VP reframes Nadella: ‘Our failures are our moat’—messy trial-and-error compounded into owned weights beats tokens-in-context alone."
+    },
+    {
+      "url": "https://x.com/nicbstme/status/2076340688749576392",
+      "reason": "把大模型比作 know-how 黑洞：每次纠错都是人力资本→token 资本的转移，真正 IP 在 traces 而非文档。",
+      "reasonEn": "Best long-form riff on Nadella: models as black holes for know-how; every correction is human capital becoming token capital in someone else’s loop."
+    },
+    {
+      "url": "https://x.com/GergelyOrosz/status/2076402763571810563",
+      "reason": "工程圈大V点破 Claude 延期真相：若无 GPT-5.6 竞争，Anthropic 多半会收回 Fable 再加价。",
+      "reasonEn": "Pragmatic Engineer dunk: Fable extensions exist only because GPT-5.6 competition makes Anthropic unable to claw back access and charge more."
+    },
+    {
+      "url": "https://x.com/elvissun/status/2076387825361248588",
+      "reason": "一句「Anthropic 重置限额 / Tibo 直接取消限额」把 OpenAI 限流大战做成病毒级对比 dunk。",
+      "reasonEn": "Viral one-liner dunking the rate-limit war: Anthropic resets usage; OpenAI’s Tibo removes the limit entirely."
+    },
+    {
+      "url": "https://x.com/klausbrave/status/2076424627736432819",
+      "reason": "付费用户公开信：模型再强，周更的条款也摧毁商业信任，最终把日常负载交给 Codex。",
+      "reasonEn": "Champion-turned-critic open letter: shifting weekly usage terms destroy trust; brilliance loses to Codex as the reliable daily driver."
+    },
+    {
+      "url": "https://x.com/JasonZX/status/2076349829132038365",
+      "reason": "中文圈刀法总结纳德拉长文：别信任何一家大模型，但可以信微软替你管所有模型。",
+      "reasonEn": "Chinese-tech one-liner that out-frames Nadella’s essay: trust no single model lab—trust Microsoft to orchestrate them all."
+    },
+    {
+      "url": "https://x.com/ivanalog_com/status/2076424672724357216",
+      "reason": "把 AI 落地阻力从算力改写成组织悖论：成功公司为何要自用 AI 去孕育取代自己的原生对手？",
+      "reasonEn": "Chinese reframing of Nadella: the blocker isn’t compute—it’s why incumbents would adopt AI that enables AI-native replacements."
+    },
+    {
+      "url": "https://x.com/AlphaguyTrading/status/2076422544010473730",
+      "reason": "中文投资向解读：企业护城河从 Data 升级为 learning loop，模型可换、老员工经验不可被供应商带走。",
+      "reasonEn": "CN investor unpack: real alpha is the firm’s private learning loop; Claude/GPT/Grok are swappable vendors, not the moat."
+    },
+    {
+      "url": "https://x.com/__oQuery/status/2076368083250479545",
+      "reason": "把取消限流比作「百亿补贴」抢用户，反问补贴退潮后谁还用得起——中文圈尖锐价格战质疑。",
+      "reasonEn": "Chinese dunk frames limit-lifts as ‘hundred-billion subsidies’: when the free usage war ends, can users still afford AI?"
+    },
+    {
+      "url": "https://x.com/__tinygrad__/status/2076424660791721988",
+      "reason": "官方账号一锤定音技术升级：tinygrad 连驱动都不要，NVIDIA/AMD 直接 map PCIe BAR。",
+      "reasonEn": "tinygrad one-ups kernel ioctl lore: no drivers at all—maps PCIe BARs raw on both NVIDIA and AMD."
+    },
+    {
+      "url": "https://x.com/SenWarren/status/2076437015084859736",
+      "reason": "引用 Yahoo 披露后重框叙事：特朗普个人加密收入碾压美国所有上市加密公司，矛头对准「为谁而战」。",
+      "reasonEn": "Warren quote-reframes Yahoo’s Trump-as-top-crypto-earner scoop into a who-is-he-fighting-for attack amid affordability politics."
+    }
+  ]
+}
