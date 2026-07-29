@@ -117,7 +117,7 @@ NEXT_PUBLIC_API_BASE_URL=http://YOUR_PUBLIC_HOST:8787 npm run build -w @tweetquo
 > **重要**：`NEXT_PUBLIC_API_BASE_URL` 必须在 **build 阶段** 传入！  
 > Next.js 会在构建时将 `NEXT_PUBLIC_*` 变量内联到客户端 JS 中，运行时设置无效。
 
-构建失败（内存、OOM、`Bus error`、小内存 VPS）见 **「十一、常见问题 → Web 构建与 VPS」**。
+构建失败（内存、OOM、`Bus error`、小内存 VPS）见 **「十二、常见问题 → Web 构建与 VPS」**。
 
 ### 5.3 构建 Chrome 扩展
 
@@ -248,7 +248,54 @@ curl http://YOUR_PUBLIC_HOST:8787/api/ai-config
 
 ## 八、更新部署
 
-代码更新后，按以下流程重新部署：
+### 推荐：一键脚本
+
+`scripts/deploy.sh` 会按顺序执行：`git pull` → `npm install` → `db:push` → **build API + Web** → pm2 重启/首次启动 → 本机健康检查。  
+**务必 build Web**：只 `pm2 restart` 不会更新前端产物（`.next/`），页面会停留在旧版本。
+
+首次在服务器上配置一次公网主机名（三选一即可）：
+
+```bash
+# 方式 A：写本地配置（推荐，可提交 example，local 不入库）
+cp scripts/deploy.local.example scripts/deploy.local
+# 编辑 PUBLIC_HOST=你的公网IP或域名
+
+# 方式 B：根目录 .env.local 已配置 PUBLIC_API_BASE_URL=http://YOUR_PUBLIC_HOST:8787
+#         脚本会自动从中解析主机名
+
+# 方式 C：每次传入
+# PUBLIC_HOST=YOUR_PUBLIC_HOST ./scripts/deploy.sh
+```
+
+之后每次更新：
+
+```bash
+cd ~/tweetquote
+chmod +x scripts/deploy.sh   # 仅首次需要
+./scripts/deploy.sh
+```
+
+常用选项：
+
+| 选项 | 说明 |
+|------|------|
+| `--skip-pull` | 不拉代码（本地已改好时） |
+| `--api-only` / `--web-only` | 只构建并重启一侧 |
+| `--skip-db` | 跳过 `db:push` |
+| `--skip-pm2` | 只构建不重启 |
+| `-h` | 查看全部选项 |
+
+> Extension 仍在本地单独打包：`npm run build:test -w @tweetquote/extension`。
+
+若 Web 进程是旧 pm2 条目且未绑定 `0.0.0.0`，需手动重建一次：
+
+```bash
+pm2 delete tweetquote-web
+./scripts/deploy.sh --skip-pull --web-only
+# 或首次启动时脚本会用 HOSTNAME=0.0.0.0 PORT=3000 创建 tweetquote-web
+```
+
+### 手动步骤（备用）
 
 ```bash
 cd ~/tweetquote
@@ -262,8 +309,8 @@ npm install
 # 3. 同步数据库（schema 有变更时）
 npm run db:push -w @tweetquote/api
 
-# 4. 重新构建
-npm run build -w @tweetquote/api
+# 4. 重新构建（Web 必须在 build 时传入 NEXT_PUBLIC_*）
+npm run build -w @tweetquote/domain -w @tweetquote/telemetry -w @tweetquote/api
 NEXT_PUBLIC_API_BASE_URL=http://YOUR_PUBLIC_HOST:8787 npm run build -w @tweetquote/web
 
 # 5. 重启服务
@@ -313,12 +360,82 @@ curl -X DELETE http://YOUR_PUBLIC_HOST:8787/api/v1/admin/session/{deviceId}/usag
 
 ---
 
-## 十、端口与地址汇总
+## 十、域名与 HTTPS（app.tweetquote.app）
+
+落地页 `tweetquote.app` 仍由 Cloudflare 托管；Web / 每日榜挂到子域名，避免与根路径冲突。
+
+| 对外地址 | 源站 |
+|----------|------|
+| `https://app.tweetquote.app/` | VPS `127.0.0.1:3000` |
+| `https://app.tweetquote.app/daily` | 同上 `/daily` |
+| `https://tweetquote.app/` | Cloudflare 落地页（不变） |
+
+### 10.1 Cloudflare DNS
+
+1. DNS → 添加记录：
+   - **类型**：`A`
+   - **名称**：`app`
+   - **IPv4**：VPS 公网 IP（如 `164.90.153.103`）
+   - **代理状态**：已代理（橙色云）
+2. SSL/TLS → Overview：模式选 **Full**（不要用 Flexible，除非临时排查）
+3. （可选）SSL/TLS → Edge Certificates：开启 Always Use HTTPS
+
+### 10.2 VPS：Caddy 反代
+
+仓库已提供 `deploy/Caddyfile`（源站 HTTP:80 → `localhost:3000`）。
+
+```bash
+# Debian / Ubuntu 示例
+sudo apt install -y debian-keyring debian-archive-keyring apt-transport-https curl
+curl -1sLf 'https://dl.cloudsmith.io/public/caddy/stable/gpg.key' | sudo gpg --dearmor -o /usr/share/keyrings/caddy-stable-archive-keyring.gpg
+curl -1sLf 'https://dl.cloudsmith.io/public/caddy/stable/debian.deb.txt' | sudo tee /etc/apt/sources.list.d/caddy-stable.list
+sudo apt update && sudo apt install -y caddy
+
+# 使用仓库配置（在 tweetquote 仓库根目录执行）
+sudo cp deploy/Caddyfile /etc/caddy/Caddyfile
+sudo systemctl enable --now caddy
+sudo systemctl reload caddy
+
+# 确认本机 Web 仍在跑
+curl -sI http://127.0.0.1:3000/daily | head -n1
+# 经 Caddy
+curl -sI -H 'Host: app.tweetquote.app' http://127.0.0.1/daily | head -n1
+```
+
+防火墙需放行 **80**（Cloudflare 代理流量打到源站 80）。不必再对公网暴露 `:3000`（可只听 `127.0.0.1`）。
+
+### 10.3 落地页链接
+
+`landing/index.html` 默认 `APP_URL` 为 `https://app.tweetquote.app/`。部署落地页后，CTA / 页脚会指向：
+
+- `https://app.tweetquote.app/daily`
+- `https://app.tweetquote.app/daily/archive`
+
+本地预览若仍要链到 IP，可在页面加载前注入：
+
+```html
+<script>window.__TQ_APP_URL__ = 'http://164.90.153.103:3000/';</script>
+```
+
+### 10.4 验收
+
+```bash
+curl -sI https://app.tweetquote.app/daily | head -n5
+```
+
+浏览器打开 `https://app.tweetquote.app/daily`，再从 `https://tweetquote.app/#daily` 点「查看每日榜」应进入同一域名（无裸 IP、无 `:3000`）。
+
+> **说明**：本方案只把 **Web(:3000)** 挂到子域名。API(:8787) 仍可暂时用 IP；若也要域名，可另加 `api.tweetquote.app` 反代，并重建 Web（`NEXT_PUBLIC_API_BASE_URL`）。
+
+---
+
+## 十一、端口与地址汇总
 
 | 组件 | 地址 | 用途 |
 |------|------|------|
 | API | `http://YOUR_PUBLIC_HOST:8787` | 后端接口（Fastify） |
-| Web | `http://YOUR_PUBLIC_HOST:3000` | 前端编辑器（Next.js） |
+| Web（直连） | `http://YOUR_PUBLIC_HOST:3000` | 前端编辑器（Next.js） |
+| Web（域名） | `https://app.tweetquote.app` | Caddy / Cloudflare 对外入口 |
 | Extension | 本地安装，请求指向 API | Chrome 浏览器插件 |
 
 ### 各组件如何找到 API
@@ -331,7 +448,7 @@ curl -X DELETE http://YOUR_PUBLIC_HOST:8787/api/v1/admin/session/{deviceId}/usag
 
 ---
 
-## 十一、常见问题
+## 十二、常见问题
 
 以下按主题分组；**与 VPS 资源、Web 构建相关**的说明集中在第一节，避免与正文「五、构建」重复。
 
