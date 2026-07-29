@@ -126,6 +126,16 @@ if [ "$DO_DB" -eq 1 ] && [ "$BUILD_API" -eq 1 ]; then
 fi
 
 # --- 4. build ---
+pm2_has() {
+  pm2 describe "$1" >/dev/null 2>&1
+}
+
+# 构建 Web 前停掉旧进程，避免 next build 改写 .next 时旧进程占端口/读到半成品
+if [ "$DO_PM2" -eq 1 ] && [ "$BUILD_WEB" -eq 1 ] && pm2_has tweetquote-web; then
+  log "pm2 stop tweetquote-web (before web build)"
+  pm2 stop tweetquote-web >/dev/null || true
+fi
+
 if [ "$BUILD_API" -eq 1 ]; then
   log "build API (+ domain/telemetry via workspace)..."
   # domain / telemetry 需先于或与 API 一并构建；与文档「五、构建」一致
@@ -138,29 +148,40 @@ if [ "$BUILD_WEB" -eq 1 ]; then
 fi
 
 # --- 5. pm2 ---
-pm2_has() {
-  pm2 describe "$1" >/dev/null 2>&1
-}
-
 ensure_api() {
   if pm2_has tweetquote-api; then
     log "pm2 restart tweetquote-api"
     pm2 restart tweetquote-api
   else
     log "pm2 start tweetquote-api"
-    pm2 start npm --name "tweetquote-api" -- run start:api
+    pm2 start npm --name "tweetquote-api" --cwd "$REPO_ROOT" -- run start:api
   fi
 }
 
 ensure_web() {
+  # 每次用固定 env 重建，避免旧 pm2 条目缺少 bind / cwd，或 Linux 系统 HOSTNAME 干扰 Next
   if pm2_has tweetquote-web; then
-    log "pm2 restart tweetquote-web"
-    # 旧进程可能未带 HOSTNAME=0.0.0.0；若需改 env，请先 pm2 delete 再跑本脚本
-    pm2 restart tweetquote-web
-  else
-    log "pm2 start tweetquote-web (HOSTNAME=0.0.0.0 PORT=3000)"
-    HOSTNAME=0.0.0.0 PORT=3000 pm2 start npm --name "tweetquote-web" -- run start:web
+    log "pm2 delete tweetquote-web (recreate with PORT=3000)"
+    pm2 delete tweetquote-web >/dev/null || true
   fi
+  log "pm2 start tweetquote-web (PORT=3000, next --hostname 0.0.0.0)"
+  PORT=3000 pm2 start npm --name "tweetquote-web" --cwd "$REPO_ROOT" -- run start:web
+}
+
+wait_http() {
+  # usage: wait_http <name> <url> <attempts> <sleep_seconds>
+  local name="$1" url="$2" attempts="$3" delay="$4" i=1
+  log "health check $name ..."
+  while [ "$i" -le "$attempts" ]; do
+    if curl -fsS --max-time 5 -o /dev/null "$url"; then
+      log "$name OK"
+      return 0
+    fi
+    log "$name not ready (try $i/$attempts), sleep ${delay}s..."
+    sleep "$delay"
+    i=$((i + 1))
+  done
+  return 1
 }
 
 if [ "$DO_PM2" -eq 1 ]; then
@@ -173,29 +194,20 @@ if [ "$DO_PM2" -eq 1 ]; then
   pm2 save >/dev/null || true
 fi
 
-# --- 6. 健康检查 ---
+# --- 6. 健康检查（Next 冷启动常需数秒，带重试）---
 if [ "$DO_HEALTH" -eq 1 ]; then
-  sleep 1
   if [ "$BUILD_API" -eq 1 ]; then
-    log "health check API :8787 ..."
-    if curl -fsS --max-time 5 "http://127.0.0.1:8787/api/v1/health" >/dev/null; then
-      log "API OK"
-    else
-      die "API 健康检查失败。查看: pm2 logs tweetquote-api --lines 50"
-    fi
+    wait_http "API :8787" "http://127.0.0.1:8787/api/v1/health" 10 1 \
+      || die "API 健康检查失败。查看: pm2 logs tweetquote-api --lines 50"
   fi
   if [ "$BUILD_WEB" -eq 1 ]; then
-    log "health check Web :3000 ..."
-    if curl -fsS --max-time 5 -o /dev/null "http://127.0.0.1:3000/"; then
-      log "Web OK"
-    else
-      die "Web 健康检查失败。确认已 build 且 HOSTNAME=0.0.0.0。查看: pm2 logs tweetquote-web --lines 50"
-    fi
+    wait_http "Web :3000" "http://127.0.0.1:3000/" 20 2 \
+      || die "Web 健康检查失败。查看: pm2 status 与 pm2 logs tweetquote-web --lines 50"
   fi
 fi
 
 log "done."
 log "API:  http://${PUBLIC_HOST}:8787"
-log "Web:  http://${PUBLIC_HOST}:3000"
-log "Daily: http://${PUBLIC_HOST}:3000/daily"
+log "Web:  http://${PUBLIC_HOST}:3000  (或 https://app.tweetquote.app)"
+log "Daily: https://app.tweetquote.app/daily"
 log "Extension 请在本地执行: npm run build:test -w @tweetquote/extension"
