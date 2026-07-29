@@ -1,0 +1,8 @@
+# 复制本文件为 scripts/deploy.local 并填入公网主机名（deploy.local 已被 gitignore，不会提交）
+#
+#   cp scripts/deploy.local.example scripts/deploy.local
+#
+# 仅主机名或 IP，不含 http:// 与端口。脚本会据此构建：
+#   NEXT_PUBLIC_API_BASE_URL=http://$PUBLIC_HOST:8787
+
+PUBLIC_HOST=YOUR_PUBLIC_HOST

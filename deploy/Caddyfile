@@ -1,0 +1,22 @@
+# TweetQuote Web — app.tweetquote.app → localhost:3000
+#
+# 推荐搭配：Cloudflare 橙色云代理 + SSL/TLS = Full
+# 源站只听 80，证书由 Cloudflare 对外终止（源站可用自签或纯 HTTP）。
+#
+# 安装：
+#   sudo cp deploy/Caddyfile /etc/caddy/Caddyfile
+#   sudo systemctl enable --now caddy
+#   sudo systemctl reload caddy
+#
+# 开放防火墙：80（以及若改用下方 TLS 块则再开 443）
+
+http://app.tweetquote.app {
+	encode gzip
+	reverse_proxy 127.0.0.1:3000
+}
+
+# --- 备选：DNS 仅灰色云（不经 CF 代理）时，让 Caddy 自动签证书 ---
+# app.tweetquote.app {
+# 	encode gzip
+# 	reverse_proxy 127.0.0.1:3000
+# }
