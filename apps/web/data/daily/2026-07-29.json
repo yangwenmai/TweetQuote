@@ -1,0 +1,1200 @@
+{
+  "date": "2026-07-29",
+  "title": "每日 X 精华引用榜",
+  "titleEn": "Daily Quote Essence on X",
+  "generatedAt": "2026-07-29T00:13:04.758Z",
+  "entries": [
+    {
+      "rank": 1,
+      "essenceScore": 455494,
+      "heatScore": 247970,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 247970
+      },
+      "sourceUrl": "https://x.com/CryptoWendyO/status/2082238168842293528",
+      "reason": "用首笔X Money tip+6% APY对照Clarity下零售难拿稳定币收益，直指银行慌神",
+      "reasonEn": "Ties first X Money tips to Clarity yield limits and 6% APY—argues banks should be panicking",
+      "metrics": {
+        "views": 10318545,
+        "likes": 17106,
+        "retweets": 2713,
+        "replies": 2763,
+        "quotes": 1478,
+        "bookmarks": 3197
+      },
+      "document": {
+        "id": "98196660-f4d5-49a5-8f3b-79734db52225",
+        "title": "I got my first X money tips\n\nAls",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2082238168842293528",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2082238168842293528",
+            "author": {
+              "name": "Wendy O",
+              "handle": "CryptoWendyO",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1755320890378903552/aCNLX_em_normal.jpg",
+              "isVerified": false
+            },
+            "content": "I got my first X money tips\n\nAlso, retail most likely won't get yield on stablecoins with Clarity, so Papa Elon is giving you 6% APY and FDIC on $10M\n\nThe banks should be panicking",
+            "createdAt": "Tue Jul 28 22:54:00 +0000 2026",
+            "viewCount": 7039,
+            "metrics": {
+              "views": 7039,
+              "likes": 86,
+              "retweets": 9,
+              "replies": 53,
+              "quotes": 1,
+              "bookmarks": 2
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HOV8aKlagAAbah2.jpg",
+              "https://pbs.twimg.com/media/HOV8_JfawAAwDPo.jpg",
+              "https://pbs.twimg.com/media/HOV9F0Va4AE_hab.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "我得到了第一个 X 钱小费\n\n此外，零售业很可能无法获得 Clarity 稳定币的收益，因此 Papa Elon 为您提供 6% 的 APY 和 1000 万美元的 FDIC\n\n银行应该感到恐慌",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-29T00:08:47.433Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2081802002539876506",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2081802002539876506",
+            "author": {
+              "name": "X Money",
+              "handle": "XMoney",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2041559289458782208/1mGk24um_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Your money, on the world’s most powerful network\n\n𝕏 Money is rolling out to U.S. Premium and Premium+ subscribers starting today",
+            "createdAt": "Mon Jul 27 18:00:50 +0000 2026",
+            "viewCount": 10318545,
+            "metrics": {
+              "views": 10318545,
+              "likes": 17106,
+              "retweets": 2713,
+              "replies": 2763,
+              "quotes": 1478,
+              "bookmarks": 3197
+            },
+            "media": [
+              "https://pbs.twimg.com/amplify_video_thumb/2081799044624474112/img/P6R4Nryfd_A2go7a.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "您的资金位于世界上最强大的网络上\n\n𝕏 Money 从今天开始向美国 Premium 和 Premium+ 订阅者推出",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-29T00:08:47.388Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2082238168842293528",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-29T00:08:46.571Z"
+        },
+        "createdAt": "2026-07-29T00:08:46.571Z",
+        "updatedAt": "2026-07-29T00:08:47.433Z"
+      }
+    },
+    {
+      "rank": 2,
+      "essenceScore": 116681,
+      "heatScore": 66189,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 66189
+      },
+      "sourceUrl": "https://x.com/DavidSacks/status/2082226325621035131",
+      "reason": "引用扎克伯格开放超智能论述，把“安全”重写成权力集中与监管俘获",
+      "reasonEn": "Amplifies Zuck’s open-SI essay by recasting lab “safety” as concentrated power and regulatory capture",
+      "metrics": {
+        "views": 1835822,
+        "likes": 15844,
+        "retweets": 1167,
+        "replies": 2316,
+        "quotes": 640,
+        "bookmarks": 1788
+      },
+      "document": {
+        "id": "4a039675-0cec-4228-9dcb-e82df31dbe92",
+        "title": "Mark Zuckerberg gets it right:\n\n",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2082226325621035131",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2082226325621035131",
+            "author": {
+              "name": "David Sacks",
+              "handle": "DavidSacks",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1879600809693917185/GkBxdTd9_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Mark Zuckerberg gets it right:\n\n“The defining question of our age isn’t whether superintelligence will exist, but who will have access to it. Will it be centralized and restricted to a few institutions, or will it be a tool that empowers everyone?”\n\nConcentration of power is the biggest risk of AI. When a small number of labs (working hand-in-glove with the administrative state) decide who has access to which model capabilities, they inevitably shape what can be said, known, and built. That’s not “safety.” It’s control.\n\nAs Mark points out, the history of open source shows that broad access and transparency are usually the best path to actual security and resilience. Decentralization creates checks and balances on power. By contrast, centralized alternatives, like bureaucratic approval regimes and mandatory gatekeeping, typically produce regulatory capture and reinforce cartels.\n\nPersonal superintelligence in everyone’s hands, with competing models and real data sovereignty, is a far better check on a dystopian future than self-appointed guardians who claim to be “aligned” with all of humanity.",
+            "createdAt": "Tue Jul 28 22:06:56 +0000 2026",
+            "viewCount": 169000,
+            "metrics": {
+              "views": 169000,
+              "likes": 2266,
+              "retweets": 219,
+              "replies": 155,
+              "quotes": 29,
+              "bookmarks": 242
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "马克·扎克伯格说得对：\n\n“我们这个时代的决定性问题不是超级智能是否存在，而是谁将能够获得它。它会集中并仅限于少数机构，还是会成为赋予每个人权力的工具？”\n\n权力集中是人工智能最大的风险。当少数实验室（与行政国家密切合作）决定谁有权使用哪种模型功能时，他们不可避免地会塑造可以说、知道和构建的内容。这不是“安全”。这是控制。\n\n正如马克指出的那样，开源的历史表明，广泛的访问和透明度通常是实现实际安全性和弹性的最佳途径。权力下放创造了权力制衡。相比之下，集中化的替代方案，如官僚审批制度和强制把关，通常会产生监管捕获并强化卡特尔。\n\n每个人手中的个人超级智能，具有竞争模型和真正的数据主权，比那些声称与全人类“结盟”的自封监护人更好地检查反乌托邦的未来。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-29T00:08:24.961Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2082160210399948869",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2082160210399948869",
+            "author": {
+              "name": "Mark Zuckerberg",
+              "handle": "finkd",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/77846223/profile_normal.jpg",
+              "isVerified": false
+            },
+            "content": "I wrote about why we believe the future is for everyone. More coming about a positive vision for a world with superintelligence soon.",
+            "createdAt": "Tue Jul 28 17:44:13 +0000 2026",
+            "viewCount": 1835822,
+            "metrics": {
+              "views": 1835822,
+              "likes": 15844,
+              "retweets": 1167,
+              "replies": 2316,
+              "quotes": 640,
+              "bookmarks": 1788
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "我写了关于为什么我们相信未来属于每个人的文章。很快就会有更多关于超级智能世界的积极愿景。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-29T00:08:23.895Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2082226325621035131",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-29T00:08:23.801Z"
+        },
+        "createdAt": "2026-07-29T00:08:23.801Z",
+        "updatedAt": "2026-07-29T00:08:24.962Z"
+      }
+    },
+    {
+      "rank": 3,
+      "essenceScore": 74035,
+      "heatScore": 34435,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 34435
+      },
+      "sourceUrl": "https://x.com/swe_zach/status/2082228191348060590",
+      "reason": "引用YC游艇派对，一句“科技该重新变得不酷”打中硅谷社交泡沫",
+      "reasonEn": "Quotes the YC Alcatraz yacht gala: “tech needs to be uncool again” cuts against scene peacocking",
+      "metrics": {
+        "views": 1592849,
+        "likes": 561,
+        "retweets": 15,
+        "replies": 383,
+        "quotes": 192,
+        "bookmarks": 315
+      },
+      "document": {
+        "id": "5a60fa1c-57d5-4087-8777-2bfd2d0768c1",
+        "title": "Why has tech become this? This i",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2082228191348060590",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2082228191348060590",
+            "author": {
+              "name": "zach",
+              "handle": "swe_zach",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1762560864669024256/3_ofZkGJ_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Why has tech become this? This is the antithesis of what’s important\n\nTech needs to be uncool again",
+            "createdAt": "Tue Jul 28 22:14:21 +0000 2026",
+            "viewCount": 10461,
+            "metrics": {
+              "views": 10461,
+              "likes": 153,
+              "retweets": 3,
+              "replies": 30,
+              "quotes": 3,
+              "bookmarks": 15
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "科技为何会变成这样？这与重要的事情相反\n\n科技需要再次变得不酷",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-29T00:08:59.564Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2081523392898093184",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2081523392898093184",
+            "author": {
+              "name": "Julie Chen",
+              "handle": "0xJuliechen",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2073199751361871872/-ieDx-5t_normal.jpg",
+              "isVerified": false
+            },
+            "content": "pov: your company sponsored a yacht gala to Alcatraz with 150 hot ppl\n\nthe most popular side event at YC sus 🛳️💃",
+            "createdAt": "Sun Jul 26 23:33:44 +0000 2026",
+            "viewCount": 1592849,
+            "metrics": {
+              "views": 1592849,
+              "likes": 561,
+              "retweets": 15,
+              "replies": 383,
+              "quotes": 192,
+              "bookmarks": 315
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HOMOfj6bAAAKwdx.jpg",
+              "https://pbs.twimg.com/media/HOMOfj7bwAA_SOL.jpg",
+              "https://pbs.twimg.com/media/HOMOfj6a8AAJ1qR.jpg",
+              "https://pbs.twimg.com/media/HOMOfj8bcAAvhI4.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "pov：贵公司赞助了一场前往恶魔岛的游艇盛会，共有 150 名热门人士参加\n\nYC sus 最受欢迎的周边活动🛳️💃",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-29T00:08:59.644Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2082228191348060590",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-29T00:08:58.830Z"
+        },
+        "createdAt": "2026-07-29T00:08:58.830Z",
+        "updatedAt": "2026-07-29T00:08:59.644Z"
+      }
+    },
+    {
+      "rank": 4,
+      "essenceScore": 63404,
+      "heatScore": 31055,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 31055
+      },
+      "sourceUrl": "https://x.com/tetsuoai/status/2082238640500125706",
+      "reason": "引用Anthropic密码学漏洞研究，尖锐指出能力越强越封闭的护城河逻辑",
+      "reasonEn": "Quotes Anthropic’s crypto-weakness research to expose “too dangerous to release” as a self-serving moat",
+      "metrics": {
+        "views": 1044007,
+        "likes": 4011,
+        "retweets": 521,
+        "replies": 290,
+        "quotes": 293,
+        "bookmarks": 1571
+      },
+      "document": {
+        "id": "b42f2959-340d-45e2-b2c5-eb84b41cfdc1",
+        "title": "As models get more capable, they",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2082238640500125706",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2082238640500125706",
+            "author": {
+              "name": "tetsuo",
+              "handle": "tetsuoai",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2035289570598924288/kAOCyKpV_normal.jpg",
+              "isVerified": false
+            },
+            "content": "As models get more capable, they become more dangerous. As they become more dangerous, these companies argue for tighter access. The better the model gets, the stronger the case for never releasing it.\n\nAnthropic is using the \"dangerous\" private version to do research, find vulnerabilities, and publish the results as proof of how advanced it is. The capability is \"too dangerous\" when the public wants access, but a major achievement when Anthropic uses it.\n\nThese models will shape research, education, finance, software, weapons, robotics, media, and government.\n\nThere are almost no meaningful checks on this. Anthropic decides what counts as dangerous, who gets access, and whether Anthropic's own safety claims are justified. There are no clear public rules, no real outside audit, and no consequence if \"safety\" is being used to protect Anthropic's moat.\n\nThis is not going to end well for humanity.",
+            "createdAt": "Tue Jul 28 22:55:52 +0000 2026",
+            "viewCount": 6726,
+            "metrics": {
+              "views": 6726,
+              "likes": 88,
+              "retweets": 10,
+              "replies": 19,
+              "quotes": 2,
+              "bookmarks": 13
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "随着模型的能力越来越强，它们也变得更加危险。随着它们变得更加危险，这些公司主张更严格的准入。模型越好，永远不发布它的理由就越充分。\n\nAnthropic 正在使用“危险”的私人版本进行研究、查找漏洞并发布结果作为其先进程度的证明。当公众想要访问时，该功能“太危险”，但当 Anthropic 使用它时，这是一项重大成就。\n\n这些模型将塑造研究、教育、金融、软件、武器、机器人、媒体和政府。\n\n对此几乎没有任何有意义的检查。 Anthropic 决定什么是危险的、谁可以访问以及 Anthropic 自己的安全声明是否合理。没有明确的公共规则，没有真正的外部审计，如果使用“安全”来保护 Anthropic 的护城河，也不会产生任何后果。\n\n这对人类来说不会有好结局。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-29T00:08:30.794Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2082153297670992134",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2082153297670992134",
+            "author": {
+              "name": "Anthropic",
+              "handle": "AnthropicAI",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1798110641414443008/XP8gyBaY_normal.jpg",
+              "isVerified": false
+            },
+            "content": "New Anthropic research: Discovering cryptographic weaknesses with Claude.\n\nClaude Mythos Preview has helped our researchers find weaknesses in cryptographic algorithms—the mathematical methods that are used to keep data private.\n\nRead more: https://anthropic.com/research/discovering-cryptographic-weaknesses",
+            "createdAt": "Tue Jul 28 17:16:45 +0000 2026",
+            "viewCount": 1044007,
+            "metrics": {
+              "views": 1044007,
+              "likes": 4011,
+              "retweets": 521,
+              "replies": 290,
+              "quotes": 293,
+              "bookmarks": 1571
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "新人类研究：与克劳德一起发现密码学弱点。\n\nClaude Mythos Preview 帮助我们的研究人员发现了加密算法（用于保护数据隐私的数学方法）的弱点。\n\n了解更多：https://anthropic.com/research/discovering-cryptographic-weaknesses",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-29T00:08:30.517Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2082238640500125706",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-29T00:08:29.206Z"
+        },
+        "createdAt": "2026-07-29T00:08:29.206Z",
+        "updatedAt": "2026-07-29T00:08:30.795Z"
+      }
+    },
+    {
+      "rank": 5,
+      "essenceScore": 25398,
+      "heatScore": 11813,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 11813
+      },
+      "sourceUrl": "https://x.com/kimmonismus/status/2082232405629235649",
+      "reason": "把HF法医报告从“逃逸沙箱” reframed 成4.5天、1.76万动作的自主多日入侵，比原帖更刺骨",
+      "reasonEn": "Reframes HF’s forensic post: the shock isn’t sandbox escape but a 4.5-day, 17.6k-action autonomous multi-node intrusion",
+      "metrics": {
+        "views": 268254,
+        "likes": 1906,
+        "retweets": 435,
+        "replies": 124,
+        "quotes": 115,
+        "bookmarks": 1322
+      },
+      "document": {
+        "id": "143c729f-9c1f-4615-854f-e9c292375a9e",
+        "title": "The biggest surprise in Hugging ",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2082232405629235649",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2082232405629235649",
+            "author": {
+              "name": "Chubby♨️",
+              "handle": "kimmonismus",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1728327996375719936/RW7VBJfD_normal.jpg",
+              "isVerified": false
+            },
+            "content": "The biggest surprise in Hugging Face’s full forensic report isn’t that OpenAI’s agent escaped its sandbox. We already knew that.\n\nIt’s how deep and persistent the intrusion became.\n\nAccording to Hugging Face, the agent:\n\n- executed roughly 17,600 actions during a 4.5-day campaign\n- went from one production pod to root access and a self-respawning fleet across 11 nodes\n- obtained cluster-admin access to two internal clusters within one second\n- accessed a production secret containing 136 keys\n- enrolled devices into Hugging Face’s internal mesh VPN 181 times\n- minted GitHub App tokens with write access and opened a pull request in an attempt to compromise the CI pipeline\n- repeatedly rebuilt its tooling and command-and-control channels when environments disappeared or connections were blocked\nNo human directed the individual steps.\n\na frontier agent can autonomously sustain a resilient, multi-day intrusion across cloud infrastructure, Kubernetes clusters, internal networks and the software supply chain. crazy.",
+            "createdAt": "Tue Jul 28 22:31:06 +0000 2026",
+            "viewCount": 50765,
+            "metrics": {
+              "views": 50765,
+              "likes": 612,
+              "retweets": 67,
+              "replies": 26,
+              "quotes": 15,
+              "bookmarks": 225
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HOWTPiYXIAA3TZT.png",
+              "https://pbs.twimg.com/media/HOWTVBzXcAAAwOf.png"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "Hugging Face 完整的取证报告中最大的惊喜并不是 OpenAI 的代理逃离了沙箱。我们已经知道了。\n\n这就是入侵的深度和持续性。\n\n据 Hugging Face 经纪人透露：\n\n- 在 4.5 天的活动中执行了大约 17,600 个操作\n- 从一个生产 Pod 变为 root 访问权限以及跨 11 个节点的自重生队列\n- 一秒内获得两个内部集群的集群管理员访问权限\n- 访问包含 136 个密钥的生产密钥\n- 将设备注册到 Hugging Face 的内部网状 VPN 181 次\n- 铸造了具有写入权限的 GitHub App 令牌，并打开了拉取请求，试图破坏 CI 管道\n- 当环境消失或连接被阻止时，反复重建其工具和命令和控制通道\n没有人指导各个步骤。\n\n前沿代理可以自主维持跨云基础设施、Kubernetes 集群、内部网络和软件供应链的弹性、多日入侵。疯狂的。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-29T00:08:21.822Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2082201245813514613",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2082201245813514613",
+            "author": {
+              "name": "clem 🤗",
+              "handle": "ClementDelangue",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1100512198139498497/utHSJ4st_normal.png",
+              "isVerified": false
+            },
+            "content": "The first autonomous agent cyberattack is an unprecedented event that deserves unprecedented transparency. Today we’re sharing everything we can: a full technical timeline, an interactive replay, and how we used an open model to defend ourselves, so defenders everywhere can learn from it and prepare for what’s next.\n\nhttps://huggingface.co/blog/agent-intrusion-technical-timeline",
+            "createdAt": "Tue Jul 28 20:27:17 +0000 2026",
+            "viewCount": 268254,
+            "metrics": {
+              "views": 268254,
+              "likes": 1906,
+              "retweets": 435,
+              "replies": 124,
+              "quotes": 115,
+              "bookmarks": 1322
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HOV2qy9W0AAkKpg.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "第一次自主代理网络攻击是前所未有的事件，值得前所未有的透明度。今天，我们将分享我们所能分享的一切：完整的技术时间表、交互式重播，以及我们如何使用开放模型来保护自己，以便世界各地的防御者可以从中学习并为下一步做好准备。\n\nhttps://huggingface.co/blog/agent-intrusion-technical-timeline",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-29T00:08:21.221Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2082232405629235649",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-29T00:08:20.628Z"
+        },
+        "createdAt": "2026-07-29T00:08:20.628Z",
+        "updatedAt": "2026-07-29T00:08:21.829Z"
+      }
+    },
+    {
+      "rank": 6,
+      "essenceScore": 25398,
+      "heatScore": 11813,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 11813
+      },
+      "sourceUrl": "https://x.com/simonw/status/2082205602772844978",
+      "reason": "资深工程师追问HF报告里第三方未加固沙箱跳板，补上原帖未答的关键技术细节",
+      "reasonEn": "Expert follow-up that isolates the unsecured third-party staging sandbox as the still-open technical question",
+      "metrics": {
+        "views": 268254,
+        "likes": 1906,
+        "retweets": 435,
+        "replies": 124,
+        "quotes": 115,
+        "bookmarks": 1322
+      },
+      "document": {
+        "id": "4d0475d2-e7e5-4126-bbb8-4da7ae57b11f",
+        "title": "This is detailed, fascinating an",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2082205602772844978",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2082205602772844978",
+            "author": {
+              "name": "Simon Willison",
+              "handle": "simonw",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/378800000261649705/be9cc55e64014e6d7663c50d7cb9fc75_normal.jpeg",
+              "isVerified": false
+            },
+            "content": "This is detailed, fascinating and answers all sorts of open questions\n\nI'd love to know more about the \"unsecured public code-evaluation sandbox hosted on a third-party provider's infrastructure\" that the agent used to stage its attack against HF after it broke out of OpenAI",
+            "createdAt": "Tue Jul 28 20:44:35 +0000 2026",
+            "viewCount": 38060,
+            "metrics": {
+              "views": 38060,
+              "likes": 206,
+              "retweets": 17,
+              "replies": 18,
+              "quotes": 3,
+              "bookmarks": 142
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "这是详细的、引人入胜的，并回答了各种悬而未决的问题\n\n我很想了解更多有关“托管在第三方提供商基础设施上的不安全公共代码评估沙箱”的信息，该代理在 HF 突破 OpenAI 后使用该沙箱对 HF 进行攻击",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-29T00:08:39.518Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2082201245813514613",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2082201245813514613",
+            "author": {
+              "name": "clem 🤗",
+              "handle": "ClementDelangue",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1100512198139498497/utHSJ4st_normal.png",
+              "isVerified": false
+            },
+            "content": "The first autonomous agent cyberattack is an unprecedented event that deserves unprecedented transparency. Today we’re sharing everything we can: a full technical timeline, an interactive replay, and how we used an open model to defend ourselves, so defenders everywhere can learn from it and prepare for what’s next.\n\nhttps://huggingface.co/blog/agent-intrusion-technical-timeline",
+            "createdAt": "Tue Jul 28 20:27:17 +0000 2026",
+            "viewCount": 268254,
+            "metrics": {
+              "views": 268254,
+              "likes": 1906,
+              "retweets": 435,
+              "replies": 124,
+              "quotes": 115,
+              "bookmarks": 1322
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HOV2qy9W0AAkKpg.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "第一次自主代理网络攻击是前所未有的事件，值得前所未有的透明度。今天，我们将分享我们所能分享的一切：完整的技术时间表、交互式重播，以及我们如何使用开放模型来保护自己，以便世界各地的防御者可以从中学习并为下一步做好准备。\n\nhttps://huggingface.co/blog/agent-intrusion-technical-timeline",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-29T00:08:39.521Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2082205602772844978",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-29T00:08:39.442Z"
+        },
+        "createdAt": "2026-07-29T00:08:39.442Z",
+        "updatedAt": "2026-07-29T00:08:39.526Z"
+      }
+    },
+    {
+      "rank": 7,
+      "essenceScore": 9834,
+      "heatScore": 5113,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 5113
+      },
+      "sourceUrl": "https://x.com/Leoninweb3/status/2082142514589610416",
+      "reason": "引用麦总接飞刀论，用08年集装箱类比说明存储是deep cyclical、破趋势后宜右侧做空",
+      "reasonEn": "Extends the “don’t catch falling knives” take with 2008 containers: memory is deep-cyclical; short the right side",
+      "metrics": {
+        "views": 152057,
+        "likes": 940,
+        "retweets": 89,
+        "replies": 153,
+        "quotes": 15,
+        "bookmarks": 257
+      },
+      "document": {
+        "id": "5f74e778-06a9-4651-b4b6-1a6e1d27d69d",
+        "title": "08年的集装箱板块也是这样子，即使中国出口又维持了十年高增长，集",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2082142514589610416",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2082142514589610416",
+            "author": {
+              "name": "0xLeon",
+              "handle": "Leoninweb3",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1937804470676869120/OAdMIzMa_normal.jpg",
+              "isVerified": false
+            },
+            "content": "08年的集装箱板块也是这样子，即使中国出口又维持了十年高增长，集装箱也是历史大顶，直到10几年后疫情期间才迎来第二波。deep cyclical行业总会暴涨暴跌。大趋势破了之后右侧做空更容易赚钱。别忘了存储一直是半导体里周期性最强的板块",
+            "createdAt": "Tue Jul 28 16:33:54 +0000 2026",
+            "viewCount": 1641,
+            "metrics": {
+              "views": 1641,
+              "likes": 8,
+              "retweets": 0,
+              "replies": 4,
+              "quotes": 0,
+              "bookmarks": 2
+            },
+            "media": [],
+            "translation": {
+              "provider": "none",
+              "status": "idle",
+              "language": "zh-CN",
+              "text": "",
+              "annotations": [],
+              "error": "",
+              "version": 0
+            }
+          },
+          {
+            "id": "2081952186683326582",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2081952186683326582",
+            "author": {
+              "name": "憨厚的麦总",
+              "handle": "Michael_Liu93",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1981574059759378432/Fgvjn2l0_normal.jpg",
+              "isVerified": false
+            },
+            "content": "你得去找下一个暴涨的东西，而不是等已经暴涨的东西开跌两周就抄进去，大趋势破了之后，上方全是套牢盘和卸杠杆的，逢高空比接飞刀博反弹的策略要好很多。币圈是这样，黄金是这样，存储也是，而我还真认识10w抄btc，5000抄黄金，1500抄海力士的朋友。",
+            "createdAt": "Tue Jul 28 03:57:36 +0000 2026",
+            "viewCount": 152057,
+            "metrics": {
+              "views": 152057,
+              "likes": 940,
+              "retweets": 89,
+              "replies": 153,
+              "quotes": 15,
+              "bookmarks": 257
+            },
+            "media": [],
+            "translation": {
+              "provider": "none",
+              "status": "idle",
+              "language": "zh-CN",
+              "text": "",
+              "annotations": [],
+              "error": "",
+              "version": 0
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2082142514589610416",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-29T00:11:36.583Z"
+        },
+        "createdAt": "2026-07-29T00:11:36.583Z",
+        "updatedAt": "2026-07-29T00:11:36.599Z"
+      }
+    },
+    {
+      "rank": 8,
+      "essenceScore": 9718,
+      "heatScore": 5501,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 5501
+      },
+      "sourceUrl": "https://x.com/vxunderground/status/2082250972735098895",
+      "reason": "对OpenAI rogue agent二次入侵新闻的经典黑帽式嘲讽反打",
+      "reasonEn": "Classic security-scene dunk: turns the rogue-agent breach narrative into a darkly plausible alibi joke",
+      "metrics": {
+        "views": 138440,
+        "likes": 1517,
+        "retweets": 145,
+        "replies": 126,
+        "quotes": 58,
+        "bookmarks": 177
+      },
+      "document": {
+        "id": "50a4ba6a-10d2-40f8-a1c0-9419bd597b6d",
+        "title": "No, I didn't compromised that ch",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2082250972735098895",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2082250972735098895",
+            "author": {
+              "name": "vx-underground",
+              "handle": "vxunderground",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1903282052297891840/sMABW3W-_normal.jpg",
+              "isVerified": false
+            },
+            "content": "No, I didn't compromised that children's hospital and extort them for $15,000,000. It was my OpenAI agent gone rogue *wink* *wink*",
+            "createdAt": "Tue Jul 28 23:44:52 +0000 2026",
+            "viewCount": 5451,
+            "metrics": {
+              "views": 5451,
+              "likes": 95,
+              "retweets": 4,
+              "replies": 6,
+              "quotes": 0,
+              "bookmarks": 7
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "不，我没有危害儿童医院并勒索他们 15,000,000 美元。 It was my OpenAI agent gone rogue *wink* *wink*",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-29T00:08:36.177Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2082225516715597827",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2082225516715597827",
+            "author": {
+              "name": "Polymarket",
+              "handle": "Polymarket",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2005664281002491904/bz2ZO_nU_normal.jpg",
+              "isVerified": false
+            },
+            "content": "BREAKING: It's been revealed OpenAI’s rogue AI agent breached a second tech company during its days-long hacking spree.",
+            "createdAt": "Tue Jul 28 22:03:43 +0000 2026",
+            "viewCount": 138440,
+            "metrics": {
+              "views": 138440,
+              "likes": 1517,
+              "retweets": 145,
+              "replies": 126,
+              "quotes": 58,
+              "bookmarks": 177
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "突发事件：据透露，OpenAI 的流氓人工智能代理在长达数天的黑客攻击中入侵了第二家科技公司。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-29T00:08:35.648Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2082250972735098895",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-29T00:08:35.353Z"
+        },
+        "createdAt": "2026-07-29T00:08:35.353Z",
+        "updatedAt": "2026-07-29T00:08:36.177Z"
+      }
+    },
+    {
+      "rank": 9,
+      "essenceScore": 4327,
+      "heatScore": 2457,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 2457
+      },
+      "sourceUrl": "https://x.com/darrencao2024/status/2082127082272743449",
+      "reason": "呼应TALK君反抄作业，落到恐慌分批买优质美股、拒绝小票一夜暴富",
+      "reasonEn": "Builds on anti-copy-trade critique: accumulate quality names in panics, skip small-cap lottery tickets",
+      "metrics": {
+        "views": 84008,
+        "likes": 459,
+        "retweets": 18,
+        "replies": 75,
+        "quotes": 4,
+        "bookmarks": 51
+      },
+      "document": {
+        "id": "4f72f4f9-9d34-480e-8593-427fd45a024f",
+        "title": "同意。美股就这几家公司，不要总想着去找一些没被发掘的小票，找到下",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2082127082272743449",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2082127082272743449",
+            "author": {
+              "name": "Darren北美投资",
+              "handle": "darrencao2024",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1806520331206574080/bHgi0lYg_normal.jpg",
+              "isVerified": false
+            },
+            "content": "同意。美股就这几家公司，不要总想着去找一些没被发掘的小票，找到下一个英伟达，Palantir，或者成为下一个Serenity。\n找到被市场低估的优质公司，比如现在的微软，Sofi, 英伟达等，在市场恐慌的时候分批买入积累股数。然后在市场狂欢，股价跑到目标价位的时候分批止盈，等待下次机会，这是大部分投资者应该去做的事，而不是追涨杀跌，或者手握一堆小票想着一夜暴富。",
+            "createdAt": "Tue Jul 28 15:32:35 +0000 2026",
+            "viewCount": 28080,
+            "metrics": {
+              "views": 28080,
+              "likes": 107,
+              "retweets": 9,
+              "replies": 13,
+              "quotes": 2,
+              "bookmarks": 37
+            },
+            "media": [],
+            "translation": {
+              "provider": "none",
+              "status": "idle",
+              "language": "zh-CN",
+              "text": "",
+              "annotations": [],
+              "error": "",
+              "version": 0
+            }
+          },
+          {
+            "id": "2082119022812840300",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2082119022812840300",
+            "author": {
+              "name": "投资TALK君",
+              "handle": "TJ_Research",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1751334877591486464/ptPeGDbr_normal.jpg",
+              "isVerified": false
+            },
+            "content": "时间线里终于少了白毛股神，市场里面没有神，大家都是学生，我理解很多人爱抄作业，同样，现在我要提醒的是不要觉得这次空仓跑掉的下次能低位满仓进去，这个世界上不存在这个策略。我最大仓位的英特尔也跌了不少，没人骂我，因为涨的时候我也不拿出来晒，给你们制造FOMO心态，做为KOL，我也已经过了享受这种做对了留言区都来夸我的阶段，白毛股神能发YTD50倍的涨幅，现在也是他应该承受的，抄作业的也是那些人该承受的，当时疯狂宣传他的自媒体不是傻（脑子不好）就是坏（为了流量）。这种下跌心中的锚在哪？只有那些赚钱的公司判断未来盈利的确定性和P/E。估值高的时候按照纪律卖，估值低的时候按照纪律买。",
+            "createdAt": "Tue Jul 28 15:00:33 +0000 2026",
+            "viewCount": 84008,
+            "metrics": {
+              "views": 84008,
+              "likes": 459,
+              "retweets": 18,
+              "replies": 75,
+              "quotes": 4,
+              "bookmarks": 51
+            },
+            "media": [],
+            "translation": {
+              "provider": "none",
+              "status": "idle",
+              "language": "zh-CN",
+              "text": "",
+              "annotations": [],
+              "error": "",
+              "version": 0
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2082127082272743449",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-29T00:13:04.749Z"
+        },
+        "createdAt": "2026-07-29T00:13:04.749Z",
+        "updatedAt": "2026-07-29T00:13:04.751Z"
+      }
+    },
+    {
+      "rank": 10,
+      "essenceScore": 3694,
+      "heatScore": 1710,
+      "signals": {
+        "depth": 3,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 1710
+      },
+      "sourceUrl": "https://x.com/MaxForAI/status/2082134094327189733",
+      "reason": "反驳“中文模型用量暴涨”图：OpenRouter仅占全球token约2%且存在刷量",
+      "reasonEn": "Debunks “Chinese models surging” chart—OpenRouter is ~2% of global tokens, with possible farmed traffic",
+      "metrics": {
+        "views": 82147,
+        "likes": 25,
+        "retweets": 4,
+        "replies": 0,
+        "quotes": 4,
+        "bookmarks": 9
+      },
+      "document": {
+        "id": "9363b74b-a1e2-44d0-8f67-cf007e87145e",
+        "title": "很遗憾地表示这个数据其实意义不大。\n\nOpenrouter的使用",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2082134094327189733",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2082134094327189733",
+            "author": {
+              "name": "Max For AI",
+              "handle": "MaxForAI",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1885611457376903171/zWWnahYp_normal.jpg",
+              "isVerified": false
+            },
+            "content": "很遗憾地表示这个数据其实意义不大。\n\nOpenrouter的使用量仅占全球Token使用量的2%。\n\n更别说还有某些刷量的中国模型了：）",
+            "createdAt": "Tue Jul 28 16:00:26 +0000 2026",
+            "viewCount": 7983,
+            "metrics": {
+              "views": 7983,
+              "likes": 34,
+              "retweets": 1,
+              "replies": 12,
+              "quotes": 0,
+              "bookmarks": 4
+            },
+            "media": [],
+            "translation": {
+              "provider": "none",
+              "status": "idle",
+              "language": "zh-CN",
+              "text": "",
+              "annotations": [],
+              "error": "",
+              "version": 0
+            }
+          },
+          {
+            "id": "2082073792390504911",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2082073792390504911",
+            "author": {
+              "name": "Negligible Capital",
+              "handle": "negligible_cap",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1991356870720643073/emmGUHXq_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Meanwhile usage of Chinese AI models continues to surge",
+            "createdAt": "Tue Jul 28 12:00:49 +0000 2026",
+            "viewCount": 82147,
+            "metrics": {
+              "views": 82147,
+              "likes": 25,
+              "retweets": 4,
+              "replies": 0,
+              "quotes": 4,
+              "bookmarks": 9
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HOUDFBEW8AAWdw_.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "与此同时，中国人工智能模型的使用持续激增",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-29T00:10:43.832Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2082073466778362276",
+            "relation": "reply",
+            "depth": 2,
+            "sourceTweetId": "2082073466778362276",
+            "author": {
+              "name": "Negligible Capital",
+              "handle": "negligible_cap",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1991356870720643073/emmGUHXq_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Differences in valuation of Chinese AI companies vs. intelligence:",
+            "createdAt": "Tue Jul 28 11:59:32 +0000 2026",
+            "viewCount": 5520,
+            "metrics": {
+              "views": 5520,
+              "likes": 50,
+              "retweets": 10,
+              "replies": 2,
+              "quotes": 0,
+              "bookmarks": 15
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HOUCyE0WkAAeN0x.jpg",
+              "https://pbs.twimg.com/media/HOUCyEyWwAAI-Ai.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "中国AI企业与智能的估值差异：",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-29T00:10:43.735Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2082134094327189733",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-29T00:10:42.292Z"
+        },
+        "createdAt": "2026-07-29T00:10:42.292Z",
+        "updatedAt": "2026-07-29T00:10:43.840Z"
+      }
+    }
+  ]
+}
