@@ -1,0 +1,67 @@
+{
+  "date": "2026-07-29",
+  "title": "每日 X 精华引用榜",
+  "titleEn": "Daily Quote Essence on X",
+  "items": [
+    {
+      "url": "https://x.com/kimmonismus/status/2082232405629235649",
+      "reason": "把HF法医报告从“逃逸沙箱” reframed 成4.5天、1.76万动作的自主多日入侵，比原帖更刺骨",
+      "reasonEn": "Reframes HF’s forensic post: the shock isn’t sandbox escape but a 4.5-day, 17.6k-action autonomous multi-node intrusion"
+    },
+    {
+      "url": "https://x.com/DavidSacks/status/2082226325621035131",
+      "reason": "引用扎克伯格开放超智能论述，把“安全”重写成权力集中与监管俘获",
+      "reasonEn": "Amplifies Zuck’s open-SI essay by recasting lab “safety” as concentrated power and regulatory capture"
+    },
+    {
+      "url": "https://x.com/tetsuoai/status/2082238640500125706",
+      "reason": "引用Anthropic密码学漏洞研究，尖锐指出能力越强越封闭的护城河逻辑",
+      "reasonEn": "Quotes Anthropic’s crypto-weakness research to expose “too dangerous to release” as a self-serving moat"
+    },
+    {
+      "url": "https://x.com/vxunderground/status/2082250972735098895",
+      "reason": "对OpenAI rogue agent二次入侵新闻的经典黑帽式嘲讽反打",
+      "reasonEn": "Classic security-scene dunk: turns the rogue-agent breach narrative into a darkly plausible alibi joke"
+    },
+    {
+      "url": "https://x.com/simonw/status/2082205602772844978",
+      "reason": "资深工程师追问HF报告里第三方未加固沙箱跳板，补上原帖未答的关键技术细节",
+      "reasonEn": "Expert follow-up that isolates the unsecured third-party staging sandbox as the still-open technical question"
+    },
+    {
+      "url": "https://x.com/TheBigBerbowski/status/2082241232927862967",
+      "reason": "用反讽拆穿海力士三位数增长仍因miss预期被杀的荒诞估值逻辑",
+      "reasonEn": "Sarcastic reframing of SK Hynix triple-digit growth as a “disaster” for missing estimates—exposes market absurdity"
+    },
+    {
+      "url": "https://x.com/CryptoWendyO/status/2082238168842293528",
+      "reason": "用首笔X Money tip+6% APY对照Clarity下零售难拿稳定币收益，直指银行慌神",
+      "reasonEn": "Ties first X Money tips to Clarity yield limits and 6% APY—argues banks should be panicking"
+    },
+    {
+      "url": "https://x.com/swe_zach/status/2082228191348060590",
+      "reason": "引用YC游艇派对，一句“科技该重新变得不酷”打中硅谷社交泡沫",
+      "reasonEn": "Quotes the YC Alcatraz yacht gala: “tech needs to be uncool again” cuts against scene peacocking"
+    },
+    {
+      "url": "https://x.com/TheStalwart/status/2082231668207669278",
+      "reason": "对扎克伯格反AI中心化论述的冷水：有资源就直接做竞品模型",
+      "reasonEn": "Cold rebuttal to Zuck’s anti-centralization talk: just build a competing model if you have the resources"
+    },
+    {
+      "url": "https://x.com/MaxForAI/status/2082134094327189733",
+      "reason": "反驳“中文模型用量暴涨”图：OpenRouter仅占全球token约2%且存在刷量",
+      "reasonEn": "Debunks “Chinese models surging” chart—OpenRouter is ~2% of global tokens, with possible farmed traffic"
+    },
+    {
+      "url": "https://x.com/Leoninweb3/status/2082142514589610416",
+      "reason": "引用麦总接飞刀论，用08年集装箱类比说明存储是deep cyclical、破趋势后宜右侧做空",
+      "reasonEn": "Extends the “don’t catch falling knives” take with 2008 containers: memory is deep-cyclical; short the right side"
+    },
+    {
+      "url": "https://x.com/darrencao2024/status/2082127082272743449",
+      "reason": "呼应TALK君反抄作业，落到恐慌分批买优质美股、拒绝小票一夜暴富",
+      "reasonEn": "Builds on anti-copy-trade critique: accumulate quality names in panics, skip small-cap lottery tickets"
+    }
+  ]
+}
