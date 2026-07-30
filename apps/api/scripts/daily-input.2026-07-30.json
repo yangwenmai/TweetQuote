@@ -1,0 +1,67 @@
+{
+  "date": "2026-07-30",
+  "title": "每日 X 精华引用榜",
+  "titleEn": "Daily Quote Essence on X",
+  "items": [
+    {
+      "url": "https://x.com/steipete/status/2082617409408762124",
+      "reason": "引用Claude的ARC-AGI“三倍领先”官宣，用OpenAI实测反将一军：离谱分数更像评测配置问题",
+      "reasonEn": "Quotes Claude’s ARC-AGI victory post and reframes the 3× lead as likely harness/settings artifact, citing OpenAI’s findings"
+    },
+    {
+      "url": "https://x.com/arcprize/status/2082672003765670160",
+      "reason": "官方引用OpenAI harness说明：肯定结果有用，同时解释“无harness”对照为何必须公平",
+      "reasonEn": "ARC Prize quotes OpenAI’s harness post, affirms the finding, and explains why verified no-harness scoring stays fair across labs"
+    },
+    {
+      "url": "https://x.com/GregKamradt/status/2082675514582630833",
+      "reason": "回应Steinberger质疑：同一标准harness对所有厂商一致，公平比“给自家模型开挂”更重要",
+      "reasonEn": "Quotes the dunk and clarifies ARC uses one standard completions-style harness so comparisons stay consistent across providers"
+    },
+    {
+      "url": "https://x.com/natolambert/status/2082667019045081511",
+      "reason": "引用OpenAI harness工程细节，点破低垂果实：评测/推理侧配置就能大幅改成本与分数",
+      "reasonEn": "Quotes OpenAI’s retained-reasoning/compaction result and reframes harness engineering as high-leverage science for cost and scores"
+    },
+    {
+      "url": "https://x.com/lateinteraction/status/2082689553626701839",
+      "reason": "引用a16z Casado的三派harness犹豫，给出可操作二分：可被模型吸收的通用层 vs 不可约的任务末一公里",
+      "reasonEn": "Quotes Martin Casado’s harness dilemma and cleanly splits general-purpose harnesses from irreducible last-mile task specification"
+    },
+    {
+      "url": "https://x.com/FugitiveSloth/status/2082634785168736469",
+      "reason": "回复Polymarket“Yahoo要10年Claude Code经验”：对等嘲讽招聘JD像ChatGPT写的",
+      "reasonEn": "Reply dunk on Polymarket’s Yahoo/Claude Code job listing: the JD was written by someone with 15 years of ChatGPT experience"
+    },
+    {
+      "url": "https://x.com/teortaxesTex/status/2082625943596621961",
+      "reason": "在ARC口水战中硬核回击：Anthropic没义务给OpenAI调试评测配置",
+      "reasonEn": "Sharp rebuttal in the ARC-AGI quote chain: Anthropic isn’t responsible for ensuring OpenAI was tested well"
+    },
+    {
+      "url": "https://x.com/umiyuki_ai/status/2082651164810805700",
+      "reason": "引用Anthropic密码学弱点研究，补齐HAWK/AES影响与“攻防都要用AI”的加密含义",
+      "reasonEn": "Quotes Anthropic’s crypto-weakness research and adds concrete HAWK/AES impact plus the arms-race implication for crypto security"
+    },
+    {
+      "url": "https://x.com/paurooteri/status/2082669383869247737",
+      "reason": "引用三星财报LTA原文并日译提炼：产能60–70%锁多年长约，存储周期被AI基建重写",
+      "reasonEn": "Quotes Samsung’s LTA Q&A, translates the key line, and highlights 60–70% capacity locked into multi-year AI memory deals"
+    },
+    {
+      "url": "https://x.com/cb_doge/status/2082665171332239556",
+      "reason": "引用X工程师Chat API上线帖，补齐端到端加密与AI agent可构建能力的产品解读",
+      "reasonEn": "Quotes the X Chat API launch and reframes it as E2E-encrypted chat rails for bots and AI agents across major languages"
+    },
+    {
+      "url": "https://x.com/qinbafrank/status/2082669379762950405",
+      "reason": "接续自家价格战讨论，用CNBC/ARR数据拆解OpenAI营收追赶Anthropic的两种读法",
+      "reasonEn": "Self-quote chain that parses OpenAI’s July ARR shock vs Q2 and why Codex/Work/GPT-5.6 may close the Anthropic gap"
+    },
+    {
+      "url": "https://x.com/iiiinvest/status/2082670854530555946",
+      "reason": "引用自己6月做空美光长文复盘：资金/情绪/预期三顶判断被行情打脸式验证",
+      "reasonEn": "Quotes his June short-$MU thesis and reframes the memory unwind as vindication of crowing tops in capital, sentiment, and expectations"
+    }
+  ]
+}
