@@ -1,0 +1,1704 @@
+{
+  "date": "2026-07-30",
+  "title": "每日 X 精华引用榜",
+  "titleEn": "Daily Quote Essence on X",
+  "generatedAt": "2026-07-30T06:28:54.850Z",
+  "entries": [
+    {
+      "rank": 1,
+      "essenceScore": 1381361,
+      "heatScore": 585903,
+      "signals": {
+        "depth": 6,
+        "hasDunk": true,
+        "peakIndex": 5,
+        "peakHeat": 585903
+      },
+      "sourceUrl": "https://x.com/teortaxesTex/status/2082625943596621961",
+      "reason": "在ARC口水战中硬核回击：Anthropic没义务给OpenAI调试评测配置",
+      "reasonEn": "Sharp rebuttal in the ARC-AGI quote chain: Anthropic isn’t responsible for ensuring OpenAI was tested well",
+      "metrics": {
+        "views": 23321537,
+        "likes": 61359,
+        "retweets": 7528,
+        "replies": 3348,
+        "quotes": 5207,
+        "bookmarks": 6606
+      },
+      "document": {
+        "id": "7250fd4e-f60d-4e3c-82b0-dee9e131a462",
+        "title": "@steipete Not their responsibili",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2082625943596621961",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2082625943596621961",
+            "author": {
+              "name": "Teortaxes▶️ (DeepSeek 推特🐋铁粉 2023 – ∞)",
+              "handle": "teortaxesTex",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1652169745037242368/KRPTShbG_normal.jpg",
+              "isVerified": false
+            },
+            "content": "@steipete Not their responsibility to ensure OpenAI is tested well",
+            "createdAt": "Thu Jul 30 00:34:52 +0000 2026",
+            "viewCount": 34589,
+            "metrics": {
+              "views": 34589,
+              "likes": 423,
+              "retweets": 0,
+              "replies": 5,
+              "quotes": 0,
+              "bookmarks": 5
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "@steipete 他们没有责任确保 OpenAI 得到良好的测试",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-30T06:28:21.283Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2082617409408762124",
+            "relation": "reply",
+            "depth": 1,
+            "sourceTweetId": "2082617409408762124",
+            "author": {
+              "name": "Peter Steinberger 🦞",
+              "handle": "steipete",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1131851609774985216/OcsssQ9J_normal.png",
+              "isVerified": false
+            },
+            "content": "lol did nobody at Anthropic stop for a second and wonder why the numbers looked this absurd before posting the “victory”-tweet?\nhttps://openai.com/index/how-two-settings-tripled-our-arc-agi-3-scores/",
+            "createdAt": "Thu Jul 30 00:00:58 +0000 2026",
+            "viewCount": 990556,
+            "metrics": {
+              "views": 990556,
+              "likes": 2642,
+              "retweets": 65,
+              "replies": 157,
+              "quotes": 24,
+              "bookmarks": 880
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "哈哈，在发布“胜利”推文之前，Anthropic 没有人停下来想知道为什么这些数字看起来如此荒谬？\nhttps://openai.com/index/how-two-settings-tripled-our-arc-agi-3-scores/",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-30T06:28:20.931Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2080699504576045299",
+            "relation": "quote",
+            "depth": 2,
+            "sourceTweetId": "2080699504576045299",
+            "author": {
+              "name": "Claude",
+              "handle": "claudeai",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1950950107937185792/QOfEjFoJ_normal.jpg",
+              "isVerified": false
+            },
+            "content": "On ARC-AGI-3, an evaluation where AI models must solve novel problems, Opus 5’s score is three times as high as the next best model.",
+            "createdAt": "Fri Jul 24 16:59:54 +0000 2026",
+            "viewCount": 2402263,
+            "metrics": {
+              "views": 2402263,
+              "likes": 3753,
+              "retweets": 199,
+              "replies": 95,
+              "quotes": 206,
+              "bookmarks": 302
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HOAfFQSXEAALIkI.png"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "在 ARC-AGI-3（人工智能模型必须解决新问题的评估）中，Opus 5 的得分是次优模型的三倍。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-30T06:28:20.936Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2080699500943790198",
+            "relation": "reply",
+            "depth": 3,
+            "sourceTweetId": "2080699500943790198",
+            "author": {
+              "name": "Claude",
+              "handle": "claudeai",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1950950107937185792/QOfEjFoJ_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Opus 5 is also highly efficient. It outperforms other models for a similar or lower cost per task:",
+            "createdAt": "Fri Jul 24 16:59:53 +0000 2026",
+            "viewCount": 1381557,
+            "metrics": {
+              "views": 1381557,
+              "likes": 4024,
+              "retweets": 184,
+              "replies": 65,
+              "quotes": 179,
+              "bookmarks": 273
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HOAdGqjWIAAoXwu.png",
+              "https://pbs.twimg.com/media/HOAdpjiXMAAhOPV.png",
+              "https://pbs.twimg.com/media/HOAeuDWXMAAyKOY.png",
+              "https://pbs.twimg.com/media/HOAfiV3XkAAtqPQ.png"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "Opus 5 也非常高效。它在每项任务成本相似或更低的情况下优于其他模型：",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-30T06:28:20.933Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2080699497064083942",
+            "relation": "reply",
+            "depth": 4,
+            "sourceTweetId": "2080699497064083942",
+            "author": {
+              "name": "Claude",
+              "handle": "claudeai",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1950950107937185792/QOfEjFoJ_normal.jpg",
+              "isVerified": false
+            },
+            "content": "On several coding and knowledge work evaluations, Opus 5 is the new state-of-the-art:",
+            "createdAt": "Fri Jul 24 16:59:52 +0000 2026",
+            "viewCount": 5592252,
+            "metrics": {
+              "views": 5592252,
+              "likes": 10740,
+              "retweets": 1009,
+              "replies": 468,
+              "quotes": 1485,
+              "bookmarks": 1370
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HOAffmCWsAA1D_X.png"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "在多项编码和知识工作评估中，Opus 5 是最先进的：",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-30T06:28:20.937Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2080699495453528290",
+            "relation": "reply",
+            "depth": 5,
+            "sourceTweetId": "2080699495453528290",
+            "author": {
+              "name": "Claude",
+              "handle": "claudeai",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1950950107937185792/QOfEjFoJ_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Introducing Claude Opus 5.\n\nIt's a thoughtful and proactive model that comes close to the frontier intelligence of Fable 5 at half the price.",
+            "createdAt": "Fri Jul 24 16:59:51 +0000 2026",
+            "viewCount": 23321537,
+            "metrics": {
+              "views": 23321537,
+              "likes": 61359,
+              "retweets": 7528,
+              "replies": 3348,
+              "quotes": 5207,
+              "bookmarks": 6606
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HOAifjuWcAESshR.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "介绍克劳德作品 5。\n\n这是一个深思熟虑且积极主动的模型，以一半的价格接近《神鬼寓言 5》的前沿智能。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-30T06:28:20.933Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2082625943596621961",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-30T06:28:20.766Z"
+        },
+        "createdAt": "2026-07-30T06:28:20.766Z",
+        "updatedAt": "2026-07-30T06:28:21.284Z"
+      }
+    },
+    {
+      "rank": 2,
+      "essenceScore": 1381349,
+      "heatScore": 585898,
+      "signals": {
+        "depth": 6,
+        "hasDunk": true,
+        "peakIndex": 5,
+        "peakHeat": 585898
+      },
+      "sourceUrl": "https://x.com/GregKamradt/status/2082675514582630833",
+      "reason": "回应Steinberger质疑：同一标准harness对所有厂商一致，公平比“给自家模型开挂”更重要",
+      "reasonEn": "Quotes the dunk and clarifies ARC uses one standard completions-style harness so comparisons stay consistent across providers",
+      "metrics": {
+        "views": 23321393,
+        "likes": 61359,
+        "retweets": 7528,
+        "replies": 3347,
+        "quotes": 5207,
+        "bookmarks": 6606
+      },
+      "document": {
+        "id": "cdcde022-012d-490e-8007-fd62012366df",
+        "title": "We use the same standard harness",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2082675514582630833",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2082675514582630833",
+            "author": {
+              "name": "Greg Kamradt",
+              "handle": "GregKamradt",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1467896309453570052/BGy5XYVQ_normal.jpg",
+              "isVerified": false
+            },
+            "content": "We use the same standard harness for Anthropic/Opus\n\nSame completions style endpoint - no reasoning logs passed back\n\nThe point is to be consistent across providers",
+            "createdAt": "Thu Jul 30 03:51:51 +0000 2026",
+            "viewCount": 20400,
+            "metrics": {
+              "views": 20400,
+              "likes": 118,
+              "retweets": 4,
+              "replies": 17,
+              "quotes": 8,
+              "bookmarks": 12
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "我们对 Anthropic/Opus 使用相同的标准线束\n\n相同的完成样式端点 - 没有传回推理日志\n\n重点是各个提供商之间保持一致",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-30T06:27:21.055Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2082617409408762124",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2082617409408762124",
+            "author": {
+              "name": "Peter Steinberger 🦞",
+              "handle": "steipete",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1131851609774985216/OcsssQ9J_normal.png",
+              "isVerified": false
+            },
+            "content": "lol did nobody at Anthropic stop for a second and wonder why the numbers looked this absurd before posting the “victory”-tweet?\nhttps://openai.com/index/how-two-settings-tripled-our-arc-agi-3-scores/",
+            "createdAt": "Thu Jul 30 00:00:58 +0000 2026",
+            "viewCount": 988014,
+            "metrics": {
+              "views": 988014,
+              "likes": 2630,
+              "retweets": 65,
+              "replies": 157,
+              "quotes": 24,
+              "bookmarks": 877
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "哈哈，在发布“胜利”推文之前，Anthropic 没有人停下来想知道为什么这些数字看起来如此荒谬？\nhttps://openai.com/index/how-two-settings-tripled-our-arc-agi-3-scores/",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-30T06:27:21.080Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2080699504576045299",
+            "relation": "quote",
+            "depth": 2,
+            "sourceTweetId": "2080699504576045299",
+            "author": {
+              "name": "Claude",
+              "handle": "claudeai",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1950950107937185792/QOfEjFoJ_normal.jpg",
+              "isVerified": false
+            },
+            "content": "On ARC-AGI-3, an evaluation where AI models must solve novel problems, Opus 5’s score is three times as high as the next best model.",
+            "createdAt": "Fri Jul 24 16:59:54 +0000 2026",
+            "viewCount": 2399908,
+            "metrics": {
+              "views": 2399908,
+              "likes": 3753,
+              "retweets": 199,
+              "replies": 95,
+              "quotes": 206,
+              "bookmarks": 302
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HOAfFQSXEAALIkI.png"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "在 ARC-AGI-3（人工智能模型必须解决新问题的评估）中，Opus 5 的得分是次优模型的三倍。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-30T06:27:21.052Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2080699500943790198",
+            "relation": "reply",
+            "depth": 3,
+            "sourceTweetId": "2080699500943790198",
+            "author": {
+              "name": "Claude",
+              "handle": "claudeai",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1950950107937185792/QOfEjFoJ_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Opus 5 is also highly efficient. It outperforms other models for a similar or lower cost per task:",
+            "createdAt": "Fri Jul 24 16:59:53 +0000 2026",
+            "viewCount": 1381499,
+            "metrics": {
+              "views": 1381499,
+              "likes": 4024,
+              "retweets": 184,
+              "replies": 65,
+              "quotes": 179,
+              "bookmarks": 273
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HOAdGqjWIAAoXwu.png",
+              "https://pbs.twimg.com/media/HOAdpjiXMAAhOPV.png",
+              "https://pbs.twimg.com/media/HOAeuDWXMAAyKOY.png",
+              "https://pbs.twimg.com/media/HOAfiV3XkAAtqPQ.png"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "Opus 5 也非常高效。它在每项任务成本相似或更低的情况下优于其他模型：",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-30T06:27:21.056Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2080699497064083942",
+            "relation": "reply",
+            "depth": 4,
+            "sourceTweetId": "2080699497064083942",
+            "author": {
+              "name": "Claude",
+              "handle": "claudeai",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1950950107937185792/QOfEjFoJ_normal.jpg",
+              "isVerified": false
+            },
+            "content": "On several coding and knowledge work evaluations, Opus 5 is the new state-of-the-art:",
+            "createdAt": "Fri Jul 24 16:59:52 +0000 2026",
+            "viewCount": 5592203,
+            "metrics": {
+              "views": 5592203,
+              "likes": 10740,
+              "retweets": 1009,
+              "replies": 468,
+              "quotes": 1485,
+              "bookmarks": 1370
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HOAffmCWsAA1D_X.png"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "在多项编码和知识工作评估中，Opus 5 是最先进的：",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-30T06:27:21.079Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2080699495453528290",
+            "relation": "reply",
+            "depth": 5,
+            "sourceTweetId": "2080699495453528290",
+            "author": {
+              "name": "Claude",
+              "handle": "claudeai",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1950950107937185792/QOfEjFoJ_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Introducing Claude Opus 5.\n\nIt's a thoughtful and proactive model that comes close to the frontier intelligence of Fable 5 at half the price.",
+            "createdAt": "Fri Jul 24 16:59:51 +0000 2026",
+            "viewCount": 23321393,
+            "metrics": {
+              "views": 23321393,
+              "likes": 61359,
+              "retweets": 7528,
+              "replies": 3347,
+              "quotes": 5207,
+              "bookmarks": 6606
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HOAifjuWcAESshR.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "介绍克劳德作品 5。\n\n这是一个深思熟虑且积极主动的模型，以一半的价格接近《神鬼寓言 5》的前沿智能。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-30T06:27:21.058Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2082675514582630833",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-30T06:27:20.812Z"
+        },
+        "createdAt": "2026-07-30T06:27:20.812Z",
+        "updatedAt": "2026-07-30T06:27:21.080Z"
+      }
+    },
+    {
+      "rank": 3,
+      "essenceScore": 1293454,
+      "heatScore": 585893,
+      "signals": {
+        "depth": 5,
+        "hasDunk": true,
+        "peakIndex": 4,
+        "peakHeat": 585893
+      },
+      "sourceUrl": "https://x.com/steipete/status/2082617409408762124",
+      "reason": "引用Claude的ARC-AGI“三倍领先”官宣，用OpenAI实测反将一军：离谱分数更像评测配置问题",
+      "reasonEn": "Quotes Claude’s ARC-AGI victory post and reframes the 3× lead as likely harness/settings artifact, citing OpenAI’s findings",
+      "metrics": {
+        "views": 23321329,
+        "likes": 61358,
+        "retweets": 7527,
+        "replies": 3347,
+        "quotes": 5207,
+        "bookmarks": 6606
+      },
+      "document": {
+        "id": "786a52fb-e501-406c-b0f2-6771b59de9d3",
+        "title": "lol did nobody at Anthropic stop",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2082617409408762124",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2082617409408762124",
+            "author": {
+              "name": "Peter Steinberger 🦞",
+              "handle": "steipete",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1131851609774985216/OcsssQ9J_normal.png",
+              "isVerified": false
+            },
+            "content": "lol did nobody at Anthropic stop for a second and wonder why the numbers looked this absurd before posting the “victory”-tweet?\nhttps://openai.com/index/how-two-settings-tripled-our-arc-agi-3-scores/",
+            "createdAt": "Thu Jul 30 00:00:58 +0000 2026",
+            "viewCount": 985441,
+            "metrics": {
+              "views": 985441,
+              "likes": 2628,
+              "retweets": 65,
+              "replies": 156,
+              "quotes": 23,
+              "bookmarks": 876
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "哈哈，在发布“胜利”推文之前，Anthropic 没有人停下来想知道为什么这些数字看起来如此荒谬？\nhttps://openai.com/index/how-two-settings-tripled-our-arc-agi-3-scores/",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-30T06:27:05.922Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2080699504576045299",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2080699504576045299",
+            "author": {
+              "name": "Claude",
+              "handle": "claudeai",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1950950107937185792/QOfEjFoJ_normal.jpg",
+              "isVerified": false
+            },
+            "content": "On ARC-AGI-3, an evaluation where AI models must solve novel problems, Opus 5’s score is three times as high as the next best model.",
+            "createdAt": "Fri Jul 24 16:59:54 +0000 2026",
+            "viewCount": 2398743,
+            "metrics": {
+              "views": 2398743,
+              "likes": 3753,
+              "retweets": 199,
+              "replies": 95,
+              "quotes": 206,
+              "bookmarks": 302
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HOAfFQSXEAALIkI.png"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "在 ARC-AGI-3（人工智能模型必须解决新问题的评估）中，Opus 5 的得分是次优模型的三倍。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-30T06:27:05.907Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2080699500943790198",
+            "relation": "reply",
+            "depth": 2,
+            "sourceTweetId": "2080699500943790198",
+            "author": {
+              "name": "Claude",
+              "handle": "claudeai",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1950950107937185792/QOfEjFoJ_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Opus 5 is also highly efficient. It outperforms other models for a similar or lower cost per task:",
+            "createdAt": "Fri Jul 24 16:59:53 +0000 2026",
+            "viewCount": 1381499,
+            "metrics": {
+              "views": 1381499,
+              "likes": 4024,
+              "retweets": 184,
+              "replies": 65,
+              "quotes": 179,
+              "bookmarks": 273
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HOAdGqjWIAAoXwu.png",
+              "https://pbs.twimg.com/media/HOAdpjiXMAAhOPV.png",
+              "https://pbs.twimg.com/media/HOAeuDWXMAAyKOY.png",
+              "https://pbs.twimg.com/media/HOAfiV3XkAAtqPQ.png"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "Opus 5 也非常高效。它在每项任务成本相似或更低的情况下优于其他模型：",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-30T06:27:06.425Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2080699497064083942",
+            "relation": "reply",
+            "depth": 3,
+            "sourceTweetId": "2080699497064083942",
+            "author": {
+              "name": "Claude",
+              "handle": "claudeai",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1950950107937185792/QOfEjFoJ_normal.jpg",
+              "isVerified": false
+            },
+            "content": "On several coding and knowledge work evaluations, Opus 5 is the new state-of-the-art:",
+            "createdAt": "Fri Jul 24 16:59:52 +0000 2026",
+            "viewCount": 5592173,
+            "metrics": {
+              "views": 5592173,
+              "likes": 10740,
+              "retweets": 1009,
+              "replies": 468,
+              "quotes": 1485,
+              "bookmarks": 1370
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HOAffmCWsAA1D_X.png"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "在多项编码和知识工作评估中，Opus 5 是最先进的：",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-30T06:27:06.047Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2080699495453528290",
+            "relation": "reply",
+            "depth": 4,
+            "sourceTweetId": "2080699495453528290",
+            "author": {
+              "name": "Claude",
+              "handle": "claudeai",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1950950107937185792/QOfEjFoJ_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Introducing Claude Opus 5.\n\nIt's a thoughtful and proactive model that comes close to the frontier intelligence of Fable 5 at half the price.",
+            "createdAt": "Fri Jul 24 16:59:51 +0000 2026",
+            "viewCount": 23321329,
+            "metrics": {
+              "views": 23321329,
+              "likes": 61358,
+              "retweets": 7527,
+              "replies": 3347,
+              "quotes": 5207,
+              "bookmarks": 6606
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HOAifjuWcAESshR.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "介绍克劳德作品 5。\n\n这是一个深思熟虑且积极主动的模型，以一半的价格接近《神鬼寓言 5》的前沿智能。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-30T06:27:05.915Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2082617409408762124",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-30T06:27:05.654Z"
+        },
+        "createdAt": "2026-07-30T06:27:05.654Z",
+        "updatedAt": "2026-07-30T06:27:06.425Z"
+      }
+    },
+    {
+      "rank": 4,
+      "essenceScore": 809086,
+      "heatScore": 365257,
+      "signals": {
+        "depth": 4,
+        "hasDunk": true,
+        "peakIndex": 3,
+        "peakHeat": 365257
+      },
+      "sourceUrl": "https://x.com/qinbafrank/status/2082669379762950405",
+      "reason": "接续自家价格战讨论，用CNBC/ARR数据拆解OpenAI营收追赶Anthropic的两种读法",
+      "reasonEn": "Self-quote chain that parses OpenAI’s July ARR shock vs Q2 and why Codex/Work/GPT-5.6 may close the Anthropic gap",
+      "metrics": {
+        "views": 15963378,
+        "likes": 21964,
+        "retweets": 2259,
+        "replies": 1304,
+        "quotes": 998,
+        "bookmarks": 5823
+      },
+      "document": {
+        "id": "1f551b65-9e8e-4043-9c5e-e423e66ffe28",
+        "title": "OpenAI的ARR正在大幅度缩小与Authropic的差距，这",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2082669379762950405",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2082669379762950405",
+            "author": {
+              "name": "qinbafrank",
+              "handle": "qinbafrank",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1453864539720601606/rEHaWNk1_normal.jpg",
+              "isVerified": false
+            },
+            "content": "OpenAI的ARR正在大幅度缩小与Authropic的差距，这应该是今天最值得关注的新闻。看CNBC的报道OpenAI首席财务官SarahFriar在周三Openai内部员工会上明确表示，7月的年化经常性收入（ARR）已超过整个第二季度（Q2）的总额。应该怎么理解？\n1、看TickerTrenda的数据，整个二季度OpenAI的ARR：4月底是288亿美金、5月底是330亿美、6月底是373亿美金。\n整个二季度arr的增量114亿美金。\n\n对应到单月营收（按arr/12来计算）\n4月是24亿美金、5月是27.5亿美金，6月是31亿美金。四五六三个月累计是82.5亿美金。\n\n2、OpenAI CFO说7月净新增 ARR 收入规模，超过整个二季度的新增总和（同口径对比，都是净增额）。那就有两种解释：\n1）第一种理解：7月净新增 ARR 收入规模，超过整个二季度的新增总和（同口径对比，都是净增额）。\n\nOpenAI 二季度ARR合计新增约 114亿，openAi在7月的arr已经大幅调涨到500多亿美金，正在快速追赶Authropic。\n\n2）第二种理解：\n7月单月营收超过二季度三个月营收之和，上面算过二季度四五六三个月单月营收之和是82.5亿美金，那就意味着7月单月营收超过了82.5亿美金、年化ARR已经超过1000亿美金，这有点不敢想了。\n\n保守点按第一种来算，那也意味着正在大幅度缩小与authropic的营收差距。\n\n3、快速增长的原因则来自于\n1）GPT-5.6系列模型发布。\n2）新企业代理产品ChatGPT Work。\n3）AI编码工具Codex的采用持续增长。之前这里https://x.com/thsottiaux/status/2079609157934886975?s=46&t=k6rimWsEbo2D2tXolYcM-A也披露了codex和work的用户在7月大幅度表飙升。",
+            "createdAt": "Thu Jul 30 03:27:28 +0000 2026",
+            "viewCount": 25758,
+            "metrics": {
+              "views": 25758,
+              "likes": 62,
+              "retweets": 14,
+              "replies": 27,
+              "quotes": 3,
+              "bookmarks": 19
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HOcgwV1bUAAnyQZ.jpg",
+              "https://pbs.twimg.com/media/HOcgwV7bcAAkGIh.jpg"
+            ],
+            "translation": {
+              "provider": "none",
+              "status": "idle",
+              "language": "zh-CN",
+              "text": "",
+              "annotations": [],
+              "error": "",
+              "version": 0
+            }
+          },
+          {
+            "id": "2077774496225018167",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2077774496225018167",
+            "author": {
+              "name": "qinbafrank",
+              "handle": "qinbafrank",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1453864539720601606/rEHaWNk1_normal.jpg",
+              "isVerified": false
+            },
+            "content": "一周前聊到的大模型价格战是真的来了，今天几家 AI 大模型公司不约而同做了同一件事：\n1）Anthropic 宣布重置所有用户的 5 小时和每周使用限制；\n2）OpenAI 再次提高 Codex 和 ChatGPT Work 的使用额度。注意“再次”两个字，说明不是第一次放开限制，而是近期连续多轮上调；\n3）xAI 不仅重置了 Grok 的使用限额，还开放了 Grok Build；\n4）Cursor更直接，将所有订阅计划的模型使用额度翻倍。\n\n看到这类动作，大家最关心两个问题：为什么要这么做？影响是什么？\n1、先说为什么要这么做？\n核心还是这两周一起聊到的https://x.com/qinbafrank/status/2076839550119444702?s=46&t=k6rimWsEbo2D2tXolYcM-A 企业采用AI进入分场景、多模型的工程化阶段，企业自己也需要把高频、低复杂度和低价值场景分配给高性价比token、这也倒逼了解前沿闭源大模型主动应战，价格战永远是最有效的策略。\n\n2、再说有何影响？\n1）短期来看，大家担心是不是影响大模型的利润率。毕竟价格下降意味着单次调用收入降低，单位 Token 的商业价值下降，短期毛利率和盈利能力自然会承压。\n2）但中长期，则是要看能激发出多大的幅度的需求量增长。如果需求爆发式增长、token的消耗量增长幅度大大抵消token单价的降低，最后总盘子变大了。上周在这里https://x.com/qinbafrank/status/2074061695438483754?s=46&t=k6rimWsEbo2D2tXolYcM-A也有聊过：“越多企业采用AI，成本工程化做的越好，高端模型的份额被部分蚕食，但会不会带动商业化份额绝对值应该还是在快速增长？因为盘子更大了。”\n\n但这里最关键的就是这个短期和中长期之间的时间差有多大。降价毛利和盈利能力会立马下去，需求的爆炸是不是能立马补上来，还是需要一点时间才行？",
+            "createdAt": "Thu Jul 16 15:16:57 +0000 2026",
+            "viewCount": 127484,
+            "metrics": {
+              "views": 127484,
+              "likes": 117,
+              "retweets": 17,
+              "replies": 34,
+              "quotes": 5,
+              "bookmarks": 67
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HNW84-DbkAAMEH6.jpg",
+              "https://pbs.twimg.com/media/HNW8493bIAABJqs.jpg"
+            ],
+            "translation": {
+              "provider": "none",
+              "status": "idle",
+              "language": "zh-CN",
+              "text": "",
+              "annotations": [],
+              "error": "",
+              "version": 0
+            }
+          },
+          {
+            "id": "2075399923647046085",
+            "relation": "quote",
+            "depth": 2,
+            "sourceTweetId": "2075399923647046085",
+            "author": {
+              "name": "qinbafrank",
+              "handle": "qinbafrank",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1453864539720601606/rEHaWNk1_normal.jpg",
+              "isVerified": false
+            },
+            "content": "可以说这次GPT5.6的发布正式拉开了前沿闭源大模型价格战的序幕？为什么这么说。\n先看看GPT5.6的定价结构（API 每百万 tokens，短上下文标准价）：\n1）Sol（旗舰）：$5 输入 / $30 输出（与 GPT-5.5 旗舰价格持平）。\n2）Terra：$2.50 / $15（性能接近 GPT-5.5，但成本更低）。\n3）Luna：$1 / $6（最便宜，性能仍很强，接近或超过部分前代旗舰）。\n\n这算是OpenAI首次在旗舰系列中推出明确的多层定价，让用户根据任务复杂度灵活选择。Luna和Terra提供了“接近旗舰性能但大幅降低成本”的选项，这对开发者、API 重度用户极具吸引力，直接冲击竞争对手（如 Anthropic 的 Claude 系列）。\n\n此前已有报道称 OpenAI 考虑大幅降价以应对 Anthropic 等竞争，此次通过 tiered 模型实现了“更多能力同价 + 低成本高性能选项”，实质是回应了市场对成本敏感度的需求。 同时推出 prompt caching 新机制（缓存写入 1.25x 等）和多代理功能，进一步提升实际使用性价比。\n\n当然也不算传统“价格战”，因为顶级旗舰Sol价格并未下降，而是“同价更强”。\n这更像是价值战和差异化竞争的体现：OpenAI 用分层模型 + Agentic能力（多代理、Work agent）来抢占市场，而非单纯拼低价。更准确地说是“性价比战 / tiered 定价竞争”的加速，而非单纯的旗舰降价大战。\n\n行业整体趋势是类似的——各家（Anthropic、Google、xAI 等）都在优化定价结构、推出tier模型和Agent功能。OpenAI 此举很可能加速这一进程，尤其对闭源前沿模型的 API 定价和 agent 能力竞争。\n\n这标志着顶级闭源大模型从“单一旗舰高价”向多层模型性价比竞争 + agentic功能战”的转变。价格敏感用户会明显受益，行业竞争会更激烈，但短期内旗舰模型大幅跳水式降价可能还不会出现。\n\n长期看，这对整个生态（尤其是开发者）是利好，推动模型更快迭代和更广泛应用。\n\n本条由@bitget_zh赞助，「Bitget 买美股：秒级入场，丝滑交易 」",
+            "createdAt": "Fri Jul 10 02:01:15 +0000 2026",
+            "viewCount": 89075,
+            "metrics": {
+              "views": 89075,
+              "likes": 66,
+              "retweets": 3,
+              "replies": 30,
+              "quotes": 2,
+              "bookmarks": 13
+            },
+            "media": [],
+            "translation": {
+              "provider": "none",
+              "status": "idle",
+              "language": "zh-CN",
+              "text": "",
+              "annotations": [],
+              "error": "",
+              "version": 0
+            }
+          },
+          {
+            "id": "2075274271845404744",
+            "relation": "quote",
+            "depth": 3,
+            "sourceTweetId": "2075274271845404744",
+            "author": {
+              "name": "OpenAI",
+              "handle": "OpenAI",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1885410181409820672/ztsaR0JW_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Introducing ChatGPT Work, a new agent in ChatGPT powered by Codex and GPT-5.6.\n\nIt can take action across your apps and files, stay with a project for hours if needed, and turn a goal into finished work.\n\nIt’s a whole new way to get work done.",
+            "createdAt": "Thu Jul 09 17:41:57 +0000 2026",
+            "viewCount": 15963378,
+            "metrics": {
+              "views": 15963378,
+              "likes": 21964,
+              "retweets": 2259,
+              "replies": 1304,
+              "quotes": 998,
+              "bookmarks": 5823
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HMz7__qaQAAF1kI.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "隆重推出 ChatGPT Work，这是由 Codex 和 GPT-5.6 提供支持的 ChatGPT 中的新代理。\n\n它可以对您的应用程序和文件采取行动，如果需要，可以在项目上停留数小时，并将目标转化为完成的工作。\n\n这是一种全新的完成工作的方式。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-30T06:28:49.653Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2082669379762950405",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-30T06:28:49.073Z"
+        },
+        "createdAt": "2026-07-30T06:28:49.073Z",
+        "updatedAt": "2026-07-30T06:28:49.653Z"
+      }
+    },
+    {
+      "rank": 5,
+      "essenceScore": 132600,
+      "heatScore": 65070,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 65070
+      },
+      "sourceUrl": "https://x.com/umiyuki_ai/status/2082651164810805700",
+      "reason": "引用Anthropic密码学弱点研究，补齐HAWK/AES影响与“攻防都要用AI”的加密含义",
+      "reasonEn": "Quotes Anthropic’s crypto-weakness research and adds concrete HAWK/AES impact plus the arms-race implication for crypto security",
+      "metrics": {
+        "views": 2491390,
+        "likes": 6034,
+        "retweets": 800,
+        "replies": 407,
+        "quotes": 438,
+        "bookmarks": 2340
+      },
+      "document": {
+        "id": "6a066305-ea34-4376-9aef-02bc9816ef40",
+        "title": "またAnthropicからAI脅威のヤバイ話が出てきた。Myth",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2082651164810805700",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2082651164810805700",
+            "author": {
+              "name": "うみゆき@AI研究",
+              "handle": "umiyuki_ai",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1581572203660787712/SAdL4WOj_normal.jpg",
+              "isVerified": false
+            },
+            "content": "またAnthropicからAI脅威のヤバイ話が出てきた。Mythosが暗号アルゴリズムの弱点を発見してしまったという話。特定の暗号の実装にバグがあった～と言う話じゃなくてアルゴリズム自体に若干脆弱な落とし穴があったのが見つかってしまったという。この弱点が付かれるとHAWKって量子耐性対応の電子署名の暗号強度は150bitから108bitまで低下してしまってツラい。AESも攻撃が200～800倍高速化できてしまったというが、これについてはもともと攻撃に無限に時間がかかるもんだったので800倍高速化したくらいでは別にノーダメらしい。AIが数学の未解決問題を解いてしまうような昨今では数学的アルゴリズムの弱点だって見つけてしまえるわけだ。これがもっとクリティカルな弱点で、見つけたのがAnthropicじゃなくて悪意ある奴だったらどうなる？暗号破壊され放題で仮想通貨盗み放題か？無論、防御側もAI使って敵より先に問題を見つけて修正していかないといけないでしょう",
+            "createdAt": "Thu Jul 30 02:15:06 +0000 2026",
+            "viewCount": 19178,
+            "metrics": {
+              "views": 19178,
+              "likes": 145,
+              "retweets": 27,
+              "replies": 2,
+              "quotes": 2,
+              "bookmarks": 47
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "Anthropic 还有一个关于人工智能威胁的危险故事。一个关于 Mythos 发现加密算法弱点的故事。这并不是说特定密码的实现存在错误，而是发现了一个陷阱，使算法本身有些脆弱。如果这个弱点被利用，HAWK的抗量子电子签名的加密强度将从150位下降到108位，这是一个痛苦的过程。 AES据说还可以将攻击速度提高200到800倍，但由于攻击原本需要无限长的时间，所以速度提高800倍似乎也没什么好处。如今，人工智能可以解决未解决的数学问题，甚至可以找到数学算法的弱点。如果这是一个更严重的弱点，而且发现它的不是人类，而是怀有恶意的人，该怎么办？是否可以通过破坏密码学来窃取任意数量的加密货币？当然，防御者也必须使用人工智能在敌人之前发现并解决问题。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-30T06:28:28.349Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2082153297670992134",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2082153297670992134",
+            "author": {
+              "name": "Anthropic",
+              "handle": "AnthropicAI",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1798110641414443008/XP8gyBaY_normal.jpg",
+              "isVerified": false
+            },
+            "content": "New Anthropic research: Discovering cryptographic weaknesses with Claude.\n\nClaude Mythos Preview has helped our researchers find weaknesses in cryptographic algorithms—the mathematical methods that are used to keep data private.\n\nRead more: https://anthropic.com/research/discovering-cryptographic-weaknesses",
+            "createdAt": "Tue Jul 28 17:16:45 +0000 2026",
+            "viewCount": 2491390,
+            "metrics": {
+              "views": 2491390,
+              "likes": 6034,
+              "retweets": 800,
+              "replies": 407,
+              "quotes": 438,
+              "bookmarks": 2340
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "新人类研究：与克劳德一起发现密码学弱点。\n\nClaude Mythos Preview 帮助我们的研究人员发现了加密算法（用于保护数据隐私的数学方法）的弱点。\n\n了解更多：https://anthropic.com/research/discovering-cryptographic-weaknesses",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-30T06:28:26.371Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2082651164810805700",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-30T06:28:26.173Z"
+        },
+        "createdAt": "2026-07-30T06:28:26.173Z",
+        "updatedAt": "2026-07-30T06:28:28.349Z"
+      }
+    },
+    {
+      "rank": 6,
+      "essenceScore": 42237,
+      "heatScore": 24676,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 24676
+      },
+      "sourceUrl": "https://x.com/FugitiveSloth/status/2082634785168736469",
+      "reason": "回复Polymarket“Yahoo要10年Claude Code经验”：对等嘲讽招聘JD像ChatGPT写的",
+      "reasonEn": "Reply dunk on Polymarket’s Yahoo/Claude Code job listing: the JD was written by someone with 15 years of ChatGPT experience",
+      "metrics": {
+        "views": 677881,
+        "likes": 7689,
+        "retweets": 412,
+        "replies": 306,
+        "quotes": 211,
+        "bookmarks": 474
+      },
+      "document": {
+        "id": "9f87beb1-0270-4277-ae5c-2755bfea2452",
+        "title": "@Polymarket This job description",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2082634785168736469",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2082634785168736469",
+            "author": {
+              "name": "Fugitive Sloth",
+              "handle": "FugitiveSloth",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2080022704921690112/B7nsgQ1A_normal.jpg",
+              "isVerified": false
+            },
+            "content": "@Polymarket This job description was written by someone with 15 years of ChatGPT experience",
+            "createdAt": "Thu Jul 30 01:10:00 +0000 2026",
+            "viewCount": 12083,
+            "metrics": {
+              "views": 12083,
+              "likes": 487,
+              "retweets": 2,
+              "replies": 0,
+              "quotes": 0,
+              "bookmarks": 3
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "@Polymarket 这份职位描述是由拥有 15 年 ChatGPT 经验的人撰写的",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-30T06:28:16.163Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2082634052809408768",
+            "relation": "reply",
+            "depth": 1,
+            "sourceTweetId": "2082634052809408768",
+            "author": {
+              "name": "Polymarket",
+              "handle": "Polymarket",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2005664281002491904/bz2ZO_nU_normal.jpg",
+              "isVerified": false
+            },
+            "content": "JUST IN: New Yahoo job listing for a Senior Software Developer requires 10+ years of Claude Code experience.",
+            "createdAt": "Thu Jul 30 01:07:06 +0000 2026",
+            "viewCount": 677881,
+            "metrics": {
+              "views": 677881,
+              "likes": 7689,
+              "retweets": 412,
+              "replies": 306,
+              "quotes": 211,
+              "bookmarks": 474
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "最新消息：雅虎新招聘的高级软件开发人员需要 10 年以上的 Claude Code 经验。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-30T06:28:15.518Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2082634785168736469",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-30T06:28:15.304Z"
+        },
+        "createdAt": "2026-07-30T06:28:15.304Z",
+        "updatedAt": "2026-07-30T06:28:16.163Z"
+      }
+    },
+    {
+      "rank": 7,
+      "essenceScore": 37113,
+      "heatScore": 17448,
+      "signals": {
+        "depth": 4,
+        "hasDunk": true,
+        "peakIndex": 3,
+        "peakHeat": 17448
+      },
+      "sourceUrl": "https://x.com/natolambert/status/2082667019045081511",
+      "reason": "引用OpenAI harness工程细节，点破低垂果实：评测/推理侧配置就能大幅改成本与分数",
+      "reasonEn": "Quotes OpenAI’s retained-reasoning/compaction result and reframes harness engineering as high-leverage science for cost and scores",
+      "metrics": {
+        "views": 416060,
+        "likes": 5399,
+        "retweets": 337,
+        "replies": 230,
+        "quotes": 115,
+        "bookmarks": 956
+      },
+      "document": {
+        "id": "09ee0b7e-e90f-4354-9dcf-6a6cce9f2e5d",
+        "title": "The low hanging fruit on harness",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2082667019045081511",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2082667019045081511",
+            "author": {
+              "name": "Nathan Lambert",
+              "handle": "natolambert",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2051823244832083968/Nr0pT8-V_normal.jpg",
+              "isVerified": false
+            },
+            "content": "The low hanging fruit on harness engineering is insane.\n\nOntop of that, there's an interesting area of science/engineering on how to best study the effect of harnesses, from post training through eval/inference. Will be a fairly impactful area (in cost savings per performance)",
+            "createdAt": "Thu Jul 30 03:18:06 +0000 2026",
+            "viewCount": 23156,
+            "metrics": {
+              "views": 23156,
+              "likes": 287,
+              "retweets": 15,
+              "replies": 16,
+              "quotes": 1,
+              "bookmarks": 130
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "线束工程上唾手可得的成果是疯狂的。\n\n最重要的是，科学/工程领域有一个有趣的领域，即如何最好地研究安全带的效果，从后期培训到评估/推理。将是一个相当有影响力的领域（在每场演出的成本节省方面）",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-30T06:27:59.914Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2082616640144048433",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2082616640144048433",
+            "author": {
+              "name": "OpenAI",
+              "handle": "OpenAI",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1885410181409820672/ztsaR0JW_normal.jpg",
+              "isVerified": false
+            },
+            "content": "We implemented the harness with the Responses API and turned on:\n\n→ Retained reasoning\n→ Context compaction\n\nOn the public set, GPT-5.6 Sol’s score rose 188% while using 6x fewer output tokens.",
+            "createdAt": "Wed Jul 29 23:57:54 +0000 2026",
+            "viewCount": 71186,
+            "metrics": {
+              "views": 71186,
+              "likes": 756,
+              "retweets": 35,
+              "replies": 14,
+              "quotes": 20,
+              "bookmarks": 87
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HObwu_gacAAccc0.png"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "我们使用 Responses API 实现了该工具并打开：\n\n→ 保留推理\n→ 上下文压缩\n\n在公共集上，GPT-5.6 Sol 的分数上升了 188%，同时使用的输出代币减少了 6 倍。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-30T06:27:59.916Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2082616638625722669",
+            "relation": "reply",
+            "depth": 2,
+            "sourceTweetId": "2082616638625722669",
+            "author": {
+              "name": "OpenAI",
+              "handle": "OpenAI",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1885410181409820672/ztsaR0JW_normal.jpg",
+              "isVerified": false
+            },
+            "content": "ARC-AGI-3 tests how well models can learn unfamiliar 2D games without instructions.\n\nThe standard harness discarded GPT-5.6 Sol’s reasoning after each move and dropped earlier actions as the context filled up. The model had to keep starting over.",
+            "createdAt": "Wed Jul 29 23:57:54 +0000 2026",
+            "viewCount": 50391,
+            "metrics": {
+              "views": 50391,
+              "likes": 571,
+              "retweets": 20,
+              "replies": 7,
+              "quotes": 7,
+              "bookmarks": 44
+            },
+            "media": [
+              "https://pbs.twimg.com/amplify_video_thumb/2082615569636065280/img/XmRBGKg_NrTnIkAm.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "ARC-AGI-3 测试模型在没有指令的情况下学习不熟悉的 2D 游戏的能力。\n\n标准工具在每次移动后都会放弃 GPT-5.6 Sol 的推理，并在上下文填满时放弃之前的操作。该模型必须重新开始。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-30T06:28:00.445Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2082616636989952217",
+            "relation": "reply",
+            "depth": 3,
+            "sourceTweetId": "2082616636989952217",
+            "author": {
+              "name": "OpenAI",
+              "handle": "OpenAI",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1885410181409820672/ztsaR0JW_normal.jpg",
+              "isVerified": false
+            },
+            "content": "GPT-5.6 Sol has been used to solve open problems in mathematics. So why was it struggling with ARC-AGI-3, a benchmark of 2D puzzle games?\n\nWe investigated. The harness was not letting it remember what it had learned.\n\nWe found that enabling two API settings tripled our scores with 6x fewer output tokens.",
+            "createdAt": "Wed Jul 29 23:57:54 +0000 2026",
+            "viewCount": 416060,
+            "metrics": {
+              "views": 416060,
+              "likes": 5399,
+              "retweets": 337,
+              "replies": 230,
+              "quotes": 115,
+              "bookmarks": 956
+            },
+            "media": [
+              "https://pbs.twimg.com/amplify_video_thumb/2082615246855053312/img/pWg5pk6WrqcYfUcV.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "GPT-5.6 Sol 已用于解决数学中的开放问题。那么，为什么它在 2D 益智游戏标杆 ARC-AGI-3 上举步维艰呢？\n\n我们调查了。安全带并没有让它记住所学到的东西。\n\n我们发现，启用两种 API 设置后，我们的分数增加了两倍，而输出标记减少了 6 倍。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-30T06:27:59.890Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2082667019045081511",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-30T06:27:59.620Z"
+        },
+        "createdAt": "2026-07-30T06:27:59.620Z",
+        "updatedAt": "2026-07-30T06:28:00.445Z"
+      }
+    },
+    {
+      "rank": 8,
+      "essenceScore": 31853,
+      "heatScore": 17432,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 17432
+      },
+      "sourceUrl": "https://x.com/arcprize/status/2082672003765670160",
+      "reason": "官方引用OpenAI harness说明：肯定结果有用，同时解释“无harness”对照为何必须公平",
+      "reasonEn": "ARC Prize quotes OpenAI’s harness post, affirms the finding, and explains why verified no-harness scoring stays fair across labs",
+      "metrics": {
+        "views": 415613,
+        "likes": 5392,
+        "retweets": 337,
+        "replies": 230,
+        "quotes": 115,
+        "bookmarks": 956
+      },
+      "document": {
+        "id": "50bc71ae-6a47-4e75-92e3-1df631d2f71a",
+        "title": "OpenAI’s internal testing shows ",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2082672003765670160",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2082672003765670160",
+            "author": {
+              "name": "ARC Prize",
+              "handle": "arcprize",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1800565057493078016/XigYRdTo_normal.jpg",
+              "isVerified": false
+            },
+            "content": "OpenAI’s internal testing shows that provider-managed conversation state preserves greater continuity across turns and improves performance on long-horizon tasks like ARC-AGI-3. This is a real and useful result. We’re encouraged to see ARC used to identify useful harness design.\n\nARC’s verified scores use a “no harness” approach to avoid accidental or intentional developer-aware targeting and to fairly compare scores across all providers. All systems receive the same observations, system prompt, and operate under the same action limits. Conversation state is managed client-side using the industry-wide standard interface for LLMs (the OpenAI-style completions API).\n\nWe want progress on ARC to reflect true AGI progress, not ARC-specific format training or settings, and we’re actively working with several industry labs, including OpenAI, to figure out how to best incorporate these server-side state management findings into our verified testing setup while remaining fair and consistent across providers.",
+            "createdAt": "Thu Jul 30 03:37:54 +0000 2026",
+            "viewCount": 24145,
+            "metrics": {
+              "views": 24145,
+              "likes": 293,
+              "retweets": 24,
+              "replies": 39,
+              "quotes": 7,
+              "bookmarks": 39
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "OpenAI 的内部测试表明，提供商管理的对话状态可以保持更大的跨轮连续性，并提高 ARC-AGI-3 等长期任务的性能。这是一个真实且有用的结果。我们很高兴看到 ARC 用于识别有用的线束设计。\n\nARC 的验证分数使用“无控制”方法来避免意外或故意的开发人员意识目标，并公平地比较所有提供商的分数。所有系统都会收到相同的观察结果、系统提示，并在相同的操作限制下运行。会话状态是使用 LLM 的行业标准接口（OpenAI 风格的完成 API）在客户端进行管理的。\n\n我们希望 ARC 的进展能够反映真正的 AGI 进展，而不是 ARC 特定的格式培训或设置，并且我们正在积极与包括 OpenAI 在内的多个行业实验室合作，以找出如何最好地将这些服务器端状态管理结果纳入我们经过验证的测试设置，同时在提供商之间保持公平和一致。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-30T06:27:12.500Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2082616636989952217",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2082616636989952217",
+            "author": {
+              "name": "OpenAI",
+              "handle": "OpenAI",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1885410181409820672/ztsaR0JW_normal.jpg",
+              "isVerified": false
+            },
+            "content": "GPT-5.6 Sol has been used to solve open problems in mathematics. So why was it struggling with ARC-AGI-3, a benchmark of 2D puzzle games?\n\nWe investigated. The harness was not letting it remember what it had learned.\n\nWe found that enabling two API settings tripled our scores with 6x fewer output tokens.",
+            "createdAt": "Wed Jul 29 23:57:54 +0000 2026",
+            "viewCount": 415613,
+            "metrics": {
+              "views": 415613,
+              "likes": 5392,
+              "retweets": 337,
+              "replies": 230,
+              "quotes": 115,
+              "bookmarks": 956
+            },
+            "media": [
+              "https://pbs.twimg.com/amplify_video_thumb/2082615246855053312/img/pWg5pk6WrqcYfUcV.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "GPT-5.6 Sol 已用于解决数学中的开放问题。那么，为什么它在 2D 益智游戏标杆 ARC-AGI-3 上举步维艰呢？\n\n我们调查了。安全带并没有让它记住所学到的东西。\n\n我们发现，启用两种 API 设置后，我们的分数增加了两倍，而输出标记减少了 6 倍。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-30T06:27:12.074Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2082672003765670160",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-30T06:27:11.853Z"
+        },
+        "createdAt": "2026-07-30T06:27:11.853Z",
+        "updatedAt": "2026-07-30T06:27:12.500Z"
+      }
+    },
+    {
+      "rank": 9,
+      "essenceScore": 6984,
+      "heatScore": 3393,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 3393
+      },
+      "sourceUrl": "https://x.com/lateinteraction/status/2082689553626701839",
+      "reason": "引用a16z Casado的三派harness犹豫，给出可操作二分：可被模型吸收的通用层 vs 不可约的任务末一公里",
+      "reasonEn": "Quotes Martin Casado’s harness dilemma and cleanly splits general-purpose harnesses from irreducible last-mile task specification",
+      "metrics": {
+        "views": 90767,
+        "likes": 605,
+        "retweets": 19,
+        "replies": 166,
+        "quotes": 30,
+        "bookmarks": 247
+      },
+      "document": {
+        "id": "8a123cea-6207-4e5a-9010-bf445b00129f",
+        "title": "The answer is deceptively simple",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2082689553626701839",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2082689553626701839",
+            "author": {
+              "name": "Omar Khattab",
+              "handle": "lateinteraction",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1613558765764374528/aZQB6U4b_normal.jpg",
+              "isVerified": false
+            },
+            "content": "The answer is deceptively simple imo.\n\nThere’s a notion of a general-purpose harness (like, say, CoT reasoning, proper compaction, or an RLM) that’s essentially just what *the* model should become. A better “model” in the API will eventually wrap it and train accordingly.\n\nAnd a separate notion of a harness that’s last-mile specification over the underlying bland model. This is irreducible to the extent that your task/context diverges from the mode, regardless of capability. Here, the closer your complexity to the minimum number of bits required, the better.",
+            "createdAt": "Thu Jul 30 04:47:38 +0000 2026",
+            "viewCount": 6570,
+            "metrics": {
+              "views": 6570,
+              "likes": 64,
+              "retweets": 7,
+              "replies": 5,
+              "quotes": 1,
+              "bookmarks": 45
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "在我看来，答案看似简单。\n\n有一个通用用途工具的概念（例如，CoT 推理、适当压缩或 RLM），本质上正是“模型”应该成为的样子。 API 中更好的“模型”最终将对其进行包装并进行相应的训练。\n\n还有一个单独的安全带概念，它是基础平淡模型的最后一英里规范。如果您的任务/上下文与模式不同，无论能力如何，这都是不可简化的。在这里，复杂性越接近所需的最小位数越好。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-30T06:28:08.353Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2082527395920347362",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2082527395920347362",
+            "author": {
+              "name": "martin_casado",
+              "handle": "martin_casado",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1556885485888237568/HH1iBQNp_normal.jpg",
+              "isVerified": false
+            },
+            "content": "On harnesses, I vacillate between three beliefs:\n\n- the less harness, the better. Models are the magic\n- post training a model and harness is dramatically better and the model providers win\n- harnesses have real independent value from the model\n\nI have no idea which is right.",
+            "createdAt": "Wed Jul 29 18:03:17 +0000 2026",
+            "viewCount": 90767,
+            "metrics": {
+              "views": 90767,
+              "likes": 605,
+              "retweets": 19,
+              "replies": 166,
+              "quotes": 30,
+              "bookmarks": 247
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "关于安全带，我在三个信念之间摇摆不定：\n\n- 安全带越少越好。模型就是魔法\n- 训练后模型和线束明显更好，模型提供者获胜\n- 线束具有真正独立于模型的价值\n\n我不知道哪个是对的。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-30T06:28:07.788Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2082689553626701839",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-30T06:28:07.504Z"
+        },
+        "createdAt": "2026-07-30T06:28:07.504Z",
+        "updatedAt": "2026-07-30T06:28:08.354Z"
+      }
+    },
+    {
+      "rank": 10,
+      "essenceScore": 6314,
+      "heatScore": 3190,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 3190
+      },
+      "sourceUrl": "https://x.com/iiiinvest/status/2082670854530555946",
+      "reason": "引用自己6月做空美光长文复盘：资金/情绪/预期三顶判断被行情打脸式验证",
+      "reasonEn": "Quotes his June short-$MU thesis and reframes the memory unwind as vindication of crowing tops in capital, sentiment, and expectations",
+      "metrics": {
+        "views": 138125,
+        "likes": 167,
+        "retweets": 10,
+        "replies": 57,
+        "quotes": 2,
+        "bookmarks": 55
+      },
+      "document": {
+        "id": "f2b457db-040c-453c-aa85-b928abc5a511",
+        "title": "回头看1200做空美光这篇，知行合一，简直神一般的存在！",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2082670854530555946",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2082670854530555946",
+            "author": {
+              "name": "电鱼哥专注SpaceX",
+              "handle": "iiiinvest",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2070418253353250816/A7ob_mkY_normal.jpg",
+              "isVerified": false
+            },
+            "content": "回头看1200做空美光这篇，知行合一，简直神一般的存在！",
+            "createdAt": "Thu Jul 30 03:33:20 +0000 2026",
+            "viewCount": 14896,
+            "metrics": {
+              "views": 14896,
+              "likes": 101,
+              "retweets": 1,
+              "replies": 43,
+              "quotes": 0,
+              "bookmarks": 1
+            },
+            "media": [],
+            "translation": {
+              "provider": "none",
+              "status": "idle",
+              "language": "zh-CN",
+              "text": "",
+              "annotations": [],
+              "error": "",
+              "version": 0
+            }
+          },
+          {
+            "id": "2070366103646380443",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2070366103646380443",
+            "author": {
+              "name": "电鱼哥专注SpaceX",
+              "handle": "iiiinvest",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2070418253353250816/A7ob_mkY_normal.jpg",
+              "isVerified": false
+            },
+            "content": "旗帜鲜明，为什么做空1200的美光？\n\n1、资金面到顶了，昨天美光单日成交额1000亿美金，要知道SpaceX上市才800亿，也就是所有投机资金该买的都买了，从哪里找很多资金去承接这1000亿？\n\n2、情绪面到顶了，昨天财报发布，不是利好而是超超超利好，随着股价拉升都是牛逼之声，加之当前存储之热，情绪面没有敢看空的。\n\n3、预期拉满了，售价订单财报解读都是透支未来几年，股价从来不是交易现在，而是交易的未来，任何风吹草动都是瀑布。\n\n短期强烈看空，知行合一，夜盘先上第一枪，开盘继续加仓空！",
+            "createdAt": "Fri Jun 26 04:38:39 +0000 2026",
+            "viewCount": 138125,
+            "metrics": {
+              "views": 138125,
+              "likes": 167,
+              "retweets": 10,
+              "replies": 57,
+              "quotes": 2,
+              "bookmarks": 55
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HLtq_rKbUAACKgx.jpg"
+            ],
+            "translation": {
+              "provider": "none",
+              "status": "idle",
+              "language": "zh-CN",
+              "text": "",
+              "annotations": [],
+              "error": "",
+              "version": 0
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2082670854530555946",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-30T06:28:54.848Z"
+        },
+        "createdAt": "2026-07-30T06:28:54.848Z",
+        "updatedAt": "2026-07-30T06:28:54.849Z"
+      }
+    }
+  ]
+}
