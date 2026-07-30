@@ -17,12 +17,16 @@
  *   --topics <list>     Comma-separated focus topics (default: AI,tech,finance,中文科技圈).
  *   --out <path>        Output file (default: scripts/daily-input.<date>.json).
  *   --grok <path>       Path to grok binary (default: ~/.grok/bin/grok or PATH).
+ *   --timeout <sec>     Hard cap on the Grok call (default: 180).
  *   --print             Print Grok's raw structured output and exit (no file write).
  */
-import { execFileSync } from "node:child_process";
+import { execFile } from "node:child_process";
+import type { ChildProcess } from "node:child_process";
 import fs from "node:fs";
 import os from "node:os";
 import path from "node:path";
+
+const DEFAULT_TIMEOUT_MS = 180_000;
 
 type GrokItem = { url?: string; reason?: string; reasonEn?: string; topic?: string };
 
@@ -132,37 +136,71 @@ function extractItems(stdout: string): GrokItem[] {
   return [];
 }
 
-function main() {
+function killTree(child: ChildProcess): void {
+  const pid = child.pid;
+  if (pid === undefined) return;
+  try {
+    // Negative pid targets the whole process group (requires `detached`).
+    process.kill(-pid, "SIGKILL");
+  } catch {
+    child.kill("SIGKILL");
+  }
+}
+
+/**
+ * Run Grok with a hard wall-clock cap.
+ *
+ * The `timeout` option of the *Sync helpers is not enough here: Grok spawns
+ * children that inherit our stdio pipes, so the parent keeps waiting on those
+ * pipes long after the deadline (one run stalled ~2h and burned the whole
+ * daily-auto window). Detaching puts Grok in its own process group so we can
+ * SIGKILL the entire tree and let the pipes close.
+ */
+function runGrok(bin: string, args: string[], timeoutMs: number): Promise<string> {
+  return new Promise((resolve, reject) => {
+    let timedOut = false;
+    const child = execFile(
+      bin,
+      args,
+      { encoding: "utf8", maxBuffer: 32 * 1024 * 1024, detached: true },
+      (error, stdout) => {
+        clearTimeout(timer);
+        // Grok may exit non-zero yet still have printed usable output.
+        if (stdout) return resolve(stdout);
+        if (timedOut) return reject(new Error(`no output within ${Math.round(timeoutMs / 1000)}s`));
+        return reject(error ?? new Error("no output"));
+      },
+    );
+    const timer = setTimeout(() => {
+      timedOut = true;
+      killTree(child);
+    }, timeoutMs);
+  });
+}
+
+async function main() {
   const args = parseArgs(process.argv.slice(2));
   const date = (typeof args.date === "string" && args.date) || todayLocalIso();
   const count = typeof args.count === "string" ? Math.max(1, Number.parseInt(args.count, 10) || 12) : 12;
   const topics = typeof args.topics === "string" ? args.topics : "AI, tech, finance/crypto, 中文科技圈";
   const grokBin = resolveGrokBin(typeof args.grok === "string" ? args.grok : undefined);
+  const timeoutMs =
+    typeof args.timeout === "string"
+      ? Math.max(1, Number.parseInt(args.timeout, 10) || DEFAULT_TIMEOUT_MS / 1000) * 1000
+      : DEFAULT_TIMEOUT_MS;
 
   console.log(`Asking Grok for ${count} quote-chain candidates around ${date} (topics: ${topics})...`);
 
   let stdout = "";
   try {
-    stdout = execFileSync(
+    stdout = await runGrok(
       grokBin,
-      [
-        "-p",
-        buildPrompt(count, topics, date),
-        "--output-format",
-        "json",
-        "--permission-mode",
-        "dontAsk",
-      ],
-      { encoding: "utf8", maxBuffer: 32 * 1024 * 1024, timeout: 300_000 },
+      ["-p", buildPrompt(count, topics, date), "--output-format", "json", "--permission-mode", "dontAsk"],
+      timeoutMs,
     );
   } catch (error) {
-    const err = error as { stdout?: string; message?: string };
-    // Grok may exit non-zero yet still have printed usable output.
-    stdout = err.stdout ?? "";
-    if (!stdout) {
-      console.error(`Grok invocation failed: ${err.message ?? String(error)}`);
-      process.exit(1);
-    }
+    console.error(`Grok invocation failed: ${(error as Error).message}`);
+    process.exit(1);
   }
 
   if (args.print) {
@@ -206,4 +244,7 @@ function main() {
   console.log("Review it, then run: npm run daily:generate -w @tweetquote/api -- --input " + path.relative(process.cwd(), outPath));
 }
 
-main();
+main().catch((error) => {
+  console.error(error);
+  process.exit(1);
+});
