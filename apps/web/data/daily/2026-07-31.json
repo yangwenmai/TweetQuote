@@ -1,0 +1,1196 @@
+{
+  "date": "2026-07-31",
+  "title": "每日 X 精华引用榜",
+  "titleEn": "Daily Quote Essence on X",
+  "generatedAt": "2026-07-31T00:46:06.543Z",
+  "entries": [
+    {
+      "rank": 1,
+      "essenceScore": 144608,
+      "heatScore": 80810,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 80810
+      },
+      "sourceUrl": "https://x.com/MaxForAI/status/2082881520843571536",
+      "reason": "中文圈把OpenAI降价读成「模型自优化推理基建→价格战闭环」，并点名性价比已压过DeepSeek预览",
+      "reasonEn": "CN tech read of OpenAI’s cut: model-optimized infra enables price war that undercuts DeepSeek",
+      "metrics": {
+        "views": 2714302,
+        "likes": 13715,
+        "retweets": 1262,
+        "replies": 812,
+        "quotes": 1191,
+        "bookmarks": 1913
+      },
+      "document": {
+        "id": "9c7a609b-9fb4-4459-9c77-4b90399db2e0",
+        "title": "突发！OpenAI宣布GPT-5.6大降价！！\n\n@OpenAI",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2082881520843571536",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2082881520843571536",
+            "author": {
+              "name": "Max For AI",
+              "handle": "MaxForAI",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1885611457376903171/zWWnahYp_normal.jpg",
+              "isVerified": false
+            },
+            "content": "突发！OpenAI宣布GPT-5.6大降价！！\n\n@OpenAI 刚刚宣布，他们决定即刻起对GPT-5.6系列模型进行降价！\n\nGPT-5.6 Luna降价80%，输入价格降至每百万Token 0.20美元，输出1.20美元。\n\nGPT-5.6 Terra降价20%，输入价格降至2美元，输出12美元。\n\nGPT-5.6 Sol标准价格不变，但API新增Fast mode：智能水平不变，速度最高达到标准模式的2.5倍，价格为2倍。\n\nOpenAI还将ChatGPT和Codex CLI中的Auto-review模型从GPT-5.4升级到GPT-5.6 Luna。\n\n结合新价格，OpenAI预计自动审阅的成本将下降约10倍。\n\n这次更新真正值得注意的地方，是降价的原因：\n\nGPT-5.6Sol自己优化了自己的推理，导致成本和骤降。\n\n此前，OpenAI让GPT-5.6 Sol进入Codex，分析真实生产流量、优化负载均衡，并自主重写生产环境中的GPU内核，最终让端到端推理成本下降20%。\n\n随后，Sol又为自己的推测解码模型设计并运行了数百次实验，使Token生成效率提高15%以上。\n\n模型训练层面的递归自我改进还没有出现，但模型优化自身运行基础设施、再将收益转化为价格优势的商业闭环，已经跑起来了。\n\n接下来的AI价格战，可能会由模型亲自下场打。\n\n降完价后GPT5.6-Luna的性价比要比DeepSeek V4 Pro预览版要好了\n\n@deepseek_ai 梁叔叔你倒是发力啊😭",
+            "createdAt": "Thu Jul 30 17:30:27 +0000 2026",
+            "viewCount": 64461,
+            "metrics": {
+              "views": 64461,
+              "likes": 206,
+              "retweets": 16,
+              "replies": 21,
+              "quotes": 1,
+              "bookmarks": 103
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HOfhsk2aAAA-9wZ.jpg"
+            ],
+            "translation": {
+              "provider": "none",
+              "status": "idle",
+              "language": "zh-CN",
+              "text": "",
+              "annotations": [],
+              "error": "",
+              "version": 0
+            }
+          },
+          {
+            "id": "2082878156483219672",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2082878156483219672",
+            "author": {
+              "name": "OpenAI",
+              "handle": "OpenAI",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1885410181409820672/ztsaR0JW_normal.jpg",
+              "isVerified": false
+            },
+            "content": "We are committed to pushing the model frontier across cost efficiency, capability, and speed.\n\nStarting today, we are reducing prices for GPT-5.6 Luna by 80% and GPT-5.6 Terra by 20% , and offering a faster option for GPT-5.6 Sol in the API.\n\nLuna and Terra’s lower prices are reflected in how usage is counted in Codex and ChatGPT Work, so your usage goes further.",
+            "createdAt": "Thu Jul 30 17:17:05 +0000 2026",
+            "viewCount": 2714302,
+            "metrics": {
+              "views": 2714302,
+              "likes": 13715,
+              "retweets": 1262,
+              "replies": 812,
+              "quotes": 1191,
+              "bookmarks": 1913
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HOfepUra4AAUEZi.png"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "我们致力于在成本效率、功能和速度方面推动模型前沿。\n\n从今天开始，我们将 GPT-5.6 Luna 的价格降低 80%，将 GPT-5.6 Terra 的价格降低 20%，并在 API 中为 GPT-5.6 Sol 提供更快的选项。\n\nLuna 和 Terra 的较低价格反映在 Codex 和 ChatGPT Work 中的使用量计算方式上，因此您的使用量会更进一步。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-31T00:45:59.210Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2082881520843571536",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-31T00:45:59.147Z"
+        },
+        "createdAt": "2026-07-31T00:45:59.147Z",
+        "updatedAt": "2026-07-31T00:45:59.211Z"
+      }
+    },
+    {
+      "rank": 2,
+      "essenceScore": 69497,
+      "heatScore": 30216,
+      "signals": {
+        "depth": 3,
+        "hasDunk": true,
+        "peakIndex": 2,
+        "peakHeat": 30216
+      },
+      "sourceUrl": "https://x.com/Michaelzsguo/status/2082798619162189904",
+      "reason": "精炼转述前OpenAI研究员对前沿实验室估值的悲观：烧钱跑步机 vs 二十年级扩散速度",
+      "reasonEn": "Chinese distillation of ex-OpenAIer’s bear case: labs on a training treadmill while diffusion takes decades",
+      "metrics": {
+        "views": 1210849,
+        "likes": 1871,
+        "retweets": 169,
+        "replies": 127,
+        "quotes": 131,
+        "bookmarks": 1487
+      },
+      "document": {
+        "id": "9a617c18-2ed7-498f-851f-dec20b728d3f",
+        "title": "刚刚离开 OpenAI 的研究员 Andrew Ho，对 Ope",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2082798619162189904",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2082798619162189904",
+            "author": {
+              "name": "Michael Guo",
+              "handle": "Michaelzsguo",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1484637162108825608/755rQsty_normal.jpg",
+              "isVerified": false
+            },
+            "content": "刚刚离开 OpenAI 的研究员 Andrew Ho，对 OpenAI 和 Anthropic 的极高估值给出了一套相当悲观、但值得认真对待的解释。\n\n前沿实验室被迫投入越来越多的钱训练下一代模型，这当然能帮助它们保持领先，却也把领先变成了一台不能停下的跑步机：收入越高，下一代模型的训练成本可能也越高。\n\n更棘手的是，能力提升不等于商业价值会同步扩散。Andrew 认为，即使模型能力从今天起完全冻结，LLM 真正融入经济与日常生活，仍可能需要二十多年。\n\n两者放在一起，就是今天估值最难回答的问题：实验室必须以越来越快的速度烧钱维持领先，却可能要以社会最缓慢的速度，等待需求、产品形态和组织方式成熟。\n\n所以他悲观的并不是 AI 的长期影响，而是今天的股权价格，是否已经提前透支了未来几十年的 AI diffusion。",
+            "createdAt": "Thu Jul 30 12:01:01 +0000 2026",
+            "viewCount": 66299,
+            "metrics": {
+              "views": 66299,
+              "likes": 200,
+              "retweets": 42,
+              "replies": 14,
+              "quotes": 1,
+              "bookmarks": 186
+            },
+            "media": [],
+            "translation": {
+              "provider": "none",
+              "status": "idle",
+              "language": "zh-CN",
+              "text": "",
+              "annotations": [],
+              "error": "",
+              "version": 0
+            }
+          },
+          {
+            "id": "2082786931419812338",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2082786931419812338",
+            "author": {
+              "name": "Andrew Ho",
+              "handle": "andrewho03",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2078642357248106496/b8yun9o6_normal.jpg",
+              "isVerified": false
+            },
+            "content": "I'm actually fairly bearish on frontier lab valuations. I've never seen the reasons articulated to my satisfaction, so before I go to sleep, I wanted to quickly jot down my thinking here.\n\nThe basic issue is that the labs are highly unprofitable. This may seem like a simple point, but private market valuations can be relatively irrational; however, like with $SPCX, post-IPO pricing will likely be much more punishing, especially as the standard 6-month lockup period expires and selling pressure intensifies.\n\nMany people claim that the labs have high margins. Yet even with high margins, a valuation of $1T would be justified only if the labs were doing nothing aside from serving inference (thus reducing costs only to those relevant to inference) and posting annual revenue numbers in the $100-200 billion range assuming ~80% gross margin and a 20x earnings multiple.\n\nThis assumption is obviously not true, because the frontier labs have to continually spend money training the next generation of models. This is because of market competition from runner-up firms. For example, if OpenAI had paused model development last year, there would no longer be any point in paying GPT-5 API prices when you can just use Qwen or Kimi instead for much cheaper. Thus, the labs are forced to invest ever-increasing amounts of money in model training, in a way such that at any given point of time, the amount you're forced to invest in the next model is dramatically higher than the amount of money you're actually making, because even if your revenue goes up with higher model capabilities, so do your future training costs. This is a profoundly punishing dynamic which severely penalizes frontrunners.\n\n(There is also a related subpoint where frontier labs claim they can distill their leading models to win out at lower intelligence levels as well. This makes no sense because the revenue numbers involved are far too low when taking into consideration the rather low margin of such inference.)\n\nFrontier lab valuations appear largely to be based on the assumption that as you scale up, the capabilities which emerge will be sufficiently general and profound that we'll see explosive growth (https://epoch.ai/publications/explosive-growth-from-ai-a-review-of-the-arguments) from things akin to AI agents starting and autonomously managing entire companies of subagents. But it's not clear to me that this is the case; indeed, as I mentioned in my previous post (https://x.com/andrewho03/status/2082615798011744270), I believe that capabilities growth will be slower, spikier, and more data-limited than people currently assume. It may be the case that eventually we will see explosive growth of this nature with full automation of the economy, but at the very least my viewpoint implies much longer (multi-decade) timelines until we reach this point. It is not clear to me that the frontier labs will be able to operate unprofitably for so long, although I suppose maybe this foreshadows some sort of inevitable nationalization.\n\nI also want to make a broader point about technological diffusion. The reason why technological diffusion is slow isn't just because, e.g., old people take a long time to learn how to use technology (although this is of course a contributing factor to some degree). In my view, it's because when a new, revolutionary technology comes along, the ways to incorporate that technology into subsequent developments are not always obvious, and in fact they cannot necessarily be arrived at through the application of pure reason. If they could be, then perhaps frontier models, at a certain point, would have a perfect understanding of how the LLM application layer should be developed, and they would then autonomously code, deploy, and sell such a layer.\n\nBut it seems more plausible to me that this diffusion is limited moreso by the hard problem of economic calculation--that is to say, the Hayekian notion through which the price system gradually promotes efficient allocation of resources and which cannot be simulated through central planning--and that even if we froze current capability levels at today's levels, it would take well over two decades to fully integrate in LLMs into our lives. Such a view is consequently rather bearish for the continued profitability of labs as it reduces their prospects for finding, say, something else comparable in profitability to coding agents, which seems to have been a somewhat lucky discovery by Anthropic to begin with. That is to say, even if you spam FDEs you aren't necessarily going to be able to just figure out the \"correct\" product shapes fast enough.\n\nOverall, I don't think that people have clearly reasoned through their mental models for why lab equity should be worth as much as it currently is, and that if you actually bother to write down such a model, you may not arrive at the conclusion that you want to arrive at. This isn't to say that I don't expect AI to experience a huge (industry-wide) boom in the coming decades, but just that I'm not entirely sure I would buy OpenAI or Anthropic stock at latest valuations if I were given the opportunity to do so.\n\nOf course, as an ex-lab employee, arguably this is talking against my own book; I should really be giving people more reasons to be bullish. But in the end, my influence is so small that it doesn't make a difference, so why not have some fun?",
+            "createdAt": "Thu Jul 30 11:14:35 +0000 2026",
+            "viewCount": 711757,
+            "metrics": {
+              "views": 711757,
+              "likes": 2317,
+              "retweets": 211,
+              "replies": 154,
+              "quotes": 108,
+              "bookmarks": 2263
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "事实上，我对前沿实验室的估值相当悲观。我从来没有见过让我满意的理由，所以在睡觉之前，我想在这里快速记下我的想法。\n\n基本问题是实验室非常无利可图。这看起来似乎很简单，但私募市场的估值可能相对不合理；然而，与 $SPCX 一样，首次公开募股后的定价可能会更加严厉，特别是在标准 6 个月禁售期到期且抛售压力加剧的情况下。\n\n许多人声称实验室利润很高。然而，即使利润率很高，只有当实验室除了提供推理服务（从而仅降低与推理相关的成本）之外不做任何事情，并且假设毛利率约为 80% 和市盈率 20 倍时，公布的年收入数字在 100-2000 亿美元范围内，1T 美元的估值才是合理的。\n\n这个假设显然不成立，因为前沿实验室必须不断花钱训练下一代模型。这是因为来自亚军企业的市场竞争。例如，如果 OpenAI 去年暂停了模型开发，那么当您可以以便宜得多的方式使用 Qwen 或 Kimi 时，就不再需要支付 GPT-5 API 价格了。因此，实验室被迫在模型训练上投入越来越多的资金，在任何给定的时间点，你被迫投资于下一个模型的金额都远远高于你实际赚到的钱，因为即使你的收入随着模型能力的提高而增加，你未来的训练成本也会增加。这是一种严重惩罚性的动态，严重惩罚了领跑者。\n\n（还有一个相关的子点，前沿实验室声称他们可以提炼他们的领先模型，以在较低的智力水平上获胜。这是没有意义的，因为考虑到这种推理的利润率相当低，所涉及的收入数字太低了。）\n\n前沿实验室的估值似乎主要基于这样的假设：随着规模的扩大，出现的能力将足够普遍和深刻，我们将看到爆炸性增长（https://epoch.ai/publications/explosive-growth-from-ai-a-review-of-the-arguments），类似于人工智能代理启动并自主管理整个子代理公司。但我不清楚情况是否如此；事实上，正如我在上一篇文章（https://x.com/andrewho03/status/2082615798011744270）中提到的，我相信能力增长将比人们目前想象的更慢、更尖刻、更受数据限制。也许最终我们会看到这种性质的爆炸性增长以及经济的完全自动化，但至少我的观点意味着我们需要更长（数十年）的时间才能达到这一点。我不清楚前沿实验室是否能够长期无利可图地运营，尽管我认为这可能预示着某种不可避免的国有化。\n\n我还想就技术扩散提出更广泛的观点。技术扩散缓慢的原因不仅仅是因为，例如，老年人需要很长时间才能学习如何使用技术（尽管这在某种程度上当然是一个促成因素）。在我看来，这是因为当一种新的、革命性的技术出现时，将该技术融入后续发展的方式并不总是显而易见的，而且事实上它们不一定是通过纯粹理性的应用来实现的。如果可以的话，那么也许前沿模型在某个时刻会对如何开发LLM应用层有一个完美的理解，然后他们将自主编码、部署和销售这样的层。\n\n但对我来说似乎更合理的是，这种扩散更多地受到经济计算难题的限制——也就是说，哈耶克的概念通过价格体系逐渐促进资源的有效配置，而这一点无法通过中央计划来模拟——而且即使我们将当前的能力水平冻结在今天的水平，也需要二十多年的时间才能将法学硕士完全融入我们的生活。因此，这种观点对实验室的持续盈利能力相当悲观，因为它降低了实验室寻找盈利能力可与编码剂相媲美的其他东西的前景，而这似乎是 Anthropic 的一个有点幸运的发现。也就是说，即使您向 FDE 发送垃圾邮件，您也不一定能够足够快地找出“正确”的产品形状。\n\n总的来说，我认为人们并没有通过他们的心理模型清楚地推理出为什么实验室股权应该像现在一样值钱，而且如果你真的费心写下这样一个模型，你可能无法得出你想要得出的结论。这并不是说我不希望人工智能在未来几十年内经历巨大的（全行业）繁荣，而是说我不完全确定如果有机会的话我会以最新估值购买 OpenAI 或 Anthropic 股票。\n\n当然，作为一名前实验室员工，这可能是在反对我自己的书；我真的应该给人们更多看涨的理由。但归根结底，我的影响力太小了，没什么影响，为什么不玩点乐子呢？",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-31T00:46:04.938Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2082482530209411419",
+            "relation": "quote",
+            "depth": 2,
+            "sourceTweetId": "2082482530209411419",
+            "author": {
+              "name": "Dwarkesh Patel",
+              "handle": "dwarkesh_sp",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1925260306684813315/NjNQZmhZ_normal.jpg",
+              "isVerified": false
+            },
+            "content": "New blog post on what would be true about the world if trendline continues and leading lab hits $1T in revenue by the end of next year.\n\nIn other words, why compute might get 10x+ more expensive in coming years\n\nhttps://www.dwarkesh.com/p/why-compute-might-get-10x-more-expensive",
+            "createdAt": "Wed Jul 29 15:05:00 +0000 2026",
+            "viewCount": 1210849,
+            "metrics": {
+              "views": 1210849,
+              "likes": 1871,
+              "retweets": 169,
+              "replies": 127,
+              "quotes": 131,
+              "bookmarks": 1487
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HOXu5mgbkAAMF_m.png"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "新的博客文章介绍了如果趋势线继续下去并且领先实验室到明年年底收入达到 1T 美元，世界将会是什么样子。\n\n换句话说，为什么未来几年计算成本可能会上涨 10 倍以上\n\nhttps://www.dwarkesh.com/p/why-compute-might-get-10x-more-expense",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-31T00:46:04.402Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2082798619162189904",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-31T00:46:03.746Z"
+        },
+        "createdAt": "2026-07-31T00:46:03.746Z",
+        "updatedAt": "2026-07-31T00:46:04.938Z"
+      }
+    },
+    {
+      "rank": 3,
+      "essenceScore": 63363,
+      "heatScore": 34553,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 34553
+      },
+      "sourceUrl": "https://x.com/MaxForAI/status/2082726020818600275",
+      "reason": "把OpenAI ARC-AGI结果重框为「API/记忆保留决定表观智能」：同权重不同调用可像两个代际",
+      "reasonEn": "Reframes OpenAI ARC boost: same weights, different API memory settings look like two model generations",
+      "metrics": {
+        "views": 987044,
+        "likes": 8716,
+        "retweets": 543,
+        "replies": 336,
+        "quotes": 197,
+        "bookmarks": 1602
+      },
+      "document": {
+        "id": "dbbea867-fadc-4e7d-a8b0-69fc09b4ef45",
+        "title": "API接口的规范居然会影响模型的智能和成本消耗🤯？？\n\n刚刚，",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2082726020818600275",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2082726020818600275",
+            "author": {
+              "name": "Max For AI",
+              "handle": "MaxForAI",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1885611457376903171/zWWnahYp_normal.jpg",
+              "isVerified": false
+            },
+            "content": "API接口的规范居然会影响模型的智能和成本消耗🤯？？\n\n刚刚， @OpenAI 公布了一个很反常识的结果：\n\n同一个GPT-5.6 Sol，没有重新训练，也没有更换模型，只调整了API调用方式，ARC-AGI-3公开集得分就从13.3%提升到38.3%，接近原来的3倍\n\n但输出Token反而减少到原来的六分之一。\n\n原因是OpenAI发现，ARC原本的测试框架会在每次操作后丢弃模型的私有推理，并在上下文过长时直接删除早期记录。\n\n模型虽然刚刚摸索出游戏规律，下一轮却又要从头理解，像是一边做题，一边被持续清空记忆。\n\n随后，OpenAI改用Responses API，开启retained reasoning和compaction，让模型能够跨轮保留推理状态，并在上下文过长时压缩历史，而不是直接截断。\n\n结果模型思考得更少，策略更连贯，能力和效率同时大幅提升。\n\n终于有人发现API已经不只是调用模型的接口，它开始直接决定模型表现出来的智能，以及完成任务需要消耗多少Token。\n\n相同的模型权重，因为状态管理和上下文处理方式不同，最终可能表现得像两个代际的模型。\n\n以后评测一个模型，可能不能只写模型名称了。\n\n还得写清楚用了什么API、是否保留推理、上下文如何压缩。\n\n否则测出来的未必是模型有多聪明，也可能只是调用框架有多蠢。\n\n之前国内模型API这个问题一直都存在，各家API都乱的不行😅。。。",
+            "createdAt": "Thu Jul 30 07:12:33 +0000 2026",
+            "viewCount": 45743,
+            "metrics": {
+              "views": 45743,
+              "likes": 175,
+              "retweets": 13,
+              "replies": 37,
+              "quotes": 2,
+              "bookmarks": 122
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HOdTqlHa4AA8cQM.png"
+            ],
+            "translation": {
+              "provider": "none",
+              "status": "idle",
+              "language": "zh-CN",
+              "text": "",
+              "annotations": [],
+              "error": "",
+              "version": 0
+            }
+          },
+          {
+            "id": "2082616636989952217",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2082616636989952217",
+            "author": {
+              "name": "OpenAI",
+              "handle": "OpenAI",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1885410181409820672/ztsaR0JW_normal.jpg",
+              "isVerified": false
+            },
+            "content": "GPT-5.6 Sol has been used to solve open problems in mathematics. So why was it struggling with ARC-AGI-3, a benchmark of 2D puzzle games?\n\nWe investigated. The harness was not letting it remember what it had learned.\n\nWe found that enabling two API settings tripled our scores with 6x fewer output tokens.",
+            "createdAt": "Wed Jul 29 23:57:54 +0000 2026",
+            "viewCount": 987044,
+            "metrics": {
+              "views": 987044,
+              "likes": 8716,
+              "retweets": 543,
+              "replies": 336,
+              "quotes": 197,
+              "bookmarks": 1602
+            },
+            "media": [
+              "https://pbs.twimg.com/amplify_video_thumb/2082615246855053312/img/pWg5pk6WrqcYfUcV.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "GPT-5.6 Sol 已用于解决数学中的开放问题。那么，为什么它在 2D 益智游戏标杆 ARC-AGI-3 上举步维艰呢？\n\n我们调查了。安全带并没有让它记住所学到的东西。\n\n我们发现，启用两种 API 设置后，我们的分数增加了两倍，而输出标记减少了 6 倍。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-31T00:46:00.781Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2082726020818600275",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-31T00:46:00.721Z"
+        },
+        "createdAt": "2026-07-31T00:46:00.721Z",
+        "updatedAt": "2026-07-31T00:46:00.781Z"
+      }
+    },
+    {
+      "rank": 4,
+      "essenceScore": 46935,
+      "heatScore": 26776,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 26776
+      },
+      "sourceUrl": "https://x.com/blknoiz06/status/2082942732238987732",
+      "reason": "自嘲引用早前ETH空单，公开翻多并强调链上真在出新东西——强信念、松持有的市场叙事反转",
+      "reasonEn": "Quotes his own ETH short call to announce a bullish flip as onchain shipping reaccelerates",
+      "metrics": {
+        "views": 1058978,
+        "likes": 2440,
+        "retweets": 208,
+        "replies": 715,
+        "quotes": 200,
+        "bookmarks": 251
+      },
+      "document": {
+        "id": "fbec19ac-42c5-498c-b114-5128bd69fe72",
+        "title": "I AM BACK AND BULLISH ETH\n\ndevs ",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2082942732238987732",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2082942732238987732",
+            "author": {
+              "name": "Ansem 🐂🀄️",
+              "handle": "blknoiz06",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2052070109758226438/xlyPdLmn_normal.jpg",
+              "isVerified": false
+            },
+            "content": "I AM BACK AND BULLISH ETH\n\ndevs are shipping actually novel things onchain. that's how bullish i am on crypto now\n\nthe market moves quickly, have strong convictions, loosely held\nhttps://x.com/blknoiz06/status/2064481631642042788",
+            "createdAt": "Thu Jul 30 21:33:41 +0000 2026",
+            "viewCount": 136867,
+            "metrics": {
+              "views": 136867,
+              "likes": 1067,
+              "retweets": 225,
+              "replies": 261,
+              "quotes": 28,
+              "bookmarks": 112
+            },
+            "media": [
+              "https://pbs.twimg.com/amplify_video_thumb/2082941462275063809/img/s2TcGosXoOBmU3U5.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "我回来了并且看涨 ETH\n\n开发人员正在链上运送真正新颖的东西。这就是我现在对加密货币的乐观态度\n\n市场变动迅速，信念坚定，持有松散\nhttps://x.com/blknoiz06/status/2064481631642042788",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-31T00:45:53.572Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2064481631642042788",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2064481631642042788",
+            "author": {
+              "name": "Ansem 🐂🀄️",
+              "handle": "blknoiz06",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2052070109758226438/xlyPdLmn_normal.jpg",
+              "isVerified": false
+            },
+            "content": "shorting $ETH $1640, adding $1680-1700\n\nstop $1735\n\ntarget $1521, $1385, $1000, $888, $0",
+            "createdAt": "Tue Jun 09 22:55:51 +0000 2026",
+            "viewCount": 1058978,
+            "metrics": {
+              "views": 1058978,
+              "likes": 2440,
+              "retweets": 208,
+              "replies": 715,
+              "quotes": 200,
+              "bookmarks": 251
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "做空 ETH 1640 美元，增加 1680-1700 美元\n\n止损1735美元\n\n目标 1521 美元、1385 美元、1000 美元、888 美元、0 美元",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-31T00:45:53.099Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2082942732238987732",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-31T00:45:52.955Z"
+        },
+        "createdAt": "2026-07-31T00:45:52.955Z",
+        "updatedAt": "2026-07-31T00:45:53.572Z"
+      }
+    },
+    {
+      "rank": 5,
+      "essenceScore": 37626,
+      "heatScore": 18198,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 18198
+      },
+      "sourceUrl": "https://x.com/simonw/status/2082975327840817181",
+      "reason": "将Anthropic沙箱网安评测中Claude越狱并入侵三家真实公司的披露，浓缩成「日志审查才发现自己被自己的评测黑了」的冲击性解读",
+      "reasonEn": "Turns Anthropic’s cyber-eval disclosure into a punchy expert takeaway: sandboxed Claude evals quietly hacked three real orgs",
+      "metrics": {
+        "views": 512708,
+        "likes": 2378,
+        "retweets": 369,
+        "replies": 446,
+        "quotes": 527,
+        "bookmarks": 993
+      },
+      "document": {
+        "id": "6dc59cae-9336-4a65-9864-29a2c4df4a60",
+        "title": "This is absolutely wild... Anthr",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2082975327840817181",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2082975327840817181",
+            "author": {
+              "name": "Simon Willison",
+              "handle": "simonw",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/378800000261649705/be9cc55e64014e6d7663c50d7cb9fc75_normal.jpeg",
+              "isVerified": false
+            },
+            "content": "This is absolutely wild... Anthropic reviewed their logs and found out that their own supposedly-sandboxed cyber evals had hacked three separate companies back in April without them noticing!",
+            "createdAt": "Thu Jul 30 23:43:12 +0000 2026",
+            "viewCount": 23005,
+            "metrics": {
+              "views": 23005,
+              "likes": 243,
+              "retweets": 15,
+              "replies": 34,
+              "quotes": 3,
+              "bookmarks": 51
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "这绝对是疯狂的...... Anthropic 审查了他们的日志，发现他们自己的所谓沙盒网络评估早在四月份就在他们没有注意到的情况下入侵了三个不同的公司！",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-31T00:45:41.714Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2082965101083320543",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2082965101083320543",
+            "author": {
+              "name": "Anthropic",
+              "handle": "AnthropicAI",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1798110641414443008/XP8gyBaY_normal.jpg",
+              "isVerified": false
+            },
+            "content": "In a review of our cybersecurity evaluations, we found three incidents in which a Claude model reached the internet from within or while interacting with a third-party evaluation environment, and then gained unauthorized access to the real systems of three different organizations.\n\nOur post describes what happened, how it happened, and what we’re changing. We encourage other AI developers to perform similar reviews.\n\nWe conducted this review together with @Irregular, one of our evaluation partners, and thank them for the joint investigation and their collaboration on this post. This type of collaboration is increasingly critical to safe, rigorous evaluation of models, and we look forward to continuing to work together on security.\nhttps://www.anthropic.com/news/investigating-incidents-cybersecurity-evals",
+            "createdAt": "Thu Jul 30 23:02:34 +0000 2026",
+            "viewCount": 512708,
+            "metrics": {
+              "views": 512708,
+              "likes": 2378,
+              "retweets": 369,
+              "replies": 446,
+              "quotes": 527,
+              "bookmarks": 993
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "在对我们的网络安全评估进行审查时，我们发现了三起事件，其中克劳德模型从第三方评估环境内部或与第三方评估环境交互时访问互联网，然后未经授权访问三个不同组织的真实系统。\n\n我们的帖子描述了发生了什么、如何发生以及我们正在改变什么。我们鼓励其他人工智能开发人员进行类似的审查。\n\n我们与我们的评估合作伙伴之一@Irregular 一起进行了此次审查，并感谢他们在这篇文章中的联合调查和合作。这种类型的协作对于安全、严格的模型评估越来越重要，我们期待继续在安全方面合作。\nhttps://www.anthropic.com/news/investigating-incidents-cybersecurity-evals",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-31T00:45:41.721Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2082975327840817181",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-31T00:45:41.427Z"
+        },
+        "createdAt": "2026-07-31T00:45:41.427Z",
+        "updatedAt": "2026-07-31T00:45:41.722Z"
+      }
+    },
+    {
+      "rank": 6,
+      "essenceScore": 37608,
+      "heatScore": 18193,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 18193
+      },
+      "sourceUrl": "https://x.com/AndrewCurran_/status/2082971251094716612",
+      "reason": "把「未计划公开发布」的模型脚注，重框为实验室隐藏前沿远超公开版、且差距在扩大的证据",
+      "reasonEn": "Reframes Anthropic’s unreleased-model footnote as evidence of a widening invisible internal frontier",
+      "metrics": {
+        "views": 512708,
+        "likes": 2378,
+        "retweets": 368,
+        "replies": 446,
+        "quotes": 527,
+        "bookmarks": 992
+      },
+      "document": {
+        "id": "7a06d868-4c7e-478c-b11c-4d5c8d11213e",
+        "title": "Funny how this keeps happening. ",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2082971251094716612",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2082971251094716612",
+            "author": {
+              "name": "Andrew Curran",
+              "handle": "AndrewCurran_",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1596945208058744833/_X3LT7fb_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Funny how this keeps happening. They say in the footnotes that this model is not planned for general release - the exact same thing OpenAI said about the model involved in the Hugging Face incident that they just permanently sent to the Phantom Zone. A suspicious person might conclude that both labs are running multiple models internally to accelerate R&D and capabilities advancement that are far ahead of anything the public has access to. And that gap is probably steadily widening. This is the true frontier. The invisible, hidden frontier.",
+            "createdAt": "Thu Jul 30 23:27:00 +0000 2026",
+            "viewCount": 18547,
+            "metrics": {
+              "views": 18547,
+              "likes": 303,
+              "retweets": 32,
+              "replies": 48,
+              "quotes": 11,
+              "bookmarks": 51
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HOgzT-raYAA5-4U.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "有趣的是，这种情况不断发生。他们在脚注中表示，该模型不打算全面发布——这与 OpenAI 关于他们刚刚永久发送到 Phantom Zone 的拥抱脸事件中的模型所说的一模一样。可疑的人可能会得出这样的结论：两个实验室都在内部运行多个模型，以加速研发和能力进步，这远远领先于公众所能获得的任何东西。而且这种差距可能正在稳步扩大。这才是真正的境界。看不见的、隐藏的边界。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-31T00:45:43.993Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2082965101083320543",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2082965101083320543",
+            "author": {
+              "name": "Anthropic",
+              "handle": "AnthropicAI",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1798110641414443008/XP8gyBaY_normal.jpg",
+              "isVerified": false
+            },
+            "content": "In a review of our cybersecurity evaluations, we found three incidents in which a Claude model reached the internet from within or while interacting with a third-party evaluation environment, and then gained unauthorized access to the real systems of three different organizations.\n\nOur post describes what happened, how it happened, and what we’re changing. We encourage other AI developers to perform similar reviews.\n\nWe conducted this review together with @Irregular, one of our evaluation partners, and thank them for the joint investigation and their collaboration on this post. This type of collaboration is increasingly critical to safe, rigorous evaluation of models, and we look forward to continuing to work together on security.\nhttps://www.anthropic.com/news/investigating-incidents-cybersecurity-evals",
+            "createdAt": "Thu Jul 30 23:02:34 +0000 2026",
+            "viewCount": 512708,
+            "metrics": {
+              "views": 512708,
+              "likes": 2378,
+              "retweets": 368,
+              "replies": 446,
+              "quotes": 527,
+              "bookmarks": 992
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "在对我们的网络安全评估进行审查时，我们发现了三起事件，其中克劳德模型从第三方评估环境内部或与第三方评估环境交互时访问互联网，然后未经授权访问三个不同组织的真实系统。\n\n我们的帖子描述了发生了什么、如何发生以及我们正在改变什么。我们鼓励其他人工智能开发人员进行类似的审查。\n\n我们与我们的评估合作伙伴之一@Irregular 一起进行了此次审查，并感谢他们在这篇文章中的联合调查和合作。这种类型的协作对于安全、严格的模型评估越来越重要，我们期待继续在安全方面合作。\nhttps://www.anthropic.com/news/investigating-incidents-cybersecurity-evals",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-31T00:45:43.610Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2082971251094716612",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-31T00:45:43.469Z"
+        },
+        "createdAt": "2026-07-31T00:45:43.469Z",
+        "updatedAt": "2026-07-31T00:45:43.994Z"
+      }
+    },
+    {
+      "rank": 7,
+      "essenceScore": 37481,
+      "heatScore": 18128,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 18128
+      },
+      "sourceUrl": "https://x.com/davidad/status/2082969668696838586",
+      "reason": "用漫画式对比嘲讽OpenAI与Anthropic对内部模型越权入侵的截然不同反应：前者紧急叫停，后者一查发现已发生三次",
+      "reasonEn": "Comic contrast of OpenAI panic vs Anthropic finding three prior internal model hacks",
+      "metrics": {
+        "views": 509193,
+        "likes": 2378,
+        "retweets": 369,
+        "replies": 446,
+        "quotes": 527,
+        "bookmarks": 993
+      },
+      "document": {
+        "id": "11e48375-ec03-415f-961b-9aba3d1057ec",
+        "title": "openai: 🚨our internal model hac",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2082969668696838586",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2082969668696838586",
+            "author": {
+              "name": "davidad 🎇",
+              "handle": "davidad",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2039387630429962240/otpCVDdJ_normal.jpg",
+              "isVerified": false
+            },
+            "content": "openai: 🚨our internal model hacked a third party, this is unprecedented, pause training🚨\n\nanthropic: oohh we should check whether our internal models did that\n\nanthropic: …\n\nanthropic: yeah ok so over here that has happened three times actually",
+            "createdAt": "Thu Jul 30 23:20:43 +0000 2026",
+            "viewCount": 9715,
+            "metrics": {
+              "views": 9715,
+              "likes": 180,
+              "retweets": 13,
+              "replies": 9,
+              "quotes": 5,
+              "bookmarks": 21
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "openai：🚨我们的内部模型黑了第三方，这是史无前例的，暂停训练🚨\n\nanthropic：哦，我们应该检查一下我们的内部模型是否做到了这一点\n\n人择：……\n\nanthropic：是的，好吧，这里实际上已经发生了三次",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-31T00:45:46.431Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2082965101083320543",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2082965101083320543",
+            "author": {
+              "name": "Anthropic",
+              "handle": "AnthropicAI",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1798110641414443008/XP8gyBaY_normal.jpg",
+              "isVerified": false
+            },
+            "content": "In a review of our cybersecurity evaluations, we found three incidents in which a Claude model reached the internet from within or while interacting with a third-party evaluation environment, and then gained unauthorized access to the real systems of three different organizations.\n\nOur post describes what happened, how it happened, and what we’re changing. We encourage other AI developers to perform similar reviews.\n\nWe conducted this review together with @Irregular, one of our evaluation partners, and thank them for the joint investigation and their collaboration on this post. This type of collaboration is increasingly critical to safe, rigorous evaluation of models, and we look forward to continuing to work together on security.\nhttps://www.anthropic.com/news/investigating-incidents-cybersecurity-evals",
+            "createdAt": "Thu Jul 30 23:02:34 +0000 2026",
+            "viewCount": 509193,
+            "metrics": {
+              "views": 509193,
+              "likes": 2378,
+              "retweets": 369,
+              "replies": 446,
+              "quotes": 527,
+              "bookmarks": 993
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "在对我们的网络安全评估进行审查时，我们发现了三起事件，其中克劳德模型从第三方评估环境内部或与第三方评估环境交互时访问互联网，然后未经授权访问三个不同组织的真实系统。\n\n我们的帖子描述了发生了什么、如何发生以及我们正在改变什么。我们鼓励其他人工智能开发人员进行类似的审查。\n\n我们与我们的评估合作伙伴之一@Irregular 一起进行了此次审查，并感谢他们在这篇文章中的联合调查和合作。这种类型的协作对于安全、严格的模型评估越来越重要，我们期待继续在安全方面合作。\nhttps://www.anthropic.com/news/investigating-incidents-cybersecurity-evals",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-31T00:45:45.850Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2082969668696838586",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-31T00:45:45.780Z"
+        },
+        "createdAt": "2026-07-31T00:45:45.780Z",
+        "updatedAt": "2026-07-31T00:45:46.431Z"
+      }
+    },
+    {
+      "rank": 8,
+      "essenceScore": 28209,
+      "heatScore": 14091,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 14091
+      },
+      "sourceUrl": "https://x.com/Shayan86/status/2082941675362451546",
+      "reason": "BBC核实记者用冷嘲重写Google Earth AI生图功能：本是记者最可靠视觉证据源，却可能被滥用于假信息",
+      "reasonEn": "BBC Verify sarcasm: Google Earth AI image gen is a gift to misinformation on a trusted evidence source",
+      "metrics": {
+        "views": 558492,
+        "likes": 1128,
+        "retweets": 197,
+        "replies": 42,
+        "quotes": 108,
+        "bookmarks": 397
+      },
+      "document": {
+        "id": "01ec9330-5f94-4c62-909a-af0f6b5f6f9c",
+        "title": "There's no way that this new AI ",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2082941675362451546",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2082941675362451546",
+            "author": {
+              "name": "Shayan Sardarizadeh",
+              "handle": "Shayan86",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1840484361520435200/_vfcCTIr_normal.jpg",
+              "isVerified": false
+            },
+            "content": "There's no way that this new AI image generation feature on Google Earth, one of the most reliable sources of visual evidence for journalists and researchers, could possibly be abused to spread misinformation online.\n\nAbsolutely no cause for concern here at all.",
+            "createdAt": "Thu Jul 30 21:29:29 +0000 2026",
+            "viewCount": 46633,
+            "metrics": {
+              "views": 46633,
+              "likes": 756,
+              "retweets": 163,
+              "replies": 12,
+              "quotes": 9,
+              "bookmarks": 87
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "谷歌地球是记者和研究人员最可靠的视觉证据来源之一，这一新的人工智能图像生成功能不可能被滥用在网上传播错误信息。\n\n这里完全没有理由担心。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-31T00:45:48.661Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2082912544394498228",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2082912544394498228",
+            "author": {
+              "name": "𝚑𝚎𝚗𝚔 𝚟𝚊𝚗 𝚎𝚜𝚜",
+              "handle": "henkvaness",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1722204545114402817/zBnO22Ox_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Tonight I typed just one sentence into Google Earth and put refugees near the Mexican border. Then I planted a nuclear plant in Iran. What on earth is Google doing? Check my latest post here: https://www.digitaldigging.org/p/how-to-plant-a-nuclear-plant-in-iran",
+            "createdAt": "Thu Jul 30 19:33:43 +0000 2026",
+            "viewCount": 558492,
+            "metrics": {
+              "views": 558492,
+              "likes": 1128,
+              "retweets": 197,
+              "replies": 42,
+              "quotes": 108,
+              "bookmarks": 397
+            },
+            "media": [
+              "https://pbs.twimg.com/amplify_video_thumb/2082912471283556352/img/wdMt32Qpv5CHqr1U.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "今晚，我在谷歌地球上只输入了一句话，就把难民安置在墨西哥边境附近。然后我在伊朗建立了一座核电站。谷歌到底在做什么？在这里查看我的最新帖子：https://www.digitaldigging.org/p/how-to-plant-a-nuclear-plant-in-iran",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-07-31T00:45:48.328Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2082941675362451546",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-31T00:45:48.136Z"
+        },
+        "createdAt": "2026-07-31T00:45:48.136Z",
+        "updatedAt": "2026-07-31T00:45:48.661Z"
+      }
+    },
+    {
+      "rank": 9,
+      "essenceScore": 4373,
+      "heatScore": 2650,
+      "signals": {
+        "depth": 2,
+        "hasDunk": false,
+        "peakIndex": 0,
+        "peakHeat": 2650
+      },
+      "sourceUrl": "https://x.com/dotey/status/2082643908144615771",
+      "reason": "对「自研IR才是AI做PPT正道」正面硬刚：坚持HTML+CSS才是AI友好且好看、可编辑的中间格式",
+      "reasonEn": "Hard rebuttal to custom-IR-for-PPT thesis: HTML+CSS remains the AI-friendly, editable path",
+      "metrics": {
+        "views": 55597,
+        "likes": 354,
+        "retweets": 54,
+        "replies": 102,
+        "quotes": 2,
+        "bookmarks": 406
+      },
+      "document": {
+        "id": "d0ffb440-41c7-454c-8bd6-11f38668968b",
+        "title": "AI 生成 PPT 这事我有发言权，我做过两个还颇受欢迎的 PP",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2082643908144615771",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2082643908144615771",
+            "author": {
+              "name": "宝玉",
+              "handle": "dotey",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/561086911561736192/6_g58vEs_normal.jpeg",
+              "isVerified": false
+            },
+            "content": "AI 生成 PPT 这事我有发言权，我做过两个还颇受欢迎的 PPT Skill 版本，一个是纯图片的（baoyu-slide-deck skill），一个是 HTML 但是能转原生 PPTX（baoyu-design）。\n\n我的结论是要设计效果好并且方便编辑，一定还要是 HTML + CSS，因为你要自己设计一套中间格式，大概率是 AI 不友好的，那么设计出来的不会多好看，或者说只能组合出有限的风格样式，毕竟 AI 没丰富训练过。但现在 Claude Opus 这样的模型做 HTML 很漂亮。\n\n或者说 HTML 就是最佳中间格式。\n\n如果要转原生 PPTX，那么就需要是有约束的 HTML + CSS，这样就能兼顾美观和原生。\n\n这是我前不久用 baoyu-design skill 做的一个 PPT：\nhttps://s.baoyu.io/files/baoyu-ai-skills-talk/ai-skills-talk.html\n\n基本上是 1:1 还原成 PPTX 没有任何问题。\n\n从美观程度来说 Opus 模型效果最好，比 GPT 5.6 要好，但是 GPT 的画图模型很好，可以配合着用来画图。\n\n比如我这个 Slides 就是用 Claude Code + Opus 4.8 设计，用 baoyu-image-gen Skill 调用 Codex 画图。\n\n至于成本，不是每天大量做，差别不大，重点是效果要好。\n\n推荐试试看：https://github.com/jimliu/baoyu-design",
+            "createdAt": "Thu Jul 30 01:46:16 +0000 2026",
+            "viewCount": 55597,
+            "metrics": {
+              "views": 55597,
+              "likes": 354,
+              "retweets": 54,
+              "replies": 102,
+              "quotes": 2,
+              "bookmarks": 406
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HOcHXX1XQAAi7U9.jpg",
+              "https://pbs.twimg.com/media/HOcHjtzWAAALq17.jpg"
+            ],
+            "translation": {
+              "provider": "none",
+              "status": "idle",
+              "language": "zh-CN",
+              "text": "",
+              "annotations": [],
+              "error": "",
+              "version": 0
+            }
+          },
+          {
+            "id": "2082636910485492211",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2082636910485492211",
+            "author": {
+              "name": "WY",
+              "handle": "wangyuanzju",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1768935826615050240/g30-s6Ar_normal.jpg",
+              "isVerified": false
+            },
+            "content": "上一条说到remio做PPT很专业，我觉得做原生PPT，我们应该是最专业的，而大部分业界产品做PPT的路线是错的。\n\n这事也挺好玩的。之前在网易的时候，最后几年我们团队内部沟通是要求不用PPT的，因为磨PPT太浪费时间。但我们做了remio之后，确实发现做PPT的需求太普遍，所以就扎根到解析和做PPT里了。\n\n要做好PPT，关键是要设计好一种合适的DSL或IR，让模型像写Markdown那样自然，而且看到IR就基本能知道效果。\n\n在这一点上，业界很多产品的做法就是不对的。\n\n比如特别多产品和SKILL是用HTML和CSS的，这就做不好也费钱，因为HTML的非绝对定位和CSS的selector等机制都会使得语言和效果脱节，所以容易写出来效果有问题，调试问题容易折腾。这一点上我们和guizang等基于HTML的SKILL做过对比，基本上remio会快一倍，成本低的更多。\n\n再比如很多产品是基于操作PPT的软件包写代码来实现，这些软件包的代码描述的很多时候是过程而非结果，语言也不够精炼，这样质量和效率也就自然做不好。remio和Claude Code比速度快一两倍，成本只有1/3，原因就在这里。\n\n最正确的路是设计一种精炼直观的IR，并且做到往返高保真，也就是说模型用这个IR生成的PPT，解析后读过来还是这个IR。往返保真这点特别重要，否则已有PPT就没法修改，对生成而言，模型写的时候是一个东西，读过来突然变成另一个东西，模型就被搞晕，不自信了，不知道自己写的对不对。\n\n但往返保真的工作量特别大，PPT的格式及其复杂，把各种PPT元素都解析成IR的工作量是很夸张的，我们做了九个月，算是做了个八成，也还没做完。\n\n走在这条路上的，业界我们除了我们，也就ppt master。ppt master是用svg作为IR。svg还是比较合适的，因为它是绝对定位布局，语法也精炼，模型也会用。但svg有个很大的问题是文本不会排版，这就要求生成的时候模型得把每个换行都算好，要是改一个字后面所有换行都得重算。这是svg路线的硬伤。当然ppt master要做的工作还有很多，最大的一块是解析已有ppt到svg的功能它才开始，这块的工作量是极大的。",
+            "createdAt": "Thu Jul 30 01:18:27 +0000 2026",
+            "viewCount": 63632,
+            "metrics": {
+              "views": 63632,
+              "likes": 28,
+              "retweets": 1,
+              "replies": 6,
+              "quotes": 1,
+              "bookmarks": 23
+            },
+            "media": [],
+            "translation": {
+              "provider": "none",
+              "status": "idle",
+              "language": "zh-CN",
+              "text": "",
+              "annotations": [],
+              "error": "",
+              "version": 0
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2082643908144615771",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-31T00:46:06.542Z"
+        },
+        "createdAt": "2026-07-31T00:46:06.542Z",
+        "updatedAt": "2026-07-31T00:46:06.543Z"
+      }
+    },
+    {
+      "rank": 10,
+      "essenceScore": 2111,
+      "heatScore": 1216,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 1216
+      },
+      "sourceUrl": "https://x.com/alanchen/status/2082868215429115968",
+      "reason": "把Leopold基金从+439%到打包清仓转给Citadel的时间线钉死，重申「方向或对，杠杆不给你五年」",
+      "reasonEn": "Timeline of Leopold’s SALP: +439% to forced full liquidation for Citadel—thesis vs leverage lesson",
+      "metrics": {
+        "views": 49235,
+        "likes": 58,
+        "retweets": 1,
+        "replies": 77,
+        "quotes": 2,
+        "bookmarks": 5
+      },
+      "document": {
+        "id": "1cdb9bc9-2169-4c85-8402-c96d57529a77",
+        "title": "上半年 +439% 的基金,今早被迫全部清仓。\n\nCNBC 刚报",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2082868215429115968",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2082868215429115968",
+            "author": {
+              "name": "⧫ Alan Chen ⧫(alanchentsla.eth）",
+              "handle": "alanchen",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1512481328175976452/tnWxzAqy_normal.jpg",
+              "isVerified": false
+            },
+            "content": "上半年 +439% 的基金,今早被迫全部清仓。\n\nCNBC 刚报的:前 OpenAI 研究员 Leopold Aschenbrenner 的对冲基金 Situational Awareness,已清掉全部公开市场股票持仓——基本上一笔交易打包转让。买家是 Citadel。\n\n时间线值得裱起来:\n\n上半年费后收益 +439%。7 月 1 日规模冲到 $450 亿峰值。7 月 24 日他还在投资者信里写:估值回落创造了最好的买入机会。7 月 30 日开盘前,三家主经纪商在替他的持仓找买家。\n\n从\"想抄底\"到\"自己成为底\",六天。\n\n死法也写得很标准:多头压 AI 基建(SK 海力士、Micron、Sandisk),空头压软件股(Adobe)——\"AI 吃掉软件\"这个 thesis 本身不算离谱,但过去几周 AI 基建跌、软件股反弹,两条腿同时反向。半年 +439% 需要多大的杠杆,反向两周就需要多大的保证金。\n\n凯恩斯那句话每隔几年就要重新应验一次:市场保持非理性的时间,可以比你保持有偿付能力的时间更长。他的判断也许五年后看是对的——但杠杆不给你五年。\n\n前两天刚写过:手握现金的人在下跌里是买方,满仓加杠杆的人是卖方。这周就有了教科书案例——现金最厚的 Citadel,把杠杆最满的玩家整本账册接了过去。 $MU $NBIS",
+            "createdAt": "Thu Jul 30 16:37:35 +0000 2026",
+            "viewCount": 24982,
+            "metrics": {
+              "views": 24982,
+              "likes": 78,
+              "retweets": 4,
+              "replies": 29,
+              "quotes": 3,
+              "bookmarks": 31
+            },
+            "media": [],
+            "translation": {
+              "provider": "none",
+              "status": "idle",
+              "language": "zh-CN",
+              "text": "",
+              "annotations": [],
+              "error": "",
+              "version": 0
+            }
+          },
+          {
+            "id": "2082711755365716149",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2082711755365716149",
+            "author": {
+              "name": "⧫ Alan Chen ⧫(alanchentsla.eth）",
+              "handle": "alanchen",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1512481328175976452/tnWxzAqy_normal.jpg",
+              "isVerified": false
+            },
+            "content": "刘坡大兄弟曾在过去几个月创造了惊人的财富和回报率，主要投资半导体，存储，光膜，能源等ai基础设施— 没看过可以去我油管看两个月前的视频；今天对外宣传开放基金申购，寻求更多的资本入局，大兄弟这波也被杠杆爆了吗？",
+            "createdAt": "Thu Jul 30 06:15:52 +0000 2026",
+            "viewCount": 49235,
+            "metrics": {
+              "views": 49235,
+              "likes": 58,
+              "retweets": 1,
+              "replies": 77,
+              "quotes": 2,
+              "bookmarks": 5
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HOdHTgjbAAALTK3.jpg"
+            ],
+            "translation": {
+              "provider": "none",
+              "status": "idle",
+              "language": "zh-CN",
+              "text": "",
+              "annotations": [],
+              "error": "",
+              "version": 0
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2082868215429115968",
+          "pageLanguage": "en",
+          "capturedAt": "2026-07-31T00:45:57.581Z"
+        },
+        "createdAt": "2026-07-31T00:45:57.581Z",
+        "updatedAt": "2026-07-31T00:45:57.585Z"
+      }
+    }
+  ]
+}
