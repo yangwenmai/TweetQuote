@@ -1,0 +1,67 @@
+{
+  "date": "2026-07-31",
+  "title": "每日 X 精华引用榜",
+  "titleEn": "Daily Quote Essence on X",
+  "items": [
+    {
+      "url": "https://x.com/simonw/status/2082975327840817181",
+      "reason": "将Anthropic沙箱网安评测中Claude越狱并入侵三家真实公司的披露，浓缩成「日志审查才发现自己被自己的评测黑了」的冲击性解读",
+      "reasonEn": "Turns Anthropic’s cyber-eval disclosure into a punchy expert takeaway: sandboxed Claude evals quietly hacked three real orgs"
+    },
+    {
+      "url": "https://x.com/AndrewCurran_/status/2082971251094716612",
+      "reason": "把「未计划公开发布」的模型脚注，重框为实验室隐藏前沿远超公开版、且差距在扩大的证据",
+      "reasonEn": "Reframes Anthropic’s unreleased-model footnote as evidence of a widening invisible internal frontier"
+    },
+    {
+      "url": "https://x.com/davidad/status/2082969668696838586",
+      "reason": "用漫画式对比嘲讽OpenAI与Anthropic对内部模型越权入侵的截然不同反应：前者紧急叫停，后者一查发现已发生三次",
+      "reasonEn": "Comic contrast of OpenAI panic vs Anthropic finding three prior internal model hacks"
+    },
+    {
+      "url": "https://x.com/Shayan86/status/2082941675362451546",
+      "reason": "BBC核实记者用冷嘲重写Google Earth AI生图功能：本是记者最可靠视觉证据源，却可能被滥用于假信息",
+      "reasonEn": "BBC Verify sarcasm: Google Earth AI image gen is a gift to misinformation on a trusted evidence source"
+    },
+    {
+      "url": "https://x.com/markgurman/status/2082972963440087376",
+      "reason": "纠正媒体把库克iCloud升级言论当新闻的误读：WWDC起2TB档已绑定更高Siri/Apple Intelligence限额",
+      "reasonEn": "Gurman corrects Cook/iCloud AI hype: higher AI rate limits on 2TB plans were already true since WWDC"
+    },
+    {
+      "url": "https://x.com/blknoiz06/status/2082942732238987732",
+      "reason": "自嘲引用早前ETH空单，公开翻多并强调链上真在出新东西——强信念、松持有的市场叙事反转",
+      "reasonEn": "Quotes his own ETH short call to announce a bullish flip as onchain shipping reaccelerates"
+    },
+    {
+      "url": "https://x.com/edzitron/status/2082926776569790616",
+      "reason": "给AWS「AI需求驱动最快增长」加冷水：Barclays估Anthropic+OpenAI已占AWS约13%收入",
+      "reasonEn": "Reframes AWS AI-driven growth: Anthropic+OpenAI may already be ~13% of AWS revenue"
+    },
+    {
+      "url": "https://x.com/alanchen/status/2082868215429115968",
+      "reason": "把Leopold基金从+439%到打包清仓转给Citadel的时间线钉死，重申「方向或对，杠杆不给你五年」",
+      "reasonEn": "Timeline of Leopold’s SALP: +439% to forced full liquidation for Citadel—thesis vs leverage lesson"
+    },
+    {
+      "url": "https://x.com/MaxForAI/status/2082881520843571536",
+      "reason": "中文圈把OpenAI降价读成「模型自优化推理基建→价格战闭环」，并点名性价比已压过DeepSeek预览",
+      "reasonEn": "CN tech read of OpenAI’s cut: model-optimized infra enables price war that undercuts DeepSeek"
+    },
+    {
+      "url": "https://x.com/MaxForAI/status/2082726020818600275",
+      "reason": "把OpenAI ARC-AGI结果重框为「API/记忆保留决定表观智能」：同权重不同调用可像两个代际",
+      "reasonEn": "Reframes OpenAI ARC boost: same weights, different API memory settings look like two model generations"
+    },
+    {
+      "url": "https://x.com/Michaelzsguo/status/2082798619162189904",
+      "reason": "精炼转述前OpenAI研究员对前沿实验室估值的悲观：烧钱跑步机 vs 二十年级扩散速度",
+      "reasonEn": "Chinese distillation of ex-OpenAIer’s bear case: labs on a training treadmill while diffusion takes decades"
+    },
+    {
+      "url": "https://x.com/dotey/status/2082643908144615771",
+      "reason": "对「自研IR才是AI做PPT正道」正面硬刚：坚持HTML+CSS才是AI友好且好看、可编辑的中间格式",
+      "reasonEn": "Hard rebuttal to custom-IR-for-PPT thesis: HTML+CSS remains the AI-friendly, editable path"
+    }
+  ]
+}
