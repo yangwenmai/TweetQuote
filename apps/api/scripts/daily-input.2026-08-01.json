@@ -1,0 +1,67 @@
+{
+  "date": "2026-08-01",
+  "title": "每日 X 精华引用榜",
+  "titleEn": "Daily Quote Essence on X",
+  "items": [
+    {
+      "url": "https://x.com/sama/status/2083203642975502640",
+      "reason": "用一句“摩尔定律我加注20x”把降价数据抬成行业叙事，反超原帖的价格对比",
+      "reasonEn": "One-line “Moore’s law + 20x” reframes a price chart into OpenAI’s competitive story and outran the original."
+    },
+    {
+      "url": "https://x.com/AndrewCurran_/status/2083335776222527772",
+      "reason": "把Astra泄密接到长程模型论文与Erdős解题能力，给八卦补上技术锚点",
+      "reasonEn": "Ties the Astra leak to long-horizon safety work and the Erdős-problem claim—expert context that reframes a rumor."
+    },
+    {
+      "url": "https://x.com/swyx/status/2083016652032188669",
+      "reason": "解释实验室为何在预训练旁路建出私有搜索索引，补全Simon质疑的产业逻辑",
+      "reasonEn": "Explains why labs quietly build private Google clones as a pretrain side-effect—sharp industry logic on Willison’s question."
+    },
+    {
+      "url": "https://x.com/edzitron/status/2083315405922160830",
+      "reason": "用UBS数据把“AI需求”拆成两家未盈利实验室的循环云收入，重塑资本开支叙事",
+      "reasonEn": "UBS numbers reframe Mag7 AI demand as circular cloud revenue between two unprofitable labs."
+    },
+    {
+      "url": "https://x.com/paulg/status/2083289602127716384",
+      "reason": "把Supabase Agent评测推演成“不会被Agent用的服务终将出局”的平台论",
+      "reasonEn": "Elevates Supabase Evals into a platform thesis: agent-unusable services go extinct."
+    },
+    {
+      "url": "https://x.com/nattyray11/status/2083177299860398123",
+      "reason": "从人道危机与卫星假信息角度硬刚Google Earth的AI生成功能，价值远超产品发布",
+      "reasonEn": "Hard dunk on Google Earth’s generative sat imagery via humanitarian spoofing risk."
+    },
+    {
+      "url": "https://x.com/Jason/status/2083200687853191632",
+      "reason": "在DeepSeek发布帖上预言token大降价与本地推理赢家，把开源胜局写成硬件叙事",
+      "reasonEn": "On DeepSeek’s launch, forecasts 100x cheaper tokens and local-hardware winners—open source as hardware story."
+    },
+    {
+      "url": "https://x.com/brian_armstrong/status/2083326465148600740",
+      "reason": "回应Udi的AI时代安全焦虑：气隙与多方分片把网络威胁部分转成物理安全",
+      "reasonEn": "Answers Udi’s AI-era crypto security fear with air-gapping and key distribution—technical reframe, not just custody pitch."
+    },
+    {
+      "url": "https://x.com/DowdEdward/status/2083312414981067245",
+      "reason": "在“OpenAI是承重墙”论证上追问：若IPO揭开账本本身是否引爆交易，并给出25%不上市概率",
+      "reasonEn": "Adds the twist that an IPO look-under-the-hood could itself unwind the load-bearing OpenAI trade."
+    },
+    {
+      "url": "https://x.com/zherbert/status/2083259654172221807",
+      "reason": "把Coldcard熵缺陷时间线抬升为真FOSS对抗AI辅助攻击的行业解法",
+      "reasonEn": "Lifts the Coldcard entropy bug into a FOSS vs AI-assisted exploit industry thesis."
+    },
+    {
+      "url": "https://x.com/ivanalog_com/status/2083266290571972645",
+      "reason": "借V4-Flash榜单将Responses API适配写成OA倒计时与“内卷无人生还”的中文圈锐评",
+      "reasonEn": "Chinese-tech dunk: Flash’s agent leap + Responses API as the start of OpenAI/Anthropic countdown under involution."
+    },
+    {
+      "url": "https://x.com/AYi_AInotes/status/2083221612778668388",
+      "reason": "把开源动画Skill实测成“一人干翻工作室”的工程制片流程，原帖工具帖被重构为范式案例",
+      "reasonEn": "Turns an open-source animation Skill into a one-person studio paradigm with hard cost and pipeline detail."
+    }
+  ]
+}

@@ -1,0 +1,1230 @@
+{
+  "date": "2026-08-01",
+  "title": "每日 X 精华引用榜",
+  "titleEn": "Daily Quote Essence on X",
+  "generatedAt": "2026-08-01T00:11:22.025Z",
+  "entries": [
+    {
+      "rank": 1,
+      "essenceScore": 292511,
+      "heatScore": 149383,
+      "signals": {
+        "depth": 3,
+        "hasDunk": true,
+        "peakIndex": 2,
+        "peakHeat": 149383
+      },
+      "sourceUrl": "https://x.com/ivanalog_com/status/2083266290571972645",
+      "reason": "借V4-Flash榜单将Responses API适配写成OA倒计时与“内卷无人生还”的中文圈锐评",
+      "reasonEn": "Chinese-tech dunk: Flash’s agent leap + Responses API as the start of OpenAI/Anthropic countdown under involution.",
+      "metrics": {
+        "views": 5189884,
+        "likes": 22279,
+        "retweets": 2749,
+        "replies": 1311,
+        "quotes": 1797,
+        "bookmarks": 3523
+      },
+      "document": {
+        "id": "85aef5db-0011-4724-a107-1f144c268151",
+        "title": "Deepseek Flash终于支持response API了，",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2083266290571972645",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2083266290571972645",
+            "author": {
+              "name": "seekinganythingbutalpha",
+              "handle": "ivanalog_com",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1538007532177723392/aobhQuJw_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Deepseek Flash终于支持response API了，不用自己翻译了。\n\n具体应用估计可能还需要测试适配一下。\n\n但是正如我前两天说的，O A两厂其实已经开始倒计时了，只不过大家反应还比较慢。\n\n伟大的普罗米修斯盗了真火，得到的不过是被挂在墙上。\n\n没有一个行业能活着走出中国人的内卷。\n\n这次没有例外。",
+            "createdAt": "Fri Jul 31 18:59:23 +0000 2026",
+            "viewCount": 4014,
+            "metrics": {
+              "views": 4014,
+              "likes": 27,
+              "retweets": 3,
+              "replies": 6,
+              "quotes": 1,
+              "bookmarks": 2
+            },
+            "media": [],
+            "translation": {
+              "provider": "none",
+              "status": "idle",
+              "language": "zh-CN",
+              "text": "",
+              "annotations": [],
+              "error": "",
+              "version": 0
+            }
+          },
+          {
+            "id": "2083097278441529575",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2083097278441529575",
+            "author": {
+              "name": "AYi",
+              "handle": "AYi_AInotes",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1989157446829350912/pW828UwK_normal.jpg",
+              "isVerified": false
+            },
+            "content": "我去，DeepSeek这波是真杀疯了，还是那个13B激活的便宜Flash模型，参数半毛钱没加，纯靠后训练就直接把代码Agent能力干涨7倍，\n\n价格还是地板价，\n都快摸到Opus的边了！！！\n\n今天正式开公测的V4-Flash-0731，看完成绩单我直接傻了：\n▫️ DeepSWE榜从7.3直接飙到54.4，翻了快7.5倍，之前的V4 Pro预览版才12.8，现在Flash直接把老Pro按在地上打\n▫️ Cybergym从38.7干到76.7直接翻倍，Terminal Bench冲到82.7，比GLM-5.2还高1.7分\n▫️ 工具调用、全栈开发、终端操作这些Agent核心场景，大部分指标都追平甚至超过了贵好几倍的中大型模型，部分硬榜已经摸到Claude Opus 4.8的尾巴\n\n最狠的是，这次半毛钱没加参数：还是284B总参、13B激活的MoE，1M上下文窗口没变，纯靠后训练和Agent框架优化就出了这效果。\n\n模型ID都不用改，老用户API直接自动切新版，一行代码都不用动。\n\n开发者最爽的点全给你安排明白了：\n1️⃣原生支持Responses API格式，直接适配Codex，之前接OpenAI、2️⃣Anthropic格式的代码无缝迁移，思考模式照常能用。\n3️⃣价格还是那熟悉的白菜价：输入$0.14/百万token，缓存命中才$0.0028，输出$0.28/百万，跑高频Agent、批量改代码、工具调用根本不心疼。\n\n另外提个醒：这次更的只有Flash API，V4 Pro正式版还在赶，App和网页端暂时没更；\n\n跑分用的是官方即将开源的Harness，第三方框架跑出来可能有点差异，但这提升幅度，做执行层模型、跑自动化代码任务的，现在就可以开测了。\n\n之前大家都觉得模型能力涨就得堆参数、烧算力，DeepSeek这波直接给行业打了个样：把后训练和Agent对齐磨到位，小激活模型照样能干旗舰的活，还卖白菜价。\n\n我觉得这波之后，其他家的执行层模型，价格怕是又要往下掉咯\n\n#DeepSeek #AI编程 #Agent #大模型",
+            "createdAt": "Fri Jul 31 07:47:47 +0000 2026",
+            "viewCount": 48012,
+            "metrics": {
+              "views": 48012,
+              "likes": 89,
+              "retweets": 16,
+              "replies": 15,
+              "quotes": 3,
+              "bookmarks": 37
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HOil7O0XMAATfIP.jpg"
+            ],
+            "translation": {
+              "provider": "none",
+              "status": "idle",
+              "language": "zh-CN",
+              "text": "",
+              "annotations": [],
+              "error": "",
+              "version": 0
+            }
+          },
+          {
+            "id": "2083084415157022911",
+            "relation": "quote",
+            "depth": 2,
+            "sourceTweetId": "2083084415157022911",
+            "author": {
+              "name": "DeepSeek",
+              "handle": "deepseek_ai",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1717417613775757312/Uk1zNOj4_normal.jpg",
+              "isVerified": false
+            },
+            "content": "🚀 DeepSeek-V4-Flash Official API is now LIVE in public beta!\n\n🔷 We’ve massively upgraded its Agent capabilities—benchmark scores are now far surpassing the V4-Pro-Preview. Check out the massive performance leap below! 👇\n🔷 The official V4-Flash now natively supports the Responses API format and is fully adapted for Codex!\n\nCheck out the configuration details in our official API docs: https://api-docs.deepseek.com/quick_start/agent_integrations/codex",
+            "createdAt": "Fri Jul 31 06:56:41 +0000 2026",
+            "viewCount": 5189884,
+            "metrics": {
+              "views": 5189884,
+              "likes": 22279,
+              "retweets": 2749,
+              "replies": 1311,
+              "quotes": 1797,
+              "bookmarks": 3523
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HOiZba2aYAAozFz.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "🚀 DeepSeek-V4-Flash 官方 API 现已推出公测版！\n\n🔷 我们对其 Agent 功能进行了大规模升级——基准分数现已远远超过 V4-Pro-Preview。看看下面的巨大性能飞跃！ 👇\n🔷官方V4-Flash现已原生支持Responses API格式，并完全适配Codex！\n\n查看我们的官方 API 文档中的配置详细信息：https://api-docs.deepseek.com/quick_start/agent_integrations/codex",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-01T00:11:20.414Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2083266290571972645",
+          "pageLanguage": "en",
+          "capturedAt": "2026-08-01T00:11:20.328Z"
+        },
+        "createdAt": "2026-08-01T00:11:20.328Z",
+        "updatedAt": "2026-08-01T00:11:20.415Z"
+      }
+    },
+    {
+      "rank": 2,
+      "essenceScore": 270104,
+      "heatScore": 149383,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 149383
+      },
+      "sourceUrl": "https://x.com/Jason/status/2083200687853191632",
+      "reason": "在DeepSeek发布帖上预言token大降价与本地推理赢家，把开源胜局写成硬件叙事",
+      "reasonEn": "On DeepSeek’s launch, forecasts 100x cheaper tokens and local-hardware winners—open source as hardware story.",
+      "metrics": {
+        "views": 5189884,
+        "likes": 22279,
+        "retweets": 2749,
+        "replies": 1311,
+        "quotes": 1797,
+        "bookmarks": 3523
+      },
+      "document": {
+        "id": "b886ab62-b0e9-4146-be2d-e799121b1c18",
+        "title": "Open Source is winning bigly\n\nTo",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2083200687853191632",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2083200687853191632",
+            "author": {
+              "name": "@jason",
+              "handle": "Jason",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1828870492633104384/o37xorx4_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Open Source is winning bigly\n\nTokens will be 100x cheaper in 24 months\n\nYou’re going to run 50% of tokens on your local hardware unmetered\n\n@Dell, @nvidia and @Apple are the big winners in this trend",
+            "createdAt": "Fri Jul 31 14:38:42 +0000 2026",
+            "viewCount": 307734,
+            "metrics": {
+              "views": 307734,
+              "likes": 1858,
+              "retweets": 137,
+              "replies": 18,
+              "quotes": 37,
+              "bookmarks": 278
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "开源正在大获全胜\n\n24 个月内代币将便宜 100 倍\n\n您将在本地硬件上不计量地运行 50% 的代币\n\n@Dell、@nvidia 和 @Apple 是这一趋势的大赢家",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-01T00:11:09.425Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2083084415157022911",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2083084415157022911",
+            "author": {
+              "name": "DeepSeek",
+              "handle": "deepseek_ai",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1717417613775757312/Uk1zNOj4_normal.jpg",
+              "isVerified": false
+            },
+            "content": "🚀 DeepSeek-V4-Flash Official API is now LIVE in public beta!\n\n🔷 We’ve massively upgraded its Agent capabilities—benchmark scores are now far surpassing the V4-Pro-Preview. Check out the massive performance leap below! 👇\n🔷 The official V4-Flash now natively supports the Responses API format and is fully adapted for Codex!\n\nCheck out the configuration details in our official API docs: https://api-docs.deepseek.com/quick_start/agent_integrations/codex",
+            "createdAt": "Fri Jul 31 06:56:41 +0000 2026",
+            "viewCount": 5189884,
+            "metrics": {
+              "views": 5189884,
+              "likes": 22279,
+              "retweets": 2749,
+              "replies": 1311,
+              "quotes": 1797,
+              "bookmarks": 3523
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HOiZba2aYAAozFz.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "🚀 DeepSeek-V4-Flash 官方 API 现已推出公测版！\n\n🔷 我们对其 Agent 功能进行了大规模升级——基准分数现已远远超过 V4-Pro-Preview。看看下面的巨大性能飞跃！ 👇\n🔷官方V4-Flash现已原生支持Responses API格式，并完全适配Codex！\n\n查看我们的官方 API 文档中的配置详细信息：https://api-docs.deepseek.com/quick_start/agent_integrations/codex",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-01T00:11:09.427Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2083200687853191632",
+          "pageLanguage": "en",
+          "capturedAt": "2026-08-01T00:11:09.348Z"
+        },
+        "createdAt": "2026-08-01T00:11:09.348Z",
+        "updatedAt": "2026-08-01T00:11:09.427Z"
+      }
+    },
+    {
+      "rank": 3,
+      "essenceScore": 51624,
+      "heatScore": 28901,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 28901
+      },
+      "sourceUrl": "https://x.com/sama/status/2083203642975502640",
+      "reason": "用一句“摩尔定律我加注20x”把降价数据抬成行业叙事，反超原帖的价格对比",
+      "reasonEn": "One-line “Moore’s law + 20x” reframes a price chart into OpenAI’s competitive story and outran the original.",
+      "metrics": {
+        "views": 982522,
+        "likes": 6056,
+        "retweets": 339,
+        "replies": 117,
+        "quotes": 98,
+        "bookmarks": 825
+      },
+      "document": {
+        "id": "c436a784-d7e5-4128-97c8-2686073c02f3",
+        "title": "i see your moore's law and i rai",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2083203642975502640",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2083203642975502640",
+            "author": {
+              "name": "Sam Altman",
+              "handle": "sama",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2046764873200394240/r7BxVezs_normal.jpg",
+              "isVerified": false
+            },
+            "content": "i see your moore's law and i raise you 20x",
+            "createdAt": "Fri Jul 31 14:50:27 +0000 2026",
+            "viewCount": 690543,
+            "metrics": {
+              "views": 690543,
+              "likes": 5764,
+              "retweets": 222,
+              "replies": 415,
+              "quotes": 37,
+              "bookmarks": 514
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "我看到了你的摩尔定律，我把你提高了 20 倍",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-01T00:10:56.107Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2082884002201878824",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2082884002201878824",
+            "author": {
+              "name": "nic",
+              "handle": "nicdunz",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2073153937465659392/NZ1R9m-T_normal.jpg",
+              "isVerified": false
+            },
+            "content": "GPT-5.4 full at xhigh scored 51, exactly where Luna max sits today. GPT-5.4 costs $2.50/$15; Luna now costs $0.20/$1.20. In other words, roughly four months later, OpenAI is selling March’s full flagship intelligence at about one-thirteenth the token price.",
+            "createdAt": "Thu Jul 30 17:40:18 +0000 2026",
+            "viewCount": 982522,
+            "metrics": {
+              "views": 982522,
+              "likes": 6056,
+              "retweets": 339,
+              "replies": 117,
+              "quotes": 98,
+              "bookmarks": 825
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "GPT-5.4 在 xhigh 上的满分为 51，正是 Luna max 今天的成绩。 GPT-5.4 成本为 2.50 美元/15 美元； Luna 现在的售价为 0.20 美元/1.20 美元。换句话说，大约四个月后，OpenAI 以大约代币价格的十三分之一的价格出售 3 月份的完整旗舰智能。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-01T00:10:56.102Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2083203642975502640",
+          "pageLanguage": "en",
+          "capturedAt": "2026-08-01T00:10:55.817Z"
+        },
+        "createdAt": "2026-08-01T00:10:55.817Z",
+        "updatedAt": "2026-08-01T00:10:56.107Z"
+      }
+    },
+    {
+      "rank": 4,
+      "essenceScore": 42432,
+      "heatScore": 19736,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 19736
+      },
+      "sourceUrl": "https://x.com/nattyray11/status/2083177299860398123",
+      "reason": "从人道危机与卫星假信息角度硬刚Google Earth的AI生成功能，价值远超产品发布",
+      "reasonEn": "Hard dunk on Google Earth’s generative sat imagery via humanitarian spoofing risk.",
+      "metrics": {
+        "views": 575868,
+        "likes": 2790,
+        "retweets": 440,
+        "replies": 188,
+        "quotes": 207,
+        "bookmarks": 1556
+      },
+      "document": {
+        "id": "bbb134a5-dc37-4dbb-8013-eb8aaeb2dbb6",
+        "title": "I implore @Google to take this f",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2083177299860398123",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2083177299860398123",
+            "author": {
+              "name": "Nathaniel Raymond",
+              "handle": "nattyray11",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1937532790578311168/olgfyvA8_normal.jpg",
+              "isVerified": false
+            },
+            "content": "I implore @Google to take this feature down ASAP. @HRL_YaleSPH deals with attempted disinformation related to overhead imagery and open source info on a near daily basis. Nano Banana opens floodgates to sum of all fears level spoofing of sat data that will hurt vulnerable people.",
+            "createdAt": "Fri Jul 31 13:05:46 +0000 2026",
+            "viewCount": 14324,
+            "metrics": {
+              "views": 14324,
+              "likes": 158,
+              "retweets": 43,
+              "replies": 5,
+              "quotes": 2,
+              "bookmarks": 18
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "我恳求@Google 尽快取消此功能。 @HRL_YaleSPH 几乎每天都会处理与俯视图像和开源信息相关的虚假信息。 Nano Banana 为卫星数据欺骗的所有恐惧水平打开了闸门，这将伤害弱势群体。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-01T00:11:07.841Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2082818165503902043",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2082818165503902043",
+            "author": {
+              "name": "Google Earth",
+              "handle": "googleearth",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/854272241449799680/e_NsMovl_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Today we’re bringing AI image generation with Nano Banana to Google Earth, letting you virtually reimagine anywhere in the real world. 🍌 https://goo.gle/44SUsOP\n\nFor the first time, you can generate custom images using Google Earth’s satellite, aerial, and 3D imagery. 🌎",
+            "createdAt": "Thu Jul 30 13:18:42 +0000 2026",
+            "viewCount": 575868,
+            "metrics": {
+              "views": 575868,
+              "likes": 2790,
+              "retweets": 440,
+              "replies": 188,
+              "quotes": 207,
+              "bookmarks": 1556
+            },
+            "media": [
+              "https://pbs.twimg.com/amplify_video_thumb/2082818142439440384/img/QBgJ5RsbZSfeB44U.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "今天，我们将 Nano Banana 的人工智能图像生成功能引入 Google 地球，让您几乎可以重新想象现实世界中的任何地方。 🍌 https://goo.gle/44SUsOP\n\n您第一次可以使用 Google 地球的卫星、航空和 3D 图像生成自定义图像。 🌎",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-01T00:11:07.838Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2083177299860398123",
+          "pageLanguage": "en",
+          "capturedAt": "2026-08-01T00:11:07.382Z"
+        },
+        "createdAt": "2026-08-01T00:11:07.382Z",
+        "updatedAt": "2026-08-01T00:11:07.841Z"
+      }
+    },
+    {
+      "rank": 5,
+      "essenceScore": 13676,
+      "heatScore": 6055,
+      "signals": {
+        "depth": 3,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 6055
+      },
+      "sourceUrl": "https://x.com/zherbert/status/2083259654172221807",
+      "reason": "把Coldcard熵缺陷时间线抬升为真FOSS对抗AI辅助攻击的行业解法",
+      "reasonEn": "Lifts the Coldcard entropy bug into a FOSS vs AI-assisted exploit industry thesis.",
+      "metrics": {
+        "views": 190150,
+        "likes": 748,
+        "retweets": 150,
+        "replies": 82,
+        "quotes": 68,
+        "bookmarks": 343
+      },
+      "document": {
+        "id": "da78c152-58ca-49a9-b28d-56fd46326d80",
+        "title": "I think the only real solution t",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2083259654172221807",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2083259654172221807",
+            "author": {
+              "name": "Zach Herbert 🇺🇸",
+              "handle": "zherbert",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1788379829546393600/Wn37Pxj9_normal.jpg",
+              "isVerified": false
+            },
+            "content": "I think the only real solution to AI-assisted cyber exploits is FOSS – real free and open source hardware and software.\n\nGood guys equipped with frontier AI models (without restrictions) to find vulnerabilities in our codebases and in other codebases – and responsibly disclose to affected parties.\n\nBlack box stuff is not secure. Source-available code (not FOSS) is public but the industry has no incentive to review it because no one is allowed to build on it.\n\nFOSS means anyone can build on it. Share libraries. Foundation uses BDK and rust-bitcoin libraries, for example. More shared FOSS code with more eyes on it is important.\n\nThe irony here is not lost to me that this Coldcard bug was introduced as part of a crusade to rip out all GPL code from the codebase.\n\nEmbrace FOSS, help each other out, work together as an industry, argue and compete with each other but still help each other and work together.\n\nAlso – be friendly with security researchers. Have a bug bounty program. Engage with the community. Take reports seriously.",
+            "createdAt": "Fri Jul 31 18:33:01 +0000 2026",
+            "viewCount": 4317,
+            "metrics": {
+              "views": 4317,
+              "likes": 101,
+              "retweets": 18,
+              "replies": 5,
+              "quotes": 0,
+              "bookmarks": 4
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "我认为人工智能辅助网络攻击的唯一真正解决方案是自由和开放源码软件——真正的免费和开源硬件和软件。\n\n配备前沿人工智能模型（无限制）的好人可以发现我们的代码库和其他代码库中的漏洞 - 并负责任地向受影响的各方披露。\n\n黑匣子的东西并不安全。可用源代码（不是自由和开源软件）是公开的，但业界没有动力对其进行审查，因为不允许任何人在其基础上进行构建。\n\nFOSS 意味着任何人都可以在其基础上进行构建。共享库。例如，Foundation 使用 BDK 和 rust-bitcoin 库。更多共享的 FOSS 代码以及更多的关注非常重要。\n\n这里具有讽刺意味的是，这个 Coldcard 错误是作为从代码库中删除所有 GPL 代码的十字军东征的一部分而引入的。\n\n拥抱自由开源软件，互相帮助，作为一个行业共同努力，互相争论和竞争，但仍然互相帮助和共同努力。\n\n另外——与安全研究人员保持友好。有一个错误赏金计划。与社区互动。认真对待举报。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-01T00:11:18.008Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2082993276324319713",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2082993276324319713",
+            "author": {
+              "name": "Zach Herbert 🇺🇸",
+              "handle": "zherbert",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1788379829546393600/Wn37Pxj9_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Regarding the Coldcard entropy bug – many folks are explaining what happened but I wanted to take a minute to explain why it may have happened.\n\nIt's a disastrous situation and our heart goes out to all the Bitcoiners affected.\n\nHere's a timeline of events:\n\nOn July 28 2020: @FoundationHQ announced our first Passport hardware wallet and noted that we were building on Coldcard firmware which at the time was GPLv3 licensed (FOSS license).\n\nOn July 30 2020: NVK publicly said he regretted choosing GPL because Coldcard now had a “clone” and that they would change things in future updates. https://x.com/nvk/status/1288860345864527874\n\nOn November 18 2020: Coldcard added its MIT + Commons Clause license, prohibiting commercial products substantially derived from the software. https://github.com/Coldcard/firmware/commit/b6b9191145d37fbb6d754597350653141596dd12\n\nOn January 8, 2021: Coldcard firmware 3.2.1 formally announced, “License changed from GPL to MIT+CC on files for which the GPL doesn’t apply.” CC is the \"Commons Clause\" license addendum which is \"source available\" instead of FOSS.\n\nOn March 1, 2021: The “First pass w/ libNgU” commit removed the GPL @Trezor-derived crypto libraries and replaced them with libNgU. That same 120-file commit changed seed generation code. libNgU was licensed with a novel “Licensed for Bitcoin Only” license.\n\nOn March 17, 2021: Version 4.0.0 announced that all crypto and BIP39 code had been replaced and that the “last remaining GPL code” was removed. https://blog.coinkite.com/version-4.0.0-released/\nhttps://github.com/Coldcard/firmware/blob/b18723dddb6d751c39978e4364b56b2414f68b47/releases/ChangeLog.md#L12\n\nOur best understanding right now is that the entropy bug was collateral damage from this major overhaul of the codebase.\n\nTo be clear, this overhaul was not solely about licensing. Coldcard also cited technical goals including adopting Bitcoin Core’s libsecp256k1, faster AES and SHA implementations, and reproducible builds.\n\nBut the timeline establishes two things:\n(1) Foundation’s launch was the obvious impetus for Coldcard’s licensing change, and\n(2) removing the remaining GPL code was an explicit goal of the subsequent v4 rewrite.\n\nWe don't know by how much the licensing pressure affected the scope or timeline of the rewrite. All we can determine is that the entropy bug was introduced inside the same 120-file commit that removed the old GPL code dependencies.",
+            "createdAt": "Fri Jul 31 00:54:31 +0000 2026",
+            "viewCount": 190150,
+            "metrics": {
+              "views": 190150,
+              "likes": 748,
+              "retweets": 150,
+              "replies": 82,
+              "quotes": 68,
+              "bookmarks": 343
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "关于 Coldcard 熵错误——很多人都在解释发生了什么，但我想花点时间解释一下为什么会发生。\n\n这是一个灾难性的情况，我们的心与所有受影响的比特币爱好者同在。\n\n以下是事件的时间表：\n\n2020 年 7 月 28 日：@FoundationHQ 宣布推出我们的第一个 Passport 硬件钱包，并指出我们正在 Coldcard 固件上构建，该固件当时获得 GPLv3 许可（FOSS 许可）。\n\n2020 年 7 月 30 日：NVK 公开表示，他后悔选择 GPL，因为 Coldcard 现在有了一个“克隆”，并且他们将在未来的更新中进行更改。 https://x.com/nvk/status/1288860345864527874\n\n2020 年 11 月 18 日：Coldcard 添加了 MIT + Commons Clause 许可证，禁止实质上源自该软件的商业产品。 https://github.com/Coldcard/firmware/commit/b6b9191145d37fbb6d754597350653141596dd12\n\n2021 年 1 月 8 日：Coldcard 固件 3.2.1 正式宣布，“对于不适用 GPL 的文件，许可证从 GPL 更改为 MIT+CC”。 CC 是“Commons Clause”许可附录，它是“源可用”而不是 FOSS。\n\n2021 年 3 月 1 日：“First pass w/ libNgU”提交删除了 GPL @Trezor 派生的加密库，并将其替换为 libNgU。同一个 120 文件提交更改了种子生成代码。 libNgU 获得了新颖的“仅适用于比特币许可”许可证。\n\n2021 年 3 月 17 日：4.0.0 版本宣布所有加密和 BIP39 代码已被替换，并删除了“最后剩余的 GPL 代码”。 https://blog.coinkite.com/version-4.0.0-released/\nhttps://github.com/Coldcard/firmware/blob/b18723dddb6d751c39978e4364b56b2414f68b47/releases/ChangeLog.md#L12\n\n我们目前最好的理解是，熵错误是代码库重大检修带来的附带损害。\n\n需要明确的是，这次改革不仅仅涉及许可。 Coldcard 还引用了技术目标，包括采用 Bitcoin Core 的 libsecp256k1、更快的 AES 和 SHA 实现以及可重现的构建。\n\n但时间表确定了两件事：\n(1) Foundation 的推出是 Coldcard 许可变更的明显推动力，并且\n(2) 删除剩余的 GPL 代码是后续 v4 重写的明确目标。\n\n我们不知道许可压力对重写的范围或时间表的影响有多大。我们所能确定的是，熵错误是在删除了旧 GPL 代码依赖项的同一个 120 文件提交中引入的。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-01T00:11:17.921Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "1288860345864527874",
+            "relation": "quote",
+            "depth": 2,
+            "sourceTweetId": "1288860345864527874",
+            "author": {
+              "name": "nvk",
+              "handle": "nvk",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1365303936731742208/-7h_umY2_normal.jpg",
+              "isVerified": false
+            },
+            "content": "1/ I really regret choosing GPLv3 for Coldcard\n\nNow we've a Clone (if ships) w/ ZERO contributions in code/financially\n\nClone is what you call when someone takes the hard stuff &amp; just changes the UI\n\nOur fault for choosing GPL\n\nWe will be changing a lot of that w/ future updates",
+            "createdAt": "Thu Jul 30 15:33:46 +0000 2020",
+            "viewCount": 0,
+            "metrics": {
+              "views": 0,
+              "likes": 98,
+              "retweets": 24,
+              "replies": 21,
+              "quotes": 9,
+              "bookmarks": 35
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "1/ 我真的很后悔为 Coldcard 选择 GPLv3\n\n现在我们有一个克隆（如果发货）在代码/财务上的贡献为零\n\n当有人拿走困难的东西并只是改变 UI 时，你会称之为“克隆”\n\n选择GPL是我们的错\n\n我们将在未来的更新中改变很多内容",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-01T00:11:17.278Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2083259654172221807",
+          "pageLanguage": "en",
+          "capturedAt": "2026-08-01T00:11:17.048Z"
+        },
+        "createdAt": "2026-08-01T00:11:17.048Z",
+        "updatedAt": "2026-08-01T00:11:18.008Z"
+      }
+    },
+    {
+      "rank": 6,
+      "essenceScore": 7593,
+      "heatScore": 4201,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 4201
+      },
+      "sourceUrl": "https://x.com/swyx/status/2083016652032188669",
+      "reason": "解释实验室为何在预训练旁路建出私有搜索索引，补全Simon质疑的产业逻辑",
+      "reasonEn": "Explains why labs quietly build private Google clones as a pretrain side-effect—sharp industry logic on Willison’s question.",
+      "metrics": {
+        "views": 127544,
+        "likes": 1042,
+        "retweets": 28,
+        "replies": 83,
+        "quotes": 10,
+        "bookmarks": 164
+      },
+      "document": {
+        "id": "6b8f649b-bf1a-469e-9f77-625dbf9829c2",
+        "title": "verbalizing one of those aha mom",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2083016652032188669",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2083016652032188669",
+            "author": {
+              "name": "swyx 🇸🇬",
+              "handle": "swyx",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2073162797354217472/hNny55eF_normal.jpg",
+              "isVerified": false
+            },
+            "content": "verbalizing one of those aha moments i had that seems retroactively pretty obvious:\n\nif you prioritize pretrain data quality enough that commoncrawl isn't good enough for you, you have to build a Whole Web scraper anyway, and if you wanna keep it current, you have to have indexing, and pretty soon you find yourself having built a total private low-frequency clone of Google as a SIDE PROJECT of pretraining, that you can then also reuse for the agent side inference.\n\nwe do know that the labs do use third party search providers, but clearly this is one of those things where developing more and more of your own 1P equivalents is both a competitive advantage and an adversarial target for AEO Batesian Mimicry* that you will not want to share.\n\n* https://swyx.io/mimicry-reflexivity",
+            "createdAt": "Fri Jul 31 02:27:25 +0000 2026",
+            "viewCount": 25064,
+            "metrics": {
+              "views": 25064,
+              "likes": 170,
+              "retweets": 12,
+              "replies": 26,
+              "quotes": 2,
+              "bookmarks": 95
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "用语言描述我所经历的那些恍然大悟的时刻之一，回想起来似乎非常明显：\n\n如果你优先考虑预训练数据质量，而 commoncrawl 对你来说不够好，那么无论如何你都必须构建一个全网抓取工具，如果你想保持它最新，你必须有索引，很快你就会发现自己已经构建了一个完全私有的 Google 低频克隆作为预训练的侧面项目，然后你也可以将其重新用于代理端推理。\n\n我们确实知道实验室确实使用第三方搜索提供商，但显然，开发越来越多的您自己的 1P 等效项既是一种竞争优势，也是您不想分享的 AEO Batesian Mimicry* 的敌对目标。\n\n* https://swyx.io/mimicry-reflexivity",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-01T00:11:00.868Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2082835952939200939",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2082835952939200939",
+            "author": {
+              "name": "Simon Willison",
+              "handle": "simonw",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/378800000261649705/be9cc55e64014e6d7663c50d7cb9fc75_normal.jpeg",
+              "isVerified": false
+            },
+            "content": "It's wild to me that both Anthropic and OpenAI have products that lean so hard on search, and yet they both obscure the underlying search index that they are using",
+            "createdAt": "Thu Jul 30 14:29:23 +0000 2026",
+            "viewCount": 127544,
+            "metrics": {
+              "views": 127544,
+              "likes": 1042,
+              "retweets": 28,
+              "replies": 83,
+              "quotes": 10,
+              "bookmarks": 164
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "让我感到很疯狂的是，Anthropic 和 OpenAI 都有非常依赖搜索的产品，但它们都掩盖了它们正在使用的底层搜索索引",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-01T00:11:00.517Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2083016652032188669",
+          "pageLanguage": "en",
+          "capturedAt": "2026-08-01T00:11:00.342Z"
+        },
+        "createdAt": "2026-08-01T00:11:00.342Z",
+        "updatedAt": "2026-08-01T00:11:00.869Z"
+      }
+    },
+    {
+      "rank": 7,
+      "essenceScore": 5097,
+      "heatScore": 3089,
+      "signals": {
+        "depth": 2,
+        "hasDunk": false,
+        "peakIndex": 0,
+        "peakHeat": 3089
+      },
+      "sourceUrl": "https://x.com/paulg/status/2083289602127716384",
+      "reason": "把Supabase Agent评测推演成“不会被Agent用的服务终将出局”的平台论",
+      "reasonEn": "Elevates Supabase Evals into a platform thesis: agent-unusable services go extinct.",
+      "metrics": {
+        "views": 91167,
+        "likes": 463,
+        "retweets": 27,
+        "replies": 36,
+        "quotes": 4,
+        "bookmarks": 319
+      },
+      "document": {
+        "id": "950e32e8-92e3-4205-8a0c-9dcf493ad069",
+        "title": "This seems like a great idea. I ",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2083289602127716384",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2083289602127716384",
+            "author": {
+              "name": "Paul Graham",
+              "handle": "paulg",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1824002576/pg-railsconf_normal.jpg",
+              "isVerified": false
+            },
+            "content": "This seems like a great idea. I bet one day all services used by agents will do this. Which in the limit case = all services, since those that can't be used by agents will go out of business.",
+            "createdAt": "Fri Jul 31 20:32:01 +0000 2026",
+            "viewCount": 91167,
+            "metrics": {
+              "views": 91167,
+              "likes": 463,
+              "retweets": 27,
+              "replies": 36,
+              "quotes": 4,
+              "bookmarks": 319
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "这似乎是个好主意。我打赌有一天代理使用的所有服务都会这样做。在极限情况下=所有服务，因为那些不能被代理使用的服务将会停业。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-01T00:11:05.625Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2083282155170340898",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2083282155170340898",
+            "author": {
+              "name": "Supabase",
+              "handle": "supabase",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1822981431586439168/7xkKXRGQ_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Introducing Supabase Evals.\n\nOur benchmark for how well AI coding agents build with Supabase. We run agents like Claude Code, Codex, and Open Code against real tasks and score what they do.",
+            "createdAt": "Fri Jul 31 20:02:25 +0000 2026",
+            "viewCount": 110112,
+            "metrics": {
+              "views": 110112,
+              "likes": 276,
+              "retweets": 23,
+              "replies": 21,
+              "quotes": 21,
+              "bookmarks": 177
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HOlOFCRW4AABB1K.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "介绍 Supabase 评估。\n\n我们关于 AI 编码代理如何使用 Supabase 进行构建的基准。我们针对实际任务运行 Claude Code、Codex 和 Open Code 等代理，并对它们的表现进行评分。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-01T00:11:05.250Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2083289602127716384",
+          "pageLanguage": "en",
+          "capturedAt": "2026-08-01T00:11:05.163Z"
+        },
+        "createdAt": "2026-08-01T00:11:05.163Z",
+        "updatedAt": "2026-08-01T00:11:05.626Z"
+      }
+    },
+    {
+      "rank": 8,
+      "essenceScore": 3911,
+      "heatScore": 2014,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 2014
+      },
+      "sourceUrl": "https://x.com/brian_armstrong/status/2083326465148600740",
+      "reason": "回应Udi的AI时代安全焦虑：气隙与多方分片把网络威胁部分转成物理安全",
+      "reasonEn": "Answers Udi’s AI-era crypto security fear with air-gapping and key distribution—technical reframe, not just custody pitch.",
+      "metrics": {
+        "views": 65271,
+        "likes": 315,
+        "retweets": 26,
+        "replies": 57,
+        "quotes": 6,
+        "bookmarks": 92
+      },
+      "document": {
+        "id": "73b2a286-5db4-42b6-ad63-2e4bfc3d7511",
+        "title": "As the largest crypto custodian ",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2083326465148600740",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2083326465148600740",
+            "author": {
+              "name": "Brian Armstrong",
+              "handle": "brian_armstrong",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2078293582918934528/YZjOB_hV_normal.jpg",
+              "isVerified": false
+            },
+            "content": "As the largest crypto custodian in the world, @coinbase is here to help 🫡\n\nThere is a lot we can say about secure storage, but air-gapping keys (so they never touch the internet) and distributing them (with consensus protocols), helps convert some (but not all) of the cybersecurity challenges you mentioned into physical security ones.",
+            "createdAt": "Fri Jul 31 22:58:30 +0000 2026",
+            "viewCount": 45836,
+            "metrics": {
+              "views": 45836,
+              "likes": 288,
+              "retweets": 21,
+              "replies": 50,
+              "quotes": 2,
+              "bookmarks": 21
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "作为世界上最大的加密货币托管机构，@coinbase 随时为您提供帮助 🫡\n\n关于安全存储，我们可以说很多，但是气隙密钥（因此它们永远不会接触互联网）和分发它们（使用共识协议）有助于将您提到的一些（但不是全部）网络安全挑战转化为物理安全挑战。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-01T00:11:12.258Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2083210073904718238",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2083210073904718238",
+            "author": {
+              "name": "Udi Wertheimer",
+              "handle": "udiWertheimer",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1899559293159952384/xpng4kz2_normal.jpg",
+              "isVerified": false
+            },
+            "content": "the idea of your bitcoin or crypto resting easy in some secret location while you enjoy life not worrying about it is currently unrealistic\n\nit was somewhat realistic before. but the cost of cybersecurity attacks went down exponentially, and continues to go down exponentially on a monthly basis as new, more capable AI models are publicly released\n\nwhat this means is that your cybersecurity must now be actively managed. it cannot be passive. someone must worry about your shit every day and every night, actively dismiss old assumptions and attempt new approaches on a weekly basis to adapt to a dynamic landscape of new threats\n\nso your options are:\n\n1. be the one who is worried. assess developing threats yourself on a daily/weekly basis, stay up to date with new models and tools as soon as they’re launched, analyze your own security practices ruthlessly day and night. for most people, including most experts, i think this is highly impractical. but you’re welcome to try\n\n2. store your coins with a competent third party service that you trust to do the worrying for you. they should have the resources, skills and incentives to actively manage the cybersecurity risk for you. if you don’t want to worry yourself you need to pay someone else to be worried. it is what it is\n\ni’m not trying to shit on self-custody. technically you can have someone professional actively worry about your self-custody setup, that’s fine too\n\none day, the threat level will plateau and will stop increasing exponentially on a monthly basis, and then passive security will gradually become acceptable. but today is not that day",
+            "createdAt": "Fri Jul 31 15:16:00 +0000 2026",
+            "viewCount": 65271,
+            "metrics": {
+              "views": 65271,
+              "likes": 315,
+              "retweets": 26,
+              "replies": 57,
+              "quotes": 6,
+              "bookmarks": 92
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "让你的比特币或加密货币在某个秘密地点轻松休息，同时享受生活而不用担心它的想法目前是不现实的\n\n以前是有点现实的。但网络安全攻击的成本呈指数下降，并且随着新的、功能更强大的人工智能模型的公开发布，网络安全攻击的成本将继续逐月呈指数下降\n\n这意味着您的网络安全现在必须得到积极管理。它不能是被动的。必须有人每天每晚都担心你的狗屎，积极地摒弃旧的假设，并每周尝试新的方法，以适应新威胁的动态格局\n\n所以你的选择是：\n\n1. 成为忧虑的人。每天/每周自行评估正在形成的威胁，在新模型和工具推出后立即了解最新情况，日以继夜地分析您自己的安全实践。对于大多数人，包括大多数专家来说，我认为这是非常不切实际的。但欢迎您尝试\n\n2. 将您的硬币存储在您信任的有能力的第三方服务机构中，该服务可以为您解决后顾之忧。他们应该拥有资源、技能和激励措施来为您积极管理网络安全风险。如果你不想让自己担心，你就得付钱让别人担心。就是这样\n\n我并不是想贬低自我监护权。从技术上讲，您可以让专业人士积极担心您的自我保管设置，这也很好\n\n有一天，威胁级别将趋于稳定，并停止按月呈指数级增长，然后被动安全将逐渐变得可以接受。但今天不是那一天",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-01T00:11:12.508Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2083326465148600740",
+          "pageLanguage": "en",
+          "capturedAt": "2026-08-01T00:11:10.970Z"
+        },
+        "createdAt": "2026-08-01T00:11:10.970Z",
+        "updatedAt": "2026-08-01T00:11:12.509Z"
+      }
+    },
+    {
+      "rank": 9,
+      "essenceScore": 3563,
+      "heatScore": 1657,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 1657
+      },
+      "sourceUrl": "https://x.com/DowdEdward/status/2083312414981067245",
+      "reason": "在“OpenAI是承重墙”论证上追问：若IPO揭开账本本身是否引爆交易，并给出25%不上市概率",
+      "reasonEn": "Adds the twist that an IPO look-under-the-hood could itself unwind the load-bearing OpenAI trade.",
+      "metrics": {
+        "views": 38200,
+        "likes": 292,
+        "retweets": 52,
+        "replies": 32,
+        "quotes": 15,
+        "bookmarks": 168
+      },
+      "document": {
+        "id": "edab6017-aa33-44a5-af50-3b117d54fee7",
+        "title": "After listening to this clip bel",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2083312414981067245",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2083312414981067245",
+            "author": {
+              "name": "Edward Dowd",
+              "handle": "DowdEdward",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1608879189335375872/OFc93zKs_normal.jpg",
+              "isVerified": false
+            },
+            "content": "After listening to this clip below and if the premise is correct (I believe it is) then one should ask the question “If OpenAI goes public and folks get a look under the hood will that event itself unravel this trade?”\n\nI would suggest there is 25% probability they don’t IPO.",
+            "createdAt": "Fri Jul 31 22:02:40 +0000 2026",
+            "viewCount": 14026,
+            "metrics": {
+              "views": 14026,
+              "likes": 130,
+              "retweets": 18,
+              "replies": 20,
+              "quotes": 1,
+              "bookmarks": 29
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "听完下面的这段视频后，如果前提是正确的（我相信是这样），那么人们应该问这样一个问题：“如果 OpenAI 上市并且人们了解幕后情况，该事件本身是否会瓦解这笔交易？”\n\n我建议他们不进行 IPO 的可能性为 25%。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-01T00:11:14.778Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2083286349239513196",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2083286349239513196",
+            "author": {
+              "name": "George Noble",
+              "handle": "gnoble79",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2030149899694624768/A6hKP00g_normal.jpg",
+              "isVerified": false
+            },
+            "content": "OPENAI IS GOING TO TAKE THIS ENTIRE MARKET DOWN WITH IT\n\nAnd you don't have to own a single share to get hurt.\n\nWhat I'm about to explain should worry anybody who thinks they're diversified:\n\nOpenAI is a LOAD-BEARING company. Pull it out and the whole structure comes down.\n\nThey spent $17.2 billion on Microsoft Azure in calendar 2025, which is 69% of Microsoft's entire year-over-year growth. Take that one customer out and Azure grew 8%, which barely beats inflation.\n\nNow look at what Microsoft just reported:\n\nThe backlog everyone is celebrating came in at $678 billion, up 84%, and the stock ripped. Sounds fantastic until you realize that when you exclude OpenAI the backlog grew only 25%.\n\nBack in January, when that number was $625 billion, roughly $281 billion of it was owed by one private company nobody can audit.\n\nAnd Oracle is in even WORSE shape.\n\nSomething like $300 billion of its backlog, more than half, rides on the same counterparty.\n\nSo you think you own Microsoft, Oracle, Amazon, CoreWeave, Nvidia and SoftBank?\n\nWhat you actually own is the same trade 6 different ways, and every leg of it runs back to one company that burns cash and still cannot go public.\n\nThe people with real money are already backing out.\n\nJulien Garran pointed out that Masayoshi Son could not get a $10 billion bridge loan against his own OpenAI shares. Think about that for a second, because nobody says no to that man.\n\nBlue Owl walked away from a $10 billion Oracle financing. Three months ago the banks were dancing near the door and now they are walking through it.\n\nThen there is Julien's depreciation work, which makes this even worse:\n\nRun the capex schedule out and hyperscaler net income falls 98% by 2033. To break even they would need to build 20 killer apps inside 6 years. Another Google Search. Another YouTube. Another Office.\n\nThey have not built ONE.\n\nIf OpenAI cannot go public in the next 8 months, they are dead.\n\nWhenever you see hubris and debt in the same room, run, don't walk.",
+            "createdAt": "Fri Jul 31 20:19:05 +0000 2026",
+            "viewCount": 38200,
+            "metrics": {
+              "views": 38200,
+              "likes": 292,
+              "retweets": 52,
+              "replies": 32,
+              "quotes": 15,
+              "bookmarks": 168
+            },
+            "media": [
+              "https://pbs.twimg.com/amplify_video_thumb/2083285979452878848/img/0U4O_DqP4W-JqGh6.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "OPENAI 将占领整个市场\n\n而且你不必拥有一股股票就会受到伤害。\n\n我将要解释的内容应该会让那些认为自己多元化的人感到担忧：\n\nOpenAI 是一家承重公司。把它拉出来，整个结构就下来了。\n\n2025 年，他们在 Microsoft Azure 上花费了 172 亿美元，占微软整体同比增长的 69%。去掉这个客户后，Azure 增长了 8%，勉强超过了通货膨胀率。\n\n现在看看微软刚刚报道的内容：\n\n大家都在庆祝的积压订单达到了 6,780 亿美元，增长了 84%，股价也随之暴跌。听起来棒极了，直到您意识到当您排除 OpenAI 时，积压工作仅增长了 25%。\n\n早在一月份，这个数字为 6250 亿美元，其中大约 2810 亿美元是由一家无人能审计的私人公司欠下的。\n\n甲骨文的情况更糟。\n\n其积压订单中大约有 3000 亿美元，其中一半以上是由同一交易对手承担的。\n\n那么您认为您拥有微软、甲骨文、亚马逊、CoreWeave、Nvidia 和软银吗？\n\n你实际上拥有的是同一笔交易的六种不同方式，而它的每一条腿都会回到一家烧钱但仍然无法上市的公司。\n\n真正有钱的人已经退出了。\n\nJulien Garran 指出，孙正义无法用自己持有的 OpenAI 股票获得 100 亿美元的过桥贷款。想一想，因为没有人对那个人说不。\n\nBlue Owl 放弃了 Oracle 100 亿美元的融资。三个月前，银行还在门口跳舞，现在他们正在走进门。\n\n然后是 Julien 的折旧工作，这使得情况变得更糟：\n\n按照资本支出计划，到 2033 年，超大规模企业的净利润将下降 98%。为了实现收支平衡，他们需要在 6 年内构建 20 个杀手级应用程序。另一个谷歌搜索。另一个YouTube。另一个办公室。\n\n他们还没有建造一个。\n\n如果 OpenAI 不能在未来 8 个月内上市，他们就死定了。\n\n每当你在同一个房间里看到傲慢和债务时，就跑，不要走。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-01T00:11:14.795Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2083312414981067245",
+          "pageLanguage": "en",
+          "capturedAt": "2026-08-01T00:11:14.078Z"
+        },
+        "createdAt": "2026-08-01T00:11:14.078Z",
+        "updatedAt": "2026-08-01T00:11:14.796Z"
+      }
+    },
+    {
+      "rank": 10,
+      "essenceScore": 3549,
+      "heatScore": 1891,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 1891
+      },
+      "sourceUrl": "https://x.com/edzitron/status/2083315405922160830",
+      "reason": "用UBS数据把“AI需求”拆成两家未盈利实验室的循环云收入，重塑资本开支叙事",
+      "reasonEn": "UBS numbers reframe Mag7 AI demand as circular cloud revenue between two unprofitable labs.",
+      "metrics": {
+        "views": 38273,
+        "likes": 582,
+        "retweets": 73,
+        "replies": 17,
+        "quotes": 9,
+        "bookmarks": 132
+      },
+      "document": {
+        "id": "52652b26-edbb-40ed-9e7a-13f2f4544fe7",
+        "title": "Per UBS, OpenAI and Anthropic wi",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2083315405922160830",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2083315405922160830",
+            "author": {
+              "name": "Ed Zitron",
+              "handle": "edzitron",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2070326703281553408/ILxQjQF7_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Per UBS, OpenAI and Anthropic will account for 27% of Google Cloud's 2026 revenue and 48%+ in in 2027. Investors are sold a story about AI demand that is simply not true - hyperscalers have spent hundreds of billions in capex to feed themselves money and pretend it's growth.",
+            "createdAt": "Fri Jul 31 22:14:33 +0000 2026",
+            "viewCount": 14585,
+            "metrics": {
+              "views": 14585,
+              "likes": 218,
+              "retweets": 36,
+              "replies": 9,
+              "quotes": 2,
+              "bookmarks": 31
+            },
+            "media": [
+              "https://pbs.twimg.com/amplify_video_thumb/2083315158605066240/img/QVgVxkJhOETPFa1G.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "根据瑞银的数据，OpenAI 和 Anthropic 将占 Google Cloud 2026 年收入的 27%，到 2027 年将占 48% 以上。投资者所听到的关于人工智能需求的故事根本不是真的——超大规模企业已经花费了数千亿美元的资本支出来养活自己，并假装它在增长。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-01T00:11:03.589Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2083310403744940156",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2083310403744940156",
+            "author": {
+              "name": "Ed Zitron",
+              "handle": "edzitron",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2070326703281553408/ILxQjQF7_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Really appreciated Bloomberg having me on again to talk about the lie of AI - everyone's buying into the mag7 believing CapEx is going towards diverse AI demand, when all it's really doing is supporting the circular cloud revenues of two unprofitable, unsustainable AI labs.",
+            "createdAt": "Fri Jul 31 21:54:40 +0000 2026",
+            "viewCount": 38273,
+            "metrics": {
+              "views": 38273,
+              "likes": 582,
+              "retweets": 73,
+              "replies": 17,
+              "quotes": 9,
+              "bookmarks": 132
+            },
+            "media": [
+              "https://pbs.twimg.com/amplify_video_thumb/2083309246750351360/img/f6M2mtbjRYjWNEbr.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "非常感谢彭博社再次邀请我谈论人工智能的谎言——每个人都相信 mag7 的资本支出会满足多样化的人工智能需求，而它真正做的只是支持两个无利可图、不可持续的人工智能实验室的循环云收入。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-01T00:11:03.079Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2083315405922160830",
+          "pageLanguage": "en",
+          "capturedAt": "2026-08-01T00:11:02.401Z"
+        },
+        "createdAt": "2026-08-01T00:11:02.401Z",
+        "updatedAt": "2026-08-01T00:11:03.589Z"
+      }
+    }
+  ]
+}
