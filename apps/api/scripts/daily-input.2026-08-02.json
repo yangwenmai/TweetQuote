@@ -1,0 +1,67 @@
+{
+  "date": "2026-08-02",
+  "title": "每日 X 精华引用榜",
+  "titleEn": "Daily Quote Essence on X",
+  "items": [
+    {
+      "url": "https://x.com/GergelyOrosz/status/2083634787940528282",
+      "reason": "工程圈大V正面硬刚Altman「用ChatGPT给孩子做播客」：别用自家产品减少与家人连接，去跟孩子说话",
+      "reasonEn": "Pragmatic Engineer dunks Altman’s family-calendar podcast pitch: don’t use AI to have less connection with your kids—talk to them"
+    },
+    {
+      "url": "https://x.com/willdepue/status/2083575278928867680",
+      "reason": "前OpenAI研究员QT Noam Brown的Astra十道数学突破，追问：多久能解决深度学习本身的开放问题？连马斯克都接话Singularity",
+      "reasonEn": "Ex-OpenAI researcher reframes Astra’s 10 math breakthroughs: how soon until models crack open problems in deep learning itself?"
+    },
+    {
+      "url": "https://x.com/chetanp/status/2083681060295192646",
+      "reason": "Benchmark合伙人拆穿Anthropic「harness与模型不可分」话术：本质是不愿模型与应用分家，将与客户直接竞争",
+      "reasonEn": "Benchmark partner decodes Anthropic’s harness-model inseparability talk as a signal they’ll compete with their own customers"
+    },
+    {
+      "url": "https://x.com/garrytan/status/2083684825333105107",
+      "reason": "Garry Tan接Chetan链上点题2026 vibe shift：OpenAI走向「intelligence on tap」平台，Anthropic押全栈一体化",
+      "reasonEn": "Garry Tan reframes the chain as 2026’s strategic split: OpenAI as open utility platform vs Anthropic full-stack integration"
+    },
+    {
+      "url": "https://x.com/garrytan/status/2083353760701833546",
+      "reason": "YC CEO亲自QT自家开源multi-agent harness「QM」：这是团队日常在用的公司级AI harness，MIT免费开放",
+      "reasonEn": "YC CEO quote-boosts YC’s open-sourced multi-agent harness QM as the clean company-brain stack they use daily"
+    },
+    {
+      "url": "https://x.com/mattxiv/status/2083663173677117739",
+      "reason": "一句冷嘲「OpenAI品牌团建」截胡260万浏览的oai upstate summer camp晒图，解构科技圈elite vibe",
+      "reasonEn": "Dry one-liner dunk—“the concept of going on an OpenAI brand trip”—reframes the viral oai adult summer camp flex"
+    },
+    {
+      "url": "https://x.com/AutismCapital/status/2083669141832315372",
+      "reason": "Coldcard被盗超8800万美元时补刀：受害的是最懂安全、真信Bitcoin使命才会去配Coldcard的真信徒",
+      "reasonEn": "Reframes the $88M+ Coldcard drain: the most security-conscious true believers who learned to self-custody got rugged"
+    },
+    {
+      "url": "https://x.com/DylanLeClair/status/2083629622948680097",
+      "reason": "Dylan LeClair QT Galaxy第三波攻击数据：漏洞仍在进行，别只DM——打电话给所有可能自托管的人",
+      "reasonEn": "Urgent reframing of Galaxy’s 3rd-wave Coldcard drain: exploit is ongoing—call every self-custody holder you know, DMs aren’t enough"
+    },
+    {
+      "url": "https://x.com/brian_armstrong/status/2083326465148600740",
+      "reason": "Armstrong接Udi「AI让被动自托管过时」：空气间隙+密钥分片把网络威胁部分转成物理安全，Coinbase能帮你",
+      "reasonEn": "Armstrong quotes Udi’s AI-era self-custody warning and reframes air-gapped multiparty custody as converting cyber risk to physical security"
+    },
+    {
+      "url": "https://x.com/MaxForAI/status/2083315784684814584",
+      "reason": "中文圈拆解YC开源QM：Agent下半场从个人助手卷向组织级工作基础设施，与LobeHub方向高度重合",
+      "reasonEn": "Chinese AI builder reframes YC’s QM drop: the next agent war is org-wide work infrastructure, not personal chatbots"
+    },
+    {
+      "url": "https://x.com/yetone/status/2083570173249020350",
+      "reason": "回应「DeepSeek Harness出来还要Workbuddy吗」：腾讯模型不强反而逼出model-agnostic harness，躲开国产大模型轮番抢位",
+      "reasonEn": "Sharp answer to DeepSeek Harness vs Workbuddy: Tencent’s weak model forced a model-agnostic harness that escapes the model arms race"
+    },
+    {
+      "url": "https://x.com/jinchenma_ai/status/2083521100668096886",
+      "reason": "QT达芬七8GB本地Z-Image一键包：RTX 2080跑出图已能咸鱼小红书接单，不必上云端大模型",
+      "reasonEn": "Amplifies a local 8GB Z-Image pack demo: consumer GPUs now good enough for paid image gigs without cloud frontier models"
+    }
+  ]
+}

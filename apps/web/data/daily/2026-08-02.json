@@ -1,0 +1,122 @@
+{
+  "date": "2026-08-02",
+  "title": "每日 X 精华引用榜",
+  "titleEn": "Daily Quote Essence on X",
+  "generatedAt": "2026-08-02T00:02:43.409Z",
+  "entries": [
+    {
+      "rank": 1,
+      "essenceScore": 477344,
+      "heatScore": 235297,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 235297
+      },
+      "sourceUrl": "https://x.com/GergelyOrosz/status/2083634787940528282",
+      "reason": "工程圈大V正面硬刚Altman「用ChatGPT给孩子做播客」：别用自家产品减少与家人连接，去跟孩子说话",
+      "reasonEn": "Pragmatic Engineer dunks Altman’s family-calendar podcast pitch: don’t use AI to have less connection with your kids—talk to them",
+      "metrics": {
+        "views": 9961774,
+        "likes": 10510,
+        "retweets": 322,
+        "replies": 3681,
+        "quotes": 3088,
+        "bookmarks": 3980
+      },
+      "document": {
+        "id": "108e0d67-9823-4c41-8b66-565e03911bee",
+        "title": "I cannot explain how terrible it",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2083634787940528282",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2083634787940528282",
+            "author": {
+              "name": "Gergely Orosz",
+              "handle": "GergelyOrosz",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/673095429748350976/ei5eeouV_normal.png",
+              "isVerified": false
+            },
+            "content": "I cannot explain how terrible it is to see OpenAI’s CEO advocating to use their own AI product to have LESS personal connection with those closest to you: family and kids.\n\nNo, don’t use AI to create a podcast about your kids based on their calendars. Talk to your kids, not to AI",
+            "createdAt": "Sat Aug 01 19:23:40 +0000 2026",
+            "viewCount": 85707,
+            "metrics": {
+              "views": 85707,
+              "likes": 1577,
+              "retweets": 86,
+              "replies": 59,
+              "quotes": 5,
+              "bookmarks": 79
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "我无法解释看到 OpenAI 的首席执行官提倡使用他们自己的人工智能产品来减少与最亲近的人（家人和孩子）的个人联系是多么可怕。\n\n不，不要使用人工智能根据孩子的日历创建有关他们的播客。与你的孩子交谈，而不是与人工智能交谈",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-02T00:02:21.293Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2083221585792762171",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2083221585792762171",
+            "author": {
+              "name": "Sam Altman",
+              "handle": "sama",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2046764873200394240/r7BxVezs_normal.jpg",
+              "isVerified": false
+            },
+            "content": "cool use case of chatgpt work i heard last night:\n\nconnect your family calendars and explain your kids' interests.\n\nevery morning for the drive to school, have it make a podcast that talks about one kid's soccer game that afternoon, one kid's upcoming birthday, some news, etc.",
+            "createdAt": "Fri Jul 31 16:01:45 +0000 2026",
+            "viewCount": 9961774,
+            "metrics": {
+              "views": 9961774,
+              "likes": 10510,
+              "retweets": 322,
+              "replies": 3681,
+              "quotes": 3088,
+              "bookmarks": 3980
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "我昨晚听到的 chatgpt 工作很酷的用例：\n\n连接您的家庭日历并解释您孩子的兴趣。\n\n每天早上开车去学校的路上，让它制作一个播客，谈论一个孩子当天下午的足球比赛、一个孩子即将到来的生日、一些新闻等。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-02T00:02:20.682Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2083634787940528282",
+          "pageLanguage": "en",
+          "capturedAt": "2026-08-02T00:02:20.389Z"
+        },
+        "createdAt": "2026-08-02T00:02:20.389Z",
+        "updatedAt": "2026-08-02T00:02:21.293Z"
+      }
+    }
+  ]
+}

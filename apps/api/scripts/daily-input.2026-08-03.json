@@ -1,0 +1,67 @@
+{
+  "date": "2026-08-03",
+  "title": "每日 X 精华引用榜",
+  "titleEn": "Daily Quote Essence on X",
+  "items": [
+    {
+      "url": "https://x.com/dylan522p/status/2084051253278208138",
+      "reason": "引用Anthropic支持放缓AI进展的联署，用反垄断法一把戳穿「联合减速」的合法性悖论",
+      "reasonEn": "Quotes Anthropic’s slowdown petition and reframes lab collusion as classic antitrust territory"
+    },
+    {
+      "url": "https://x.com/farzyness/status/2084020295178846530",
+      "reason": "接住Calacanis「开源已逼近前沿」一句话，推演到估值泡沫、智能商品化与算力/机房赢家",
+      "reasonEn": "Builds on Jason’s open-source-vs-frontier take into a crisp valuation and infra thesis"
+    },
+    {
+      "url": "https://x.com/teortaxesTex/status/2084026033078943983",
+      "reason": "在DeepSeek登顶VulcanBench的图表上补刀：R1推理与o1路线独立，OpenAI真正掌握的是reasoning effort",
+      "reasonEn": "Reframes a DeepSeek leaderboard win as proof only OpenAI has truly mastered reasoning effort"
+    },
+    {
+      "url": "https://x.com/MiaAI_lab/status/2084045122438648290",
+      "reason": "引用OpenCode披露的DeepSeek Flash海量token用量，点出「同样性能前所未有的低价」正在改写AI经济账",
+      "reasonEn": "Quotes OpenCode’s DeepSeek Flash token dump and names the unit-economics shock"
+    },
+    {
+      "url": "https://x.com/MedusaOnchain/status/2083987806943432847",
+      "reason": "用离线训练的GLM-5.2复现Coldcard漏洞，反驳「Claude只是搜到网上讨论」的质疑",
+      "reasonEn": "Counters Claude-only skepticism by showing offline GLM-5.2 independently finds the Coldcard bug"
+    },
+    {
+      "url": "https://x.com/AndrewCurran_/status/2083998274906894449",
+      "reason": "把Coldcard被盗升级成「Claude八分钟复现、开源可绕过安全过滤」的规模化攻击预警",
+      "reasonEn": "Elevates the Coldcard exploit into a warning that AI will scale hardware-wallet attacks"
+    },
+    {
+      "url": "https://x.com/TechFlowPost/status/2083936685616664958",
+      "reason": "在Coldcard大规模被盗新闻上加一层：AI八分钟扫出藏了五年的伪随机数致命bug，并警示反向扫描",
+      "reasonEn": "Chinese recap: AI finds Coldcard’s five-year RNG bug in minutes and flips it into a defense alarm"
+    },
+    {
+      "url": "https://x.com/TechFlowPost/status/2083398760349266020",
+      "reason": "接Anthropic盗版书诉讼，揭「买书—切脊扫描—焚书」的破坏性扫描产业链，锐评焚书养AI",
+      "reasonEn": "Chains Anthropic’s book lawsuit to Fortune’s destructive-scan story—buy, scan, burn for training data"
+    },
+    {
+      "url": "https://x.com/Kay2289123/status/2084015107831705935",
+      "reason": "引用The Information「小公司用Claude替代Salesforce」新闻，落到SaaS被吞、云厂商才是聪明钱的投资框架",
+      "reasonEn": "Quotes The Information on Claude replacing SaaS and pivots to a cloud-over-SaaS capital call"
+    },
+    {
+      "url": "https://x.com/leadlagreport/status/2084060188739305600",
+      "reason": "引用Kobeissi「油价因伊朗交易消息暴跌」快讯，怒怼市场又一次被停火叙事收割",
+      "reasonEn": "Quotes the oil-crash headline and dunks the market for buying the Iran-deal TACO again"
+    },
+    {
+      "url": "https://x.com/scottlincicome/status/2084051963067400400",
+      "reason": "引用特朗普「Intel为我赚了750亿」言论，配股价图指出纳税人只有卖出才兑现，自6月已蒸发约2500亿市值",
+      "reasonEn": "Quotes Trump’s Intel $75B boast and charts that taxpayers only win if the stake is sold—while mcap plunged"
+    },
+    {
+      "url": "https://x.com/WUTangKids/status/2084048460433457508",
+      "reason": "引用霍尔木兹「一边谈协议一边仍有导弹」快讯，一句like clockwork点破油市叙事操纵节奏",
+      "reasonEn": "Quotes Hormuz deal-talk vs missile reality and calls the market-moving pattern like clockwork"
+    }
+  ]
+}

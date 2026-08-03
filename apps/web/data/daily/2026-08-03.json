@@ -1,0 +1,1202 @@
+{
+  "date": "2026-08-03",
+  "title": "每日 X 精华引用榜",
+  "titleEn": "Daily Quote Essence on X",
+  "generatedAt": "2026-08-03T00:05:19.469Z",
+  "entries": [
+    {
+      "rank": 1,
+      "essenceScore": 433668,
+      "heatScore": 217036,
+      "signals": {
+        "depth": 3,
+        "hasDunk": true,
+        "peakIndex": 2,
+        "peakHeat": 217036
+      },
+      "sourceUrl": "https://x.com/AndrewCurran_/status/2083998274906894449",
+      "reason": "把Coldcard被盗升级成「Claude八分钟复现、开源可绕过安全过滤」的规模化攻击预警",
+      "reasonEn": "Elevates the Coldcard exploit into a warning that AI will scale hardware-wallet attacks",
+      "metrics": {
+        "views": 7217347,
+        "likes": 36676,
+        "retweets": 3005,
+        "replies": 4309,
+        "quotes": 1282,
+        "bookmarks": 7267
+      },
+      "document": {
+        "id": "2fae2d1c-8ebd-46db-9862-efe29e6b1215",
+        "title": "Update from r/Bitcoin. Claude Co",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2083998274906894449",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2083998274906894449",
+            "author": {
+              "name": "Andrew Curran",
+              "handle": "AndrewCurran_",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1596945208058744833/_X3LT7fb_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Update from r/Bitcoin. Claude Code can independently find the same wallet vulnerability used in this attack in eight minutes.",
+            "createdAt": "Sun Aug 02 19:28:02 +0000 2026",
+            "viewCount": 64705,
+            "metrics": {
+              "views": 64705,
+              "likes": 577,
+              "retweets": 39,
+              "replies": 31,
+              "quotes": 20,
+              "bookmarks": 109
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HOvZYu6akAAXmjy.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "来自 r/Bitcoin 的更新。 Claude Code 可以在八分钟内独立找到本次攻击中使用的相同钱包漏洞。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-03T00:05:06.107Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2083615148611366996",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2083615148611366996",
+            "author": {
+              "name": "Andrew Curran",
+              "handle": "AndrewCurran_",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1596945208058744833/_X3LT7fb_normal.jpg",
+              "isVerified": false
+            },
+            "content": "By the end of the year the tools available to anyone attempting this kind of attack will be vastly more capable across all devices. If there is a seam in any existing hardware, they will get their fingers in there. Attacks like this are about to start happening at scale.",
+            "createdAt": "Sat Aug 01 18:05:37 +0000 2026",
+            "viewCount": 115698,
+            "metrics": {
+              "views": 115698,
+              "likes": 610,
+              "retweets": 47,
+              "replies": 49,
+              "quotes": 5,
+              "bookmarks": 108
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "到今年年底，任何尝试此类攻击的人都可以使用的工具在所有设备上的功能都将大大增强。如果现有的硬件有缝隙，他们就会把手指伸进去。像这样的攻击即将开始大规模发生。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-03T00:05:06.117Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2083527082223563157",
+            "relation": "quote",
+            "depth": 2,
+            "sourceTweetId": "2083527082223563157",
+            "author": {
+              "name": "Jonathan Goodman 🇨🇦",
+              "handle": "itscoachgoodman",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1787182331062530048/p9BuedL4_normal.jpg",
+              "isVerified": false
+            },
+            "content": "$1.6 million dollars in Bitcoin was drained from my account on July 29th in the Cold Card wallet hack.\n\nMy Bitcoin was in cold storage. My keys were on a ColdCard device kept in a safety deposit box that had never been connected to the internet.\n\nThis part's nerdy, but here's what happened:\n\nHackers discovered a vulnerability in the part of the hardware wallet code used to create seed phrases.\n\nThis allowed them to use AI to brute force guessing seed phrases.\n\nI was at our cottage and heard about the hack today.\n\n\"No way this affects me.\" I thought.\n\nI logged into Wasabi––software that lets me view my bitcoin wallets online.\n\nRight away I saw lines of red transaction–withdrawals–and I knew.\n\nFrom 9:36pm - 9:43pm on July 29th, every wallet I had had been emptied.\n\n18.25245043 btc gone. That's just over $1.6 million dollars CAD.\n\nPerhaps the hardest part about this is that I did everything right.\n\nI never shared my seed phrase with anybody. My devices never touched the internet. Everything was kept in multiple safes and safety deposit boxes.\n\nNone of it mattered. All because the hardware that created the seed phrase originally had one line in their code from 2021 that had a vulnerability.\n\nI'm filing a police report and a report with the Ontario Securities Commission. But I don't expect to recoup anything.\n\nA part of me is trying to make sense of what just happened. Or try to figure out a lesson in it. I'm struggling. $1.6 million is a staggering amount of money to have stolen.\n\nI guess all that I can think about right now is that I'm so damn happy that I'm an entrepreneur and that my earning potential is under my control. Mark my damn words. I'll recover.",
+            "createdAt": "Sat Aug 01 12:15:41 +0000 2026",
+            "viewCount": 7217347,
+            "metrics": {
+              "views": 7217347,
+              "likes": 36676,
+              "retweets": 3005,
+              "replies": 4309,
+              "quotes": 1282,
+              "bookmarks": 7267
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HOosioZWwAAl_OZ.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "7 月 29 日，Cold Card 钱包遭到黑客攻击，160 万美元的比特币从我的账户中被盗走。\n\n我的比特币被冷藏。我的钥匙位于保管箱中的 ColdCard 设备上，该设备从未连接到互联网。\n\n这部分很书呆子气，但事情是这样的：\n\n黑客在用于创建助记词的硬件钱包代码部分中发现了一个漏洞。\n\n这使得他们能够使用人工智能来强力猜测种子短语。\n\n今天我在我们的小屋里听说了黑客事件。\n\n“这不会影响我。”我想。\n\n我登录了 Wasabi——一款可以让我在线查看我的比特币钱包的软件。\n\n我立刻看到了红色的交易线——取款——我就知道了。\n\n7月29日晚上9点36分到9点43分，我的钱包都被掏空了。\n\n18.25245043 BTC不见了。这刚刚超过 160 万加元。\n\n也许最困难的部分是我做的一切都是正确的。\n\n我从未与任何人分享过我的助记词。我的设备从未接触过互联网。所有东西都存放在多个保险箱和保险箱中。\n\n一切都不重要。一切都是因为创建助记词的硬件最初在 2021 年的代码中有一行存在漏洞。\n\n我正在向警方提交一份报告，并向安大略省证券委员会提交一份报告。但我不指望能收回任何东西。\n\n我的一部分正在试图理解刚刚发生的事情。或者尝试找出其中的教训。我正在挣扎。 160 万美元被盗的金额惊人。\n\n我想我现在能想到的就是我非常高兴我是一名企业家并且我的收入潜力在我的控制之下。记住我该死的话。我会康复的。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-03T00:05:06.811Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2083998274906894449",
+          "pageLanguage": "en",
+          "capturedAt": "2026-08-03T00:05:05.851Z"
+        },
+        "createdAt": "2026-08-03T00:05:05.851Z",
+        "updatedAt": "2026-08-03T00:05:06.811Z"
+      }
+    },
+    {
+      "rank": 2,
+      "essenceScore": 194959,
+      "heatScore": 95100,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 95100
+      },
+      "sourceUrl": "https://x.com/dylan522p/status/2084051253278208138",
+      "reason": "引用Anthropic支持放缓AI进展的联署，用反垄断法一把戳穿「联合减速」的合法性悖论",
+      "reasonEn": "Quotes Anthropic’s slowdown petition and reframes lab collusion as classic antitrust territory",
+      "metrics": {
+        "views": 3977117,
+        "likes": 4857,
+        "retweets": 556,
+        "replies": 1399,
+        "quotes": 783,
+        "bookmarks": 1943
+      },
+      "document": {
+        "id": "4b0185b4-cc6f-459f-adeb-18b8a46ff591",
+        "title": "The funny thing about Anthropic ",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2084051253278208138",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2084051253278208138",
+            "author": {
+              "name": "Dylan Patel",
+              "handle": "dylan522p",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1903585505046093824/PTqeS09L_normal.jpg",
+              "isVerified": false
+            },
+            "content": "The funny thing about Anthropic and OpenAI people saying they want to slow down AI progress is that this is what Anti Trust mechanisms were built for.\nIt's illegal to collude and slow down AI progress.",
+            "createdAt": "Sun Aug 02 22:58:33 +0000 2026",
+            "viewCount": 26484,
+            "metrics": {
+              "views": 26484,
+              "likes": 235,
+              "retweets": 10,
+              "replies": 18,
+              "quotes": 2,
+              "bookmarks": 22
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "Anthropic 和 OpenAI 的人说他们想要减缓人工智能的进步，有趣的是，这正是反信任机制的目的。\n串通并减缓人工智能进步是违法的。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-03T00:04:51.067Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2082228994653696371",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2082228994653696371",
+            "author": {
+              "name": "Anthropic",
+              "handle": "AnthropicAI",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1798110641414443008/XP8gyBaY_normal.jpg",
+              "isVerified": false
+            },
+            "content": "We support this petition, signed by our CEO, several co-founders, and senior staff.\n\nOur own research on recursive self-improvement, published last month, points to the need for tools to deliberately pace the frontier of AI development so society can prepare. We’re glad to see broad agreement across the field. https://www.pacingthefrontier.com/",
+            "createdAt": "Tue Jul 28 22:17:32 +0000 2026",
+            "viewCount": 3977117,
+            "metrics": {
+              "views": 3977117,
+              "likes": 4857,
+              "retweets": 556,
+              "replies": 1399,
+              "quotes": 783,
+              "bookmarks": 1943
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "我们支持这份由我们的首席执行官、几位联合创始人和高级员工签署的请愿书。\n\n我们上个月发表的关于递归自我改进的研究表明，需要有工具来有意识地引领人工智能发展的前沿，以便社会做好准备。我们很高兴看到整个领域达成广泛共识。 https://www.pacingthefrontier.com/",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-03T00:04:50.535Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2084051253278208138",
+          "pageLanguage": "en",
+          "capturedAt": "2026-08-03T00:04:50.147Z"
+        },
+        "createdAt": "2026-08-03T00:04:50.147Z",
+        "updatedAt": "2026-08-03T00:04:51.068Z"
+      }
+    },
+    {
+      "rank": 3,
+      "essenceScore": 38083,
+      "heatScore": 20525,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 20525
+      },
+      "sourceUrl": "https://x.com/MedusaOnchain/status/2083987806943432847",
+      "reason": "用离线训练的GLM-5.2复现Coldcard漏洞，反驳「Claude只是搜到网上讨论」的质疑",
+      "reasonEn": "Counters Claude-only skepticism by showing offline GLM-5.2 independently finds the Coldcard bug",
+      "metrics": {
+        "views": 568529,
+        "likes": 5286,
+        "retweets": 328,
+        "replies": 245,
+        "quotes": 74,
+        "bookmarks": 1086
+      },
+      "document": {
+        "id": "89fb2fb0-2d22-4b42-af7c-768fe234eb40",
+        "title": "UPDATE: to anyone saying claude ",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2083987806943432847",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2083987806943432847",
+            "author": {
+              "name": "Medusa",
+              "handle": "MedusaOnchain",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1908804346420330496/pZm8qxsd_normal.jpg",
+              "isVerified": false
+            },
+            "content": "UPDATE: to anyone saying claude code scoured the whole internet for discussions by humans and then added it to their knowledge database\n\nGLM-5.2, trained on a pre-exploit date with no internet access, still found the COLDCARD wallet vulnerability independently with a single prompt in just ~20 mins of thinking",
+            "createdAt": "Sun Aug 02 18:46:26 +0000 2026",
+            "viewCount": 87512,
+            "metrics": {
+              "views": 87512,
+              "likes": 399,
+              "retweets": 32,
+              "replies": 43,
+              "quotes": 9,
+              "bookmarks": 86
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HOvP3b2b0AAUeN4.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "更新：对于任何说克劳德代码在整个互联网上搜索人类讨论，然后将其添加到他们的知识数据库的人\n\nGLM-5.2 在无法访问互联网的预利用日期进行训练，仍然在短短 20 分钟的思考时间内通过单个提示独立发现了 COLDCARD 钱包漏洞",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-03T00:04:59.447Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2083903710506504548",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2083903710506504548",
+            "author": {
+              "name": "Medusa",
+              "handle": "MedusaOnchain",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1908804346420330496/pZm8qxsd_normal.jpg",
+              "isVerified": false
+            },
+            "content": "this is insane\n\nclaude code found the COLDCARD wallet vulnerability with a single prompt, in just 8 minutes of thinking\n\nwe're not ready for what's coming",
+            "createdAt": "Sun Aug 02 13:12:16 +0000 2026",
+            "viewCount": 568529,
+            "metrics": {
+              "views": 568529,
+              "likes": 5286,
+              "retweets": 328,
+              "replies": 245,
+              "quotes": 74,
+              "bookmarks": 1086
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HOuDYU7aIAA3Mj2.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "这太疯狂了\n\nclaude代码通过一个提示发现了COLDCARD钱包漏洞，仅用了8分钟的思考\n\n我们还没有准备好迎接即将发生的事情",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-03T00:04:59.281Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2083987806943432847",
+          "pageLanguage": "en",
+          "capturedAt": "2026-08-03T00:04:58.757Z"
+        },
+        "createdAt": "2026-08-03T00:04:58.757Z",
+        "updatedAt": "2026-08-03T00:04:59.447Z"
+      }
+    },
+    {
+      "rank": 4,
+      "essenceScore": 23074,
+      "heatScore": 13434,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 13434
+      },
+      "sourceUrl": "https://x.com/WUTangKids/status/2084048460433457508",
+      "reason": "引用霍尔木兹「一边谈协议一边仍有导弹」快讯，一句like clockwork点破油市叙事操纵节奏",
+      "reasonEn": "Quotes Hormuz deal-talk vs missile reality and calls the market-moving pattern like clockwork",
+      "metrics": {
+        "views": 247544,
+        "likes": 4425,
+        "retweets": 834,
+        "replies": 245,
+        "quotes": 156,
+        "bookmarks": 299
+      },
+      "document": {
+        "id": "cfd9d9cb-8040-414a-abd3-3acaaadfd903",
+        "title": "Lmao like clockwork with the mar",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2084048460433457508",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2084048460433457508",
+            "author": {
+              "name": "Wu Tang is for the Children",
+              "handle": "WUTangKids",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1961839346757029888/cw19Lahm_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Lmao like clockwork with the market manipulation",
+            "createdAt": "Sun Aug 02 22:47:27 +0000 2026",
+            "viewCount": 17867,
+            "metrics": {
+              "views": 17867,
+              "likes": 398,
+              "retweets": 66,
+              "replies": 5,
+              "quotes": 1,
+              "bookmarks": 4
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "Lmao 像发条一样操纵市场",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-03T00:05:18.938Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2084040164825805206",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2084040164825805206",
+            "author": {
+              "name": "The Hormuz Letter",
+              "handle": "HormuzLetter",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2039669923442507776/QiE-cdek_normal.jpg",
+              "isVerified": false
+            },
+            "content": "BREAKING: Just 10 minutes before futures market open, Trump has claimed \"there's a deal on Hormuz and there will be a deal on denuclearization\" with the US \"talking to them in the form of a negotiation\" and \"Iran negotiations to begin Monday afternoon.\"\n\nIran continues to reject any negotiations with the US and launched anti-ship cruise missiles toward a ship just a few minutes ago.",
+            "createdAt": "Sun Aug 02 22:14:29 +0000 2026",
+            "viewCount": 247544,
+            "metrics": {
+              "views": 247544,
+              "likes": 4425,
+              "retweets": 834,
+              "replies": 245,
+              "quotes": 156,
+              "bookmarks": 299
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "突发新闻：就在期货市场开盘前 10 分钟，特朗普声称“在霍尔木兹海峡和无核化方面达成了协议”，美国“以谈判的形式与他们交谈”，“伊朗谈判将于周一下午开始”。\n\n伊朗继续拒绝与美国进行任何谈判，并在几分钟前向一艘船只发射了反舰巡航导弹。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-03T00:05:19.465Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2084048460433457508",
+          "pageLanguage": "en",
+          "capturedAt": "2026-08-03T00:05:18.324Z"
+        },
+        "createdAt": "2026-08-03T00:05:18.324Z",
+        "updatedAt": "2026-08-03T00:05:19.465Z"
+      }
+    },
+    {
+      "rank": 5,
+      "essenceScore": 18944,
+      "heatScore": 11215,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 11215
+      },
+      "sourceUrl": "https://x.com/leadlagreport/status/2084060188739305600",
+      "reason": "引用Kobeissi「油价因伊朗交易消息暴跌」快讯，怒怼市场又一次被停火叙事收割",
+      "reasonEn": "Quotes the oil-crash headline and dunks the market for buying the Iran-deal TACO again",
+      "metrics": {
+        "views": 316566,
+        "likes": 3087,
+        "retweets": 270,
+        "replies": 239,
+        "quotes": 89,
+        "bookmarks": 121
+      },
+      "document": {
+        "id": "1e732287-dab1-47b0-8565-0f68edf0d738",
+        "title": "This is the DUMBEST AND MOST GUL",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2084060188739305600",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2084060188739305600",
+            "author": {
+              "name": "Michael A. Gayed, CFA",
+              "handle": "leadlagreport",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2055658532033179648/cV9ZuwhI_normal.jpg",
+              "isVerified": false
+            },
+            "content": "This is the DUMBEST AND MOST GULLIBLE RETARDED MARKET IN HISTORY HOLY SHIT HOW IS EVERYONE STILL FALLING FOR THIS",
+            "createdAt": "Sun Aug 02 23:34:03 +0000 2026",
+            "viewCount": 12943,
+            "metrics": {
+              "views": 12943,
+              "likes": 210,
+              "retweets": 6,
+              "replies": 35,
+              "quotes": 1,
+              "bookmarks": 4
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "这是历史上最愚蠢、最容易上当的弱智市场，天哪，为什么每个人都还在为这个而堕落？",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-03T00:05:14.512Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2084036898977144985",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2084036898977144985",
+            "author": {
+              "name": "The Kobeissi Letter",
+              "handle": "KobeissiLetter",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1975243710846640128/fwYCe67Y_normal.jpg",
+              "isVerified": false
+            },
+            "content": "BREAKING: US oil prices crash below $79/barrel after President Trump cancels US strikes on Iran and says a deal is near.",
+            "createdAt": "Sun Aug 02 22:01:30 +0000 2026",
+            "viewCount": 316566,
+            "metrics": {
+              "views": 316566,
+              "likes": 3087,
+              "retweets": 270,
+              "replies": 239,
+              "quotes": 89,
+              "bookmarks": 121
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HOv8flQWYAIzfXV.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "突发新闻：特朗普总统取消美国对伊朗的打击并表示即将达成协议后，美国油价跌破 79 美元/桶。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-03T00:05:14.365Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2084060188739305600",
+          "pageLanguage": "en",
+          "capturedAt": "2026-08-03T00:05:14.134Z"
+        },
+        "createdAt": "2026-08-03T00:05:14.134Z",
+        "updatedAt": "2026-08-03T00:05:14.512Z"
+      }
+    },
+    {
+      "rank": 6,
+      "essenceScore": 16135,
+      "heatScore": 9281,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 9281
+      },
+      "sourceUrl": "https://x.com/MiaAI_lab/status/2084045122438648290",
+      "reason": "引用OpenCode披露的DeepSeek Flash海量token用量，点出「同样性能前所未有的低价」正在改写AI经济账",
+      "reasonEn": "Quotes OpenCode’s DeepSeek Flash token dump and names the unit-economics shock",
+      "metrics": {
+        "views": 267011,
+        "likes": 2812,
+        "retweets": 104,
+        "replies": 98,
+        "quotes": 41,
+        "bookmarks": 249
+      },
+      "document": {
+        "id": "48d72bb4-23ae-407c-8442-a0f4231afc48",
+        "title": "DeepSeek v4 Flash feels like the",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2084045122438648290",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2084045122438648290",
+            "author": {
+              "name": "Mia",
+              "handle": "MiaAI_lab",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2063908041691484160/5XsJBn7I_normal.jpg",
+              "isVerified": false
+            },
+            "content": "DeepSeek v4 Flash feels like the Qwen3.6 27B moment all over again, just on a much bigger scale.\n\nNever before you could do so much for so little money. This could changes the economics of AI.",
+            "createdAt": "Sun Aug 02 22:34:11 +0000 2026",
+            "viewCount": 4861,
+            "metrics": {
+              "views": 4861,
+              "likes": 109,
+              "retweets": 6,
+              "replies": 6,
+              "quotes": 1,
+              "bookmarks": 10
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "DeepSeek v4 Flash 感觉就像 Qwen3.6 27B 时刻的重演，只是规模更大。\n\n以前从来没有人可以用这么少的钱做这么多的事情。这可能会改变人工智能的经济学。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-03T00:04:57.234Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2083996864186318999",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2083996864186318999",
+            "author": {
+              "name": "OpenCode",
+              "handle": "opencode",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1973794620233433088/nBn75BTm_normal.png",
+              "isVerified": false
+            },
+            "content": "DeepSeek Flash did 8T tokens on August 1st\n\n5T of free usage + 3T on OpenCode Go",
+            "createdAt": "Sun Aug 02 19:22:25 +0000 2026",
+            "viewCount": 267011,
+            "metrics": {
+              "views": 267011,
+              "likes": 2812,
+              "retweets": 104,
+              "replies": 98,
+              "quotes": 41,
+              "bookmarks": 249
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "DeepSeek Flash于8月1日做了8T代币\n\n5T 免费使用 + 3T OpenCode Go",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-03T00:04:56.835Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2084045122438648290",
+          "pageLanguage": "en",
+          "capturedAt": "2026-08-03T00:04:56.724Z"
+        },
+        "createdAt": "2026-08-03T00:04:56.724Z",
+        "updatedAt": "2026-08-03T00:04:57.234Z"
+      }
+    },
+    {
+      "rank": 7,
+      "essenceScore": 12862,
+      "heatScore": 7458,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 7458
+      },
+      "sourceUrl": "https://x.com/farzyness/status/2084020295178846530",
+      "reason": "接住Calacanis「开源已逼近前沿」一句话，推演到估值泡沫、智能商品化与算力/机房赢家",
+      "reasonEn": "Builds on Jason’s open-source-vs-frontier take into a crisp valuation and infra thesis",
+      "metrics": {
+        "views": 276688,
+        "likes": 1194,
+        "retweets": 42,
+        "replies": 177,
+        "quotes": 24,
+        "bookmarks": 89
+      },
+      "document": {
+        "id": "835f4f8c-81cd-4e20-8dc0-99241b4bf1fd",
+        "title": "This implies (I think):\n\n- OpenA",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2084020295178846530",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2084020295178846530",
+            "author": {
+              "name": "Farzad 🇺🇸 🇮🇷",
+              "handle": "farzyness",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1863976029368270848/NccgxqmW_normal.jpg",
+              "isVerified": false
+            },
+            "content": "This implies (I think):\n\n- OpenAI and Anthropic are overvalued\n- Intelligence will commoditize\n- Demand for chips is just getting started\n- Data centers that can produce the best intelligence per $ per second will win massively",
+            "createdAt": "Sun Aug 02 20:55:32 +0000 2026",
+            "viewCount": 21215,
+            "metrics": {
+              "views": 21215,
+              "likes": 156,
+              "retweets": 12,
+              "replies": 22,
+              "quotes": 5,
+              "bookmarks": 9
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "这意味着（我认为）：\n\n- OpenAI 和 Anthropic 被高估\n- 情报将商品化\n- 对芯片的需求才刚刚开始\n- 每秒能产生最佳情报的数据中心将赢得巨大胜利",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-03T00:04:53.166Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2083968395066691659",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2083968395066691659",
+            "author": {
+              "name": "@jason",
+              "handle": "Jason",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1828870492633104384/o37xorx4_normal.jpg",
+              "isVerified": false
+            },
+            "content": "The difference between the open source models I'm using and Frontier models is negligible already",
+            "createdAt": "Sun Aug 02 17:29:18 +0000 2026",
+            "viewCount": 276688,
+            "metrics": {
+              "views": 276688,
+              "likes": 1194,
+              "retweets": 42,
+              "replies": 177,
+              "quotes": 24,
+              "bookmarks": 89
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "我正在使用的开源模型和 Frontier 模型之间的差异已经可以忽略不计",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-03T00:04:52.731Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2084020295178846530",
+          "pageLanguage": "en",
+          "capturedAt": "2026-08-03T00:04:52.637Z"
+        },
+        "createdAt": "2026-08-03T00:04:52.637Z",
+        "updatedAt": "2026-08-03T00:04:53.166Z"
+      }
+    },
+    {
+      "rank": 8,
+      "essenceScore": 10003,
+      "heatScore": 5555,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 5555
+      },
+      "sourceUrl": "https://x.com/scottlincicome/status/2084051963067400400",
+      "reason": "引用特朗普「Intel为我赚了750亿」言论，配股价图指出纳税人只有卖出才兑现，自6月已蒸发约2500亿市值",
+      "reasonEn": "Quotes Trump’s Intel $75B boast and charts that taxpayers only win if the stake is sold—while mcap plunged",
+      "metrics": {
+        "views": 159925,
+        "likes": 683,
+        "retweets": 183,
+        "replies": 312,
+        "quotes": 98,
+        "bookmarks": 103
+      },
+      "document": {
+        "id": "d0af006f-4106-43b8-bc95-d560482da11b",
+        "title": "1) A good example of how investe",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2084051963067400400",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2084051963067400400",
+            "author": {
+              "name": "Scott Lincicome",
+              "handle": "scottlincicome",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1186591326147616768/Q-yJBoFh_normal.jpg",
+              "isVerified": false
+            },
+            "content": "1) A good example of how invested (pun) Trump is in Intel - and will thus do whatever it takes to keep its stock up.\n\n2) The taxpayer only gains when the govt sells. Since June, Intel has lost ~$250B in market cap. Will Trump brag about the losses?",
+            "createdAt": "Sun Aug 02 23:01:22 +0000 2026",
+            "viewCount": 19974,
+            "metrics": {
+              "views": 19974,
+              "likes": 73,
+              "retweets": 21,
+              "replies": 2,
+              "quotes": 0,
+              "bookmarks": 13
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HOwKNqiWgAAAE9B.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "1）这是一个很好的例子，说明了特朗普对英特尔的投资（双关语）——因此他将不惜一切代价保持其库存。\n\n2）纳税人只有在政府出售时才能获利。自 6 月以来，英特尔市值已损失约 $250B。特朗普会吹嘘损失吗？",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-03T00:05:16.750Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2084044033538830607",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2084044033538830607",
+            "author": {
+              "name": "Acyn",
+              "handle": "Acyn",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1332231334761119745/wMzlpuHi_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Trump: With Intel, I made $75 billion. I didn’t make it for me—I made it for the country.",
+            "createdAt": "Sun Aug 02 22:29:51 +0000 2026",
+            "viewCount": 159925,
+            "metrics": {
+              "views": 159925,
+              "likes": 683,
+              "retweets": 183,
+              "replies": 312,
+              "quotes": 98,
+              "bookmarks": 103
+            },
+            "media": [
+              "https://pbs.twimg.com/amplify_video_thumb/2084044006238068736/img/Rd7w9OulO0wTD6Bg.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "特朗普：通过英特尔，我赚了 750 亿美元。我不是为了我自己，而是为了国家。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-03T00:05:16.749Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2084051963067400400",
+          "pageLanguage": "en",
+          "capturedAt": "2026-08-03T00:05:16.075Z"
+        },
+        "createdAt": "2026-08-03T00:05:16.075Z",
+        "updatedAt": "2026-08-03T00:05:16.751Z"
+      }
+    },
+    {
+      "rank": 9,
+      "essenceScore": 7713,
+      "heatScore": 3832,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 3832
+      },
+      "sourceUrl": "https://x.com/teortaxesTex/status/2084026033078943983",
+      "reason": "在DeepSeek登顶VulcanBench的图表上补刀：R1推理与o1路线独立，OpenAI真正掌握的是reasoning effort",
+      "reasonEn": "Reframes a DeepSeek leaderboard win as proof only OpenAI has truly mastered reasoning effort",
+      "metrics": {
+        "views": 109001,
+        "likes": 733,
+        "retweets": 60,
+        "replies": 78,
+        "quotes": 17,
+        "bookmarks": 266
+      },
+      "document": {
+        "id": "acceec8c-fb7f-4654-8dae-f7a580905632",
+        "title": "I’ve been saying for over a year",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2084026033078943983",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2084026033078943983",
+            "author": {
+              "name": "Teortaxes▶️ (DeepSeek 推特🐋铁粉 2023 – ∞)",
+              "handle": "teortaxesTex",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1652169745037242368/KRPTShbG_normal.jpg",
+              "isVerified": false
+            },
+            "content": "I’ve been saying for over a year. DeepSeek’s discovery of RL for reasoning in r1 is independent from o1 technology, the only commonality is what OpenAI had disclosed. And this is a case in point. Only OpenAI has truly mastered “reasoning effort”. It’s intrinsic to their method.",
+            "createdAt": "Sun Aug 02 21:18:20 +0000 2026",
+            "viewCount": 18136,
+            "metrics": {
+              "views": 18136,
+              "likes": 300,
+              "retweets": 9,
+              "replies": 17,
+              "quotes": 0,
+              "bookmarks": 81
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HOvyoUhWQAA67B9.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "我已经说了一年多了。 DeepSeek 在 r1 中发现的用于推理的 RL 与 o1 技术无关，唯一的共同点是 OpenAI 所披露的。这就是一个很好的例子。只有OpenAI真正掌握了“推理能力”。这是他们方法的本质。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-03T00:04:55.257Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2083984169324122541",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2083984169324122541",
+            "author": {
+              "name": "Morgan",
+              "handle": "morganlinton",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2058612692580184064/h0dOdYSc_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Okay, the results on my DeepSeek V4 Flash benchmark are now complete on @VulcanBench.\n\nAnd wow, was not expecting this.\n\nThis is also why I think it's so important to benchmark across effort levels.\n\nDeepSeek took the top spot, but not with high effort with Medium effort, Grok 4.5 Medium is now in number two.\n\nFable got bumped out of the top three.\n\nAnd ChatGPT isn't in the top five any more.\n\nFull benchmark results below, report will be added to the VulcanBench site early this week.",
+            "createdAt": "Sun Aug 02 18:31:59 +0000 2026",
+            "viewCount": 109001,
+            "metrics": {
+              "views": 109001,
+              "likes": 733,
+              "retweets": 60,
+              "replies": 78,
+              "quotes": 17,
+              "bookmarks": 266
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HOvMQKjbYAALX6g.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "好的，我的 DeepSeek V4 Flash 基准测试结果现已在 @VulcanBench 上完成。\n\n哇，没想到会这样。\n\n这也是为什么我认为跨努力水平进行基准测试如此重要。\n\nDeepSeek 占据了榜首，但与 Medium 相比，Grok 4.5 Medium 现在排名第二。\n\n《神鬼寓言》被挤出了前三名。\n\nChatGPT 不再进入前五名。\n\n完整的基准测试结果如下，报告将于本周初添加到 VulcanBench 网站。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-03T00:04:55.254Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2084026033078943983",
+          "pageLanguage": "en",
+          "capturedAt": "2026-08-03T00:04:54.739Z"
+        },
+        "createdAt": "2026-08-03T00:04:54.739Z",
+        "updatedAt": "2026-08-03T00:04:55.257Z"
+      }
+    },
+    {
+      "rank": 10,
+      "essenceScore": 3049,
+      "heatScore": 1418,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 1418
+      },
+      "sourceUrl": "https://x.com/TechFlowPost/status/2083936685616664958",
+      "reason": "在Coldcard大规模被盗新闻上加一层：AI八分钟扫出藏了五年的伪随机数致命bug，并警示反向扫描",
+      "reasonEn": "Chinese recap: AI finds Coldcard’s five-year RNG bug in minutes and flips it into a defense alarm",
+      "metrics": {
+        "views": 55492,
+        "likes": 75,
+        "retweets": 11,
+        "replies": 58,
+        "quotes": 2,
+        "bookmarks": 39
+      },
+      "document": {
+        "id": "31874b5c-c7a2-4079-9f57-79870d513464",
+        "title": "关于 @COLDCARDwallet 硬件钱包大规模被盗的原因，",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2083936685616664958",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2083936685616664958",
+            "author": {
+              "name": "TechFlow 深潮｜APP 已上线",
+              "handle": "TechFlowPost",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1642733537152610306/wWtDXcl2_normal.jpg",
+              "isVerified": false
+            },
+            "content": "关于 @COLDCARDwallet 硬件钱包大规模被盗的原因，让人觉得过于草台了：\n\n有人用 AI ，花了 8 分钟就找到了那个在代码里藏了五年的致命漏洞。\n\n一个 Reddit 用户让 Claude Code 去审计 Coldcard 的开源固件代码，只给了一个简短的指令：检查漏洞。\n\n8 分钟后,CC直接定位到了问题，认为固件生成私钥时调用的是软件伪随机数，而不是芯片上的硬件真随机数生成器（见下面配图）。\n\n这正是被黑客利用，导致 1000 多个钱包被清空的致命问题。\n\n更离谱的是，不只 Claude 找到了。有人用智谱的 GLM 5.2 也跑了一遍，同样发现了...\n\nGLM 5.2 是 6 月 16 日的训练版本，没有联网，不可能从新闻里知道这个漏洞，是纯粹从代码里看出来的。\n\n也就是说这个 bug 不需要什么高端努力才能发现，是拿 AI 扫一遍代码就能看出来的基础错误。\n\n可见代码审计已经到了一个何等笑话的地步？\n\n那么反过来想，你猜一个别有用心的人，如果有点技术能力，会不会反向用 AI ，来无差别扫描所有钱包、DeFi项目相关的软硬件的漏洞？😱\n\n注意，这不是给黑客进攻的致富教程，而是给项目方防守的警钟。",
+            "createdAt": "Sun Aug 02 15:23:18 +0000 2026",
+            "viewCount": 22191,
+            "metrics": {
+              "views": 22191,
+              "likes": 89,
+              "retweets": 14,
+              "replies": 35,
+              "quotes": 3,
+              "bookmarks": 58
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HOueyzmasAAQcn0.png"
+            ],
+            "translation": {
+              "provider": "none",
+              "status": "idle",
+              "language": "zh-CN",
+              "text": "",
+              "annotations": [],
+              "error": "",
+              "version": 0
+            }
+          },
+          {
+            "id": "2083513887597772859",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2083513887597772859",
+            "author": {
+              "name": "TechFlow 深潮｜APP 已上线",
+              "handle": "TechFlowPost",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1642733537152610306/wWtDXcl2_normal.jpg",
+              "isVerified": false
+            },
+            "content": "硬件钱包是加密世界里「最安全」的存储方式，但并非100%。\n\n据海外多个信源确认，7 月 30 日凌晨，1,196 个 Coldcard @COLDCARDwallet 41 分钟内被清空，总计被盗 1,082 枚 BTC，约 7000 万美元。\n\n目前 Reddit 加密板块出现大量用户反馈该品牌钱包被盗的帖子，其中有老哥反馈自己的3台硬件共计在8分钟内被盗了18个 BTC...\n\n从原因来看，这波大批量被盗并非用户操作失误，源自 Coldcard 自己的固件出了 bug。\n\n2021 年 3 月的一次固件更新里，设备生成助记词时跳过了硬件随机数生成器，用了一个可预测的软件方式替代。\n\n于是，攻击者从头到尾没有碰过任何一台 Coldcard。他们在自己的电脑上把所有可能的助记词跑了一遍，推算出对应的地址，然后跟公开的区块链数据比对。匹配上了就转走。\n\n离谱的是，基本上所有 ColdCard 在售型号硬件钱包都中招了。而且这个漏洞到现在超过五年。\n\n以前总说 Not Your Key， Not Your Coin，现在似乎是你的 Key，可能依然不安全。\n\n交易所倒闭，项目关停，钱包被盗... 熊市标准剧本正在上演，这是第几阶段了？",
+            "createdAt": "Sat Aug 01 11:23:15 +0000 2026",
+            "viewCount": 55492,
+            "metrics": {
+              "views": 55492,
+              "likes": 75,
+              "retweets": 11,
+              "replies": 58,
+              "quotes": 2,
+              "bookmarks": 39
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HOofrqOagAEjc2i.png"
+            ],
+            "translation": {
+              "provider": "none",
+              "status": "idle",
+              "language": "zh-CN",
+              "text": "",
+              "annotations": [],
+              "error": "",
+              "version": 0
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2083936685616664958",
+          "pageLanguage": "en",
+          "capturedAt": "2026-08-03T00:05:08.386Z"
+        },
+        "createdAt": "2026-08-03T00:05:08.386Z",
+        "updatedAt": "2026-08-03T00:05:08.387Z"
+      }
+    }
+  ]
+}
