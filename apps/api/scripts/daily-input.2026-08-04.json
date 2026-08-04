@@ -1,0 +1,67 @@
+{
+  "date": "2026-08-04",
+  "title": "每日 X 精华引用榜",
+  "titleEn": "Daily Quote Essence on X",
+  "items": [
+    {
+      "url": "https://x.com/ChrisGPT/status/2084380054784549315",
+      "reason": "用扫地机器人类比狠呛 LeCun 的「纯 LLM」辩解，把抽象争论压成一句可传播的 dunk。",
+      "reasonEn": "Roomba-vs-broom parody that shreds LeCun’s “pure LLM” distinction into a shareable dunk."
+    },
+    {
+      "url": "https://x.com/PawelHuryn/status/2084345741812580853",
+      "reason": "用盲测 bug bench 硬数据回击 Qwen3.8-Max「coding 新标杆」叙事，把宣传打回真实修复率。",
+      "reasonEn": "Blind bug-bench numbers reframe Qwen3.8-Max’s “new bar for coding” hype into actual fix rates."
+    },
+    {
+      "url": "https://x.com/hosseeb/status/2084376097945506052",
+      "reason": "把 Qwen 榜单成绩改写成前沿推理价格暴跌约 80% 的宏观叙事， reframing 比原帖更有信息密度。",
+      "reasonEn": "Reframes Qwen’s Arena rank as an ~80% collapse in frontier-intelligence pricing—more economically salient than the leaderboard itself."
+    },
+    {
+      "url": "https://x.com/Jsevillamol/status/2084372659538952668",
+      "reason": "用 Opus/Sol 连 Slay the Spire 都打不好，给「已进入奇点」降温：很强但仍极早。",
+      "reasonEn": "Cold-shower counter to “we’re inside the singularity”: frontier models still fumbling Slay the Spire—powerful yet early."
+    },
+    {
+      "url": "https://x.com/championswimmer/status/2084357787274891502",
+      "reason": "在 Exa 自夸索引规模之上补刀：agent 真正 alpha 是接专用搜索引擎，而不是模型自带免费 web search。",
+      "reasonEn": "Adds the practitioner takeaway on Exa’s scale post: agent alpha is dedicated search, not free bundled web search."
+    },
+    {
+      "url": "https://x.com/signulll/status/2084390032404795814",
+      "reason": "把 OpenAI 豪华创作者旅行反弹，对比 Anthropic 低调养成：关键不是赞助，而是「显眼 vs 隐形」执行。",
+      "reasonEn": "Reframes OpenAI’s luxury-creator backlash vs Anthropic’s quiet cultivation—visibility of the influence op, not sponsorship itself."
+    },
+    {
+      "url": "https://x.com/cline/status/2084359007029141528",
+      "reason": "回应「为何 Cline 更吃开源权重」：开源模型 RL 爱多花 token 自检，harness 应配合而非压榨效率。",
+      "reasonEn": "Explains why Cline pairs better with open-weight models: RL teaches token-heavy self-checks; harnesses should enable that, not throttle it."
+    },
+    {
+      "url": "https://x.com/greg16676935420/status/2084416710824869949",
+      "reason": "把 550 万用户反馈比作 550 万根热狗，用荒诞尺度消解 AI 创业融资叙事的膨胀感。",
+      "reasonEn": "Collapses a $60M-ARR AI launch into “5.5 million hotdogs”—deadpan scale dunk on startup narrative inflation."
+    },
+    {
+      "url": "https://x.com/TiezhuCrypto/status/2084102821948072116",
+      "reason": "六条拆解贝森特日美汇市表态：FIMA 用途、逼加息、美债押金化与弱美元目标，远超原帖官话。",
+      "reasonEn": "Six-point teardown of Bessent’s Japan FX note—FIMA use, rate pressure, Treasury-as-collateral, weak-dollar aim—far denser than the official post."
+    },
+    {
+      "url": "https://x.com/faryarshirzad/status/2084398467217265035",
+      "reason": "把 CLARITY 博弈说清楚：若年初不硬刚，代币化股票/DeFi/稳定币奖励可能被写死， reframing 法案为何值得拖。",
+      "reasonEn": "Clarifies CLARITY stakes: without early pushback the bill would have killed tokenized equities, DeFi builders, and stablecoin rewards."
+    },
+    {
+      "url": "https://x.com/Arcadia_Bao/status/2083464158033707199",
+      "reason": "把英文圈「Opus 4.6 后不会说话」接到中文用户体感，并推广到多数模型系列：写作退化是通病。",
+      "reasonEn": "Bridges English “post-Opus-4.6 illegible writing” to 中文 users and generalizes: most model lines get worse at prose."
+    },
+    {
+      "url": "https://x.com/syhily/status/2083604796762898605",
+      "reason": "反驳「demo 刷榜=真能力」：一句话做游戏测的是世界知识，日常开发更考使用者品味与习惯。",
+      "reasonEn": "Counters demo-leaderboard worship: one-shot games test world knowledge; real coding still hinges on the user’s craft."
+    }
+  ]
+}

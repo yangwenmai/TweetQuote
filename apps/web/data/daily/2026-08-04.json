@@ -1,0 +1,1108 @@
+{
+  "date": "2026-08-04",
+  "title": "每日 X 精华引用榜",
+  "titleEn": "Daily Quote Essence on X",
+  "generatedAt": "2026-08-04T00:08:42.200Z",
+  "entries": [
+    {
+      "rank": 1,
+      "essenceScore": 151328,
+      "heatScore": 86191,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 86191
+      },
+      "sourceUrl": "https://x.com/TiezhuCrypto/status/2084102821948072116",
+      "reason": "六条拆解贝森特日美汇市表态：FIMA 用途、逼加息、美债押金化与弱美元目标，远超原帖官话。",
+      "reasonEn": "Six-point teardown of Bessent’s Japan FX note—FIMA use, rate pressure, Treasury-as-collateral, weak-dollar aim—far denser than the official post.",
+      "metrics": {
+        "views": 3084398,
+        "likes": 11189,
+        "retweets": 2451,
+        "replies": 950,
+        "quotes": 565,
+        "bookmarks": 1183
+      },
+      "document": {
+        "id": "78a39d38-42a9-4570-ab9f-77fc1c8d0a7e",
+        "title": "1、沃什说，我要放弃前瞻指引。贝森特说，好的，那我就多一点前瞻指",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2084102821948072116",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2084102821948072116",
+            "author": {
+              "name": "铁柱",
+              "handle": "TiezhuCrypto",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1806869533002797056/SJVZLyx1_normal.jpg",
+              "isVerified": false
+            },
+            "content": "1、沃什说，我要放弃前瞻指引。贝森特说，好的，那我就多一点前瞻指引吧。\n\n2、FIMA回购（相当于抵押美债借款）上一次大规模动用是硅谷银行倒闭，应该是瑞信危机，瑞士借了几百亿。但区别是，那次是用于危机处理。这一次是用于外汇干预。\n\n3、贝森特毫不避讳的承认经济安全就是国家安全。并强烈的建议日本加息。那么这次帮场的目的是不是就是换日本9月加息？地缘政治的货币政策延伸。\n\n4、贝森特讲这是安倍经济学的新阶段。安倍和高市向来是低利率的代表，而且高市就是要搞大财政刺激。怎么加息？\n\n5、对美债少了一个大卖家固然是好的。但是我要是盟友我就会想，我这么多美债，到底是我的储备，还是我给老美的押金？或者，你持有美债的流动性价值取决于咱们的盟友关系好坏？\n\n6、一方面贝森特承认日元低估，一方面又说日元无序波动。那么显然，真实的目标就是弱美元。同时减少日本由于货币贬值带来的关税政策失效。",
+            "createdAt": "Mon Aug 03 02:23:28 +0000 2026",
+            "viewCount": 31202,
+            "metrics": {
+              "views": 31202,
+              "likes": 80,
+              "retweets": 7,
+              "replies": 72,
+              "quotes": 1,
+              "bookmarks": 31
+            },
+            "media": [],
+            "translation": {
+              "provider": "none",
+              "status": "idle",
+              "language": "zh-CN",
+              "text": "",
+              "annotations": [],
+              "error": "",
+              "version": 0
+            }
+          },
+          {
+            "id": "2084051676801933622",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2084051676801933622",
+            "author": {
+              "name": "Treasury Secretary Scott Bessent",
+              "handle": "SecScottBessent",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1889401757060444160/MDUd0e0g_normal.jpg",
+              "isVerified": false
+            },
+            "content": "The Trump Administration delivers for America's trusted partners. Economic security is national security. And the U.S.-Japan alliance is built on both.\n\nFriday's coordinated foreign exchange actions countered disorderly yen movements.\n\nTreasury remains attentive and in close communication with our counterparts at MOF and BOJ. We will not hesitate to participate in further joint intervention.\n\nThe FIMA Repo Facility is an important backstop. We would encourage it to be upsized in the coming months.\n\nWe strongly support Japan's decisive market and monetary steps to correct the substantial undervaluation of the yen.\n\nThe Takaichi government is moving into an exciting new phase of Abenomics, as nearly 15 years of powerful stimulus have created durable, robust underlying economic dynamics.",
+            "createdAt": "Sun Aug 02 23:00:14 +0000 2026",
+            "viewCount": 3084398,
+            "metrics": {
+              "views": 3084398,
+              "likes": 11189,
+              "retweets": 2451,
+              "replies": 950,
+              "quotes": 565,
+              "bookmarks": 1183
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "特朗普政府为美国值得信赖的合作伙伴提供服务。经济安全就是国家安全。美日同盟是建立在两者之上的。\n\n周五协调一致的外汇行动对抗了日元的无序波动。\n\n财政部仍保持关注，并与财政部和日本央行的同行保持密切沟通。我们将毫不犹豫地参与进一步的联合干预。\n\nFIMA 回购协议是一个重要的后盾。我们鼓励它在未来几个月内扩大规模。\n\n我们强烈支持日本采取果断的市场和货币措施来纠正日元大幅低估的情况。\n\n高市政府正在进入安倍经济学令人兴奋的新阶段，近 15 年的强力刺激措施创造了持久、强劲的基础经济动力。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-04T00:08:21.799Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2084102821948072116",
+          "pageLanguage": "en",
+          "capturedAt": "2026-08-04T00:08:21.604Z"
+        },
+        "createdAt": "2026-08-04T00:08:21.604Z",
+        "updatedAt": "2026-08-04T00:08:21.799Z"
+      }
+    },
+    {
+      "rank": 2,
+      "essenceScore": 30622,
+      "heatScore": 14243,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 14243
+      },
+      "sourceUrl": "https://x.com/greg16676935420/status/2084416710824869949",
+      "reason": "把 550 万用户反馈比作 550 万根热狗，用荒诞尺度消解 AI 创业融资叙事的膨胀感。",
+      "reasonEn": "Collapses a $60M-ARR AI launch into “5.5 million hotdogs”—deadpan scale dunk on startup narrative inflation.",
+      "metrics": {
+        "views": 562820,
+        "likes": 1003,
+        "retweets": 69,
+        "replies": 221,
+        "quotes": 79,
+        "bookmarks": 549
+      },
+      "document": {
+        "id": "b355449f-edbc-4a48-bf7b-41b1e1a3292d",
+        "title": "5.5 million people giving feedba",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2084416710824869949",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2084416710824869949",
+            "author": {
+              "name": "greg",
+              "handle": "greg16676935420",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1581014308397502464/NPogKMyk_normal.jpg",
+              "isVerified": false
+            },
+            "content": "5.5 million people giving feedback on AI might not sound like much, but for perspective this is 5.5 million hotdogs",
+            "createdAt": "Mon Aug 03 23:10:45 +0000 2026",
+            "viewCount": 23768,
+            "metrics": {
+              "views": 23768,
+              "likes": 172,
+              "retweets": 5,
+              "replies": 50,
+              "quotes": 1,
+              "bookmarks": 3
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HO1V8u7akAAxSXd.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "550 万人对 AI 提供反馈听起来可能不多，但从长远来看，这相当于 550 万个热狗",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-04T00:08:15.699Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2084361692792934488",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2084361692792934488",
+            "author": {
+              "name": "Grace Li",
+              "handle": "grx_xce",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2084134496224567296/tM54-gUC_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Today, we're introducing @Intelligence_ai.\n\nIn 6 months, as a team of 10, we scaled from $5M to $60M ARR and 5.5M users across 190+ countries.\n\nWe raised a $7.9M seed, led by @IndexVentures with participation from @conviction, @A_StarVC, and @combinator to build DesignArena, a universal interface for accessing and evaluating the world's AI capabilities.\n\nMost evaluations try to simulate the real-world. We believe the real-world is the ultimate verifier.\n\nPeople come to @DesignArena with a request. Models compete to fulfill the request, and users determine what works best for them.\n\nTheir live user behavior evaluates the models, improves how work is routed, and helps people access the right intelligence.\n\nWe've helped the world's leading frontier labs break the news on their SOTA capabilities.\n\nWhat's the limit? Join us and find out.",
+            "createdAt": "Mon Aug 03 19:32:07 +0000 2026",
+            "viewCount": 562820,
+            "metrics": {
+              "views": 562820,
+              "likes": 1003,
+              "retweets": 69,
+              "replies": 221,
+              "quotes": 79,
+              "bookmarks": 549
+            },
+            "media": [
+              "https://pbs.twimg.com/amplify_video_thumb/2084337527788560384/img/1-N-5fGq5xxWbv_U.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "今天，我们要介绍@Intelligence_ai。\n\n在 6 个月内，我们的 10 人团队将 ARR 从 500 万美元扩大到 6000 万美元，在 190 多个国家/地区拥有 550 万用户。\n\n我们筹集了 790 万美元的种子资金，由 @IndexVentures 牵头，@conviction、@A_StarVC 和 @combinator 参与，以构建 DesignArena，这是一个用于访问和评估世界人工智能能力的通用界面。\n\n大多数评估都试图模拟现实世界。我们相信现实世界是最终的验证者。\n\n人们带着请求来到@DesignArena。模型竞相满足请求，而用户则确定最适合他们的方法。\n\n他们的实时用户行为评估模型，改进工作分配方式，并帮助人们获取正确的情报。\n\n我们帮助世界领先的前沿实验室公布了他们的 SOTA 功能。\n\n极限是多少？加入我们并找出答案。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-04T00:08:15.849Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2084416710824869949",
+          "pageLanguage": "en",
+          "capturedAt": "2026-08-04T00:08:14.829Z"
+        },
+        "createdAt": "2026-08-04T00:08:14.829Z",
+        "updatedAt": "2026-08-04T00:08:15.849Z"
+      }
+    },
+    {
+      "rank": 3,
+      "essenceScore": 26489,
+      "heatScore": 13405,
+      "signals": {
+        "depth": 4,
+        "hasDunk": true,
+        "peakIndex": 3,
+        "peakHeat": 13405
+      },
+      "sourceUrl": "https://x.com/faryarshirzad/status/2084398467217265035",
+      "reason": "把 CLARITY 博弈说清楚：若年初不硬刚，代币化股票/DeFi/稳定币奖励可能被写死， reframing 法案为何值得拖。",
+      "reasonEn": "Clarifies CLARITY stakes: without early pushback the bill would have killed tokenized equities, DeFi builders, and stablecoin rewards.",
+      "metrics": {
+        "views": 408139,
+        "likes": 2958,
+        "retweets": 541,
+        "replies": 171,
+        "quotes": 55,
+        "bookmarks": 77
+      },
+      "document": {
+        "id": "131be867-b744-4550-8518-61bff37acb4c",
+        "title": "Exactly. Without @brian_armstron",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2084398467217265035",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2084398467217265035",
+            "author": {
+              "name": "Faryar Shirzad 🛡️",
+              "handle": "faryarshirzad",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2009484753104404480/vgwFRuvk_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Exactly. Without @brian_armstrong and @coinbase speaking up in January, we'd have a bill that would have:\n\n1) effectively banned tokenized equities\n2) severely restricted defi developers\n3) made the CFTC subservient to the SEC\n4) likely killed stablecoin rewards\n\nThat would have been bad in and of itself, and it would have fractured the industry and effectively killed the bill.\n\nWe now have a very good bill teed up for passage. Let's focus on getting CLARITY across the line.",
+            "createdAt": "Mon Aug 03 21:58:15 +0000 2026",
+            "viewCount": 8529,
+            "metrics": {
+              "views": 8529,
+              "likes": 126,
+              "retweets": 14,
+              "replies": 10,
+              "quotes": 2,
+              "bookmarks": 11
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "确切地。如果没有 @brian_armstrong 和 @coinbase 一月份的发言，我们将会有一项法案：\n\n1）有效禁止代币化股票\n2）严格限制defi开发者\n3）使CFTC服从SEC\n4）可能会扼杀稳定币奖励\n\n这本身就很糟糕，而且会导致行业分裂，并实际上扼杀该法案。\n\n我们现在已经准备好通过一项非常好的法案。让我们重点关注如何保持清晰。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-04T00:08:30.939Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2084367755675836543",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2084367755675836543",
+            "author": {
+              "name": "Kara Calvert 🛡️",
+              "handle": "karacalvert",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1478817377085267980/bmIGlcM7_normal.jpg",
+              "isVerified": false
+            },
+            "content": ".@jdorman81 you are ignoring months of hard negotiations on complex issues that had to happen before the Senate could pass the CLARITY Act. Before the markup or after it, the work had to be done.\n\nWe opposed the bill because it would’ve locked in problematic provisions that would have killed rewards, tokenization & hurt developers. Nobody wanted that, and the bill is vastly improved today.\n\nWe’ve pushed for Clarity for 10+ years, and we'll keep going until it’s done.",
+            "createdAt": "Mon Aug 03 19:56:13 +0000 2026",
+            "viewCount": 21906,
+            "metrics": {
+              "views": 21906,
+              "likes": 73,
+              "retweets": 7,
+              "replies": 8,
+              "quotes": 2,
+              "bookmarks": 6
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": ".@jdorman81 你忽略了在参议院通过《澄清法案》之前必须就复杂问题进行的数月艰苦谈判。在标记之前或之后，必须完成工作。\n\n我们反对该法案，因为它会锁定有问题的条款，这些条款会扼杀奖励、代币化并伤害开发者。没有人希望这样，而今天该法案已大大改善。\n\n我们已经推动清晰度十多年了，我们将继续努力，直到实现为止。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-04T00:08:30.909Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2084306302361342456",
+            "relation": "quote",
+            "depth": 2,
+            "sourceTweetId": "2084306302361342456",
+            "author": {
+              "name": "Jeff Dorman",
+              "handle": "jdorman81",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1093973470105333760/BgquBcmq_normal.jpg",
+              "isVerified": false
+            },
+            "content": "The irony in this post considering we probably would have had already had CLARITY if Coinbase/Armstrong hadn't killed it back in January 2026.\n\nInstead, it's now political theatre with a less than 10% chance of happening in our opinion.\n\n@DavidNage has been one of the few honest voices -- over the last two months he's written countless pieces https://www.ar.ca/blog showing how this is dead on arrival.",
+            "createdAt": "Mon Aug 03 15:52:01 +0000 2026",
+            "viewCount": 43415,
+            "metrics": {
+              "views": 43415,
+              "likes": 116,
+              "retweets": 9,
+              "replies": 20,
+              "quotes": 5,
+              "bookmarks": 17
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "这篇文章的讽刺之处在于，如果 Coinbase/Armstrong 没有在 2026 年 1 月杀死它，我们可能已经有了 CLARITY。\n\n相反，我们认为这现在是一场政治戏剧，发生的可能性不到 10%。\n\n@DavidNage 是为数不多的诚实声音之一——在过去的两个月里，他写了无数的文章 https://www.ar.ca/blog 来展示这是如何在到达时就死掉的。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-04T00:08:31.060Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2084304193532158012",
+            "relation": "quote",
+            "depth": 3,
+            "sourceTweetId": "2084304193532158012",
+            "author": {
+              "name": "Coinbase 🛡️",
+              "handle": "coinbase",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2069440039612719104/m-UOfXvz_normal.png",
+              "isVerified": false
+            },
+            "content": "America needs CLARITY.",
+            "createdAt": "Mon Aug 03 15:43:38 +0000 2026",
+            "viewCount": 408139,
+            "metrics": {
+              "views": 408139,
+              "likes": 2958,
+              "retweets": 541,
+              "replies": 171,
+              "quotes": 55,
+              "bookmarks": 77
+            },
+            "media": [
+              "https://pbs.twimg.com/amplify_video_thumb/2084304067451408384/img/4PFnZfOVjM2g5dqc.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "美国需要清晰。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-04T00:08:30.519Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2084398467217265035",
+          "pageLanguage": "en",
+          "capturedAt": "2026-08-04T00:08:30.301Z"
+        },
+        "createdAt": "2026-08-04T00:08:30.301Z",
+        "updatedAt": "2026-08-04T00:08:31.060Z"
+      }
+    },
+    {
+      "rank": 4,
+      "essenceScore": 19871,
+      "heatScore": 10609,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 10609
+      },
+      "sourceUrl": "https://x.com/Jsevillamol/status/2084372659538952668",
+      "reason": "用 Opus/Sol 连 Slay the Spire 都打不好，给「已进入奇点」降温：很强但仍极早。",
+      "reasonEn": "Cold-shower counter to “we’re inside the singularity”: frontier models still fumbling Slay the Spire—powerful yet early.",
+      "metrics": {
+        "views": 234519,
+        "likes": 3264,
+        "retweets": 225,
+        "replies": 166,
+        "quotes": 64,
+        "bookmarks": 728
+      },
+      "document": {
+        "id": "7ba4cd3e-807d-41ab-bae9-d3084d27a2eb",
+        "title": "I have to say that watching Opus",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2084372659538952668",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2084372659538952668",
+            "author": {
+              "name": "Jaime Sevilla",
+              "handle": "Jsevillamol",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1470038309581864976/IZYOuUAD_normal.jpg",
+              "isVerified": false
+            },
+            "content": "I have to say that watching Opus 5 and Sol 5.6 fumble slay the spire plays has been quite a cold shower.\n\nThey are so dumb, and we are so early. We are nowhere near general intelligence, and we already have a revolution in our hands.",
+            "createdAt": "Mon Aug 03 20:15:42 +0000 2026",
+            "viewCount": 31340,
+            "metrics": {
+              "views": 31340,
+              "likes": 237,
+              "retweets": 9,
+              "replies": 6,
+              "quotes": 3,
+              "bookmarks": 49
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "我不得不说，观看 Opus 5 和 Sol 5.6 摸索杀戮尖塔的表演真是让人受不了。\n\n他们太蠢了，而我们却这么早。我们距离通用智能还差得很远，但我们已经掌握了一场革命。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-04T00:07:50.127Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2084320951060353191",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2084320951060353191",
+            "author": {
+              "name": "Andrew Curran",
+              "handle": "AndrewCurran_",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1596945208058744833/_X3LT7fb_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Shorten your timelines, friends. I started this account to say this, and in many ways everything I've posted for the past four years has been saying the same thing. Some of you increasingly feel it. We passed the threshold in November. We are already inside the singularity.",
+            "createdAt": "Mon Aug 03 16:50:14 +0000 2026",
+            "viewCount": 234519,
+            "metrics": {
+              "views": 234519,
+              "likes": 3264,
+              "retweets": 225,
+              "replies": 166,
+              "quotes": 64,
+              "bookmarks": 728
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "朋友们，缩短你的时间。我创建这个帐户就是为了表达这一点，并且在过去四年中我发布的所有内容在很多方面都在表达同样的事情。你们中的一些人越来越感觉到了。我们在十一月跨过了门槛。我们已经在奇点内部了。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-04T00:07:49.697Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2084372659538952668",
+          "pageLanguage": "en",
+          "capturedAt": "2026-08-04T00:07:48.992Z"
+        },
+        "createdAt": "2026-08-04T00:07:48.992Z",
+        "updatedAt": "2026-08-04T00:07:50.128Z"
+      }
+    },
+    {
+      "rank": 5,
+      "essenceScore": 14852,
+      "heatScore": 8499,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 8499
+      },
+      "sourceUrl": "https://x.com/Arcadia_Bao/status/2083464158033707199",
+      "reason": "把英文圈「Opus 4.6 后不会说话」接到中文用户体感，并推广到多数模型系列：写作退化是通病。",
+      "reasonEn": "Bridges English “post-Opus-4.6 illegible writing” to 中文 users and generalizes: most model lines get worse at prose.",
+      "metrics": {
+        "views": 215403,
+        "likes": 2821,
+        "retweets": 82,
+        "replies": 224,
+        "quotes": 42,
+        "bookmarks": 275
+      },
+      "document": {
+        "id": "6bab177b-24a5-444e-ad8a-9300321e4c18",
+        "title": "opus4.6是Claude最后一个擅长说话写作的模型，从这个推",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2083464158033707199",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2083464158033707199",
+            "author": {
+              "name": "忒修斯的船板",
+              "handle": "Arcadia_Bao",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1935751791997751297/CrjJCiJ-_normal.jpg",
+              "isVerified": false
+            },
+            "content": "opus4.6是Claude最后一个擅长说话写作的模型，从这个推文能看出这并不是中文圈独有的看法。各种语言的用户都这么认为。\n其实推而广之的话，大部分模型系列都有类似的问题。反过来有大幅度进步的模型才是罕见。",
+            "createdAt": "Sat Aug 01 08:05:38 +0000 2026",
+            "viewCount": 16126,
+            "metrics": {
+              "views": 16126,
+              "likes": 114,
+              "retweets": 4,
+              "replies": 38,
+              "quotes": 1,
+              "bookmarks": 21
+            },
+            "media": [],
+            "translation": {
+              "provider": "none",
+              "status": "idle",
+              "language": "zh-CN",
+              "text": "",
+              "annotations": [],
+              "error": "",
+              "version": 0
+            }
+          },
+          {
+            "id": "2082985345138999494",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2082985345138999494",
+            "author": {
+              "name": "sensho",
+              "handle": "sensho",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1906194775889383424/8TjWEhRj_normal.jpg",
+              "isVerified": false
+            },
+            "content": "opus 4.6 is the last anthropic model that i had no problem reading the writing of quickly\n\nall of the models since, incl fable, are a lot less legible. for both coding and convo\n\nis it an RL artifact? what's causing it? i've seen this sentiment shared by friends",
+            "createdAt": "Fri Jul 31 00:23:00 +0000 2026",
+            "viewCount": 215403,
+            "metrics": {
+              "views": 215403,
+              "likes": 2821,
+              "retweets": 82,
+              "replies": 224,
+              "quotes": 42,
+              "bookmarks": 275
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "opus 4.6 是我快速阅读文字时没有问题的最后一个人择模型\n\n此后的所有模型，包括寓言，都不太清晰。用于编码和卷积\n\n这是 RL 神器吗？是什么原因造成的？我看到了朋友们分享的这种情绪",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-04T00:08:36.819Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2083464158033707199",
+          "pageLanguage": "en",
+          "capturedAt": "2026-08-04T00:08:36.019Z"
+        },
+        "createdAt": "2026-08-04T00:08:36.019Z",
+        "updatedAt": "2026-08-04T00:08:36.819Z"
+      }
+    },
+    {
+      "rank": 6,
+      "essenceScore": 13134,
+      "heatScore": 6109,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 6109
+      },
+      "sourceUrl": "https://x.com/championswimmer/status/2084357787274891502",
+      "reason": "在 Exa 自夸索引规模之上补刀：agent 真正 alpha 是接专用搜索引擎，而不是模型自带免费 web search。",
+      "reasonEn": "Adds the practitioner takeaway on Exa’s scale post: agent alpha is dedicated search, not free bundled web search.",
+      "metrics": {
+        "views": 194227,
+        "likes": 918,
+        "retweets": 66,
+        "replies": 44,
+        "quotes": 24,
+        "bookmarks": 474
+      },
+      "document": {
+        "id": "5667827e-e231-4151-b285-45c9fde81820",
+        "title": "Because Claude and Codex and Gem",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2084357787274891502",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2084357787274891502",
+            "author": {
+              "name": "Arnav Gupta",
+              "handle": "championswimmer",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1440946683123208192/-Lr_1ChM_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Because Claude and Codex and Gemini throw in \"web search\" for free as a bundled tool, most people have yet to find out the alpha of hooking up agents to proper search engines.\n\nSome still use very inefficient processes like agent browser like stuff.\n\nOnce you connect something like Exa (or Parallel) to your agentic workflow, it totally changes the game.\n\nI'd been using Perplexity/Exa/Parallel all three, now I just use Exa. It is the best in terms of speed, cost and quality for me these days.",
+            "createdAt": "Mon Aug 03 19:16:36 +0000 2026",
+            "viewCount": 103082,
+            "metrics": {
+              "views": 103082,
+              "likes": 874,
+              "retweets": 28,
+              "replies": 32,
+              "quotes": 4,
+              "bookmarks": 1131
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "由于 Claude、Codex 和 Gemini 免费提供“网络搜索”作为捆绑工具，因此大多数人尚未找到将代理连接到适当搜索引擎的阿尔法。\n\n有些仍然使用非常低效的流程，例如代理浏览器之类的东西。\n\n一旦你将 Exa（或 Parallel）之类的东西连接到你的代理工作流程中，它就会完全改变游戏规则。\n\n我一直在使用 Perplexity/Exa/Parallel 这三个工具，现在我只使用 Exa。对于我来说，目前它在速度、成本和质量方面都是最好的。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-04T00:07:55.029Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2084321018546704624",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2084321018546704624",
+            "author": {
+              "name": "Will Bryk",
+              "handle": "WilliamBryk",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1932933397560897536/2JIEZ5j0_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Exa is now one of the largest indexes in the world.\n\nWe serve 80B pages, track 1.4T urls, and are on track to be Google-scale in early 2027.\n\nIt's difficult to know the size of indexes, but we estimate Google to be ~1T, Bing to be ~500B, and Yandex ~200B. Brave mentioned in April that they're at 40B.\n\nMost of the web is trash that can hurt AI outputs, so you actually have to crawl way more than you serve and train models to filter out the trash.\n\nIn terms of peak QPS, we estimate Bing at roughly 30k/s and Google at ~500k/s.\n\nIn our case, because agent traffic often requires large fan-out (deep searches can use dozens of sub-searches) and can be spiky (like when AI labs RL with us), we're already starting to provision for Bing-scale traffic.\n\nWithin 2 years, agents will search at many millions per second. They'll also want comprehensiveness over all data, far bigger than any index today. So the retrieval infra required will be larger than Google-scale in both dimensions.",
+            "createdAt": "Mon Aug 03 16:50:30 +0000 2026",
+            "viewCount": 194227,
+            "metrics": {
+              "views": 194227,
+              "likes": 918,
+              "retweets": 66,
+              "replies": 44,
+              "quotes": 24,
+              "bookmarks": 474
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HOyZmGSaUAAXw-M.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "Exa 现在是世界上最大的指数之一。\n\n我们提供 80B 个页面，跟踪 1.4T 网址，并有望在 2027 年初达到 Google 规模。\n\n很难知道索引的大小，但我们估计 Google 约为 1T，Bing 约为 500B，Yandex 约为 200B。 Brave 在 4 月份提到他们的价格是 40B。\n\n大多数网络都是垃圾，可能会损害人工智能的输出，因此您实际上必须爬取比服务和训练模型更多的内容才能过滤掉垃圾。\n\n就峰值 QPS 而言，我们估计 Bing 约为 30k/s，Google 约为 500k/s。\n\n在我们的案例中，由于代理流量通常需要大量扇出（深度搜索可以使用数十个子搜索）并且可能会很尖（就像 AI 与我们一起实验室 RL 时一样），因此我们已经开始提供 Bing 规模的流量。\n\n两年内，代理的搜索速度将达到每秒数百万次。他们还希望所有数据都具有全面性，比当今的任何指数都大得多。因此，所需的检索基础设施在两个维度上都将大于 Google 规模。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-04T00:07:55.139Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2084357787274891502",
+          "pageLanguage": "en",
+          "capturedAt": "2026-08-04T00:07:53.601Z"
+        },
+        "createdAt": "2026-08-04T00:07:53.601Z",
+        "updatedAt": "2026-08-04T00:07:55.139Z"
+      }
+    },
+    {
+      "rank": 7,
+      "essenceScore": 6020,
+      "heatScore": 2800,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 2800
+      },
+      "sourceUrl": "https://x.com/signulll/status/2084390032404795814",
+      "reason": "把 OpenAI 豪华创作者旅行反弹，对比 Anthropic 低调养成：关键不是赞助，而是「显眼 vs 隐形」执行。",
+      "reasonEn": "Reframes OpenAI’s luxury-creator backlash vs Anthropic’s quiet cultivation—visibility of the influence op, not sponsorship itself.",
+      "metrics": {
+        "views": 128880,
+        "likes": 52,
+        "retweets": 6,
+        "replies": 18,
+        "quotes": 10,
+        "bookmarks": 43
+      },
+      "document": {
+        "id": "cb749d06-b317-4e0c-a44d-a2b3952c276e",
+        "title": "the most interesting part of thi",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2084390032404795814",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2084390032404795814",
+            "author": {
+              "name": "signüll",
+              "handle": "signulll",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1717763325692383232/Jk2PKCx6_normal.jpg",
+              "isVerified": false
+            },
+            "content": "the most interesting part of this backlash is that anthropic has been cultivating creators for a long long long time & almost no one really noticed (or at least there was no backlash like this).\n\ni think the difference was execution. anthropic kept it subtle with private dinners, very private events, & pure creator content. no conspicuous luxury retreats (at least none that i am aware of at all).\n\nbut openai made the influence operation completely visible & that’s probably what irked ppl.",
+            "createdAt": "Mon Aug 03 21:24:44 +0000 2026",
+            "viewCount": 36900,
+            "metrics": {
+              "views": 36900,
+              "likes": 178,
+              "retweets": 7,
+              "replies": 18,
+              "quotes": 1,
+              "bookmarks": 62
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "这种强烈反对最有趣的部分是，人类已经培养创造者很长很长一段时间了，几乎没有人真正注意到（或者至少没有像这样的强烈反对）。\n\n我认为区别在于执行力。 anthropic 通过私人晚宴、非常私密的活动和纯粹的创作者内容来保持微妙。没有显眼的豪华静修处（至少据我所知没有）。\n\n但 openai 使影响力操作完全可见，这可能就是让人们烦恼的地方。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-04T00:08:04.476Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2084356272510656818",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2084356272510656818",
+            "author": {
+              "name": "TechCrunch",
+              "handle": "TechCrunch",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1096066608034918401/m8wnTWsX_normal.png",
+              "isVerified": false
+            },
+            "content": "Influencers draw backlash for attending OpenAI’s first luxury trip https://techcrunch.com/2026/08/03/influencers-draw-backlash-for-attending-openais-first-luxury-trip/?utm_source=dlvr.it&utm_medium=twitter",
+            "createdAt": "Mon Aug 03 19:10:35 +0000 2026",
+            "viewCount": 128880,
+            "metrics": {
+              "views": 128880,
+              "likes": 52,
+              "retweets": 6,
+              "replies": 18,
+              "quotes": 10,
+              "bookmarks": 43
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "有影响力的人因参加 OpenAI 的首次豪华旅行而遭到强烈反对 https://techcrunch.com/2026/08/03/influencers-draw-backlash-for-attending-openais-first-luxury-trip/?utm_source=dlvr.it&utm_medium=twitter",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-04T00:08:04.474Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2084390032404795814",
+          "pageLanguage": "en",
+          "capturedAt": "2026-08-04T00:08:02.850Z"
+        },
+        "createdAt": "2026-08-04T00:08:02.850Z",
+        "updatedAt": "2026-08-04T00:08:04.476Z"
+      }
+    },
+    {
+      "rank": 8,
+      "essenceScore": 3290,
+      "heatScore": 1530,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 1530
+      },
+      "sourceUrl": "https://x.com/cline/status/2084359007029141528",
+      "reason": "回应「为何 Cline 更吃开源权重」：开源模型 RL 爱多花 token 自检，harness 应配合而非压榨效率。",
+      "reasonEn": "Explains why Cline pairs better with open-weight models: RL teaches token-heavy self-checks; harnesses should enable that, not throttle it.",
+      "metrics": {
+        "views": 42535,
+        "likes": 247,
+        "retweets": 14,
+        "replies": 22,
+        "quotes": 2,
+        "bookmarks": 170
+      },
+      "document": {
+        "id": "480961ba-741e-419e-9a01-35660ef54f6c",
+        "title": "We've been asked why Cline works",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2084359007029141528",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2084359007029141528",
+            "author": {
+              "name": "Cline",
+              "handle": "cline",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2046714588948033536/86HNYurv_normal.jpg",
+              "isVerified": false
+            },
+            "content": "We've been asked why Cline works better with open weights models like DeepSeek than other harnesses and want to share some detail (more in our blog below).\n\nOur internal evals show that many open weights models like DeepSeek, GLM, and Kimi are RL trained to spend more tokens verifying their work: run tests, check the build, re-read diffs before completing. We believe this is how they were able to close the gap with closed model performance.\n\nMeanwhile closed models and their harnesses tend to optimize for efficiency and fewer tokens (which makes sense when massively subsidizing subscription plans).\n\nSo we've been intentional in building the Cline harness to let the model work however it was trained to work. At open weights pricing, the baked-in paranoia burning extra tokens verifying work gets significantly better results for less money.\n\nIn our benchmark runs, we've seen ~20% gains over competing harnesses just from changes that let the model lean into its RL training.",
+            "createdAt": "Mon Aug 03 19:21:27 +0000 2026",
+            "viewCount": 22858,
+            "metrics": {
+              "views": 22858,
+              "likes": 386,
+              "retweets": 24,
+              "replies": 28,
+              "quotes": 3,
+              "bookmarks": 116
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "有人问我们为什么 Cline 在 DeepSeek 等开放权重模型上比其他工具效果更好，并希望分享一些细节（更多内容请参见下面的博客）。\n\n我们的内部评估表明，许多开放权重模型（例如 DeepSeek、GLM 和 Kimi）都经过 RL 训练，可以花费更多代币来验证其工作：运行测试、检查构建、在完成之前重新读取差异。我们相信这就是他们能够缩小封闭模型性能差距的方法。\n\n与此同时，封闭模型及其利用往往会针对效率和更少的代币进行优化（这在大规模补贴订阅计划时是有意义的）。\n\n因此，我们有意构建 Cline 安全带，让模型能够按照训练后的方式工作。在开放权重定价中，燃烧额外代币的根深蒂固的偏执验证工作可以用更少的钱获得更好的结果。\n\n在我们的基准测试中，我们发现，仅通过让模型倾向于 RL 训练的更改，我们就比竞争工具获得了约 20% 的收益。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-04T00:08:09.909Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2083799674830442949",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2083799674830442949",
+            "author": {
+              "name": "sudo",
+              "handle": "rootsud0",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2075656561163161601/VtAvvdqV_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Last month, after burning through 61B DeepSeek tokens hunting bugs, here's where I've landed on CLI agents:\n\n@cline - reasoning and tool use are on another level.\ncodex - solid tool use, decent reasoning.\n@claude_code - great overall, but API calls randomly die in the middle of a hunt.\n@opencode - good reasoning, but memory management needs work.\nCodeWhale - good reasoning and tool use, but API reliability is hit or miss.\n@Wrong_Stack - excellent orchestration, though API calls can be flaky sometimes.",
+            "createdAt": "Sun Aug 02 06:18:52 +0000 2026",
+            "viewCount": 42535,
+            "metrics": {
+              "views": 42535,
+              "likes": 247,
+              "retweets": 14,
+              "replies": 22,
+              "quotes": 2,
+              "bookmarks": 170
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HOsknsfWcAAt5L7.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "上个月，在通过 61B DeepSeek 代币寻找 bug 后，我找到了 CLI 代理：\n\n@cline - 推理和工具使用处于另一个层面。\ncodex - 可靠的工具使用，合理的推理。\n@claude_code - 总体来说很棒，但是 API 调用会在狩猎过程中随机终止。\n@opencode - 很好的推理，但内存管理需要工作。\nCodeWhale - 良好的推理和工具使用，但 API 可靠性时好时坏。\n@Wrong_Stack - 出色的编排，尽管 API 调用有时可能不稳定。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-04T00:08:09.622Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2084359007029141528",
+          "pageLanguage": "en",
+          "capturedAt": "2026-08-04T00:08:09.008Z"
+        },
+        "createdAt": "2026-08-04T00:08:09.008Z",
+        "updatedAt": "2026-08-04T00:08:09.909Z"
+      }
+    },
+    {
+      "rank": 9,
+      "essenceScore": 2995,
+      "heatScore": 1717,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 1717
+      },
+      "sourceUrl": "https://x.com/syhily/status/2083604796762898605",
+      "reason": "反驳「demo 刷榜=真能力」：一句话做游戏测的是世界知识，日常开发更考使用者品味与习惯。",
+      "reasonEn": "Counters demo-leaderboard worship: one-shot games test world knowledge; real coding still hinges on the user’s craft.",
+      "metrics": {
+        "views": 68512,
+        "likes": 148,
+        "retweets": 2,
+        "replies": 75,
+        "quotes": 5,
+        "bookmarks": 14
+      },
+      "document": {
+        "id": "176f3979-a8c0-4705-a515-bb908c8cd050",
+        "title": "讲个暴论：\n\n现在的很多大模型测评，都停留在一句话生成一个游戏，",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2083604796762898605",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2083604796762898605",
+            "author": {
+              "name": "Yufan Sheng",
+              "handle": "syhily",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2069322942497046528/NbLBUVav_normal.jpg",
+              "isVerified": false
+            },
+            "content": "讲个暴论：\n\n现在的很多大模型测评，都停留在一句话生成一个游戏，一个网站等 demo 阶段。实际上，这些本质上是测试世界知识。\n\n而具体到日常开发本身，很多时候，很多人可能自己都没有良好的编码习惯和品味，自然用不好大模型。",
+            "createdAt": "Sat Aug 01 17:24:29 +0000 2026",
+            "viewCount": 13990,
+            "metrics": {
+              "views": 13990,
+              "likes": 86,
+              "retweets": 1,
+              "replies": 7,
+              "quotes": 0,
+              "bookmarks": 19
+            },
+            "media": [],
+            "translation": {
+              "provider": "none",
+              "status": "idle",
+              "language": "zh-CN",
+              "text": "",
+              "annotations": [],
+              "error": "",
+              "version": 0
+            }
+          },
+          {
+            "id": "2083585884687897004",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2083585884687897004",
+            "author": {
+              "name": "seekinganythingbutalpha",
+              "handle": "ivanalog_com",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1538007532177723392/aobhQuJw_normal.jpg",
+              "isVerified": false
+            },
+            "content": "那些说dsv4f不行的，我也不知道什么活这么难需要金锄头才能干。\n\n我dsv4f hands off跑完一个阶段，gpt5.6，K3，opus 5，分别review一遍，都得夸意图对其的好，就一两个小毛病。\n\n这三个模型互相之间review最多也就这个水平了。gpt和opus还经常互相骂。\n\n只要不用瞎子写前端，dsv4f已经是版本答案了。",
+            "createdAt": "Sat Aug 01 16:09:20 +0000 2026",
+            "viewCount": 68512,
+            "metrics": {
+              "views": 68512,
+              "likes": 148,
+              "retweets": 2,
+              "replies": 75,
+              "quotes": 5,
+              "bookmarks": 14
+            },
+            "media": [],
+            "translation": {
+              "provider": "none",
+              "status": "idle",
+              "language": "zh-CN",
+              "text": "",
+              "annotations": [],
+              "error": "",
+              "version": 0
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2083604796762898605",
+          "pageLanguage": "en",
+          "capturedAt": "2026-08-04T00:08:42.198Z"
+        },
+        "createdAt": "2026-08-04T00:08:42.198Z",
+        "updatedAt": "2026-08-04T00:08:42.200Z"
+      }
+    }
+  ]
+}
