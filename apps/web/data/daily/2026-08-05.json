@@ -1,0 +1,1233 @@
+{
+  "date": "2026-08-05",
+  "title": "每日 X 精华引用榜",
+  "titleEn": "Daily Quote Essence on X",
+  "generatedAt": "2026-08-05T09:12:25.320Z",
+  "entries": [
+    {
+      "rank": 1,
+      "essenceScore": 452296,
+      "heatScore": 246455,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 246455
+      },
+      "sourceUrl": "https://x.com/LynAldenContact/status/2084921998577168800",
+      "reason": "引用“美联储本周注资 80 亿”标题党，系统拆穿注入/回购/再融资/未实现亏损四类宏观噪音",
+      "reasonEn": "Quotes a sensational Fed ‘$8B injection’ post and systematically debunks four recurring macro scare tropes",
+      "metrics": {
+        "views": 12130156,
+        "likes": 1636,
+        "retweets": 161,
+        "replies": 196,
+        "quotes": 245,
+        "bookmarks": 303
+      },
+      "document": {
+        "id": "63f87c49-6245-4687-94c6-f1916db5c458",
+        "title": "A few common macro posts that co",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2084921998577168800",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2084921998577168800",
+            "author": {
+              "name": "Lyn Alden",
+              "handle": "LynAldenContact",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1521181379677073414/bm4LcJTr_normal.jpg",
+              "isVerified": false
+            },
+            "content": "A few common macro posts that come up over and over on this platform that you can mostly ignore.\n\n1) “The Fed injected [X billion]…”\n\nThat’s usually the Fed recycling their maturing securities back into more of the same securities. Or the Fed doing some repo activity, adding a tiny bit of liquidity that comes back out the next day. This year, the Fed is growing their balance sheet very slowly.\n\n2) “The Treasury bought back [X0 billion] of government bonds…”\n\nThe Treasury performing buybacks on its own debt is interesting because the deepest, most liquid capital market in the world shouldn’t need the issuer assisting with liquidity. And they could potentially shorten duration over time by issuing t-bills to buy back T-bonds, so that’s worth monitoring. But for the most part, these announcements are nothingburgers. The Treasury issues fresh liquid bonds to buy back aging less-liquid bonds. No appreciable impact on your money or investments.\n\n3) The Treasury has [X trillion] in debt to refinance over the next 12 months, how are they possibly gonna find so many buyers?”\n\nThe vast majority of the Treasury’s debt that will be refinanced over a given year will be bought by the same entities holding it now. They’re holding t-bills, those t-bills mature into cash, and they buy the next t-bill. Money market funds, insurance companies, pensions, individuals, corporations, etc. Posting about gross refinance numbers is popular because the number is big and sensationalist, but it doesn’t mean much, which is why you hear about it for years and it’s fine. Net new issuance (about $2 trillion per year) is mostly what matters, and nothing stops that train.\n\n4) “Banks have [X00 billion] in unrealized losses…”\n\nYeah that was a problem for about one quarter in spring 2023. It’s mostly a non-issue since then but whenever the quarterly number comes out, people love to report it like it’s devastating new information. The number is trending flat-to-down, and it’s a small portion of bank assets and equity capital.\n\nAnyway, good morning. Carry on.",
+            "createdAt": "Wed Aug 05 08:38:35 +0000 2026",
+            "viewCount": 16636,
+            "metrics": {
+              "views": 16636,
+              "likes": 166,
+              "retweets": 18,
+              "replies": 22,
+              "quotes": 1,
+              "bookmarks": 42
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "在这个平台上反复出现的一些常见的宏帖子，您基本上可以忽略。\n\n1) “美联储注入了[X十亿]……”\n\n这通常是美联储将到期的证券回收成更多相同的证券。或者美联储进行一些回购活动，增加少量流动性，并在第二天收回。今年，美联储的资产负债表增长非常缓慢。\n\n2) “财政部回购了 [X0 亿] 政府债券……”\n\n财政部对其自身债务进行回购很有趣，因为世界上最深入、流动性最强的资本市场不应该需要发行人提供流动性协助。随着时间的推移，他们可能会通过发行国库券回购国债来缩短期限，因此值得监控。但在大多数情况下，这些公告都没什么意义。财政部发行新的流动性债券来回购老化的流动性较差的债券。对您的资金或投资没有明显影响。\n\n3) 财政部在未来 12 个月内有 [X 万亿] 的债务需要再融资，他们怎么可能找到这么多买家？”\n\n未来一年内将进行再融资的绝大多数财政部债务将由现在持有该债务的同一实体购买。他们持有国债，这些国债到期后会变成现金，然后他们购买下一张国债。货币市场基金、保险公司、养老金、个人、公司等。发布有关再融资总额的数字很受欢迎，因为这个数字很大且耸人听闻，但意义不大，这就是为什么你多年来都会听到它，这很好。净新发行量（每年约 2 万亿美元）才是最重要的，没有什么能阻止这趟列车。\n\n4) “银行有 [X00 亿] 未实现损失……”\n\n是的，这在 2023 年春季大约有一个季度是一个问题。从那时起，这基本上就不再是问题了，但每当季度数据公布时，人们都喜欢报道它，就像这是毁灭性的新信息一样。该数字呈持平至下降趋势，仅占银行资产和股本的一小部分。\n\n不管怎样，早上好。继续。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-05T09:12:17.527Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2084680600045097246",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2084680600045097246",
+            "author": {
+              "name": "Kalshi Finance",
+              "handle": "Kalshi_Finance",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2053160231014727685/zepWrs-g_normal.jpg",
+              "isVerified": false
+            },
+            "content": "BREAKING: The Fed is set to inject over $8,000,000,000 into the economy this week",
+            "createdAt": "Tue Aug 04 16:39:21 +0000 2026",
+            "viewCount": 12130156,
+            "metrics": {
+              "views": 12130156,
+              "likes": 1636,
+              "retweets": 161,
+              "replies": 196,
+              "quotes": 245,
+              "bookmarks": 303
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "突发新闻：美联储本周将向经济注入超过 80 亿美元",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-05T09:12:16.971Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2084921998577168800",
+          "pageLanguage": "en",
+          "capturedAt": "2026-08-05T09:12:16.575Z"
+        },
+        "createdAt": "2026-08-05T09:12:16.575Z",
+        "updatedAt": "2026-08-05T09:12:17.527Z"
+      }
+    },
+    {
+      "rank": 2,
+      "essenceScore": 96081,
+      "heatScore": 46610,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 46610
+      },
+      "sourceUrl": "https://x.com/kwok_phil/status/2084914667499946105",
+      "reason": "引用 Cloudflare 推稳定币钱包，重构成大厂在熊市里抢位、对加密反而更利好",
+      "reasonEn": "Quotes Cloudflare Wallets and reframes big-tech crypto rails as bullish accumulation during a bear market",
+      "metrics": {
+        "views": 1546257,
+        "likes": 5856,
+        "retweets": 700,
+        "replies": 332,
+        "quotes": 749,
+        "bookmarks": 2409
+      },
+      "document": {
+        "id": "9b358140-2fd0-4b31-8323-4062936cce1b",
+        "title": "the setup is looking more and mo",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2084914667499946105",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2084914667499946105",
+            "author": {
+              "name": "Phil Kwok | EasyA",
+              "handle": "kwok_phil",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1753835032169308161/j3vWAp1i_normal.jpg",
+              "isVerified": false
+            },
+            "content": "the setup is looking more and more bullish for crypto.\n\nall the biggest companies are coming in.\n\nfeels weird because it’s a bear market and yet the big boys are getting in bigly.\n\nalmost as if they are liking the bear market and making the most of it while it lasts.",
+            "createdAt": "Wed Aug 05 08:09:27 +0000 2026",
+            "viewCount": 2820,
+            "metrics": {
+              "views": 2820,
+              "likes": 72,
+              "retweets": 9,
+              "replies": 7,
+              "quotes": 1,
+              "bookmarks": 3
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "该设置看起来对加密货币越来越看好。\n\n所有最大的公司都进来了。\n\n感觉很奇怪，因为这是一个熊市，但大公司却大举进场。\n\n几乎就好像他们喜欢熊市并在熊市持续时充分利用它。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-05T09:12:21.460Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2084648084131242402",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2084648084131242402",
+            "author": {
+              "name": "Cloudflare",
+              "handle": "Cloudflare",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2016613099034345472/zHWjcVEQ_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Introducing Cloudflare Wallets. They will allow you to store stablecoins, purchase services, and receive funds across the web. https://cfl.re/455An86",
+            "createdAt": "Tue Aug 04 14:30:08 +0000 2026",
+            "viewCount": 1546257,
+            "metrics": {
+              "views": 1546257,
+              "likes": 5856,
+              "retweets": 700,
+              "replies": 332,
+              "quotes": 749,
+              "bookmarks": 2409
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "隆重推出 Cloudflare 钱包。它们将允许您存储稳定币、购买服务以及通过网络接收资金。 https://cfl.re/455An86",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-05T09:12:21.458Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2084914667499946105",
+          "pageLanguage": "en",
+          "capturedAt": "2026-08-05T09:12:21.382Z"
+        },
+        "createdAt": "2026-08-05T09:12:21.382Z",
+        "updatedAt": "2026-08-05T09:12:21.460Z"
+      }
+    },
+    {
+      "rank": 3,
+      "essenceScore": 83654,
+      "heatScore": 47584,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 47584
+      },
+      "sourceUrl": "https://x.com/kimmonismus/status/2084902612168577476",
+      "reason": "自引病毒级“退订 Claude”帖，把社区共振升级为 Anthropic 正在变成 AI 时代的 Yahoo",
+      "reasonEn": "Follow-up to a viral cancel-Claude rant reframes mass backlash as Anthropic becoming the Yahoo of the AI era",
+      "metrics": {
+        "views": 1384413,
+        "likes": 12451,
+        "retweets": 385,
+        "replies": 1431,
+        "quotes": 246,
+        "bookmarks": 1345
+      },
+      "document": {
+        "id": "e7ac1afe-14f2-4331-bd44-0c78e6a88c7f",
+        "title": "I've struck a nerve. 1.2k people",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2084902612168577476",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2084902612168577476",
+            "author": {
+              "name": "Chubby♨️",
+              "handle": "kimmonismus",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1728327996375719936/RW7VBJfD_normal.jpg",
+              "isVerified": false
+            },
+            "content": "I've struck a nerve. 1.2k people have commented after 11 hours, and I'd say 95-99% agree that Opus is really bad.\n\nAnthropic is on its way to becoming the Yahoo of the AI ​​era. So sad.",
+            "createdAt": "Wed Aug 05 07:21:33 +0000 2026",
+            "viewCount": 50731,
+            "metrics": {
+              "views": 50731,
+              "likes": 896,
+              "retweets": 36,
+              "replies": 141,
+              "quotes": 12,
+              "bookmarks": 64
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "我已经触动了神经。 11 小时后有 1.2 万人发表了评论，我想说 95-99% 的人都认为 Opus 真的很糟糕。\n\nAnthropic 正在成为 AI 时代的雅虎。好难过。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-05T09:12:01.273Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2084727476761083926",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2084727476761083926",
+            "author": {
+              "name": "Chubby♨️",
+              "handle": "kimmonismus",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1728327996375719936/RW7VBJfD_normal.jpg",
+              "isVerified": false
+            },
+            "content": "I'm going to cancel Claude. It's just so bad, I can't believe it.\n\nIt's just lazy. The most recent example: I have Claude check my inbox for important emails, summarize them, work with them, and send out replies if necessary. I caught Claude again simply not reading the email thread to the end and just ignoring the latest emails.\n\nWhen I asked him about it, Opus 5 just said: \"Valid point. I didn't read it.\"\n\nI mean, seriously. What the heck? You have to babysit it every time.",
+            "createdAt": "Tue Aug 04 19:45:37 +0000 2026",
+            "viewCount": 1384413,
+            "metrics": {
+              "views": 1384413,
+              "likes": 12451,
+              "retweets": 385,
+              "replies": 1431,
+              "quotes": 246,
+              "bookmarks": 1345
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "我要取消克劳德。这太糟糕了，我简直不敢相信。\n\n这只是懒惰。最近的例子：我让克劳德检查我的收件箱中的重要电子邮件，总结它们，使用它们，并在必要时发送回复。我再次发现克劳德根本没有读完电子邮件，只是忽略了最新的电子邮件。\n\n当我问他此事时，Opus 5 只是说：“有道理。我没有读过。”\n\n我的意思是，认真的。到底是什么？每次你都得照顾它。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-05T09:12:01.776Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2084902612168577476",
+          "pageLanguage": "en",
+          "capturedAt": "2026-08-05T09:12:01.022Z"
+        },
+        "createdAt": "2026-08-05T09:12:01.022Z",
+        "updatedAt": "2026-08-05T09:12:01.777Z"
+      }
+    },
+    {
+      "rank": 4,
+      "essenceScore": 54487,
+      "heatScore": 31068,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 31068
+      },
+      "sourceUrl": "https://x.com/Hesamation/status/2084658830990880896",
+      "reason": "引用刷屏的 Bloomberg 模型定价图，补上 cost-per-task 对比，把 DeepSeek 价格优势钉成“只剩几个像素”",
+      "reasonEn": "Quotes the viral Bloomberg pricing chart and reframes it with cost-per-task: DeepSeek’s bar is barely a couple of pixels",
+      "metrics": {
+        "views": 741089,
+        "likes": 10531,
+        "retweets": 837,
+        "replies": 209,
+        "quotes": 200,
+        "bookmarks": 1093
+      },
+      "document": {
+        "id": "19a2d35a-ec00-4884-8d77-172e6fdc86b1",
+        "title": "holy whale, even on cost per tas",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2084658830990880896",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2084658830990880896",
+            "author": {
+              "name": "ℏεsam",
+              "handle": "Hesamation",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1978647680357134336/ioMmfkXF_normal.jpg",
+              "isVerified": false
+            },
+            "content": "holy whale, even on cost per task, DeepSeek's pricing bar is barely a couple pixels tall.",
+            "createdAt": "Tue Aug 04 15:12:51 +0000 2026",
+            "viewCount": 39402,
+            "metrics": {
+              "views": 39402,
+              "likes": 895,
+              "retweets": 58,
+              "replies": 24,
+              "quotes": 6,
+              "bookmarks": 100
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HO4xMPUW0AAIPbT.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "天啊，即使按每项任务的成本计算，DeepSeek 的定价也只有几个像素高。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-05T09:12:03.792Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2084509003384827970",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2084509003384827970",
+            "author": {
+              "name": "Andrew Curran",
+              "handle": "AndrewCurran_",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1596945208058744833/_X3LT7fb_normal.jpg",
+              "isVerified": false
+            },
+            "content": "At first I thought Bloomberg forgot to add DeepSeek's pricing to the chart.",
+            "createdAt": "Tue Aug 04 05:17:29 +0000 2026",
+            "viewCount": 741089,
+            "metrics": {
+              "views": 741089,
+              "likes": 10531,
+              "retweets": 837,
+              "replies": 209,
+              "quotes": 200,
+              "bookmarks": 1093
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HO2p4_VaMAAhFjp.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "起初我以为 Bloomberg 忘记将 DeepSeek 的定价添加到图表中。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-05T09:12:03.456Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2084658830990880896",
+          "pageLanguage": "en",
+          "capturedAt": "2026-08-05T09:12:03.358Z"
+        },
+        "createdAt": "2026-08-05T09:12:03.358Z",
+        "updatedAt": "2026-08-05T09:12:03.792Z"
+      }
+    },
+    {
+      "rank": 5,
+      "essenceScore": 54487,
+      "heatScore": 31068,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 31068
+      },
+      "sourceUrl": "https://x.com/GaryMarcus/status/2084844561336356947",
+      "reason": "用同一张白菜价定价图，硬刚 Dwarkesh 对 Anthropic 年入超千亿的乐观预测",
+      "reasonEn": "Juxtaposes Dwarkesh’s $100B+ Anthropic revenue call against the same rock-bottom token-price chart",
+      "metrics": {
+        "views": 741089,
+        "likes": 10531,
+        "retweets": 837,
+        "replies": 209,
+        "quotes": 200,
+        "bookmarks": 1093
+      },
+      "document": {
+        "id": "2c619dfe-860e-43a4-a410-fb761756998f",
+        "title": "You have Dwarkesh predicting Ant",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2084844561336356947",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2084844561336356947",
+            "author": {
+              "name": "Gary Marcus",
+              "handle": "GaryMarcus",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2048405471900606464/kPeRHI2z_normal.jpg",
+              "isVerified": false
+            },
+            "content": "You have Dwarkesh predicting Anthropic is going to make well over 100B in revenue this year.\n\nand then you have this chart.",
+            "createdAt": "Wed Aug 05 03:30:52 +0000 2026",
+            "viewCount": 11628,
+            "metrics": {
+              "views": 11628,
+              "likes": 141,
+              "retweets": 18,
+              "replies": 13,
+              "quotes": 0,
+              "bookmarks": 25
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "Dwarkesh 预测 Anthropic 今年的收入将远远超过 100B。\n\n然后你就得到了这张图表。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-05T09:12:05.769Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2084509003384827970",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2084509003384827970",
+            "author": {
+              "name": "Andrew Curran",
+              "handle": "AndrewCurran_",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1596945208058744833/_X3LT7fb_normal.jpg",
+              "isVerified": false
+            },
+            "content": "At first I thought Bloomberg forgot to add DeepSeek's pricing to the chart.",
+            "createdAt": "Tue Aug 04 05:17:29 +0000 2026",
+            "viewCount": 741089,
+            "metrics": {
+              "views": 741089,
+              "likes": 10531,
+              "retweets": 837,
+              "replies": 209,
+              "quotes": 200,
+              "bookmarks": 1093
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HO2p4_VaMAAhFjp.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "起初我以为 Bloomberg 忘记将 DeepSeek 的定价添加到图表中。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-05T09:12:05.348Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2084844561336356947",
+          "pageLanguage": "en",
+          "capturedAt": "2026-08-05T09:12:05.270Z"
+        },
+        "createdAt": "2026-08-05T09:12:05.270Z",
+        "updatedAt": "2026-08-05T09:12:05.769Z"
+      }
+    },
+    {
+      "rank": 6,
+      "essenceScore": 46309,
+      "heatScore": 26062,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 26062
+      },
+      "sourceUrl": "https://x.com/NoLimitGains/status/2084909577502368116",
+      "reason": "回引自己 2025 年看空四年周期、喊 60k 的旧帖，用当下现实回击并预告 160k",
+      "reasonEn": "Quotes his own mocked Oct-2025 ‘60k in 2026’ call and flips consensus disbelief toward a 160k-by-2028 frame",
+      "metrics": {
+        "views": 1262646,
+        "likes": 536,
+        "retweets": 26,
+        "replies": 19,
+        "quotes": 7,
+        "bookmarks": 68
+      },
+      "document": {
+        "id": "d791d652-939b-4ddd-b7e6-b62af3db3ae0",
+        "title": "If you showed this tweet to anyo",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2084909577502368116",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2084909577502368116",
+            "author": {
+              "name": "NoLimit",
+              "handle": "NoLimitGains",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1979122951103430656/znPx7D7N_normal.jpg",
+              "isVerified": false
+            },
+            "content": "If you showed this tweet to anyone in October 2025, they would have laughed and given you a hundred reasons why Bitcoin could never see 60k again.\n\nRight now nobody believes it can reach $160k by 2028.\n\nWatch.",
+            "createdAt": "Wed Aug 05 07:49:13 +0000 2026",
+            "viewCount": 88709,
+            "metrics": {
+              "views": 88709,
+              "likes": 270,
+              "retweets": 17,
+              "replies": 36,
+              "quotes": 0,
+              "bookmarks": 30
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "如果你在 2025 年 10 月向任何人展示这条推文，他们一定会大笑，并给你一百个理由解释为什么比特币再也不会达到 60k。\n\n目前没有人相信到 2028 年它可以达到 16 万美元。\n\n观看。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-05T09:12:19.630Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "1979992825656647861",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "1979992825656647861",
+            "author": {
+              "name": "NoLimit",
+              "handle": "NoLimitGains",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1979122951103430656/znPx7D7N_normal.jpg",
+              "isVerified": false
+            },
+            "content": "2021: “Four-year cycles are broken.”\n\n2025: “Four-year cycles are broken.”\n\n60k in 2026.",
+            "createdAt": "Sun Oct 19 19:27:30 +0000 2025",
+            "viewCount": 1262646,
+            "metrics": {
+              "views": 1262646,
+              "likes": 536,
+              "retweets": 26,
+              "replies": 19,
+              "quotes": 7,
+              "bookmarks": 68
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "2021 年：“四年周期被打破。”\n\n2025 年：“四年周期被打破。”\n\n2026 年将达到 6 万。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-05T09:12:19.295Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2084909577502368116",
+          "pageLanguage": "en",
+          "capturedAt": "2026-08-05T09:12:19.190Z"
+        },
+        "createdAt": "2026-08-05T09:12:19.190Z",
+        "updatedAt": "2026-08-05T09:12:19.631Z"
+      }
+    },
+    {
+      "rank": 7,
+      "essenceScore": 22335,
+      "heatScore": 11676,
+      "signals": {
+        "depth": 3,
+        "hasDunk": true,
+        "peakIndex": 2,
+        "peakHeat": 11676
+      },
+      "sourceUrl": "https://x.com/jun_song/status/2084847297276661864",
+      "reason": "引用美方开源模型安全测试豁免消息，解读为 Jensen 联盟胜出、开源权重才是真终局",
+      "reasonEn": "Quotes the US open-model safety-test exemption and reframes it as Jensen’s alliance winning over closed labs",
+      "metrics": {
+        "views": 424506,
+        "likes": 1772,
+        "retweets": 130,
+        "replies": 87,
+        "quotes": 150,
+        "bookmarks": 200
+      },
+      "document": {
+        "id": "22640d71-076b-477a-badb-99fdca262ee8",
+        "title": "OpenAI and Anthropic lobbied so ",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2084847297276661864",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2084847297276661864",
+            "author": {
+              "name": "Jun Song",
+              "handle": "jun_song",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2046816680731725825/DMIGj4BG_normal.jpg",
+              "isVerified": false
+            },
+            "content": "OpenAI and Anthropic lobbied so hard, but in the end, Jensen won by pulling together a massive alliance.\n\nYeah, open weights are actually more profitable and the real future for accelerating tech.\n\nFrontier labs have no choice but to dance around their investors, the hyperscalers.\n\nIn the end, open source wins.",
+            "createdAt": "Wed Aug 05 03:41:44 +0000 2026",
+            "viewCount": 12109,
+            "metrics": {
+              "views": 12109,
+              "likes": 274,
+              "retweets": 13,
+              "replies": 19,
+              "quotes": 4,
+              "bookmarks": 20
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "OpenAI 和 Anthropic 竭力游说，但最终 Jensen 通过组建一个庞大的联盟赢得了胜利。\n\n是的，开放式举重实际上更有利可图，也是加速技术发展的真正未来。\n\n前沿实验室别无选择，只能围绕着他们的投资者——超大规模企业跳舞。\n\n最终，开源获胜。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-05T09:12:08.226Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2084792376518955373",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2084792376518955373",
+            "author": {
+              "name": "MTS",
+              "handle": "MTSlive",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2057947669281263616/aovpVL4b_normal.jpg",
+              "isVerified": false
+            },
+            "content": "SITUATION UPDATE: Only open models made by US companies will be exempt from safety testing under the new guidelines, per WSJ.",
+            "createdAt": "Wed Aug 05 00:03:30 +0000 2026",
+            "viewCount": 87760,
+            "metrics": {
+              "views": 87760,
+              "likes": 575,
+              "retweets": 33,
+              "replies": 30,
+              "quotes": 35,
+              "bookmarks": 88
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "情况更新：据《华尔街日报》报道，根据新准则，只有美国公司制造的开放模型才能免于进行安全测试。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-05T09:12:08.108Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2084757892532740519",
+            "relation": "quote",
+            "depth": 2,
+            "sourceTweetId": "2084757892532740519",
+            "author": {
+              "name": "MTS",
+              "handle": "MTSlive",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2057947669281263616/aovpVL4b_normal.jpg",
+              "isVerified": false
+            },
+            "content": "SITUATION UPDATE: The White House has exempted open models from its new framework to test frontier AI capabilities before release, per Axios.",
+            "createdAt": "Tue Aug 04 21:46:29 +0000 2026",
+            "viewCount": 424506,
+            "metrics": {
+              "views": 424506,
+              "likes": 1772,
+              "retweets": 130,
+              "replies": 87,
+              "quotes": 150,
+              "bookmarks": 200
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "情况更新：据 Axios 报道，白宫已将开放模型排除在新框架之外，以便在发布前测试前沿人工智能功能。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-05T09:12:08.243Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2084847297276661864",
+          "pageLanguage": "en",
+          "capturedAt": "2026-08-05T09:12:08.029Z"
+        },
+        "createdAt": "2026-08-05T09:12:08.029Z",
+        "updatedAt": "2026-08-05T09:12:08.243Z"
+      }
+    },
+    {
+      "rank": 8,
+      "essenceScore": 14942,
+      "heatScore": 7542,
+      "signals": {
+        "depth": 3,
+        "hasDunk": true,
+        "peakIndex": 2,
+        "peakHeat": 7542
+      },
+      "sourceUrl": "https://x.com/_FORAB/status/2084900435421524263",
+      "reason": "回引苹果测试长鑫内存旧闻，用韩媒谈价僵局说明国产存储已有议价底气",
+      "reasonEn": "Quotes his earlier Apple–CXMT testing leak and updates it with a pricing standoff that flips supplier power",
+      "metrics": {
+        "views": 317074,
+        "likes": 530,
+        "retweets": 46,
+        "replies": 157,
+        "quotes": 9,
+        "bookmarks": 96
+      },
+      "document": {
+        "id": "3ba113ac-9d03-4aec-aa54-08eefd441e02",
+        "title": "韩媒曝光，苹果与长鑫存储 CXMT，就采购移动内存事宜，已进入到",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2084900435421524263",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2084900435421524263",
+            "author": {
+              "name": "AB Kuai.Dong",
+              "handle": "_FORAB",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1747252669897691136/wS_-7gEt_normal.jpg",
+              "isVerified": false
+            },
+            "content": "韩媒曝光，苹果与长鑫存储 CXMT，就采购移动内存事宜，已进入到谈价阶段，但双方在价格问题上陷入僵局。\n\n而原因是，长鑫在国内已不缺买家，包括华为、小米在内为了保障供应，愿意用较高价格、长期合同，提前锁定长鑫产能，因此长鑫拒绝了苹果的砍价要求。",
+            "createdAt": "Wed Aug 05 07:12:54 +0000 2026",
+            "viewCount": 77037,
+            "metrics": {
+              "views": 77037,
+              "likes": 160,
+              "retweets": 12,
+              "replies": 62,
+              "quotes": 2,
+              "bookmarks": 23
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HO8NbQ8bIAAWT2O.jpg",
+              "https://pbs.twimg.com/media/HO8N0labIAA9eze.png"
+            ],
+            "translation": {
+              "provider": "none",
+              "status": "idle",
+              "language": "zh-CN",
+              "text": "",
+              "annotations": [],
+              "error": "",
+              "version": 0
+            }
+          },
+          {
+            "id": "2074676836395889146",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2074676836395889146",
+            "author": {
+              "name": "AB Kuai.Dong",
+              "handle": "_FORAB",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1747252669897691136/wS_-7gEt_normal.jpg",
+              "isVerified": false
+            },
+            "content": "金融时报爆料称，苹果已开始测试由长鑫存储 CXMT 提供的内存芯片，这些设备将用于在中国的销售。\n\n为了扩大范围，不局限于中国销售，苹果还在牵头说服华盛顿，允许更广泛地使用中国长鑫存储 CXMT 的产品。",
+            "createdAt": "Wed Jul 08 02:07:58 +0000 2026",
+            "viewCount": 237995,
+            "metrics": {
+              "views": 237995,
+              "likes": 323,
+              "retweets": 29,
+              "replies": 146,
+              "quotes": 3,
+              "bookmarks": 52
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HMq6x_fbAAAA8Re.jpg",
+              "https://pbs.twimg.com/media/HMq7PkBawAEEYjt.jpg",
+              "https://pbs.twimg.com/media/HMq7M3QaEAAZc9f.jpg"
+            ],
+            "translation": {
+              "provider": "none",
+              "status": "idle",
+              "language": "zh-CN",
+              "text": "",
+              "annotations": [],
+              "error": "",
+              "version": 0
+            }
+          },
+          {
+            "id": "2070719209722806438",
+            "relation": "quote",
+            "depth": 2,
+            "sourceTweetId": "2070719209722806438",
+            "author": {
+              "name": "AB Kuai.Dong",
+              "handle": "_FORAB",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1747252669897691136/wS_-7gEt_normal.jpg",
+              "isVerified": false
+            },
+            "content": "中国时刻再次到来！金融时报爆料，苹果公司正在游说美国政府，希望获准可以从中国的长鑫存储 CXMT，购买内存芯片。\n\n该公司因涉及军工，曾被美国五角大楼列入黑名单，但苹果现在正面临，前所未有的内存成本上升压力，甚至已转嫁到消费者身上，此消息来自六位知情人士。",
+            "createdAt": "Sat Jun 27 04:01:46 +0000 2026",
+            "viewCount": 317074,
+            "metrics": {
+              "views": 317074,
+              "likes": 530,
+              "retweets": 46,
+              "replies": 157,
+              "quotes": 9,
+              "bookmarks": 96
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HLysAGbbkAAgmef.jpg",
+              "https://pbs.twimg.com/media/HLysDyjbwAAasJ9.jpg"
+            ],
+            "translation": {
+              "provider": "none",
+              "status": "idle",
+              "language": "zh-CN",
+              "text": "",
+              "annotations": [],
+              "error": "",
+              "version": 0
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2084900435421524263",
+          "pageLanguage": "en",
+          "capturedAt": "2026-08-05T09:12:23.754Z"
+        },
+        "createdAt": "2026-08-05T09:12:23.754Z",
+        "updatedAt": "2026-08-05T09:12:23.755Z"
+      }
+    },
+    {
+      "rank": 9,
+      "essenceScore": 12100,
+      "heatScore": 6735,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 6735
+      },
+      "sourceUrl": "https://x.com/firstadopter/status/2084827899656364079",
+      "reason": "把 SpaceX 扩 Nvidia 算力的爆料，量化成或给 Nvidia 带来上千亿美元增量的买方冲击",
+      "reasonEn": "Escalates SpaceX’s Nvidia compute buildout into a Melius-style $100–200B revenue shock for Nvidia",
+      "metrics": {
+        "views": 253558,
+        "likes": 948,
+        "retweets": 87,
+        "replies": 57,
+        "quotes": 21,
+        "bookmarks": 139
+      },
+      "document": {
+        "id": "d9b8c3d9-4bb8-491c-8028-30697cfcbb22",
+        "title": "Melius Research says that if Spa",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2084827899656364079",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2084827899656364079",
+            "author": {
+              "name": "tae kim",
+              "handle": "firstadopter",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2038758350561607680/NDo0EYpY_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Melius Research says that if SpaceX does buy 6 GW worth of GPU compute in 2027, that would boost Nvidia's revenue by ... more than $200 BILLION for 2027.\n\nIf SpaceX buys a more realistic 2–3 GW for 2027, that would add $100 billion to Nvidia's 2027 revenue.\n\nGiddyap!",
+            "createdAt": "Wed Aug 05 02:24:40 +0000 2026",
+            "viewCount": 18400,
+            "metrics": {
+              "views": 18400,
+              "likes": 161,
+              "retweets": 10,
+              "replies": 8,
+              "quotes": 0,
+              "bookmarks": 20
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "Melius Research 表示，如果 SpaceX 确实在 2027 年购买了价值 6 GW 的 GPU 计算，那么 Nvidia 的收入将在 2027 年增加……超过 2000 亿美元。\n\n如果 SpaceX 在 2027 年购买更现实的 2-3 GW 装机容量，那么 Nvidia 2027 年的收入将增加 1000 亿美元。\n\n惊呆了！",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-05T09:12:10.660Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2084744635654529219",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2084744635654529219",
+            "author": {
+              "name": "tae kim",
+              "handle": "firstadopter",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2038758350561607680/NDo0EYpY_normal.jpg",
+              "isVerified": false
+            },
+            "content": "SpaceX will more than triple its Nvidia GPU compute footprint by the end of 2027. Wow.\n\nElon Musk on SpaceX earnings call: “We expect to end this year with over two gigawatts of compute and probably our cumulative compute online by the end of next year will be several times higher .. Let's say, be closer to ten gigawatts of compute than five gigawatts of compute. Going forward, we've decided to build exclusively on Nvidia because we think the Vera Rubin architecture is the best architecture.”",
+            "createdAt": "Tue Aug 04 20:53:48 +0000 2026",
+            "viewCount": 253558,
+            "metrics": {
+              "views": 253558,
+              "likes": 948,
+              "retweets": 87,
+              "replies": 57,
+              "quotes": 21,
+              "bookmarks": 139
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "到 2027 年底，SpaceX 的 Nvidia GPU 计算足迹将增加两倍以上。哇。\n\n埃隆·马斯克 (Elon Musk) 在 SpaceX 财报电话会议上表示：“我们预计今年年底的计算量将超过 2 吉瓦，到明年年底，我们的累计在线计算量可能会高出几倍……比方说，计算量更接近 10 吉瓦，而不是 5 吉瓦。展望未来，我们决定完全基于 Nvidia 进行构建，因为我们认为 Vera Rubin 架构是最好的架构。”",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-05T09:12:09.957Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2084827899656364079",
+          "pageLanguage": "en",
+          "capturedAt": "2026-08-05T09:12:09.849Z"
+        },
+        "createdAt": "2026-08-05T09:12:09.849Z",
+        "updatedAt": "2026-08-05T09:12:10.660Z"
+      }
+    },
+    {
+      "rank": 10,
+      "essenceScore": 2572,
+      "heatScore": 1284,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 1284
+      },
+      "sourceUrl": "https://x.com/ZoeJardiniere/status/2084902838216343818",
+      "reason": "引用英国供水告急通告，一句话把地方缺水钉到 AI 数据中心扩张上",
+      "reasonEn": "Quotes a UK water-shortage alert and pins local drought risk squarely on AI data-center buildout",
+      "metrics": {
+        "views": 55064,
+        "likes": 17,
+        "retweets": 15,
+        "replies": 38,
+        "quotes": 11,
+        "bookmarks": 6
+      },
+      "document": {
+        "id": "a0c7e740-4e53-4890-9c4b-a5d327bddfdd",
+        "title": "We really have got to stop build",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2084902838216343818",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2084902838216343818",
+            "author": {
+              "name": "Zoe Gardner",
+              "handle": "ZoeJardiniere",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2009197172063907840/tKF4W_kH_normal.jpg",
+              "isVerified": false
+            },
+            "content": "We really have got to stop building AI data centres",
+            "createdAt": "Wed Aug 05 07:22:26 +0000 2026",
+            "viewCount": 3638,
+            "metrics": {
+              "views": 3638,
+              "likes": 147,
+              "retweets": 59,
+              "replies": 9,
+              "quotes": 0,
+              "bookmarks": 7
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HO8QFN6XEAA_Viz.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "我们真的必须停止建设人工智能数据中心",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-05T09:12:12.348Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2084688314062217570",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2084688314062217570",
+            "author": {
+              "name": "South East Water",
+              "handle": "sewateruk",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2072225818995040256/MxmtPlz9_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Urgent message for customers in Charing, Whitstable &amp; Herne Bay\n\nStorage tanks in your area are critically low. You may lose supply unless demand for water in the area drops low enough for the tanks to refill.\n\nPlease continue to only use water for drinking, cooking and hygiene.",
+            "createdAt": "Tue Aug 04 17:10:00 +0000 2026",
+            "viewCount": 55064,
+            "metrics": {
+              "views": 55064,
+              "likes": 17,
+              "retweets": 15,
+              "replies": 38,
+              "quotes": 11,
+              "bookmarks": 6
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HO5M-DUXUAAYirf.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "给查林、惠茨特布尔和赫恩湾客户的紧急信息\n\n您所在地区的储罐非常低。除非该地区的水需求下降到足以让水箱重新注满，否则您可能会失去供应。\n\n请继续仅使用饮用水、做饭和卫生用水。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-05T09:12:12.396Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2084902838216343818",
+          "pageLanguage": "en",
+          "capturedAt": "2026-08-05T09:12:12.179Z"
+        },
+        "createdAt": "2026-08-05T09:12:12.179Z",
+        "updatedAt": "2026-08-05T09:12:12.396Z"
+      }
+    }
+  ]
+}

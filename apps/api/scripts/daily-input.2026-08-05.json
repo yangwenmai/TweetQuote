@@ -1,0 +1,67 @@
+{
+  "date": "2026-08-05",
+  "title": "每日 X 精华引用榜",
+  "titleEn": "Daily Quote Essence on X",
+  "items": [
+    {
+      "url": "https://x.com/kimmonismus/status/2084902612168577476",
+      "reason": "自引病毒级“退订 Claude”帖，把社区共振升级为 Anthropic 正在变成 AI 时代的 Yahoo",
+      "reasonEn": "Follow-up to a viral cancel-Claude rant reframes mass backlash as Anthropic becoming the Yahoo of the AI era"
+    },
+    {
+      "url": "https://x.com/Hesamation/status/2084658830990880896",
+      "reason": "引用刷屏的 Bloomberg 模型定价图，补上 cost-per-task 对比，把 DeepSeek 价格优势钉成“只剩几个像素”",
+      "reasonEn": "Quotes the viral Bloomberg pricing chart and reframes it with cost-per-task: DeepSeek’s bar is barely a couple of pixels"
+    },
+    {
+      "url": "https://x.com/GaryMarcus/status/2084844561336356947",
+      "reason": "用同一张白菜价定价图，硬刚 Dwarkesh 对 Anthropic 年入超千亿的乐观预测",
+      "reasonEn": "Juxtaposes Dwarkesh’s $100B+ Anthropic revenue call against the same rock-bottom token-price chart"
+    },
+    {
+      "url": "https://x.com/jun_song/status/2084847297276661864",
+      "reason": "引用美方开源模型安全测试豁免消息，解读为 Jensen 联盟胜出、开源权重才是真终局",
+      "reasonEn": "Quotes the US open-model safety-test exemption and reframes it as Jensen’s alliance winning over closed labs"
+    },
+    {
+      "url": "https://x.com/firstadopter/status/2084827899656364079",
+      "reason": "把 SpaceX 扩 Nvidia 算力的爆料，量化成或给 Nvidia 带来上千亿美元增量的买方冲击",
+      "reasonEn": "Escalates SpaceX’s Nvidia compute buildout into a Melius-style $100–200B revenue shock for Nvidia"
+    },
+    {
+      "url": "https://x.com/ZoeJardiniere/status/2084902838216343818",
+      "reason": "引用英国供水告急通告，一句话把地方缺水钉到 AI 数据中心扩张上",
+      "reasonEn": "Quotes a UK water-shortage alert and pins local drought risk squarely on AI data-center buildout"
+    },
+    {
+      "url": "https://x.com/teortaxesTex/status/2084876963223609747",
+      "reason": "引用 DeepSeek V4-Flash 吞吐截图，用“大黄蜂脑容量”把开源模型密度写成存在级对比",
+      "reasonEn": "Quotes a DeepSeek V4-Flash throughput shot and turns density into a bumblebee-brain scale of mind"
+    },
+    {
+      "url": "https://x.com/LynAldenContact/status/2084921998577168800",
+      "reason": "引用“美联储本周注资 80 亿”标题党，系统拆穿注入/回购/再融资/未实现亏损四类宏观噪音",
+      "reasonEn": "Quotes a sensational Fed ‘$8B injection’ post and systematically debunks four recurring macro scare tropes"
+    },
+    {
+      "url": "https://x.com/NoLimitGains/status/2084909577502368116",
+      "reason": "回引自己 2025 年看空四年周期、喊 60k 的旧帖，用当下现实回击并预告 160k",
+      "reasonEn": "Quotes his own mocked Oct-2025 ‘60k in 2026’ call and flips consensus disbelief toward a 160k-by-2028 frame"
+    },
+    {
+      "url": "https://x.com/kwok_phil/status/2084914667499946105",
+      "reason": "引用 Cloudflare 推稳定币钱包，重构成大厂在熊市里抢位、对加密反而更利好",
+      "reasonEn": "Quotes Cloudflare Wallets and reframes big-tech crypto rails as bullish accumulation during a bear market"
+    },
+    {
+      "url": "https://x.com/_FORAB/status/2084900435421524263",
+      "reason": "回引苹果测试长鑫内存旧闻，用韩媒谈价僵局说明国产存储已有议价底气",
+      "reasonEn": "Quotes his earlier Apple–CXMT testing leak and updates it with a pricing standoff that flips supplier power"
+    },
+    {
+      "url": "https://x.com/_FORAB/status/2084919144525471779",
+      "reason": "回引 Kimi 500 亿估值融资传闻，用额度被抢、须 8/15 前打款坐实 Pre-IPO 热度",
+      "reasonEn": "Quotes his Moonshot/Kimi $50B raise scoop and confirms a frenzied Pre-IPO allocation scramble"
+    }
+  ]
+}
