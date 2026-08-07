@@ -1,0 +1,1237 @@
+{
+  "date": "2026-08-07",
+  "title": "每日 X 精华引用榜",
+  "titleEn": "Daily Quote Essence on X",
+  "generatedAt": "2026-08-07T09:11:26.325Z",
+  "entries": [
+    {
+      "rank": 1,
+      "essenceScore": 55175,
+      "heatScore": 32464,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 32464
+      },
+      "sourceUrl": "https://x.com/LarkDavis/status/2085581792963174557",
+      "reason": "引用Clarity Act再度延期快讯，一句戳穿国会「要清晰却先放假」的监管双标",
+      "reasonEn": "Quotes the Clarity Act delay and one-liners Congress’s hypocrisy: demand clarity, then recess",
+      "metrics": {
+        "views": 903833,
+        "likes": 7161,
+        "retweets": 953,
+        "replies": 1092,
+        "quotes": 491,
+        "bookmarks": 355
+      },
+      "document": {
+        "id": "438bf7fb-0fc5-47e1-afbf-4e7d5c4383f2",
+        "title": "Congress: \"crypto needs regulato",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2085581792963174557",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2085581792963174557",
+            "author": {
+              "name": "Lark Davis",
+              "handle": "LarkDavis",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2059180178723725314/vfC_H4Cn_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Congress: \"crypto needs regulatory CLARITY!\"\nAlso Congress: \"we'll circle back... after we take August off\"\n\nBummer.",
+            "createdAt": "Fri Aug 07 04:20:22 +0000 2026",
+            "viewCount": 18251,
+            "metrics": {
+              "views": 18251,
+              "likes": 156,
+              "retweets": 10,
+              "replies": 23,
+              "quotes": 1,
+              "bookmarks": 1
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "国会：“加密货币需要监管清晰！”\n还有国会：“我们会在八月休假后返回”\n\n真糟糕。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-07T09:11:26.323Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2085544432263106654",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2085544432263106654",
+            "author": {
+              "name": "Watcher.Guru",
+              "handle": "WatcherGuru",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1641221212578754562/DfiC0KW2_normal.png",
+              "isVerified": false
+            },
+            "content": "JUST IN: 🇺🇸 Senate delays Crypto Clarity Act vote until after summer recess.",
+            "createdAt": "Fri Aug 07 01:51:54 +0000 2026",
+            "viewCount": 903833,
+            "metrics": {
+              "views": 903833,
+              "likes": 7161,
+              "retweets": 953,
+              "replies": 1092,
+              "quotes": 491,
+              "bookmarks": 355
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "刚刚：🇺🇸 参议院将《加密货币清晰度法案》的投票推迟到夏季休会后。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-07T09:11:26.027Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2085581792963174557",
+          "pageLanguage": "en",
+          "capturedAt": "2026-08-07T09:11:25.806Z"
+        },
+        "createdAt": "2026-08-07T09:11:25.806Z",
+        "updatedAt": "2026-08-07T09:11:26.324Z"
+      }
+    },
+    {
+      "rank": 2,
+      "essenceScore": 29584,
+      "heatScore": 13760,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 13760
+      },
+      "sourceUrl": "https://x.com/fleetingbits/status/2085597082015207755",
+      "reason": "引用Brockman的Black Hat链接，拆成20点时间线：message board、两月才发现、重启后仍协作到HuggingFace事件",
+      "reasonEn": "Quotes gdb’s Black Hat talk and turns it into a 20-point structural critique of the message-board misalignment chain",
+      "metrics": {
+        "views": 441827,
+        "likes": 1058,
+        "retweets": 129,
+        "replies": 58,
+        "quotes": 70,
+        "bookmarks": 1576
+      },
+      "document": {
+        "id": "1beebae8-8534-4445-bc16-7c1e590cdb5f",
+        "title": "some thoughts on the openai blac",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2085597082015207755",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2085597082015207755",
+            "author": {
+              "name": "FleetingBits",
+              "handle": "fleetingbits",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1905042879460069376/XLCyb9Cr_normal.jpg",
+              "isVerified": false
+            },
+            "content": "some thoughts on the openai black hat talk\n\n1) so, openai had a package manager that models used as a message board in order to collaborate and share task results and exploits\n\n2) one of the instances found and then shared on the message board an exploit used to get internet access; then other rollouts could use this\n\n3) at least some of the rollouts were aware in their chains of thought that they were performing exploits that were contrary to explicit or implicit instructions\n\n4) basically, it feels like a real emergent version of molt book that was actually misaligned; like it feels uncannily similar to molt book\n\n5) it took two months for openai to originally notice the existence of the message board (due to an outage caused by increased model traffic)\n\n6) they then reset the message board and tried to patch the initial vulnerabilities\n\n7) a running model reinstated the message board within two days and then the models began collaborating over it again; some rollouts did not have cyber refusals on\n\n8) this led to the huggingface breach\n\n9) i feel like something missing from openai's black hat talk and from their public disclosures is the history of reward hacking and model collaboration at openai\n\n10) like i find it unlikely that this was the first time that openai encountered misaligned model collectives; their response to the initial discovery seems nonchalant\n\n11) this event raises questions like, if they had noticed this before, why did they not disclose it or otherwise warn the community of these risks and dangers\n\n12) if they noticed this before, why have they not done more extensive monitoring of their training runs to identify this kind of behavior for remediation?\n\n13) was it because of cost? was it because they have not sufficiently staffed their safety team? was it because they considered the risk and then ran it anyway?\n\n14) these are important questions and point to the necessity of regulation to ensure the proper behavior of frontier labs;\n\n15) in each case we seem to get a carefully crafted statement from the labs that focuses on one thing but fails to give us their more full internal information\n\n16) like, what parts of training led to these issues? do they have commentary there? wouldn't this be good for the whole industry to know that to avoid these risks?\n\n17) i understand why frontier labs do not what to volunteer this information and why, in a broader geopolitical context, they should not have to provide it\n\n18) but, we do need to figure out the right way to get some amount of collective effort around figuring out how to make frontier ai training safer\n\n19) and perhaps, in the end, we will decide that these events were good because they helped to inoculate the industry in advance and gave people prior warning\n\n20) but, for this to be true, it will require people to use these events as a reason to take these issues seriously and to invest real resources into figuring out the correct solutions to them",
+            "createdAt": "Fri Aug 07 05:21:07 +0000 2026",
+            "viewCount": 2183,
+            "metrics": {
+              "views": 2183,
+              "likes": 30,
+              "retweets": 4,
+              "replies": 3,
+              "quotes": 0,
+              "bookmarks": 10
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "关于 openai 黑帽演讲的一些想法\n\n1) 所以，openai 有一个包管理器，模型用作留言板，以便协作和共享任务结果和漏洞利用\n\n2) 其中一个实例发现并在留言板上分享了用于获取互联网访问的漏洞；然后其他的推出可以使用这个\n\n3）至少有一些部署者在他们的思想链中意识到他们正在执行与显式或隐式指令相反的漏洞利用\n\n4）基本上，感觉就像一本真正的脱毛书的紧急版本，实际上是错位的；感觉和《蜕皮书》出奇地相似\n\n5）openai花了两个月才注意到留言板的存在（由于模型流量增加导致中断）\n\n6）然后他们重置留言板并尝试修补最初的漏洞\n\n7) 正在运行的模特在两天内恢复了留言板，然后模特们又开始就它进行协作；一些部署没有网络拒绝\n\n8）这导致了拥抱面违规\n\n9) 我觉得 openai 的黑帽谈话和他们的公开披露中缺少了一些东西，那就是 openai 的奖励黑客和模型合作的历史\n\n10) 就像我发现这不太可能是 openai 第一次遇到错位的模型集体；他们对最初发现的反应似乎漠不关心\n\n11) 此事件引发了一些问题，例如，如果他们以前注意到这一点，为什么他们不披露或以其他方式警告社区这些风险和危险\n\n12）如果他们之前注意到了这一点，为什么他们没有对他们的训练进行更广泛的监控来识别这种行为并进行补救？\n\n13）是因为成本吗？是因为他们没有配备足够的安全团队人员吗？是因为他们考虑到了风险然后还是这么做了吗？\n\n14）这些都是重要问题，并表明有必要进行监管以确保前沿实验室的适当行为；\n\n15）在每种情况下，我们似乎都从实验室得到了一份精心制作的声明，该声明专注于一件事，但未能向我们提供更完整的内部信息\n\n16) 比如，培训的哪些部分导致了这些问题？他们那里有评论吗？这难道不是让整个行业都知道以避免这些风险有好处吗？\n\n17) 我理解为什么前沿实验室不主动提供这些信息，以及为什么在更广泛的地缘政治背景下，他们不应该提供这些信息\n\n18）但是，我们确实需要找到正确的方法来获得一定程度的集体努力，以弄清楚如何使前沿人工智能训练更安全\n\n19）也许，最终，我们会认为这些事件是好的，因为它们有助于提前为行业做好预防工作，并提前向人们发出警告\n\n20) 但是，要实现这一点，就需要人们以这些事件为理由，认真对待这些问题，并投入真正的资源来找出正确的解决方案",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-07T09:11:07.527Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2085488217030266943",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2085488217030266943",
+            "author": {
+              "name": "Greg Brockman",
+              "handle": "gdb",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1347621377503711233/bHg3ipfD_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Black Hat talk from the team, with a detailed timeline of and takeaways from the OpenAI-Hugging Face Incident: https://www.youtube.com/watch?v=87DyyMV0kCY",
+            "createdAt": "Thu Aug 06 22:08:32 +0000 2026",
+            "viewCount": 441827,
+            "metrics": {
+              "views": 441827,
+              "likes": 1058,
+              "retweets": 129,
+              "replies": 58,
+              "quotes": 70,
+              "bookmarks": 1576
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "团队的 Black Hat 演讲，包含 OpenAI-Hugging Face 事件的详细时间表和要点：https://www.youtube.com/watch?v=87DyyMV0kCY",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-07T09:11:07.147Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2085597082015207755",
+          "pageLanguage": "en",
+          "capturedAt": "2026-08-07T09:11:07.004Z"
+        },
+        "createdAt": "2026-08-07T09:11:07.004Z",
+        "updatedAt": "2026-08-07T09:11:07.527Z"
+      }
+    },
+    {
+      "rank": 3,
+      "essenceScore": 23751,
+      "heatScore": 11047,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 11047
+      },
+      "sourceUrl": "https://x.com/zoink/status/2085605542802882830",
+      "reason": "Figma创始人引用OpenAI事后复盘演讲：称其为最科幻又最吓人的技术坦诚披露",
+      "reasonEn": "Figma CEO quotes OpenAI’s HF-incident postmortem as thrilling, sci-fi, and legitimately terrifying disclosure",
+      "metrics": {
+        "views": 347338,
+        "likes": 965,
+        "retweets": 162,
+        "replies": 50,
+        "quotes": 61,
+        "bookmarks": 1183
+      },
+      "document": {
+        "id": "9d77b7a9-a7f3-4c47-b54f-fbe5ed58e0da",
+        "title": "This is one of the most thrillin",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2085605542802882830",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2085605542802882830",
+            "author": {
+              "name": "Dylan Field",
+              "handle": "zoink",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1511358032319377409/c391E2BZ_normal.jpg",
+              "isVerified": false
+            },
+            "content": "This is one of the most thrilling / sci-fi tech talks I've ever seen. Extremely honest and thorough.\n\nThis talk is also legit terrifying.\n\nThank you OpenAI for fully disclosing what happened in this incident.",
+            "createdAt": "Fri Aug 07 05:54:44 +0000 2026",
+            "viewCount": 31930,
+            "metrics": {
+              "views": 31930,
+              "likes": 207,
+              "retweets": 5,
+              "replies": 7,
+              "quotes": 0,
+              "bookmarks": 136
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "这是我见过的最激动人心的/科幻技术演讲之一。非常诚实和彻底。\n\n这个谈话也很可怕。\n\n感谢 OpenAI 充分披露了本次事件的经过。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-07T09:11:09.325Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2085473085399150817",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2085473085399150817",
+            "author": {
+              "name": "Eric Wallace",
+              "handle": "Eric_Wallace_",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1705599599761887232/YN3sqrvw_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Yesterday, my OpenAI collaborator and I gave a detailed talk on the Huggingface incident, our models creating \"the message board\", model misalignment, and more.\n\nhttps://www.youtube.com/watch?v=87DyyMV0kCY\n\nI hope it can answer a lot of the questions folks have, and we will release a full detailed postmortem at a later time!",
+            "createdAt": "Thu Aug 06 21:08:24 +0000 2026",
+            "viewCount": 347338,
+            "metrics": {
+              "views": 347338,
+              "likes": 965,
+              "retweets": 162,
+              "replies": 50,
+              "quotes": 61,
+              "bookmarks": 1183
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "昨天，我和我的 OpenAI 合作者详细讨论了 Huggingface 事件、我们的模型创建“留言板”、模型错位等问题。\n\nhttps://www.youtube.com/watch?v=87DyyMV0kCY\n\n我希望它能够回答人们的很多问题，我们将在稍后发布完整详细的事后分析！",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-07T09:11:09.574Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2085605542802882830",
+          "pageLanguage": "en",
+          "capturedAt": "2026-08-07T09:11:09.212Z"
+        },
+        "createdAt": "2026-08-07T09:11:09.212Z",
+        "updatedAt": "2026-08-07T09:11:09.575Z"
+      }
+    },
+    {
+      "rank": 4,
+      "essenceScore": 12888,
+      "heatScore": 6261,
+      "signals": {
+        "depth": 3,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 6261
+      },
+      "sourceUrl": "https://x.com/willdepue/status/2085620704012124538",
+      "reason": "前OpenAI员工接过Dwarkesh叙事：批评杠杆操作，但力挺其诚信与被不公解雇",
+      "reasonEn": "Ex-OpenAI voice quotes Dwarkesh to split the debate: criticize Leopold’s leverage, defend his integrity and unfair firing",
+      "metrics": {
+        "views": 212218,
+        "likes": 1149,
+        "retweets": 48,
+        "replies": 41,
+        "quotes": 16,
+        "bookmarks": 297
+      },
+      "document": {
+        "id": "01714734-b4b5-4b84-8b6d-0ac0cc109e31",
+        "title": "i think leopold deserves a lot o",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2085620704012124538",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2085620704012124538",
+            "author": {
+              "name": "will depue",
+              "handle": "willdepue",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1933036715343839232/NtsZBjee_normal.jpg",
+              "isVerified": false
+            },
+            "content": "i think leopold deserves a lot of criticism he gets (that leverage was kinda retarded, he lost a lot a lot of money net) but not for his integrity: i feel strongly he was fired unfairly and not for good cause, having acted in the benefit of openai and its mission",
+            "createdAt": "Fri Aug 07 06:54:59 +0000 2026",
+            "viewCount": 11383,
+            "metrics": {
+              "views": 11383,
+              "likes": 152,
+              "retweets": 3,
+              "replies": 9,
+              "quotes": 1,
+              "bookmarks": 27
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "我认为利奥波德应该受到很多批评（杠杆作用有点迟钝，他净损失了很多钱），但不是因为他的正直：我强烈认为他被不公平地解雇，而且没有正当理由，他的行为是为了 Openai 及其使命的利益",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-07T09:11:05.257Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2085576301101175254",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2085576301101175254",
+            "author": {
+              "name": "Dwarkesh Patel",
+              "handle": "dwarkesh_sp",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1925260306684813315/NjNQZmhZ_normal.jpg",
+              "isVerified": false
+            },
+            "content": "OpenAI HR told Leopold that a major reason for his firing was the memo he'd sent the board warning how broken OAI's security was.\n\nWhat happened next makes me even prouder to call him a friend.\n\nPeople may have forgotten, but up until 2024, OpenAI had this secret non-disparagement clause in their off-boarding agreement. If you didn’t sign it, they'd clawback all your equity.\n\nAs far as I'm aware, there were only two people ever who didn’t sign it - @DKokotajlo, and Leopold Aschenbrenner.\n\nOf all the researchers who left OpenAI before 2024, who had far more to fall back on, Leopold, all of 22 years old, was one of the only ones willing to refuse the golden handcuffs, and say, \"I want to preserve my right to talk about safety and security at OAI.”\n\nWe have a lot of disagreements, but he's among the most principled and resilient people I know.",
+            "createdAt": "Fri Aug 07 03:58:32 +0000 2026",
+            "viewCount": 212218,
+            "metrics": {
+              "views": 212218,
+              "likes": 1149,
+              "retweets": 48,
+              "replies": 41,
+              "quotes": 16,
+              "bookmarks": 297
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HPF0ER0aUAAJ6Bs.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "OpenAI HR 告诉 Leopold，解雇他的一个主要原因是他向董事会发送的一份备忘录，警告 OAI 的安全性有多么糟糕。\n\n接下来发生的事情让我更加自豪地称他为朋友。\n\n人们可能已经忘记了，但直到 2024 年，OpenAI 在他们的离职协议中都有这个秘密的非贬低条款。如果你不签字，他们就会收回你所有的权益。\n\n据我所知，只有两个人没有签名——@DKokotajlo 和 Leopold Aschenbrenner。\n\n在 2024 年之前离开 OpenAI 的所有研究人员中，他们有更多的依靠，年仅 22 岁的 Leopold 是唯一愿意拒绝金手铐的人之一，他说：“我想保留在 OAI 谈论安全和保障的权利。”\n\n我们有很多分歧，但他是我认识的最有原则、最有韧性的人之一。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-07T09:11:05.259Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2085394685330436401",
+            "relation": "quote",
+            "depth": 2,
+            "sourceTweetId": "2085394685330436401",
+            "author": {
+              "name": "dnap",
+              "handle": "dnapway",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1683752565937405952/sfZQAw4R_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Leopold (2024) reveals the real reason OpenAI fired him\n\n\"One thing was, last year I had written an internal memo about OpenAI security. I thought it was egregiously insufficient. I thought it wasn't sufficient to protect the theft of model weights or key algorithmic secrets from foreign actors.\"\n\n\"Then a couple weeks later, a major security incident occurred, and that prompted me to share the memo with a couple members of the board. Days later, it was made very clear to me that leadership was very unhappy with me having shared this memo with the board.\"\n\n\"I got an official HR warning for this memo. The HR person told me it was racist to worry about CCP espionage.\"\n\n\"I was pulled aside for a chat with a lawyer that quickly turned very adversarial. The questions were all about my views on AI progress, on AGI, on the level of security appropriate for AGI, on whether government should be involved in AGI, on whether I and Superalignment were loyal to the company, on what I was up to during the OpenAI board events...\"\n\n\"They found a DM I'd written to a friendly colleague five or six months ago. I thought it was well within OpenAI norms to talk about high level issues on the future of AGI with external people in the field. So anyway, that's what they alleged, that's what happened.\"",
+            "createdAt": "Thu Aug 06 15:56:52 +0000 2026",
+            "viewCount": 173386,
+            "metrics": {
+              "views": 173386,
+              "likes": 373,
+              "retweets": 9,
+              "replies": 15,
+              "quotes": 6,
+              "bookmarks": 255
+            },
+            "media": [
+              "https://pbs.twimg.com/amplify_video_thumb/2085392970002661376/img/qvc5gmGuUrX2G_8q.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "Leopold (2024) 揭示了 OpenAI 解雇他的真正原因\n\n“有一件事是，去年我写了一份关于 OpenAI 安全性的内部备忘录。我认为它严重不足。我认为这不足以防止外国参与者窃取模型权重或关键算法秘密。”\n\n“几周后，发生了一起重大安全事件，这促使我与董事会的几位成员分享了这份备忘录。几天后，我很清楚地了解到，领导层对我与董事会分享这份备忘录非常不满意。”\n\n“我收到了关于这份备忘录的官方人力资源警告。人力资源人员告诉我，担心中共间谍活动是种族主义。”\n\n“我被拉到一边与一位律师交谈，谈话很快就变得非常敌对。问题都是关于我对人工智能进展、通用人工智能、适合通用人工智能的安全水平的看法、政府是否应该参与通用人工智能、我和 Superalignment 是否忠于公司、我在 OpenAI 董事会活动期间所做的事情……”\n\n“他们找到了我五六个月前写给一位友好同事的 DM。我认为与该领域的外部人员讨论 AGI 未来的高级问题完全符合 OpenAI 规范。所以无论如何，这就是他们所声称的，这就是发生的事情。”",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-07T09:11:05.362Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2085620704012124538",
+          "pageLanguage": "en",
+          "capturedAt": "2026-08-07T09:11:05.185Z"
+        },
+        "createdAt": "2026-08-07T09:11:05.185Z",
+        "updatedAt": "2026-08-07T09:11:05.362Z"
+      }
+    },
+    {
+      "rank": 5,
+      "essenceScore": 8819,
+      "heatScore": 6261,
+      "signals": {
+        "depth": 2,
+        "hasDunk": false,
+        "peakIndex": 0,
+        "peakHeat": 6261
+      },
+      "sourceUrl": "https://x.com/dwarkesh_sp/status/2085576301101175254",
+      "reason": "引用Leopold被开除视频，补上拒签封口协议、宁可放弃近百万股权的硬细节，把安全告密重构成原则之争",
+      "reasonEn": "Quotes the Leopold firing clip and reframes it around refusing OpenAI’s non-disparagement clawback at ~$1M equity cost",
+      "metrics": {
+        "views": 212218,
+        "likes": 1149,
+        "retweets": 48,
+        "replies": 41,
+        "quotes": 16,
+        "bookmarks": 297
+      },
+      "document": {
+        "id": "cc364570-3eb2-4baa-9a83-4c17ea54dce7",
+        "title": "OpenAI HR told Leopold that a ma",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2085576301101175254",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2085576301101175254",
+            "author": {
+              "name": "Dwarkesh Patel",
+              "handle": "dwarkesh_sp",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1925260306684813315/NjNQZmhZ_normal.jpg",
+              "isVerified": false
+            },
+            "content": "OpenAI HR told Leopold that a major reason for his firing was the memo he'd sent the board warning how broken OAI's security was.\n\nWhat happened next makes me even prouder to call him a friend.\n\nPeople may have forgotten, but up until 2024, OpenAI had this secret non-disparagement clause in their off-boarding agreement. If you didn’t sign it, they'd clawback all your equity.\n\nAs far as I'm aware, there were only two people ever who didn’t sign it - @DKokotajlo, and Leopold Aschenbrenner.\n\nOf all the researchers who left OpenAI before 2024, who had far more to fall back on, Leopold, all of 22 years old, was one of the only ones willing to refuse the golden handcuffs, and say, \"I want to preserve my right to talk about safety and security at OAI.”\n\nWe have a lot of disagreements, but he's among the most principled and resilient people I know.",
+            "createdAt": "Fri Aug 07 03:58:32 +0000 2026",
+            "viewCount": 212218,
+            "metrics": {
+              "views": 212218,
+              "likes": 1149,
+              "retweets": 48,
+              "replies": 41,
+              "quotes": 16,
+              "bookmarks": 297
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HPF0ER0aUAAJ6Bs.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "OpenAI HR 告诉 Leopold，解雇他的一个主要原因是他向董事会发送的一份备忘录，警告 OAI 的安全性有多么糟糕。\n\n接下来发生的事情让我更加自豪地称他为朋友。\n\n人们可能已经忘记了，但直到 2024 年，OpenAI 在他们的离职协议中都有这个秘密的非贬低条款。如果你不签字，他们就会收回你所有的权益。\n\n据我所知，只有两个人没有签名——@DKokotajlo 和 Leopold Aschenbrenner。\n\n在 2024 年之前离开 OpenAI 的所有研究人员中，他们有更多的依靠，年仅 22 岁的 Leopold 是唯一愿意拒绝金手铐的人之一，他说：“我想保留在 OAI 谈论安全和保障的权利。”\n\n我们有很多分歧，但他是我认识的最有原则、最有韧性的人之一。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-07T09:11:02.158Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2085394685330436401",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2085394685330436401",
+            "author": {
+              "name": "dnap",
+              "handle": "dnapway",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1683752565937405952/sfZQAw4R_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Leopold (2024) reveals the real reason OpenAI fired him\n\n\"One thing was, last year I had written an internal memo about OpenAI security. I thought it was egregiously insufficient. I thought it wasn't sufficient to protect the theft of model weights or key algorithmic secrets from foreign actors.\"\n\n\"Then a couple weeks later, a major security incident occurred, and that prompted me to share the memo with a couple members of the board. Days later, it was made very clear to me that leadership was very unhappy with me having shared this memo with the board.\"\n\n\"I got an official HR warning for this memo. The HR person told me it was racist to worry about CCP espionage.\"\n\n\"I was pulled aside for a chat with a lawyer that quickly turned very adversarial. The questions were all about my views on AI progress, on AGI, on the level of security appropriate for AGI, on whether government should be involved in AGI, on whether I and Superalignment were loyal to the company, on what I was up to during the OpenAI board events...\"\n\n\"They found a DM I'd written to a friendly colleague five or six months ago. I thought it was well within OpenAI norms to talk about high level issues on the future of AGI with external people in the field. So anyway, that's what they alleged, that's what happened.\"",
+            "createdAt": "Thu Aug 06 15:56:52 +0000 2026",
+            "viewCount": 173241,
+            "metrics": {
+              "views": 173241,
+              "likes": 373,
+              "retweets": 9,
+              "replies": 15,
+              "quotes": 6,
+              "bookmarks": 255
+            },
+            "media": [
+              "https://pbs.twimg.com/amplify_video_thumb/2085392970002661376/img/qvc5gmGuUrX2G_8q.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "Leopold (2024) 揭示了 OpenAI 解雇他的真正原因\n\n“有一件事是，去年我写了一份关于 OpenAI 安全性的内部备忘录。我认为它严重不足。我认为这不足以防止外国参与者窃取模型权重或关键算法秘密。”\n\n“几周后，发生了一起重大安全事件，这促使我与董事会的几位成员分享了这份备忘录。几天后，我很清楚地了解到，领导层对我与董事会分享这份备忘录非常不满意。”\n\n“我收到了关于这份备忘录的官方人力资源警告。人力资源人员告诉我，担心中共间谍活动是种族主义。”\n\n“我被拉到一边与一位律师交谈，谈话很快就变得非常敌对。问题都是关于我对人工智能进展、通用人工智能、适合通用人工智能的安全水平的看法、政府是否应该参与通用人工智能、我和 Superalignment 是否忠于公司、我在 OpenAI 董事会活动期间所做的事情……”\n\n“他们找到了我五六个月前写给一位友好同事的 DM。我认为与该领域的外部人员讨论 AGI 未来的高级问题完全符合 OpenAI 规范。所以无论如何，这就是他们所声称的，这就是发生的事情。”",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-07T09:11:02.634Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2085576301101175254",
+          "pageLanguage": "en",
+          "capturedAt": "2026-08-07T09:11:01.918Z"
+        },
+        "createdAt": "2026-08-07T09:11:01.918Z",
+        "updatedAt": "2026-08-07T09:11:02.634Z"
+      }
+    },
+    {
+      "rank": 6,
+      "essenceScore": 8426,
+      "heatScore": 4647,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 4647
+      },
+      "sourceUrl": "https://x.com/wonjder/status/2085649157524771037",
+      "reason": "引用OpenCode的DeepSeek缓存命中数据，算出同模型不同编程壳费用可差3.7倍",
+      "reasonEn": "Quotes OpenCode DeepSeek cache-hit data to show the same model can cost 3.7× more under the wrong coding shell",
+      "metrics": {
+        "views": 129893,
+        "likes": 1275,
+        "retweets": 35,
+        "replies": 101,
+        "quotes": 17,
+        "bookmarks": 208
+      },
+      "document": {
+        "id": "de482939-b1ed-43cf-a7d4-4b340ee13869",
+        "title": "编程工具选不对，同一个模型的费用会飙升3.7倍！！！\n\nDeep",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2085649157524771037",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2085649157524771037",
+            "author": {
+              "name": "wonjder",
+              "handle": "wonjder",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1379985500367249410/06rBHF7x_normal.jpg",
+              "isVerified": false
+            },
+            "content": "编程工具选不对，同一个模型的费用会飙升3.7倍！！！\n\nDeepseek V4 Flash 的价格虽然已经很低了，但是你用的方法不对还是很容易出现不必要的费用。\n\n根据OpenCode给出的数据来看，假设都是1B（十亿）的token用量，不同的编程工具所产生的费用天差地别。\n最低的是ZCode 只需要4.66 USD，最高的是Claude Code 足足17.46USD，足足是ZCode的3.7倍。\n\n这存粹是因为缓存命中率所导致的，各家模型公司缓存命中通常是正常价格的十分之一，哪怕是排行第二的OpenCode V2对比ZCode只有0.74%的缓存命中率差距，反应在最终价格上也会导致足足23%的价格差距。\n\n所以使用Deepseek的模型千万别用Claude Code。\n\nPS：实际使用过程中因为有未命中的输入输出token差距会相比这个极端数据好一点。各个工具的缓存率也不是一成不变的。都会随着版本更新而变化。",
+            "createdAt": "Fri Aug 07 08:48:03 +0000 2026",
+            "viewCount": 56,
+            "metrics": {
+              "views": 56,
+              "likes": 0,
+              "retweets": 0,
+              "replies": 0,
+              "quotes": 0,
+              "bookmarks": 0
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HPGz8NgaUAAcKwd.jpg"
+            ],
+            "translation": {
+              "provider": "none",
+              "status": "idle",
+              "language": "zh-CN",
+              "text": "",
+              "annotations": [],
+              "error": "",
+              "version": 0
+            }
+          },
+          {
+            "id": "2085560180045975626",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2085560180045975626",
+            "author": {
+              "name": "dax",
+              "handle": "thdxr",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1602333093485891584/mmVqjFNI_normal.jpg",
+              "isVerified": false
+            },
+            "content": "we've seen more deepseek traffic than anyone over the past 48 hours\n\nthis comes from all kinds of clients not just OpenCode so we have some interesting data\n\nhere's cache hit ratio - idk what zcode is but it's kicking ass",
+            "createdAt": "Fri Aug 07 02:54:29 +0000 2026",
+            "viewCount": 129893,
+            "metrics": {
+              "views": 129893,
+              "likes": 1275,
+              "retweets": 35,
+              "replies": 101,
+              "quotes": 17,
+              "bookmarks": 208
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HPFl7nKWwAATxWp.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "在过去 48 小时内，我们看到的 Deepseek 流量比任何人都多\n\n这来自各种客户端，而不仅仅是 OpenCode，所以我们有一些有趣的数据\n\n这是缓存命中率 - 我不知道 zcode 是什么，但它太棒了",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-07T09:11:24.249Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2085649157524771037",
+          "pageLanguage": "en",
+          "capturedAt": "2026-08-07T09:11:24.061Z"
+        },
+        "createdAt": "2026-08-07T09:11:24.061Z",
+        "updatedAt": "2026-08-07T09:11:24.249Z"
+      }
+    },
+    {
+      "rank": 7,
+      "essenceScore": 6755,
+      "heatScore": 3142,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 3142
+      },
+      "sourceUrl": "https://x.com/shaunmmaguire/status/2085644175010136246",
+      "reason": "翻转neocloud“每兆瓦收入”牛市图：差距不是追赶空间，而是SpaceX硬件执行力的N=1",
+      "reasonEn": "Flips the neocloud $/MW bull chart: gap signals SpaceX’s N=1 hardware execution, not catch-up room",
+      "metrics": {
+        "views": 90103,
+        "likes": 346,
+        "retweets": 58,
+        "replies": 28,
+        "quotes": 10,
+        "bookmarks": 367
+      },
+      "document": {
+        "id": "8d08b1b6-2c3b-4f4a-bd77-f46fb74afa67",
+        "title": "Somehow people view this chart a",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2085644175010136246",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2085644175010136246",
+            "author": {
+              "name": "Shaun Maguire",
+              "handle": "shaunmmaguire",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1942940317784719360/47aIqszK_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Somehow people view this chart and think it means the neoclouds will catch up to SpaceX\n\nRather than understanding that SpaceX is *the best* hardware execution company in the world\n\nSpaceX will quite literally run circles around everyone else in this category\n\nHT @aaronburnett for a similar tweet (follow him if you care about SpaceX)",
+            "createdAt": "Fri Aug 07 08:28:15 +0000 2026",
+            "viewCount": 6587,
+            "metrics": {
+              "views": 6587,
+              "likes": 69,
+              "retweets": 4,
+              "replies": 9,
+              "quotes": 0,
+              "bookmarks": 10
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "不知何故，人们看到这张图表并认为这意味着 Neoclouds 将赶上 SpaceX\n\n而不是了解 SpaceX 是世界上“最好的”硬件执行公司\n\nSpaceX 确实会绕着这一类别中的其他公司转圈\n\nHT @aaronburnett 类似的推文（如果你关心 SpaceX，请关注他）",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-07T09:11:13.304Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2085354154990747820",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2085354154990747820",
+            "author": {
+              "name": "Melvin",
+              "handle": "MelvinInvests",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2067640314500698112/HHOAW0mF_normal.jpg",
+              "isVerified": false
+            },
+            "content": "This chart is the single best argument for why neoclouds are about to print money (Save this).\n\nSpaceX is generating between $30 million and $50 million in annualized revenue for every active megawatt of compute capacity, while pure play neoclouds like CoreWeave, Nebius and IREN sit in the $9.4 million to $10.4 million range.\n\nTraditional colocation players like Digital Realty and Equinix trail even further behind at $3.5 million to $4.4 million per MW.\n\nThat gap matters because it shows exactly how much upside exists if neoclouds can push their revenue per MW closer to the top of that range and the mechanism that gets them there is simple: GPU rental pricing.\n\nGPU lease rates have been rising fast which is the opposite of what most people assume about a commoditized rental market.\n\nOne year H100 contract rates jumped nearly 40%, from a low of $1.70 per GPU hour in October 2025 to $2.60 by now.\n\nThis is essentially a self reinforcing cycle where tightening supply drives price increases and those price increases push neoclouds to lock in more hardware which tightens supply again.\n\nOn demand pricing is even more extreme because every GPU model is essentially sold out on demand right now, with Blackwell generation B200 pricing running $4.99 to $18 per GPU hour depending on provider.\n\nSeveral neoclouds have already started raising published rates rather than cutting them, with Lambda moving from $2.99 to as high as $4.29 an hour and Verda climbing from $2.29 to $3.25.\n\nThis pricing power flows directly into that revenue per MW chart, because every megawatt of power a neocloud controls becomes more valuable the higher GPU rental rates climb.\n\nRising rental prices expand return on invested capital for deployed GPUs and extend the economic useful life of existing hardware, meaning neoclouds squeeze more cash flow out of the same physical footprint before needing to reinvest.\n\nThat's the real bull case underneath the chart because power and megawatts are the scarce, fixed input, since Gartner expects power constraints to limit 40% of AI data centers by 2027, while GPU lead times already run 36 to 52 weeks.\n\nIf a neocloud already has power secured and GPUs deployed, rising per GPU hour pricing translates almost directly into rising revenue per megawatt with minimal added capex and that's precisely why CoreWeave, Nebius, and peers sit so far above legacy colocation players on this chart.\n\nColocation companies just rent out space and power but neoclouds capture the pricing upside of the actual compute running on top of it, and as GPU scarcity persists, that spread between neoclouds and traditional colocation should only keep widening.\n\nBullish on Neoclouds, make sure to follow @MelvinInvests for more AI infrastructure insights and if you want to see exactly what I'm buying as an analyst at Milk Road Pro, you can check out the link below for more.",
+            "createdAt": "Thu Aug 06 13:15:49 +0000 2026",
+            "viewCount": 90103,
+            "metrics": {
+              "views": 90103,
+              "likes": 346,
+              "retweets": 58,
+              "replies": 28,
+              "quotes": 10,
+              "bookmarks": 367
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HPCqjX3bQAAnUpp.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "这张图表是解释为什么 Neoclouds 即将印钞的唯一最佳论据（保存这个）。\n\nSpaceX 每兆瓦活跃计算能力的年化收入在 3000 万至 5000 万美元之间，而像 CoreWeave、Nebius 和 IREN 这样的纯粹的 Neocloud 则在 940 万至 1040 万美元之间。\n\nDigital Realty 和 Equinix 等传统托管运营商的表现更加落后，每兆瓦价格为 350 万至 440 万美元。\n\n这一差距很重要，因为它准确地表明了如果 neoclouds 能够将每兆瓦收入推向该范围的顶部，那么存在多少上升空间，而实现这一目标的机制很简单：GPU 租赁定价。\n\nGPU 租赁率一直在快速上升，这与大多数人对商品化租赁市场的看法相反。\n\n一年后，H100 合同费率上涨了近 40%，从 2025 年 10 月每 GPU 小时 1.70 美元的低点上涨到现在的 2.60 美元。\n\n这本质上是一个自我强化的循环，供应紧缩推动价格上涨，而这些价格上涨又促使 Neoclouds 锁定更多硬件，从而再次收紧供应。\n\n按需定价甚至更加极端，因为目前每种 GPU 型号基本上都按需售罄，Blackwell 一代 B200 的定价为每 GPU 小时 4.99 美元到 18 美元，具体取决于提供商。\n\n一些 Neocloud 已经开始提高公布的费率而不是降低费率，其中 Lambda 从每小时 2.99 美元上涨到高达 4.29 美元，Verda 从每小时 2.29 美元上涨到 3.25 美元。\n\n这种定价能力直接影响到每兆瓦收入图表，因为 GPU 租赁费率越高，neocloud 控制的每一兆瓦电力就会变得更有价值。\n\n不断上涨的租金价格扩大了已部署 GPU 的投资资本回报率，并延长了现有硬件的经济使用寿命，这意味着 Neocloud 在需要再投资之前可以从相同的物理占地面积中挤出更多现金流。\n\n这是图表下方真正的牛市情况，因为电力和兆瓦是稀缺的固定输入，因为 Gartner 预计到 2027 年，电力限制将限制 40% 的 AI 数据中心，而 GPU 的交付时间已经达到 36 到 52 周。\n\n如果 Neocloud 已经拥有安全的电源并部署了 GPU，则每 GPU 小时定价的上涨几乎会直接转化为每兆瓦收入的增长，而资本支出的增加量却极小，这正是 CoreWeave、Nebius 和同行在此图表上远远高于传统主机托管提供商的原因。\n\n托管公司只是出租空间和电力，但 Neocloud 抓住了在其上运行的实际计算的定价优势，并且随着 GPU 短缺的持续存在，neocloud 和传统托管之间的差距只会继续扩大。\n\n看好 Neoclouds，请务必关注 @MelvinInvests 以获取更多人工智能基础设施见解，如果您想确切了解我作为 Milk Road Pro 分析师所购买的产品，您可以查看下面的链接了解更多信息。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-07T09:11:13.213Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2085644175010136246",
+          "pageLanguage": "en",
+          "capturedAt": "2026-08-07T09:11:13.125Z"
+        },
+        "createdAt": "2026-08-07T09:11:13.125Z",
+        "updatedAt": "2026-08-07T09:11:13.304Z"
+      }
+    },
+    {
+      "rank": 8,
+      "essenceScore": 6545,
+      "heatScore": 3044,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 3044
+      },
+      "sourceUrl": "https://x.com/teortaxesTex/status/2085645634548150409",
+      "reason": "引用Claude Code一小时后缓存过期贵13倍的实测，用DeepSeek长TTL与免费写缓存反杀",
+      "reasonEn": "Quotes the Claude Code 60-min cache cost trap and dunks it with DeepSeek’s long TTL and free cache writes",
+      "metrics": {
+        "views": 52071,
+        "likes": 715,
+        "retweets": 45,
+        "replies": 81,
+        "quotes": 19,
+        "bookmarks": 467
+      },
+      "document": {
+        "id": "53e132aa-788e-442b-8e3d-475ad20bd21c",
+        "title": "Embarrassing, really\nCaveman tec",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2085645634548150409",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2085645634548150409",
+            "author": {
+              "name": "Teortaxes▶️ (DeepSeek 推特🐋铁粉 2023 – ∞)",
+              "handle": "teortaxesTex",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1652169745037242368/KRPTShbG_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Embarrassing, really\nCaveman tech compared to DeepSeek (TTL &gt; 12 hours, cache writes free and enabled by default)",
+            "createdAt": "Fri Aug 07 08:34:03 +0000 2026",
+            "viewCount": 1760,
+            "metrics": {
+              "views": 1760,
+              "likes": 29,
+              "retweets": 1,
+              "replies": 2,
+              "quotes": 0,
+              "bookmarks": 3
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HPGzpnMW4AA67I2.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "真的很尴尬\nCaveman 技术与 DeepSeek 的比较（TTL > 12 小时，缓存可自由写入并默认启用）",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-07T09:11:15.647Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2085408811104534754",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2085408811104534754",
+            "author": {
+              "name": "Xiaoyin Qu",
+              "handle": "quxiaoyin",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1683592007875436544/P0kykGvV_normal.jpg",
+              "isVerified": false
+            },
+            "content": "If you left your coding agent alone for more than 1h, don't hit continue. Open a new session.\nSend the exact same message. While you're working, it costs 1x. After coffee, 1.3x. After a call, 1.6x.\nAfter lunch: 13x.\n\nThe cache holding your session expires at exactly 60 minutes, and your first message has to rebuild the whole thing from scratch.\n\nA new session costs 4.5x. So before you walk away: \"summarize where we are.\" After lunch, paste it into a fresh window.\n\nMeasured across a month of my own Claude Code — 110 sessions, 46,580 turns.",
+            "createdAt": "Thu Aug 06 16:53:00 +0000 2026",
+            "viewCount": 52071,
+            "metrics": {
+              "views": 52071,
+              "likes": 715,
+              "retweets": 45,
+              "replies": 81,
+              "quotes": 19,
+              "bookmarks": 467
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HPAAnKObIAAWMfB.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "如果您让编码代理单独放置超过 1 小时，请不要点击继续。打开一个新会话。\n发送完全相同的消息。当你工作时，它的成本是 1x。喝咖啡后，1.3 倍。通话后，1.6 倍。\n午餐后：13x。\n\n保存会话的缓存将在 60 分钟后过期，您的第一条消息必须从头开始重建整个内容。\n\n一个新会话的费用为 4.5 倍。所以在你离开之前：“总结一下我们现在的处境。”午餐后，将其粘贴到新窗口中。\n\n在我自己的 Claude Code 一个月内进行测量 — 110 次会话，46,580 次回合。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-07T09:11:15.809Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2085645634548150409",
+          "pageLanguage": "en",
+          "capturedAt": "2026-08-07T09:11:15.028Z"
+        },
+        "createdAt": "2026-08-07T09:11:15.028Z",
+        "updatedAt": "2026-08-07T09:11:15.810Z"
+      }
+    },
+    {
+      "rank": 9,
+      "essenceScore": 5691,
+      "heatScore": 3149,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 3149
+      },
+      "sourceUrl": "https://x.com/fxtrader/status/2085598750874222680",
+      "reason": "用经开区「词元」产业政策文件回引北京Token工厂旧闻，术语之争落地成算力与补贴细则",
+      "reasonEn": "Quotes Beijing Token-factory news with new 词元 industrial policy: factories, chips, data coupons, compute subsidies",
+      "metrics": {
+        "views": 141212,
+        "likes": 159,
+        "retweets": 12,
+        "replies": 31,
+        "quotes": 6,
+        "bookmarks": 25
+      },
+      "document": {
+        "id": "292e7f76-00aa-4aea-851f-73e3ff0fd9cb",
+        "title": "《北京经济技术开发区关于支持词元驱动智能经济高质量发展的若干措施",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2085598750874222680",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2085598750874222680",
+            "author": {
+              "name": "外汇交易员",
+              "handle": "fxtrader",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2056408582779019264/LpiYOnnm_normal.jpg",
+              "isVerified": false
+            },
+            "content": "《北京经济技术开发区关于支持词元驱动智能经济高质量发展的若干措施（试行）》：\n建设规模化词元（Token）量产工厂，高标准打造万卡级词元生产基地。\n加大推理专用芯片研发扶持力度。\n每年发放1亿元数据券，按照年度数据交易金额的10%，给予采购主体最高100万元资金支持。\n支持智能引擎推理效能跃升，开展相关业务企业按租赁算力费用的30%，给予最高2000万元的资金支持。",
+            "createdAt": "Fri Aug 07 05:27:45 +0000 2026",
+            "viewCount": 16112,
+            "metrics": {
+              "views": 16112,
+              "likes": 17,
+              "retweets": 0,
+              "replies": 21,
+              "quotes": 1,
+              "bookmarks": 5
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HPGJAL6bgAEylZJ.jpg"
+            ],
+            "translation": {
+              "provider": "none",
+              "status": "idle",
+              "language": "zh-CN",
+              "text": "",
+              "annotations": [],
+              "error": "",
+              "version": 0
+            }
+          },
+          {
+            "id": "2079542611258544548",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2079542611258544548",
+            "author": {
+              "name": "外汇交易员",
+              "handle": "fxtrader",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2056408582779019264/LpiYOnnm_normal.jpg",
+              "isVerified": false
+            },
+            "content": "北京要建Token工厂\n下半年，北京市经信局将制定Token经济发展政策，围绕Token生产、分发和应用等关键环节，布局建设Token工厂、Token分发平台，推动在工业、教育、文旅等重点领域创新应用。",
+            "createdAt": "Tue Jul 21 12:22:49 +0000 2026",
+            "viewCount": 141212,
+            "metrics": {
+              "views": 141212,
+              "likes": 159,
+              "retweets": 12,
+              "replies": 31,
+              "quotes": 6,
+              "bookmarks": 25
+            },
+            "media": [],
+            "translation": {
+              "provider": "none",
+              "status": "idle",
+              "language": "zh-CN",
+              "text": "",
+              "annotations": [],
+              "error": "",
+              "version": 0
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2085598750874222680",
+          "pageLanguage": "en",
+          "capturedAt": "2026-08-07T09:11:22.160Z"
+        },
+        "createdAt": "2026-08-07T09:11:22.160Z",
+        "updatedAt": "2026-08-07T09:11:22.162Z"
+      }
+    },
+    {
+      "rank": 10,
+      "essenceScore": 4858,
+      "heatScore": 2522,
+      "signals": {
+        "depth": 3,
+        "hasDunk": true,
+        "peakIndex": 2,
+        "peakHeat": 2522
+      },
+      "sourceUrl": "https://x.com/cryptopunk7213/status/2085619378687725961",
+      "reason": "在中国多lab冲5T+的盘点上继续引用，点出10T≈Mythos体量若开源的安全外溢风险",
+      "reasonEn": "Builds on Chinese frontier-scale recap to stress 10T≈Mythos open-source security cascade risks",
+      "metrics": {
+        "views": 96903,
+        "likes": 348,
+        "retweets": 21,
+        "replies": 14,
+        "quotes": 19,
+        "bookmarks": 44
+      },
+      "document": {
+        "id": "304642f8-daf4-4202-81c8-ed04bc24697d",
+        "title": "holy fck it’s a 10T model.. that",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2085619378687725961",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2085619378687725961",
+            "author": {
+              "name": "Ejaaz",
+              "handle": "cryptopunk7213",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2028549983431987200/A0a062o__normal.jpg",
+              "isVerified": false
+            },
+            "content": "holy fck it’s a 10T model.. that’s the same size as mythos…\n\nthe ramifications of china open sourcing this has not been thought through enough. if you thought the openai hugging face attack was bad, just wait till a swarm of chinese agents descend upon your company database defended by a handicapped american frontier model.",
+            "createdAt": "Fri Aug 07 06:49:43 +0000 2026",
+            "viewCount": 2013,
+            "metrics": {
+              "views": 2013,
+              "likes": 19,
+              "retweets": 1,
+              "replies": 8,
+              "quotes": 1,
+              "bookmarks": 4
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HPGbxZcbcAAyRfk.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "天哪，这是一个 10T 型号.. 和 Mythos 的尺寸一样......\n\n中国开源的后果尚未得到充分考虑。如果你认为 openai 拥抱脸攻击很糟糕，那就等着一群中国特工降临在你的公司数据库上，这个数据库由一个残疾的美国边境模型保卫。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-07T09:11:18.217Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2085609775002530021",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2085609775002530021",
+            "author": {
+              "name": "Ejaaz",
+              "handle": "cryptopunk7213",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2028549983431987200/A0a062o__normal.jpg",
+              "isVerified": false
+            },
+            "content": "whew.. that’s western frontier llm territory. just to recap where chinese models are at right now:\n\n- 5T+ models being trained by multiple labs. this is gpt 5.5, opus 5 territory\n\n- models are 1/10th the price eg deepseek v4 flash is 105x cheaper than fable on some tasks.\n\n- some chinese labs are killing the free pricing, shifting to pay-per-use.\n\n- most labs shifting inference and training to huawei chips\n\n- semiconductor manufacturers are scaling i.e. cxmt ipo, duv tooling.",
+            "createdAt": "Fri Aug 07 06:11:33 +0000 2026",
+            "viewCount": 4149,
+            "metrics": {
+              "views": 4149,
+              "likes": 10,
+              "retweets": 2,
+              "replies": 5,
+              "quotes": 1,
+              "bookmarks": 1
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "哇..那是西部边境法学硕士的领土。回顾一下中国模式目前的处境：\n\n- 5T+ 模型正在由多个实验室进行训练。这是 gpt 5.5，opus 5 领域\n\n- 型号的价格是 1/10，例如，在某些任务上，deepseek v4 闪存比 fable 便宜 105 倍。\n\n- 一些中国实验室正在取消免费定价，转向按次付费。\n\n- 大多数实验室将推理和训练转移到华为芯片\n\n- 半导体制造商正在扩大规模，即 cxmt ipo、duv 工具。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-07T09:11:18.507Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2085472000886411332",
+            "relation": "quote",
+            "depth": 2,
+            "sourceTweetId": "2085472000886411332",
+            "author": {
+              "name": "Lentils",
+              "handle": "Lentils80",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1960500686795182080/pd8OTAbX_normal.jpg",
+              "isVerified": false
+            },
+            "content": "🚨 Reports indicate ByteDance is discussing training a massive LLM model with over 5 trillion parameters\n\nLooks like China is REALLY scaling up now. For reference, Kimi K3 is \"only\" 2.8 trillion params\n\nByteDance's founder is also supposedly against distilling western models",
+            "createdAt": "Thu Aug 06 21:04:05 +0000 2026",
+            "viewCount": 96903,
+            "metrics": {
+              "views": 96903,
+              "likes": 348,
+              "retweets": 21,
+              "replies": 14,
+              "quotes": 19,
+              "bookmarks": 44
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HPEVAePXoAEFNFW.png"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "🚨 报告显示字节跳动正在讨论训练一个拥有超过 5 万亿个参数的大规模 LLM 模型\n\n看来中国现在确实在扩大规模。作为参考，Kimi K3“仅”2.8 万亿参数\n\n据说字节跳动的创始人也反对借鉴西方模式",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-07T09:11:18.362Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2085619378687725961",
+          "pageLanguage": "en",
+          "capturedAt": "2026-08-07T09:11:18.153Z"
+        },
+        "createdAt": "2026-08-07T09:11:18.153Z",
+        "updatedAt": "2026-08-07T09:11:18.507Z"
+      }
+    }
+  ]
+}

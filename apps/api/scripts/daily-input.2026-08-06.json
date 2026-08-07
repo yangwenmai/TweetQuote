@@ -1,0 +1,67 @@
+{
+  "date": "2026-08-06",
+  "title": "每日 X 精华引用榜",
+  "titleEn": "Daily Quote Essence on X",
+  "items": [
+    {
+      "url": "https://x.com/buildwithhassan/status/2085440188365365556",
+      "reason": "引用OpenAI放开免费Luna，一针见血指出DeepSeek让非前沿模型收费变得尴尬",
+      "reasonEn": "Quotes OpenAI’s free-Luna rollout and reframes it as competition forced by DeepSeek pricing pressure"
+    },
+    {
+      "url": "https://x.com/EMostaque/status/2085483036842381641",
+      "reason": "把免费Luna的能力锚定到过往SOTA，重写了“免费模型意味着什么”",
+      "reasonEn": "Anchors free Luna’s capability to prior SOTA models, reframing what unlimited free access now means"
+    },
+    {
+      "url": "https://x.com/teortaxesTex/status/2085476593024053530",
+      "reason": "反驳Chollet“TTC突破不明显”，用4chan 2020史实打脸",
+      "reasonEn": "Sharp dunk on Chollet’s claim that test-time compute was non-obvious, citing 4chan 2020 origins"
+    },
+    {
+      "url": "https://x.com/alyssaleann/status/2085509343399612637",
+      "reason": "用地图App类比，拆穿AI爱好者对普通人弃用行为的误读",
+      "reasonEn": "Reframes AI-enthusiast confusion with a maps-app analogy for why normies quit after one bad try"
+    },
+    {
+      "url": "https://x.com/firstadopter/status/2085505314972119254",
+      "reason": "借FT重组新闻对DeepMind研究文化发出“晚安”式终局点评",
+      "reasonEn": "Turns FT’s DeepMind control-shift reporting into a blunt “good night” verdict on lab culture"
+    },
+    {
+      "url": "https://x.com/i2cjak/status/2085514565639430645",
+      "reason": "工程师一句戳破“AI一键造硬件”叙事：固件可多试，硬件不能一发成型",
+      "reasonEn": "EE dunk that AI can many-shot firmware but cannot one-shot real hardware"
+    },
+    {
+      "url": "https://x.com/PaulTassi/status/2085505465014763815",
+      "reason": "对OpenAI甜甜圈智能音箱报道的毒舌重框，瞬间定义舆论风向",
+      "reasonEn": "Viral dunk that reframes Gurman’s OpenAI doughnut-speaker scoop as socially radioactive"
+    },
+    {
+      "url": "https://x.com/markgurman/status/2085457788872831055",
+      "reason": "记者自补关键：设备形态远离Apple路线且未见商业秘密侵权证据",
+      "reasonEn": "Reporter’s own follow-up: device looks nothing like Apple’s plans and no trade-secret hit found"
+    },
+    {
+      "url": "https://x.com/RealSimpleAriel/status/2085512042518020391",
+      "reason": "引用Saylor财报混剪，嘲其制造十年套牢持有者并呼吁“去Saylor化”",
+      "reasonEn": "Quotes Saylor’s earnings remix and argues crypto needs to purge him like equities purged Leopold"
+    },
+    {
+      "url": "https://x.com/cryptorover/status/2085495087971074229",
+      "reason": "用60票门槛与民主党0公开支持，把CLARITY前景从“卡流程”升级为“可能终局”",
+      "reasonEn": "Upgrades CLARITY odds analysis with hard vote math: 60-vote bar and zero public Democratic yeses"
+    },
+    {
+      "url": "https://x.com/xiaohu/status/2085371761424839094",
+      "reason": "引用曹山石融资截图，提炼V4-Pro性能/昇腾闭环/超低价API等关键点并保留真伪警惕",
+      "reasonEn": "Quotes the DeepSeek financing leak and extracts V4-Pro/Ascend/pricing claims with healthy skepticism"
+    },
+    {
+      "url": "https://x.com/techeconomyana/status/2085362195534135576",
+      "reason": "嘲讽字节“又要憋个大的”老套路，反手补上Kimi/GLM蒸馏Claude的硬情报",
+      "reasonEn": "Mocks ByteDance’s recurring “train a giant” rumor and counters with Kimi/GLM Claude-distillation intel"
+    }
+  ]
+}

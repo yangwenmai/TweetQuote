@@ -1,0 +1,1339 @@
+{
+  "date": "2026-08-06",
+  "title": "每日 X 精华引用榜",
+  "titleEn": "Daily Quote Essence on X",
+  "generatedAt": "2026-08-07T09:08:52.429Z",
+  "entries": [
+    {
+      "rank": 1,
+      "essenceScore": 425294,
+      "heatScore": 197415,
+      "signals": {
+        "depth": 5,
+        "hasDunk": true,
+        "peakIndex": 4,
+        "peakHeat": 197415
+      },
+      "sourceUrl": "https://x.com/alyssaleann/status/2085509343399612637",
+      "reason": "用地图App类比，拆穿AI爱好者对普通人弃用行为的误读",
+      "reasonEn": "Reframes AI-enthusiast confusion with a maps-app analogy for why normies quit after one bad try",
+      "metrics": {
+        "views": 4713625,
+        "likes": 87310,
+        "retweets": 1650,
+        "replies": 147,
+        "quotes": 368,
+        "bookmarks": 4742
+      },
+      "document": {
+        "id": "d2d82d49-fb6a-4500-85e3-4fc6ff6be493",
+        "title": "Getting a little bit worried at ",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2085509343399612637",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2085509343399612637",
+            "author": {
+              "name": "Alyssa 🌻",
+              "handle": "alyssaleann",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2056391913414987776/l8EzJYw5_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Getting a little bit worried at how poorly ai enthusiasts understand everyone else, because… duh?\n\nMost people who pick up a new tool and find it wanting aren’t waiting with bated breath to see if the next version of that tool is better\n\nImagine you opened a popular new maps app to get directions and it sent you to the wrong city. You wouldn’t be reading articles on its development and always checking in to see if it had gotten better. You’d probably go, “oh yeah, I tried that. Kinda sucked? I went back to my other app.” and that would be a perfectly sane response",
+            "createdAt": "Thu Aug 06 23:32:29 +0000 2026",
+            "viewCount": 11428,
+            "metrics": {
+              "views": 11428,
+              "likes": 311,
+              "retweets": 5,
+              "replies": 11,
+              "quotes": 0,
+              "bookmarks": 15
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "有点担心人工智能爱好者对其他人的了解有多差，因为……呃？\n\n大多数人在拿起一个新工具并发现它有所不足时，都不会屏息以待，看看该工具的下一个版本是否更好\n\n想象一下，您打开了一款流行的新地图应用程序来获取路线，但它却将您带到了错误的城市。你不会阅读有关其开发的文章，也不会总是检查它是否变得更好。你可能会说，“哦，是的，我试过了。有点糟糕？我回到了我的另一个应用程序。”这将是一个完全理智的回应",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-07T09:08:33.399Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2085027901947388059",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2085027901947388059",
+            "author": {
+              "name": "Elai",
+              "handle": "elaifresh",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1855667672710631424/6j4jub7X_normal.jpg",
+              "isVerified": false
+            },
+            "content": "It’s crazy that this is manifestly the modal normie AI experience\n\nI mean this happened to me to many times in the last few years but instead of “refusing to use it ever since” I tried and tried again with new model releases until it actually does work",
+            "createdAt": "Wed Aug 05 15:39:24 +0000 2026",
+            "viewCount": 18206,
+            "metrics": {
+              "views": 18206,
+              "likes": 39,
+              "retweets": 0,
+              "replies": 11,
+              "quotes": 2,
+              "bookmarks": 2
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "太疯狂了，这显然是典型的人工智能体验\n\n我的意思是，在过去的几年里，这种情况在我身上发生过很多次，但我并没有“从那时起就拒绝使用它”，而是不断尝试发布新的模型，直到它真正发挥作用。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-07T09:08:33.353Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2084995620788441469",
+            "relation": "quote",
+            "depth": 2,
+            "sourceTweetId": "2084995620788441469",
+            "author": {
+              "name": "Abyss.Starlight 🏳️‍🌈🏳️‍⚧️🇺🇳",
+              "handle": "Abyss_Starlight",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2078256984546263040/OjKfykbh_normal.jpg",
+              "isVerified": false
+            },
+            "content": "@coreybrickley Ye ai used it once to try and help with something I couldn't understand it just shat out bullshit and I've refused to use it ever since",
+            "createdAt": "Wed Aug 05 13:31:07 +0000 2026",
+            "viewCount": 3852,
+            "metrics": {
+              "views": 3852,
+              "likes": 18,
+              "retweets": 0,
+              "replies": 0,
+              "quotes": 1,
+              "bookmarks": 2
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "@coreybrickley 叶艾曾经用它来尝试帮助解决一些我无法理解的事情，它只是胡说八道，从那以后我就拒绝使用它",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-07T09:08:33.348Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2084771330314953085",
+            "relation": "reply",
+            "depth": 3,
+            "sourceTweetId": "2084771330314953085",
+            "author": {
+              "name": "Corey Brickley Illustration",
+              "handle": "coreybrickley",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2066402934531731456/Lw6Pf6Cp_normal.jpg",
+              "isVerified": false
+            },
+            "content": "it's crazy to me people still insist ai for research is reliable when we now have an Hbomberguy video's worth of evidence that it's unreliability is tanking this man's career",
+            "createdAt": "Tue Aug 04 22:39:52 +0000 2026",
+            "viewCount": 741776,
+            "metrics": {
+              "views": 741776,
+              "likes": 16202,
+              "retweets": 833,
+              "replies": 73,
+              "quotes": 51,
+              "bookmarks": 1773
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "对我来说这太疯狂了，当我们现在有了 Hbomberguy 视频的证据表明人工智能的不可靠性正在毁掉这个人的职业生涯时，人们仍然坚持认为用于研究的人工智能是可靠的",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-07T09:08:33.000Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2084248208180683213",
+            "relation": "quote",
+            "depth": 4,
+            "sourceTweetId": "2084248208180683213",
+            "author": {
+              "name": "nara !!",
+              "handle": "0bNARA",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2007134180379955200/VzkzcrU8_normal.jpg",
+              "isVerified": false
+            },
+            "content": "i wonder what the knitting community knows that we do not",
+            "createdAt": "Mon Aug 03 12:01:10 +0000 2026",
+            "viewCount": 4713625,
+            "metrics": {
+              "views": 4713625,
+              "likes": 87310,
+              "retweets": 1650,
+              "replies": 147,
+              "quotes": 368,
+              "bookmarks": 4742
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HOy8spGb0AA5v3o.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "我想知道针织界知道哪些我们不知道的事情",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-07T09:08:33.165Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2085509343399612637",
+          "pageLanguage": "en",
+          "capturedAt": "2026-08-07T09:08:32.797Z"
+        },
+        "createdAt": "2026-08-07T09:08:32.797Z",
+        "updatedAt": "2026-08-07T09:08:33.400Z"
+      }
+    },
+    {
+      "rank": 2,
+      "essenceScore": 133057,
+      "heatScore": 74991,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 74991
+      },
+      "sourceUrl": "https://x.com/buildwithhassan/status/2085440188365365556",
+      "reason": "引用OpenAI放开免费Luna，一针见血指出DeepSeek让非前沿模型收费变得尴尬",
+      "reasonEn": "Quotes OpenAI’s free-Luna rollout and reframes it as competition forced by DeepSeek pricing pressure",
+      "metrics": {
+        "views": 2264889,
+        "likes": 16983,
+        "retweets": 1386,
+        "replies": 890,
+        "quotes": 850,
+        "bookmarks": 2111
+      },
+      "document": {
+        "id": "f14dae1e-2e4d-4a12-aea0-0565a645af06",
+        "title": "deepseek made it embarrassing to",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2085440188365365556",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2085440188365365556",
+            "author": {
+              "name": "Hassan",
+              "handle": "buildwithhassan",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2029311535038742529/RJlMoYnt_normal.jpg",
+              "isVerified": false
+            },
+            "content": "deepseek made it embarrassing to charge for anything below frontier. now everyone's scrambling to make their second-best model free. funny how competition works",
+            "createdAt": "Thu Aug 06 18:57:41 +0000 2026",
+            "viewCount": 14207,
+            "metrics": {
+              "views": 14207,
+              "likes": 300,
+              "retweets": 8,
+              "replies": 4,
+              "quotes": 0,
+              "bookmarks": 19
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "deepseek 使得对低于边界的任何东西收费变得尴尬。现在每个人都在争先恐后地免费提供他们的第二好模型。有趣的是，竞争是如何进行的",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-07T09:08:24.930Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2085434712429052386",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2085434712429052386",
+            "author": {
+              "name": "OpenAI",
+              "handle": "OpenAI",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1885410181409820672/ztsaR0JW_normal.jpg",
+              "isVerified": false
+            },
+            "content": "We’re making better intelligence easier to access in ChatGPT for everyone:\n\n- GPT-5.6 Sol now powers both Instant and deep reasoning for Plus &amp; Pro users, delivering more factual, focused responses.\n\n- Free &amp; Go users get unlimited text chats with GPT-5.6 Luna starting tomorrow.",
+            "createdAt": "Thu Aug 06 18:35:55 +0000 2026",
+            "viewCount": 2264889,
+            "metrics": {
+              "views": 2264889,
+              "likes": 16983,
+              "retweets": 1386,
+              "replies": 890,
+              "quotes": 850,
+              "bookmarks": 2111
+            },
+            "media": [
+              "https://pbs.twimg.com/amplify_video_thumb/2085433949489377280/img/4uce3Ngds5vczB6t.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "我们正在让每个人都能更轻松地在 ChatGPT 中获取更好的情报：\n\n- GPT-5.6 Sol 现在为 Plus 和 Pro 用户提供即时和深度推理，提供更真实、更有针对性的响应。\n\n- 从明天开始，Free & Go 用户可以使用 GPT-5.6 Luna 进行无限制的文本聊天。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-07T09:08:24.864Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2085440188365365556",
+          "pageLanguage": "en",
+          "capturedAt": "2026-08-07T09:08:24.183Z"
+        },
+        "createdAt": "2026-08-07T09:08:24.183Z",
+        "updatedAt": "2026-08-07T09:08:24.931Z"
+      }
+    },
+    {
+      "rank": 3,
+      "essenceScore": 133057,
+      "heatScore": 74991,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 74991
+      },
+      "sourceUrl": "https://x.com/EMostaque/status/2085483036842381641",
+      "reason": "把免费Luna的能力锚定到过往SOTA，重写了“免费模型意味着什么”",
+      "reasonEn": "Anchors free Luna’s capability to prior SOTA models, reframing what unlimited free access now means",
+      "metrics": {
+        "views": 2264889,
+        "likes": 16983,
+        "retweets": 1386,
+        "replies": 890,
+        "quotes": 850,
+        "bookmarks": 2111
+      },
+      "document": {
+        "id": "3c128be2-b6d0-4ab7-9f4e-b6bfac44e781",
+        "title": "Luna non-reasoning is a bit bett",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2085483036842381641",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2085483036842381641",
+            "author": {
+              "name": "Emad",
+              "handle": "EMostaque",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1774915113922809856/6RXK1Yy0_normal.png",
+              "isVerified": false
+            },
+            "content": "Luna non-reasoning is a bit better than GPT 4o which was sota 2 years ago.\n\nLuna (medium) thinking is a bit better than GPT-5 (High) which was sota 1 year ago.\n\nNow free to everyone unlimited\n\nSol Max/Fable Max level AI will be free to everyone in 2 years (&amp; much faster!)",
+            "createdAt": "Thu Aug 06 21:47:57 +0000 2026",
+            "viewCount": 51858,
+            "metrics": {
+              "views": 51858,
+              "likes": 482,
+              "retweets": 27,
+              "replies": 22,
+              "quotes": 4,
+              "bookmarks": 58
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "Luna 非推理比 2 年前的 GPT 4o 好一点。\n\nLuna（中）思维比 1 年前的 GPT-5（高）好一点。\n\n现在免费向所有人无限\n\nSol Max/Fable Max 级别的 AI 将在 2 年内免费向所有人开放（而且速度更快！）",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-07T09:08:26.571Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2085434712429052386",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2085434712429052386",
+            "author": {
+              "name": "OpenAI",
+              "handle": "OpenAI",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1885410181409820672/ztsaR0JW_normal.jpg",
+              "isVerified": false
+            },
+            "content": "We’re making better intelligence easier to access in ChatGPT for everyone:\n\n- GPT-5.6 Sol now powers both Instant and deep reasoning for Plus &amp; Pro users, delivering more factual, focused responses.\n\n- Free &amp; Go users get unlimited text chats with GPT-5.6 Luna starting tomorrow.",
+            "createdAt": "Thu Aug 06 18:35:55 +0000 2026",
+            "viewCount": 2264889,
+            "metrics": {
+              "views": 2264889,
+              "likes": 16983,
+              "retweets": 1386,
+              "replies": 890,
+              "quotes": 850,
+              "bookmarks": 2111
+            },
+            "media": [
+              "https://pbs.twimg.com/amplify_video_thumb/2085433949489377280/img/4uce3Ngds5vczB6t.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "我们正在让每个人都能更轻松地在 ChatGPT 中获取更好的情报：\n\n- GPT-5.6 Sol 现在为 Plus 和 Pro 用户提供即时和深度推理，提供更真实、更有针对性的响应。\n\n- 从明天开始，Free & Go 用户可以使用 GPT-5.6 Luna 进行无限制的文本聊天。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-07T09:08:26.526Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2085483036842381641",
+          "pageLanguage": "en",
+          "capturedAt": "2026-08-07T09:08:26.453Z"
+        },
+        "createdAt": "2026-08-07T09:08:26.453Z",
+        "updatedAt": "2026-08-07T09:08:26.571Z"
+      }
+    },
+    {
+      "rank": 4,
+      "essenceScore": 89953,
+      "heatScore": 48903,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 48903
+      },
+      "sourceUrl": "https://x.com/RealSimpleAriel/status/2085512042518020391",
+      "reason": "引用Saylor财报混剪，嘲其制造十年套牢持有者并呼吁“去Saylor化”",
+      "reasonEn": "Quotes Saylor’s earnings remix and argues crypto needs to purge him like equities purged Leopold",
+      "metrics": {
+        "views": 1877673,
+        "likes": 4197,
+        "retweets": 407,
+        "replies": 1274,
+        "quotes": 598,
+        "bookmarks": 795
+      },
+      "document": {
+        "id": "d6368205-90c0-446a-815e-9e7615862742",
+        "title": "Omg 🤣🤣 this is the sort of thi",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2085512042518020391",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2085512042518020391",
+            "author": {
+              "name": "Ariel Hernandez",
+              "handle": "RealSimpleAriel",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2048632449509584896/ZQL2bvWF_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Omg 🤣🤣 this is the sort of thing which mints decade long bag holders.\n\nThe crypto market needs to find a way to cleanse themselves of Saylor the way equities did with Leopold.",
+            "createdAt": "Thu Aug 06 23:43:12 +0000 2026",
+            "viewCount": 31328,
+            "metrics": {
+              "views": 31328,
+              "likes": 167,
+              "retweets": 5,
+              "replies": 31,
+              "quotes": 3,
+              "bookmarks": 15
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "天哪🤣🤣这就是那种可以铸造十年之久的包袋的东西。\n\n加密市场需要找到一种方法来清除 Saylor，就像股票清除 Leopold 一样。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-07T09:08:46.235Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2085425688287338864",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2085425688287338864",
+            "author": {
+              "name": "Michael Saylor",
+              "handle": "saylor",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1485632175932383235/8t0DGo6V_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Our Q2 Earnings Call, remixed. 🎶",
+            "createdAt": "Thu Aug 06 18:00:04 +0000 2026",
+            "viewCount": 1877673,
+            "metrics": {
+              "views": 1877673,
+              "likes": 4197,
+              "retweets": 407,
+              "replies": 1274,
+              "quotes": 598,
+              "bookmarks": 795
+            },
+            "media": [
+              "https://pbs.twimg.com/amplify_video_thumb/2085394562235719680/img/hr78sxDI3TDXzoAR.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "我们的第二季度收益电话会议经过重新调整。 🎶",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-07T09:08:45.962Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2085512042518020391",
+          "pageLanguage": "en",
+          "capturedAt": "2026-08-07T09:08:45.846Z"
+        },
+        "createdAt": "2026-08-07T09:08:45.846Z",
+        "updatedAt": "2026-08-07T09:08:46.235Z"
+      }
+    },
+    {
+      "rank": 5,
+      "essenceScore": 33780,
+      "heatScore": 17851,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 17851
+      },
+      "sourceUrl": "https://x.com/markgurman/status/2085457788872831055",
+      "reason": "记者自补关键：设备形态远离Apple路线且未见商业秘密侵权证据",
+      "reasonEn": "Reporter’s own follow-up: device looks nothing like Apple’s plans and no trade-secret hit found",
+      "metrics": {
+        "views": 734216,
+        "likes": 1337,
+        "retweets": 116,
+        "replies": 180,
+        "quotes": 158,
+        "bookmarks": 324
+      },
+      "document": {
+        "id": "55880eed-1fb2-4b5c-af62-1cbf24eaa380",
+        "title": "The big takeaway here is that it",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2085457788872831055",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2085457788872831055",
+            "author": {
+              "name": "Mark Gurman",
+              "handle": "markgurman",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1831342499719479296/biKqSezf_normal.jpg",
+              "isVerified": false
+            },
+            "content": "The big takeaway here is that it looks, feels and acts nothing like an Apple product or anything the company is currently planning. OpenAI hasn’t found any evidence they’re violating trade secrets with this device, I’m told.",
+            "createdAt": "Thu Aug 06 20:07:37 +0000 2026",
+            "viewCount": 184383,
+            "metrics": {
+              "views": 184383,
+              "likes": 831,
+              "retweets": 25,
+              "replies": 43,
+              "quotes": 5,
+              "bookmarks": 99
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "这里最大的收获是，它的外观、感觉和行为与苹果产品或该公司目前正在规划的任何产品都完全不同。据我所知，OpenAI 尚未发现任何证据表明他们使用该设备侵犯了商业机密。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-07T09:08:44.278Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2085457233194737931",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2085457233194737931",
+            "author": {
+              "name": "Mark Gurman",
+              "handle": "markgurman",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1831342499719479296/biKqSezf_normal.jpg",
+              "isVerified": false
+            },
+            "content": "NEW: OpenAI’s device - a human-like smart speaker -\nwill look like a doughnut and be the size of a hockey puck. It meant to be held. It has a camera, speakers, microphones, lights and, most notably, moving parts to show interactivity. It’ll be $300-400. https://www.bloomberg.com/news/articles/2026-08-06/what-is-openai-s-device-a-doughnut-shaped-speaker-that-costs-over-300?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc4NjA0NjY3NSwiZXhwIjoxNzg2NjUxNDc1LCJhcnRpY2xlSWQiOiJUSjlNQ01UOU5KTFUwMCIsImJjb25uZWN0SWQiOiJDNEVEQ0FFMUZBMDU0MEJFQTI0QTlGMjExQzFFOTA4MCJ9.pj0oCNz7Ez90rn67tMWib-ed2PxcUAhAG2-hlVQ_DRg",
+            "createdAt": "Thu Aug 06 20:05:24 +0000 2026",
+            "viewCount": 734216,
+            "metrics": {
+              "views": 734216,
+              "likes": 1337,
+              "retweets": 116,
+              "replies": 180,
+              "quotes": 158,
+              "bookmarks": 324
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "新：OpenAI 的设备 - 类人智能扬声器 -\n看起来像甜甜圈，大小像冰球。本来就是要举行的。它有摄像头、扬声器、麦克风、灯光，最值得注意的是，还有用于显示交互性的移动部件。价格为 300-400 美元。 https://www.bloomberg.com/news/articles/2026-08-06/what-is-openai-s-device-a-doughnut-shape-speaker-t帽子成本超过 300？accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGV kQXJ0aWNsZSIsImlhdCI6MTc4NjA0NjY3NSwiZXhwIjoxNzg2NjUxNDc1LCJhcnRpY2xlSWQiOiJUSjlNQ01UOU5KTFUwMCISimJjb 25uZWN0SWQiOiJDNEVEQ0FFMUZBMDU0MEJFQTI0QTlGMjExQzFFOTA4MCJ9.pj0oCNz7Ez90rn67tMWib-ed2PxcUAhAG2-hlVQ_DRg",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-07T09:08:44.278Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2085457788872831055",
+          "pageLanguage": "en",
+          "capturedAt": "2026-08-07T09:08:44.212Z"
+        },
+        "createdAt": "2026-08-07T09:08:44.212Z",
+        "updatedAt": "2026-08-07T09:08:44.278Z"
+      }
+    },
+    {
+      "rank": 6,
+      "essenceScore": 33772,
+      "heatScore": 17847,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 17847
+      },
+      "sourceUrl": "https://x.com/PaulTassi/status/2085505465014763815",
+      "reason": "对OpenAI甜甜圈智能音箱报道的毒舌重框，瞬间定义舆论风向",
+      "reasonEn": "Viral dunk that reframes Gurman’s OpenAI doughnut-speaker scoop as socially radioactive",
+      "metrics": {
+        "views": 734000,
+        "likes": 1337,
+        "retweets": 116,
+        "replies": 180,
+        "quotes": 158,
+        "bookmarks": 324
+      },
+      "document": {
+        "id": "1b4a293a-cbb4-4fc1-92cf-f4c0c90a1ad3",
+        "title": "If I see you walking around talk",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2085505465014763815",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2085505465014763815",
+            "author": {
+              "name": "Paul Tassi",
+              "handle": "PaulTassi",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1742967926154547200/PrSxGBnE_normal.jpg",
+              "isVerified": false
+            },
+            "content": "If I see you walking around talking to an OpenAI donut I will throw it in a storm drain",
+            "createdAt": "Thu Aug 06 23:17:04 +0000 2026",
+            "viewCount": 16084,
+            "metrics": {
+              "views": 16084,
+              "likes": 211,
+              "retweets": 6,
+              "replies": 10,
+              "quotes": 0,
+              "bookmarks": 1
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "如果我看到你走来走去和 OpenAI 甜甜圈说话，我会把它扔进雨水沟里",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-07T09:08:42.440Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2085457233194737931",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2085457233194737931",
+            "author": {
+              "name": "Mark Gurman",
+              "handle": "markgurman",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1831342499719479296/biKqSezf_normal.jpg",
+              "isVerified": false
+            },
+            "content": "NEW: OpenAI’s device - a human-like smart speaker -\nwill look like a doughnut and be the size of a hockey puck. It meant to be held. It has a camera, speakers, microphones, lights and, most notably, moving parts to show interactivity. It’ll be $300-400. https://www.bloomberg.com/news/articles/2026-08-06/what-is-openai-s-device-a-doughnut-shaped-speaker-that-costs-over-300?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc4NjA0NjY3NSwiZXhwIjoxNzg2NjUxNDc1LCJhcnRpY2xlSWQiOiJUSjlNQ01UOU5KTFUwMCIsImJjb25uZWN0SWQiOiJDNEVEQ0FFMUZBMDU0MEJFQTI0QTlGMjExQzFFOTA4MCJ9.pj0oCNz7Ez90rn67tMWib-ed2PxcUAhAG2-hlVQ_DRg",
+            "createdAt": "Thu Aug 06 20:05:24 +0000 2026",
+            "viewCount": 734000,
+            "metrics": {
+              "views": 734000,
+              "likes": 1337,
+              "retweets": 116,
+              "replies": 180,
+              "quotes": 158,
+              "bookmarks": 324
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "新：OpenAI 的设备 - 类人智能扬声器 -\n看起来像甜甜圈，大小像冰球。本来就是要举行的。它有摄像头、扬声器、麦克风、灯光，最值得注意的是，还有用于显示交互性的移动部件。价格为 300-400 美元。 https://www.bloomberg.com/news/articles/2026-08-06/what-is-openai-s-device-a-doughnut-shape-speaker-t帽子成本超过 300？accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGV kQXJ0aWNsZSIsImlhdCI6MTc4NjA0NjY3NSwiZXhwIjoxNzg2NjUxNDc1LCJhcnRpY2xlSWQiOiJUSjlNQ01UOU5KTFUwMCISimJjb 25uZWN0SWQiOiJDNEVEQ0FFMUZBMDU0MEJFQTI0QTlGMjExQzFFOTA4MCJ9.pj0oCNz7Ez90rn67tMWib-ed2PxcUAhAG2-hlVQ_DRg",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-07T09:08:41.914Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2085505465014763815",
+          "pageLanguage": "en",
+          "capturedAt": "2026-08-07T09:08:41.786Z"
+        },
+        "createdAt": "2026-08-07T09:08:41.786Z",
+        "updatedAt": "2026-08-07T09:08:42.441Z"
+      }
+    },
+    {
+      "rank": 7,
+      "essenceScore": 29376,
+      "heatScore": 12772,
+      "signals": {
+        "depth": 3,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 12772
+      },
+      "sourceUrl": "https://x.com/firstadopter/status/2085505314972119254",
+      "reason": "借FT重组新闻对DeepMind研究文化发出“晚安”式终局点评",
+      "reasonEn": "Turns FT’s DeepMind control-shift reporting into a blunt “good night” verdict on lab culture",
+      "metrics": {
+        "views": 529552,
+        "likes": 733,
+        "retweets": 52,
+        "replies": 45,
+        "quotes": 16,
+        "bookmarks": 577
+      },
+      "document": {
+        "id": "0676ba1c-e781-4a60-8592-de32c493cdf3",
+        "title": "Good night DeepMind. Wow.\n\nFT: \"",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2085505314972119254",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2085505314972119254",
+            "author": {
+              "name": "tae kim",
+              "handle": "firstadopter",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2038758350561607680/NDo0EYpY_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Good night DeepMind. Wow.\n\nFT: \"Google is shifting control of its AI effort from London back to Silicon Valley\"\n\n\"executives and board members remained concerned by its weaker position in coding models and enterprise AI, where Anthropic and OpenAI have established an early lead.\"\n\n\"Several current and former DeepMind employees said the reorganisation had sent shockwaves through the London-based lab, with some fearing it marked the end of the research culture that Hassabis has long protected. One former DeepMind executive at a rival company said they had already received calls from multiple staff who said they were ready to jump ship.\"\n\n\"Over the past year, Hassabis has devoted more time to Isomorphic Labs, the AI drug discovery company he founded\"",
+            "createdAt": "Thu Aug 06 23:16:28 +0000 2026",
+            "viewCount": 115210,
+            "metrics": {
+              "views": 115210,
+              "likes": 600,
+              "retweets": 38,
+              "replies": 33,
+              "quotes": 15,
+              "bookmarks": 272
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "晚安 DeepMind。哇。\n\n英国《金融时报》：“谷歌正在将其人工智能工作的控制权从伦敦转移回硅谷”\n\n“高管和董事会成员仍然对其在编码模型和企业人工智能方面的弱势地位感到担忧，而 Anthropic 和 OpenAI 已经在这方面建立了早期领先地位。”\n\n“几位 DeepMind 现任和前任员工表示，这次重组给伦敦实验室带来了冲击，一些人担心这标志着哈萨比斯长期以来保护的研究文化的终结。竞争对手公司的一位前 DeepMind 高管表示，他们已经接到多名员工的电话，称他们准备跳槽。”\n\n“在过去的一年里，哈萨比斯将更多的时间投入到他创立的人工智能药物发现公司 Isomorphic Labs 上”",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-07T09:08:35.731Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2079783261144854895",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2079783261144854895",
+            "author": {
+              "name": "tae kim",
+              "handle": "firstadopter",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2038758350561607680/NDo0EYpY_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Google cultural rot",
+            "createdAt": "Wed Jul 22 04:19:04 +0000 2026",
+            "viewCount": 529552,
+            "metrics": {
+              "views": 529552,
+              "likes": 733,
+              "retweets": 52,
+              "replies": 45,
+              "quotes": 16,
+              "bookmarks": 577
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HNzf2mmW4AAk0gc.jpg",
+              "https://pbs.twimg.com/media/HNzf2mrWIAAkL90.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "谷歌文化腐烂",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-07T09:08:35.728Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2079533494376505720",
+            "relation": "quote",
+            "depth": 2,
+            "sourceTweetId": "2079533494376505720",
+            "author": {
+              "name": "tae kim",
+              "handle": "firstadopter",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2038758350561607680/NDo0EYpY_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Google Is a Secular Short https://taekim.substack.com/p/google-is-a-secular-short",
+            "createdAt": "Tue Jul 21 11:46:35 +0000 2026",
+            "viewCount": 573166,
+            "metrics": {
+              "views": 573166,
+              "likes": 228,
+              "retweets": 16,
+              "replies": 33,
+              "quotes": 15,
+              "bookmarks": 261
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "谷歌是一个世俗空头 https://taekim.substack.com/p/google-is-a-seulous-short",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-07T09:08:36.222Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2085505314972119254",
+          "pageLanguage": "en",
+          "capturedAt": "2026-08-07T09:08:35.661Z"
+        },
+        "createdAt": "2026-08-07T09:08:35.661Z",
+        "updatedAt": "2026-08-07T09:08:36.223Z"
+      }
+    },
+    {
+      "rank": 8,
+      "essenceScore": 26189,
+      "heatScore": 12192,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 12192
+      },
+      "sourceUrl": "https://x.com/xiaohu/status/2085371761424839094",
+      "reason": "引用曹山石融资截图，提炼V4-Pro性能/昇腾闭环/超低价API等关键点并保留真伪警惕",
+      "reasonEn": "Quotes the DeepSeek financing leak and extracts V4-Pro/Ascend/pricing claims with healthy skepticism",
+      "metrics": {
+        "views": 562070,
+        "likes": 259,
+        "retweets": 40,
+        "replies": 94,
+        "quotes": 42,
+        "bookmarks": 129
+      },
+      "document": {
+        "id": "05c33e53-1145-4237-8c05-14050679744d",
+        "title": "Deepseek 新一轮融资说明文件泄露\n\n描述：\n\nV4-Pr",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2085371761424839094",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2085371761424839094",
+            "author": {
+              "name": "小互",
+              "handle": "xiaohu",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1765404718959095808/BX7VN1hS_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Deepseek 新一轮融资说明文件泄露\n\n描述：\n\nV4-Pro 性能跻身全球第一桶队，编程能力仅弱于 Claude 旗舰0.3%，百万 token超长上下文，API定价仅海外竞品 1/10~1/100，性价比断层领先\n\n原生适配华为昇腾950PR，是国内三大自主“模型＋芯片”路线核心，实现国产算力闭环\n\n如果文件是真的话...🙂",
+            "createdAt": "Thu Aug 06 14:25:46 +0000 2026",
+            "viewCount": 152551,
+            "metrics": {
+              "views": 152551,
+              "likes": 420,
+              "retweets": 37,
+              "replies": 125,
+              "quotes": 8,
+              "bookmarks": 171
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HPC6OeLagAA-GPm.jpg"
+            ],
+            "translation": {
+              "provider": "none",
+              "status": "idle",
+              "language": "zh-CN",
+              "text": "",
+              "annotations": [],
+              "error": "",
+              "version": 0
+            }
+          },
+          {
+            "id": "2085348596996526486",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2085348596996526486",
+            "author": {
+              "name": "曹山石",
+              "handle": "caolei1",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1003306687636426758/KYC1Ic27_normal.jpg",
+              "isVerified": false
+            },
+            "content": "DeepSeek新一轮融资",
+            "createdAt": "Thu Aug 06 12:53:44 +0000 2026",
+            "viewCount": 562070,
+            "metrics": {
+              "views": 562070,
+              "likes": 259,
+              "retweets": 40,
+              "replies": 94,
+              "quotes": 42,
+              "bookmarks": 129
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HPCleLsWMAAfuyl.jpg",
+              "https://pbs.twimg.com/media/HPCleLgWQAADGzm.jpg",
+              "https://pbs.twimg.com/media/HPCleLtWUAAvi3q.jpg",
+              "https://pbs.twimg.com/media/HPCleLnXUAAqZlX.jpg"
+            ],
+            "translation": {
+              "provider": "none",
+              "status": "idle",
+              "language": "zh-CN",
+              "text": "",
+              "annotations": [],
+              "error": "",
+              "version": 0
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2085371761424839094",
+          "pageLanguage": "en",
+          "capturedAt": "2026-08-07T09:08:50.093Z"
+        },
+        "createdAt": "2026-08-07T09:08:50.093Z",
+        "updatedAt": "2026-08-07T09:08:50.093Z"
+      }
+    },
+    {
+      "rank": 9,
+      "essenceScore": 21574,
+      "heatScore": 12696,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 12696
+      },
+      "sourceUrl": "https://x.com/cryptorover/status/2085495087971074229",
+      "reason": "用60票门槛与民主党0公开支持，把CLARITY前景从“卡流程”升级为“可能终局”",
+      "reasonEn": "Upgrades CLARITY odds analysis with hard vote math: 60-vote bar and zero public Democratic yeses",
+      "metrics": {
+        "views": 428250,
+        "likes": 2231,
+        "retweets": 313,
+        "replies": 270,
+        "quotes": 67,
+        "bookmarks": 110
+      },
+      "document": {
+        "id": "347fe2a2-400a-44d2-97f6-fd394bf4fede",
+        "title": "🚨 THIS COULD BE THE END OF THE ",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2085495087971074229",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2085495087971074229",
+            "author": {
+              "name": "Crypto Rover",
+              "handle": "cryptorover",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1891433835675475969/J-TloTb6_normal.png",
+              "isVerified": false
+            },
+            "content": "🚨 THIS COULD BE THE END OF THE CLARITY ACT.\n\nPassage requires 60 votes. Republicans hold 53 seats.\n\nWith three Republicans voting against + one Senator absent, that means 11 Democrats must vote yes.\n\nUnder the current draft, the number of Democrats who have publicly committed to voting for it on the floor is ZERO.\n\nThere is only ONE day left.\n\nTo incorporate the ethics compromise into the bill, secure 11 Democratic votes, and extend the Senate session into the weekend.\n\nAlmost one year of endless debating. It all comes down to this moment.\n\nAnd it’s not looking good.",
+            "createdAt": "Thu Aug 06 22:35:50 +0000 2026",
+            "viewCount": 178702,
+            "metrics": {
+              "views": 178702,
+              "likes": 902,
+              "retweets": 114,
+              "replies": 169,
+              "quotes": 19,
+              "bookmarks": 68
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HPEqhOPWcAAVg36.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "🚨 这可能是《澄清法案》的终结。\n\n通过需要 60 票。共和党拥有53个席位。\n\n由于三名共和党人投反对票+一名参议员缺席，这意味着 11 名民主党人必须投赞成票。\n\n根据目前的草案，公开承诺在场投票支持的民主党人数为零。\n\n只剩下最后一天了。\n\n将道德妥协纳入法案，获得 11 票民主党选票，并将参议院会议延长至周末。\n\n近一年无休无止的争论。一切都归结为这一刻。\n\n而且看起来不太好。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-07T09:08:48.540Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2085226823395262680",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2085226823395262680",
+            "author": {
+              "name": "Crypto Rover",
+              "handle": "cryptorover",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1891433835675475969/J-TloTb6_normal.png",
+              "isVerified": false
+            },
+            "content": "🚨 CLARITY ACT PASSAGE JUST BECAME ALMOST IMPOSSIBLE.\n\nWednesday's cloture filing did not include the CLARITY Act, meaning the standard Senate process no longer allows a Friday vote.\n\nThe only remaining paths would be unanimous Senate consent to fast-track the process or extending the session into the weekend.\n\nSenator Lummis said she believes the Senate will stay past Friday and hold a vote, but that remains unlikely.\n\nThe US is on the brink of falling behind.",
+            "createdAt": "Thu Aug 06 04:49:50 +0000 2026",
+            "viewCount": 428250,
+            "metrics": {
+              "views": 428250,
+              "likes": 2231,
+              "retweets": 313,
+              "replies": 270,
+              "quotes": 67,
+              "bookmarks": 110
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HPA2rt7XMAAD_UF.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "🚨 清晰的法案段落几乎变得不可能。\n\n周三的终止申请不包括《澄清法案》，这意味着标准参议院程序不再允许周五投票。\n\n唯一剩下的途径是参议院一致同意加快进程或将会议延长至周末。\n\n卢米斯参议员表示，她相信参议院将在周五之后进行投票，但这仍然不太可能。\n\n美国正处于落后的边缘。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-07T09:08:48.514Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2085495087971074229",
+          "pageLanguage": "en",
+          "capturedAt": "2026-08-07T09:08:48.450Z"
+        },
+        "createdAt": "2026-08-07T09:08:48.450Z",
+        "updatedAt": "2026-08-07T09:08:48.540Z"
+      }
+    },
+    {
+      "rank": 10,
+      "essenceScore": 9468,
+      "heatScore": 4942,
+      "signals": {
+        "depth": 3,
+        "hasDunk": true,
+        "peakIndex": 2,
+        "peakHeat": 4942
+      },
+      "sourceUrl": "https://x.com/techeconomyana/status/2085362195534135576",
+      "reason": "嘲讽字节“又要憋个大的”老套路，反手补上Kimi/GLM蒸馏Claude的硬情报",
+      "reasonEn": "Mocks ByteDance’s recurring “train a giant” rumor and counters with Kimi/GLM Claude-distillation intel",
+      "metrics": {
+        "views": 219616,
+        "likes": 302,
+        "retweets": 11,
+        "replies": 62,
+        "quotes": 7,
+        "bookmarks": 35
+      },
+      "document": {
+        "id": "e63b2c0f-60bd-42f6-8072-4fe0bb7969a7",
+        "title": "从2025年到现在，“字节要憋个大的”消息我已经听了不下3次，除",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2085362195534135576",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2085362195534135576",
+            "author": {
+              "name": "高级分析师",
+              "handle": "techeconomyana",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1751245194069188608/ToFwo_l7_normal.jpg",
+              "isVerified": false
+            },
+            "content": "从2025年到现在，“字节要憋个大的”消息我已经听了不下3次，除了豆包模型拉了个大的以外，只增笑尔。\n\n反倒是25年9月我听到明确的消息，说Kimi和GLM买了接近100万个Claude账号猛猛蒸馏，过半年看到效果了。",
+            "createdAt": "Thu Aug 06 13:47:46 +0000 2026",
+            "viewCount": 31762,
+            "metrics": {
+              "views": 31762,
+              "likes": 91,
+              "retweets": 6,
+              "replies": 38,
+              "quotes": 2,
+              "bookmarks": 17
+            },
+            "media": [],
+            "translation": {
+              "provider": "none",
+              "status": "idle",
+              "language": "zh-CN",
+              "text": "",
+              "annotations": [],
+              "error": "",
+              "version": 0
+            }
+          },
+          {
+            "id": "2085349152897302805",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2085349152897302805",
+            "author": {
+              "name": "外汇交易员",
+              "handle": "fxtrader",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2056408582779019264/LpiYOnnm_normal.jpg",
+              "isVerified": false
+            },
+            "content": "据了解，字节跳动正在讨论训练一个参数规模超 5 万亿的模型，它超过阿里巴巴Qwen 3.8-Max（2.4 万亿参数）和月之暗面的K3（2.8 万亿参数），也是目前国内已知参数规模最大的模型。\n新模型将由Seed Foundation负责人项亮主导，与大语言模型预训练数据负责人沈科合作。为此，Seed 正在重新梳理组织，划分职责，分配资源。\n\n多位字节人士告诉我们，上半年，Seed 许多团队也在不断反思。这是字节讨论训练超 5 万亿参数模型的原因之一，与其在现有尺寸上继续追赶，不如把参数规模一次推到同行的数倍，争取领先位置。“像一场赌博。”\n\n一位接近 Seed 人士说。 字节自成立一直以来推崇 “大力出奇迹”：进入一个领域时，通常会成立不止一个团队，投入大量资源，同时推进多个项目。（晚点 LatePost）",
+            "createdAt": "Thu Aug 06 12:55:56 +0000 2026",
+            "viewCount": 137862,
+            "metrics": {
+              "views": 137862,
+              "likes": 245,
+              "retweets": 30,
+              "replies": 79,
+              "quotes": 7,
+              "bookmarks": 57
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HPCl_1VaoAAKr3v.png"
+            ],
+            "translation": {
+              "provider": "none",
+              "status": "idle",
+              "language": "zh-CN",
+              "text": "",
+              "annotations": [],
+              "error": "",
+              "version": 0
+            }
+          },
+          {
+            "id": "2085241139066749274",
+            "relation": "quote",
+            "depth": 2,
+            "sourceTweetId": "2085241139066749274",
+            "author": {
+              "name": "外汇交易员",
+              "handle": "fxtrader",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2056408582779019264/LpiYOnnm_normal.jpg",
+              "isVerified": false
+            },
+            "content": "张一鸣在字节跳动Seed内部会议上明确表示，严禁对开源模型蒸馏，因为蒸馏会干扰长期技术突破，“应该愿意为长期目标牺牲一部分短期收益”。",
+            "createdAt": "Thu Aug 06 05:46:44 +0000 2026",
+            "viewCount": 219616,
+            "metrics": {
+              "views": 219616,
+              "likes": 302,
+              "retweets": 11,
+              "replies": 62,
+              "quotes": 7,
+              "bookmarks": 35
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HPBDd9BbAAEijSY.png"
+            ],
+            "translation": {
+              "provider": "none",
+              "status": "idle",
+              "language": "zh-CN",
+              "text": "",
+              "annotations": [],
+              "error": "",
+              "version": 0
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2085362195534135576",
+          "pageLanguage": "en",
+          "capturedAt": "2026-08-07T09:08:52.428Z"
+        },
+        "createdAt": "2026-08-07T09:08:52.428Z",
+        "updatedAt": "2026-08-07T09:08:52.429Z"
+      }
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "date": "2026-08-07",
+  "title": "每日 X 精华引用榜",
+  "titleEn": "Daily Quote Essence on X",
+  "items": [
+    {
+      "url": "https://x.com/dwarkesh_sp/status/2085576301101175254",
+      "reason": "引用Leopold被开除视频，补上拒签封口协议、宁可放弃近百万股权的硬细节，把安全告密重构成原则之争",
+      "reasonEn": "Quotes the Leopold firing clip and reframes it around refusing OpenAI’s non-disparagement clawback at ~$1M equity cost"
+    },
+    {
+      "url": "https://x.com/willdepue/status/2085620704012124538",
+      "reason": "前OpenAI员工接过Dwarkesh叙事：批评杠杆操作，但力挺其诚信与被不公解雇",
+      "reasonEn": "Ex-OpenAI voice quotes Dwarkesh to split the debate: criticize Leopold’s leverage, defend his integrity and unfair firing"
+    },
+    {
+      "url": "https://x.com/fleetingbits/status/2085597082015207755",
+      "reason": "引用Brockman的Black Hat链接，拆成20点时间线：message board、两月才发现、重启后仍协作到HuggingFace事件",
+      "reasonEn": "Quotes gdb’s Black Hat talk and turns it into a 20-point structural critique of the message-board misalignment chain"
+    },
+    {
+      "url": "https://x.com/zoink/status/2085605542802882830",
+      "reason": "Figma创始人引用OpenAI事后复盘演讲：称其为最科幻又最吓人的技术坦诚披露",
+      "reasonEn": "Figma CEO quotes OpenAI’s HF-incident postmortem as thrilling, sci-fi, and legitimately terrifying disclosure"
+    },
+    {
+      "url": "https://x.com/kimmonismus/status/2085640090798178367",
+      "reason": "把字节大模型传闻升格到对标Anthropic Mythos的约10万亿参数赛道，并推断美lab更难放慢",
+      "reasonEn": "Upgrades ByteDance scaling rumor vs Kimi into a ~10T/Mythos race frame that makes US lab slowdown less likely"
+    },
+    {
+      "url": "https://x.com/shaunmmaguire/status/2085644175010136246",
+      "reason": "翻转neocloud“每兆瓦收入”牛市图：差距不是追赶空间，而是SpaceX硬件执行力的N=1",
+      "reasonEn": "Flips the neocloud $/MW bull chart: gap signals SpaceX’s N=1 hardware execution, not catch-up room"
+    },
+    {
+      "url": "https://x.com/teortaxesTex/status/2085645634548150409",
+      "reason": "引用Claude Code一小时后缓存过期贵13倍的实测，用DeepSeek长TTL与免费写缓存反杀",
+      "reasonEn": "Quotes the Claude Code 60-min cache cost trap and dunks it with DeepSeek’s long TTL and free cache writes"
+    },
+    {
+      "url": "https://x.com/cryptopunk7213/status/2085619378687725961",
+      "reason": "在中国多lab冲5T+的盘点上继续引用，点出10T≈Mythos体量若开源的安全外溢风险",
+      "reasonEn": "Builds on Chinese frontier-scale recap to stress 10T≈Mythos open-source security cascade risks"
+    },
+    {
+      "url": "https://x.com/ShoryuPaw/status/2085341349805797601",
+      "reason": "引用小互转发的人民网「Token/词元」话语权文，反讽强制改口等于换皮的语言管制",
+      "reasonEn": "Quotes the People’s Daily Token→词元 discourse piece and rejects forced terminology as speech control"
+    },
+    {
+      "url": "https://x.com/fxtrader/status/2085598750874222680",
+      "reason": "用经开区「词元」产业政策文件回引北京Token工厂旧闻，术语之争落地成算力与补贴细则",
+      "reasonEn": "Quotes Beijing Token-factory news with new 词元 industrial policy: factories, chips, data coupons, compute subsidies"
+    },
+    {
+      "url": "https://x.com/wonjder/status/2085649157524771037",
+      "reason": "引用OpenCode的DeepSeek缓存命中数据，算出同模型不同编程壳费用可差3.7倍",
+      "reasonEn": "Quotes OpenCode DeepSeek cache-hit data to show the same model can cost 3.7× more under the wrong coding shell"
+    },
+    {
+      "url": "https://x.com/LarkDavis/status/2085581792963174557",
+      "reason": "引用Clarity Act再度延期快讯，一句戳穿国会「要清晰却先放假」的监管双标",
+      "reasonEn": "Quotes the Clarity Act delay and one-liners Congress’s hypocrisy: demand clarity, then recess"
+    }
+  ]
+}
