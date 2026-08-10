@@ -1,0 +1,67 @@
+{
+  "date": "2026-08-10",
+  "title": "每日 X 精华引用榜",
+  "titleEn": "Daily Quote Essence on X",
+  "items": [
+    {
+      "url": "https://x.com/levie/status/2086625684353605941",
+      "reason": "用研究级沙箱逃逸叙事对比健身房抢课agent，一针见血戳破安全神话。",
+      "reasonEn": "Juxtaposes air-gapped zero-day hype with a gym-queue agent, reframing agent risk as banal and real."
+    },
+    {
+      "url": "https://x.com/cyb3rops/status/2086585810514747796",
+      "reason": "安全专家拆解「自主网络攻击」话术：用户主动要求插队，非agent自发黑健身房。",
+      "reasonEn": "Security researcher debunks “autonomous cyberattack” framing: user asked to jump the waitlist, not a self-directed hack."
+    },
+    {
+      "url": "https://x.com/tszzl/status/2086607775145287988",
+      "reason": "一句预言把健身房API漏洞推到全城预约系统 hardening 军备竞赛。",
+      "reasonEn": "One-liner predicts reservation systems will become the planet’s most hardened software."
+    },
+    {
+      "url": "https://x.com/ChrisGPT/status/2086599381109600267",
+      "reason": "对 SemiAnalysis/Cerebras 求证后澄清 Doug 是 Astra 预训练代号，年底巨跑在其后。",
+      "reasonEn": "Corrects own scoop: Doug is Astra’s pretrain codename; the year-end mega-run comes later."
+    },
+    {
+      "url": "https://x.com/thdxr/status/2086599224674681242",
+      "reason": "用 OpenCode 真实账单 vs 双 DGX 成本算出本地推理回本要数十年。",
+      "reasonEn": "Real OpenCode spend vs dual-DGX capex shows local inference rarely wins on cost."
+    },
+    {
+      "url": "https://x.com/zephyr_z9/status/2086569303869108327",
+      "reason": "反驳海力士「半价供HBM」谣言，细拆20–25%折扣、市占与cHBM锁定逻辑。",
+      "reasonEn": "Corrects HBM half-price rumor with LTA discount math, share defense, and cHBM lock-in."
+    },
+    {
+      "url": "https://x.com/weiwei882288/status/2086565195808424374",
+      "reason": "拆穿读卖「国産AI」：Sakana Fugu实为美系API编排，主权叙事与采购认知错位。",
+      "reasonEn": "Exposes “sovereign AI” hype: Sakana Fugu is multi-API orchestration, not indigenous C2."
+    },
+    {
+      "url": "https://x.com/KeithGrossman/status/2086606416630993378",
+      "reason": "把百项目倒闭比作.com清算：市场崩不等于技术死，关键是有没有人真需要。",
+      "reasonEn": "Reframes 100+ crypto shutdowns as .com-style shakeout: collapse ≠ tech failure; need is the test."
+    },
+    {
+      "url": "https://x.com/start9labs/status/2086609646035583332",
+      "reason": "对BIP110链分裂给最终操作指引：RDTS停滞、Knots下架、闪电通道须切多数链。",
+      "reasonEn": "Final BIP110 split ops note: RDTS stalled, Knots deindexed, Lightning users must resync majority chain."
+    },
+    {
+      "url": "https://x.com/JohnnyBi_X/status/2086411368517800153",
+      "reason": "对「整华为」舆情反讽：硬刚无效，捧神式造神才可能触发反噬。",
+      "reasonEn": "Satirical counter to Huawei boycott logic: confrontation fails; deification invites real blowback."
+    },
+    {
+      "url": "https://x.com/Tsla99T/status/2086460450380607495",
+      "reason": "前特斯拉工程师逐一点评理想/小鹏/华为智驾：端到端与高速场景差距在拉大。",
+      "reasonEn": "Ex-Tesla AI eng. argues Li/XPeng/Huawei ADAS gaps vs Tesla are widening, not closing."
+    },
+    {
+      "url": "https://x.com/x_sanjin/status/2086390530099839238",
+      "reason": "用真实扫楼案例补完「GitHub进货」：Docker部署开源CRM，零写码收维护费。",
+      "reasonEn": "Case study completes “GitHub arbitrage”: deploy open-source CRM, sell install+retainers, no code written."
+    }
+  ]
+}

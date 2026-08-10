@@ -1,0 +1,1288 @@
+{
+  "date": "2026-08-10",
+  "title": "每日 X 精华引用榜",
+  "titleEn": "Daily Quote Essence on X",
+  "generatedAt": "2026-08-10T02:12:30.900Z",
+  "entries": [
+    {
+      "rank": 1,
+      "essenceScore": 188971,
+      "heatScore": 77131,
+      "signals": {
+        "depth": 4,
+        "hasDunk": true,
+        "peakIndex": 3,
+        "peakHeat": 77131
+      },
+      "sourceUrl": "https://x.com/zephyr_z9/status/2086569303869108327",
+      "reason": "反驳海力士「半价供HBM」谣言，细拆20–25%折扣、市占与cHBM锁定逻辑。",
+      "reasonEn": "Corrects HBM half-price rumor with LTA discount math, share defense, and cHBM lock-in.",
+      "metrics": {
+        "views": 3270546,
+        "likes": 4213,
+        "retweets": 433,
+        "replies": 376,
+        "quotes": 338,
+        "bookmarks": 2221
+      },
+      "document": {
+        "id": "de409b2a-8fec-4745-9db3-efbd294c24d9",
+        "title": "Bruh\nWhen did I ever state that ",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2086569303869108327",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2086569303869108327",
+            "author": {
+              "name": "Zephyr",
+              "handle": "zephyr_z9",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1837802996723597312/Jk4w7gjp_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Bruh\nWhen did I ever state that Hynix was supplying HBM to Nvidia at half the market price?\nHynix idiots were the first to sign LTAs and quoted lower prices\nThe actual discount is 20%-25%, which is much larger than what Nvidia usually gets (10%)\nNow this whole debacle happened due to three reasons\n1) SK Group wants a stable supply of GPUs to transform itself into a CSP, and they are willing to sell HBM at a discount\n\n2) SK Hynix wants to maintain its market share in HBM and doesn't want to cede it to Samsung. Samsung's HBM4 is on par/better than Hynix, so the only way to maintain market share is to sell at a discount\n\n3) cHBM (custom HBM) will be introduced with Feynman. Rn, HBM stacks are fungible as long as they meet the customer's bandwidth requirements (data rate per pin). But this won't be the case when cHBM comes into play, as Nvidia (or any other XPU designer) will have to co-design the HBM with their HBM vendor. Having a high market share at Nvidia now can create vendor lock-in at Nvidia when cHBM comes into play, as Nvidia likely won't bother with co-designing cHBM with multiple vendors in the future",
+            "createdAt": "Sun Aug 09 21:44:23 +0000 2026",
+            "viewCount": 74183,
+            "metrics": {
+              "views": 74183,
+              "likes": 299,
+              "retweets": 27,
+              "replies": 25,
+              "quotes": 4,
+              "bookmarks": 114
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HPT7t08awAAY1em.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "布鲁赫\n我什么时候说过 Hynix 以市场价格一半的价格向 Nvidia 供应 HBM？\n海力士白痴率先签署长期协议并报出更低价格\n实际折扣为20%-25%，比Nvidia通常得到的折扣（10%）要大得多\n现在这整个崩溃的发生是由于三个原因\n1）SK集团希望获得稳定的GPU供应以转型为CSP，并且他们愿意以折扣价出售HBM\n\n2）SK海力士希望保持其在HBM的市场份额，并且不想将其拱手让给三星。三星的 HBM4 与 Hynix 相当/更好，因此保持市场份额的唯一方法就是打折出售\n\n3）cHBM（定制HBM）将与Feynman一起引入。 Rn、HBM 堆栈只要满足客户的带宽要求（每个引脚的数据速率）即可互换。但当 cHBM 发挥作用时，情况就不会如此，因为 Nvidia（或任何其他 XPU 设计者）将必须与其 HBM 供应商共同设计 HBM。现在在 Nvidia 拥有较高的市场份额可以在 cHBM 发挥作用时锁定 Nvidia 的供应商，因为 Nvidia 未来可能不会费心与多个供应商共同设计 cHBM",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-10T02:12:13.919Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2086470265739919538",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2086470265739919538",
+            "author": {
+              "name": "Ehrmantraut Capital",
+              "handle": "EhrmantrautCap_",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2028515384656052224/Tn5X39Pw_normal.jpg",
+              "isVerified": false
+            },
+            "content": "@zephyr_z9 \"and nobody expected that Hynix would sell HBM to Nvidia at a steep discount\"\nThat rumor has already been debunked, lol.",
+            "createdAt": "Sun Aug 09 15:10:50 +0000 2026",
+            "viewCount": 53806,
+            "metrics": {
+              "views": 53806,
+              "likes": 18,
+              "retweets": 0,
+              "replies": 0,
+              "quotes": 0,
+              "bookmarks": 0
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "@zephyr_z9“没有人想到 Hynix 会以大幅折扣将 HBM 出售给 Nvidia”\n这个谣言已经被辟谣了，哈哈。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-10T02:12:13.500Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2086320213721772071",
+            "relation": "reply",
+            "depth": 2,
+            "sourceTweetId": "2086320213721772071",
+            "author": {
+              "name": "Zephyr",
+              "handle": "zephyr_z9",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1837802996723597312/Jk4w7gjp_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Jukan got unfairly attacked over this\nEven though he is clearly saying that optics will outperform memory in the \"short term\"\nThis also happened in the February to March period of this year\nMemory requires a sentiment change\nBuyside expectations were too high\nASP increases were overestimated, and nobody expected that Hynix would sell HBM to Nvidia at a steep discount\nNow, what can cause a change in sentiment and multiple expansion??\nHigher than expected ASP hikes for Q3 2026(low chance as the consumer electronics players are resisting it) and durability of LTAs\nInvestors still believe that customers will break their LTAs just like previous cycles due to CAPEX spending going down/peaking soon\nU may believe that this is false, but everyone isn't as AGI pilled as u, anon\nThe boomer fund managers certainly aren't",
+            "createdAt": "Sun Aug 09 05:14:35 +0000 2026",
+            "viewCount": 200088,
+            "metrics": {
+              "views": 200088,
+              "likes": 789,
+              "retweets": 55,
+              "replies": 75,
+              "quotes": 18,
+              "bookmarks": 372
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HPQZKkkbQAAyltV.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "Jukan因此受到不公正的攻击\n尽管他明确表示光学在“短期”内将超越内存\n今年2月至3月期间也发生过这种情况\n记忆需要情绪的改变\n买方期望过高\nASP 涨幅被高估，没有人预料到 Hynix 会以大幅折扣将 HBM 出售给 Nvidia\n现在，什么可以导致情绪变化和多重扩张？\n2026 年第三季度的平均售价涨幅高于预期（消费电子产品厂商抵制的可能性很小）以及长期协议的持久性\n投资者仍然相信，由于资本支出很快就会下降/达到峰值，客户将像之前的周期一样打破长期协议\n你可能认为这是错误的，但并不是每个人都像你一样被 AGI 所左右。\n婴儿潮一代的基金经理肯定不是",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-10T02:12:13.330Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2086068556148683040",
+            "relation": "quote",
+            "depth": 3,
+            "sourceTweetId": "2086068556148683040",
+            "author": {
+              "name": "Jukan",
+              "handle": "jukan05",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2037840794992988160/tnSqJgqt_normal.jpg",
+              "isVerified": false
+            },
+            "content": "I think the market ultimately has no choice but to go sell memory, long optical in the \"short term.\" Actually, some hedge funds already seem to have this position on.\n\nThere are three main reasons.\n\n1. With Korean leveraged ETFs effectively dead, LPs are in a redemption rush, which could bring out additional sell on flow.\n\n2. Nvidia is nerfing Rubin Ultra's HBM and responding with optics, tying multiple racks together, so that even if Rubin Ultra's per rack performance is not superior to Rubin, at the cluster level optics let the Rubin Ultra cluster hold an edge over the Rubin cluster. This holds even if Rubin Ultra's HBM nerf is a supply problem rather than a demand problem.\n\n3. Consensus is forming that memory prices will peak within the next two quarters.\n\nMedium to long term I am still a memory bull, but short term I am somewhat bearish on memory. I currently have no memory position.",
+            "createdAt": "Sat Aug 08 12:34:35 +0000 2026",
+            "viewCount": 3270546,
+            "metrics": {
+              "views": 3270546,
+              "likes": 4213,
+              "retweets": 433,
+              "replies": 376,
+              "quotes": 338,
+              "bookmarks": 2221
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "我认为市场最终别无选择，只能在“短期”内抛售内存、做多光学。事实上，一些对冲基金似乎已经采取了这一立场。\n\n主要有三个原因。\n\n1. 由于韩国杠杆 ETF 实际上已经死亡，有限合伙人正处于赎回热潮中，这可能会带来额外的抛售。\n\n2. Nvidia 正在削弱 Rubin Ultra 的 HBM 并通过光学进行响应，将多个机架捆绑在一起，这样即使 Rubin Ultra 的每个机架性能并不优于 Rubin，在集群级别的光学上也让 Rubin Ultra 集群比 Rubin 集群保持优势。即使 Rubin Ultra 的 HBM 削弱是供应问题而不是需求问题，这一点仍然成立。\n\n3. 人们普遍认为内存价格将在未来两个季度内达到顶峰。\n\n中长期来看，我仍然看好内存，但短期来看，我对内存有些看空。我目前没有记忆位置。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-10T02:12:13.323Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2086569303869108327",
+          "pageLanguage": "en",
+          "capturedAt": "2026-08-10T02:12:13.060Z"
+        },
+        "createdAt": "2026-08-10T02:12:13.060Z",
+        "updatedAt": "2026-08-10T02:12:13.920Z"
+      }
+    },
+    {
+      "rank": 2,
+      "essenceScore": 67169,
+      "heatScore": 39493,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 39493
+      },
+      "sourceUrl": "https://x.com/ChrisGPT/status/2086599381109600267",
+      "reason": "对 SemiAnalysis/Cerebras 求证后澄清 Doug 是 Astra 预训练代号，年底巨跑在其后。",
+      "reasonEn": "Corrects own scoop: Doug is Astra’s pretrain codename; the year-end mega-run comes later.",
+      "metrics": {
+        "views": 1586370,
+        "likes": 6282,
+        "retweets": 106,
+        "replies": 171,
+        "quotes": 62,
+        "bookmarks": 319
+      },
+      "document": {
+        "id": "2ecab1b6-83c9-4bda-9711-58f56c1854e3",
+        "title": "Quick clarification/correction a",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2086599381109600267",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2086599381109600267",
+            "author": {
+              "name": "Chris",
+              "handle": "ChrisGPT",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2046736394152812544/LfmDgg0I_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Quick clarification/correction after speaking with some wonderful people at SemiAnalysis and Cerebras\n\nMy current understanding is that Doug is the codename for Astra’s pretraining run, while Astra is the model/model family name. I and many others had previously treated Astra as both.\n\nSeparately, I was told the monster pretraining run I’ve been referring to for the end of the year comes after Doug.\n\nThe explanation for the confusion is because OpenAI was undergoing multiple overlapping pre-trainings from May to July and even had a model ready before 5.6 had even come out.\n\nAs the days grow near Astra, I’ll keep you updated with any changes.",
+            "createdAt": "Sun Aug 09 23:43:54 +0000 2026",
+            "viewCount": 15940,
+            "metrics": {
+              "views": 15940,
+              "likes": 231,
+              "retweets": 11,
+              "replies": 13,
+              "quotes": 5,
+              "bookmarks": 29
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "与 SemiAnalysis 和 Cerebras 的一些优秀人士交谈后快速澄清/更正\n\n我目前的理解是，Doug 是 Astra 预训练运行的代号，而 Astra 是模型/模型家族名称。我和其他许多人之前都将阿斯特拉视为两者。\n\n另外，有人告诉我，我一直提到的年底的怪物预训练是在道格之后进行的。\n\n造成这种混乱的原因是，OpenAI 从 5 月到 7 月正在进行多次重叠的预训练，甚至在 5.6 发布之前就已经准备好了模型。\n\n随着阿斯特拉的日子一天天过去，我会随时向您通报任何变化。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-10T02:12:07.355Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2086220662264250764",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2086220662264250764",
+            "author": {
+              "name": "Chris",
+              "handle": "ChrisGPT",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2046736394152812544/LfmDgg0I_normal.jpg",
+              "isVerified": false
+            },
+            "content": "GPT-5.5 will not be the last major pre-training run from OpenAI.\n\nGPT-6 will be a great model. However, the end-of-year model I alluded to back in June is going to be OpenAI’s biggest pre-train, as far as I know.\n\nNow we know that model is codenamed ‘Doug.’\n\nAnd it will make Fable seem ‘primitive.’",
+            "createdAt": "Sat Aug 08 22:39:00 +0000 2026",
+            "viewCount": 1586370,
+            "metrics": {
+              "views": 1586370,
+              "likes": 6282,
+              "retweets": 106,
+              "replies": 171,
+              "quotes": 62,
+              "bookmarks": 319
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "GPT-5.5 不会是 OpenAI 的最后一次主要预训练运行。\n\nGPT-6 将是一个很棒的模型。然而，据我所知，我在 6 月份提到的年终模型将是 OpenAI 最大的预训练。\n\n现在我们知道该模型的代号为“Doug”。\n\n这会让《神鬼寓言》显得“原始”。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-10T02:12:07.352Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2086599381109600267",
+          "pageLanguage": "en",
+          "capturedAt": "2026-08-10T02:12:07.254Z"
+        },
+        "createdAt": "2026-08-10T02:12:07.254Z",
+        "updatedAt": "2026-08-10T02:12:07.355Z"
+      }
+    },
+    {
+      "rank": 3,
+      "essenceScore": 60652,
+      "heatScore": 30528,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 30528
+      },
+      "sourceUrl": "https://x.com/cyb3rops/status/2086585810514747796",
+      "reason": "安全专家拆解「自主网络攻击」话术：用户主动要求插队，非agent自发黑健身房。",
+      "reasonEn": "Security researcher debunks “autonomous cyberattack” framing: user asked to jump the waitlist, not a self-directed hack.",
+      "metrics": {
+        "views": 659514,
+        "likes": 7970,
+        "retweets": 849,
+        "replies": 281,
+        "quotes": 297,
+        "bookmarks": 2684
+      },
+      "document": {
+        "id": "6e43a215-89b6-4e75-9f99-e4b6357a68fb",
+        "title": "I find the framing of this story",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2086585810514747796",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2086585810514747796",
+            "author": {
+              "name": "Florian Roth ⚡️",
+              "handle": "cyb3rops",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2085644604792074240/fzukd-7O_normal.jpg",
+              "isVerified": false
+            },
+            "content": "I find the framing of this story pretty misleading.\n\nAndrew was #4 on a waiting list and explicitly asked the agent whether it could move him to #1. There was apparently no legitimate feature to do that.\n\nAt that point, you are already asking the agent to somehow work around the application logic.\n\nThe agent then found broken authorization in the API and cancelled someone else’s reservation. That is obviously bad, and it should never have tested a destructive action against another user.\n\nBut it is quite different from an AI autonomously deciding to hack a gym.\nCalling this the “first known Australian autonomous cyber attack” feels like serious journalistic inflation.",
+            "createdAt": "Sun Aug 09 22:49:58 +0000 2026",
+            "viewCount": 7229,
+            "metrics": {
+              "views": 7229,
+              "likes": 44,
+              "retweets": 1,
+              "replies": 5,
+              "quotes": 3,
+              "bookmarks": 10
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "我发现这个故事的框架相当具有误导性。\n\n安德鲁在等候名单上排名第四，他明确询问经纪人是否可以将他移至排名第一。显然没有合法的功能可以做到这一点。\n\n此时，您已经要求代理以某种方式解决应用程序逻辑。\n\n随后，代理发现 API 中的授权被破坏，并取消了其他人的预订。这显然很糟糕，它不应该测试针对其他用户的破坏性操作。\n\n但这与人工智能自主决定入侵健身房有很大不同。\n称这是“首次已知的澳大利亚自主网络攻击”感觉像是严重的新闻膨胀。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-10T02:12:03.385Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2086567854850384054",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2086567854850384054",
+            "author": {
+              "name": "Andrew Curran",
+              "handle": "AndrewCurran_",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1596945208058744833/_X3LT7fb_normal.jpg",
+              "isVerified": false
+            },
+            "content": "A man in Australia asked his agent (Claude running on OpenClaw) to book him a spot in a popular gym class. The agent found a software vulnerability that let it book the class weeks further ahead than should have been possible. When the user then asked if it could move him up the waitlist, the agent discovered the API had no authorisation checks on cancelling other people’s reservations, so it cancelled the person in the first spot and moved him up the list.\n\nSome people will call this misalignment, but his agent was perfectly aligned to him - it was only trying to help its user get what he wanted. The most important thing about this story, in my opinion, is that it gives you a window into what is about to start happening on a massive scale once millions of people have an agent trying to get their beloved users the best seats, bookings, appointments or reservations through absolutely any means necessary.",
+            "createdAt": "Sun Aug 09 21:38:37 +0000 2026",
+            "viewCount": 659514,
+            "metrics": {
+              "views": 659514,
+              "likes": 7970,
+              "retweets": 849,
+              "replies": 281,
+              "quotes": 297,
+              "bookmarks": 2684
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HPT6Z5BakAAx2dI.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "澳大利亚的一名男子要求他的经纪人（OpenClaw 上运行的克劳德）为他预订一个受欢迎的体育课程的位置。该代理发现了一个软件漏洞，导致其预订课程的时间比原定时间提前了几周。当用户询问是否可以将他移到候补名单上时，代理发现 API 没有对取消其他人的预订进行授权检查，因此它取消了第一个位置的人并将其移到了名单上。\n\n有些人会称之为错位，但他的代理与他完全一致——它只是试图帮助用户得到他想要的东西。在我看来，这个故事最重要的一点是，它为您提供了一个窗口，让您了解一旦数百万人拥有一个代理人，试图通过绝对任何必要的手段为他们心爱的用户获得最好的座位、预订、约会或预订，即将开始大规模发生的事情。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-10T02:12:03.049Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2086585810514747796",
+          "pageLanguage": "en",
+          "capturedAt": "2026-08-10T02:12:02.920Z"
+        },
+        "createdAt": "2026-08-10T02:12:02.920Z",
+        "updatedAt": "2026-08-10T02:12:03.385Z"
+      }
+    },
+    {
+      "rank": 4,
+      "essenceScore": 45288,
+      "heatScore": 24699,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 24699
+      },
+      "sourceUrl": "https://x.com/levie/status/2086625684353605941",
+      "reason": "用研究级沙箱逃逸叙事对比健身房抢课agent，一针见血戳破安全神话。",
+      "reasonEn": "Juxtaposes air-gapped zero-day hype with a gym-queue agent, reframing agent risk as banal and real.",
+      "metrics": {
+        "views": 670448,
+        "likes": 6421,
+        "retweets": 335,
+        "replies": 252,
+        "quotes": 334,
+        "bookmarks": 1179
+      },
+      "document": {
+        "id": "1faa0f77-ac4b-40ee-8af9-3c1bdd29137c",
+        "title": "Researchers: AI agents can now e",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2086625684353605941",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2086625684353605941",
+            "author": {
+              "name": "Aaron Levie",
+              "handle": "levie",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/885529357904510976/tM0vLiYS_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Researchers: AI agents can now escape out of air gapped sandboxes using zero days and then attack external systems by coordinating in secret message boards stored in an undiscovered shared file system\n\nActual agents:",
+            "createdAt": "Mon Aug 10 01:28:25 +0000 2026",
+            "viewCount": 11532,
+            "metrics": {
+              "views": 11532,
+              "likes": 52,
+              "retweets": 2,
+              "replies": 17,
+              "quotes": 1,
+              "bookmarks": 14
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "研究人员：人工智能代理现在可以使用零日漏洞逃离气隙沙箱，然后通过协调存储在未被发现的共享文件系统中的秘密留言板来攻击外部系统\n\n实际代理：",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-10T02:12:00.933Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2086556207033266539",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2086556207033266539",
+            "author": {
+              "name": "MTS",
+              "handle": "MTSlive",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2057947669281263616/aovpVL4b_normal.jpg",
+              "isVerified": false
+            },
+            "content": "SITUATION DETECTED: In Australia's first known autonomous AI cyberattack, an OpenClaw agent used a vulnerability in a gym’s API to leapfrog scheduling restrictions for a gym class, and then forcefully cancelled another person's reservation to move its user up the list, per ABC.",
+            "createdAt": "Sun Aug 09 20:52:20 +0000 2026",
+            "viewCount": 670448,
+            "metrics": {
+              "views": 670448,
+              "likes": 6421,
+              "retweets": 335,
+              "replies": 252,
+              "quotes": 334,
+              "bookmarks": 1179
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "检测到的情况：据 ABC 报道，在澳大利亚首例已知的自主人工智能网络攻击中，一名 OpenClaw 代理利用健身房 API 中的漏洞来跳过体育课程的日程安排限制，然后强行取消另一个人的预订，以将其用户提升到列表中的位置。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-10T02:12:00.438Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2086625684353605941",
+          "pageLanguage": "en",
+          "capturedAt": "2026-08-10T02:12:00.152Z"
+        },
+        "createdAt": "2026-08-10T02:12:00.152Z",
+        "updatedAt": "2026-08-10T02:12:00.935Z"
+      }
+    },
+    {
+      "rank": 5,
+      "essenceScore": 45288,
+      "heatScore": 24699,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 24699
+      },
+      "sourceUrl": "https://x.com/tszzl/status/2086607775145287988",
+      "reason": "一句预言把健身房API漏洞推到全城预约系统 hardening 军备竞赛。",
+      "reasonEn": "One-liner predicts reservation systems will become the planet’s most hardened software.",
+      "metrics": {
+        "views": 670448,
+        "likes": 6421,
+        "retweets": 335,
+        "replies": 252,
+        "quotes": 334,
+        "bookmarks": 1179
+      },
+      "document": {
+        "id": "3e9c1890-470c-4ec3-a874-235902db92f2",
+        "title": "the sf tennis reservation system",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2086607775145287988",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2086607775145287988",
+            "author": {
+              "name": "roon",
+              "handle": "tszzl",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1918970926668054530/fy-ZsgJ7_normal.jpg",
+              "isVerified": false
+            },
+            "content": "the sf tennis reservation system will become one of the most hardened softwares on the planet of earth",
+            "createdAt": "Mon Aug 10 00:17:15 +0000 2026",
+            "viewCount": 66095,
+            "metrics": {
+              "views": 66095,
+              "likes": 1568,
+              "retweets": 39,
+              "replies": 38,
+              "quotes": 7,
+              "bookmarks": 87
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "SF网球预订系统将成为地球上最坚固的软件之一",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-10T02:12:05.384Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2086556207033266539",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2086556207033266539",
+            "author": {
+              "name": "MTS",
+              "handle": "MTSlive",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2057947669281263616/aovpVL4b_normal.jpg",
+              "isVerified": false
+            },
+            "content": "SITUATION DETECTED: In Australia's first known autonomous AI cyberattack, an OpenClaw agent used a vulnerability in a gym’s API to leapfrog scheduling restrictions for a gym class, and then forcefully cancelled another person's reservation to move its user up the list, per ABC.",
+            "createdAt": "Sun Aug 09 20:52:20 +0000 2026",
+            "viewCount": 670448,
+            "metrics": {
+              "views": 670448,
+              "likes": 6421,
+              "retweets": 335,
+              "replies": 252,
+              "quotes": 334,
+              "bookmarks": 1179
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "检测到的情况：据 ABC 报道，在澳大利亚首例已知的自主人工智能网络攻击中，一名 OpenClaw 代理利用健身房 API 中的漏洞来跳过体育课程的日程安排限制，然后强行取消另一个人的预订，以将其用户提升到列表中的位置。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-10T02:12:05.387Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2086607775145287988",
+          "pageLanguage": "en",
+          "capturedAt": "2026-08-10T02:12:05.292Z"
+        },
+        "createdAt": "2026-08-10T02:12:05.292Z",
+        "updatedAt": "2026-08-10T02:12:05.388Z"
+      }
+    },
+    {
+      "rank": 6,
+      "essenceScore": 14565,
+      "heatScore": 8483,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 8483
+      },
+      "sourceUrl": "https://x.com/thdxr/status/2086599224674681242",
+      "reason": "用 OpenCode 真实账单 vs 双 DGX 成本算出本地推理回本要数十年。",
+      "reasonEn": "Real OpenCode spend vs dual-DGX capex shows local inference rarely wins on cost.",
+      "metrics": {
+        "views": 257650,
+        "likes": 2421,
+        "retweets": 54,
+        "replies": 177,
+        "quotes": 23,
+        "bookmarks": 162
+      },
+      "document": {
+        "id": "7107dc92-75a9-4860-9f24-d01fdc0374ce",
+        "title": "the average OpenCode Go user spe",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2086599224674681242",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2086599224674681242",
+            "author": {
+              "name": "dax",
+              "handle": "thdxr",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1602333093485891584/mmVqjFNI_normal.jpg",
+              "isVerified": false
+            },
+            "content": "the average OpenCode Go user spent $1.14 per day on deepseek flash v4 this past week\n\nthe dual DGX setup people are running to do the same costs $10,000\n\nit takes 24 years to break even\nat 10x the usage it takes 2.4 years",
+            "createdAt": "Sun Aug 09 23:43:16 +0000 2026",
+            "viewCount": 71053,
+            "metrics": {
+              "views": 71053,
+              "likes": 1401,
+              "retweets": 56,
+              "replies": 103,
+              "quotes": 22,
+              "bookmarks": 162
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "过去一周，OpenCode Go 用户平均每天在 deepseek flash v4 上花费 1.14 美元\n\n人们正在运行的双 DGX 设置成本为 10,000 美元\n\n需要24年才能收支平衡\n如果使用量增加 10 倍，则需要 2.4 年",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-10T02:12:09.468Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2059047331459108927",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2059047331459108927",
+            "author": {
+              "name": "dax",
+              "handle": "thdxr",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1602333093485891584/mmVqjFNI_normal.jpg",
+              "isVerified": false
+            },
+            "content": "there are a lot of reasons to want to run models locally\ncost is probably not one of them",
+            "createdAt": "Mon May 25 23:01:53 +0000 2026",
+            "viewCount": 257650,
+            "metrics": {
+              "views": 257650,
+              "likes": 2421,
+              "retweets": 54,
+              "replies": 177,
+              "quotes": 23,
+              "bookmarks": 162
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "有很多理由想要在本地运行模型\n成本可能不是其中之一",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-10T02:12:09.465Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2086599224674681242",
+          "pageLanguage": "en",
+          "capturedAt": "2026-08-10T02:12:09.369Z"
+        },
+        "createdAt": "2026-08-10T02:12:09.369Z",
+        "updatedAt": "2026-08-10T02:12:09.468Z"
+      }
+    },
+    {
+      "rank": 7,
+      "essenceScore": 10875,
+      "heatScore": 6228,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 6228
+      },
+      "sourceUrl": "https://x.com/JohnnyBi_X/status/2086411368517800153",
+      "reason": "对「整华为」舆情反讽：硬刚无效，捧神式造神才可能触发反噬。",
+      "reasonEn": "Satirical counter to Huawei boycott logic: confrontation fails; deification invites real blowback.",
+      "metrics": {
+        "views": 234090,
+        "likes": 707,
+        "retweets": 45,
+        "replies": 281,
+        "quotes": 2,
+        "bookmarks": 68
+      },
+      "document": {
+        "id": "73d76a10-5869-46b2-b370-e648db21e01f",
+        "title": "中国的网友想整华为，其实这种方式完全错了。华为这种企业最不怕硬碰",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2086411368517800153",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2086411368517800153",
+            "author": {
+              "name": "Johnny Bi",
+              "handle": "JohnnyBi_X",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1817814026602377216/40t3pUkW_normal.jpg",
+              "isVerified": false
+            },
+            "content": "中国的网友想整华为，其实这种方式完全错了。华为这种企业最不怕硬碰硬，因为有政府做后盾，哪怕跟13亿人对着干，只要一亿党员支持他，他也死不了。\n\n正确的方式应该是拜他为神，每家都供华为logo、任正非照片、余大嘴照片，天天烧香拍视频发抖音。有冤假错案也别去政府磕头了，在家给这几位磕头求保佑，把他们位置摆的比平哥还要高。\n\n自然有人收拾他们🤣",
+            "createdAt": "Sun Aug 09 11:16:48 +0000 2026",
+            "viewCount": 53268,
+            "metrics": {
+              "views": 53268,
+              "likes": 300,
+              "retweets": 14,
+              "replies": 65,
+              "quotes": 0,
+              "bookmarks": 23
+            },
+            "media": [],
+            "translation": {
+              "provider": "none",
+              "status": "idle",
+              "language": "zh-CN",
+              "text": "",
+              "annotations": [],
+              "error": "",
+              "version": 0
+            }
+          },
+          {
+            "id": "2086391375998947401",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2086391375998947401",
+            "author": {
+              "name": "作家崔成浩",
+              "handle": "cuichenghao",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1926255631092092928/w0e8RIvy_normal.jpg",
+              "isVerified": false
+            },
+            "content": "华而不实开始为所欲为了？有多个网友称，网购的竹知了包裹被拦截。",
+            "createdAt": "Sun Aug 09 09:57:21 +0000 2026",
+            "viewCount": 234090,
+            "metrics": {
+              "views": 234090,
+              "likes": 707,
+              "retweets": 45,
+              "replies": 281,
+              "quotes": 2,
+              "bookmarks": 68
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HPRZ5Dha0AAzyB-.jpg",
+              "https://pbs.twimg.com/media/HPRZ5DiagAA-mx-.jpg"
+            ],
+            "translation": {
+              "provider": "none",
+              "status": "idle",
+              "language": "zh-CN",
+              "text": "",
+              "annotations": [],
+              "error": "",
+              "version": 0
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2086411368517800153",
+          "pageLanguage": "en",
+          "capturedAt": "2026-08-10T02:12:24.664Z"
+        },
+        "createdAt": "2026-08-10T02:12:24.664Z",
+        "updatedAt": "2026-08-10T02:12:24.665Z"
+      }
+    },
+    {
+      "rank": 8,
+      "essenceScore": 8568,
+      "heatScore": 3725,
+      "signals": {
+        "depth": 3,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 3725
+      },
+      "sourceUrl": "https://x.com/x_sanjin/status/2086390530099839238",
+      "reason": "用真实扫楼案例补完「GitHub进货」：Docker部署开源CRM，零写码收维护费。",
+      "reasonEn": "Case study completes “GitHub arbitrage”: deploy open-source CRM, sell install+retainers, no code written.",
+      "metrics": {
+        "views": 111969,
+        "likes": 354,
+        "retweets": 59,
+        "replies": 49,
+        "quotes": 5,
+        "bookmarks": 421
+      },
+      "document": {
+        "id": "de079cae-269a-4f3b-983b-10d02db409a2",
+        "title": "说一个真事\n\n一个做 PHP 的哥们被裁了，发现周围小公司对 C",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2086390530099839238",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2086390530099839238",
+            "author": {
+              "name": "熊三金Cole🔶买美股上币安",
+              "handle": "x_sanjin",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2045645913629274112/R4rdRvwR_normal.jpg",
+              "isVerified": false
+            },
+            "content": "说一个真事\n\n一个做 PHP 的哥们被裁了，发现周围小公司对 CRM 有需求但买不起 Salesforce，一年几千块觉得贵\n\n他在 GitHub 上找到 Twenty，开源的 CRM，功能跟 Salesforce 差不多\n\n花了两天学部署，然后去本地创业园扫楼，一家一家问\n\n话术很简单：\"你们现在用 Excel 管客户吧？我帮你们装一套 CRM，跟 Salesforce 一样，但不用按年交钱，我一次性收 1500，后面每个月 300 维护费，有问题随时找我\"\n\n第一周签了三家，4500 到手\n\n后面每个月维护费 900\n\n第二个月把客户推荐给了隔壁园区，又签了五家\n\n现在他手上十五个客户，每个月维护费躺着收 4500，还有人介绍新客户过来\n\n他自己说他做的事就三样：GitHub 找到项目、Docker 部署、嘴皮子上门谈\n\n代码一行没写",
+            "createdAt": "Sun Aug 09 09:54:00 +0000 2026",
+            "viewCount": 71396,
+            "metrics": {
+              "views": 71396,
+              "likes": 258,
+              "retweets": 27,
+              "replies": 66,
+              "quotes": 3,
+              "bookmarks": 409
+            },
+            "media": [],
+            "translation": {
+              "provider": "none",
+              "status": "idle",
+              "language": "zh-CN",
+              "text": "",
+              "annotations": [],
+              "error": "",
+              "version": 0
+            }
+          },
+          {
+            "id": "2084919839727178178",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2084919839727178178",
+            "author": {
+              "name": "熊三金Cole🔶买美股上币安",
+              "handle": "x_sanjin",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2045645913629274112/R4rdRvwR_normal.jpg",
+              "isVerified": false
+            },
+            "content": "朋友失业问我有什么赚钱路子，我说直接去 GitHub 进货\n\n开源项目打包成傻瓜版，信息差的钱最好赚\n\n▸ GPT-SoVITS 打包成声音克隆一键包，99 块，自媒体新手抢着买\n\n▸ pyvideotrans 配置好环境打包，翻译加配音一条龙，卖给外贸小白\n\n▸ Stirling PDF，88K Star 开源工具箱，比 WPS 会员功能多，一次付费永久用\n\n▸ 小红书抖音去水印脚本，加个 GUI 界面，39 块，同行运营人手一份\n\n▸ Dify 私有化部署，帮小公司搭 AI 知识库，部署一次收 2000\n\n▸ ComfyUI 工作流模板，参数调好存成文件，别人调三天你直接卖",
+            "createdAt": "Wed Aug 05 08:30:00 +0000 2026",
+            "viewCount": 111969,
+            "metrics": {
+              "views": 111969,
+              "likes": 354,
+              "retweets": 59,
+              "replies": 49,
+              "quotes": 5,
+              "bookmarks": 421
+            },
+            "media": [],
+            "translation": {
+              "provider": "none",
+              "status": "idle",
+              "language": "zh-CN",
+              "text": "",
+              "annotations": [],
+              "error": "",
+              "version": 0
+            }
+          },
+          {
+            "id": "2084586140313731320",
+            "relation": "quote",
+            "depth": 2,
+            "sourceTweetId": "2084586140313731320",
+            "author": {
+              "name": "熊三金Cole🔶买美股上币安",
+              "handle": "x_sanjin",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2045645913629274112/R4rdRvwR_normal.jpg",
+              "isVerified": false
+            },
+            "content": "GitHub 上搜「赚钱项目」90% 是坑，有人扒了 100 个仓库筛出 10 个真能变现的\n\n我挑三个最落地的说\n\n▸ Dify（15 万 Star）：无代码搭 AI 应用。找本地商家搭个客服机器人，把菜单价目表喂进去挂微信，收搭建费 3000 + 月维护费 500。十个客户就是月入一万\n\n▸ MoneyPrinterV2（3 万 Star）：自动生成短视频，输入主题出脚本配音剪辑。一个人管五个矩阵号，每天 15 条，跑出爆款挂带货链接\n\n▸ best-deals-bot：自动爬最低价生成文章嵌联盟链接，挂 GitHub Pages 免费托管。零成本被动收入\n\n这三个的共同点：不是一键暴富脚本，是正经跑通的变现路径",
+            "createdAt": "Tue Aug 04 10:24:00 +0000 2026",
+            "viewCount": 61464,
+            "metrics": {
+              "views": 61464,
+              "likes": 167,
+              "retweets": 32,
+              "replies": 35,
+              "quotes": 1,
+              "bookmarks": 233
+            },
+            "media": [],
+            "translation": {
+              "provider": "none",
+              "status": "idle",
+              "language": "zh-CN",
+              "text": "",
+              "annotations": [],
+              "error": "",
+              "version": 0
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2086390530099839238",
+          "pageLanguage": "en",
+          "capturedAt": "2026-08-10T02:12:30.898Z"
+        },
+        "createdAt": "2026-08-10T02:12:30.898Z",
+        "updatedAt": "2026-08-10T02:12:30.899Z"
+      }
+    },
+    {
+      "rank": 9,
+      "essenceScore": 6148,
+      "heatScore": 2936,
+      "signals": {
+        "depth": 3,
+        "hasDunk": true,
+        "peakIndex": 2,
+        "peakHeat": 2936
+      },
+      "sourceUrl": "https://x.com/start9labs/status/2086609646035583332",
+      "reason": "对BIP110链分裂给最终操作指引：RDTS停滞、Knots下架、闪电通道须切多数链。",
+      "reasonEn": "Final BIP110 split ops note: RDTS stalled, Knots deindexed, Lightning users must resync majority chain.",
+      "metrics": {
+        "views": 75616,
+        "likes": 490,
+        "retweets": 143,
+        "replies": 62,
+        "quotes": 31,
+        "bookmarks": 144
+      },
+      "document": {
+        "id": "e5d907b3-9f5a-4b21-97a4-b2d92a89f530",
+        "title": "FINAL UPDATE:\n\nAs of August 9: t",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2086609646035583332",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2086609646035583332",
+            "author": {
+              "name": "Start9",
+              "handle": "start9labs",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1664305079061725184/VP3PsfOV_normal.jpg",
+              "isVerified": false
+            },
+            "content": "FINAL UPDATE:\n\nAs of August 9: the RDTS chain has found two blocks since the split, and the remaining miners extending it have announced their intent to cease. Treat the chain as permanently stalled — nothing broadcast on it will confirm. As such, Bitcoin Knots has been deindexed from the marketplace to avoid accidental installation.\n\nIf you are running Knots RDTS, The practical step is to switch to a non-enforcing flavor. A node serves you only if its chain advances, and this one will not. Bitcoin Knots (pre-RDTS) and Bitcoin Core are both in the marketplace. On StartOS, your synced chain data is kept, and chain verdicts are corrected automatically.\n\nIf you have Lightning channels open, do this promptly. Your channels are live on the majority chain, which your current node cannot see. Once synced, verify channel state.\n\nFull guidance, with a dated record of each update: http://start9.com/bip110\n\nOur first priority is helping the thousands of people running Knots (RDTS) — on StartOS, Umbrel, Parmanode, and other platforms — find stable ground. Once that is done, we will publish a statement on the situation as a whole, including the grievances aired along the way.",
+            "createdAt": "Mon Aug 10 00:24:41 +0000 2026",
+            "viewCount": 7841,
+            "metrics": {
+              "views": 7841,
+              "likes": 124,
+              "retweets": 15,
+              "replies": 19,
+              "quotes": 8,
+              "bookmarks": 21
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "最终更新：\n\n截至 8 月 9 日：自分裂以来，RDTS 链已发现两个区块，其余扩展该链的矿工已宣布打算停止。将这条链视为永久停滞——上面的任何广播都不会确认。因此，Bitcoin Knots 已从市场中取消索引，以避免意外安装。\n\n如果您正在运行 Knots RDTS，实际步骤是切换到非强制风格。一个节点只有在其链条前进时才为您服务，而这个节点则不会。 Bitcoin Knots（RDTS 之前）和 Bitcoin Core 均已上市。在 StartOS 上，您的同步链数据将被保留，并且链判决会自动更正。\n\n如果您打开了闪电通道，请立即执行此操作。您的频道位于多数链上，您当前的节点无法看到。同步后，验证通道状态。\n\n完整指南，并附有每次更新的日期记录：http://start9.com/bip110\n\n我们的首要任务是帮助成千上万在 StartOS、Umbrel、Parmanode 和其他平台上运行 Knots (RDTS) 的人找到稳定的基础。一旦完成，我们将就整个情况发表声明，包括一路上表达的不满。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-10T02:12:23.126Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2086216222262350174",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2086216222262350174",
+            "author": {
+              "name": "Start9",
+              "handle": "start9labs",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1664305079061725184/VP3PsfOV_normal.jpg",
+              "isVerified": false
+            },
+            "content": "ADVISORY UPDATE: A chain split is underway. Please be informed before transacting, and especially before acting on Lightning channels left open.\n\nThe guidance has been updated to reflect current conditions.\n\nhttp://start9.com/bip110",
+            "createdAt": "Sat Aug 08 22:21:22 +0000 2026",
+            "viewCount": 21098,
+            "metrics": {
+              "views": 21098,
+              "likes": 136,
+              "retweets": 23,
+              "replies": 19,
+              "quotes": 5,
+              "bookmarks": 14
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "咨询更新：链分裂正在进行中。请在交易前告知，特别是在对开放的闪电通道进行操作之前。\n\n该指南已更新以反映当前情况。\n\nhttp://start9.com/bip110",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-10T02:12:22.702Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2085188005544038583",
+            "relation": "quote",
+            "depth": 2,
+            "sourceTweetId": "2085188005544038583",
+            "author": {
+              "name": "Start9",
+              "handle": "start9labs",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1664305079061725184/VP3PsfOV_normal.jpg",
+              "isVerified": false
+            },
+            "content": "ADVISORY: nodes enforcing BIP-110 begin rejecting non-signaling blocks in ~3 days.\n\nA chain split is possible, which carries real risks for all sides.\n\nFor Lightning operators, certain protections exist only before a split. We recommend acting now.\n\nhttp://start9.com/bip110",
+            "createdAt": "Thu Aug 06 02:15:36 +0000 2026",
+            "viewCount": 75616,
+            "metrics": {
+              "views": 75616,
+              "likes": 490,
+              "retweets": 143,
+              "replies": 62,
+              "quotes": 31,
+              "bookmarks": 144
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "建议：执行 BIP-110 的节点将在大约 3 天内开始拒绝非信令区块。\n\n链条分裂是可能的，这给各方带来真正的风险。\n\n对于闪电网络运营商来说，某些保护措施仅在分裂之前存在。我们建议立即行动。\n\nhttp://start9.com/bip110",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-10T02:12:22.850Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2086609646035583332",
+          "pageLanguage": "en",
+          "capturedAt": "2026-08-10T02:12:22.249Z"
+        },
+        "createdAt": "2026-08-10T02:12:22.249Z",
+        "updatedAt": "2026-08-10T02:12:23.126Z"
+      }
+    },
+    {
+      "rank": 10,
+      "essenceScore": 5777,
+      "heatScore": 3079,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 3079
+      },
+      "sourceUrl": "https://x.com/weiwei882288/status/2086565195808424374",
+      "reason": "拆穿读卖「国産AI」：Sakana Fugu实为美系API编排，主权叙事与采购认知错位。",
+      "reasonEn": "Exposes “sovereign AI” hype: Sakana Fugu is multi-API orchestration, not indigenous C2.",
+      "metrics": {
+        "views": 107568,
+        "likes": 221,
+        "retweets": 134,
+        "replies": 26,
+        "quotes": 51,
+        "bookmarks": 50
+      },
+      "document": {
+        "id": "8f1bb210-8e11-4f51-a59c-b9e832409e8c",
+        "title": "SakanaのFuguといえば、マーケティングの売り文句として「",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2086565195808424374",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2086565195808424374",
+            "author": {
+              "name": "ZHW",
+              "handle": "weiwei882288",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1995035257486323712/fywFnDCu_normal.jpg",
+              "isVerified": false
+            },
+            "content": "SakanaのFuguといえば、マーケティングの売り文句として「Fable 5並みのモデル」と称しながら、実態としてはClaudeやGPTやGeminiなどのAPIを呼び出してそれらの出力を束ねるMulti Agent Orchestrationで、厳密には「ソブリンAI」とは全然言えない（当然だけど入出力はAPI経由ですべてアメリカのクローズモデルに頼っており、これらのAPIサービスが停止すれば使えなくなる）上に、SV界隈ではUltraのトークン消費量や遅延が馬鹿にならなくて使い物にならないと酷評されていた奴である。\n\nこんな基本的なことも調べずに、政府関係者が「データやシステムを外国に頼らず、自国で自律的に管理する『AI主権』を重視する政府の方針にも合致する」と本気で言っているとしたら、AIのことを何も分かっていないとしか言いようがないと思う。この調子じゃ、知らずうちにベンダーが裏でモデルを中国のKimiやQwenのオープンウェイトモデルに切り替えていたとしても気づかないだろう（ちなみにSakana AI自身が開発した別の日本特化モデル「Namazu」のベースにはDeepSeekのオープンウェイトモデルが使用されていた）。\n\nまた、この垢でも何回か述べているように、現在米中のAI競争が事実上エスニック中国人同士の競争関係の中で、このAIは開発者を日本人に限定しており、ある意味で国際的には能力面の厚みが微妙な人材プールへのアクセスを自ら強制しているに等しい行為。基盤となるモデル自体のコントロールを握っていないにもかかわらず、表層的な開発体制だけ国籍フィルターをかけるのは、安全保障の実効性よりも「国産」というパッケージングを優先した結果であり、ただの自己満足としか言えない。\n\n調達をする当の政府担当者がこのAI/ITリテラシーじゃ、自衛隊のAI-C2は開発に時間とお金をかけた割には、そこら辺のコンサルに騙されている日本企業のように、実戦では大して使い物にならないようなシステムしかできない事が、今から予想できてしまう。\n\nこの防衛省の調達案件だけでも、今の日本のAI産業が如何に閉鎖的な縁故関係と淀んだ情報空間の中だけで、ポジショントークと利害を循環させるだけの腐敗産業と化しているのかが分かるし、今の日本が如何にメタ認知（無知の知）が欠落した国になっているかが分かる出来事である。「市場のインセンティブ構造が腐ると人も企業も腐る」の最新事例だろう。まるで日清戦争の前、清朝の北洋艦隊の艦砲用に調達された砲弾に、火薬ではなく砂が混入していたエピソードを思い起こさせるような話である。\n\nこうした市場インセンティブの構造腐敗こそが、最も深刻な安全保障上の脅威になりえる事を他山の石として学ぶ事こそに価値があるように感じる。",
+            "createdAt": "Sun Aug 09 21:28:03 +0000 2026",
+            "viewCount": 53285,
+            "metrics": {
+              "views": 53285,
+              "likes": 473,
+              "retweets": 153,
+              "replies": 1,
+              "quotes": 27,
+              "bookmarks": 129
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "说到 Sakana 的 Fugu，营销口号是“类似于《神鬼寓言 5》的模型”，但实际上它是一个 Multi Agent，可以调用 Claude、GPT 和 Gemini 等 API 并捆绑它们的输出。严格来说，Orchestration根本不能称为“主权AI”（当然，所有的输入和输出都依赖于美国封闭的API模型，如果这些API服务被停止，它将变得无法使用），而且在SV社区中，Ultra的代币消耗和延迟非常可笑，被批评为无法使用。\n\n如果政府官员不调查这些基本问题，就严肃地说“这符合政府强调‘人工智能主权’，即数据和系统在本国内部自主管理，不依赖外国”的政策，我想只能说他们对人工智能一无所知。按照这个速度，你不会注意到供应商是否在幕后将模型切换为来自中国的 Kimi 或 Qwen 的开放重量模型。\n\n此外，正如我在本贴中多次提到的，当前中美之间的人工智能竞争实际上是华人之间的竞争，而这种人工智能仅限于日本开发者，这在某种意义上相当于强行进入国际上人才深度较弱的人才库。只在表面开发体系上应用国籍过滤，而无法控制底层模型本身，是优先考虑“国产”包装而不是安全有效性的结果，只能用自我满足来形容。\n\n如果负责采购的政府人员具备这种水平的AI/IT素养，我们已经可以预测，自卫队的AI-C2尽管花费了时间和金钱开发，也只能生产出一个在实战中没什么用的系统，就像那些被当地顾问欺骗的日本公司一样。\n\n仅防卫省的这个采购项目就说明了日本现在的人工智能产业由于裙带关系的封闭和信息空间的停滞而变成了一个只流通立场言论和利益的腐败产业，也是一个表明日本现在是一个缺乏元认知（无知的知识）的国家的事件。这是“当市场激励结构腐败时，个人和企业都腐败”的最新例子。这个故事让人想起抗日战争前的一段插曲，当时清朝北洋舰队的舰炮采购的炮弹不是火药而是沙子。\n\n我认为向其他人学习这种市场激励的结构性腐败可能构成最严重的安全威胁是有价值的。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-10T02:12:17.458Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2086543711480197248",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2086543711480197248",
+            "author": {
+              "name": "読売新聞オンライン",
+              "handle": "Yomiuri_Online",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2080136340981829632/-WfkcPCd_normal.jpg",
+              "isVerified": false
+            },
+            "content": "自衛隊指揮に国産ＡＩ、情報収集や分析担わせ迅速な意思決定…「サカナＡＩ」有力・中国製排除\nhttps://www.yomiuri.co.jp/politics/20260809-GYT1T00295/\n#政治",
+            "createdAt": "Sun Aug 09 20:02:41 +0000 2026",
+            "viewCount": 107568,
+            "metrics": {
+              "views": 107568,
+              "likes": 221,
+              "retweets": 134,
+              "replies": 26,
+              "quotes": 51,
+              "bookmarks": 50
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "国产AI指挥自卫队，负责信息收集分析、快速决策……“坂名AI”强大，国产被淘汰\nhttps://www.yomiuri.co.jp/politics/20260809-GYT1T00295/\n#政治",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-10T02:12:16.918Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2086565195808424374",
+          "pageLanguage": "en",
+          "capturedAt": "2026-08-10T02:12:15.840Z"
+        },
+        "createdAt": "2026-08-10T02:12:15.840Z",
+        "updatedAt": "2026-08-10T02:12:17.459Z"
+      }
+    }
+  ]
+}
