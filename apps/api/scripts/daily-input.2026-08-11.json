@@ -1,0 +1,67 @@
+{
+  "date": "2026-08-11",
+  "title": "每日 X 精华引用榜",
+  "titleEn": "Daily Quote Essence on X",
+  "items": [
+    {
+      "url": "https://x.com/SethDillon/status/2086983889394741374",
+      "reason": "用安全拒答剧本完美讽刺新奥尔良用AI接911的荒谬",
+      "reasonEn": "Satirical script of an AI 911 operator refusing a gun threat perfectly dunks the New Orleans chatbot news"
+    },
+    {
+      "url": "https://x.com/NickADobos/status/2086957709258346819",
+      "reason": "把Claude隐形水印从合规新闻 reframed 成「污染我的代码库」的开发者怒火",
+      "reasonEn": "Reframes Claude’s invisible text watermarks as a diabolical precedent that poisons developers’ codebases"
+    },
+    {
+      "url": "https://x.com/johnennis/status/2086941320422007149",
+      "reason": "用「工具无关、质量才重要」与价值论类比，把水印争论拉到更深一层",
+      "reasonEn": "Elevates the watermark debate: tools are irrelevant, only work quality matters—AI labeling as adjacent to a labor theory of value"
+    },
+    {
+      "url": "https://x.com/JonahLupton/status/2086979724970963342",
+      "reason": "借黄仁勋$5000亿AI基建融资帖，用超算财团与渗透率数据狠怼空头",
+      "reasonEn": "Quotes Jensen’s $500B AI infra push to dunk bears with hyperscaler growth, 3% penetration, and multi-year spend runway"
+    },
+    {
+      "url": "https://x.com/mkratsios47/status/2086955377250152800",
+      "reason": "白宫科技政策主任引用扎克伯格开源权重，把Muse Glimmer框进美国AI Action Plan",
+      "reasonEn": "WH OSTP director quotes Zuck’s Muse Glimmer open-weights drop and frames it as AI Action Plan leadership"
+    },
+    {
+      "url": "https://x.com/MiniMax_AI/status/2086940119324565748",
+      "reason": "Redis作者antirez给MiniMax H3写Metal推理引擎，官方点题开源权重的飞轮效应",
+      "reasonEn": "Official QT of antirez shipping a Metal H3 engine: open weights recruit talent you cannot hire"
+    },
+    {
+      "url": "https://x.com/dhh/status/2086837317046538247",
+      "reason": "用「龙虾太黄油、免费贡献太多」犀利回击开源维护者抱怨PR泛滥",
+      "reasonEn": "Sharp dunk on OSS maintainers complaining about too many free agent PRs—steak too juicy, contributions too plentiful"
+    },
+    {
+      "url": "https://x.com/dotey/status/2086902418139128225",
+      "reason": "把Jarred「慢跑时让Claude冲黎曼猜想」译解成中文科技圈可读的数学史与多智能体过程",
+      "reasonEn": "Chinese deep-dive QT of Jarred’s Riemann run: 80-year math history plus Claude’s multi-agent research process"
+    },
+    {
+      "url": "https://x.com/FinanceLancelot/status/2086951698648477722",
+      "reason": "用74年新低的消费者信心硬怼Bessent「K型经济已结束」的乐观叙事",
+      "reasonEn": "Counters Bessent’s “K-shaped economy is over” with consumer sentiment at a 74-year low amid market ATHs"
+    },
+    {
+      "url": "https://x.com/Matt_Hougan/status/2086872308984246478",
+      "reason": "Bitwise CIO引用自身专访，用四条硬信号给出年末BTC显著上行的判断",
+      "reasonEn": "Bitwise CIO QT of his own interview: bad news no longer sells, ETF inflows, OG buying, Treasury support"
+    },
+    {
+      "url": "https://x.com/geekbb/status/2086780918220632142",
+      "reason": "引用Pi极简四工具agent，给出VPS/OpenWrt/macOS全场景的中文实战栈",
+      "reasonEn": "Chinese practitioner QT of Pi’s four-tool agent, mapping a full VPS/router/macOS stack with Grok+DeepSeek"
+    },
+    {
+      "url": "https://x.com/Grummz/status/2086949641736827096",
+      "reason": "资深游戏制作人引用Halo反编译项目：LLM可复活几乎所有老游戏",
+      "reasonEn": "Veteran game producer QT of Halo LLM decompilation: every old game can now be revived for preservation"
+    }
+  ]
+}

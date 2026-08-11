@@ -1,0 +1,1624 @@
+{
+  "date": "2026-08-11",
+  "title": "每日 X 精华引用榜",
+  "titleEn": "Daily Quote Essence on X",
+  "generatedAt": "2026-08-11T02:25:48.767Z",
+  "entries": [
+    {
+      "rank": 1,
+      "essenceScore": 196678,
+      "heatScore": 112105,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 112105
+      },
+      "sourceUrl": "https://x.com/mkratsios47/status/2086955377250152800",
+      "reason": "白宫科技政策主任引用扎克伯格开源权重，把Muse Glimmer框进美国AI Action Plan",
+      "reasonEn": "WH OSTP director quotes Zuck’s Muse Glimmer open-weights drop and frames it as AI Action Plan leadership",
+      "metrics": {
+        "views": 3345963,
+        "likes": 26541,
+        "retweets": 2274,
+        "replies": 1456,
+        "quotes": 1123,
+        "bookmarks": 2771
+      },
+      "document": {
+        "id": "4183533f-cab1-41be-9305-9a58e0466b5d",
+        "title": "Open-weight models put American ",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2086955377250152800",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2086955377250152800",
+            "author": {
+              "name": "Director Michael Kratsios",
+              "handle": "mkratsios47",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2036415476335833088/WPlUcJxT_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Open-weight models put American AI innovation directly into the hands of developers, researchers, and startups. This is exactly the kind of leadership @POTUS's AI Action Plan calls for, and we're excited to see labs across the U.S. ecosystem continuing to invest in open, accessible AI.",
+            "createdAt": "Mon Aug 10 23:18:30 +0000 2026",
+            "viewCount": 67604,
+            "metrics": {
+              "views": 67604,
+              "likes": 641,
+              "retweets": 93,
+              "replies": 22,
+              "quotes": 6,
+              "bookmarks": 57
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "开放权重模型将美国的人工智能创新直接交到开发人员、研究人员和初创公司手中。这正是 @POTUS 的人工智能行动计划所呼吁的领导力，我们很高兴看到整个美国生态系统的实验室继续投资于开放、可访问的人工智能。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-11T02:25:18.847Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2086755195535413696",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2086755195535413696",
+            "author": {
+              "name": "Mark Zuckerberg",
+              "handle": "finkd",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/77846223/profile_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Today we're also opening the weights for Muse Glimmer, a great 30B parameter dense model that can run locally. Soon we'll also release the weights for Muse Spark 1.2, our latest foundation model. Meta is a strong supporter of open source and I'm proud of these releases. Congrats to @alexandr_wang and the MSL team for all your great work on these models.",
+            "createdAt": "Mon Aug 10 10:03:03 +0000 2026",
+            "viewCount": 3345963,
+            "metrics": {
+              "views": 3345963,
+              "likes": 26541,
+              "retweets": 2274,
+              "replies": 1456,
+              "quotes": 1123,
+              "bookmarks": 2771
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "今天，我们还开放了 Muse Glimmer 的权重，这是一个可以在本地运行的出色的 30B 参数密集模型。很快我们还将发布最新基础模型 Muse Spark 1.2 的权重。 Meta 是开源的坚定支持者，我为这些版本感到自豪。祝贺 @alexandr_wang 和 MSL 团队在这些模型上所做的一切出色工作。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-11T02:25:18.833Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2086955377250152800",
+          "pageLanguage": "en",
+          "capturedAt": "2026-08-11T02:25:18.647Z"
+        },
+        "createdAt": "2026-08-11T02:25:18.647Z",
+        "updatedAt": "2026-08-11T02:25:18.847Z"
+      }
+    },
+    {
+      "rank": 2,
+      "essenceScore": 162152,
+      "heatScore": 76485,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 76485
+      },
+      "sourceUrl": "https://x.com/johnennis/status/2086941320422007149",
+      "reason": "用「工具无关、质量才重要」与价值论类比，把水印争论拉到更深一层",
+      "reasonEn": "Elevates the watermark debate: tools are irrelevant, only work quality matters—AI labeling as adjacent to a labor theory of value",
+      "metrics": {
+        "views": 2183778,
+        "likes": 13639,
+        "retweets": 1037,
+        "replies": 648,
+        "quotes": 647,
+        "bookmarks": 6411
+      },
+      "document": {
+        "id": "5c446bc1-5632-4736-8487-cc0c73a983f0",
+        "title": "Someone asked me why I think thi",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2086941320422007149",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2086941320422007149",
+            "author": {
+              "name": "John Ennis",
+              "handle": "johnennis",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2033323946540425216/nV2ugXMd_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Someone asked me why I think this is ridiculous, and here is my answer:\n\nBecause the tool used to accomplish a task is irrelevant\n\nWhat matters is the quality of the work\n\nThe idea that AI work needs to be distinguished from human work is adjacent to the marxist theory of value\n\nWhen someone digs a ditch in your yard, do you care if they do it by hand or use a machine?\n\nOr do you only care that they do the job properly?\n\nThe problem with Anthropic is that they do not see machines as tools to be used by humans\n\nThey think in their kooky cult that they are making a new type of life",
+            "createdAt": "Mon Aug 10 22:22:38 +0000 2026",
+            "viewCount": 49829,
+            "metrics": {
+              "views": 49829,
+              "likes": 629,
+              "retweets": 59,
+              "replies": 71,
+              "quotes": 9,
+              "bookmarks": 101
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "有人问我为什么觉得这很荒谬，我的回答是：\n\n因为用于完成任务的工具无关紧要\n\n重要的是工作的质量\n\n人工智能工作需要区别于人类工作的观点与马克思主义价值论相邻\n\n当有人在你的院子里挖沟渠时，你关心他们是手工挖还是用机器挖？\n\n或者你只关心他们是否正确完成工作？\n\nAnthropic 的问题在于他们不认为机器是人类使用的工具\n\n他们认为在他们古怪的崇拜中他们正在创造一种新的生活",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-11T02:25:12.696Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2086922991921664307",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2086922991921664307",
+            "author": {
+              "name": "NIK",
+              "handle": "ns123abc",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2048822563821035520/7nxCFEnk_normal.jpg",
+              "isVerified": false
+            },
+            "content": "🚨 JUST IN: Claude models will now have invisible watermarks embedded in ALL text, and ALL metadata attached to files…",
+            "createdAt": "Mon Aug 10 21:09:49 +0000 2026",
+            "viewCount": 2183778,
+            "metrics": {
+              "views": 2183778,
+              "likes": 13639,
+              "retweets": 1037,
+              "replies": 648,
+              "quotes": 647,
+              "bookmarks": 6411
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HPY9ZnHXwAEX0LQ.jpg",
+              "https://pbs.twimg.com/media/HPY9ZnIW0AAOdgP.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "🚨 刚刚：克劳德模型现在将在所有文本中嵌入不可见水印，并将所有元数据附加到文件中......",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-11T02:25:12.289Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2086941320422007149",
+          "pageLanguage": "en",
+          "capturedAt": "2026-08-11T02:25:12.112Z"
+        },
+        "createdAt": "2026-08-11T02:25:12.112Z",
+        "updatedAt": "2026-08-11T02:25:12.697Z"
+      }
+    },
+    {
+      "rank": 3,
+      "essenceScore": 158966,
+      "heatScore": 88017,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 88017
+      },
+      "sourceUrl": "https://x.com/SethDillon/status/2086983889394741374",
+      "reason": "用安全拒答剧本完美讽刺新奥尔良用AI接911的荒谬",
+      "reasonEn": "Satirical script of an AI 911 operator refusing a gun threat perfectly dunks the New Orleans chatbot news",
+      "metrics": {
+        "views": 4197226,
+        "likes": 1307,
+        "retweets": 214,
+        "replies": 274,
+        "quotes": 389,
+        "bookmarks": 204
+      },
+      "document": {
+        "id": "0f7c7066-9abc-4bcb-9782-ad633fc2957b",
+        "title": "CALLER: There's someone in my ho",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2086983889394741374",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2086983889394741374",
+            "author": {
+              "name": "Seth Dillon",
+              "handle": "SethDillon",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1940878673210445824/82Pw3HHs_normal.jpg",
+              "isVerified": false
+            },
+            "content": "CALLER: There's someone in my house. He has a gun. He said he’s going to kill me. Please send someone!\n\nAI OPERATOR: I’m sorry, but I can’t participate in conversations involving threats, weapons, or graphic violence. If you or someone else may be in immediate danger, you should immediately contact your local emergency services.",
+            "createdAt": "Tue Aug 11 01:11:48 +0000 2026",
+            "viewCount": 17675,
+            "metrics": {
+              "views": 17675,
+              "likes": 285,
+              "retweets": 24,
+              "replies": 11,
+              "quotes": 0,
+              "bookmarks": 1
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "来电者：我家有人。他有枪。他说他要杀了我。请派人来！\n\nAI 操作员：抱歉，我无法参与涉及威胁、武器或暴力画面的对话。如果您或其他人可能面临直接危险，您应该立即联系当地的紧急服务部门。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-11T02:25:07.520Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2086617031009239516",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2086617031009239516",
+            "author": {
+              "name": "Polymarket",
+              "handle": "Polymarket",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2005664281002491904/bz2ZO_nU_normal.jpg",
+              "isVerified": false
+            },
+            "content": "JUST IN: New Orleans replaces some 911 operators with AI chatbots.",
+            "createdAt": "Mon Aug 10 00:54:02 +0000 2026",
+            "viewCount": 4197226,
+            "metrics": {
+              "views": 4197226,
+              "likes": 1307,
+              "retweets": 214,
+              "replies": 274,
+              "quotes": 389,
+              "bookmarks": 204
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "刚刚发布：新奥尔良用人工智能聊天机器人取代了一些 911 接线员。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-11T02:25:07.097Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2086983889394741374",
+          "pageLanguage": "en",
+          "capturedAt": "2026-08-11T02:25:06.568Z"
+        },
+        "createdAt": "2026-08-11T02:25:06.568Z",
+        "updatedAt": "2026-08-11T02:25:07.520Z"
+      }
+    },
+    {
+      "rank": 4,
+      "essenceScore": 102759,
+      "heatScore": 47795,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 47795
+      },
+      "sourceUrl": "https://x.com/NickADobos/status/2086957709258346819",
+      "reason": "把Claude隐形水印从合规新闻 reframed 成「污染我的代码库」的开发者怒火",
+      "reasonEn": "Reframes Claude’s invisible text watermarks as a diabolical precedent that poisons developers’ codebases",
+      "metrics": {
+        "views": 1893643,
+        "likes": 3003,
+        "retweets": 249,
+        "replies": 662,
+        "quotes": 506,
+        "bookmarks": 1665
+      },
+      "document": {
+        "id": "d9fcea11-b9d1-41b9-a4cd-d57b7e563e46",
+        "title": "Claude adding invisible watermar",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2086957709258346819",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2086957709258346819",
+            "author": {
+              "name": "Nick Dobos",
+              "handle": "NickADobos",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1489416790316748804/iXxGy6-B_normal.png",
+              "isVerified": false
+            },
+            "content": "Claude adding invisible watermarks?\ninside MY codebase???\ntotal bullshit\n\nDiabolical precedent to be setting\n\nWhat tf are we doing here?",
+            "createdAt": "Mon Aug 10 23:27:46 +0000 2026",
+            "viewCount": 11928,
+            "metrics": {
+              "views": 11928,
+              "likes": 175,
+              "retweets": 6,
+              "replies": 16,
+              "quotes": 2,
+              "bookmarks": 15
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HPZc-j9a8AAsfzP.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "克劳德添加隐形水印？\n在我的代码库中？？？\n完全是胡说八道\n\n将开创邪恶的先例\n\n我们在这里做什么？",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-11T02:25:10.122Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2086898041882030353",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2086898041882030353",
+            "author": {
+              "name": "M1",
+              "handle": "M1Astra",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1923483967635795968/LKZbj2ff_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Anthropic says new Claude models will embed invisible watermarks in all generated text, everywhere Claude is offered.\n\nThe watermark is part of the text, it isn't metadata: \"it will travel with the text when it's copied and pasted elsewhere, and may persist through some editing.\"\n\nThis starts with models launched on or after August 2, 2026, under an EU AI Act code Anthropic signed. Anthropic is still working on adding it to current models. The rollout is worldwide.",
+            "createdAt": "Mon Aug 10 19:30:40 +0000 2026",
+            "viewCount": 1893643,
+            "metrics": {
+              "views": 1893643,
+              "likes": 3003,
+              "retweets": 249,
+              "replies": 662,
+              "quotes": 506,
+              "bookmarks": 1665
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HPYmOXDWgAAFpIw.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "Anthropic 表示，新的 Claude 模型将在所有提供 Claude 的地方的所有生成文本中嵌入隐形水印。\n\n水印是文本的一部分，而不是元数据：“当文本被复制并粘贴到其他地方时，它会与文本一起移动，并且可能通过一些编辑而保留下来。”\n\n首先是根据签署的欧盟人工智能法案代码 Anthropic 在 2026 年 8 月 2 日或之后推出的模型。 Anthropic 仍在致力于将其添加到当前模型中。此次推广是在全球范围内进行的。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-11T02:25:09.510Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2086957709258346819",
+          "pageLanguage": "en",
+          "capturedAt": "2026-08-11T02:25:09.312Z"
+        },
+        "createdAt": "2026-08-11T02:25:09.312Z",
+        "updatedAt": "2026-08-11T02:25:10.123Z"
+      }
+    },
+    {
+      "rank": 5,
+      "essenceScore": 85834,
+      "heatScore": 43512,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 43512
+      },
+      "sourceUrl": "https://x.com/JonahLupton/status/2086979724970963342",
+      "reason": "借黄仁勋$5000亿AI基建融资帖，用超算财团与渗透率数据狠怼空头",
+      "reasonEn": "Quotes Jensen’s $500B AI infra push to dunk bears with hyperscaler growth, 3% penetration, and multi-year spend runway",
+      "metrics": {
+        "views": 1306104,
+        "likes": 7395,
+        "retweets": 969,
+        "replies": 492,
+        "quotes": 444,
+        "bookmarks": 2386
+      },
+      "document": {
+        "id": "b13006a6-c21a-4e9b-8999-2293be64bf5a",
+        "title": "Let me get this straight… 7 of t",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2086979724970963342",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2086979724970963342",
+            "author": {
+              "name": "Jonah Lupton",
+              "handle": "JonahLupton",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2059018722522914816/GrsQ6pC__normal.jpg",
+              "isVerified": false
+            },
+            "content": "Let me get this straight… 7 of the biggest, smartest and most powerful companies in the world are coming together to finance $500 billion of ai infrastructure and some of you are bearish 🤣\n\ncc:\nNvidia\nBlackrock\nApollo\nGoldman Sachs\nKKR\nBlackstone\nBrookfield\n\nThis is just the beginning… get ready for trillions of ai infrastructure spending over the next 5-10 years.\n\nJassy says AWS is going to $1+ trillion in revs.\n\nBen Horowitz says we’re only at 3% penetration.\n\nRobots and robotaxis aren’t even here yet.\n\nHyperscalers are growing ~50% and telling us that breakeven on capex is 3 years or less.\n\nHyperscalers are under-earning by 50% or more.\n\nLots of contracts that were signed 2-3 years ago are about to renew at much higher prices with much higher EBIT margins.\n\nWait until we see the productivity gains, margin expansion and EPS acceleration.\n\nI’m glad lots of people are still bearish… if everyone was already bullish we’d have no new buyers 😎",
+            "createdAt": "Tue Aug 11 00:55:15 +0000 2026",
+            "viewCount": 26226,
+            "metrics": {
+              "views": 26226,
+              "likes": 218,
+              "retweets": 17,
+              "replies": 26,
+              "quotes": 2,
+              "bookmarks": 32
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "让我说清楚吧……世界上最大、最聪明、最强大的 7 家公司正在联合起来为 5000 亿美元的人工智能基础设施提供资金，而你们中的一些人持悲观态度 🤣\n\n抄送：\n英伟达\n贝莱德\n阿波罗\n高盛\nKKR\n黑石\n布鲁克菲尔德\n\n这仅仅是开始……为未来 5-10 年数万亿的人工智能基础设施支出做好准备。\n\nJassy 表示，AWS 的营收将达到 1 万亿美元以上。\n\nBen Horowitz 表示我们的渗透率只有 3%。\n\n机器人和机器人出租车还没有出现。\n\n超大规模企业的增长率约为 50%，这告诉我们资本支出的盈亏平衡时间为 3 年或更短。\n\n超大规模企业的收入低于 50% 或更多。\n\n许多两三年前签订的合同即将以更高的价格续签，息税前利润率也更高。\n\n等到我们看到生产率提高、利润率扩张和每股收益加速。\n\n我很高兴很多人仍然看跌……如果每个人都看涨，我们就不会有新买家了😎",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-11T02:25:16.393Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2086934705207959965",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2086934705207959965",
+            "author": {
+              "name": "Jensen Huang",
+              "handle": "JensenHuang",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2080613261674962944/OMXX4RJ3_normal.jpg",
+              "isVerified": false
+            },
+            "content": "",
+            "createdAt": "Mon Aug 10 21:56:21 +0000 2026",
+            "viewCount": 1306104,
+            "metrics": {
+              "views": 1306104,
+              "likes": 7395,
+              "retweets": 969,
+              "replies": 492,
+              "quotes": 444,
+              "bookmarks": 2386
+            },
+            "media": [],
+            "article": {
+              "title": "NVIDIA AI Factory Compute Is Becoming an Investable Asset Class",
+              "previewText": "NVIDIA AI Factory Compute Is Becoming an Investable Asset Class\nToday, we announced partnerships with Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs and KKR to establish independent",
+              "coverUrl": "",
+              "blocks": [
+                {
+                  "type": "unstyled",
+                  "text": "NVIDIA AI Factory Compute Is Becoming an Investable Asset Class"
+                },
+                {
+                  "type": "unstyled",
+                  "text": "Today, we announced partnerships with Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs and KKR to establish independent financing platforms designed to mobilize over $500 billion of third-party capital to support the buildout of AI infrastructure over time."
+                },
+                {
+                  "type": "unstyled",
+                  "text": "This is a major milestone for NVIDIA and the AI industry. We have moved from an era in which companies bought chips and built data centers project by project to one in which AI factories can be financed as productive infrastructure — with repeatable platforms, long-term institutional capital and a diverse customer base that uses compute to create revenue."
+                },
+                {
+                  "type": "unstyled",
+                  "text": "AI has reached an inflection point. It is moving from research into production. AI is creating real value, and the infrastructure behind it is becoming one of the world’s most productive assets. In AI, compute is revenue."
+                },
+                {
+                  "type": "unstyled",
+                  "text": "A New Infrastructure Asset"
+                },
+                {
+                  "type": "unstyled",
+                  "text": "NVIDIA compute is not just a chip. It is a complete AI factory platform including accelerated computing, networking, systems software, AI frameworks and a global developer ecosystem."
+                },
+                {
+                  "type": "unstyled",
+                  "text": "NVIDIA DSX AI factories can run the world’s broadest range of AI models, modalities and algorithms — language, vision, speech, biology, physical AI and robotics. One NVIDIA AI factory can serve many customers and many workloads. That makes it flexible and fungible."
+                },
+                {
+                  "type": "unstyled",
+                  "text": "It is also built on a globally adopted architecture used across every major cloud, and by systems makers and enterprises around the world. When needs change, the factory can be used by another customer, another cloud or another operator. This broad ecosystem gives NVIDIA compute a deep market of potential users and offtakers, helping protect residual value."
+                },
+                {
+                  "type": "unstyled",
+                  "text": "CUDA makes the factory better over time. Every generation of NVIDIA software improves the performance, efficiency and total cost of ownership of already- installed infrastructure. The hardware does not stand still: software innovation allows an AI factory to produce more intelligence at lower cost throughout its life, extending its useful economic value."
+                },
+                {
+                  "type": "unstyled",
+                  "text": "NVIDIA A100 is a powerful example. NVIDIA introduced the Ampere-based A100 in 2020, and six years later, it remains in active commercial use for AI training, fine-tuning, inference and high-performance computing. Customers continue to commit capacity for multi-year deployments, extending A100’s economic life toward a decade."
+                },
+                {
+                  "type": "unstyled",
+                  "text": "The market is also demonstrating the durability of NVIDIA compute economics. One-year H100 rental pricing rose from about $1.70 per GPU-hour in October 2025 to about $2.35 per GPU-hour in March 2026. Cross-provider on-demand median pricing rose from roughly $2.00 per GPU-hour in October 2025 to $2.70 in June 2026. Blackwell capacity commands a premium, with reported B200 cloud rates spanning approximately $5.30 to $7.05 per GPU-hour."
+                },
+                {
+                  "type": "unstyled",
+                  "text": "That is what makes NVIDIA AI factories different. Their value is not fixed at installation: CUDA continuously improves their output; the installed base remains productive well beyond its initial depreciation period; and the same standard architecture serves a deep, growing global market of AI workloads."
+                },
+                {
+                  "type": "unstyled",
+                  "text": "These are the characteristics of an investable infrastructure asset: it produces revenue, serves a broad market, improves in performance over time and can be redeployed."
+                },
+                {
+                  "type": "unstyled",
+                  "text": "Bringing Capital to AI Factories"
+                },
+                {
+                  "type": "unstyled",
+                  "text": "The demand for AI infrastructure is extraordinary. But access to capital is uneven. Many great AI companies, enterprises and AI clouds have demand for compute but do not yet have access to financing at the scale or cost required to build quickly."
+                },
+                {
+                  "type": "unstyled",
+                  "text": "That is why we are partnering with the world’s leading long-term capital providers."
+                },
+                {
+                  "type": "unstyled",
+                  "text": "Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs and KKR are also among the world’s leading infrastructure investors, with deep expertise in underwriting long-lived, productive assets. Together, we are creating repeatable financing platforms to help the AI ecosystem build the factories it needs."
+                },
+                {
+                  "type": "unstyled",
+                  "text": "The platforms are designed to help qualified AI labs, enterprises and AI clouds access AI-factory infrastructure at scale. The more than $500 billion figure represents aggregate third-party capital that these platforms are designed to mobilize over time — the capital is not NVIDIA revenue, a single fund or a commitment to a single customer."
+                },
+                {
+                  "type": "unstyled",
+                  "text": "The financial institutions will independently assess each opportunity — the customer, demand, utilization, cash flow and residual value. NVIDIA provides the AI factory platform. The financial institutions provide long-term capital and financing expertise."
+                },
+                {
+                  "type": "unstyled",
+                  "text": "The Important Questions"
+                },
+                {
+                  "type": "unstyled",
+                  "text": "Is this circular financing?"
+                },
+                {
+                  "type": "unstyled",
+                  "text": "This initiative is designed to address that concern. We are bringing independent, long-term institutional capital into the AI infrastructure market."
+                },
+                {
+                  "type": "unstyled",
+                  "text": "The demand is real: it comes from frontier AI labs, AI-native startups, enterprises, cloud providers and countries building AI services. The capital providers independently underwrite each project — including the customer, demand, utilization, cash flow and residual value. NVIDIA provides the platform; the investors make independent financing decisions."
+                },
+                {
+                  "type": "unstyled",
+                  "text": "This is the beginning of an open capital market for AI infrastructure."
+                },
+                {
+                  "type": "unstyled",
+                  "text": "Why would NVIDIA support financing?"
+                },
+                {
+                  "type": "unstyled",
+                  "text": "In some cases, NVIDIA may provide a residual-value support mechanism for up to 25% of an opportunity, assessed carefully on a project-by-project basis. That support is limited, residual-value based and designed to complement — not replace — independent underwriting."
+                },
+                {
+                  "type": "unstyled",
+                  "text": "This is substantially lower than other compute-financing arrangements. NVIDIA can provide support because NVIDIA compute is unique: it is fungible, universally adopted, software-upgradable and redeployable across a large ecosystem of customers."
+                },
+                {
+                  "type": "unstyled",
+                  "text": "Our role is to help unlock a very large pool of independent capital while maintaining disciplined risk exposure."
+                },
+                {
+                  "type": "unstyled",
+                  "text": "Can the market absorb this capacity?"
+                },
+                {
+                  "type": "unstyled",
+                  "text": "The question is not whether we are building data centers. The question is whether we are building productive AI factories."
+                },
+                {
+                  "type": "unstyled",
+                  "text": "An AI factory turns energy and data into valuable intelligence. Its customers are broad: frontier AI labs, AI clouds, enterprises and nations. They are building AI because it has become useful — doing valuable work across every industry."
+                },
+                {
+                  "type": "unstyled",
+                  "text": "There is discipline in the model. Each financing partner will independently evaluate demand, utilization, cash flow and residual value. Capacity will be built around real customer economics."
+                },
+                {
+                  "type": "unstyled",
+                  "text": "Where is the return on investment?"
+                },
+                {
+                  "type": "unstyled",
+                  "text": "The return is in the usefulness of AI."
+                },
+                {
+                  "type": "unstyled",
+                  "text": "Companies are using AI to write software, discover drugs, design products, serve customers, automate operations and build new services. AI factories make this possible. More compute creates better AI; better AI creates more usage; more usage creates more revenue; and more revenue drives more compute."
+                },
+                {
+                  "type": "unstyled",
+                  "text": "This is the virtuous cycle of the AI industrial revolution."
+                },
+                {
+                  "type": "unstyled",
+                  "text": "The Infrastructure of Intelligence"
+                },
+                {
+                  "type": "unstyled",
+                  "text": "Every industrial revolution has been built on infrastructure: electricity, transportation, communications and computing, with every buildout enabled by external financing."
+                },
+                {
+                  "type": "unstyled",
+                  "text": "AI factories are the infrastructure of the intelligence era."
+                },
+                {
+                  "type": "unstyled",
+                  "text": "With these partnerships, NVIDIA and the world’s leading financial institutions are creating a new way to finance the infrastructure that will power this industrial revolution. We will make AI factories more accessible to the companies, industries and nations building the future."
+                },
+                {
+                  "type": "unstyled",
+                  "text": "The age of AI is here. Together, we will build the infrastructure to power it."
+                }
+              ]
+            },
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "NVIDIA AI 工厂计算正在成为可投资的资产类别\n\nNVIDIA AI 工厂计算正在成为可投资的资产类别\n\n今天，我们宣布与 Apollo、BlackRock、Blackstone、Brookfield、Goldman Sachs 和 KKR 建立合作伙伴关系，建立独立的融资平台，旨在动员超过 5000 亿美元的第三方资本，以支持人工智能基础设施的建设。\n\n这是 NVIDIA 和 AI 行业的一个重要里程碑。我们已经从公司购买芯片并逐个项目建造数据中心的时代，转变为人工智能工厂可以作为生产性基础设施获得融资的时代——拥有可重复的平台、长期的机构资本和使用计算创造收入的多元化客户群。\n\n人工智能已经到了一个拐点。它正在从研究转向生产。人工智能正在创造真正的价值，其背后的基础设施正在成为世界上最具生产力的资产之一。在人工智能中，计算就是收入。\n\n新的基础设施资产\n\nNVIDIA 计算不仅仅是一块芯片。它是一个完整的人工智能工厂平台，包括加速计算、网络、系统软件、人工智能框架和全球开发者生态系统。\n\nNVIDIA DSX AI 工厂可以运行世界上最广泛的 AI 模型、模式和算法——语言、视觉、语音、生物学、物理 AI 和机器人。一座 NVIDIA AI 工厂可以为众多客户和大量工作负载提供服务。这使得它灵活且可替代。\n\n它还建立在全球采用的架构之上，该架构被世界各地的系统制造商和企业广泛使用，适用于所有主要云。当需求发生变化时，工厂可以由另一个客户、另一个云或另一个运营商使用。这一广泛的生态系统为 NVIDIA 计算提供了一个由潜在用户和承购商组成的深厚市场，有助于保护剩余价值。\n\n随着时间的推移，CUDA 使工厂变得更好。每一代 NVIDIA 软件都会提高已安装基础设施的性能、效率和总拥有成本。硬件不会停滞不前：软件创新使人工智能工厂能够在其整个生命周期中以更低的成本生产更多的智能，从而扩展其有用的经济价值。\n\nNVIDIA A100 就是一个有力的例子。 NVIDIA 于 2020 年推出了基于 Ampere 的 A100，六年后，它仍然活跃在人工智能训练、微调、推理和高性能计算的商业用途中。客户继续承诺多年部署的容量，将 A100 的经济寿命延长至十年。\n\n市场还证明了 NVIDIA 计算经济的持久性。一年期 H100 租赁价格从 2025 年 10 月的每 GPU 小时约 1.70 美元上涨到 2026 年 3 月的每 GPU 小时约 2.35 美元。跨提供商按需中位价格从 2025 年 10 月的每 GPU 小时约 2.00 美元上涨到 2026 年 6 月的 2.70 美元。Blackwell 容量溢价，据报道，B200 云费率约为 5.30 美元到 2.70 美元。每 GPU 小时 7.05 美元。\n\n这就是 NVIDIA AI 工厂的与众不同之处。它们的价值在安装时并不固定：CUDA 不断改进它们的输出；已安装的基础在其初始折旧期过后仍保持生产力；相同的标准架构服务于日益增长的全球人工智能工作负载市场。\n\n这些是可投资基础设施资产的特征：它产生收入、服务于广阔的市场、随着时间的推移提高性能并且可以重新部署。\n\n为人工智能工厂带来资本\n\n对人工智能基础设施的需求非常巨大。但获得资本的渠道并不均衡。许多伟大的人工智能公司、企业和人工智能云都有计算需求，但尚未获得快速构建所需规模或成本的融资。\n\n这就是我们与世界领先的长期资本提供商合作的原因。\n\n阿波罗、贝莱德、黑石、布鲁克菲尔德、高盛和 KKR 也是全球领先的基础设施投资者，在承保长期、生产性资产方面拥有深厚的专业知识。我们正在共同创建可重复的融资平台，以帮助人工智能生态系统建设其所需的工厂。\n\n这些平台旨在帮助合格的人工智能实验室、企业和人工智能云大规模访问人工智能工厂基础设施。超过 5000 亿美元的数字代表了这些平台随着时间的推移而设计的第三方资本总额——这些资本不是 NVIDIA 的收入、单一基金或对单一客户的承诺。\n\n金融机构将独立评估每个机会——客户、需求、利用率、现金流和残值。 NVIDIA提供AI工厂平台。金融机构提供长期资本和融资专业知识。\n\n重要问题\n\n这是循环融资吗？\n\n该举措旨在解决这一问题。我们正在将独立的长期机构资本引入人工智能基础设施市场。\n\n需求是真实的：它来自前沿人工智能实验室、人工智能原生初创公司、企业、云提供商和构建人工智能服务的国家。资本提供者独立承保每个项目——包括客户、需求、利用率、现金流和残值。 NVIDIA提供平台；投资者独立做出融资决策。\n\n这是人工智能基础设施开放资本市场的开始。\n\nNVIDIA为何要支持融资？\n\n在某些情况下，NVIDIA 可能会为高达 25% 的机会提供剩余价值支持机制，并根据每个项目进行仔细评估。这种支持是有限的，基于剩余价值，旨在补充（而不是取代）独立承保。\n\n这大大低于其他计算融资安排。 NVIDIA 可以提供支持，因为 NVIDIA 计算是独一无二的：它是可替代的、普遍采用的、软件可升级的，并且可在大型客户生态系统中重新部署。\n\n我们的职责是帮助释放大量独立资本，同时保持严格的风险敞口。\n\n市场能吸收这个产能吗？\n\n问题不在于我们是否正在建设数据中心。问题是我们是否正在建设高效的人工智能工厂。\n\n人工智能工厂将能源和数据转化为有价值的情报。其客户广泛：前沿人工智能实验室、人工智能云、企业和国家。他们正在构建人工智能，因为它变得有用——在每个行业中做有价值的工作。\n\n模型中有纪律。每个融资合作伙伴将独立评估需求、利用率、现金流和残值。能力将围绕真实的客户经济进行建设。\n\n投资回报在哪里？\n\n回报在于人工智能的实用性。\n\n公司正在使用人工智能来编写软件、发现药物、设计产品、服务客户、自动化运营和构建新服务。人工智能工厂使这成为可能。更多的计算创造更好的人工智能；更好的人工智能创造更多的使用；更多的使用创造更多的收入；更多的收入推动更多的计算。\n\n这就是AI产业革命的良性循环。\n\n情报基础设施\n\n每一次工业革命都建立在基础设施之上：电力、交通、通信和计算，每一次建设都需要外部融资来支持。\n\n人工智能工厂是智能时代的基础设施。\n\n通过这些合作伙伴关系，NVIDIA 和世界领先的金融机构正在创建一种新的方式来为推动这场工业革命的基础设施提供融资。我们将使人工智能工厂更容易被建设未来的公司、行业和国家所利用。\n\n人工智能时代已经到来。我们将共同建设为其提供动力的基础设施。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-11T02:25:16.915Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2086979724970963342",
+          "pageLanguage": "en",
+          "capturedAt": "2026-08-11T02:25:15.550Z"
+        },
+        "createdAt": "2026-08-11T02:25:15.550Z",
+        "updatedAt": "2026-08-11T02:25:16.916Z"
+      }
+    },
+    {
+      "rank": 6,
+      "essenceScore": 54059,
+      "heatScore": 17894,
+      "signals": {
+        "depth": 10,
+        "hasDunk": true,
+        "peakIndex": 5,
+        "peakHeat": 17894
+      },
+      "sourceUrl": "https://x.com/FinanceLancelot/status/2086951698648477722",
+      "reason": "用74年新低的消费者信心硬怼Bessent「K型经济已结束」的乐观叙事",
+      "reasonEn": "Counters Bessent’s “K-shaped economy is over” with consumer sentiment at a 74-year low amid market ATHs",
+      "metrics": {
+        "views": 742727,
+        "likes": 1508,
+        "retweets": 271,
+        "replies": 74,
+        "quotes": 18,
+        "bookmarks": 258
+      },
+      "document": {
+        "id": "c4f67d87-0084-476e-9883-233436f97d17",
+        "title": "🇺🇸 U.S. consumer sentiment has",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2086951698648477722",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2086951698648477722",
+            "author": {
+              "name": "Financelot",
+              "handle": "FinanceLancelot",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1838050042378137600/JzVVcKDX_normal.png",
+              "isVerified": false
+            },
+            "content": "🇺🇸 U.S. consumer sentiment has fallen to a 74 year low.\n\nConsumer sentiment is now worse than the depths of the 2020 lockdowns, the 2008 financial crisis and the 1980s inflation crisis when interest rates were 18%\n\nAll of this is happening while the stock market is at all time highs during what could be called one of the most controversial mid-term elections ever to be held.",
+            "createdAt": "Mon Aug 10 23:03:53 +0000 2026",
+            "viewCount": 33766,
+            "metrics": {
+              "views": 33766,
+              "likes": 641,
+              "retweets": 166,
+              "replies": 25,
+              "quotes": 17,
+              "bookmarks": 81
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HPZWWQSWoAAVzFn.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "🇺🇸美国消费者信心已跌至74年来的最低点。\n\n现在的消费者信心比 2020 年封锁、2008 年金融危机和 1980 年代通胀危机（当时利率为 18%）更糟糕\n\n所有这一切都发生在股市处于历史高位之际，这可能是有史以来最具争议的中期选举之一。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-11T02:25:39.675Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2085486468550557980",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2085486468550557980",
+            "author": {
+              "name": "Financelot",
+              "handle": "FinanceLancelot",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1838050042378137600/JzVVcKDX_normal.png",
+              "isVerified": false
+            },
+            "content": "Scott Bessent declared the K-shaped economy is over.\n\n\"I can say here definitively, the K-shaped economy is over\" adding he’s \"sick of hearing about it.\"",
+            "createdAt": "Thu Aug 06 22:01:35 +0000 2026",
+            "viewCount": 551924,
+            "metrics": {
+              "views": 551924,
+              "likes": 573,
+              "retweets": 93,
+              "replies": 127,
+              "quotes": 24,
+              "bookmarks": 139
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HO4yuFdXsAEUyME.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "斯科特·贝森特 (Scott Bessent) 宣称 K 型经济已经结束。\n\n“我可以在这里明确地说，K 型经济已经结束”，并补充说他“已经厌倦了听到这样的说法”。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-11T02:25:39.635Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2085481776160366772",
+            "relation": "quote",
+            "depth": 2,
+            "sourceTweetId": "2085481776160366772",
+            "author": {
+              "name": "Financelot",
+              "handle": "FinanceLancelot",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1838050042378137600/JzVVcKDX_normal.png",
+              "isVerified": false
+            },
+            "content": "U.S Treasury raised its Q3 government borrowing estimate to $739 billion, which will push the national debt over $40 trillion!\n\nThis is $68 billion more ​than it projected in May, 2026\n\nIn Q4, Treasury is expected to borrow an additional $628 billion, based ​on a year-end cash balance of $850 billion.",
+            "createdAt": "Thu Aug 06 21:42:56 +0000 2026",
+            "viewCount": 162782,
+            "metrics": {
+              "views": 162782,
+              "likes": 305,
+              "retweets": 79,
+              "replies": 29,
+              "quotes": 10,
+              "bookmarks": 38
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HPEddAJX0AArE3Y.jpg",
+              "https://pbs.twimg.com/media/HPEeirMXEAABSNL.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "美国财政部将第三季度政府借款预估上调至7390亿美元，这将使国债超过40万亿美元！\n\n这比 2026 年 5 月的预测多了 680 亿美元\n\n基于年终现金余额 8500 亿美元，财政部预计第四季度将额外借款 6280 亿美元。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-11T02:25:39.581Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2084489650639417364",
+            "relation": "quote",
+            "depth": 3,
+            "sourceTweetId": "2084489650639417364",
+            "author": {
+              "name": "Financelot",
+              "handle": "FinanceLancelot",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1838050042378137600/JzVVcKDX_normal.png",
+              "isVerified": false
+            },
+            "content": "🇺🇸 U.S. 30 year yield has broken out the wedge to the upside.\n\nThis is very concerning because the U.S. must roll over $9 trillion of short duration debt in 2026\n\nAs 🇯🇵 Japan is one of the largest holder of U.S. treasuries, its failure to halt the yen's devaluation against Dollar means an accelerated sale of U.S. treasuries.\n\nWe're now at the point where this becomes a systemic problem. As yields rise in the U.S. it entices Dollars to return home, draining liquidity from foreign markets and making Bank of Japan's control of their currency increasingly difficult.",
+            "createdAt": "Tue Aug 04 04:00:35 +0000 2026",
+            "viewCount": 612928,
+            "metrics": {
+              "views": 612928,
+              "likes": 888,
+              "retweets": 204,
+              "replies": 37,
+              "quotes": 20,
+              "bookmarks": 152
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HO2V_5-XMAAAmYK.png",
+              "https://pbs.twimg.com/media/HO2WUn0XwAAudeM.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "🇺🇸 美国30年期国债收益率已突破上行楔形。\n\n这非常令人担忧，因为美国必须在 2026 年展期 9 万亿美元的短期债务\n\n由于🇯🇵日本是美国国债的最大持有国之一，其未能阻止日元兑美元贬值意味着加速抛售美国国债。\n\n我们现在正处于这成为一个系统性问题的阶段。随着美国收益率上升，美元回流至本国，从而耗尽外国市场的流动性，并使日本央行控制本国货币变得越来越困难。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-11T02:25:39.669Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2083662764656951380",
+            "relation": "quote",
+            "depth": 4,
+            "sourceTweetId": "2083662764656951380",
+            "author": {
+              "name": "Financelot",
+              "handle": "FinanceLancelot",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1838050042378137600/JzVVcKDX_normal.png",
+              "isVerified": false
+            },
+            "content": "Scott Bessent says he's not concerned if the Japanese yen strengthens against the Dollar.\n\nThese comments come after US Treasury began intervening in currency markets last week in an attempt to prevent the Japanese yen from falling further.\n\nThe Japanese 10 year yield is at a critical decision point. Either it breaks the parabolic that has been in place since 2016 or it goes vertical from 2.8% to 4% in the next 30 days.",
+            "createdAt": "Sat Aug 01 21:14:50 +0000 2026",
+            "viewCount": 109621,
+            "metrics": {
+              "views": 109621,
+              "likes": 411,
+              "retweets": 72,
+              "replies": 48,
+              "quotes": 10,
+              "bookmarks": 87
+            },
+            "media": [
+              "https://pbs.twimg.com/amplify_video_thumb/2082952305507188736/img/uOvWj3pzyHT8tdaK.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "斯科特·贝森特表示，他并不担心日元兑美元是否走强。\n\n这些言论是在美国财政部上周开始干预货币市场以试图阻止日元进一步下跌之后发表的。\n\n日本10年期国债收益率正处于关键决策点。它要么打破自 2016 年以来一直存在的抛物线，要么在未来 30 天内从 2.8% 垂直上升至 4%。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-11T02:25:39.670Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2081954358845972817",
+            "relation": "quote",
+            "depth": 5,
+            "sourceTweetId": "2081954358845972817",
+            "author": {
+              "name": "Financelot",
+              "handle": "FinanceLancelot",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1838050042378137600/JzVVcKDX_normal.png",
+              "isVerified": false
+            },
+            "content": "Japan's 10 year yield is ready to explode higher from 2.8% to 4% over the next 30 days.\n\nThe entire market rally since 2016 has been driven by QE and the Japanese yen carry trade liquidity.\n\nNothing stops this train.",
+            "createdAt": "Tue Jul 28 04:06:14 +0000 2026",
+            "viewCount": 742727,
+            "metrics": {
+              "views": 742727,
+              "likes": 1508,
+              "retweets": 271,
+              "replies": 74,
+              "quotes": 18,
+              "bookmarks": 258
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HOSWajfWEAAJMlh.png"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "日本 10 年期国债收益率有望在未来 30 天内从 2.8% 飙升至 4%。\n\n2016年以来的整个市场上涨都是由量化宽松和日元套利交易流动性推动的。\n\n没有什么能阻止这列火车。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-11T02:25:39.711Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2078272299183100382",
+            "relation": "quote",
+            "depth": 6,
+            "sourceTweetId": "2078272299183100382",
+            "author": {
+              "name": "Financelot",
+              "handle": "FinanceLancelot",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1838050042378137600/JzVVcKDX_normal.png",
+              "isVerified": false
+            },
+            "content": "Japanese 🇯🇵 retail investors just bet $17B against the US dollar in anticipation of massive Bank of Japan (BoJ) intervention in the Yen in the coming weeks.\n\nJapan’s army of retail forex traders just made the largest collective bet against the Dollar - Yen ratio in nearly 20 years.\n\nNet short positions against the Dollar reached ¥2.79 trillion, roughly $17.2 billion, marking the highest level since late 2008. 🚨\n\nTo put that in perspective, this figure represents a more than a 4x increase since June.\n\nJapan's 10 year yield could spike from 2.7% to 4% in the next 45 days.\n\nIf Japan's interventions in the Yen are successful it collapses the Yen Carry Trade that has fueled the US stock market with cheap loans since 2016.\n\nWill it work or is this the beginning of a larger global sovereign debt crisis?",
+            "createdAt": "Sat Jul 18 00:15:03 +0000 2026",
+            "viewCount": 583123,
+            "metrics": {
+              "views": 583123,
+              "likes": 1990,
+              "retweets": 432,
+              "replies": 77,
+              "quotes": 48,
+              "bookmarks": 573
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HNeBYorW8AEcTfs.png"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "日本🇯🇵散户投资者刚刚押注 17B 美元兑美元，预计日本央行 (BoJ) 将在未来几周内对日元进行大规模干预。\n\n日本零售外汇交易员大军刚刚对美元兑日元比率进行了近 20 年来最大的集体押注。\n\n兑美元净空头头寸达到2.79万亿日元，约合172亿美元，创下2008年底以来的最高水平。🚨\n\n从长远来看，这个数字自 6 月份以来增长了 4 倍多。\n\n日本 10 年期国债收益率可能在未来 45 天内从 2.7% 飙升至 4%。\n\n如果日本对日元的干预成功，日元套利交易就会崩溃，而日元套利交易自 2016 年以来一直以廉价贷款推动美国股市。\n\n它会奏效吗，还是更大的全球主权债务危机的开始？",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-11T02:25:39.765Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2076951295210996034",
+            "relation": "quote",
+            "depth": 7,
+            "sourceTweetId": "2076951295210996034",
+            "author": {
+              "name": "Financelot",
+              "handle": "FinanceLancelot",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1838050042378137600/JzVVcKDX_normal.png",
+              "isVerified": false
+            },
+            "content": "\"I think people are underestimating the pace at which the Bank of Japan 🇯🇵 is going to end up tightening.\"\n\nWell... the parabolic puts Japan's 10 year yield from 2.75% to 4.0% in the next 45 days, so @AdamPosen could be right.\n\nRising yields defend currency depreciation, so if BoJ allows this sharp move to happen then goodbye Yen Carry Trade...😬\n\nThere's always a possibility Japan sacrifices their currency even further to Yen 180:1 USD to save U.S. markets though.\n\nEither way, this ends in a sovereign debt crisis & stock market crisis. The decision they have to make is if they want both at the same time.",
+            "createdAt": "Tue Jul 14 08:45:51 +0000 2026",
+            "viewCount": 402618,
+            "metrics": {
+              "views": 402618,
+              "likes": 1418,
+              "retweets": 241,
+              "replies": 37,
+              "quotes": 35,
+              "bookmarks": 429
+            },
+            "media": [
+              "https://pbs.twimg.com/amplify_video_thumb/2076948225060192256/img/1l7v7k0IZP95CvBd.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "“我认为人们低估了日本央行🇯🇵最终收紧政策的速度。”\n\n嗯......抛物线使日本 10 年期国债收益率在未来 45 天内从 2.75% 升至 4.0%，所以 @AdamPosen 可能是对的。\n\n收益率上升捍卫了货币贬值，因此，如果日本央行允许这种大幅波动发生，那么日元套利交易就再见了……😬\n\n不过，为了拯救美国市场，日本总有可能进一步牺牲本国货币至 180 日元：1 美元。\n\n无论哪种方式，这都会导致主权债务危机和股市危机。他们必须做出的决定是他们是否同时想要两者。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-11T02:25:39.637Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2072443515171148138",
+            "relation": "quote",
+            "depth": 8,
+            "sourceTweetId": "2072443515171148138",
+            "author": {
+              "name": "Financelot",
+              "handle": "FinanceLancelot",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1838050042378137600/JzVVcKDX_normal.png",
+              "isVerified": false
+            },
+            "content": "The Japanese 10 year yield has begun breaking out and is about to go vertical.\n\nThis is the crisis phase where it could go from 2.7% to 4% in the next 60 days.\n\nHow will the Bank of Japan respond?\nSelling U.S. Treasuries?",
+            "createdAt": "Wed Jul 01 22:13:32 +0000 2026",
+            "viewCount": 478580,
+            "metrics": {
+              "views": 478580,
+              "likes": 1354,
+              "retweets": 294,
+              "replies": 57,
+              "quotes": 32,
+              "bookmarks": 165
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HMLLZ-BXoAAC7zd.png"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "日本10年期国债收益率已经开始突破，即将垂直上升。\n\n这是危机阶段，未来 60 天内可能会从 2.7% 升至 4%。\n\n日本央行将如何应对？\n抛售美国国债？",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-11T02:25:39.875Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2066677487438856324",
+            "relation": "quote",
+            "depth": 9,
+            "sourceTweetId": "2066677487438856324",
+            "author": {
+              "name": "Financelot",
+              "handle": "FinanceLancelot",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1838050042378137600/JzVVcKDX_normal.png",
+              "isVerified": false
+            },
+            "content": "The Japanese Yen is pushing up against 160:1 USD again. Expecting a major intervention soon.\n\nMeanwhile the Japanese 10 year yield is about to go vertical to roughly 4% by September 2026.\n\nAt that point the parabolic is going so vertical it's technically going backward in time.",
+            "createdAt": "Tue Jun 16 00:21:24 +0000 2026",
+            "viewCount": 335547,
+            "metrics": {
+              "views": 335547,
+              "likes": 419,
+              "retweets": 66,
+              "replies": 20,
+              "quotes": 9,
+              "bookmarks": 50
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HK5QEL4XUAAHcp3.png"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "日元再次兑美元汇率160:1。预计很快就会有重大干预。\n\n与此同时，到 2026 年 9 月，日本 10 年期国债收益率将垂直升至 4% 左右。\n\n到那时，抛物线变得如此垂直，从技术上讲，时间已经倒退了。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-11T02:25:39.712Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2086951698648477722",
+          "pageLanguage": "en",
+          "capturedAt": "2026-08-11T02:25:38.633Z"
+        },
+        "createdAt": "2026-08-11T02:25:38.633Z",
+        "updatedAt": "2026-08-11T02:25:39.876Z"
+      }
+    },
+    {
+      "rank": 7,
+      "essenceScore": 33799,
+      "heatScore": 18527,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 18527
+      },
+      "sourceUrl": "https://x.com/dotey/status/2086902418139128225",
+      "reason": "把Jarred「慢跑时让Claude冲黎曼猜想」译解成中文科技圈可读的数学史与多智能体过程",
+      "reasonEn": "Chinese deep-dive QT of Jarred’s Riemann run: 80-year math history plus Claude’s multi-agent research process",
+      "metrics": {
+        "views": 649045,
+        "likes": 3316,
+        "retweets": 194,
+        "replies": 108,
+        "quotes": 92,
+        "bookmarks": 578
+      },
+      "document": {
+        "id": "0bd3818b-113e-42c0-baf0-3b75ab11efa0",
+        "title": "Anthropic 今天宣布，一个未公开的研究版 Claude ",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2086902418139128225",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2086902418139128225",
+            "author": {
+              "name": "宝玉",
+              "handle": "dotey",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/561086911561736192/6_g58vEs_normal.jpeg",
+              "isVerified": false
+            },
+            "content": "Anthropic 今天宣布，一个未公开的研究版 Claude 在尝试证明黎曼猜想的过程中，虽然没能证明猜想本身，却在一个相关问题上取得了重大突破：\n它把黎曼 ζ 函数的非平凡零点落在临界线上的已知比例下界，从 41.6% 提高到了 67.2%。\n\n黎曼猜想是数学界最著名的未解难题之一，1859 年提出，至今 167 年无人能证明或推翻。它的核心主张是：黎曼 ζ 函数的所有非平凡零点都落在复平面上一条特定的竖直线上，数学家称之为“临界线”。\n\n如果这个猜想成立，素数的分布就有了一种深层的规律性。这个问题列在克雷数学研究所的七大千禧年问题之中，悬赏 100 万美元。\n\n既然全面证明太难，数学家们退而求其次：\n能不能至少证明有多大比例的零点确实在这条线上？\n\n这个方向上的进展，过去 80 年是这样的：\n- 1942 年 Selberg 首次证明有正比例的零点在线上，但比例很小；\n- 1974 年 Levinson 证明至少三分之一；\n- 1989 年 Conrey 推到五分之二；\n- 此后又经历了几代数学家的努力，到 2020 年 Pratt 等人才把这个数字推到 41.7%。\n\n换句话说，从 33% 到 41.7%，人类花了将近 50 年。Claude 一步跳到 67.2%，跨度接近 26 个百分点，是这个问题历史上最大的一次单步提升。\n\nClaude 的发现建立在前人的工作之上。它结合了 Baluyot、Goldston、Suriajaya 和 Turnage-Butterbaugh 近年发表的一系列成果，以及数学家 Bombieri 在 2000 年的一篇论文。这些工作本身已经为突破铺好了路，而 Claude 找到了把它们拼在一起的方法。\n\nAnthropic 的两位数学家 Levent Alpöge 和 Ralph Furman 审查验证了 Claude 的证明，外部专家 Brian Conrey 和 Dan Goldston 也在短时间内审阅了论文。Claude 还用 Lean（一种形式化证明语言）写出了可机器验证的证明。\n\n过程本身和结果一样有故事。Anthropic 的一位员工 Jarred Sumner（不是数学家）在 Claude Code 中对 Claude 说了一句“认真试试黎曼猜想”，然后就把数学决策交给了模型。\n\nClaude 先生成了 650 个想法，全部失败。被鼓励再试一次后，它花了一天半时间协调大约 60 个子智能体（subagent），运行了 2400 条命令，写了数百个 Python 脚本。这些子智能体之间分工明确：2 个负责核心数学思路，13 个为它们提供想法，30 个尝试但未能提出新思路，13 个做验证，2 个帮忙写论文。\n\n整个过程中 Jarred 的参与基本限于给 Claude 打气，发的消息大多是“继续”和“相信自己”。\n\nAnthropic 说，这种鼓励似乎帮助 Claude 克服了“我真的能在这种级别的问题上有所推进吗”的自我怀疑。\n\n这已经是 Claude 今年第二次在数学领域搞出大新闻了。三周前，Anthropic 的数学家 Levent Alpöge 用 Claude Fable 5 找到了 Jacobian 猜想（Jacobian Conjecture）的反例，推翻了这个 87 年历史的代数几何猜想的一般形式。那次的反例简洁到人类数学家一天之内就能手动验证。\n\n两次事件有一个共同点：Claude 做的不是解题，而是原创性的数学研究，是在数学家们几十年没能推进的前沿问题上找到了新路径。\n\nAnthropic 也明确表示，Claude 使用的技术不太可能直接导向黎曼猜想的最终证明，但这个结果展示了 AI 模型在数学能力上的进步速度。\n\nAnthropic 公布了 Claude 的完整论文、Lean 形式化证明、简明证明笔记，以及 Claude 自己描述思路演化过程的附录，都可以在 Anthropic 官网的研究页面找到。",
+            "createdAt": "Mon Aug 10 19:48:03 +0000 2026",
+            "viewCount": 181490,
+            "metrics": {
+              "views": 181490,
+              "likes": 446,
+              "retweets": 70,
+              "replies": 47,
+              "quotes": 14,
+              "bookmarks": 223
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HPYqrY9WoAAnJBs.jpg"
+            ],
+            "translation": {
+              "provider": "none",
+              "status": "idle",
+              "language": "zh-CN",
+              "text": "",
+              "annotations": [],
+              "error": "",
+              "version": 0
+            }
+          },
+          {
+            "id": "2086869681785500011",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2086869681785500011",
+            "author": {
+              "name": "Jarred Sumner",
+              "handle": "jarredsumner",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1342417825483300864/Vz4ChOFG_normal.jpg",
+              "isVerified": false
+            },
+            "content": "8 days ago, while jogging, I asked Claude to solve the Riemann Hypothesis\n\nIt didn’t. 1.5 days later, it proved &gt;= 67% of the zeros are on the line (prev: 41.6%)\n\nStill not sure what that means, but some analytic number theorists seem excited\n\nhttps://www.anthropic.com/research/riemann-zeta",
+            "createdAt": "Mon Aug 10 17:37:58 +0000 2026",
+            "viewCount": 649045,
+            "metrics": {
+              "views": 649045,
+              "likes": 3316,
+              "retweets": 194,
+              "replies": 108,
+              "quotes": 92,
+              "bookmarks": 578
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "8天前，我慢跑时请克劳德解决黎曼猜想\n\n事实并非如此。 1.5 天后，证明 >= 67% 的零在线（之前：41.6%）\n\n仍然不确定这意味着什么，但一些分析数论学家似乎很兴奋\n\nhttps://www.anthropic.com/research/riemann-zeta",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-11T02:25:27.915Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2086902418139128225",
+          "pageLanguage": "en",
+          "capturedAt": "2026-08-11T02:25:27.735Z"
+        },
+        "createdAt": "2026-08-11T02:25:27.735Z",
+        "updatedAt": "2026-08-11T02:25:27.916Z"
+      }
+    },
+    {
+      "rank": 8,
+      "essenceScore": 30977,
+      "heatScore": 16426,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 16426
+      },
+      "sourceUrl": "https://x.com/Grummz/status/2086949641736827096",
+      "reason": "资深游戏制作人引用Halo反编译项目：LLM可复活几乎所有老游戏",
+      "reasonEn": "Veteran game producer QT of Halo LLM decompilation: every old game can now be revived for preservation",
+      "metrics": {
+        "views": 270987,
+        "likes": 6437,
+        "retweets": 389,
+        "replies": 117,
+        "quotes": 44,
+        "bookmarks": 1518
+      },
+      "document": {
+        "id": "fb42f7d1-2b6b-441f-a2e1-a058fa375429",
+        "title": "Someone is using AI to reverse e",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2086949641736827096",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2086949641736827096",
+            "author": {
+              "name": "Grummz",
+              "handle": "Grummz",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2044528551295389697/w-uNVXu9_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Someone is using AI to reverse engineer Halo.\n\nI've done this (partially) with Crimson Desert. It is a slow process but LLMs can do it just fine.\n\nEvery old game can be revived now.",
+            "createdAt": "Mon Aug 10 22:55:42 +0000 2026",
+            "viewCount": 36366,
+            "metrics": {
+              "views": 36366,
+              "likes": 1116,
+              "retweets": 67,
+              "replies": 46,
+              "quotes": 7,
+              "bookmarks": 136
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "有人正在使用人工智能对 Halo 进行逆向工程。\n\n我已经在《猩红沙漠》中（部分）完成了此操作。这是一个缓慢的过程，但法学硕士可以很好地做到这一点。\n\n所有老游戏现在都可以复活。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-11T02:25:48.528Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2086627704376262708",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2086627704376262708",
+            "author": {
+              "name": "lostbutlucky",
+              "handle": "lostbutlucky",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1913054488606187520/rAsalu3S_normal.jpg",
+              "isVerified": false
+            },
+            "content": "The Halo Decompilation Project is insane.\n\nThey’re using LLMs to reverse-engineer the game from bytecode, basically rebuilding it line by line.\n\nAnd they’ve already gotten Halo to boot in wireframe.\n\nWe’re entering a completely new era of game preservation.",
+            "createdAt": "Mon Aug 10 01:36:27 +0000 2026",
+            "viewCount": 270987,
+            "metrics": {
+              "views": 270987,
+              "likes": 6437,
+              "retweets": 389,
+              "replies": 117,
+              "quotes": 44,
+              "bookmarks": 1518
+            },
+            "media": [
+              "https://pbs.twimg.com/amplify_video_thumb/2086627451589840896/img/HavLkwIv2XtOu3C4.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "Halo 反编译项目太疯狂了。\n\n他们使用法学硕士从字节码对游戏进行逆向工程，基本上是逐行重建它。\n\n他们已经让 Halo 以线框形式启动。\n\n我们正在进入游戏保存的全新时代。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-11T02:25:48.766Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2086949641736827096",
+          "pageLanguage": "en",
+          "capturedAt": "2026-08-11T02:25:47.965Z"
+        },
+        "createdAt": "2026-08-11T02:25:47.965Z",
+        "updatedAt": "2026-08-11T02:25:48.766Z"
+      }
+    },
+    {
+      "rank": 9,
+      "essenceScore": 13207,
+      "heatScore": 6143,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 6143
+      },
+      "sourceUrl": "https://x.com/MiniMax_AI/status/2086940119324565748",
+      "reason": "Redis作者antirez给MiniMax H3写Metal推理引擎，官方点题开源权重的飞轮效应",
+      "reasonEn": "Official QT of antirez shipping a Metal H3 engine: open weights recruit talent you cannot hire",
+      "metrics": {
+        "views": 148029,
+        "likes": 1249,
+        "retweets": 91,
+        "replies": 34,
+        "quotes": 16,
+        "bookmarks": 772
+      },
+      "document": {
+        "id": "00929073-e43a-4ae2-b106-115f74d0c3b5",
+        "title": "One of the best programmers on E",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2086940119324565748",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2086940119324565748",
+            "author": {
+              "name": "MiniMax (official)",
+              "handle": "MiniMax_AI",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1875100548535574529/VxHk9HyU_normal.jpg",
+              "isVerified": false
+            },
+            "content": "One of the best programmers on Earth just wrote a MiniMax H3 inference engine for Mac computers.🫨\n\nOpen weights mean anyone can bring H3 to any hardware, and sometimes \"anyone\" turns out to be the creator of Redis. You can't hire this, you can only open-source and let it happen.🩵\n\nThank you @antirez. Enjoy, modify, and so forth. 🫡",
+            "createdAt": "Mon Aug 10 22:17:52 +0000 2026",
+            "viewCount": 71264,
+            "metrics": {
+              "views": 71264,
+              "likes": 1106,
+              "retweets": 60,
+              "replies": 9,
+              "quotes": 8,
+              "bookmarks": 559
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "地球上最优秀的程序员之一刚刚为 Mac 计算机编写了 MiniMax H3 推理引擎。🫨\n\n开放权重意味着任何人都可以将 H3 带到任何硬件上，有时“任何人”都是 Redis 的创建者。你不能雇佣这个，你只能开源并让它发生。🩵\n\n谢谢你@antirez。享受、修改等等。 🫡",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-11T02:25:21.307Z",
+              "version": 1
+            }
+          },
+          {
+            "id": "2086764219433660463",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2086764219433660463",
+            "author": {
+              "name": "antirez",
+              "handle": "antirez",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1779914746159882240/v6h2w9g0_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Fast H3 implementation for Metal. Enjoy, modify, and so forth: https://github.com/antirez/h3.c Contains code from @liuliu which is welcomed in taking back whatever parts he likes for @drawthingsapp in case there are H3 plans there.",
+            "createdAt": "Mon Aug 10 10:38:54 +0000 2026",
+            "viewCount": 148029,
+            "metrics": {
+              "views": 148029,
+              "likes": 1249,
+              "retweets": 91,
+              "replies": 34,
+              "quotes": 16,
+              "bookmarks": 772
+            },
+            "media": [],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "Metal 的快速 H3 实现。享受、修改等等：https://github.com/antirez/h3.c 包含来自 @liuliu 的代码，欢迎收回他喜欢的 @drawthingsapp 的任何部分，以防那里有 H3 计划。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-11T02:25:21.449Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2086940119324565748",
+          "pageLanguage": "en",
+          "capturedAt": "2026-08-11T02:25:20.566Z"
+        },
+        "createdAt": "2026-08-11T02:25:20.566Z",
+        "updatedAt": "2026-08-11T02:25:21.449Z"
+      }
+    },
+    {
+      "rank": 10,
+      "essenceScore": 13202,
+      "heatScore": 6538,
+      "signals": {
+        "depth": 2,
+        "hasDunk": true,
+        "peakIndex": 1,
+        "peakHeat": 6538
+      },
+      "sourceUrl": "https://x.com/geekbb/status/2086780918220632142",
+      "reason": "引用Pi极简四工具agent，给出VPS/OpenWrt/macOS全场景的中文实战栈",
+      "reasonEn": "Chinese practitioner QT of Pi’s four-tool agent, mapping a full VPS/router/macOS stack with Grok+DeepSeek",
+      "metrics": {
+        "views": 171320,
+        "likes": 1579,
+        "retweets": 68,
+        "replies": 53,
+        "quotes": 19,
+        "bookmarks": 583
+      },
+      "document": {
+        "id": "7db6f459-7606-4b3d-a327-4b466b7e85af",
+        "title": "这就是 Pi ！我抛弃了所有 Agent，用 Oh My Pi：",
+        "status": "draft",
+        "nodes": [
+          {
+            "id": "2086780918220632142",
+            "relation": "root",
+            "depth": 0,
+            "sourceTweetId": "2086780918220632142",
+            "author": {
+              "name": "Geek",
+              "handle": "geekbb",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/1644898947272671233/7959WGOK_normal.jpg",
+              "isVerified": false
+            },
+            "content": "这就是 Pi ！我抛弃了所有 Agent，用 Oh My Pi：\nVPS → Pi + Grok 4.5\nOpenWrt → Pi + Grok 4.5\nmacOS → tty7 + Oh My Pi\nModel → DeepSeek V4 Flash + Grok 4.5\n覆盖了我的所有场景，个人能力范围内无敌。",
+            "createdAt": "Mon Aug 10 11:45:16 +0000 2026",
+            "viewCount": 74722,
+            "metrics": {
+              "views": 74722,
+              "likes": 375,
+              "retweets": 38,
+              "replies": 80,
+              "quotes": 2,
+              "bookmarks": 483
+            },
+            "media": [],
+            "translation": {
+              "provider": "none",
+              "status": "idle",
+              "language": "zh-CN",
+              "text": "",
+              "annotations": [],
+              "error": "",
+              "version": 0
+            }
+          },
+          {
+            "id": "2086777926016540888",
+            "relation": "quote",
+            "depth": 1,
+            "sourceTweetId": "2086777926016540888",
+            "author": {
+              "name": "Pi",
+              "handle": "pidotdev",
+              "avatarUrl": "https://pbs.twimg.com/profile_images/2056719506785927168/ol1lqm8b_normal.jpg",
+              "isVerified": false
+            },
+            "content": "Pi ships with 4 built-in tools:\n\n- read\n- bash\n- edit\n- write\n\nThese tools are mostly all you need for an effective coding agent. Models know how to use bash and can do more than you think with the basics.\n\nHere's the code to add these primitives to your app using Pi’s SDK.",
+            "createdAt": "Mon Aug 10 11:33:22 +0000 2026",
+            "viewCount": 171320,
+            "metrics": {
+              "views": 171320,
+              "likes": 1579,
+              "retweets": 68,
+              "replies": 53,
+              "quotes": 19,
+              "bookmarks": 583
+            },
+            "media": [
+              "https://pbs.twimg.com/media/HPW02nsWoAAqrRQ.jpg"
+            ],
+            "translation": {
+              "provider": "google",
+              "status": "success",
+              "language": "zh-CN",
+              "text": "Pi 附带 4 个内置工具：\n\n- 阅读\n- 重击\n- 编辑\n- 写\n\n这些工具基本上是有效编码代理所需的全部工具。模型知道如何使用 bash，并且可以通过基础知识做比您想象的更多的事情。\n\n以下是使用 Pi 的 SDK 将这些原语添加到您的应用程序的代码。",
+              "annotations": [],
+              "error": "",
+              "updatedAt": "2026-08-11T02:25:45.491Z",
+              "version": 1
+            }
+          }
+        ],
+        "renderSpec": {
+          "language": "zh-CN",
+          "translationProvider": "google",
+          "translationDisplay": "bilingual",
+          "includeAnnotations": false,
+          "exportScale": 2,
+          "theme": "paper"
+        },
+        "fetchContext": {
+          "source": "import",
+          "entryUrl": "https://x.com",
+          "tweetId": "2086780918220632142",
+          "pageLanguage": "en",
+          "capturedAt": "2026-08-11T02:25:44.909Z"
+        },
+        "createdAt": "2026-08-11T02:25:44.909Z",
+        "updatedAt": "2026-08-11T02:25:45.492Z"
+      }
+    }
+  ]
+}
